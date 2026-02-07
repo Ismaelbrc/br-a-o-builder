@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, MessageCircle, ArrowRight } from 'lucide-react';
+import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import DifferentialsSection from '@/components/home/DifferentialsSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
@@ -10,7 +10,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
 import QuoteFormSection from '@/components/home/QuoteFormSection';
 import BlogPreviewSection from '@/components/home/BlogPreviewSection';
-import heroImage from '@/assets/hero-warehouse.png';
+import heroFallback from '@/assets/hero-warehouse.png';
 
 const Index = () => {
   const scrollToOrcamento = () => {
@@ -20,81 +20,109 @@ const Index = () => {
     }
   };
 
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('produtos');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background Image */}
+      {/* Hero Section with Video Background */}
+      <section 
+        className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden"
+        style={{ backgroundImage: `url(${heroFallback})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        {/* Camada 1: Vídeo de Fundo */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="/hero-video.webm" type="video/webm" />
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+
+        {/* Camada 2: Overlay Escuro com Gradiente */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        
-        {/* Dark Overlay - gradient from left */}
-        <div 
-          className="absolute inset-0"
+          className="absolute inset-0 z-10"
           style={{
-            background: 'linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.3) 100%)'
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.70) 50%, rgba(0,0,0,0.90) 100%)'
           }}
         />
 
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full pt-24 pb-12 sm:py-20">
-          <div className="max-w-2xl">
-            {/* Título H1 */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight animate-fade-in-up">
-              Abasteça sua loja com aço de qualidade
-              <span className="block text-brand-orange mt-2">
-                Entrega rápida no Centro Oeste (até 48h)
-              </span>
-              <span className="block text-white mt-2">
-                e condições que cabem no seu caixa
-              </span>
-            </h1>
+        {/* Camada 3: Conteúdo */}
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-0 w-full">
+          {/* Badge Topo */}
+          <div className="animate-fade-in-up">
+            <span className="inline-flex items-center gap-2 bg-brand-orange/20 text-brand-orange px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm border border-brand-orange/30">
+              <Trophy className="w-4 h-4" />
+              Maior indústria de aço de Goiás
+            </span>
+          </div>
 
-            {/* Subtítulo */}
-            <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-xl mt-6 leading-relaxed animate-fade-in-up animation-delay-100">
-              A BR Aço é indústria de vergalhão e produtos de aço em Goiás, atendendo o Centro Oeste com estoque garantido, prazo cumprido e parceria que faz seu negócio crescer.
-            </p>
+          {/* Título H1 */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl animate-fade-in-up animation-delay-100">
+            Sua obra na{' '}
+            <span className="text-brand-orange">velocidade</span>{' '}
+            que você precisa
+          </h1>
 
-            {/* Botões CTA */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 animate-fade-in-up animation-delay-200">
-              <button
-                onClick={scrollToOrcamento}
-                className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-6 py-4 text-base shadow-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
-              >
-                Solicitar Orçamento
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-brand-navy rounded-lg px-6 py-4 text-base transition-all duration-300 inline-flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Falar no WhatsApp Agora
-              </a>
+          {/* Subtítulo */}
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
+            Produção 100% automatizada de aço para construção civil. 
+            Vergalhões, treliças, malhas, corte e dobra sob medida. 
+            Entrega em até 48h com certificação ABNT.
+          </p>
+
+          {/* Botões CTA */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up animation-delay-300">
+            <button
+              onClick={scrollToOrcamento}
+              className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-8 py-4 text-lg shadow-lg shadow-brand-orange/30 transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              Solicitar Orçamento
+            </button>
+            <button
+              onClick={scrollToProducts}
+              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg px-8 py-4 text-lg backdrop-blur-sm border border-white/20 transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              Nossos Produtos
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Badges de Prova Social */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-10 animate-fade-in-up animation-delay-400">
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+              <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
+                <Home className="w-5 h-5 text-brand-orange" />
+              </div>
+              <span className="text-white/90 text-sm font-medium">+10 mil casas construídas</span>
             </div>
-
-            {/* Badges de Prova Social */}
-            <div className="flex flex-wrap gap-4 sm:gap-6 mt-8 sm:mt-10 animate-fade-in-up animation-delay-300">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-brand-orange w-5 h-5" />
-                <span className="text-white/90 text-sm font-medium">Entrega em até 48h no CO</span>
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+              <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
+                <Zap className="w-5 h-5 text-brand-orange" />
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-brand-orange w-5 h-5" />
-                <span className="text-white/90 text-sm font-medium">Certificação ABNT NBR 7480</span>
+              <span className="text-white/90 text-sm font-medium">Entrega em até 2 dias</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+              <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 text-brand-orange" />
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-brand-orange w-5 h-5" />
-                <span className="text-white/90 text-sm font-medium">+250 colaboradores</span>
-              </div>
+              <span className="text-white/90 text-sm font-medium">Certificação ABNT</span>
             </div>
           </div>
+        </div>
+
+        {/* Indicador de Scroll - apenas desktop */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2 text-white/60">
+          <span className="text-sm">Role para baixo</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
         </div>
       </section>
 
