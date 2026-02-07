@@ -1,34 +1,10 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
+import { blogPosts } from '@/data/blogPosts';
 
-interface BlogPost {
-  category: string;
-  title: string;
-  summary: string;
-  date: string;
-}
-
-const blogPosts: BlogPost[] = [
-  {
-    category: 'Corte e Dobra',
-    title: 'Vantagens do Corte e Dobra na construção civil',
-    summary: 'Descubra como o serviço de corte e dobra pode reduzir custos e acelerar sua obra de forma significativa.',
-    date: '15 Jan 2026',
-  },
-  {
-    category: 'Dicas Técnicas',
-    title: 'Como calcular a quantidade de aço para sua obra',
-    summary: 'Guia prático para calcular vergalhões, malhas e treliças de forma eficiente e sem desperdício.',
-    date: '10 Jan 2026',
-  },
-  {
-    category: 'Normas',
-    title: 'Normas ABNT para vergalhões: o que você precisa saber',
-    summary: 'Entenda os requisitos da NBR 7480 e como garantir segurança estrutural na sua construção.',
-    date: '05 Jan 2026',
-  },
-];
+// Show latest 3 posts on homepage
+const latestPosts = blogPosts.slice(0, 3);
 
 const BlogPreviewSection = () => {
   return (
@@ -40,10 +16,11 @@ const BlogPreviewSection = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          {blogPosts.map((post, index) => (
-            <article
-              key={index}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 group"
+          {latestPosts.map((post) => (
+            <Link
+              key={post.id}
+              to={`/blog/${post.slug}`}
+              className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 group block"
             >
               {/* Image Placeholder */}
               <div 
@@ -76,7 +53,7 @@ const BlogPreviewSection = () => {
                   </span>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 

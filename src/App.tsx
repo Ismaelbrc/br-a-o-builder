@@ -8,6 +8,7 @@ import Sobre from "./pages/Sobre";
 import Produtos from "./pages/Produtos";
 import CorteEDobra from "./pages/CorteEDobra";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Contato from "./pages/Contato";
 import Cliente from "./pages/Cliente";
 import Galeria from "./pages/Galeria";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/corte-e-dobra" element={<CorteEDobra />} />
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/cliente" element={<Cliente />} />
           <Route path="*" element={<NotFound />} />
