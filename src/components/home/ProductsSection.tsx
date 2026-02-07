@@ -52,14 +52,14 @@ const products: Product[] = [
 
 const ProductsSection = () => {
   return (
-    <section className="py-20 md:py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionTitle 
           title="Soluções Completas em Aço" 
           subtitle="Do vergalhão à sapata, tudo o que sua obra precisa com a qualidade BR Aço" 
         />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mt-8 sm:mt-12">
           {products.map((product, index) => {
             const Icon = product.icon;
             return (
@@ -80,15 +80,15 @@ const ProductsSection = () => {
                 )}
                 
                 {/* Icon area */}
-                <div className="h-32 bg-brand-gray-light flex items-center justify-center group-hover:bg-brand-orange/5 transition-colors">
-                  <Icon className="w-12 h-12 text-brand-navy group-hover:text-brand-orange transition-colors" />
+                <div className="h-28 sm:h-32 bg-brand-gray-light flex items-center justify-center group-hover:bg-brand-orange/5 transition-colors">
+                  <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-brand-navy group-hover:text-brand-orange transition-colors" />
                 </div>
                 
                 {/* Content */}
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-brand-navy">{product.name}</h3>
-                  <p className="text-sm text-brand-gray-medium mt-1.5 line-clamp-2">{product.description}</p>
-                  <span className="mt-3 text-brand-orange text-sm font-medium hover:underline inline-flex items-center gap-1">
+                <div className="p-4 sm:p-5">
+                  <h3 className="text-base sm:text-lg font-semibold text-brand-navy">{product.name}</h3>
+                  <p className="text-sm text-brand-gray-medium mt-1 sm:mt-1.5 line-clamp-2">{product.description}</p>
+                  <span className="mt-2 sm:mt-3 text-brand-orange text-sm font-medium hover:underline inline-flex items-center gap-1">
                     Saiba mais <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>

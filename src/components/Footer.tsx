@@ -15,10 +15,8 @@ const productLinks = [
   { name: 'Corte e Dobra', href: '/corte-e-dobra' },
   { name: 'Vergalhões', href: '/produtos#vergalhoes' },
   { name: 'Treliças', href: '/produtos#trelicas' },
-  { name: 'Malhas', href: '/produtos#malhas' },
-  { name: 'Telas e Colunas', href: '/produtos#telas-e-colunas' },
-  { name: 'Bobinas', href: '/produtos#bobinas' },
-  { name: 'Sapatas', href: '/produtos#sapatas' },
+  { name: 'Telas e Malhas Pop', href: '/produtos#telas-e-malhas-pop' },
+  { name: 'Colunas', href: '/produtos#colunas' },
   { name: 'Pregos e Arames', href: '/produtos#pregos-e-arames' },
 ];
 
@@ -30,9 +28,9 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-navy pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-brand-navy pt-12 pb-8 sm:pt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div>
             <Link to="/" className="inline-block">

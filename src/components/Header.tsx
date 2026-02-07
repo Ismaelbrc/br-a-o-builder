@@ -6,10 +6,8 @@ const productLinks = [
   { name: 'Corte e Dobra', href: '/corte-e-dobra', highlight: true },
   { name: 'Vergalhões', href: '/produtos#vergalhoes' },
   { name: 'Treliças', href: '/produtos#trelicas' },
-  { name: 'Malhas', href: '/produtos#malhas' },
-  { name: 'Telas e Colunas', href: '/produtos#telas-e-colunas' },
-  { name: 'Bobinas', href: '/produtos#bobinas' },
-  { name: 'Sapatas', href: '/produtos#sapatas' },
+  { name: 'Telas e Malhas Pop', href: '/produtos#telas-e-malhas-pop' },
+  { name: 'Colunas', href: '/produtos#colunas' },
   { name: 'Pregos e Arames', href: '/produtos#pregos-e-arames' },
 ];
 
@@ -147,74 +145,88 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - min 44x44 touch target */}
           <button
-            className="lg:hidden p-2 text-white"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-brand-navy z-40">
-          <div className="flex flex-col h-full overflow-y-auto px-4 py-6">
-            {navLinks.map((link) => (
-              <div key={link.name}>
-                {link.hasDropdown ? (
-                  <div>
-                    <button
-                      onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
-                      className="flex items-center justify-between w-full py-3 text-lg text-white border-b border-white/10"
+        <div 
+          className="lg:hidden fixed inset-0 top-16 bg-black/50 z-40"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu Drawer */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-brand-navy z-50 overflow-y-auto">
+          <div className="flex flex-col min-h-full px-4 py-6">
+            <nav className="flex-1">
+              {navLinks.map((link) => (
+                <div key={link.name}>
+                  {link.hasDropdown ? (
+                    <div>
+                      <button
+                        onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
+                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-white border-b border-white/10"
+                      >
+                        {link.name}
+                        <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      {isMobileProductsOpen && (
+                        <div className="pl-4 py-2 space-y-1">
+                          {productLinks.map((product) => (
+                            <Link
+                              key={product.name}
+                              to={product.href}
+                              className={`flex items-center gap-2 min-h-[44px] py-2 text-sm text-white/80 hover:text-white ${
+                                product.highlight ? 'text-brand-orange' : ''
+                              }`}
+                            >
+                              {product.highlight && (
+                                <Star className="w-4 h-4 text-brand-orange fill-brand-orange" />
+                              )}
+                              {product.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className={`block min-h-[48px] py-3 text-base border-b border-white/10 ${
+                        link.highlight ? 'text-brand-orange' : 'text-white'
+                      }`}
                     >
                       {link.name}
-                      <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
-                    </button>
-                    {isMobileProductsOpen && (
-                      <div className="pl-4 py-2 space-y-1">
-                        {productLinks.map((product) => (
-                          <Link
-                            key={product.name}
-                            to={product.href}
-                            className={`flex items-center gap-2 py-2 text-white/80 hover:text-white ${
-                              product.highlight ? 'text-brand-orange' : ''
-                            }`}
-                          >
-                            {product.highlight && (
-                              <Star className="w-4 h-4 text-brand-orange fill-brand-orange" />
-                            )}
-                            {product.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    to={link.href}
-                    className={`block py-3 text-lg border-b border-white/10 ${
-                      link.highlight ? 'text-brand-orange' : 'text-white'
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                )}
-              </div>
-            ))}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </nav>
 
-            <div className="mt-6 pt-6 border-t border-white/10 space-y-3">
+            <div className="mt-auto pt-6 border-t border-white/10 space-y-3">
               <Link
                 to="/cliente"
-                className="flex items-center gap-3 py-3 text-white"
+                className="flex items-center gap-3 min-h-[48px] py-3 text-white"
               >
                 <User className="w-5 h-5" />
                 Área do Cliente
               </Link>
               <button
-                onClick={scrollToOrcamento}
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-full py-4 transition-colors"
+                onClick={() => {
+                  scrollToOrcamento();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-full min-h-[48px] py-4 transition-colors"
               >
                 Solicitar Orçamento
               </button>

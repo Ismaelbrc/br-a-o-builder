@@ -56,20 +56,20 @@ const ComparisonSection = () => {
   const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
-    <section id="comparativo" className="py-20 md:py-24 bg-background" ref={sectionRef}>
-      <div className="max-w-5xl mx-auto px-4">
+    <section id="comparativo" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background" ref={sectionRef}>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center">
-          <span className="inline-block bg-brand-orange/10 text-brand-orange text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          <span className="inline-block bg-brand-orange/10 text-brand-orange text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
             COMPARATIVO
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy text-center mt-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mt-3 sm:mt-4">
             Por que as maiores construtoras escolhem a BR Aço?
           </h2>
-          <p className="text-lg text-brand-gray-medium text-center mt-3 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-brand-gray-medium text-center mt-2 sm:mt-3 max-w-2xl mx-auto">
             Veja lado a lado como nos comparamos com outros fornecedores do mercado
           </p>
-          <div className="w-16 h-1 bg-brand-orange mx-auto mt-5 rounded-full" />
+          <div className="w-12 sm:w-16 h-1 bg-brand-orange mx-auto mt-4 sm:mt-5 rounded-full" />
         </div>
 
         {/* Desktop Table */}

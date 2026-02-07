@@ -78,20 +78,20 @@ const StatsSection = () => {
   return (
     <section 
       ref={sectionRef}
-      className="py-16 md:py-20"
+      className="py-12 sm:py-16 md:py-20"
       style={{ backgroundColor: 'hsl(var(--brand-navy))' }}
     >
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {stats.map((stat, index) => (
             <div 
               key={index} 
               className={`text-center ${index < stats.length - 1 ? 'lg:border-r lg:border-white/10' : ''}`}
             >
-              <div className="text-4xl md:text-5xl font-bold text-brand-orange">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-orange">
                 <AnimatedCounter stat={stat} isVisible={isVisible} />
               </div>
-              <p className="text-sm md:text-base text-gray-400 uppercase tracking-wider mt-2 font-medium">
+              <p className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wider mt-2 font-medium">
                 {stat.label}
               </p>
             </div>
