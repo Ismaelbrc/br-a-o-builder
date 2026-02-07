@@ -16,7 +16,6 @@ const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Sobre', href: '/sobre' },
   { name: 'Produtos', href: '/produtos', hasDropdown: true },
-  { name: 'Corte e Dobra', href: '/corte-e-dobra', highlight: true },
   { name: 'Galeria', href: '/galeria' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contato', href: '/contato' },
@@ -83,8 +82,8 @@ export default function Header() {
                     <button
                       className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide ${
                         location.pathname === link.href
-                          ? 'text-brand-orange'
-                          : 'text-brand-navy hover:text-brand-orange'
+                          ? 'text-primary'
+                          : 'text-accent hover:text-primary'
                       }`}
                     >
                       {link.name}
@@ -94,17 +93,17 @@ export default function Header() {
                     {/* Dropdown */}
                     {isProductsOpen && (
                       <div className="absolute top-full left-0 pt-2">
-                        <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 min-w-[220px]">
+                        <div className="bg-card rounded-xl shadow-xl border border-border p-2 min-w-[220px]">
                           {productLinks.map((product) => (
                             <Link
                               key={product.name}
                               to={product.href}
-                              className={`flex items-center gap-2 px-4 py-3 rounded-lg text-brand-gray-dark hover:bg-brand-gray-light transition-colors ${
+                              className={`flex items-center gap-2 px-4 py-3 rounded-lg text-foreground hover:bg-secondary transition-colors ${
                                 product.highlight ? 'font-medium' : ''
                               }`}
                             >
                               {product.highlight && (
-                                <Star className="w-4 h-4 text-brand-orange fill-brand-orange" />
+                                <Star className="w-4 h-4 text-primary fill-primary" />
                               )}
                               {product.name}
                             </Link>
@@ -117,11 +116,9 @@ export default function Header() {
                   <Link
                     to={link.href}
                     className={`px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide ${
-                      link.highlight
-                        ? 'text-brand-orange'
-                        : location.pathname === link.href
-                        ? 'text-brand-orange'
-                        : 'text-brand-navy hover:text-brand-orange'
+                      location.pathname === link.href
+                        ? 'text-primary'
+                        : 'text-accent hover:text-primary'
                     }`}
                   >
                     {link.name}
@@ -135,14 +132,14 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               to="/cliente"
-              className="flex items-center gap-2 px-3 py-2 text-brand-gray-medium hover:text-brand-navy transition-colors"
+              className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-accent transition-colors"
               title="Área do Cliente"
             >
               <User className="w-5 h-5" />
             </Link>
             <button
               onClick={scrollToOrcamento}
-              className="bg-brand-orange hover:bg-brand-orange-hover text-white text-sm font-semibold rounded-full px-6 py-2.5 transition-colors uppercase tracking-wide"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-6 py-2.5 transition-colors uppercase tracking-wide"
             >
               Fale Conosco
             </button>
@@ -150,7 +147,7 @@ export default function Header() {
 
           {/* Mobile Menu Button - min 44x44 touch target */}
           <button
-            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-brand-navy"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-accent"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
           >
@@ -169,7 +166,7 @@ export default function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-white z-50 overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-background z-50 overflow-y-auto">
           <div className="flex flex-col min-h-full px-4 py-6">
             <nav className="flex-1">
               {navLinks.map((link) => (
@@ -178,23 +175,23 @@ export default function Header() {
                     <div>
                       <button
                         onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
-                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-brand-navy border-b border-gray-100 uppercase tracking-wide font-medium"
+                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-accent border-b border-border uppercase tracking-wide font-medium"
                       >
                         {link.name}
                         <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
                       </button>
                       {isMobileProductsOpen && (
-                        <div className="pl-4 py-2 space-y-1 bg-gray-50">
+                        <div className="pl-4 py-2 space-y-1 bg-secondary">
                           {productLinks.map((product) => (
                             <Link
                               key={product.name}
                               to={product.href}
-                              className={`flex items-center gap-2 min-h-[44px] py-2 text-sm text-brand-gray-medium hover:text-brand-navy ${
-                                product.highlight ? 'text-brand-orange font-medium' : ''
+                              className={`flex items-center gap-2 min-h-[44px] py-2 text-sm text-muted-foreground hover:text-accent ${
+                                product.highlight ? 'text-primary font-medium' : ''
                               }`}
                             >
                               {product.highlight && (
-                                <Star className="w-4 h-4 text-brand-orange fill-brand-orange" />
+                                <Star className="w-4 h-4 text-primary fill-primary" />
                               )}
                               {product.name}
                             </Link>
@@ -205,9 +202,7 @@ export default function Header() {
                   ) : (
                     <Link
                       to={link.href}
-                      className={`block min-h-[48px] py-3 text-base border-b border-gray-100 uppercase tracking-wide font-medium ${
-                        link.highlight ? 'text-brand-orange' : 'text-brand-navy'
-                      }`}
+                      className="block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium text-accent"
                     >
                       {link.name}
                     </Link>
@@ -216,10 +211,10 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="mt-auto pt-6 border-t border-gray-200 space-y-3">
+            <div className="mt-auto pt-6 border-t border-border space-y-3">
               <Link
                 to="/cliente"
-                className="flex items-center gap-3 min-h-[48px] py-3 text-brand-navy"
+                className="flex items-center gap-3 min-h-[48px] py-3 text-accent"
               >
                 <User className="w-5 h-5" />
                 Área do Cliente
@@ -229,7 +224,7 @@ export default function Header() {
                   scrollToOrcamento();
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide"
               >
                 Fale Conosco
               </button>
