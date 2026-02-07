@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ChevronDown } from 'lucide-react';
 import Layout from '@/components/Layout';
+import DifferentialsSection from '@/components/home/DifferentialsSection';
+import HowItWorksSection from '@/components/home/HowItWorksSection';
+import ProductsSection from '@/components/home/ProductsSection';
 
 const Index = () => {
   const scrollToOrcamento = () => {
@@ -89,6 +92,15 @@ const Index = () => {
           <ChevronDown className="w-6 h-6 text-white/40 animate-bounce-subtle" />
         </div>
       </section>
+
+      {/* Diferenciais Section */}
+      <DifferentialsSection />
+
+      {/* Como Funciona Section */}
+      <HowItWorksSection />
+
+      {/* Produtos Section */}
+      <ProductsSection />
 
       {/* Placeholder para próximas seções */}
       <section id="orcamento" className="py-20 bg-brand-gray-light">
