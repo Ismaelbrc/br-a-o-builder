@@ -1,43 +1,8 @@
 import { useState } from 'react';
-import { Send, Clock, ShieldCheck, Phone, CreditCard, MessageCircle, CheckCircle } from 'lucide-react';
-import SectionTitle from '@/components/SectionTitle';
+import { ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-
-const products = [
-  'Corte e Dobra',
-  'Vergalhões',
-  'Treliças',
-  'Telas e Malhas Pop',
-  'Colunas',
-  'Pregos e Arames',
-];
-
-const obraTypes = [
-  'Residencial',
-  'Comercial',
-  'Industrial',
-  'Loteamento',
-  'Infraestrutura',
-  'Outro',
-];
-
-const benefits = [
-  { icon: Clock, text: 'Resposta em até 24h' },
-  { icon: ShieldCheck, text: 'Orçamento sem compromisso' },
-  { icon: Phone, text: 'Suporte técnico especializado' },
-  { icon: CreditCard, text: 'Parcelamento em até 10x' },
-];
 
 const QuoteFormSection = () => {
   const { toast } = useToast();
@@ -45,9 +10,6 @@ const QuoteFormSection = () => {
     nome: '',
     whatsapp: '',
     email: '',
-    cidade: '',
-    tipoObra: '',
-    produtos: [] as string[],
     mensagem: '',
   });
   const [errors, setErrors] = useState<{ nome?: boolean; whatsapp?: boolean }>({});
@@ -58,15 +20,6 @@ const QuoteFormSection = () => {
     if (errors[name as keyof typeof errors]) {
       setErrors(prev => ({ ...prev, [name]: false }));
     }
-  };
-
-  const handleProductChange = (product: string, checked: boolean) => {
-    setFormData(prev => ({
-      ...prev,
-      produtos: checked
-        ? [...prev.produtos, product]
-        : prev.produtos.filter(p => p !== product),
-    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -81,212 +34,88 @@ const QuoteFormSection = () => {
       return;
     }
 
-    // Success
     toast({
       title: "✓ Orçamento enviado com sucesso!",
       description: "Entraremos em contato em breve.",
     });
 
-    // Reset form
     setFormData({
       nome: '',
       whatsapp: '',
       email: '',
-      cidade: '',
-      tipoObra: '',
-      produtos: [],
       mensagem: '',
     });
   };
 
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
-
   return (
-    <section id="orcamento" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionTitle
-          title="Solicite seu Orçamento"
-          subtitle="Preencha os dados e nossa equipe entra em contato em até 24h"
-        />
-
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12 mt-8 sm:mt-12 max-w-6xl mx-auto">
-          {/* Form Column */}
-          <div className="lg:col-span-3 order-2 lg:order-1">
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
-              {/* Nome */}
-              <div>
-                <Label htmlFor="nome" className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  Nome completo <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  id="nome"
-                  name="nome"
-                  type="text"
-                  placeholder="Seu nome completo"
-                  value={formData.nome}
-                  onChange={handleInputChange}
-                  className={`w-full rounded-xl border px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
-                    errors.nome ? 'border-red-500' : 'border-gray-200'
-                  }`}
-                />
-              </div>
-
-              {/* WhatsApp */}
-              <div>
-                <Label htmlFor="whatsapp" className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  WhatsApp <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  id="whatsapp"
-                  name="whatsapp"
-                  type="tel"
-                  placeholder="(62) 99999-9999"
-                  value={formData.whatsapp}
-                  onChange={handleInputChange}
-                  className={`w-full rounded-xl border px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
-                    errors.whatsapp ? 'border-red-500' : 'border-gray-200'
-                  }`}
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <Label htmlFor="email" className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  E-mail
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="seu@email.com"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
-                />
-              </div>
-
-              {/* Cidade */}
-              <div>
-                <Label htmlFor="cidade" className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  Cidade / Estado
-                </Label>
-                <Input
-                  id="cidade"
-                  name="cidade"
-                  type="text"
-                  placeholder="Ex: Goiânia - GO"
-                  value={formData.cidade}
-                  onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
-                />
-              </div>
-
-              {/* Tipo de Obra */}
-              <div>
-                <Label className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  Tipo de obra
-                </Label>
-                <Select
-                  value={formData.tipoObra}
-                  onValueChange={(value) => setFormData(prev => ({ ...prev, tipoObra: value }))}
-                >
-                  <SelectTrigger className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base min-h-[48px] focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20">
-                    <SelectValue placeholder="Selecione o tipo de obra" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {obraTypes.map((type) => (
-                      <SelectItem key={type} value={type}>
-                        {type}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Produtos de interesse */}
-              <div>
-                <Label className="text-sm font-medium text-brand-navy mb-3 block">
-                  Produtos de interesse
-                </Label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                  {products.map((product) => (
-                    <div key={product} className="flex items-center space-x-2 min-h-[44px]">
-                      <Checkbox
-                        id={product}
-                        checked={formData.produtos.includes(product)}
-                        onCheckedChange={(checked) => handleProductChange(product, checked as boolean)}
-                        className="w-5 h-5 accent-brand-orange data-[state=checked]:bg-brand-orange data-[state=checked]:border-brand-orange"
-                      />
-                      <Label htmlFor={product} className="text-sm text-brand-gray-dark cursor-pointer">
-                        {product}
-                      </Label>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Mensagem */}
-              <div>
-                <Label htmlFor="mensagem" className="text-sm font-medium text-brand-navy mb-1.5 block">
-                  Mensagem
-                </Label>
-                <Textarea
-                  id="mensagem"
-                  name="mensagem"
-                  rows={4}
-                  placeholder="Conte-nos sobre seu projeto, quantidades ou prazos desejados..."
-                  value={formData.mensagem}
-                  onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 resize-none min-h-[100px]"
-                />
-              </div>
-
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-xl py-4 text-lg mt-2 transition-colors inline-flex items-center justify-center gap-2"
-              >
-                <Send className="w-5 h-5" />
-                Enviar Orçamento
-              </button>
-            </form>
-          </div>
-
-          {/* Info Column */}
-          <div className="lg:col-span-2 order-1 lg:order-2">
-            <div className="bg-brand-gray-light rounded-2xl p-6 sm:p-8">
-              <h3 className="text-lg sm:text-xl font-semibold text-brand-navy">
-                Atendimento personalizado
-              </h3>
-              <p className="text-sm text-brand-gray-medium mt-2 sm:mt-3">
-                Nossa equipe técnica está pronta para analisar seu projeto e oferecer a melhor solução.
-              </p>
-
-              <div className="mt-5 sm:mt-6 flex flex-col gap-3 sm:gap-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <benefit.icon className="w-5 h-5 text-brand-orange flex-shrink-0" />
-                    <span className="text-sm text-brand-gray-dark font-medium">
-                      {benefit.text}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="border-t border-gray-200 my-5 sm:my-6" />
-
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full border-2 border-brand-whatsapp text-brand-whatsapp rounded-xl py-3 min-h-[48px] hover:bg-brand-whatsapp hover:text-white transition-colors font-medium inline-flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Prefere WhatsApp? Fale agora
-              </a>
-            </div>
-          </div>
+    <section id="orcamento" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-brand-orange">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            Pronto para ter um fornecedor de confiança no Centro Oeste?
+          </h2>
+          <p className="text-white/90 text-base sm:text-lg mt-3 sm:mt-4">
+            Peça um orçamento agora e comece a trabalhar com a BR Aço ainda esta semana.
+          </p>
         </div>
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Top row: 3 inputs + button */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <Input
+              name="nome"
+              type="text"
+              placeholder="Nome Completo"
+              value={formData.nome}
+              onChange={handleInputChange}
+              className={`w-full bg-white border-0 rounded-lg px-4 py-4 text-base min-h-[56px] placeholder:text-gray-500 focus:ring-2 focus:ring-white/50 ${
+                errors.nome ? 'ring-2 ring-red-500' : ''
+              }`}
+            />
+            <Input
+              name="whatsapp"
+              type="tel"
+              placeholder="WhatsApp (62) 99999-99"
+              value={formData.whatsapp}
+              onChange={handleInputChange}
+              className={`w-full bg-white border-0 rounded-lg px-4 py-4 text-base min-h-[56px] placeholder:text-gray-500 focus:ring-2 focus:ring-white/50 ${
+                errors.whatsapp ? 'ring-2 ring-red-500' : ''
+              }`}
+            />
+            <Input
+              name="email"
+              type="email"
+              placeholder="E-mail"
+              value={formData.email}
+              onChange={handleInputChange}
+              className="w-full bg-white border-0 rounded-lg px-4 py-4 text-base min-h-[56px] placeholder:text-gray-500 focus:ring-2 focus:ring-white/50"
+            />
+            <button
+              type="submit"
+              className="w-full bg-white text-brand-orange font-semibold rounded-lg px-6 py-4 min-h-[56px] hover:bg-gray-50 transition-colors inline-flex items-center justify-center gap-2 text-base"
+            >
+              Solicitar Orçamento
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Message textarea */}
+          <Textarea
+            name="mensagem"
+            rows={4}
+            placeholder="Mensagem (opcional) - Conte um pouco sobre sua necessidade..."
+            value={formData.mensagem}
+            onChange={handleInputChange}
+            className="w-full bg-white border-0 rounded-lg px-4 py-4 text-base placeholder:text-gray-500 focus:ring-2 focus:ring-white/50 resize-none min-h-[120px]"
+          />
+        </form>
+
+        {/* Footer text */}
+        <p className="text-center text-white/90 text-sm sm:text-base mt-6 sm:mt-8">
+          Resposta em até 2 horas (horário comercial). Sem compromisso.
+        </p>
       </div>
     </section>
   );
