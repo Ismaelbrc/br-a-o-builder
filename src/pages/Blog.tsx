@@ -1,18 +1,148 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { ChevronRight, MessageCircle, ArrowRight } from 'lucide-react';
+
+const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Construção Civil', 'Dicas', 'Normas Técnicas'];
+
+const featuredPost = {
+  category: 'Corte e Dobra',
+  title: 'Vantagens do Corte e Dobra na construção civil',
+  date: '20 Jan 2026',
+  summary: 'Descubra como o serviço de corte e dobra pode reduzir custos e acelerar sua obra de forma significativa. Neste artigo, exploramos os principais benefícios da utilização de aço cortado e dobrado sob medida, desde a economia de mão de obra até a eliminação de desperdícios no canteiro.',
+};
+
+const posts = [
+  { id: 1, category: 'Corte e Dobra', title: 'Vantagens do Corte e Dobra na construção civil', date: '20 Jan 2026', summary: 'Descubra como o serviço de corte e dobra pode reduzir custos e acelerar sua obra de forma significativa.' },
+  { id: 2, category: 'Dicas', title: 'Como calcular a quantidade de aço para sua obra', date: '15 Jan 2026', summary: 'Guia prático para calcular vergalhões, malhas e treliças de forma eficiente e sem desperdício.' },
+  { id: 3, category: 'Normas Técnicas', title: 'Normas ABNT para vergalhões: o que você precisa saber', date: '10 Jan 2026', summary: 'Entenda os requisitos da NBR 7480 e como garantir segurança estrutural na sua construção.' },
+  { id: 4, category: 'Construção Civil', title: 'Melhores práticas para montagem de armaduras', date: '05 Jan 2026', summary: 'Técnicas e recomendações para uma montagem de armadura eficiente e segura.' },
+  { id: 5, category: 'Dicas', title: 'Treliças metálicas: vantagens na construção', date: '28 Dez 2025', summary: 'Conheça os benefícios das treliças metálicas e como elas podem otimizar sua obra.' },
+  { id: 6, category: 'Construção Civil', title: 'Como evitar recalques em sapatas de fundação', date: '20 Dez 2025', summary: 'Dicas essenciais para garantir a estabilidade das fundações da sua construção.' },
+];
 
 export default function Blog() {
+  const [activeCategory, setActiveCategory] = useState('Todos');
+  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
+
+  const filteredPosts = activeCategory === 'Todos' 
+    ? posts 
+    : posts.filter(post => post.category === activeCategory);
+
   return (
     <Layout>
-      <div className="flex min-h-[80vh] items-center justify-center bg-brand-gray-light">
-        <div className="text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
-            Blog BR Aço
-          </h1>
-          <p className="text-lg text-brand-gray-medium">
-            Conteúdo será adicionado em breve
-          </p>
+      {/* Hero */}
+      <section className="bg-brand-navy py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-white">Blog</span>
+          </nav>
+          <h1 className="text-4xl font-bold text-white">Blog BR Aço</h1>
+          <p className="text-gray-300 mt-3">Conteúdos técnicos, dicas e novidades para acelerar sua obra</p>
         </div>
-      </div>
+      </section>
+
+      {/* Content */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Featured Post */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div 
+              className="h-64 lg:h-auto rounded-2xl"
+              style={{ background: 'linear-gradient(135deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand-orange) / 0.6) 100%)' }}
+            />
+            <div className="flex flex-col justify-center">
+              <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">
+                {featuredPost.category}
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mt-2">
+                {featuredPost.title}
+              </h2>
+              <p className="text-sm text-brand-gray-medium mt-2">{featuredPost.date}</p>
+              <p className="text-brand-gray-medium mt-4 leading-relaxed">
+                {featuredPost.summary}
+              </p>
+              <Link 
+                to="#" 
+                className="inline-flex items-center gap-2 text-brand-orange font-medium mt-6 hover:underline"
+              >
+                Ler artigo completo <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Category Filters */}
+          <div className="flex flex-wrap gap-2 mt-12 mb-8">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  activeCategory === category
+                    ? 'bg-brand-orange text-white'
+                    : 'bg-brand-gray-light text-brand-gray-medium hover:bg-gray-200'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {/* Posts Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredPosts.map((post) => (
+              <article 
+                key={post.id}
+                className="bg-background rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-all duration-300 group"
+              >
+                <div 
+                  className="h-48"
+                  style={{ background: 'linear-gradient(135deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand-orange) / 0.6) 100%)' }}
+                />
+                <div className="p-6">
+                  <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">
+                    {post.category}
+                  </span>
+                  <h3 className="text-lg font-semibold text-brand-navy mt-2 line-clamp-2 group-hover:text-brand-orange transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-brand-gray-medium mt-2 line-clamp-2">
+                    {post.summary}
+                  </p>
+                  <div className="flex justify-between items-center mt-4 pt-4 border-t border-border">
+                    <span className="text-xs text-brand-gray-medium">{post.date}</span>
+                    <Link to="#" className="text-sm text-brand-orange font-medium hover:underline">
+                      Ler mais →
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="bg-brand-gray-light rounded-2xl p-10 text-center mt-16">
+            <h3 className="text-2xl font-bold text-brand-navy">Precisa de aço para sua obra?</h3>
+            <p className="text-brand-gray-medium mt-2">
+              Solicite um orçamento personalizado e receba em até 24 horas
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+              <Button asChild className="bg-brand-orange hover:bg-brand-orange-hover text-white rounded-full px-8">
+                <Link to="/contato">Solicitar Orçamento</Link>
+              </Button>
+              <Button variant="outline" asChild className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white rounded-full px-8">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  Fale no WhatsApp
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
