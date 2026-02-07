@@ -59,7 +59,7 @@ const ProductsSection = () => {
           subtitle="Do vergalhão à sapata, tudo o que sua obra precisa com a qualidade BR Aço" 
         />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mt-12">
           {products.map((product, index) => {
             const Icon = product.icon;
             return (
