@@ -16,10 +16,10 @@ const testimonials: Testimonial[] = [
     company: "CM Construtora"
   },
   {
-    text: "Atendimento excepcional. A equipe técnica nos ajudou a otimizar o projeto e reduzimos quase 40% do desperdício. Recomendo demais.",
-    author: "Ana Paula Ribeiro",
-    role: "Diretora de Obras",
-    company: "GPL Incorporadora"
+    text: "Parceria de anos. A BR Aço entende o ritmo da obra e nunca nos deixou na mão. Qualidade do aço é impecável e o suporte técnico faz toda diferença.",
+    author: "Marcos Oliveira",
+    role: "Gerente de Suprimentos",
+    company: "MO Engenharia"
   },
   {
     text: "Melhor custo-benefício de Goiás. Entrega rápida, aço de qualidade e parcelamento que cabe no orçamento. Parceiro de todas as nossas obras.",
