@@ -18,10 +18,8 @@ const products = [
   'Corte e Dobra',
   'Vergalhões',
   'Treliças',
-  'Malhas',
-  'Telas e Colunas',
-  'Bobinas',
-  'Sapatas',
+  'Telas e Malhas Pop',
+  'Colunas',
   'Pregos e Arames',
 ];
 
