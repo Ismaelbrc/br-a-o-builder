@@ -48,7 +48,7 @@ const QuoteFormSection = () => {
   };
 
   return (
-    <section id="orcamento" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-brand-orange">
+    <section id="orcamento" className="pt-8 pb-12 sm:pt-10 sm:pb-16 md:pt-12 md:pb-20 lg:pt-14 lg:pb-24 bg-brand-orange">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10">
