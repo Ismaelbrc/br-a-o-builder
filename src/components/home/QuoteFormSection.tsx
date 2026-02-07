@@ -102,17 +102,17 @@ const QuoteFormSection = () => {
   const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
-    <section id="orcamento" className="py-20 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="orcamento" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionTitle
           title="Solicite seu Orçamento"
           subtitle="Preencha os dados e nossa equipe entra em contato em até 24h"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mt-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12 mt-8 sm:mt-12 max-w-6xl mx-auto">
           {/* Form Column */}
-          <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="lg:col-span-3 order-2 lg:order-1">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               {/* Nome */}
               <div>
                 <Label htmlFor="nome" className="text-sm font-medium text-brand-navy mb-1.5 block">
@@ -125,7 +125,7 @@ const QuoteFormSection = () => {
                   placeholder="Seu nome completo"
                   value={formData.nome}
                   onChange={handleInputChange}
-                  className={`w-full rounded-xl border px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
+                  className={`w-full rounded-xl border px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
                     errors.nome ? 'border-red-500' : 'border-gray-200'
                   }`}
                 />
@@ -143,7 +143,7 @@ const QuoteFormSection = () => {
                   placeholder="(62) 99999-9999"
                   value={formData.whatsapp}
                   onChange={handleInputChange}
-                  className={`w-full rounded-xl border px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
+                  className={`w-full rounded-xl border px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 ${
                     errors.whatsapp ? 'border-red-500' : 'border-gray-200'
                   }`}
                 />
@@ -161,7 +161,7 @@ const QuoteFormSection = () => {
                   placeholder="seu@email.com"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
+                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
                 />
               </div>
 
@@ -177,7 +177,7 @@ const QuoteFormSection = () => {
                   placeholder="Ex: Goiânia - GO"
                   value={formData.cidade}
                   onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
+                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400"
                 />
               </div>
 
@@ -190,7 +190,7 @@ const QuoteFormSection = () => {
                   value={formData.tipoObra}
                   onValueChange={(value) => setFormData(prev => ({ ...prev, tipoObra: value }))}
                 >
-                  <SelectTrigger className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20">
+                  <SelectTrigger className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base min-h-[48px] focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20">
                     <SelectValue placeholder="Selecione o tipo de obra" />
                   </SelectTrigger>
                   <SelectContent>
@@ -208,14 +208,14 @@ const QuoteFormSection = () => {
                 <Label className="text-sm font-medium text-brand-navy mb-3 block">
                   Produtos de interesse
                 </Label>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                   {products.map((product) => (
-                    <div key={product} className="flex items-center space-x-2">
+                    <div key={product} className="flex items-center space-x-2 min-h-[44px]">
                       <Checkbox
                         id={product}
                         checked={formData.produtos.includes(product)}
                         onCheckedChange={(checked) => handleProductChange(product, checked as boolean)}
-                        className="accent-brand-orange data-[state=checked]:bg-brand-orange data-[state=checked]:border-brand-orange"
+                        className="w-5 h-5 accent-brand-orange data-[state=checked]:bg-brand-orange data-[state=checked]:border-brand-orange"
                       />
                       <Label htmlFor={product} className="text-sm text-brand-gray-dark cursor-pointer">
                         {product}
@@ -237,7 +237,7 @@ const QuoteFormSection = () => {
                   placeholder="Conte-nos sobre seu projeto, quantidades ou prazos desejados..."
                   value={formData.mensagem}
                   onChange={handleInputChange}
-                  className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 resize-none"
+                  className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-base focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 outline-none transition-all placeholder:text-gray-400 resize-none min-h-[100px]"
                 />
               </div>
 
@@ -253,19 +253,19 @@ const QuoteFormSection = () => {
           </div>
 
           {/* Info Column */}
-          <div className="lg:col-span-2">
-            <div className="bg-brand-gray-light rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-brand-navy">
+          <div className="lg:col-span-2 order-1 lg:order-2">
+            <div className="bg-brand-gray-light rounded-2xl p-6 sm:p-8">
+              <h3 className="text-lg sm:text-xl font-semibold text-brand-navy">
                 Atendimento personalizado
               </h3>
-              <p className="text-sm text-brand-gray-medium mt-3">
+              <p className="text-sm text-brand-gray-medium mt-2 sm:mt-3">
                 Nossa equipe técnica está pronta para analisar seu projeto e oferecer a melhor solução.
               </p>
 
-              <div className="mt-6 flex flex-col gap-4">
+              <div className="mt-5 sm:mt-6 flex flex-col gap-3 sm:gap-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <benefit.icon className="w-5 h-5 text-brand-orange" />
+                    <benefit.icon className="w-5 h-5 text-brand-orange flex-shrink-0" />
                     <span className="text-sm text-brand-gray-dark font-medium">
                       {benefit.text}
                     </span>
@@ -273,13 +273,13 @@ const QuoteFormSection = () => {
                 ))}
               </div>
 
-              <div className="border-t border-gray-200 my-6" />
+              <div className="border-t border-gray-200 my-5 sm:my-6" />
 
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full border-2 border-[#25D366] text-[#25D366] rounded-xl py-3 hover:bg-[#25D366] hover:text-white transition-colors font-medium inline-flex items-center justify-center gap-2"
+                className="w-full border-2 border-brand-whatsapp text-brand-whatsapp rounded-xl py-3 min-h-[48px] hover:bg-brand-whatsapp hover:text-white transition-colors font-medium inline-flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
                 Prefere WhatsApp? Fale agora

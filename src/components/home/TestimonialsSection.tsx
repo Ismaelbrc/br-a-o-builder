@@ -31,41 +31,41 @@ const testimonials: Testimonial[] = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 md:py-24 bg-brand-gray-light">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-brand-gray-light">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionTitle 
           title="O que nossos clientes dizem"
           subtitle="A confiança de quem constrói com a BR Aço"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"
+              className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-100 shadow-sm"
             >
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-3 sm:mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star 
                     key={i} 
-                    className="w-5 h-5 fill-brand-orange text-brand-orange" 
+                    className="w-4 h-4 sm:w-5 sm:h-5 fill-brand-orange text-brand-orange" 
                   />
                 ))}
               </div>
 
               {/* Quote */}
               <div className="relative">
-                <span className="text-4xl text-brand-orange/20 font-serif absolute -top-2 -left-1">"</span>
+                <span className="text-3xl sm:text-4xl text-brand-orange/20 font-serif absolute -top-2 -left-1">"</span>
                 <p className="text-brand-gray-medium text-sm leading-relaxed italic pl-4">
                   {testimonial.text}
                 </p>
               </div>
 
               {/* Author */}
-              <div className="mt-6 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center">
-                  <span className="text-brand-orange font-bold">
+              <div className="mt-5 sm:mt-6 flex items-center gap-3">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-orange/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-brand-orange font-bold text-sm sm:text-base">
                     {testimonial.author.charAt(0)}
                   </span>
                 </div>
