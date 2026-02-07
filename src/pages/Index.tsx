@@ -4,6 +4,11 @@ import Layout from '@/components/Layout';
 import DifferentialsSection from '@/components/home/DifferentialsSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import ProductsSection from '@/components/home/ProductsSection';
+import StatsSection from '@/components/home/StatsSection';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
+import CtaBannerSection from '@/components/home/CtaBannerSection';
+import QuoteFormSection from '@/components/home/QuoteFormSection';
+import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 
 const Index = () => {
   const scrollToOrcamento = () => {
@@ -102,13 +107,20 @@ const Index = () => {
       {/* Produtos Section */}
       <ProductsSection />
 
-      {/* Placeholder para próximas seções */}
-      <section id="orcamento" className="py-20 bg-brand-gray-light">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-2xl font-bold text-brand-navy">Seção de Orçamento</h2>
-          <p className="text-brand-gray-medium mt-2">Será implementada no próximo prompt</p>
-        </div>
-      </section>
+      {/* Números Section */}
+      <StatsSection />
+
+      {/* Depoimentos Section */}
+      <TestimonialsSection />
+
+      {/* CTA Banner Section */}
+      <CtaBannerSection />
+
+      {/* Formulário de Orçamento Section */}
+      <QuoteFormSection />
+
+      {/* Blog Preview Section */}
+      <BlogPreviewSection />
     </Layout>
   );
 };
