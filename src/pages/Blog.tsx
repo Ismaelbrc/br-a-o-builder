@@ -3,32 +3,17 @@ import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowRight } from 'lucide-react';
+import { blogPosts, categories } from '@/data/blogPosts';
 
-const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Construção Civil', 'Dicas', 'Normas Técnicas'];
-
-const featuredPost = {
-  category: 'Corte e Dobra',
-  title: 'Vantagens do Corte e Dobra na construção civil',
-  date: '20 Jan 2026',
-  summary: 'Descubra como o serviço de corte e dobra pode reduzir custos e acelerar sua obra de forma significativa. Neste artigo, exploramos os principais benefícios da utilização de aço cortado e dobrado sob medida, desde a economia de mão de obra até a eliminação de desperdícios no canteiro.',
-};
-
-const posts = [
-  { id: 1, category: 'Corte e Dobra', title: 'Vantagens do Corte e Dobra na construção civil', date: '20 Jan 2026', summary: 'Descubra como o serviço de corte e dobra pode reduzir custos e acelerar sua obra de forma significativa.' },
-  { id: 2, category: 'Dicas', title: 'Como calcular a quantidade de aço para sua obra', date: '15 Jan 2026', summary: 'Guia prático para calcular vergalhões, malhas e treliças de forma eficiente e sem desperdício.' },
-  { id: 3, category: 'Normas Técnicas', title: 'Normas ABNT para vergalhões: o que você precisa saber', date: '10 Jan 2026', summary: 'Entenda os requisitos da NBR 7480 e como garantir segurança estrutural na sua construção.' },
-  { id: 4, category: 'Construção Civil', title: 'Melhores práticas para montagem de armaduras', date: '05 Jan 2026', summary: 'Técnicas e recomendações para uma montagem de armadura eficiente e segura.' },
-  { id: 5, category: 'Dicas', title: 'Treliças metálicas: vantagens na construção', date: '28 Dez 2025', summary: 'Conheça os benefícios das treliças metálicas e como elas podem otimizar sua obra.' },
-  { id: 6, category: 'Construção Civil', title: 'Como evitar recalques em sapatas de fundação', date: '20 Dez 2025', summary: 'Dicas essenciais para garantir a estabilidade das fundações da sua construção.' },
-];
+const featuredPost = blogPosts[0];
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('Todos');
   const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
 
   const filteredPosts = activeCategory === 'Todos' 
-    ? posts 
-    : posts.filter(post => post.category === activeCategory);
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === activeCategory);
 
   return (
     <Layout>
@@ -66,7 +51,7 @@ export default function Blog() {
                 {featuredPost.summary}
               </p>
               <Link 
-                to="#" 
+                to={`/blog/${featuredPost.slug}`}
                 className="inline-flex items-center gap-2 text-brand-orange font-medium mt-6 hover:underline"
               >
                 Ler artigo completo <ArrowRight className="w-4 h-4" />
@@ -114,7 +99,7 @@ export default function Blog() {
                   </p>
                   <div className="flex justify-between items-center mt-4 pt-4 border-t border-border">
                     <span className="text-xs text-brand-gray-medium">{post.date}</span>
-                    <Link to="#" className="text-sm text-brand-orange font-medium hover:underline">
+                    <Link to={`/blog/${post.slug}`} className="text-sm text-brand-orange font-medium hover:underline">
                       Ler mais →
                     </Link>
                   </div>
