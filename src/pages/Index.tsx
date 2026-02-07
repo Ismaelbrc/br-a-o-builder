@@ -74,8 +74,8 @@ const Index = () => {
 
           {/* Subtítulo */}
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
-            Produção 100% automatizada de aço para construção civil. 
-            Corte e dobra sob medida, vergalhões, treliças e malhas. 
+            Corte e dobra sob medida, vergalhões, treliças e malhas.
+            Produção 100% automatizada de aço para construção civil.
             Entrega em até 48h com certificação ABNT.
           </p>
 
