@@ -69,7 +69,7 @@ const Index = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl animate-fade-in-up animation-delay-100">
             Sua obra na{' '}
             <span className="text-brand-orange">velocidade</span>{' '}
-            que você precisa
+            máxima
           </h1>
 
           {/* Subtítulo */}
