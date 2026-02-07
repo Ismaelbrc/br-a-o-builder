@@ -14,11 +14,11 @@ const productLinks = [
 
 const navLinks = [
   { name: 'Home', href: '/' },
+  { name: 'Corte e Dobra', href: '/corte-e-dobra', highlight: true },
   { name: 'Sobre', href: '/sobre' },
   { name: 'Produtos', href: '/produtos', hasDropdown: true },
   { name: 'Galeria', href: '/galeria' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Contato', href: '/contato' },
 ];
 
 export default function Header() {
@@ -54,23 +54,48 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-lg'
-          : 'bg-white/95 backdrop-blur-md'
+          ? 'bg-background shadow-lg'
+          : 'bg-background/95 backdrop-blur-md'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src={logoImage} 
-              alt="BR.AÇO - Seus projetos na velocidade máxima" 
-              className="h-10 lg:h-12 w-auto"
-            />
-          </Link>
+      {/* Top bar with logo and CTA - Desktop */}
+      <div className="hidden lg:block border-b border-border">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo - larger */}
+            <Link to="/" className="flex items-center">
+              <img 
+                src={logoImage} 
+                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+                className="h-16 w-auto"
+              />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+            {/* Right side - user and CTA */}
+            <div className="flex items-center gap-4">
+              <Link
+                to="/cliente"
+                className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-accent transition-colors"
+                title="Área do Cliente"
+              >
+                <User className="w-5 h-5" />
+                <span className="text-sm">Área do Cliente</span>
+              </Link>
+              <button
+                onClick={scrollToOrcamento}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide"
+              >
+                Fale Conosco
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation bar - Desktop */}
+      <div className="hidden lg:block">
+        <div className="max-w-7xl mx-auto px-4">
+          <nav className="flex items-center gap-1 h-14">
             {navLinks.map((link) => (
               <div key={link.name} className="relative">
                 {link.hasDropdown ? (
@@ -116,7 +141,9 @@ export default function Header() {
                   <Link
                     to={link.href}
                     className={`px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide ${
-                      location.pathname === link.href
+                      link.highlight
+                        ? 'text-primary font-semibold'
+                        : location.pathname === link.href
                         ? 'text-primary'
                         : 'text-accent hover:text-primary'
                     }`}
@@ -127,32 +154,31 @@ export default function Header() {
               </div>
             ))}
           </nav>
+        </div>
+      </div>
 
-          {/* Desktop Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Link
-              to="/cliente"
-              className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-accent transition-colors"
-              title="Área do Cliente"
-            >
-              <User className="w-5 h-5" />
+      {/* Mobile Header */}
+      <div className="lg:hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <Link to="/" className="flex items-center">
+              <img 
+                src={logoImage} 
+                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+                className="h-10 w-auto"
+              />
             </Link>
+
+            {/* Mobile Menu Button - min 44x44 touch target */}
             <button
-              onClick={scrollToOrcamento}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-6 py-2.5 transition-colors uppercase tracking-wide"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center text-accent"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Menu"
             >
-              Fale Conosco
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
-
-          {/* Mobile Menu Button - min 44x44 touch target */}
-          <button
-            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center text-accent"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Menu"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
       </div>
 
@@ -202,7 +228,9 @@ export default function Header() {
                   ) : (
                     <Link
                       to={link.href}
-                      className="block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium text-accent"
+                      className={`block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium ${
+                        link.highlight ? 'text-primary' : 'text-accent'
+                      }`}
                     >
                       {link.name}
                     </Link>
