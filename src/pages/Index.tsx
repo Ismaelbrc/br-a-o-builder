@@ -73,7 +73,7 @@ const Index = () => {
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
+          <p className="text-base sm:text-lg md:text-xl text-white font-bold max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
             Corte e dobra sob medida, vergalhões, treliças e malhas.
             <br />
             Produção 100% automatizada de aço para construção civil.
