@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Instagram, Linkedin, Facebook } from 'lucide-react';
+import logoImage from '@/assets/logo-braco.png';
 
 const navigationLinks = [
   { name: 'Home', href: '/' },
@@ -28,18 +29,19 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-navy pt-12 pb-8 sm:pt-16">
+    <footer className="bg-accent pt-12 pb-8 sm:pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div>
             <Link to="/" className="inline-block">
-              <span className="text-2xl font-bold tracking-tight">
-                <span className="text-white">BR</span>
-                <span className="text-brand-orange">Aço</span>
-              </span>
+              <img 
+                src={logoImage} 
+                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+                className="h-12 w-auto brightness-0 invert"
+              />
             </Link>
-            <p className="text-sm text-gray-400 mt-3 max-w-xs">
+            <p className="text-sm text-accent-foreground/60 mt-3 max-w-xs">
               A maior indústria de aço para construção civil de Goiás
             </p>
             <div className="flex gap-3 mt-6">
