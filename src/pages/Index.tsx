@@ -67,15 +67,17 @@ const Index = () => {
 
           {/* Título H1 */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl animate-fade-in-up animation-delay-100">
-            Sua obra na{' '}
-            <span className="text-brand-orange">velocidade</span>{' '}
+            Seus projetos na{' '}
+            <span className="text-primary">velocidade</span>{' '}
             máxima
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mt-6 leading-relaxed animate-fade-in-up animation-delay-200">
             Corte e dobra sob medida, vergalhões, treliças e malhas.
+            <br />
             Produção 100% automatizada de aço para construção civil.
+            <br />
             Entrega em até 48h com certificação ABNT.
           </p>
 
