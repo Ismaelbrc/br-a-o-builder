@@ -5,6 +5,7 @@ import DifferentialsSection from '@/components/home/DifferentialsSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import ProductsSection from '@/components/home/ProductsSection';
 import StatsSection from '@/components/home/StatsSection';
+import ComparisonSection from '@/components/home/ComparisonSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
 import QuoteFormSection from '@/components/home/QuoteFormSection';
@@ -109,6 +110,9 @@ const Index = () => {
 
       {/* Números Section */}
       <StatsSection />
+
+      {/* Comparativo Section */}
+      <ComparisonSection />
 
       {/* Depoimentos Section */}
       <TestimonialsSection />
