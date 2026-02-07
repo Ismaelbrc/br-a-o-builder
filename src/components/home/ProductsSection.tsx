@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, Hammer, ArrowRight, LucideIcon } from 'lucide-react';
+import { Ruler, CircleDot, Pyramid, Grid2x2, Box, Wrench, ArrowRight, LucideIcon } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import productsBackground from '@/assets/products-background.jpg';
 
@@ -13,40 +13,40 @@ interface Product {
 
 const products: Product[] = [
   {
-    icon: Scissors,
+    icon: Ruler,
     name: "Corte e Dobra",
     description: "Aço sob medida. Reduza 50% da mão de obra e elimine desperdício.",
     link: "/corte-e-dobra",
     isHighlighted: true
   },
   {
-    icon: Columns3,
+    icon: CircleDot,
     name: "Vergalhões",
-    description: "Dentro da norma ABNT, qualidade superior para estruturas seguras.",
+    description: "CA-50 e CA-60 dentro da norma ABNT para estruturas seguras.",
     link: "/produtos#vergalhoes"
   },
   {
-    icon: Triangle,
+    icon: Pyramid,
     name: "Treliças",
-    description: "Reduzem custos de escoramento e organizam o canteiro de obras.",
+    description: "TR08 a TR30. Reduzem escoramento e agilizam a montagem de lajes.",
     link: "/produtos#trelicas"
   },
   {
-    icon: Grid3x3,
+    icon: Grid2x2,
     name: "Telas e Malhas Pop",
-    description: "Ideais para pisos industriais, pré-moldados e lajes.",
+    description: "Malhas soldadas para pisos, lajes e contenções com aplicação rápida.",
     link: "/produtos#telas-e-malhas-pop"
   },
   {
-    icon: LayoutGrid,
-    name: "Colunas",
-    description: "Mais produtividade na obra, sem amarração manual com arames.",
+    icon: Box,
+    name: "Colunas Prontas",
+    description: "Armação pronta para pilares. Zero amarração manual em obra.",
     link: "/produtos#colunas"
   },
   {
-    icon: Hammer,
+    icon: Wrench,
     name: "Pregos e Arames",
-    description: "Resistentes e prontos para aplicação direta em obras.",
+    description: "Arame recozido e pregos para formas e amarrações diversas.",
     link: "/produtos#pregos-e-arames"
   }
 ];
