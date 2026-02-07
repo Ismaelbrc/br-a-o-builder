@@ -1,4 +1,5 @@
 import { MessageCircle } from 'lucide-react';
+import ctaBackground from '@/assets/cta-background.jpg';
 
 const CtaBannerSection = () => {
   const scrollToOrcamento = () => {
@@ -11,8 +12,17 @@ const CtaBannerSection = () => {
   const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
-    <section className="pt-12 pb-8 sm:pt-16 sm:pb-10 md:pt-20 md:pb-12 bg-brand-orange">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <section 
+      className="relative pt-12 pb-8 sm:pt-16 sm:pb-10 md:pt-20 md:pb-12 overflow-hidden"
+    >
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${ctaBackground})` }}
+      />
+      {/* Orange Overlay */}
+      <div className="absolute inset-0 bg-brand-orange/85" />
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
           Pronto para acelerar sua obra?
         </h2>
