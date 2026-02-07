@@ -2,10 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, MessageCircle, ArrowRight } from 'lucide-react';
+import { ChevronRight, MessageCircle } from 'lucide-react';
 import { blogPosts, categories } from '@/data/blogPosts';
-
-const featuredPost = blogPosts[0];
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('Todos');
@@ -33,34 +31,8 @@ export default function Blog() {
       {/* Content */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Featured Post */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <div 
-              className="h-64 lg:h-auto rounded-2xl"
-              style={{ background: 'linear-gradient(135deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand-orange) / 0.6) 100%)' }}
-            />
-            <div className="flex flex-col justify-center">
-              <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">
-                {featuredPost.category}
-              </span>
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy mt-2">
-                {featuredPost.title}
-              </h2>
-              <p className="text-sm text-brand-gray-medium mt-2">{featuredPost.date}</p>
-              <p className="text-brand-gray-medium mt-4 leading-relaxed">
-                {featuredPost.summary}
-              </p>
-              <Link 
-                to={`/blog/${featuredPost.slug}`}
-                className="inline-flex items-center gap-2 text-brand-orange font-medium mt-6 hover:underline"
-              >
-                Ler artigo completo <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-
           {/* Category Filters */}
-          <div className="flex flex-wrap gap-2 mt-12 mb-8">
+          <div className="flex flex-wrap gap-2 mb-8">
             {categories.map((category) => (
               <button
                 key={category}
