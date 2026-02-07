@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, CircleDot, Square, Hammer, ArrowRight, LucideIcon } from 'lucide-react';
+import { Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, Hammer, ArrowRight, LucideIcon } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 
 interface Product {
@@ -32,27 +32,15 @@ const products: Product[] = [
   },
   {
     icon: Grid3x3,
-    name: "Malhas",
+    name: "Telas e Malhas Pop",
     description: "Ideais para pisos industriais, pré-moldados e lajes.",
-    link: "/produtos#malhas"
+    link: "/produtos#telas-e-malhas-pop"
   },
   {
     icon: LayoutGrid,
-    name: "Telas e Colunas",
+    name: "Colunas",
     description: "Mais produtividade na obra, sem amarração manual com arames.",
-    link: "/produtos#telas-e-colunas"
-  },
-  {
-    icon: CircleDot,
-    name: "Bobinas",
-    description: "Alta resistência, aderência ao concreto e leveza estrutural.",
-    link: "/produtos#bobinas"
-  },
-  {
-    icon: Square,
-    name: "Sapatas",
-    description: "Fundação essencial para bases sólidas e duráveis.",
-    link: "/produtos#sapatas"
+    link: "/produtos#colunas"
   },
   {
     icon: Hammer,

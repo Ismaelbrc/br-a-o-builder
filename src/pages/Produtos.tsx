@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { 
   Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, 
-  CircleDot, Square, Hammer, MessageCircle, FileText,
+  Hammer, MessageCircle, FileText,
   ChevronRight
 } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
@@ -51,40 +51,22 @@ const products: Product[] = [
     whatsappMsg: "Olá! Tenho interesse em Treliças. Poderia me enviar um orçamento?"
   },
   {
-    id: "malhas",
+    id: "telas-e-malhas-pop",
     icon: Grid3x3,
     badge: "ALTA PRODUTIVIDADE",
-    title: "Malhas",
+    title: "Telas e Malhas Pop",
     description: "Ideais para pisos industriais, estruturas pré-moldadas e lajes. Produzidas em aço CA-60 nervurado e soldado em todos os pontos de cruzamento, proporcionando distribuição uniforme de cargas.",
     applications: ["Pisos industriais", "Lajes", "Pré-moldados", "Paredes de concreto armado"],
-    whatsappMsg: "Olá! Tenho interesse em Malhas. Poderia me enviar um orçamento?"
+    whatsappMsg: "Olá! Tenho interesse em Telas e Malhas Pop. Poderia me enviar um orçamento?"
   },
   {
-    id: "telas-e-colunas",
+    id: "colunas",
     icon: LayoutGrid,
     badge: "PRATICIDADE",
-    title: "Telas e Colunas",
+    title: "Colunas",
     description: "Aumentam significativamente a produtividade da obra e eliminam a necessidade de amarração manual com arames. Proporcionam estruturas mais leves e aderentes ao concreto.",
     applications: ["Lajes", "Pisos", "Muros", "Estruturas de concreto", "Reforço estrutural"],
-    whatsappMsg: "Olá! Tenho interesse em Telas e Colunas. Poderia me enviar um orçamento?"
-  },
-  {
-    id: "bobinas",
-    icon: CircleDot,
-    badge: "ALTA RESISTÊNCIA",
-    title: "Bobinas",
-    description: "Aço de alta resistência que garante excelente aderência ao concreto e leveza estrutural. Ideal para projetos que exigem versatilidade e resistência mecânica superior.",
-    applications: ["Armaduras especiais", "Indústria", "Estruturas de grande porte"],
-    whatsappMsg: "Olá! Tenho interesse em Bobinas. Poderia me enviar um orçamento?"
-  },
-  {
-    id: "sapatas",
-    icon: Square,
-    badge: "FUNDAÇÃO",
-    title: "Sapatas",
-    description: "Elemento de fundação superficial essencial para bases sólidas e duráveis em qualquer tipo de construção. Fornecidas prontas, conforme o projeto estrutural, para agilizar a fase de fundação.",
-    applications: ["Fundações residenciais", "Comerciais", "Industriais", "Loteamentos"],
-    whatsappMsg: "Olá! Tenho interesse em Sapatas. Poderia me enviar um orçamento?"
+    whatsappMsg: "Olá! Tenho interesse em Colunas. Poderia me enviar um orçamento?"
   },
   {
     id: "pregos-e-arames",
