@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, Hammer, ArrowRight, LucideIcon } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
+import productsBackground from '@/assets/products-background.jpg';
 
 interface Product {
   icon: LucideIcon;
@@ -52,8 +53,16 @@ const products: Product[] = [
 
 const ProductsSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${productsBackground})` }}
+      />
+      {/* Light Overlay */}
+      <div className="absolute inset-0 bg-background/95" />
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <SectionTitle 
           title="Soluções Completas em Aço" 
           subtitle="Do vergalhão à sapata, tudo o que sua obra precisa com a qualidade BR Aço" 
