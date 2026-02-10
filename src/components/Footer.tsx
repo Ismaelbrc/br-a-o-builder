@@ -38,7 +38,7 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="BR.AÇO - Seus projetos na velocidade máxima" 
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
             <p className="text-sm text-muted-foreground mt-3 max-w-xs">
