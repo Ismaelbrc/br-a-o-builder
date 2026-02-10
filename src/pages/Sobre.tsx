@@ -15,6 +15,7 @@ import {
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import StatsSection from '@/components/home/StatsSection';
+import aboutHero from '@/assets/about-hero.png';
 
 // Timeline data
 const timelineItems = [
@@ -116,33 +117,47 @@ export default function Sobre() {
 
       {/* Manifesto Section */}
       <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-xl md:text-2xl text-brand-gray-dark leading-relaxed font-light">
-            "Nós nascemos do aço — mas o que nos move é o progresso."
-          </p>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="flex justify-center">
+              <img 
+                src={aboutHero} 
+                alt="Logo BR Aço com vergalhões e faíscas" 
+                className="w-full max-w-sm rounded-2xl shadow-xl"
+              />
+            </div>
 
-          <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-            Não somos apenas uma indústria: somos uma força que transforma o concreto 
-            em conquista, a estrutura em segurança, o projeto em realização.
-          </p>
+            {/* Text */}
+            <div className="text-center md:text-left">
+              <p className="text-xl md:text-2xl text-brand-gray-dark leading-relaxed font-light">
+                "Nós nascemos do aço — mas o que nos move é o progresso."
+              </p>
 
-          <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-            Fomos forjados na crise, lapidados na adversidade e hoje nos posicionamos 
-            como a maior indústria de aço para construção civil em Goiás. Porque não 
-            basta crescer — é preciso erguer juntos.
-          </p>
+              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
+                Não somos apenas uma indústria: somos uma força que transforma o concreto 
+                em conquista, a estrutura em segurança, o projeto em realização.
+              </p>
 
-          <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-            Aceleramos obras. Eliminamos desperdícios. Otimizamos mão de obra. 
-            Democratizamos o acesso à alta performance na construção. E fazemos tudo 
-            isso com engenharia, automação, rastreabilidade e alma.
-          </p>
+              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
+                Fomos forjados na crise, lapidados na adversidade e hoje nos posicionamos 
+                como a maior indústria de aço para construção civil em Goiás. Porque não 
+                basta crescer — é preciso erguer juntos.
+              </p>
 
-          <p className="mt-10 text-3xl md:text-4xl font-bold text-brand-orange leading-tight">
-            "Entregamos confiança, velocidade e inovação."
-          </p>
+              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
+                Aceleramos obras. Eliminamos desperdícios. Otimizamos mão de obra. 
+                Democratizamos o acesso à alta performance na construção. E fazemos tudo 
+                isso com engenharia, automação, rastreabilidade e alma.
+              </p>
 
-          <div className="w-20 h-1 bg-brand-orange mx-auto mt-6 rounded-full" />
+              <p className="mt-10 text-3xl md:text-4xl font-bold text-brand-orange leading-tight">
+                "Entregamos confiança, velocidade e inovação."
+              </p>
+
+              <div className="w-20 h-1 bg-brand-orange mt-6 rounded-full md:mx-0 mx-auto" />
+            </div>
+          </div>
         </div>
       </section>
 
