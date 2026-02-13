@@ -17,8 +17,9 @@ import {
   Scissors, MessageCircle, Upload, FileCheck, PackageCheck,
   TrendingDown, Recycle, Target, Truck, Wallet, ClipboardCheck,
   Tag, HardHat, ChevronDown, CheckCircle, Send, ChevronRight,
-  LucideIcon
+  LucideIcon, Wrench, ShieldCheck, Layers
 } from 'lucide-react';
+import frotaImage from '@/assets/frota-propria.jpg';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
@@ -507,6 +508,163 @@ const FinalCtaForm = () => {
   );
 };
 
+// ═══ CDA SECTION ═══
+const CdaSection = () => {
+  const whatsappCda = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%2C%20Dobra%20e%20Armação%20(CDA).%20Poderia%20me%20enviar%20um%20orçamento?";
+
+  return (
+    <section className="py-20 md:py-24 bg-brand-gray-light">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left - Text */}
+          <div>
+            <span className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full">
+              ★ Serviço Premium
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mt-4">
+              Corte, Dobra e <span className="text-primary">Armação (CDA)</span>
+            </h2>
+            <p className="text-lg text-brand-gray-medium mt-4 leading-relaxed">
+              Vai além do corte e dobra simples: as peças chegam na sua obra <strong className="text-brand-navy">amarradas ou soldadas, prontas para concretar</strong>. O elemento estrutural é montado inteiro na fábrica — pilares, vigas, sapatas — e entregue pronto para ser colocado na forma.
+            </p>
+
+            <div className="mt-8 space-y-4">
+              {[
+                { icon: Layers, title: "Peças 100% montadas", desc: "Elementos estruturais completos: armados, amarrados e soldados conforme projeto." },
+                { icon: ShieldCheck, title: "Pronto para concretar", desc: "Sua equipe só precisa posicionar na forma. Zero amarração manual em obra." },
+                { icon: Wrench, title: "Acompanhamento técnico", desc: "Engenheiros acompanham todo o processo: planilhamento, produção e entrega." },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-brand-navy">{item.title}</h4>
+                      <p className="text-sm text-brand-gray-medium mt-0.5">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6">
+              <a href={whatsappCda} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Solicitar Orçamento CDA
+              </a>
+            </Button>
+          </div>
+
+          {/* Right - Comparison */}
+          <div className="space-y-4">
+            <div className="bg-background rounded-2xl p-8 border border-border">
+              <h4 className="text-sm font-semibold text-brand-gray-medium uppercase tracking-wider mb-4">CD — Corte e Dobra</h4>
+              <ul className="space-y-3">
+                {["Peças cortadas e dobradas sob medida", "Identificadas por etapa e tipo", "Equipe de obra faz a amarração"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-brand-gray-medium text-sm">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-brand-navy rounded-2xl p-8 border-2 border-primary relative overflow-hidden">
+              <div className="absolute top-3 right-3 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
+                RECOMENDADO
+              </div>
+              <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">CDA — Corte, Dobra e Armação</h4>
+              <ul className="space-y-3">
+                {[
+                  "Tudo do CD +",
+                  "Peças amarradas ou soldadas",
+                  "Elementos prontos para concretar",
+                  "Zero mão de obra de armação na obra",
+                  "Acompanhamento técnico da fábrica à obra"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-300 text-sm">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ═══ FROTA PRÓPRIA SECTION ═══
+const FrotaSection = () => {
+  const regions = [
+    "Goiânia e Região Metropolitana",
+    "Interior de Goiás",
+    "Tocantins",
+    "Distrito Federal",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Oeste do Triângulo Mineiro",
+  ];
+
+  return (
+    <section className="py-20 md:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left - Image */}
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={frotaImage}
+              alt="Frota própria BR Aço - caminhões para entrega de aço"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
+          {/* Right - Text */}
+          <div>
+            <SectionTitle
+              title="Frota Própria"
+              subtitle="Entregamos com agilidade, pontualidade e segurança direto no seu canteiro"
+            />
+
+            <p className="text-brand-gray-medium mt-4 leading-relaxed">
+              Nossos veículos são preparados para transportar todos os produtos com segurança, 
+              atendendo as necessidades técnicas da sua obra. Controle total da logística — 
+              sem depender de terceiros.
+            </p>
+
+            <div className="mt-8">
+              <h4 className="text-sm font-semibold text-brand-navy uppercase tracking-wider mb-4">
+                Regiões de entrega
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {regions.map((region) => (
+                  <span
+                    key={region}
+                    className="bg-primary/10 text-primary text-sm font-medium px-4 py-2 rounded-full"
+                  >
+                    {region}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 mt-8 p-4 bg-brand-gray-light rounded-xl">
+              <Truck className="w-10 h-10 text-primary flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-brand-navy">Entrega programada</p>
+                <p className="text-sm text-brand-gray-medium">Conforme o cronograma da sua obra, sem atrasos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
   return (
@@ -514,8 +672,10 @@ export default function CorteEDobra() {
       <HeroSection />
       <HowItWorksCD />
       <AdvantagesSection />
+      <CdaSection />
       <ApplicationsSection />
       <CtaMidSection />
+      <FrotaSection />
       <StatsCD />
       <FaqSection />
       <FinalCtaForm />
