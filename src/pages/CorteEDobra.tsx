@@ -22,7 +22,7 @@ import {
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
   
   const scrollToForm = () => {
     document.getElementById('orcamento-cd')?.scrollIntoView({ behavior: 'smooth' });

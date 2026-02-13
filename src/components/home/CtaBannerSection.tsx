@@ -9,7 +9,7 @@ const CtaBannerSection = () => {
     }
   };
 
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
     <section 
