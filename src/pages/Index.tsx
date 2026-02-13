@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
 import QuoteFormSection from '@/components/home/QuoteFormSection';
 import BlogPreviewSection from '@/components/home/BlogPreviewSection';
+import PartnersSection from '@/components/home/PartnersSection';
 import heroFallback from '@/assets/hero-warehouse.png';
 
 const Index = () => {
@@ -145,6 +146,9 @@ const Index = () => {
 
       {/* Depoimentos Section */}
       <TestimonialsSection />
+
+      {/* Parceiros Section */}
+      <PartnersSection />
 
       {/* CTA Banner Section */}
       <CtaBannerSection />

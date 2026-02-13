@@ -16,7 +16,7 @@ import {
 import { useToast } from '@/hooks/use-toast';
 import { 
   ChevronRight, MessageCircle, Mail, MapPin, Clock, 
-  Send, Instagram, Linkedin, Facebook 
+  Send, Instagram, Linkedin 
 } from 'lucide-react';
 
 const contactCards = [
@@ -26,9 +26,9 @@ const contactCards = [
     iconColor: 'text-brand-whatsapp',
     hoverBorder: 'hover:border-brand-whatsapp',
     title: 'WhatsApp',
-    text: '(62) 98285-8558',
+    text: '(62) 99924-7285',
     subtext: 'Atendimento rápido e direto',
-    href: 'https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.',
+    href: 'https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.',
   },
   {
     icon: Mail,
@@ -46,8 +46,8 @@ const contactCards = [
     iconColor: 'text-brand-orange',
     hoverBorder: 'hover:border-brand-orange',
     title: 'Endereço',
-    text: 'Via Primária Oito, DAIAG',
-    subtext: 'Aparecida de Goiânia - GO, 74900-000',
+    text: 'R. 11, Quadra 05 - Lote 07 - Polo Industrial',
+    subtext: 'Aparecida de Goiânia - GO, 74985-235',
   },
   {
     icon: Clock,
@@ -190,7 +190,7 @@ export default function Contato() {
                 </h4>
                 <div className="flex gap-3">
                   <a 
-                    href="https://instagram.com/braco" 
+                    href="https://www.instagram.com/grupobraco_/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-brand-gray-light flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors text-brand-gray-medium"
@@ -198,20 +198,12 @@ export default function Contato() {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a 
-                    href="https://linkedin.com/company/braco" 
+                    href="https://br.linkedin.com/company/grupobraco" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-brand-gray-light flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors text-brand-gray-medium"
                   >
                     <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a 
-                    href="https://facebook.com/braco" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-brand-gray-light flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors text-brand-gray-medium"
-                  >
-                    <Facebook className="w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -356,7 +348,7 @@ export default function Contato() {
               </div>
             </div>
             <p className="text-center text-brand-gray-medium mt-4">
-              Via Primária Oito, DAIAG — Aparecida de Goiânia - GO
+              R. 11, Quadra 05 - Lote 07 - Polo Industrial — Aparecida de Goiânia - GO
             </p>
           </div>
         </div>

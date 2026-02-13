@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram, Linkedin } from 'lucide-react';
 import logoImage from '@/assets/logo-footer.png';
 
 const navigationLinks = [
@@ -24,7 +24,7 @@ const productLinks = [
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/grupobraco_/' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://br.linkedin.com/company/grupobraco' },
-  { name: 'Facebook', icon: Facebook, href: '#' },
+  { name: 'Google', icon: MapPin, href: 'https://share.google/zAqVF572NlwODojXo' },
 ];
 
 export default function Footer() {
@@ -106,13 +106,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
+                  href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-muted-foreground text-sm hover:text-foreground transition-colors"
                 >
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>WhatsApp: (62) 98285-8558</span>
+                  <span>WhatsApp: (62) 99924-7285</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
@@ -121,7 +121,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Via Primária Oito, DAIAG, Aparecida de Goiânia - GO, 74900-000</span>
+                <span>R. 11, Quadra 05 - Lote 07 - Polo Industrial, Aparecida de Goiânia - GO, 74985-235</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -136,12 +136,6 @@ export default function Footer() {
           <p className="text-muted-foreground text-xs">
             © 2026 BR Aço — Grupo BR Aço. Todos os direitos reservados.
           </p>
-          <a
-            href="#"
-            className="text-muted-foreground text-xs hover:text-foreground transition-colors"
-          >
-            Política de Privacidade
-          </a>
         </div>
       </div>
     </footer>

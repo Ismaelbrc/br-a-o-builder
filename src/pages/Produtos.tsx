@@ -82,8 +82,8 @@ const products: Product[] = [
 const ProductSection = ({ product, index }: { product: Product; index: number }) => {
   const Icon = product.icon;
   const isEven = index % 2 === 0;
-  const whatsappUrl = `https://wa.me/5562982858558?text=${encodeURIComponent(product.whatsappMsg)}`;
-  const genericWhatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista.";
+  const whatsappUrl = `https://wa.me/5562999247285?text=${encodeURIComponent(product.whatsappMsg)}`;
+  const genericWhatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista.";
 
   const imageSection = (
     <div className="h-64 md:h-80 rounded-2xl bg-brand-gray-light flex items-center justify-center">
@@ -168,7 +168,7 @@ const ProductSection = ({ product, index }: { product: Product; index: number })
 };
 
 export default function Produtos() {
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20Aço.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20Aço.";
 
   return (
     <Layout>

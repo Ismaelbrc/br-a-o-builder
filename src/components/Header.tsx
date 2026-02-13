@@ -19,6 +19,7 @@ const navLinks = [
   { name: 'Produtos', href: '/produtos', hasDropdown: true },
   { name: 'Galeria', href: '/galeria' },
   { name: 'Blog', href: '/blog' },
+  { name: 'Catálogo', href: '/catalogo-braco.pdf', isExternal: true },
 ];
 
 export default function Header() {
@@ -137,6 +138,15 @@ export default function Header() {
                       </div>
                     )}
                   </div>
+                ) : (link as any).isExternal ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide text-accent hover:text-primary"
+                  >
+                    {link.name}
+                  </a>
                 ) : (
                   <Link
                     to={link.href}
@@ -225,6 +235,15 @@ export default function Header() {
                         </div>
                       )}
                     </div>
+                  ) : (link as any).isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium text-accent"
+                    >
+                      {link.name}
+                    </a>
                   ) : (
                     <Link
                       to={link.href}
