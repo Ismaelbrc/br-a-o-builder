@@ -8,6 +8,7 @@ const navigationLinks = [
   { name: 'Produtos', href: '/produtos' },
   { name: 'Corte e Dobra', href: '/corte-e-dobra' },
   { name: 'Blog', href: '/blog' },
+  { name: 'FAQ', href: '/faq' },
   { name: 'Contato', href: '/contato' },
   { name: 'Área do Cliente', href: '/cliente' },
 ];
