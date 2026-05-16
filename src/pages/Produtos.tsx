@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+﻿import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { 
@@ -168,6 +169,26 @@ const ProductSection = ({ product, index }: { product: Product; index: number })
 };
 
 export default function Produtos() {
+  const { hash } = useLocation();
+
+  // Scroll to product section when navigating with hash (#vergalhoes, #trelicas etc.)
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace('#', '');
+      const attempt = (tries: number) => {
+        const el = document.getElementById(id);
+        if (el) {
+          const top = el.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({ top, behavior: 'smooth' });
+        } else if (tries > 0) {
+          setTimeout(() => attempt(tries - 1), 150);
+        }
+      };
+      setTimeout(() => attempt(5), 100);
+    } else {
+      window.scrollTo({ top: 0 });
+    }
+  }, [hash]);
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20Aço.";
 
   return (
