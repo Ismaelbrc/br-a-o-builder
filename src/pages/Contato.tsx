@@ -56,7 +56,7 @@ const contactCards = [
     hoverBorder: 'hover:border-brand-navy',
     title: 'Horário',
     text: 'Segunda a Sexta: 7h às 17h',
-    subtext: 'Sábado: 7h às 11h',
+    subtext: '',
   },
 ];
 
