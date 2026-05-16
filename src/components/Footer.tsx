@@ -118,7 +118,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>contato@grupobraco.com.br</span>
+                <span>vendas@grupobraco.com.br</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
