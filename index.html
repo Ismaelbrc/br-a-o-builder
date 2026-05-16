@@ -7,17 +7,27 @@
     <title>BR Aço</title>
     <meta name="description" content="BR Aço — Corte e dobra sob medida, vergalhões, treliças e malhas. Entrega em até 48h com certificação ABNT." />
     <meta name="author" content="BR Aço" />
-
     <meta property="og:title" content="BR Aço" />
     <meta property="og:description" content="Produção 100% automatizada de aço para construção civil. Entrega em até 48h." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://grupobraco.com.br" />
     <meta property="og:image" content="https://grupobraco.com.br/favicon.png" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://grupobraco.com.br/favicon.png" />
+    <script>
+      // Restore path from 404.html redirect (GitHub Pages SPA trick)
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
