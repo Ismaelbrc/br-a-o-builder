@@ -2,16 +2,23 @@
 import { Link, useLocation } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { 
-  Scissors, Columns3, Triangle, Grid3x3, LayoutGrid, 
+import {
+  Scissors, Columns3, Triangle, Grid3x3, LayoutGrid,
   Hammer, MessageCircle, FileText,
   ChevronRight
 } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
+import imgCorteEDobra from '@/assets/products/corte-e-dobra.jpg';
+import imgVergalhoes from '@/assets/products/vergalhoes.jpg';
+import imgTrelicas from '@/assets/products/trelicas.jpg';
+import imgTelasMalhas from '@/assets/products/telas-malhas.jpg';
+import imgColunas from '@/assets/products/colunas.jpg';
+import imgPregosArames from '@/assets/products/pregos-arames.jpg';
 
 interface Product {
   id: string;
   icon: LucideIcon;
+  image: string;
   badge: string;
   badgeHighlight?: boolean;
   title: string;
@@ -25,6 +32,7 @@ const products: Product[] = [
   {
     id: "corte-e-dobra-section",
     icon: Scissors,
+    image: imgCorteEDobra,
     badge: "★ CARRO-CHEFE",
     badgeHighlight: true,
     title: "Corte e Dobra",
@@ -36,6 +44,7 @@ const products: Product[] = [
   {
     id: "vergalhoes",
     icon: Columns3,
+    image: imgVergalhoes,
     badge: "ABNT NBR 7480",
     title: "Vergalhões",
     description: "Produzidos rigorosamente dentro das normas da ABNT, nossos vergalhões garantem qualidade superior e segurança estrutural em obras de todos os portes. Disponíveis nas classes CA-25, CA-50 e CA-60, com certificado de qualidade.",
@@ -45,6 +54,7 @@ const products: Product[] = [
   {
     id: "trelicas",
     icon: Triangle,
+    image: imgTrelicas,
     badge: "REDUÇÃO DE CUSTOS",
     title: "Treliças",
     description: "Reduzem custos de escoramento e promovem maior organização no canteiro de obras. Fabricadas em aço CA-60 nervurado, garantem melhor aderência ao concreto e simplificam a montagem de armaduras.",
@@ -54,6 +64,7 @@ const products: Product[] = [
   {
     id: "telas-e-malhas-pop",
     icon: Grid3x3,
+    image: imgTelasMalhas,
     badge: "ALTA PRODUTIVIDADE",
     title: "Telas e Malhas Pop",
     description: "Ideais para pisos industriais, estruturas pré-moldadas e lajes. Produzidas em aço CA-60 nervurado e soldado em todos os pontos de cruzamento, proporcionando distribuição uniforme de cargas.",
@@ -63,6 +74,7 @@ const products: Product[] = [
   {
     id: "colunas",
     icon: LayoutGrid,
+    image: imgColunas,
     badge: "PRATICIDADE",
     title: "Colunas",
     description: "Aumentam significativamente a produtividade da obra e eliminam a necessidade de amarração manual com arames. Proporcionam estruturas mais leves e aderentes ao concreto.",
@@ -72,6 +84,7 @@ const products: Product[] = [
   {
     id: "pregos-e-arames",
     icon: Hammer,
+    image: imgPregosArames,
     badge: "ESSENCIAIS",
     title: "Pregos e Arames",
     description: "Fabricados com composição química adequada que garante resistência durante o uso. Prontos para aplicação direta em obras, disponíveis em diversos modelos e tamanhos.",
@@ -87,8 +100,12 @@ const ProductSection = ({ product, index }: { product: Product; index: number })
   const genericWhatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista.";
 
   const imageSection = (
-    <div className="h-64 md:h-80 rounded-2xl bg-brand-gray-light flex items-center justify-center">
-      <Icon className="w-20 h-20 text-brand-navy/20" />
+    <div className="h-64 md:h-80 rounded-2xl overflow-hidden">
+      <img
+        src={product.image}
+        alt={product.title}
+        className="w-full h-full object-cover"
+      />
     </div>
   );
 
