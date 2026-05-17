@@ -1,5 +1,6 @@
 import { MessageCircle } from 'lucide-react';
 import ctaBackground from '@/assets/cta-background.jpg';
+import { analytics } from '@/lib/analytics';
 
 const CtaBannerSection = () => {
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
@@ -29,6 +30,7 @@ const CtaBannerSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-orange font-semibold rounded-full px-6 sm:px-8 py-4 hover:bg-gray-100 shadow-lg transition-colors"
+            onClick={() => analytics.whatsappClick('cta-banner')}
           >
             <MessageCircle className="w-5 h-5" />
             Falar no WhatsApp
