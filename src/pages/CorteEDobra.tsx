@@ -3,23 +3,14 @@ import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { useToast } from '@/hooks/use-toast';
 import {
   Scissors, MessageCircle, Upload, FileCheck, PackageCheck,
   TrendingDown, Recycle, Target, Truck, Wallet, ClipboardCheck,
-  Tag, HardHat, ChevronDown, CheckCircle, Send, ChevronRight,
-  LucideIcon, Wrench, ShieldCheck, Layers
+  Tag, HardHat, ChevronDown, CheckCircle, ChevronRight,
+  LucideIcon, Wrench, ShieldCheck, Layers, Zap
 } from 'lucide-react';
 import frotaImage from '@/assets/frota-propria.jpg';
+import { analytics } from '@/lib/analytics';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
@@ -75,7 +66,7 @@ const HeroSection = () => {
                 asChild
                 className="text-white border border-white/30 hover:bg-white hover:text-brand-navy rounded-full px-8 py-6"
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => analytics.whatsappClick('cda-hero')}>
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Falar no WhatsApp
                 </a>
@@ -92,9 +83,25 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right - Visual */}
-          <div className="hidden lg:flex h-80 rounded-2xl bg-white/5 border border-white/10 items-center justify-center">
-            <Scissors className="w-32 h-32 text-white/10" />
+          {/* Right - Stats Grid */}
+          <div className="hidden lg:block bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-80">
+            <div className="grid grid-cols-2 gap-4 h-full">
+              {[
+                { icon: Scissors, value: 'Corte e Dobra', label: 'Produção 100% automatizada' },
+                { icon: Truck,    value: '+7 estados',    label: 'Cobertura de entrega' },
+                { icon: ShieldCheck, value: 'ABNT NBR 7480', label: 'Certificação garantida' },
+                { icon: Zap,      value: '48h',           label: 'Para projetos expressos' },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="bg-white/5 rounded-xl p-4 flex flex-col justify-center">
+                    <Icon className="w-7 h-7 text-brand-orange mb-2" />
+                    <p className="text-white font-bold text-base leading-tight">{item.value}</p>
+                    <p className="text-gray-400 text-xs mt-0.5">{item.label}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -376,132 +383,47 @@ const FaqSection = () => {
   );
 };
 
-// ═══ FINAL CTA FORM ═══
-const FinalCtaForm = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    nome: '',
-    whatsapp: '',
-    cidade: '',
-    tipoObra: '',
-    mensagem: '',
-  });
-  const [errors, setErrors] = useState<Record<string, boolean>>({});
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const newErrors: Record<string, boolean> = {};
-    if (!formData.nome.trim()) newErrors.nome = true;
-    if (!formData.whatsapp.trim()) newErrors.whatsapp = true;
-    
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
-    toast({
-      title: "✓ Orçamento enviado com sucesso!",
-      description: "Entraremos em contato em breve.",
-      duration: 5000,
-    });
-
-    setFormData({ nome: '', whatsapp: '', cidade: '', tipoObra: '', mensagem: '' });
-    setErrors({});
-  };
-
-  const benefits = [
-    "Orçamento em até 24h",
-    "Sem compromisso",
-    "Atendimento técnico especializado",
-    "Parcelamento em até 10x",
-  ];
+// ═══ FINAL CTA WHATSAPP ═══
+const FinalCtaSection = () => {
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
 
   return (
     <section id="orcamento-cd" className="py-20 md:py-24 bg-brand-navy">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Motivational */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Não perca mais tempo e dinheiro na obra
-            </h2>
-            <p className="text-gray-300 mt-4 text-lg">
-              Solicite agora um orçamento de Corte e Dobra e descubra quanto você pode economizar na sua próxima obra.
-            </p>
-            <div className="flex flex-col gap-3 mt-6">
-              {benefits.map((benefit, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-brand-orange flex-shrink-0" />
-                  <span className="text-white text-sm">{benefit}</span>
+      <div className="max-w-3xl mx-auto px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          Solicite seu orçamento agora
+        </h2>
+        <p className="text-gray-300 mt-3 text-lg">
+          Resposta em até 24h&nbsp;•&nbsp;Sem compromisso&nbsp;•&nbsp;Atendimento técnico
+        </p>
+
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => analytics.whatsappClick('cda-final')}
+          className="mt-8 inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl shadow-lg shadow-green-500/25 transition-colors"
+        >
+          <MessageCircle className="w-6 h-6" />
+          Falar no WhatsApp — Orçamento Grátis
+        </a>
+
+        <div className="flex justify-center gap-8 md:gap-16 mt-10">
+          {[
+            { icon: Upload,      label: 'Mande a planta' },
+            { icon: Zap,         label: 'Orçamento em 24h' },
+            { icon: Truck,       label: 'Entrega programada' },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div key={i} className="flex flex-col items-center gap-2">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <Icon className="w-5 h-5 text-white" />
                 </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Right - Form */}
-          <div className="bg-background rounded-2xl p-8 shadow-xl">
-            <h3 className="text-xl font-bold text-brand-navy mb-6">Orçamento Rápido</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <Input
-                  placeholder="Nome completo *"
-                  value={formData.nome}
-                  onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
-                  className={`rounded-xl py-3 ${errors.nome ? 'border-red-500' : ''}`}
-                />
+                <span className="text-gray-300 text-sm text-center">{item.label}</span>
               </div>
-              <div>
-                <Input
-                  placeholder="WhatsApp *"
-                  value={formData.whatsapp}
-                  onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                  className={`rounded-xl py-3 ${errors.whatsapp ? 'border-red-500' : ''}`}
-                />
-              </div>
-              <div>
-                <Input
-                  placeholder="Cidade"
-                  value={formData.cidade}
-                  onChange={(e) => setFormData({ ...formData, cidade: e.target.value })}
-                  className="rounded-xl py-3"
-                />
-              </div>
-              <div>
-                <Select value={formData.tipoObra} onValueChange={(value) => setFormData({ ...formData, tipoObra: value })}>
-                  <SelectTrigger className="rounded-xl py-3">
-                    <SelectValue placeholder="Tipo de obra" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="residencial">Residencial</SelectItem>
-                    <SelectItem value="comercial">Comercial</SelectItem>
-                    <SelectItem value="industrial">Industrial</SelectItem>
-                    <SelectItem value="loteamento">Loteamento</SelectItem>
-                    <SelectItem value="outro">Outro</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Descreva brevemente sua obra..."
-                  rows={3}
-                  value={formData.mensagem}
-                  onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
-                  className="rounded-xl"
-                />
-              </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-xl py-4 text-lg"
-              >
-                <Send className="w-5 h-5 mr-2" />
-                Solicitar Orçamento de Corte e Dobra
-              </Button>
-              <p className="text-xs text-muted-foreground text-center mt-3">
-                Seus dados estão seguros. Não compartilhamos suas informações.
-              </p>
-            </form>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -550,7 +472,7 @@ const CdaSection = () => {
             </div>
 
             <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6">
-              <a href={whatsappCda} target="_blank" rel="noopener noreferrer">
+              <a href={whatsappCda} target="_blank" rel="noopener noreferrer" onClick={() => analytics.whatsappClick('cda-premium')}>
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Solicitar Orçamento CDA
               </a>
@@ -678,7 +600,7 @@ export default function CorteEDobra() {
       <FrotaSection />
       <StatsCD />
       <FaqSection />
-      <FinalCtaForm />
+      <FinalCtaSection />
     </Layout>
   );
 }
