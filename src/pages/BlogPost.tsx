@@ -6,6 +6,182 @@ import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-re
 import { blogPosts } from '@/data/blogPosts';
 import { useSEO } from '@/hooks/useSEO';
 
+// ─── Markdown content renderer ────────────────────────────────────────────────
+
+type Block =
+  | { type: 'h2'; text: string }
+  | { type: 'h3'; text: string }
+  | { type: 'p'; html: string }
+  | { type: 'blockquote'; html: string }
+  | { type: 'ul'; items: string[] }
+  | { type: 'ol'; items: string[] }
+  | { type: 'table'; headers: string[]; rows: string[][] }
+  | { type: 'blank' };
+
+function inlineHtml(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/`(.*?)`/g, '<code class="bg-gray-100 px-1 rounded text-sm font-mono">$1</code>');
+}
+
+function parseBlocks(content: string): Block[] {
+  const lines = content.split('\n');
+  const blocks: Block[] = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // H2
+    if (line.startsWith('## ')) {
+      blocks.push({ type: 'h2', text: line.slice(3) });
+      i++; continue;
+    }
+    // H3
+    if (line.startsWith('### ')) {
+      blocks.push({ type: 'h3', text: line.slice(4) });
+      i++; continue;
+    }
+    // Blockquote
+    if (line.startsWith('> ')) {
+      blocks.push({ type: 'blockquote', html: inlineHtml(line.slice(2)) });
+      i++; continue;
+    }
+    // Table: collect all consecutive pipe lines
+    if (line.startsWith('|')) {
+      const tableLines: string[] = [];
+      while (i < lines.length && lines[i].startsWith('|')) {
+        tableLines.push(lines[i]);
+        i++;
+      }
+      const parseRow = (l: string) =>
+        l.split('|').map(c => c.trim()).filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);
+      const [headerLine, , ...dataLines] = tableLines; // index 1 is separator
+      const headers = parseRow(headerLine);
+      const rows = dataLines.map(parseRow);
+      blocks.push({ type: 'table', headers, rows });
+      continue;
+    }
+    // Unordered list: collect consecutive - lines
+    if (line.startsWith('- ')) {
+      const items: string[] = [];
+      while (i < lines.length && lines[i].startsWith('- ')) {
+        items.push(inlineHtml(lines[i].slice(2)));
+        i++;
+      }
+      blocks.push({ type: 'ul', items });
+      continue;
+    }
+    // Ordered list: collect consecutive "N. " lines
+    if (/^\d+\. /.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\. /.test(lines[i])) {
+        items.push(inlineHtml(lines[i].replace(/^\d+\. /, '')));
+        i++;
+      }
+      blocks.push({ type: 'ol', items });
+      continue;
+    }
+    // Blank line
+    if (line.trim() === '') {
+      blocks.push({ type: 'blank' });
+      i++; continue;
+    }
+    // Paragraph
+    blocks.push({ type: 'p', html: inlineHtml(line) });
+    i++;
+  }
+  return blocks;
+}
+
+function renderContent(content: string) {
+  const blocks = parseBlocks(content);
+  return blocks.map((block, idx) => {
+    switch (block.type) {
+      case 'h2':
+        return (
+          <h2 key={idx} className="text-2xl font-bold text-brand-navy mt-10 mb-4 leading-tight border-b border-gray-200 pb-2">
+            {block.text}
+          </h2>
+        );
+      case 'h3':
+        return (
+          <h3 key={idx} className="text-lg font-bold text-brand-navy mt-6 mb-3">
+            {block.text}
+          </h3>
+        );
+      case 'p':
+        return (
+          <p key={idx} className="text-brand-gray-medium leading-relaxed mb-4"
+            dangerouslySetInnerHTML={{ __html: block.html }} />
+        );
+      case 'blockquote':
+        return (
+          <blockquote key={idx} className="border-l-4 border-brand-orange bg-orange-50 px-5 py-3 my-5 rounded-r-lg text-brand-gray-medium italic"
+            dangerouslySetInnerHTML={{ __html: block.html }} />
+        );
+      case 'ul':
+        return (
+          <ul key={idx} className="my-4 space-y-2 pl-1">
+            {block.items.map((item, ii) => (
+              <li key={ii} className="flex items-start gap-2 text-brand-gray-medium leading-relaxed">
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-orange flex-shrink-0" />
+                <span dangerouslySetInnerHTML={{ __html: item }} />
+              </li>
+            ))}
+          </ul>
+        );
+      case 'ol':
+        return (
+          <ol key={idx} className="my-4 space-y-2 pl-1">
+            {block.items.map((item, ii) => (
+              <li key={ii} className="flex items-start gap-3 text-brand-gray-medium leading-relaxed">
+                <span className="mt-0.5 w-6 h-6 rounded-full bg-brand-navy text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+                  {ii + 1}
+                </span>
+                <span dangerouslySetInnerHTML={{ __html: item }} />
+              </li>
+            ))}
+          </ol>
+        );
+      case 'table':
+        return (
+          <div key={idx} className="my-6 overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  {block.headers.map((h, hi) => (
+                    <th key={hi} className="bg-brand-navy text-white font-semibold px-4 py-3 text-left whitespace-nowrap">
+                      <span dangerouslySetInnerHTML={{ __html: inlineHtml(h) }} />
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {block.rows.map((row, ri) => (
+                  <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    {row.map((cell, ci) => (
+                      <td key={ci} className="px-4 py-3 border-t border-gray-200 text-brand-gray-medium leading-relaxed">
+                        <span dangerouslySetInnerHTML={{ __html: inlineHtml(cell) }} />
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      case 'blank':
+        return null;
+      default:
+        return null;
+    }
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────────────
+
 // Converte "07 Fev 2026" → "2026-02-07"
 function parseDateISO(dateStr: string): string {
   const months: Record<string, string> = {
@@ -163,57 +339,8 @@ function BlogPostContent({ slug }: { slug: string }) {
           </Link>
 
           {/* Article Content */}
-          <article className="prose prose-lg max-w-none prose-headings:text-brand-navy prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-brand-gray-medium prose-p:leading-relaxed prose-li:text-brand-gray-medium prose-strong:text-brand-navy prose-ul:my-4 prose-li:my-1 prose-table:w-full prose-th:bg-brand-navy prose-th:text-white prose-th:p-3 prose-td:p-3 prose-td:border prose-td:border-gray-200 prose-tr:even:bg-gray-50">
-            {post.content.split('\n').map((paragraph, index) => {
-              if (paragraph.startsWith('## ')) {
-                return <h2 key={index}>{paragraph.replace('## ', '')}</h2>;
-              }
-              if (paragraph.startsWith('### ')) {
-                return <h3 key={index}>{paragraph.replace('### ', '')}</h3>;
-              }
-              if (paragraph.startsWith('| ') && paragraph.includes(' | ')) {
-                // Table row
-                const cells = paragraph.split('|').filter(c => c.trim() !== '');
-                const isHeader = !paragraph.includes('---');
-                if (paragraph.includes('---')) return null; // skip separator row
-                if (isHeader && index > 0) {
-                  const prevLine = post.content.split('\n')[index - 1] ?? '';
-                  if (!prevLine.startsWith('| ')) {
-                    // First row of table = header
-                    return (
-                      <tr key={index}>
-                        {cells.map((cell, ci) => (
-                          <th key={ci} className="bg-brand-navy text-white p-3 text-left text-sm font-semibold">{cell.trim()}</th>
-                        ))}
-                      </tr>
-                    );
-                  }
-                }
-                return (
-                  <tr key={index} className="even:bg-gray-50">
-                    {cells.map((cell, ci) => (
-                      <td key={ci} className="p-3 border border-gray-200 text-sm text-brand-gray-medium">{cell.trim()}</td>
-                    ))}
-                  </tr>
-                );
-              }
-              if (paragraph.startsWith('- **')) {
-                const content = paragraph.replace('- **', '').replace('**', ': ');
-                return <li key={index} className="ml-4"><strong>{content.split(': ')[0]}</strong>{content.includes(': ') ? ': ' + content.split(': ').slice(1).join(': ') : ''}</li>;
-              }
-              if (paragraph.startsWith('- ')) {
-                return <li key={index} className="ml-4">{paragraph.replace('- ', '')}</li>;
-              }
-              if (paragraph.match(/^\d\. /)) {
-                return <li key={index} className="ml-4">{paragraph.replace(/^\d\. /, '')}</li>;
-              }
-              if (paragraph.trim() === '') {
-                return null;
-              }
-              // Handle bold text within paragraphs
-              const formattedText = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-              return <p key={index} dangerouslySetInnerHTML={{ __html: formattedText }} />;
-            })}
+          <article className="max-w-none">
+            {renderContent(post.content)}
           </article>
 
           {/* CTA Box */}
