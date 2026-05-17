@@ -1,3 +1,8 @@
+# Environment variables (IDs reais ficam nos GitHub Secrets)
+.env
+.env.local
+.env.production
+
 # Logs
 logs
 *.log

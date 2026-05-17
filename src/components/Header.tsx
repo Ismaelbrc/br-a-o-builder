@@ -271,11 +271,10 @@ export default function Header() {
                 Área do Cliente
               </Link>
               <a
-                onClick={() => analytics.whatsappClick('header')}
                 href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => { analytics.whatsappClick('header'); setIsMobileMenuOpen(false); }}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide text-center block"
               >
                 Fale Conosco

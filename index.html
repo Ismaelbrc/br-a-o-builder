@@ -92,9 +92,6 @@
         /* PageView is fired by usePageTracking on every route — not here */
       }
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=%VITE_META_PIXEL_ID%&ev=PageView&noscript=1"/></noscript>
-
     <!-- ── Microsoft Clarity (heatmaps + session recordings) ────────────── -->
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -120,6 +117,9 @@
     </script>
   </head>
   <body>
+    <!-- Meta Pixel noscript fallback (deve ficar no body, não no head) -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=%VITE_META_PIXEL_ID%&ev=PageView&noscript=1"/></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
