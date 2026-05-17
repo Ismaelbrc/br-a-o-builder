@@ -1,39 +1,99 @@
-/**
- * Analytics helper — centraliza rastreamento de eventos no site BR Aço.
- * Suporta GA4 (gtag) e Meta Pixel (fbq) quando disponíveis.
- */
+/* ──────────────────────────────────────────────────────────────────────────
+   Analytics — BR Aço
+   Central module for Meta Pixel, GA4, Google Ads, and Clarity events.
+   IDs are injected at build time via Vite env variables (VITE_*).
+   ────────────────────────────────────────────────────────────────────────── */
 
-type WhatsAppSource =
-  | 'cda-hero'
-  | 'cda-premium'
-  | 'cda-final'
-  | 'hero'
-  | 'cta-banner'
-  | 'header'
-  | string;
-
-function gtagEvent(eventName: string, params: Record<string, string>) {
-  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
-    (window as any).gtag('event', eventName, params);
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+    clarity?: (...args: unknown[]) => void;
   }
 }
 
-function fbqEvent(eventName: string, params?: Record<string, unknown>) {
-  if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
-    (window as any).fbq('track', eventName, params);
-  }
+const GADS_ID    = 'AW-16520884957';
+const GADS_LABEL = 'MQ4NCOCD0a4cEN3l4sU9';
+
+// ── Safe callers (no-op if script not loaded yet) ──────────────────────────
+
+function fbq(...args: unknown[]) {
+  if (typeof window.fbq === 'function') window.fbq(...args);
 }
+
+function gtag(...args: unknown[]) {
+  if (typeof window.gtag === 'function') window.gtag(...args);
+}
+
+function clarity(event: string, value?: string) {
+  if (typeof window.clarity === 'function') window.clarity('event', event, value);
+}
+
+// ── Public API ─────────────────────────────────────────────────────────────
 
 export const analytics = {
   /**
-   * Dispara quando o usuário clica em qualquer botão WhatsApp.
-   * @param source identificador da seção/componente de origem
+   * SPA page view — call on every route change.
    */
-  whatsappClick(source: WhatsAppSource) {
-    gtagEvent('whatsapp_click', { source, method: 'button' });
-    fbqEvent('Contact', { source });
-    if (process.env.NODE_ENV === 'development') {
-      console.log(`[analytics] whatsappClick — source: ${source}`);
-    }
+  pageView(path: string) {
+    fbq('track', 'PageView');
+    gtag('event', 'page_view', { page_path: path });
+  },
+
+  /**
+   * WhatsApp CTA click — primary conversion event.
+   * @param source  Identifies which button was clicked (e.g. 'header', 'cta-banner', 'floating', 'footer')
+   */
+  whatsappClick(source: string) {
+    // Meta Pixel
+    fbq('track', 'Lead', {
+      content_name: 'WhatsApp Click',
+      content_category: source,
+    });
+
+    // GA4
+    gtag('event', 'generate_lead', {
+      event_category: 'engagement',
+      event_label: `whatsapp_${source}`,
+    });
+
+    // Google Ads conversion
+    gtag('event', 'conversion', {
+      send_to: `${GADS_ID}/${GADS_LABEL}`,
+    });
+
+    // Clarity
+    clarity('whatsapp_click', source);
+  },
+
+  /**
+   * Quote form submitted.
+   */
+  formSubmit() {
+    fbq('track', 'Lead', {
+      content_name: 'Quote Form',
+      content_category: 'form',
+    });
+
+    gtag('event', 'generate_lead', {
+      event_category: 'form',
+      event_label: 'quote_form',
+    });
+
+    gtag('event', 'conversion', {
+      send_to: `${GADS_ID}/${GADS_LABEL}`,
+    });
+
+    clarity('form_submit');
+  },
+
+  /**
+   * User viewed a product/service page.
+   */
+  viewContent(contentName: string) {
+    fbq('track', 'ViewContent', { content_name: contentName });
+    gtag('event', 'view_item', { item_name: contentName });
+    clarity('view_content', contentName);
   },
 };

@@ -3,6 +3,9 @@ import { ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { analytics } from '@/lib/analytics';
+
+const WHATSAPP_NUMBER = '5562999247285';
 
 const QuoteFormSection = () => {
   const { toast } = useToast();
@@ -34,17 +37,36 @@ const QuoteFormSection = () => {
       return;
     }
 
+    // ── Fire analytics ──────────────────────────────────────────────────
+    analytics.formSubmit();
+
+    // ── Build WhatsApp message with form data ───────────────────────────
+    const lines = [
+      `Olá! Gostaria de solicitar um orçamento.`,
+      ``,
+      `*Nome:* ${formData.nome}`,
+      `*WhatsApp:* ${formData.whatsapp}`,
+      formData.email ? `*E-mail:* ${formData.email}` : null,
+      formData.mensagem ? `*Mensagem:* ${formData.mensagem}` : null,
+    ]
+      .filter(Boolean)
+      .join('\n');
+
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines)}`;
+
+    // Show success toast then open WhatsApp
     toast({
-      title: "✓ Orçamento enviado com sucesso!",
-      description: "Entraremos em contato em breve.",
+      title: '✓ Orçamento enviado com sucesso!',
+      description: 'Redirecionando para o WhatsApp...',
     });
 
-    setFormData({
-      nome: '',
-      whatsapp: '',
-      email: '',
-      mensagem: '',
-    });
+    // Small delay so the toast is visible before navigation
+    setTimeout(() => {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }, 600);
+
+    // Reset form
+    setFormData({ nome: '', whatsapp: '', email: '', mensagem: '' });
   };
 
   return (
@@ -77,7 +99,7 @@ const QuoteFormSection = () => {
             <Input
               name="whatsapp"
               type="tel"
-              placeholder="WhatsApp (62) 99999-99"
+              placeholder="WhatsApp (62) 99999-9999"
               value={formData.whatsapp}
               onChange={handleInputChange}
               className={`w-full bg-white border-0 rounded-lg px-4 py-4 text-base min-h-[56px] placeholder:text-gray-500 focus:ring-2 focus:ring-white/50 ${
@@ -87,7 +109,7 @@ const QuoteFormSection = () => {
             <Input
               name="email"
               type="email"
-              placeholder="E-mail"
+              placeholder="E-mail (opcional)"
               value={formData.email}
               onChange={handleInputChange}
               className="w-full bg-white border-0 rounded-lg px-4 py-4 text-base min-h-[56px] placeholder:text-gray-500 focus:ring-2 focus:ring-white/50"

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Instagram, Linkedin } from 'lucide-react';
 import logoImage from '@/assets/logo-footer.png';
+import { analytics } from '@/lib/analytics';
 
 const navigationLinks = [
   { name: 'Home', href: '/' },
@@ -122,6 +123,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-muted-foreground text-sm hover:text-foreground transition-colors"
+                  onClick={() => analytics.whatsappClick('footer')}
                 >
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
                   <span>WhatsApp: (62) 99924-7285</span>
