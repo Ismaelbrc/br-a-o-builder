@@ -1578,6 +1578,482 @@ A diferença está no **nível de processamento**: no corte e dobra, o armador a
 Na BR Aço, você pode solicitar tanto o **corte e dobra completo** do projeto estrutural quanto **kits de armaduras prontas** para elementos padronizados (sapatas, blocos, estribos, gaiolas de pilar).
 
 Envie o projeto pelo WhatsApp. Nossa equipe técnica analisa e recomenda o melhor serviço para seu tipo de obra. Orçamento gratuito e sem compromisso.`
+  },
+
+  // ═══════════════════════════════════════════════════════
+  // BATCH 3 — Trending Topics 2026 (Mai 2026)
+  // ═══════════════════════════════════════════════════════
+
+  {
+    id: 25,
+    slug: "nbr-6118-2026-o-que-mudou-armacao",
+    category: "Normas ABNT",
+    title: "NBR 6118:2026: O que Mudou e Como Afeta a Armação da Sua Obra",
+    metaDescription: "A nova NBR 6118:2026 entrou em vigor em março de 2026. Saiba o que mudou em relação à versão anterior, quais os impactos na especificação de armaduras e o que engenheiros precisam fazer.",
+    keyword: "nbr 6118 2026 mudanças",
+    date: "17 Mai 2026",
+    summary: "A nova NBR 6118:2026 entrou em vigor em março de 2026. Entenda o que mudou na norma de concreto armado e como isso impacta a especificação de armaduras na sua obra.",
+    content: `## Resposta Rápida
+
+A NBR 6118:2026 entrou em vigor em 11 de março de 2026, substituindo a versão anterior (que havia sido cancelada). A principal novidade é a **obrigatoriedade da Avaliação Técnica de Projeto (ATP)** para estruturas de concreto armado, além de atualizações nos requisitos de cobrimento e durabilidade.
+
+## O que é a NBR 6118?
+
+A ABNT NBR 6118 é a norma brasileira que regulamenta o **projeto de estruturas de concreto armado e protendido**. Ela define os critérios técnicos que engenheiros estruturais devem seguir ao dimensionar armaduras, vigas, pilares, lajes e fundações em concreto.
+
+Sem atender à NBR 6118, um projeto estrutural não pode ser aprovado pela prefeitura nem receber anotação de responsabilidade técnica (ART) do CREA.
+
+## Histórico da Versão 2026
+
+- **NBR 6118:2014** — versão em vigor por quase 10 anos
+- **NBR 6118:2023** — publicada, mas cancelada pela ABNT em março de 2026 por inconsistências técnicas detectadas durante o período de implementação
+- **NBR 6118:2026** — nova versão publicada e em vigor desde **11/03/2026**
+
+A versão 2026 incorpora as correções da versão 2023 e adiciona novos requisitos, especialmente em durabilidade e rastreabilidade de projetos.
+
+## O que Mudou na NBR 6118:2026
+
+### 1. Avaliação Técnica de Projeto (ATP) Obrigatória
+
+A mudança mais impactante: projetos estruturais de concreto armado passam a exigir a **Avaliação Técnica de Projeto (ATP)**, um processo de verificação independente realizado por profissional habilitado diferente do projetista original.
+
+A ATP é obrigatória para:
+- Edificações com mais de 5 pavimentos
+- Estruturas com vãos acima de 12 metros
+- Fundações em solo de classe de agressividade III ou IV
+- Obras enquadradas em categorias de risco estrutural definidas pela norma
+
+**Impacto prático:** aumenta o custo e o prazo de aprovação de projetos, mas reduz o risco de falhas estruturais. Para construtoras, é um passo adicional antes de iniciar a compra de materiais e o corte e dobra do aço.
+
+### 2. Atualização nos Requisitos de Cobrimento
+
+A NBR 6118:2026 revisou os valores mínimos de cobrimento (distância entre a face externa do concreto e a armadura), com base nas classes de agressividade ambiental:
+
+| Classe de Agressividade | Ambiente | Cobrimento Mínimo (laje) | Cobrimento Mínimo (viga/pilar) |
+|------------------------|----------|--------------------------|-------------------------------|
+| I — Fraco | Rural, submerso limpo | 20 mm | 25 mm |
+| II — Moderado | Urbano, submerso | 25 mm | 30 mm |
+| III — Forte | Marinha, industrial | 35 mm | 40 mm |
+| IV — Muito Forte | Respingos de maré, industrial severo | 45 mm | 50 mm |
+
+A maioria das obras em Goiânia se enquadra na **Classe II (moderado)** — cobrimento mínimo de 25 mm em lajes e 30 mm em vigas e pilares.
+
+### 3. Durabilidade e Vida Útil Mínima
+
+A norma reforça os requisitos de vida útil mínima de projeto:
+- **50 anos** para edificações comuns
+- **100 anos** para obras de infraestrutura (pontes, viadutos, barragens)
+
+Para atingir esses requisitos, a combinação de cobrimento adequado + aço com certificação ABNT NBR 7480 é mandatória.
+
+### 4. Rastreabilidade dos Materiais
+
+A versão 2026 fortalece os requisitos de rastreabilidade do aço utilizado na estrutura. Vergalhões devem vir acompanhados de certificado de qualidade do fabricante, incluindo:
+- Lote de fabricação
+- Ensaios de tração e dobramento
+- Conformidade com ABNT NBR 7480 (CA-25, CA-50, CA-60)
+
+Isso torna o uso de vergalhões com rastreabilidade completa (como os fornecidos pela BR Aço, de fabricantes como Gerdau e ArcelorMittal) ainda mais importante em obras formais.
+
+## O que Engenheiros Precisam Fazer Agora
+
+1. **Atualizar planilhas e detalhamentos** para usar os novos valores de cobrimento da NBR 6118:2026
+2. **Verificar se projetos em andamento** precisam de adequação antes da aprovação
+3. **Incluir ATP no cronograma** para projetos enquadrados nos critérios obrigatórios
+4. **Exigir certificados** de qualidade ABNT NBR 7480 de todos os fornecedores de aço
+
+## Como o Corte e Dobra Ajuda na Conformidade com a NBR 6118:2026
+
+O serviço de corte e dobra industrial da BR Aço já nasce em conformidade com a norma:
+
+- Cada peça é produzida conforme as medidas do projeto estrutural do engenheiro
+- Todo o aço fornecido possui certificação ABNT NBR 7480 com rastreabilidade de lote
+- A identificação de cada peça (etiqueta) facilita a inspeção e documentação para ATP
+- O relatório de produção pode ser fornecido como documentação técnica do projeto
+
+Solicite orçamento informando o projeto estrutural. Atendemos engenheiros e construtoras em Goiânia, Aparecida de Goiânia, Anápolis e toda a região metropolitana.`
+  },
+  {
+    id: 26,
+    slug: "cobrimento-minimo-armadura-tabela-nbr-6118",
+    category: "Normas ABNT",
+    title: "Cobrimento Mínimo de Armadura: Tabela Completa por Elemento (NBR 6118:2026)",
+    metaDescription: "Tabela completa de cobrimento mínimo de armadura para laje, viga, pilar e fundação conforme a NBR 6118:2026. Classes de agressividade ambiental e valores práticos para obra.",
+    keyword: "cobrimento mínimo armadura nbr 6118",
+    date: "17 Mai 2026",
+    summary: "Tabela completa de cobrimento mínimo de armadura por elemento estrutural e classe de agressividade ambiental, conforme a NBR 6118:2026.",
+    content: `## Resposta Rápida
+
+O cobrimento mínimo de armadura conforme a NBR 6118:2026 varia de **20 mm a 50 mm**, dependendo do tipo de elemento estrutural (laje, viga, pilar, fundação) e da classe de agressividade ambiental do local da obra. Em Goiânia (ambiente urbano moderado, Classe II), o mínimo é **25 mm para lajes** e **30 mm para vigas e pilares**.
+
+## O que é Cobrimento de Armadura?
+
+O cobrimento de armadura é a distância entre a **face externa do concreto** e a superfície da barra de aço mais próxima. É medido em milímetros e deve ser garantido com o uso de **espaçadores** (pastilhas de plástico ou concreto) posicionados sob e ao redor da armadura antes da concretagem.
+
+O cobrimento tem duas funções principais:
+1. **Proteção contra corrosão:** impede que umidade e agentes agressivos atinjam o aço
+2. **Aderência entre aço e concreto:** garante a transferência de esforços
+
+Um cobrimento insuficiente é uma das principais causas de **corrosão de armaduras**, fissuras e colapso prematuro de estruturas.
+
+## Tabela de Cobrimento Mínimo — NBR 6118:2026
+
+### Classe I — Agressividade Fraca (rural, submerso limpo)
+
+| Elemento Estrutural | Cobrimento Mínimo |
+|--------------------|-------------------|
+| Laje | 20 mm |
+| Viga e pilar | 25 mm |
+| Elemento de fundação em contato com solo | 30 mm |
+
+### Classe II — Agressividade Moderada (urbano — a maioria das obras em Goiânia)
+
+| Elemento Estrutural | Cobrimento Mínimo |
+|--------------------|-------------------|
+| Laje | 25 mm |
+| Viga e pilar | 30 mm |
+| Elemento de fundação em contato com solo | 40 mm |
+
+### Classe III — Agressividade Forte (marinha, industrial)
+
+| Elemento Estrutural | Cobrimento Mínimo |
+|--------------------|-------------------|
+| Laje | 35 mm |
+| Viga e pilar | 40 mm |
+| Elemento de fundação em contato com solo | 50 mm |
+
+### Classe IV — Agressividade Muito Forte (respingos de maré, industrial severo)
+
+| Elemento Estrutural | Cobrimento Mínimo |
+|--------------------|-------------------|
+| Laje | 45 mm |
+| Viga e pilar | 50 mm |
+| Elemento de fundação em contato com solo | 60 mm |
+
+## Qual a Classe de Agressividade de Goiânia?
+
+Goiânia e a região metropolitana (Aparecida de Goiânia, Senador Canedo, Trindade, Anápolis) se enquadram predominantemente na **Classe II — Agressividade Moderada**, que corresponde a:
+- Zona urbana
+- Distância do mar acima de 50 km
+- Sem industrias agressivas no entorno imediato
+
+Exceções dentro da mesma cidade:
+- Obras próximas a indústrias químicas → pode ser Classe III
+- Obras em área rural com solo muito seco → pode ser Classe I
+- Obras em estruturas de contenção em contato com solo agressivo → ajuste necessário
+
+## Tolerância de Execução
+
+A NBR 6118:2026 permite uma **tolerância de execução de ±10 mm** sobre o cobrimento nominal especificado em projeto. O cobrimento nominal é o cobrimento mínimo acrescido da tolerância de execução:
+
+**Cobrimento nominal = Cobrimento mínimo + 10 mm**
+
+Exemplo prático para laje em Goiânia (Classe II):
+- Cobrimento mínimo: 25 mm
+- Cobrimento nominal: 35 mm (valor a ser especificado no projeto e verificado na obra)
+
+## Como Garantir o Cobrimento na Obra
+
+1. **Use espaçadores certificados** — pastilhas de plástico ou concreto com a espessura correta
+2. **Posicione espaçadores a cada 50 cm** (na laje) ou conforme projeto
+3. **Não substitua espaçadores por pedras** — a espessura irregular não garante o cobrimento
+4. **Verifique antes de concretar** — com trena, confira a distância da armadura à forma
+5. **Documente com fotos** — registro do cobrimento antes da concretagem é exigido em obras formais
+
+## Erro Mais Comum: Cobrimento Insuficiente em Lajes
+
+Em obras residenciais, o erro mais frequente é usar apenas a treliça como espaçador natural, sem adicionar pastilhas nas posições sem treliça. Isso resulta em:
+
+- Lajes com cobrimento de 10–15 mm (abaixo do mínimo de 25 mm)
+- Armaduras visíveis após anos de uso
+- Manchas de ferrugem passando pelo concreto
+- Risco de desplacamento (lascamento da capa de concreto)
+
+O aço fornecido com serviço de corte e dobra da BR Aço inclui orientação técnica sobre espaçadores e cobrimento conforme projeto estrutural. Solicite orçamento pelo WhatsApp.`
+  },
+  {
+    id: 27,
+    slug: "quanto-vergalhao-por-m2-laje-tabela",
+    category: "Dicas Técnicas",
+    title: "Quanto Vergalhão por m² de Laje? Tabela Completa por Tipo de Laje",
+    metaDescription: "Descubra quanto vergalhão é necessário por metro quadrado de laje treliçada, laje maciça e laje nervurada. Tabela completa com consumo em kg/m² por tipo e vão.",
+    keyword: "quanto vergalhão por m2 laje",
+    date: "17 Mai 2026",
+    summary: "Tabela completa de consumo de vergalhão por m² para diferentes tipos de laje: treliçada, maciça e nervurada. Inclui fatores de variação e como calcular.",
+    content: `## Resposta Rápida
+
+O consumo de vergalhão em lajes varia de **5 a 15 kg/m²**, dependendo do tipo de laje, do vão livre, das cargas e do projeto estrutural. A laje treliçada típica consome entre **5 e 8 kg/m²**; a laje maciça, entre **8 e 15 kg/m²**.
+
+## Por que o Consumo Varia?
+
+O consumo de vergalhão por m² de laje depende de:
+
+1. **Tipo de laje** — treliçada, maciça, nervurada, cogumelo
+2. **Vão livre** — quanto maior o vão, mais aço (relação não linear)
+3. **Carga de utilização** — residencial (150 kg/m²) vs. comercial (300–500 kg/m²)
+4. **Espessura** — definida pelo engenheiro conforme o vão e as cargas
+5. **Armadura positiva e negativa** — vigas secundárias e apoios aumentam o consumo
+
+## Tabela de Consumo de Vergalhão por Tipo de Laje
+
+### Laje Treliçada (a mais usada em construções residenciais)
+
+| Vão Livre (m) | Espessura | Consumo Vergalhão (kg/m²) | Tipo de Treliça |
+|--------------|-----------|--------------------------|-----------------|
+| até 3,0 | 12 cm | 4 – 6 | T6 |
+| 3,0 a 4,0 | 16 cm | 5 – 8 | T8 |
+| 4,0 a 5,0 | 20 cm | 7 – 10 | T10 |
+| 5,0 a 6,0 | 25 cm | 9 – 13 | T12 |
+
+*Valores incluem armadura positiva + negativa + distribuição. Verificar sempre com o projeto estrutural.*
+
+### Laje Maciça (sem elementos de preenchimento)
+
+| Vão Livre (m) | Espessura | Consumo Vergalhão (kg/m²) |
+|--------------|-----------|--------------------------|
+| até 3,0 | 10 cm | 8 – 10 |
+| 3,0 a 4,0 | 12 cm | 10 – 13 |
+| 4,0 a 5,0 | 15 cm | 12 – 16 |
+| 5,0 a 6,0 | 18 cm | 14 – 18 |
+
+### Laje Nervurada Bidirecional
+
+| Vão Livre (m) | Consumo Vergalhão (kg/m²) |
+|--------------|--------------------------|
+| 5,0 a 7,0 | 8 – 12 |
+| 7,0 a 10,0 | 11 – 16 |
+| acima de 10,0 | 14 – 20 |
+
+## Exemplo Prático: Casa de 60 m²
+
+Suponha uma casa térrea com laje de 60 m², vão de 3,5 m, treliçada:
+
+- Consumo estimado: **6 kg/m²** (vão intermediário)
+- Total de vergalhão: 60 × 6 = **360 kg**
+- Barras CA-50 de 8,0 mm (malha) + CA-60 (distribuição): composição definida pelo projeto
+- Adicionar 5% de margem: **378 kg** (para cortes e rejeitos)
+
+Com o serviço de **corte e dobra** da BR Aço, o desperdício cai para menos de 1%, então a estimativa pode ser mais precisa — use a calculadora de vergalhão em `/calculadora-vergalhao`.
+
+## O que Não Está Incluso nessa Tabela
+
+Os valores acima incluem apenas a **armadura da laje em si**. A quantidade total de aço de uma obra também inclui:
+
+| Elemento | Consumo Estimado (kg/m² de área construída) |
+|---------|---------------------------------------------|
+| Laje | 5 – 15 |
+| Vigas | 10 – 20 |
+| Pilares | 8 – 15 |
+| Fundação (sapata/radier) | 15 – 30 |
+| **Total obra residencial** | **38 – 80 kg/m²** |
+
+Para uma casa de 100 m², o total de aço pode variar de **3.800 a 8.000 kg** (3,8 a 8 toneladas), dependendo do projeto estrutural.
+
+## Como Calcular Exatamente para Sua Obra
+
+O método mais preciso é a **planilha de ferro** do projeto estrutural, que lista cada barra, diâmetro e comprimento. Se você tem o projeto:
+
+1. Envie a planilha (ou a planta estrutural) para a BR Aço via WhatsApp
+2. Nossa equipe faz o **quantitativo completo gratuitamente** em até 24h
+3. Você recebe o peso total por diâmetro e o custo do corte e dobra
+
+Atendemos obras em Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região de Goiás.`
+  },
+  {
+    id: 28,
+    slug: "7-erros-que-encarecem-o-aco-na-obra",
+    category: "Gestão de Obra",
+    title: "7 Erros que Encarecem o Aço na Sua Obra (e Como Evitar Cada Um)",
+    metaDescription: "Descubra os 7 erros mais comuns que fazem o custo do aço explodir em obras de construção civil, com dados reais de desperdício e como o corte e dobra industrial resolve cada problema.",
+    keyword: "erros aço obra custo desperdício",
+    date: "17 Mai 2026",
+    summary: "Os 7 erros mais comuns que encarecem o aço em obras de construção civil — com dados de desperdício e como cada um pode ser evitado.",
+    content: `## Você Sabe Quanto Aço Está Desperdiçando na Sua Obra?
+
+Segundo dados do setor, obras que cortam o aço manualmente no canteiro desperdiçam entre **5% e 8% do material comprado** em pontas, erros de medida e rejeitos de dobra. Em uma obra com 3 toneladas de aço (valor de R$ 30.000), isso representa de **R$ 1.500 a R$ 2.400 jogados fora** — antes mesmo de começar a construir.
+
+Mas o desperdício de material é apenas um dos erros. Veja os 7 mais comuns:
+
+## Erro 1: Comprar Aço em Barra Sem Projeto Estrutural
+
+Muitas obras compram vergalhão "por estimativa" — sem planilha de ferro, sem projeto estrutural aprovado. O resultado quase sempre é:
+- Compra a mais (estoque que oxida no canteiro) **ou** compra a menos (paralisação de obra)
+- Mistura de diâmetros incorretos (CA-60 onde deveria ser CA-50, ou vice-versa)
+- Sem rastreabilidade para aprovação de projeto
+
+**Como evitar:** solicite a planilha de ferro do projeto estrutural antes de comprar qualquer material. O custo do projeto estrutural se paga em poucos dias de obra pela redução de desperdício.
+
+## Erro 2: Cortar Manualmente Sem Calibração das Ferramentas
+
+A policorte manual perde calibração rapidamente em obra. Após algumas centenas de cortes, o ângulo de corte desvia e as medidas ficam fora do especificado. Vergalhões cortados 2–3 cm mais curtos que o projeto geram peças sem o comprimento de ancoragem mínimo exigido pela NBR 6118.
+
+**Impacto:** redução da resistência da estrutura + necessidade de corrigir peças + desperdício das peças rejeitadas.
+
+**Como evitar:** calibração semanal das ferramentas de corte ou adoção do corte e dobra industrial, com tolerância de ±1 mm garantida por CNC.
+
+## Erro 3: Não Considerar o Comprimento de Dobra
+
+Ao dobrar um vergalhão no canteiro, a curvatura consome comprimento adicional. Armadores com menos experiência não descontam o comprimento de dobra no cálculo e as peças ficam mais longas que o projeto.
+
+**Impacto:** peças que não cabem nas formas → corte no canteiro → geração de resíduo desnecessário.
+
+**Fórmula:** para dobra a 90°, o comprimento adicional consumido é aproximadamente **2,5× o diâmetro da barra** (ex: barra de 10 mm → 25 mm extras por dobra).
+
+**Como evitar:** o corte e dobra industrial já considera automaticamente o comprimento de dobra em cada peça.
+
+## Erro 4: Armazenar Vergalhão no Chão Sem Proteção
+
+Vergalhões armazenados diretamente sobre o solo úmido iniciam o processo de corrosão em semanas. Em obras com ciclo de construção mais longo, é comum ver os primeiros sinais de ferrugem superficial antes mesmo de a peça ser usada.
+
+**Impacto:** ferrugem superficial (admissível) pode se tornar ferrugem laminada (inadmissível pela NBR 6118) — peças que precisam ser descartadas.
+
+**Como evitar:** armazenar sobre pallets ou longarinas de madeira, coberto com lona, em área ventilada. Com o corte e dobra, o aço chega na obra e é usado em até 48h — sem necessidade de estoque prolongado.
+
+## Erro 5: Não Planejar a Sequência de Entrega
+
+Receber toda a ferragem de uma obra de uma vez gera:
+- Armazenamento inadequado (peças amassadas por peso de outras)
+- Mistura de peças de etapas diferentes
+- Dificuldade de organização no canteiro pequeno
+
+**Impacto:** tempo perdido na obra procurando a peça certa + risco de usar peça errada em elemento errado.
+
+**Como evitar:** o corte e dobra industrial permite entregar o aço por etapa da obra (fundação, pilares, lajes) e por elemento (C1, V3, L2), cada peça identificada com etiqueta. A equipe sabe exatamente o que instalar em cada fase.
+
+## Erro 6: Ignorar o Custo Real da Mão de Obra de Armação
+
+O custo do aço não é só o material — é o material + a mão de obra de cortar, dobrar e montar. Um armador especializado custa entre R$ 80 e R$ 120 por dia; uma equipe de dois armadores trabalhando 5 dias em uma laje de 80 m² custa de R$ 800 a R$ 1.200 só em mão de obra — além dos encargos.
+
+**Cálculo real:** para 3 toneladas de aço cortado manualmente:
+- Material: R$ 27.000
+- Mão de obra armação: R$ 3.000–6.000
+- Desperdício (6%): R$ 1.620
+- **Total real: R$ 31.620 a R$ 34.620**
+
+Com corte e dobra industrial, o aço chega pronto para armar:
+- Material + serviço: R$ 29.700 (a R$ 9,90/kg)
+- Mão de obra reduzida (-60%): R$ 1.200–2.400
+- Desperdício: R$ 0
+- **Total real: R$ 30.900 a R$ 32.100**
+
+Diferença de até **R$ 2.500** a favor do corte e dobra, em apenas uma obra.
+
+## Erro 7: Comprar de Fornecedor Sem Certificação ABNT
+
+Vergalhão sem certificação ABNT NBR 7480 pode ter diâmetro nominal diferente do real, resistência abaixo do especificado e qualidade de aço irregular. Com a nova NBR 6118:2026, a rastreabilidade do aço se tornou obrigatória em projetos formais.
+
+**Impacto:** peças que não atendem às especificações do projeto → necessidade de refazer a armação → custo dobrado.
+
+**Como evitar:** exija sempre o certificado de qualidade ABNT NBR 7480 do fornecedor, com número de lote e resultados dos ensaios de tração.
+
+## Resumo: O Custo Real dos 7 Erros
+
+| Erro | Custo Estimado (obra 3t aço) |
+|------|------------------------------|
+| Desperdício de corte manual (6%) | R$ 1.620 |
+| Peças incorretas / retrabalho | R$ 500 – 2.000 |
+| Mão de obra excedente | R$ 1.500 – 3.000 |
+| Ferrugem e descarte | R$ 300 – 1.500 |
+| Paralisação por falta de material | R$ 800 – 2.000 (custo da equipe parada) |
+| **Total potencial desperdiçado** | **R$ 4.720 – 10.120** |
+
+O corte e dobra industrial da BR Aço elimina ou reduz drasticamente todos os 7 erros. Solicite seu orçamento — é gratuito e você recebe em até 24h.`
+  },
+  {
+    id: 29,
+    slug: "laje-macica-vs-laje-trelicada-qual-escolher-2026",
+    category: "Dicas Técnicas",
+    title: "Laje Maciça vs Laje Treliçada: Qual Escolher em 2026?",
+    metaDescription: "Comparativo completo entre laje maciça e laje treliçada em 2026: custo, resistência, peso, vãos, execução e quando usar cada tipo. Tabela e recomendação por tipo de obra.",
+    keyword: "laje maciça vs laje treliçada",
+    date: "17 Mai 2026",
+    summary: "Comparativo completo entre laje maciça e laje treliçada: custo, resistência, peso, execução e quando usar cada tipo de laje.",
+    content: `## Resposta Rápida
+
+Para a maioria das obras residenciais com vãos de até 5 metros, a **laje treliçada é mais econômica** — usa menos concreto, pesa menos e é mais rápida de executar. A laje maciça é mais indicada para vãos curtos (até 3 m), cargas concentradas muito pesadas ou quando há restrição de altura total.
+
+## O que é Cada Tipo de Laje?
+
+### Laje Maciça
+Estrutura de concreto armado **sem elementos de preenchimento**. O concreto preenche completamente o espaço entre as armaduras superior e inferior. Mais pesada, mas com rigidez uniforme em todas as direções.
+
+### Laje Treliçada (Pré-fabricada)
+Composta por **treliças metálicas + elementos de preenchimento** (tavelas cerâmicas ou EPS) + capa de concreto. As treliças formam as nervuras portantes; as tavelas preenchem os vazios sem contribuir para a resistência.
+
+## Tabela Comparativa Completa
+
+| Critério | Laje Maciça | Laje Treliçada |
+|---------|-------------|----------------|
+| **Custo de material (m²)** | R$ 80 – 140 | R$ 55 – 95 |
+| **Peso próprio** | 240 – 375 kg/m² | 150 – 250 kg/m² |
+| **Vergalhão (kg/m²)** | 8 – 18 | 5 – 13 |
+| **Concreto (m³/m²)** | 0,10 – 0,18 | 0,05 – 0,08 |
+| **Vão máximo recomendado** | até 4,5 m | até 7,0 m |
+| **Espessura mínima** | 10 cm | 12 cm |
+| **Velocidade de execução** | Menor | Maior |
+| **Complexidade técnica** | Baixa | Média |
+| **Isolamento acústico** | Melhor | Bom |
+| **Isolamento térmico** | Médio | Melhor (EPS) |
+| **Adaptação de instalações embutidas** | Fácil | Moderada |
+| **Mão de obra necessária** | Armadores + carpinteiro | Armadores (menos escoramentos) |
+
+## Quando Usar Laje Maciça
+
+A laje maciça é a escolha certa nas seguintes situações:
+
+- **Vãos curtos** (até 3,5 m) onde a diferença de custo é pequena
+- **Cargas muito concentradas** (equipamentos pesados, piscinas, tanques)
+- **Estruturas de garagem** com tráfego de veículos
+- **Obras com altura total limitada** onde a espessura da laje treliçada não cabe
+- **Projetos arquitetônicos** onde se deseja sofito plano sem nervuras aparentes
+
+## Quando Usar Laje Treliçada
+
+A laje treliçada é a escolha certa quando:
+
+- **Vão de 3 a 7 metros** — faixa ideal de custo-benefício
+- **Construção residencial popular** (MCMV e obras de até 3 andares)
+- **Objetivo de reduzir o peso total** da estrutura (impacta fundação)
+- **Execução rápida** é prioridade (treliças chegam prontas, sem necessidade de cimbramento pesado)
+- **Orçamento controlado** — economia de 20% a 40% em relação à maciça
+
+## Análise de Custo: Obra de 100 m²
+
+Para um pavimento de 100 m² com vão de 4 metros:
+
+### Laje Maciça (espessura 12 cm)
+- Concreto: 12 m³ × R$ 400 = R$ 4.800
+- Vergalhão (11 kg/m²): 1.100 kg × R$ 10 = R$ 11.000
+- Forma de madeira: R$ 2.500
+- Mão de obra: R$ 3.500
+- **Total estimado: R$ 21.800**
+
+### Laje Treliçada (espessura 16 cm, T8)
+- Concreto: 6 m³ × R$ 400 = R$ 2.400
+- Vergalhão (7 kg/m²): 700 kg × R$ 10 = R$ 7.000
+- Treliças + tavelas: R$ 3.200
+- Mão de obra: R$ 2.800
+- **Total estimado: R$ 15.400**
+
+**Diferença: R$ 6.400 (29% de economia) com a laje treliçada para vão de 4 m.**
+
+## Impacto na Fundação
+
+O peso próprio da laje impacta diretamente o dimensionamento da fundação:
+
+- Laje maciça de 100 m² (12 cm): **28,8 toneladas** de peso próprio
+- Laje treliçada de 100 m² (16 cm): **18,0 toneladas** de peso próprio
+
+Diferença de **10,8 toneladas** — que se traduz em fundações menores, com menos aço e menos concreto. A economia na laje gera uma segunda economia na fundação.
+
+## Treliças e Vergalhão: Como a BR Aço Pode Ajudar
+
+A BR Aço fornece:
+- **Treliças metálicas T6, T8, T10 e T12** para laje treliçada, conforme ABNT NBR 14859
+- **Vergalhão CA-50 e CA-60** cortado e dobrado nas medidas exatas do projeto
+- **Armadura negativa** sobre apoios e vigas, conforme detalhamento estrutural
+
+Envie o projeto e receba o orçamento da laje completa — treliças + vergalhão cortado — em até 24h. Atendemos Goiânia e toda a região de Goiás.`
   }
 ];
 
