@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 import {
   Scissors, MessageCircle, Upload, FileCheck, PackageCheck,
   TrendingDown, Recycle, Target, Truck, Wallet, ClipboardCheck,
-  Tag, HardHat, ChevronDown, CheckCircle, ChevronRight,
-  LucideIcon, Wrench, ShieldCheck, Layers, Zap
+  Tag, HardHat, ChevronDown, CheckCircle, ChevronRight, Zap,
+  LucideIcon, Wrench, ShieldCheck, Layers
 } from 'lucide-react';
 import frotaImage from '@/assets/frota-propria.jpg';
 import { analytics } from '@/lib/analytics';
@@ -83,24 +83,25 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right - Stats Grid */}
-          <div className="hidden lg:block bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-80">
-            <div className="grid grid-cols-2 gap-4 h-full">
+          {/* Right - Stats card */}
+          <div className="hidden lg:flex flex-col h-80 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+            <div className="grid grid-cols-2 gap-3 flex-1">
               {[
-                { icon: Scissors, value: 'Corte e Dobra', label: 'Produção 100% automatizada' },
-                { icon: Truck,    value: '+7 estados',    label: 'Cobertura de entrega' },
-                { icon: ShieldCheck, value: 'ABNT NBR 7480', label: 'Certificação garantida' },
-                { icon: Zap,      value: '48h',           label: 'Para projetos expressos' },
-              ].map((item, i) => {
-                const Icon = item.icon;
-                return (
-                  <div key={i} className="bg-white/5 rounded-xl p-4 flex flex-col justify-center">
-                    <Icon className="w-7 h-7 text-brand-orange mb-2" />
-                    <p className="text-white font-bold text-base leading-tight">{item.value}</p>
-                    <p className="text-gray-400 text-xs mt-0.5">{item.label}</p>
-                  </div>
-                );
-              })}
+                { icon: Scissors, title: 'Corte e Dobra', label: 'Produção 100% automatizada' },
+                { icon: Truck, title: '+7 estados', label: 'Cobertura de entrega' },
+                { icon: ShieldCheck, title: 'ABNT NBR 7480', label: 'Certificação garantida' },
+                { icon: Zap, title: '48h', label: 'Para projetos expressos' },
+              ].map(({ icon: Icon, title, label }) => (
+                <div key={title} className="bg-white/5 rounded-xl p-4 flex flex-col justify-center">
+                  <Icon className="w-7 h-7 text-brand-orange mb-2" />
+                  <span className="text-white font-bold text-base">{title}</span>
+                  <span className="text-gray-400 text-xs mt-0.5">{label}</span>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center gap-2 mt-3 justify-center">
+              <CheckCircle className="w-4 h-4 text-green-400" />
+              <span className="text-xs text-gray-400">Gerdau • ArcelorMittal • Belgo</span>
             </div>
           </div>
         </div>
@@ -385,45 +386,44 @@ const FaqSection = () => {
 
 // ═══ FINAL CTA WHATSAPP ═══
 const FinalCtaSection = () => {
-  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
+  const waUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
 
   return (
     <section id="orcamento-cd" className="py-20 md:py-24 bg-brand-navy">
-      <div className="max-w-3xl mx-auto px-4 text-center">
+      <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white">
           Solicite seu orçamento agora
         </h2>
-        <p className="text-gray-300 mt-3 text-lg">
-          Resposta em até 24h&nbsp;•&nbsp;Sem compromisso&nbsp;•&nbsp;Atendimento técnico
+        <p className="text-gray-400 mt-4 text-lg">
+          Resposta em até 24h &bull; Sem compromisso &bull; Atendimento técnico especializado
         </p>
 
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => analytics.whatsappClick('cda-final')}
-          className="mt-8 inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl shadow-lg shadow-green-500/25 transition-colors"
-        >
-          <MessageCircle className="w-6 h-6" />
-          Falar no WhatsApp — Orçamento Grátis
-        </a>
+        <div className="mt-10">
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => analytics.whatsappClick('cda-final')}
+            className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl transition-colors shadow-lg shadow-green-500/25"
+          >
+            <MessageCircle className="w-7 h-7" />
+            Falar no WhatsApp — Orçamento Grátis
+          </a>
+        </div>
 
-        <div className="flex justify-center gap-8 md:gap-16 mt-10">
+        <div className="flex justify-center gap-8 md:gap-16 mt-12">
           {[
-            { icon: Upload,      label: 'Mande a planta' },
-            { icon: Zap,         label: 'Orçamento em 24h' },
-            { icon: Truck,       label: 'Entrega programada' },
-          ].map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <div key={i} className="flex flex-col items-center gap-2">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-gray-300 text-sm text-center">{item.label}</span>
+            { icon: Upload, label: 'Mande a planta' },
+            { icon: Zap, label: 'Orçamento em 24h' },
+            { icon: Truck, label: 'Entrega programada' },
+          ].map(({ icon: Icon, label }) => (
+            <div key={label} className="flex flex-col items-center gap-2">
+              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+                <Icon className="w-6 h-6 text-brand-orange" />
               </div>
-            );
-          })}
+              <span className="text-sm text-gray-400">{label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
