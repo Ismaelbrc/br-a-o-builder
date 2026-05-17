@@ -82,12 +82,14 @@ export default function Header() {
                 <User className="w-5 h-5" />
                 <span className="text-sm">Área do Cliente</span>
               </Link>
-              <button
-                onClick={scrollToOrcamento}
+              <a
+                href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide"
               >
                 Fale Conosco
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -266,15 +268,15 @@ export default function Header() {
                 <User className="w-5 h-5" />
                 Área do Cliente
               </Link>
-              <button
-                onClick={() => {
-                  scrollToOrcamento();
-                  setIsMobileMenuOpen(false);
-                }}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide"
+              <a
+                href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide text-center block"
               >
                 Fale Conosco
-              </button>
+              </a>
             </div>
           </div>
         </div>
