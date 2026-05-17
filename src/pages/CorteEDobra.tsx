@@ -321,25 +321,45 @@ const StatsCD = () => {
 
 // ═══ FAQ ═══
 const faqData = [
-  { 
+  {
+    question: "O que é corte e dobra de aço?",
+    answer: "Corte e dobra de aço é o serviço industrial que processa vergalhões conforme o projeto estrutural da obra. As peças são cortadas e dobradas em máquinas CNC com precisão milimétrica, identificadas por elemento (pilar, viga, sapata) e entregues prontas para armar diretamente no canteiro."
+  },
+  {
+    question: "Qual o preço do corte e dobra de aço em Goiânia?",
+    answer: "O preço do corte e dobra varia conforme o volume, os diâmetros utilizados e a complexidade do projeto. Para obras residenciais de médio porte, o serviço completo (material + processamento) costuma ser 10% a 20% mais econômico que comprar barras inteiras e armar manualmente. Solicite um orçamento gratuito: enviamos o preço exato em até 24 horas após receber o projeto."
+  },
+  {
     question: "Como funciona o serviço de Corte e Dobra?",
-    answer: "Você nos envia a planta estrutural ou lista de materiais. Nossa equipe técnica analisa, quantifica e faz o orçamento. Após aprovação, cortamos e dobramos o aço com máquinas automatizadas, identificamos cada peça e entregamos na sua obra pronto para armar."
+    answer: "Você nos envia a planta estrutural ou lista de materiais por WhatsApp ou e-mail. Nossa equipe técnica analisa, quantifica e elabora o orçamento. Após aprovação, cortamos e dobramos o aço com máquinas automatizadas, identificamos cada peça por etapa da obra e entregamos no canteiro pronto para armar."
   },
-  { 
-    question: "Qual o prazo de entrega?",
-    answer: "O prazo padrão é de até 7 dias úteis após a aprovação do orçamento. Para obras com urgência, consulte nossa equipe sobre possibilidade de entregas expressas."
+  {
+    question: "Qual o prazo de entrega do corte e dobra?",
+    answer: "O prazo padrão é de até 7 dias úteis após a aprovação do orçamento. Para regiões de Goiânia e Grande Goiânia, frequentemente conseguimos entregas em 3 a 5 dias úteis. Para obras com urgência, consulte nossa equipe sobre entregas expressas."
   },
-  { 
+  {
     question: "Qual a economia real com Corte e Dobra?",
-    answer: "Em média, nossos clientes economizam até 50% nos custos com mão de obra de armação. Além disso, a eliminação de desperdício de material gera economia adicional de 3% a 8% no consumo total de aço da obra."
+    answer: "Em média, nossos clientes economizam até 50% nos custos com mão de obra de armação, pois o aço chega pronto para montar. Além disso, a eliminação de desperdício gera economia adicional de 5% a 12% no consumo total de aço. Em uma obra com 20 toneladas de aço, isso representa R$ 15.000 a R$ 30.000 em economia total."
   },
-  { 
+  {
+    question: "Vocês atendem obras fora de Goiânia?",
+    answer: "Sim. Entregamos em toda a Grande Goiânia (Aparecida, Senador Canedo, Trindade, Goianira), Anápolis, Brasília/DF, Itumbiara, Rio Verde e demais cidades de Goiás. O prazo e o frete variam conforme a localidade — consulte nossa equipe."
+  },
+  {
+    question: "O aço da BR Aço tem certificação ABNT?",
+    answer: "Sim. Todos os nossos vergalhões são produzidos em conformidade com a ABNT NBR 7480/2007. Cada lote possui certificado de qualidade com rastreabilidade completa, disponível para o cliente. O serviço de corte e dobra mantém as propriedades mecânicas originais do aço certificado."
+  },
+  {
+    question: "Preciso ter projeto estrutural para contratar o corte e dobra?",
+    answer: "O ideal é ter a planta estrutural ou a planilha de ferro elaborada pelo engenheiro calculista. No entanto, se você ainda não tem o projeto, nossa equipe técnica pode auxiliar na interpretação e quantificação. Entre em contato e explique sua situação."
+  },
+  {
     question: "Atendem obras de todos os portes?",
-    answer: "Sim. Atendemos desde uma casa residencial simples até grandes empreendimentos com milhares de toneladas. Cada projeto recebe atenção personalizada."
+    answer: "Sim. Atendemos desde uma casa residencial simples até grandes empreendimentos comerciais, galpões industriais e edifícios de múltiplos pavimentos. Não há volume mínimo obrigatório — cada projeto recebe atenção personalizada."
   },
-  { 
+  {
     question: "Quais as formas de pagamento?",
-    answer: "Aceitamos boleto, transferência bancária, PIX e cartão de crédito em até 10x. Consulte nossa equipe comercial para condições especiais em grandes volumes."
+    answer: "Aceitamos boleto bancário, transferência, PIX e cartão de crédito em até 10x. Para clientes com volume recorrente, oferecemos condições especiais de prazo. Consulte nossa equipe comercial."
   },
 ];
 
@@ -592,9 +612,35 @@ const FrotaSection = () => {
 export default function CorteEDobra() {
   useSEO({
     title: 'Corte e Dobra de Vergalhão em Goiânia | BR Aço',
-    description: 'Corte e dobra industrial sob medida em Goiânia. Produção 100% automatizada, precisão milimétrica, entrega em até 48h, certificação ABNT. Reduza 50% da mão de obra. Solicite orçamento.',
+    description: 'Corte e dobra industrial sob medida em Goiânia. Produção 100% automatizada, precisão milimétrica, entrega em até 7 dias úteis, certificação ABNT. Reduza 50% da mão de obra. Solicite orçamento.',
     canonical: 'https://grupobraco.com.br/corte-e-dobra',
   });
+
+  // FAQ Schema — gera rich snippet (posição 0) no Google
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqData.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-schema';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+    return () => {
+      const existing = document.getElementById('faq-schema');
+      if (existing) existing.remove();
+    };
+  }, []);
+
   return (
     <Layout>
       <HeroSection />
