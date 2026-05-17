@@ -13,8 +13,8 @@ declare global {
   }
 }
 
-const GADS_ID    = import.meta.env.VITE_GADS_ID as string | undefined;
-const GADS_LABEL = import.meta.env.VITE_GADS_LABEL as string | undefined;
+const GADS_ID    = 'AW-16520884957';
+const GADS_LABEL = 'MQ4NCOCD0a4cEN3l4sU9';
 
 // ── Safe callers (no-op if script not loaded yet) ──────────────────────────
 
@@ -59,11 +59,9 @@ export const analytics = {
     });
 
     // Google Ads conversion
-    if (GADS_ID && GADS_LABEL) {
-      gtag('event', 'conversion', {
-        send_to: `${GADS_ID}/${GADS_LABEL}`,
-      });
-    }
+    gtag('event', 'conversion', {
+      send_to: `${GADS_ID}/${GADS_LABEL}`,
+    });
 
     // Clarity
     clarity('whatsapp_click', source);
@@ -83,11 +81,9 @@ export const analytics = {
       event_label: 'quote_form',
     });
 
-    if (GADS_ID && GADS_LABEL) {
-      gtag('event', 'conversion', {
-        send_to: `${GADS_ID}/${GADS_LABEL}`,
-      });
-    }
+    gtag('event', 'conversion', {
+      send_to: `${GADS_ID}/${GADS_LABEL}`,
+    });
 
     clarity('form_submit');
   },
