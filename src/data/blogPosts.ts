@@ -2054,6 +2054,333 @@ A BR Aço fornece:
 - **Armadura negativa** sobre apoios e vigas, conforme detalhamento estrutural
 
 Envie o projeto e receba o orçamento da laje completa — treliças + vergalhão cortado — em até 24h. Atendemos Goiânia e toda a região de Goiás.`
+  },
+  {
+    id: 30,
+    slug: "minha-casa-minha-vida-aco-goias-como-calcular",
+    category: "Gestão de Obra",
+    title: "MCMV 2026 em Goiás: Quanto Aço Usar e Como Calcular",
+    metaDescription: "Guia completo de aço para obras do Minha Casa Minha Vida em Goiás: tipos de vergalhão, consumo por m², custo estimado e como aproveitar corte e dobra para reduzir desperdício.",
+    keyword: "minha casa minha vida aço goiás",
+    date: "17 Mai 2026",
+    summary: "Saiba como calcular o aço para obras do MCMV em Goiás, os tipos de vergalhão recomendados, consumo médio por m² e como o corte e dobra reduz custo em até 30%.",
+    content: `## Resposta Rápida
+
+Para uma casa do Minha Casa Minha Vida (MCMV) de **60 m² em Goiás**, o consumo típico de aço é de **40 a 60 kg por m² de área construída**, totalizando entre **2.400 e 3.600 kg** de vergalhão. O vergalhão mais usado é o **CA-50 (10 mm e 12,5 mm)** para vigas e pilares, e o **CA-60 (6,3 mm e 8 mm)** para lajes treliçadas e telas soldadas.
+
+## O que é o MCMV e por que o Aço Importa Tanto
+
+O Minha Casa Minha Vida é o principal programa habitacional do Brasil em 2026, com novas metas para Goiás que somam mais de **40.000 unidades contratadas** no estado. Em obras MCMV, o controle de custos é crítico — e o aço representa entre **15% e 22% do custo total de construção**.
+
+Usar mais aço do que o necessário eleva o custo sem aumentar a segurança. Usar menos do que o projeto exige compromete a estrutura e pode reprovar a vistoria da Caixa Econômica Federal.
+
+## Tipos de Vergalhão Usados no MCMV
+
+### CA-50 — O mais comum em MCMV
+- **Onde é usado:** pilares, vigas, cintas de amarração, fundações (sapatas e baldrames)
+- **Diâmetros típicos:** 10 mm e 12,5 mm para pilares; 6,3 mm e 8 mm para estribos
+- **Norma:** ABNT NBR 7480 — limite de escoamento ≥ 500 MPa
+
+### CA-60 — Lajes e telas
+- **Onde é usado:** lajes treliçadas (armadura de distribuição), telas soldadas de piso, malhas pop
+- **Diâmetros típicos:** 4,2 mm, 5,0 mm e 6,3 mm para treliças; 4,2 mm para telas
+- **Norma:** ABNT NBR 7480 — limite de escoamento ≥ 600 MPa
+
+## Consumo de Aço por Elemento Estrutural (MCMV Térreo, 60 m²)
+
+| Elemento | Vergalhão | Consumo estimado |
+|---------|-----------|-----------------|
+| Fundação (baldrame + sapatas) | CA-50 ø10, ø12,5 + estribos ø6,3 | 350 – 500 kg |
+| Pilares (8 a 12 pilares) | CA-50 ø10, ø12,5 + estribos ø6,3 | 280 – 400 kg |
+| Vigas (cintas + vigas de laje) | CA-50 ø10 + estribos ø6,3 | 300 – 450 kg |
+| Laje (treliçada T8) | CA-60 treliça + armadura negativa CA-50 ø8 | 420 – 600 kg |
+| Escada (se houver) | CA-50 ø10 + distribuição ø6,3 | 80 – 150 kg |
+| **Total geral** | — | **1.430 – 2.100 kg** |
+
+> **Nota:** esses valores são estimativas para casas térreas de 60 m² com estrutura convencional. O consumo real depende do projeto estrutural específico. Casas de 2 pavimentos ou com fundação em estaca têm consumo significativamente maior.
+
+## Por que o Consumo Real Costuma Ser Maior
+
+O consumo teórico calculado pelo projetista estrutural raramente coincide com o consumo real na obra por três razões:
+
+1. **Perdas por corte:** quando o aço é cortado no canteiro, as sobras (pontas) raramente são reaproveitadas. A perda média é de **8% a 15%**
+2. **Ganchos e transpasses:** as normas exigem comprimento de ancoragem e transpasse (junção de barras). Isso adiciona 10% a 20% de comprimento às barras
+3. **Erros de medição:** armadores experientes estimam "no olho", o que gera tanto desperdício quanto falta de material
+
+Com **corte e dobra industrial**, a perda por sobra cai para menos de **2%**, porque o software de otimização aproveita ao máximo cada barra de 12 metros.
+
+## Comparativo de Custo: Aço no Canteiro vs. Corte e Dobra (MCMV 60 m²)
+
+| Item | Corte no Canteiro | Corte e Dobra BR Aço |
+|------|-------------------|----------------------|
+| Vergalhão necessário | 2.100 kg + 15% desperdício = **2.415 kg** | 2.100 kg + 2% = **2.142 kg** |
+| Custo do aço (R$ 10/kg) | R$ 24.150 | R$ 21.420 |
+| Mão de obra de armação | R$ 4.500 (corte, dobra, montagem) | R$ 2.200 (só montagem) |
+| **Total estimado** | **R$ 28.650** | **R$ 23.620** |
+| **Economia** | — | **R$ 5.030 (17,5%)** |
+
+## Prazo e Entrega para Obras MCMV em Goiás
+
+A BR Aço atende obras do MCMV em toda a região de Goiás com entrega em até **48 horas** após aprovação do projeto. O material é entregue:
+
+- **Etiquetado por elemento** (pilar P1, viga V1, etc.) conforme o detalhamento estrutural
+- **Agrupado por etapa** de obra (fundação → estrutura → laje)
+- **Com nota fiscal e certificado de qualidade** ABNT — exigido pela CEF nas vistorias
+
+## Como Solicitar Orçamento para Obra MCMV
+
+1. Tenha em mãos o **projeto estrutural** assinado pelo engenheiro
+2. Envie a planta pelo WhatsApp para a BR Aço
+3. Em até **24h** você recebe o quantitativo completo e o orçamento
+4. Aprove e agende a entrega para quando precisar
+
+A BR Aço já forneceu aço para mais de **800 obras** em Goiás, incluindo projetos MCMV em Aparecida de Goiânia, Senador Canedo, Trindade e Anápolis. Solicite seu orçamento agora.`
+  },
+  {
+    id: 31,
+    slug: "espacamento-estribos-pilar-viga-tabela-nbr-6118",
+    category: "Dicas Técnicas",
+    title: "Espaçamento de Estribos em Pilares e Vigas: Tabela NBR 6118",
+    metaDescription: "Tabela completa de espaçamento máximo de estribos em pilares e vigas conforme a NBR 6118:2026. Como calcular, erros comuns e o que muda na nova norma.",
+    keyword: "espaçamento estribos pilar viga nbr 6118",
+    date: "17 Mai 2026",
+    summary: "Tabela de espaçamento máximo de estribos em pilares e vigas conforme NBR 6118, com exemplos práticos de cálculo e os principais erros de armação em obra.",
+    content: `## Resposta Rápida
+
+O espaçamento máximo de estribos conforme a **NBR 6118** é:
+- **Pilares:** menor valor entre *d/2*, *20 × φ* (diâmetro da barra longitudinal) e **20 cm**
+- **Vigas:** depende da solicitação de cisalhamento — em geral entre **10 cm e 30 cm** para a região crítica próxima ao apoio
+
+Em obras residenciais comuns (casas e sobrados), o espaçamento típico de estribos em pilares é de **10 a 15 cm** na região de emenda e **15 a 20 cm** no vão central.
+
+## O que são Estribos e por que o Espaçamento Importa
+
+Os estribos são as barras transversais que envolvem a armadura longitudinal de pilares e vigas. Eles têm três funções principais:
+
+1. **Resistir ao cisalhamento** (esforço cortante) nas vigas
+2. **Evitar o flambagem das barras longitudinais** nos pilares
+3. **Confinar o núcleo de concreto**, aumentando a ductilidade da estrutura
+
+Um espaçamento excessivo entre estribos compromete as três funções e pode levar ao colapso frágil do elemento — sem aviso prévio. Por isso, a NBR 6118 define valores máximos que não podem ser ultrapassados.
+
+## Fórmula do Espaçamento Máximo de Estribos em Pilares
+
+Conforme a NBR 6118:2023/2026, o espaçamento máximo de estribos em pilares (s_máx) deve satisfazer:
+
+**s_máx = min (d_mín / 2; 20 × φ_l; 20 cm)**
+
+Onde:
+- **d_mín** = menor dimensão da seção transversal do pilar (cm)
+- **φ_l** = diâmetro da barra longitudinal (cm)
+- **20 cm** = limite absoluto
+
+### Exemplo Prático — Pilar 14×14 cm com barras ø12,5 mm
+
+- d_mín = 14 cm → d_mín/2 = **7 cm**
+- φ_l = 1,25 cm → 20 × 1,25 = **25 cm**
+- Limite absoluto = **20 cm**
+
+**s_máx = min (7; 25; 20) = 7 cm**
+
+Para esse pilar típico de obra residencial, o espaçamento máximo de estribos é de **7 cm**.
+
+## Tabela de Espaçamento Máximo em Pilares (Uso Prático)
+
+| Seção do pilar | Barra longitudinal | s_máx calculado |
+|----------------|-------------------|-----------------|
+| 14 × 14 cm | ø12,5 mm | 7 cm |
+| 14 × 19 cm | ø12,5 mm | 7 cm |
+| 19 × 19 cm | ø12,5 mm | 9,5 cm |
+| 19 × 19 cm | ø16,0 mm | 9,5 cm |
+| 20 × 30 cm | ø16,0 mm | 10 cm |
+| 25 × 50 cm | ø20,0 mm | 12,5 cm |
+| 30 × 60 cm | ø20,0 mm | 15 cm |
+| 40 × 80 cm | ø25,0 mm | 20 cm |
+
+> **Atenção:** na região de emendas de barras (junta de transpasse), a NBR 6118 exige que o espaçamento seja reduzido a **s_máx / 2** (metade do valor calculado acima) ao longo de um comprimento mínimo de 1,5 × comprimento de emenda.
+
+## Fórmula do Espaçamento de Estribos em Vigas
+
+Para vigas, o cálculo é mais complexo e depende da intensidade do esforço cortante (V_sd). Em termos práticos:
+
+| Zona da viga | Espaçamento típico |
+|-------------|-------------------|
+| Região crítica (próxima ao apoio, ≤ 2d) | 10 – 15 cm |
+| Região intermediária | 15 – 25 cm |
+| Região central (baixo cisalhamento) | 25 – 30 cm |
+| Limite máximo absoluto (NBR 6118) | 30 cm ou 0,6d |
+
+O espaçamento mínimo de estribos em vigas é de **5 cm** (para permitir a passagem do vibrador de concreto).
+
+## Diâmetro Mínimo do Estribo
+
+A NBR 6118 exige que os estribos tenham diâmetro mínimo de **5 mm**. Na prática, os diâmetros mais usados são:
+
+| Aplicação | Diâmetro recomendado |
+|-----------|---------------------|
+| Pilares residenciais | ø6,3 mm (CA-50 ou CA-60) |
+| Vigas residenciais | ø6,3 mm (CA-50) |
+| Pilares comerciais e industriais | ø8 mm (CA-50) |
+| Vigas de grande porte | ø8 mm a ø10 mm (CA-50) |
+
+## Erros Mais Comuns no Espaçamento de Estribos
+
+### Erro 1: Usar o mesmo espaçamento em toda a extensão da viga
+O armador coloca 15 cm do apoio até o meio da viga. O correto é reduzir o espaçamento na região próxima ao apoio (≤ 2d) onde o cisalhamento é máximo.
+
+### Erro 2: Não reduzir o espaçamento na zona de emenda
+Nas emendas de barras longitudinais, o espaçamento deve ser **a metade** do calculado. Esse detalhe é frequentemente omitido em obras de menor porte.
+
+### Erro 3: Usar estribos abertos ("garfos")
+Estribos abertos não fecham o núcleo de concreto e não confinam efetivamente as barras longitudinais. A NBR 6118 exige **ganchos com ângulo mínimo de 135°** nas pontas dos estribos.
+
+### Erro 4: Calcular o espaçamento pela dimensão errada do pilar
+Em pilares retangulares, deve-se usar a **menor dimensão** (d_mín). Usar a maior dimensão leva a espaçamentos excessivos.
+
+## O Impacto do Espaçamento no Aço Necessário
+
+A diferença de espaçamento impacta diretamente o consumo de aço. Para um pilar de 2,8 m de altura:
+
+| Espaçamento de estribo | Quantidade de estribos | Aço em estribos (ø6,3 mm) |
+|------------------------|------------------------|---------------------------|
+| 7 cm | 40 estribos | 5,2 kg |
+| 10 cm | 28 estribos | 3,6 kg |
+| 15 cm | 19 estribos | 2,5 kg |
+
+A diferença entre 7 cm e 15 cm é de **2,7 kg por pilar**. Em uma obra com 12 pilares, isso representa **32 kg de aço** a mais no caso correto vs. o subdimensionado — o que mostra que respeitar a norma não é apenas questão de segurança, mas também de precisão no orçamento.
+
+## Corte e Dobra de Estribos: Como a BR Aço Ajuda
+
+Os estribos são a peça mais trabalhosa de produzir manualmente — cada um exige **4 dobras precisas** e um fechamento com gancho de 135°. Com o serviço de corte e dobra da BR Aço:
+
+- Estribos produzidos com **dobradeira industrial CNC** — precisão de ±1 mm
+- Ganchos de 135° garantidos em todos os cantos
+- Cada tamanho e diâmetro entregue **etiquetado por elemento** (pilar, viga)
+- Elimina o tempo de dobra manual no canteiro — reduz em até 60% o tempo de armação
+
+Envie o detalhamento estrutural pelo WhatsApp e receba o orçamento completo de estribos + barras longitudinais em até 24h.`
+  },
+  {
+    id: 32,
+    slug: "vergalhao-ca-50-ca-60-guia-definitivo-2026",
+    category: "Vergalhões",
+    title: "CA-50 e CA-60: Guia Definitivo para Escolher o Vergalhão Certo (2026)",
+    metaDescription: "Diferenças completas entre CA-50 e CA-60: resistência, aplicações, diâmetros, preço por kg e quando usar cada um. Guia definitivo com tabelas conforme ABNT NBR 7480.",
+    keyword: "ca-50 ca-60 diferença qual usar",
+    date: "17 Mai 2026",
+    summary: "Guia completo com todas as diferenças entre CA-50 e CA-60: resistência, aplicações, preço, diâmetros disponíveis e quando cada um é a escolha correta.",
+    content: `## Resposta Rápida
+
+**CA-50** e **CA-60** são as duas classes de aço para concreto armado mais usadas no Brasil, definidas pela **ABNT NBR 7480**. A principal diferença é a **resistência ao escoamento**: o CA-50 resiste a **500 MPa** e o CA-60 a **600 MPa**. Na prática, o CA-50 é usado em peças estruturais (pilares, vigas, fundações) e o CA-60 em lajes treliçadas, telas soldadas e estribos de pequeno diâmetro.
+
+## O que Significa "CA" no Vergalhão?
+
+CA = **Concreto Armado**. O número após as letras indica o **limite de escoamento característico** do aço em megapascal (MPa):
+
+| Classe | Limite de Escoamento (f_yk) | Limite de Resistência (f_tk) | Alongamento mínimo |
+|--------|----------------------------|------------------------------|--------------------|
+| CA-25 | 250 MPa | 390 MPa | 18% |
+| CA-50 | 500 MPa | 545 MPa | 8% |
+| CA-60 | 600 MPa | 660 MPa | 5% |
+
+> O CA-25 foi praticamente descontinuado no mercado brasileiro. O CA-50 e CA-60 respondem por mais de 95% do aço consumido em obras residenciais e comerciais.
+
+## Diferenças Físicas: Como Identificar em Obra
+
+| Característica | CA-50 | CA-60 |
+|---------------|-------|-------|
+| **Superfície** | Nervurada (entalhes ao longo de toda a barra) | Nervurada ou lisa (diâmetros menores) |
+| **Dobramento** | Dobra a frio sem fratura | Dobra a frio com menor ductilidade |
+| **Diâmetros disponíveis** | 6,3 mm a 40 mm | 3,4 mm a 12,5 mm |
+| **Forma de fornecimento** | Barras de 12 m (bobinas até ø10 mm) | Bobinas (diâmetros até 10 mm) / barras (acima) |
+
+## Quando Usar CA-50
+
+O CA-50 é o vergalhão padrão para elementos estruturais que absorvem cargas significativas:
+
+- **Pilares** — toda a armadura longitudinal e estribos de ø8 mm ou mais
+- **Vigas** — barras principais de tração e compressão + estribos de ø6,3 mm ou mais
+- **Fundações** — sapatas, blocos, baldrames, radiers
+- **Escadas** — armadura longitudinal
+- **Lajes maciças** — armadura principal (ø8 mm, ø10 mm)
+- **Armadura negativa** sobre apoios de lajes treliçadas (ø8 mm, ø10 mm)
+
+## Quando Usar CA-60
+
+O CA-60 é mais eficiente em elementos onde o **volume de concreto é limitado** e a resistência de 500 MPa do CA-50 seria insuficiente para diâmetros pequenos:
+
+- **Lajes treliçadas** — as próprias treliças metálicas são produzidas em CA-60 (ø4,2 mm e ø5 mm)
+- **Telas soldadas** — malhas para lajes, pisos industriais e contrapisos (ø4,2 mm a ø8 mm)
+- **Malhas pop** — alternativa à tela soldada em obras residenciais
+- **Estribos de ø5 mm** — em pilares e vigas de seção muito pequena
+
+## Tabela de Diâmetros Disponíveis por Classe
+
+### CA-50
+| Diâmetro (mm) | Peso (kg/m) | Uso Típico |
+|:---:|:---:|---|
+| 6,3 | 0,245 | Estribos, distribuição de laje |
+| 8,0 | 0,395 | Estribos, armadura de laje |
+| 10,0 | 0,617 | Pilares pequenos, vigas secundárias |
+| 12,5 | 0,963 | Pilares, vigas, baldrames |
+| 16,0 | 1,578 | Pilares e vigas de médio porte |
+| 20,0 | 2,466 | Vigas principais, pilares de edifícios |
+| 25,0 | 3,853 | Estruturas pesadas, pontes |
+| 32,0 | 6,313 | Obras de infraestrutura |
+| 40,0 | 9,865 | Obras industriais e de infraestrutura |
+
+### CA-60
+| Diâmetro (mm) | Peso (kg/m) | Uso Típico |
+|:---:|:---:|---|
+| 3,4 | 0,071 | Treliças leves |
+| 4,2 | 0,109 | Treliças, telas soldadas finas |
+| 5,0 | 0,154 | Treliças T6, telas soldadas |
+| 6,0 | 0,222 | Telas soldadas, malhas pop |
+| 6,3 | 0,245 | Estribos finos, armadura secundária |
+| 7,0 | 0,302 | Telas soldadas de piso |
+| 8,0 | 0,395 | Telas soldadas estruturais |
+| 10,0 | 0,617 | Malhas de laje, pisos industriais |
+| 12,5 | 0,963 | Elementos especiais |
+
+## Comparativo de Preço por kg (Goiânia, Mai/2026)
+
+| Produto | Preço médio (R$/kg, sem entrega) |
+|---------|----------------------------------|
+| CA-50 ø6,3 mm (bobina) | R$ 6,20 – 7,00 |
+| CA-50 ø10,0 mm (barra) | R$ 5,80 – 6,50 |
+| CA-50 ø12,5 mm (barra) | R$ 5,80 – 6,50 |
+| CA-50 ø16,0 mm (barra) | R$ 5,90 – 6,60 |
+| CA-60 (bobina, qualquer ø) | R$ 6,00 – 7,50 |
+| Treliça T8 CA-60 (metro) | R$ 4,20 – 5,50 |
+
+> Preços de referência — sujeitos a variação conforme cotação do aço na bolsa e frete. Para orçamento atualizado, solicite diretamente à BR Aço.
+
+## CA-50 ou CA-60: Pode Substituir um pelo Outro?
+
+**Não, sem projeto revisado.** As duas classes têm resistências diferentes e as seções de armadura são calculadas especificamente para cada uma. Substituir CA-50 por CA-60 (ou vice-versa) sem novo cálculo estrutural pode resultar em **superdimensionamento** (desperdício de aço) ou **subdimensionamento** (risco estrutural).
+
+A substituição só é válida quando:
+1. O engenheiro estrutural refaz o dimensionamento para a nova classe
+2. O número de barras e/ou o diâmetro são ajustados proporcionalmente
+
+## Certificação ABNT: O que Verificar ao Comprar
+
+Para garantir que o vergalhão é de qualidade certificada, exija:
+- **Certificado de qualidade** do lote (laudo de ensaios mecânicos)
+- **Rastreabilidade** do fabricante — barras com marcações de identificação laminadas
+- **Conformidade com ABNT NBR 7480** — a norma vigente para aços para concreto armado
+
+A BR Aço fornece vergalhão **CA-50 e CA-60 com certificação ABNT** de fabricantes como Gerdau e ArcelorMittal, com laudo disponível para cada lote entregue — requisito para obras com vistoria da Caixa (MCMV) e ISS/INSS de incorporações.
+
+## Solicite o Vergalhão Certo para Sua Obra
+
+Com o projeto estrutural em mãos, a BR Aço:
+1. Identifica a classe e diâmetro certo para cada elemento
+2. Faz o corte e dobra nas medidas exatas — sem desperdício de pontas
+3. Entrega em até **48h em Goiânia e região metropolitana**
+4. Emite laudo de qualidade e nota fiscal
+
+Envie sua planta pelo WhatsApp e receba o orçamento completo em até 24h.`
   }
 ];
 
