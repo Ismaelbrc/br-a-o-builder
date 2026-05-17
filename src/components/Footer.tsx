@@ -9,6 +9,7 @@ const navigationLinks = [
   { name: 'Produtos', href: '/produtos' },
   { name: 'Corte e Dobra', href: '/corte-e-dobra' },
   { name: 'Blog', href: '/blog' },
+  { name: 'Calculadora de Vergalhão', href: '/calculadora-vergalhao' },
   { name: 'FAQ', href: '/faq' },
   { name: 'Contato', href: 'https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.' },
   { name: 'Área do Cliente', href: '/cliente' },

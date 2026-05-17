@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, User, ChevronDown, Star } from 'lucide-react';
+import { Menu, X, User, ChevronDown, Star, Calculator } from 'lucide-react';
 import logoImage from '@/assets/logo-braco.png';
 import { analytics } from '@/lib/analytics';
 
@@ -20,6 +20,7 @@ const navLinks = [
   { name: 'Produtos', href: '/produtos', hasDropdown: true },
   { name: 'Galeria', href: '/galeria' },
   { name: 'Blog', href: '/blog' },
+  { name: 'Calculadora', href: '/calculadora-vergalhao', isCalculator: true },
   { name: 'Catálogo', href: '/catalogo-braco.pdf', isExternal: true },
 ];
 
@@ -143,6 +144,18 @@ export default function Header() {
                       </div>
                     )}
                   </div>
+                ) : (link as any).isCalculator ? (
+                  <Link
+                    to={link.href}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold transition-colors rounded-full border ${
+                      location.pathname === link.href
+                        ? 'bg-brand-orange text-white border-brand-orange'
+                        : 'text-brand-orange border-brand-orange/40 hover:bg-brand-orange hover:text-white hover:border-brand-orange'
+                    }`}
+                  >
+                    <Calculator className="w-3.5 h-3.5" />
+                    {link.name}
+                  </Link>
                 ) : (link as any).isExternal ? (
                   <a
                     href={link.href}
@@ -242,6 +255,18 @@ export default function Header() {
                         </div>
                       )}
                     </div>
+                  ) : (link as any).isCalculator ? (
+                    <Link
+                      to={link.href}
+                      className={`flex items-center gap-2 min-h-[48px] py-3 border-b border-border text-base font-semibold ${
+                        location.pathname === link.href
+                          ? 'text-brand-orange'
+                          : 'text-brand-orange'
+                      }`}
+                    >
+                      <Calculator className="w-4 h-4" />
+                      {link.name}
+                    </Link>
                   ) : (link as any).isExternal ? (
                     <a
                       href={link.href}

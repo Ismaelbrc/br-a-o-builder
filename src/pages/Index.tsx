@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight } from 'lucide-react';
+import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight, Calculator } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
 import DifferentialsSection from '@/components/home/DifferentialsSection';
@@ -156,6 +156,31 @@ const Index = () => {
 
       {/* CTA Banner Section */}
       <CtaBannerSection />
+
+      {/* Calculadora Banner */}
+      <section className="py-12 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="bg-card border border-border rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-6 shadow-sm">
+            <div className="flex-shrink-0 bg-brand-orange/10 rounded-2xl p-5">
+              <Calculator className="w-10 h-10 text-brand-orange" />
+            </div>
+            <div className="flex-1 text-center sm:text-left">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
+                Calculadora de Vergalhão Grátis
+              </h2>
+              <p className="text-muted-foreground text-sm sm:text-base">
+                Descubra quantos kg de aço você precisa para a sua laje ou estrutura — CA-50, CA-60, todos os diâmetros. Resultado em segundos, sem cadastro.
+              </p>
+            </div>
+            <Link
+              to="/calculadora-vergalhao"
+              className="flex-shrink-0 bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide text-sm whitespace-nowrap"
+            >
+              Calcular agora
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Blog Preview Section */}
       <BlogPreviewSection />
