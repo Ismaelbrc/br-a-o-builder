@@ -256,12 +256,6 @@ export default function Produtos() {
                   Falar no WhatsApp
                 </a>
               </Button>
-              <Button variant="outline" asChild className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white">
-                <Link to="/contato">
-                  <FileText className="w-4 h-4 mr-2" />
-                  Formulário de Contato
-                </Link>
-              </Button>
             </div>
           </div>
         </div>

@@ -270,12 +270,14 @@ export default function Sobre() {
             >
               Ver Produtos
             </Link>
-            <Link
-              to="/contato"
+            <a
+              href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra."
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 border-white text-white font-semibold rounded-full px-8 py-4 hover:bg-white hover:text-brand-orange transition-colors text-center"
             >
               Solicitar Orçamento
-            </Link>
+            </a>
           </div>
         </div>
       </section>

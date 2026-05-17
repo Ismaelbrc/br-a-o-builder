@@ -9,7 +9,7 @@ const navigationLinks = [
   { name: 'Corte e Dobra', href: '/corte-e-dobra' },
   { name: 'Blog', href: '/blog' },
   { name: 'FAQ', href: '/faq' },
-  { name: 'Contato', href: '/contato' },
+  { name: 'Contato', href: 'https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.' },
   { name: 'Área do Cliente', href: '/cliente' },
 ];
 
@@ -69,12 +69,23 @@ export default function Footer() {
             <ul className="space-y-1">
               {navigationLinks.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-muted-foreground hover:text-foreground text-sm py-1.5 block transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.href.startsWith('http') ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground text-sm py-1.5 block transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground text-sm py-1.5 block transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

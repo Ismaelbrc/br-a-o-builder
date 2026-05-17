@@ -88,7 +88,7 @@ export default function Blog() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
               <Button asChild className="bg-brand-orange hover:bg-brand-orange-hover text-white rounded-full px-8">
-                <Link to="/contato">Solicitar Orçamento</Link>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
               </Button>
               <Button variant="outline" asChild className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white rounded-full px-8">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
