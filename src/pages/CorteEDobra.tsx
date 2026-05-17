@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -589,6 +590,11 @@ const FrotaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
+  useSEO({
+    title: 'Corte e Dobra de Vergalhão em Goiânia | BR Aço',
+    description: 'Corte e dobra industrial sob medida em Goiânia. Produção 100% automatizada, precisão milimétrica, entrega em até 48h, certificação ABNT. Reduza 50% da mão de obra. Solicite orçamento.',
+    canonical: 'https://grupobraco.com.br/corte-e-dobra',
+  });
   return (
     <Layout>
       <HeroSection />

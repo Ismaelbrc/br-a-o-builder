@@ -4,10 +4,17 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle } from 'lucide-react';
 import { blogPosts, categories } from '@/data/blogPosts';
+import { useSEO } from '@/hooks/useSEO';
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('Todos');
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
+
+  useSEO({
+    title: 'Blog BR Aço | Conteúdo Técnico sobre Aço e Construção Civil',
+    description: 'Artigos técnicos sobre corte e dobra de vergalhão, normas ABNT, cálculo de aço, gestão de obra e dicas para construtores e engenheiros em Goiás.',
+    canonical: 'https://grupobraco.com.br/blog',
+  });
 
   const filteredPosts = activeCategory === 'Todos' 
     ? blogPosts 

@@ -3,15 +3,18 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
+import { useSEO } from '@/hooks/useSEO';
 
-export default function BlogPost() {
-  const { slug } = useParams<{ slug: string }>();
-  const post = blogPosts.find(p => p.slug === slug);
+function BlogPostContent({ slug }: { slug: string }) {
+  const post = blogPosts.find(p => p.slug === slug)!;
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
 
-  if (!post) {
-    return <Navigate to="/blog" replace />;
-  }
+  useSEO({
+    title: `${post.title} | BR Aço`,
+    description: post.metaDescription,
+    canonical: `https://grupobraco.com.br/blog/${post.slug}`,
+    ogType: 'article',
+  });
 
   // Get related posts (same category, excluding current)
   const relatedPosts = blogPosts
@@ -137,4 +140,11 @@ export default function BlogPost() {
       </section>
     </Layout>
   );
+}
+
+export default function BlogPost() {
+  const { slug } = useParams<{ slug: string }>();
+  const post = blogPosts.find(p => p.slug === slug);
+  if (!post) return <Navigate to="/blog" replace />;
+  return <BlogPostContent slug={slug!} />;
 }

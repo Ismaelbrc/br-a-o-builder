@@ -1,19 +1,60 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <title>BR Aço</title>
   <script>
-    // SPA redirect trick for GitHub Pages
-    // Converts /path/to/page into /?/path/to/page so index.html can restore it
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.host +
-      l.pathname.split('/').slice(0, 1).join('/') +
-      '/?/' + l.pathname.slice(1).replace(/&/g, '~and~') +
-      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
+    (function() {
+      var path = window.location.pathname;
+
+      // Mapeamento de slugs antigos (WordPress /conteudo/) para novos (/blog/)
+      var slugMap = {
+        'a-revolucao-do-aco-conheca-a-fabrica-de-vergalhao-em-goiania-que-transforma-seus-projetos': 'o-que-e-corte-e-dobra-de-aco',
+        'o-que-e-corte-e-dobra': 'o-que-e-corte-e-dobra-de-aco',
+        'corte-e-dobra-de-aco': 'o-que-e-corte-e-dobra-de-aco',
+        'corte-e-dobra-vs-manual': 'corte-e-dobra-vs-corte-manual',
+        'vergalhao-ca-50-ca-60': 'vergalhao-ca-50-vs-ca-60-diferencas',
+        'ca-25-ca-50-ca-60': 'ca-25-ca-50-ca-60-qual-vergalhao-usar',
+        'trelicas-de-aco': 'trelicas-de-aco-para-que-servem',
+        'trelicas-metalicas-laje': 'trelicas-metalicas-laje-guia-completo',
+        'malha-de-aco': 'malha-de-aco-construcao-tipos-aplicacoes',
+        'tela-soldada-piso-industrial': 'tela-soldada-ou-malha-pop-piso-industrial',
+        'calculo-de-aco': 'como-calcular-quantidade-de-aco-construcao',
+        'calculo-vergalhao-laje': 'como-calcular-quantidade-vergalhao-laje',
+        'norma-abnt': 'norma-abnt-nbr-7480-aco-concreto-armado',
+        'normas-abnt-vergalhao': 'normas-abnt-vergalhao-o-que-engenheiro-precisa-saber',
+        'entrega-de-aco': 'entrega-aco-48-horas-goias',
+        'entrega-rapida-goias': 'entrega-aco-48-horas-goias',
+        'desperdicio-de-aco': 'como-evitar-desperdicio-de-aco-na-obra',
+        'gestao-de-materiais': 'gestao-de-materiais-construcao-civil-guia-pratico',
+        'projeto-estrutural': 'como-ler-interpretar-projeto-estrutural',
+        'sapatas-fundacao': 'sapatas-de-fundacao-tipos-como-dimensionar',
+        'fundacao-radier': 'fundacao-em-radier-como-dimensionar-armadura',
+        'corte-e-dobra-goias': 'corte-manual-vs-corte-e-dobra-industrial-goias'
+      };
+
+      // Se a URL e do padrao antigo /conteudo/[slug]
+      if (path.indexOf('/conteudo/') === 0) {
+        var oldSlug = path.replace('/conteudo/', '').replace(/\/$/, '');
+        var newSlug = slugMap[oldSlug];
+        var newPath = newSlug ? 'blog/' + newSlug : 'blog';
+        window.location.replace(
+          window.location.protocol + '//' + window.location.host + '/?/' + newPath
+        );
+        return;
+      }
+
+      // SPA redirect trick padrao para GitHub Pages
+      // Converte /path/to/page em /?/path/to/page so index.html can restore it
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.host +
+        l.pathname.split('/').slice(0, 1).join('/') +
+        '/?/' + l.pathname.slice(1).replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    })();
   </script>
 </head>
 <body></body>
