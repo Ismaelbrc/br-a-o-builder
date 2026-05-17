@@ -53,6 +53,7 @@ export default function Header() {
   };
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
@@ -196,9 +197,11 @@ export default function Header() {
         </div>
       </div>
 
+    </header>
+
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 top-16 bg-black/50 z-40"
           onClick={() => setIsMobileMenuOpen(false)}
         />
@@ -283,6 +286,6 @@ export default function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
