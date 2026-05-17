@@ -33,14 +33,20 @@
         'corte-e-dobra-goias': 'corte-manual-vs-corte-e-dobra-industrial-goias'
       };
 
-      // Se a URL e do padrao antigo /conteudo/[slug]
+      // Se a URL e do padrao antigo /conteudo/[slug] → redireciona para a homepage
       if (path.indexOf('/conteudo/') === 0) {
         var oldSlug = path.replace('/conteudo/', '').replace(/\/$/, '');
         var newSlug = slugMap[oldSlug];
-        var newPath = newSlug ? 'blog/' + newSlug : 'blog';
-        window.location.replace(
-          window.location.protocol + '//' + window.location.host + '/?/' + newPath
-        );
+        // Se tem slug mapeado, vai para o post específico; senão, vai para a homepage
+        if (newSlug) {
+          window.location.replace(
+            window.location.protocol + '//' + window.location.host + '/?/blog/' + newSlug
+          );
+        } else {
+          window.location.replace(
+            window.location.protocol + '//' + window.location.host + '/'
+          );
+        }
         return;
       }
 
