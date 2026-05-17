@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
 import Layout from '@/components/Layout';
-import SectionTitle from '@/components/SectionTitle';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useSEO } from '@/hooks/useSEO';
 
 const faqCategories = [
   {
@@ -174,6 +175,33 @@ const faqCategories = [
 ];
 
 export default function Faq() {
+  useSEO({
+    title: 'FAQ | Perguntas Frequentes sobre Aço para Construção | BR Aço',
+    description: 'Tire todas as dúvidas sobre vergalhões, corte e dobra, treliças, normas ABNT, armazenamento e logística de aço para construção civil em Goiânia e Goiás.',
+    canonical: 'https://grupobraco.com.br/faq',
+    keywords: 'dúvidas vergalhão, faq corte e dobra, perguntas aço construção, abnt vergalhão',
+  });
+
+  useEffect(() => {
+    // Flat list of all FAQs for FAQPage schema
+    const allFaqs = faqCategories.flatMap(cat => cat.faqs);
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": allFaqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+      }))
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-page-schema';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+    return () => { document.getElementById('faq-page-schema')?.remove(); };
+  }, []);
+
   return (
     <Layout>
       {/* Hero */}

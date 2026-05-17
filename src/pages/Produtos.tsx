@@ -1,5 +1,6 @@
 ﻿import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import {
@@ -186,6 +187,13 @@ const ProductSection = ({ product, index }: { product: Product; index: number })
 };
 
 export default function Produtos() {
+  useSEO({
+    title: 'Produtos | Vergalhões, Treliças, Corte e Dobra em Goiânia | BR Aço',
+    description: 'Catálogo completo: vergalhões CA-25, CA-50, CA-60, treliças metálicas, telas soldadas, malha pop, colunas armadas e pregos. Entrega em até 48h em Goiás.',
+    canonical: 'https://grupobraco.com.br/produtos',
+    keywords: 'vergalhão goiânia, ca-50 goiânia, ca-60 goiânia, treliça metálica, tela soldada, malha pop, produtos aço construção',
+  });
+
   const { hash } = useLocation();
 
   // Scroll to product section when navigating with hash (#vergalhoes, #trelicas etc.)

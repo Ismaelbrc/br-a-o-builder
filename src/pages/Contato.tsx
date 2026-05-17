@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -72,6 +73,13 @@ const products = [
 const obraTypes = ['Residencial', 'Comercial', 'Industrial', 'Loteamento', 'Infraestrutura', 'Outro'];
 
 export default function Contato() {
+  useSEO({
+    title: 'Contato | Solicite Orçamento de Aço em Goiânia | BR Aço',
+    description: 'Entre em contato com a BR Aço. Solicite orçamento de vergalhões, corte e dobra, treliças e mais. Atendimento rápido via WhatsApp ou formulário. Goiânia e todo o Goiás.',
+    canonical: 'https://grupobraco.com.br/contato',
+    keywords: 'contato br aço, orçamento vergalhão goiânia, solicitar orçamento aço',
+  });
+
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     nome: '',

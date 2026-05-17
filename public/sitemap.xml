@@ -13,6 +13,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://grupobraco.com.br/calculadora-vergalhao</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://grupobraco.com.br/produtos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -139,11 +144,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://grupobraco.com.br/blog/quanto-pesa-vergalhao-por-metro-tabela-completa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grupobraco.com.br/blog/custo-corte-e-dobra-goiania-preco-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grupobraco.com.br/blog/laje-trelicada-como-fazer-guia-completo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://grupobraco.com.br/blog/armaduras-prontas-vs-corte-e-dobra-quando-usar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

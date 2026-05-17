@@ -30,7 +30,12 @@
         'projeto-estrutural': 'como-ler-interpretar-projeto-estrutural',
         'sapatas-fundacao': 'sapatas-de-fundacao-tipos-como-dimensionar',
         'fundacao-radier': 'fundacao-em-radier-como-dimensionar-armadura',
-        'corte-e-dobra-goias': 'corte-manual-vs-corte-e-dobra-industrial-goias'
+        'corte-e-dobra-goias': 'corte-manual-vs-corte-e-dobra-industrial-goias',
+        'tabela-de-peso-do-vergalhao-a-importancia-de-conhecer-seus-dimensionamentos-para-construcoes-eficientes': 'quanto-pesa-vergalhao-por-metro-tabela-completa',
+        'tabela-de-peso-do-vergalhao': 'quanto-pesa-vergalhao-por-metro-tabela-completa',
+        'vergalhao-em-anapolis-a-sustentacao-que-seu-projeto-precisa': 'entrega-aco-48-horas-goias',
+        'br-aco-a-referencia-em-vergalhao-em-goiania': 'o-que-e-corte-e-dobra-de-aco',
+        'calculadora-vergalhao': 'calculadora-vergalhao'
       };
 
       // Se a URL e do padrao antigo /conteudo/[slug] → redireciona para a homepage
@@ -38,7 +43,11 @@
         var oldSlug = path.replace('/conteudo/', '').replace(/\/$/, '');
         var newSlug = slugMap[oldSlug];
         // Se tem slug mapeado, vai para o post específico; senão, vai para a homepage
-        if (newSlug) {
+        if (newSlug === 'calculadora-vergalhao') {
+          window.location.replace(
+            window.location.protocol + '//' + window.location.host + '/?/calculadora-vergalhao'
+          );
+        } else if (newSlug) {
           window.location.replace(
             window.location.protocol + '//' + window.location.host + '/?/blog/' + newSlug
           );

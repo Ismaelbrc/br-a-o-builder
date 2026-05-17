@@ -1372,6 +1372,212 @@ Referência útil para planejar transporte e estoque:
 Se você tem o projeto estrutural da obra, não precisa calcular barra por barra. A **BR Aço** recebe sua planta por WhatsApp, faz o quantitativo completo gratuitamente e entrega o orçamento com o total exato de aço necessário — já separado por elemento e etapa da obra.
 
 O serviço de corte e dobra elimina o desperdício de pontas e reduz em até 50% o custo de mão de obra de armação. Solicite seu orçamento e descubra quanto você economiza.`
+  },
+  {
+    id: 22,
+    slug: "custo-corte-e-dobra-goiania-preco-2026",
+    category: "Corte e Dobra",
+    title: "Quanto Custa o Corte e Dobra em Goiânia? Preços e Tabela 2026",
+    metaDescription: "Descubra quanto custa o serviço de corte e dobra de aço em Goiânia em 2026. Tabela de preços por diâmetro, fatores que influenciam o valor e como calcular o custo total da sua obra.",
+    keyword: "custo corte e dobra goiânia",
+    date: "15 Mai 2026",
+    summary: "Descubra os preços do corte e dobra de aço em Goiânia em 2026, os fatores que influenciam o custo e como calcular o valor total para sua obra.",
+    content: `## Quanto Custa o Corte e Dobra em Goiânia?
+
+O corte e dobra de aço é cobrado principalmente pelo **peso do aço processado (R$/kg)**. Em Goiânia e região metropolitana, o preço do serviço varia conforme o diâmetro do vergalhão, o volume do pedido e a complexidade das dobras.
+
+Em 2026, a faixa de preço do aço cortado e dobrado (material + serviço) está entre **R$ 8,50 e R$ 11,00 por kg**, dependendo do diâmetro e do fornecedor. Para obras residenciais de médio porte, o custo representa 12% a 18% do custo total de construção.
+
+## O Que Está Incluído no Preço do Corte e Dobra?
+
+O orçamento de corte e dobra normalmente inclui:
+
+- **Material:** o vergalhão (CA-50 ou CA-60) comprado pelo fornecedor
+- **Serviço:** corte nas medidas exatas + dobras conforme o projeto estrutural
+- **Identificação:** cada peça etiquetada com o código do projeto
+- **Entrega:** frete calculado por zona de Goiânia
+
+O que **não está incluído:** montagem no canteiro, formas, cimbramento e concreto.
+
+## Fatores Que Influenciam o Preço
+
+### 1. Diâmetro do Vergalhão
+
+Vergalhões de maior diâmetro têm custo de material mais alto por kg:
+
+| Diâmetro | Peso (kg/m) | Aplicação Principal |
+|----------|-------------|---------------------|
+| 6,3 mm | 0,245 | Estribos, armaduras leves |
+| 8,0 mm | 0,395 | Estribos, sapatas |
+| 10,0 mm | 0,617 | Lajes, vigas |
+| 12,5 mm | 0,963 | Pilares, vigas |
+| 16,0 mm | 1,578 | Pilares, fundações |
+| 20,0 mm | 2,466 | Fundações pesadas |
+| 25,0 mm | 3,853 | Obras de grande porte |
+
+### 2. Volume do Pedido
+
+Quanto maior o volume de aço processado, menor o custo por kg. Obras com mais de 5 toneladas geralmente obtêm condições comerciais melhores. Obras menores, com menos de 500 kg, podem ter custo-benefício menos favorável.
+
+### 3. Complexidade das Dobras
+
+Peças simples (estribos retangulares, barras retas) têm custo de serviço menor. Dobras complexas exigem mais configuração da máquina e aumentam o tempo de produção.
+
+### 4. Prazo de Entrega
+
+Pedidos com prazo padrão (5 a 7 dias úteis) têm custo normal. Pedidos urgentes (24 a 48h) podem ter acréscimo de 5% a 15%.
+
+## Comparativo: Corte e Dobra vs. Corte Manual no Canteiro
+
+| Item | Corte Manual no Canteiro | Corte e Dobra Industrial |
+|------|--------------------------|--------------------------|
+| Desperdício de material | 5% a 8% | < 1% |
+| Custo mão de obra armador | R$ 80 a R$ 120/dia por profissional | Zero |
+| Tempo de armação | 3 a 5 dias (laje típica) | 1 a 2 dias |
+| Qualidade do corte | Variável | Uniforme (CNC) |
+| Risco de erro de medida | Médio a alto | Mínimo |
+| Certificação ABNT | Depende do fornecedor | Incluída |
+
+Para uma obra residencial de 150 m² com 3 toneladas de aço, a economia em mão de obra e desperdício pode chegar a **R$ 3.000 a R$ 5.000**, o que geralmente supera o custo do serviço de corte e dobra.
+
+## Como Solicitar Orçamento na BR Aço
+
+1. Envie a **planilha de ferro** do projeto estrutural ou as plantas (via WhatsApp)
+2. Nossa equipe técnica faz o **quantitativo completo gratuitamente**
+3. Você recebe o orçamento detalhado com peso por diâmetro e valor total
+4. Após aprovação, prazo de **5 a 7 dias úteis** para entrega em Goiânia e região
+
+Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região metropolitana.`
+  },
+  {
+    id: 23,
+    slug: "laje-trelicada-como-fazer-guia-completo",
+    category: "Dicas Técnicas",
+    title: "Laje Treliçada: Como Fazer, Dimensionar e Quais Materiais Usar",
+    metaDescription: "Guia completo sobre laje treliçada: tipos, dimensionamento, materiais necessários (treliças, tavelas, vergalhão), vantagens e passo a passo de execução para construtores e engenheiros.",
+    keyword: "laje treliçada como fazer",
+    date: "12 Mai 2026",
+    summary: "Guia completo sobre laje treliçada: tipos, materiais, dimensionamento e passo a passo de execução para construtores e engenheiros.",
+    content: `## O Que é Laje Treliçada?
+
+A laje treliçada (também chamada laje pré-fabricada ou laje com nervuras) é composta por **treliças metálicas**, **elementos de preenchimento** (tavelas ou EPS) e **concreto estrutural**. É o tipo de laje mais utilizado em construções residenciais no Brasil pela economia de material e facilidade de execução.
+
+## Tipos de Laje Treliçada
+
+### Laje Treliçada com Tavela Cerâmica
+A mais tradicional. Tavelas de cerâmica ficam entre as treliças e são cobertas por concreto. Resistentes à compressão, com bom isolamento térmico e acústico.
+
+### Laje Treliçada com EPS (Isopor)
+Substitui as tavelas por blocos de EPS. Mais leve, melhor isolamento térmico, mas exige cuidado no transporte.
+
+### Laje Nervurada Bidirecional
+Treliças em duas direções. Usada em vãos maiores com cargas variadas. Mais complexa de executar.
+
+## Materiais Necessários por m²
+
+| Material | Consumo por m² |
+|---------|----------------|
+| Treliça T8 (laje 16 cm) | ~2,5 m lineares |
+| Tavelas cerâmicas | 12 a 16 unidades |
+| Vergalhão (armadura) | 5 a 8 kg |
+| Concreto (capa 5 cm) | 0,05 m³ |
+
+## Tabela de Espessura por Vão
+
+| Vão (m) | Espessura Mínima | Tipo de Treliça |
+|---------|-----------------|-----------------|
+| até 3,0 | 12 cm | T6 |
+| 3,0 a 4,0 | 16 cm | T8 |
+| 4,0 a 5,0 | 20 cm | T10 |
+| 5,0 a 6,0 | 25 cm | T12 |
+
+**Regra geral:** h ≈ L/25 (vão simples) ou L/30 (laje contínua), onde L é o vão em cm.
+
+## Passo a Passo de Execução
+
+### Etapa 1 — Escoras e Formas
+Monte as escoras a cada 1,5 m. Posicione tábuas nas bordas para conter o concreto.
+
+### Etapa 2 — Posicionamento das Treliças
+Apoie as treliças sobre as vigas com espaçamento de 41 a 50 cm entre eixos. Apoio mínimo de 10 cm em cada extremidade.
+
+### Etapa 3 — Colocação das Tavelas
+Encaixe as tavelas entre as treliças. Não devem ficar sobre as formas das vigas.
+
+### Etapa 4 — Armadura Negativa e de Distribuição
+Coloque a malha CA-60 (Ø 4,2 ou 5,0 mm) sobre as treliças. Adicione armadura negativa CA-50 sobre os apoios conforme projeto.
+
+### Etapa 5 — Revisão e Limpeza
+Verifique cobrimentos (espaçadores), instalações embutidas. Limpe antes de concretar.
+
+### Etapa 6 — Concretagem
+Lance o concreto uniformemente com vibrador. Capa mínima de 4 cm sobre a tavela. Desempene após adensamento.
+
+### Etapa 7 — Cura
+Mantenha úmida por 7 dias. Escoras: mínimo 21 dias.
+
+## Erros Comuns
+
+- Remover escoras antes do prazo
+- Cobrimento insuficiente (mín. 2 cm interno, 3 cm externo)
+- Não colocar armadura negativa sobre apoios
+- Concreto com FCK abaixo do especificado (mínimo 25 MPa)
+
+## Treliças BR Aço para Laje
+
+A BR Aço fornece treliças metálicas T6, T8, T10 e T12 de 4 m a 12 m, seguindo a **ABNT NBR 14859**. Solicite o orçamento informando a área e o tipo especificado no projeto. Entrega em até 48h em Goiânia e região.`
+  },
+  {
+    id: 24,
+    slug: "armaduras-prontas-vs-corte-e-dobra-quando-usar",
+    category: "Corte e Dobra",
+    title: "Armaduras Prontas vs. Corte e Dobra: Quando Usar Cada Um?",
+    metaDescription: "Entenda a diferença entre armaduras prontas (ferragem armada) e corte e dobra industrial. Descubra qual é mais econômico para sua obra e quais os critérios de escolha.",
+    keyword: "armaduras prontas goiânia",
+    date: "10 Mai 2026",
+    summary: "Entenda a diferença entre armaduras prontas e corte e dobra, quais as vantagens de cada um e quando optar por cada serviço na sua obra.",
+    content: `## Armaduras Prontas vs. Corte e Dobra: Qual a Diferença?
+
+Quando um construtor ou engenheiro precisa de aço para a obra, tem duas opções industrializadas:
+
+1. **Corte e Dobra Industrial:** o fornecedor corta e dobra cada barra nas medidas exatas e entrega as peças identificadas por elemento, prontas para armação no canteiro.
+
+2. **Armaduras Prontas (Ferragem Armada):** kits de armadura já montados — sapatas, estribos, gaiolas de pilar — prontos para instalação imediata.
+
+A diferença está no **nível de processamento**: no corte e dobra, o armador ainda monta as peças no canteiro; nas armaduras prontas, ele apenas instala.
+
+## Comparativo Direto
+
+| Critério | Corte e Dobra | Armaduras Prontas |
+|---------|--------------|-------------------|
+| Flexibilidade de projeto | Alta | Média (projetos padronizados) |
+| Custo por kg de aço | Médio | Maior (inclui mão de obra de montagem) |
+| Velocidade no canteiro | Boa | Muito alta |
+| Mão de obra necessária | Armadores para montagem | Apenas para instalação |
+| Adequado para obra única | Sim | Não (pouco vantajoso) |
+| Adequado para série/loteamento | Sim | Sim (mais vantajoso) |
+
+## Quando Escolher Corte e Dobra
+
+- Projeto estrutural único ou personalizado
+- Obra com projeto complexo ou geometria variada
+- Você tem equipe de armação disponível
+- Volume de aço alto (acima de 5 toneladas)
+- Quer máximo controle sobre a montagem e qualidade
+
+## Quando Escolher Armaduras Prontas
+
+- Loteamento ou obras em série com o mesmo projeto
+- Quer minimizar ao máximo a mão de obra de armação
+- Precisa de velocidade máxima de execução
+- Projetos repetitivos de fundação (mesma sapata em vários lotes)
+- Construtora com equipe de armação limitada
+
+## A BR Aço Oferece os Dois Serviços
+
+Na BR Aço, você pode solicitar tanto o **corte e dobra completo** do projeto estrutural quanto **kits de armaduras prontas** para elementos padronizados (sapatas, blocos, estribos, gaiolas de pilar).
+
+Envie o projeto pelo WhatsApp. Nossa equipe técnica analisa e recomenda o melhor serviço para seu tipo de obra. Orçamento gratuito e sem compromisso.`
   }
 ];
 
