@@ -445,7 +445,825 @@ Essa planilha é o documento principal para solicitar o serviço de corte e dobr
 ## Dúvidas sobre seu Projeto?
 
 Se você tem dúvidas sobre como interpretar o seu projeto, a equipe técnica da BR Aço pode ajudar. Envie sua planta pelo WhatsApp e nossos engenheiros auxiliam na análise gratuitamente.`
+  },
+  {
+    id: 12,
+    slug: "como-calcular-quantidade-vergalhao-laje",
+    category: "Vergalhões",
+    title: "Como Calcular a Quantidade de Vergalhão para uma Laje: Guia Prático",
+    metaDescription: "Aprenda passo a passo como calcular a quantidade de vergalhão para laje. Fórmulas, taxas de consumo e dicas para evitar desperdício na sua obra.",
+    keyword: "calcular quantidade de vergalhão para laje",
+    date: "10 Jan 2026",
+    summary: "Guia prático com passo a passo, fórmulas e taxas de consumo para calcular corretamente a quantidade de vergalhão necessária para executar lajes de qualquer tipo.",
+    content: `## Por Que o Cálculo Correto Faz Diferença?
+
+Subestimar ou superestimar a quantidade de vergalhão para uma laje são erros que custam caro. A falta de aço paralisa a obra, obriga compras emergenciais com preços mais altos e compromete o cronograma. O excesso gera capital imobilizado, espaço desperdiçado no canteiro e material que muitas vezes se perde por corrosão ou furto.
+
+Um cálculo bem feito é a base de um orçamento confiável — e é um dos primeiros passos antes de solicitar qualquer cotação de corte e dobra.
+
+## Tipos de Laje e Suas Particularidades
+
+Antes de calcular, é preciso saber com qual tipo de laje você está trabalhando, pois cada uma tem taxa de consumo de aço diferente:
+
+- **Laje maciça:** armada em duas direções com vergalhão CA-50, maior consumo de aço, usada em vãos pequenos ou onde há grandes cargas concentradas
+- **Laje nervurada:** estrutura com vigotas e espaço entre elas preenchido por blocos cerâmicos ou EPS, menor consumo de aço por m²
+- **Laje pré-moldada com vigotas e treliças:** combinação de vigotas de concreto pré-fabricadas com treliças metálicas, consumo de aço médio
+- **Laje steel deck:** chapa metálica como forma permanente com armadura complementar
+
+## Taxas de Consumo por m² (Estimativas Preliminares)
+
+Para uma estimativa inicial de orçamento, utilize estas taxas médias de consumo:
+
+| Tipo de Laje | Consumo de Aço (kg/m²) |
+|---|---|
+| Maciça residencial | 8 a 15 kg/m² |
+| Nervurada residencial | 4 a 8 kg/m² |
+| Pré-moldada com treliça | 3 a 6 kg/m² |
+| Laje de cobertura plana | 6 a 10 kg/m² |
+
+**Importante:** essas taxas servem apenas para estimativas preliminares. O cálculo definitivo deve ser feito a partir do projeto estrutural.
+
+## Método de Cálculo pela Armadura de Projeto
+
+Quando você tem o projeto estrutural, o cálculo é feito pela planilha de ferro (lista de armaduras). Para cada barra de aço, calcula-se:
+
+**Peso da barra (kg) = comprimento (m) × peso linear (kg/m)**
+
+O peso linear de cada diâmetro de vergalhão CA-50 é:
+
+| Diâmetro (mm) | Peso linear (kg/m) |
+|---|---|
+| 6,3 | 0,245 |
+| 8,0 | 0,395 |
+| 10,0 | 0,617 |
+| 12,5 | 0,963 |
+| 16,0 | 1,578 |
+| 20,0 | 2,466 |
+| 25,0 | 3,853 |
+
+Multiplique o peso de cada barra pela quantidade prevista no projeto e some tudo. O resultado é o total de aço em quilogramas.
+
+## Exemplo Prático: Laje Maciça de 30 m²
+
+Suponha uma laje maciça com armadura positiva em ambas as direções, com vergalhão φ 8,0 mm, espaçamento de 15 cm:
+
+- Direção X: comprimento do vão = 5,0 m → 30 barras de 5,0 m = 150 m
+- Direção Y: comprimento do vão = 6,0 m → 25 barras de 6,0 m = 150 m
+- Total de barras: 300 metros lineares
+- Peso: 300 m × 0,395 kg/m = **118,5 kg** (só a armadura positiva)
+
+Some ainda a armadura negativa (sobre os apoios), os estribos das vigas de borda e a armadura de distribuição.
+
+## Fator de Perda: Nunca Esqueça
+
+No cálculo de compra, sempre adicione de **3% a 5%** sobre o total calculado para cobrir pequenas emendas de comprimento de barra, ajustes de corte e eventuais perdas de montagem.
+
+Se você contratar o serviço de **corte e dobra industrial**, esse fator pode cair para 1% a 2%, pois o corte é feito com precisão milimétrica a partir do projeto.
+
+## Por Que o Corte e Dobra Simplifica Tudo?
+
+Quando você contrata o corte e dobra, não precisa fazer o cálculo de compra de barras inteiras de 12 metros — você envia o projeto e a indústria entrega exatamente as peças necessárias, já cortadas e dobradas, com a quantidade certa.
+
+A **BR Aço** recebe seu projeto estrutural por WhatsApp, faz a quantificação completa gratuitamente e entrega o orçamento com o total exato de aço necessário para sua laje. Entre em contato e evite desperdício desde o primeiro pedido.`
+  },
+  {
+    id: 13,
+    slug: "ca-25-ca-50-ca-60-qual-vergalhao-usar",
+    category: "Vergalhões",
+    title: "CA-25, CA-50 e CA-60: Qual Vergalhão Usar na Sua Obra?",
+    metaDescription: "Entenda as diferenças técnicas entre vergalhões CA-25, CA-50 e CA-60, resistência, aplicações e como escolher o aço correto conforme a ABNT NBR 7480.",
+    keyword: "CA-25 CA-50 CA-60 vergalhão",
+    date: "17 Jan 2026",
+    summary: "Comparação técnica completa entre os graus CA-25, CA-50 e CA-60: resistência ao escoamento, ductilidade, diâmetros disponíveis e as aplicações corretas para cada tipo de obra.",
+    content: `## A Sigla CA e o Que Ela Significa
+
+CA é a abreviação de **Concreto Armado**. O número que segue a sigla indica a tensão mínima de escoamento do aço, expressa em kgf/mm²:
+
+- **CA-25:** escoamento mínimo de 250 MPa (25 kgf/mm²)
+- **CA-50:** escoamento mínimo de 500 MPa (50 kgf/mm²)
+- **CA-60:** escoamento mínimo de 600 MPa (60 kgf/mm²)
+
+Quanto maior o número, maior a resistência mecânica — mas isso não significa que o vergalhão de maior grau é sempre a melhor escolha. Cada tipo tem características que o tornam mais adequado para determinadas aplicações.
+
+## CA-25: O Menos Utilizado Hoje
+
+O vergalhão CA-25 foi amplamente utilizado até os anos 1990, mas caiu em desuso com a evolução dos projetos estruturais e a popularização do CA-50. Suas principais características:
+
+- Superfície lisa (sem nervuras)
+- Alta ductilidade (capacidade de deformar sem romper)
+- Baixa resistência em comparação com os demais
+- Diâmetros: 6,3 mm a 40 mm
+
+**Quando ainda pode ser usado:** solicitado explicitamente em projetos de reforço de estruturas antigas ou situações específicas em que a soldabilidade é prioritária. Raramente especificado em projetos novos.
+
+## CA-50: O Padrão da Construção Civil Brasileira
+
+O CA-50 é o vergalhão mais utilizado no Brasil e pode ser considerado o "aço universal" da construção civil. A norma ABNT NBR 7480/2007 o define com as seguintes características:
+
+- **Superfície nervurada** — saliências em relevo que garantem aderência superior ao concreto (aderência mecânica)
+- **Tensão de escoamento mínima:** 500 MPa
+- **Tensão de ruptura:** mínimo 1,10 × fy (ruptura ocorre depois de escoamento — material dúctil)
+- **Alongamento mínimo:** 8% (diâmetros ≤ 20 mm) e 6% (diâmetros > 20 mm)
+- **Soldável** por todos os processos convencionais
+- **Diâmetros disponíveis:** 6,3 / 8,0 / 10,0 / 12,5 / 16,0 / 20,0 / 25,0 / 32,0 e 40,0 mm
+- **Comprimento comercial:** barras retas de 12 metros
+
+**Aplicações:** pilares, vigas, fundações (sapatas, blocos, cortinas), lajes maciças, escadas, muros de arrimo. É o aço especificado por padrão para armaduras principais em qualquer estrutura convencional.
+
+## CA-60: Alta Resistência para Aplicações Específicas
+
+O CA-60 atinge resistência ao escoamento mínima de 600 MPa, mas apresenta menor ductilidade que o CA-50. Por isso, sua aplicação é mais restrita e bem definida pela norma:
+
+- **Superfície:** pode ser lisa, entalhada ou nervurada dependendo do fabricante
+- **Tensão de escoamento mínima:** 600 MPa
+- **Alongamento mínimo:** 5%
+- **Diâmetros disponíveis:** 3,4 / 4,2 / 5,0 / 6,0 / 7,0 / 8,0 / 9,5 / 10,0 e 12,5 mm
+- **Comercializado em barras retas ou em rolos (bobinas)**
+- **Soldabilidade:** limitada — requer cuidados especiais
+
+**Aplicações:** treliças de laje, malhas soldadas (telas), estribos de vigas e pilares (em diâmetros pequenos), armaduras de distribuição em lajes, elementos pré-moldados e pré-tensionados.
+
+## Comparativo Técnico: CA-25 × CA-50 × CA-60
+
+| Característica | CA-25 | CA-50 | CA-60 |
+|---|---|---|---|
+| Tensão de escoamento | ≥ 250 MPa | ≥ 500 MPa | ≥ 600 MPa |
+| Superfície | Lisa | Nervurada | Lisa, entalhada ou nervurada |
+| Ductilidade | Alta | Média-alta | Média |
+| Soldabilidade | Sim | Sim | Limitada |
+| Diâmetros | 6,3–40 mm | 6,3–40 mm | 3,4–12,5 mm |
+| Uso atual | Raro | Padrão | Complementar |
+
+## A Regra Prática para Especificação
+
+Na grande maioria das obras convencionais, a divisão de uso é:
+
+- **CA-50:** armaduras principais (longitudinais de pilares e vigas, barras de fundo e de topo de lajes, armação de fundações)
+- **CA-60:** armaduras secundárias e complementares (estribos de pequeno diâmetro, treliças, malhas soldadas)
+
+Essa combinação otimiza o custo estrutural — você usa maior resistência apenas onde há ganho real e mantém ductilidade adequada onde ela é mais crítica.
+
+A **BR Aço** trabalha com vergalhões CA-50 e CA-60 em todos os diâmetros, com certificação ABNT NBR 7480, rastreabilidade por lote e entrega em até 48 horas para todo o estado de Goiás.`
+  },
+  {
+    id: 14,
+    slug: "trelicas-metalicas-laje-guia-completo",
+    category: "Produtos",
+    title: "Treliças Metálicas para Laje: Tudo Que Você Precisa Saber",
+    metaDescription: "Guia completo sobre treliças metálicas para laje: tipos, alturas, vantagens, normas ABNT e como escolher a treliça certa para cada projeto de construção.",
+    keyword: "treliças metálicas para laje",
+    date: "24 Jan 2026",
+    summary: "Tudo sobre treliças metálicas para laje: funcionamento, tipos por altura, normas ABNT aplicáveis, vantagens construtivas e critérios de seleção para cada tipo de projeto.",
+    content: `## O Que É uma Treliça Metálica para Laje?
+
+A treliça metálica é um componente estrutural formado por barras de aço soldadas em configuração triangular contínua. Usada como armadura estrutural em lajes, ela é produzida industrialmente com aço CA-60, garantindo resistência, uniformidade dimensional e aderência ao concreto.
+
+Ao contrário da armação convencional feita barra por barra no canteiro, a treliça chega pronta, já com geometria definida, pronta para ser posicionada sobre a forma ou sobre as vigotas.
+
+## Como a Treliça Funciona Estruturalmente?
+
+A treliça atua de maneira análoga a uma viga plana em miniatura. Seus componentes principais são:
+
+- **Banzo superior (mesa de compressão):** barra horizontal superior que resiste aos esforços de compressão quando a laje é carregada
+- **Banzo inferior (mesa de tração):** uma ou duas barras horizontais inferiores que absorvem os esforços de tração
+- **Diagonais (sinusoides):** barras inclinadas em forma de zigue-zague que conectam os banzos e resistem aos esforços cortantes
+
+Essa geometria triangulada distribui as cargas de forma eficiente, permitindo vencer vãos maiores com menor seção de aço do que a armação convencional.
+
+## Tipos de Treliça por Altura
+
+As treliças são classificadas principalmente pela sua altura total (distância entre o centro do banzo inferior e o ponto mais alto do banzo superior):
+
+| Altura da Treliça | Vão Livre Indicativo | Aplicação Típica |
+|---|---|---|
+| 8 cm | até 3,0 m | Lajes de pouca carga, mezaninos |
+| 10 cm | até 3,5 m | Residências térreas e sobrados |
+| 12 cm | até 4,0 m | Residências e pequenos comerciais |
+| 16 cm | até 4,5 m | Edifícios de múltiplos pavimentos |
+| 20 cm | até 5,5 m | Edifícios comerciais e industriais |
+| 25 cm | até 6,5 m | Grandes vãos, galpões adaptados |
+| 30 cm | até 7,5 m | Vãos especiais, coberturas amplas |
+
+Os valores de vão são referências gerais — o dimensionamento definitivo deve ser feito por engenheiro calculista.
+
+## Normas ABNT Aplicáveis
+
+As treliças metálicas para lajes são regulamentadas pela **ABNT NBR 14862** (Armaduras treliçadas eletrossoldadas — Requisitos), que define:
+
+- Requisitos dimensionais para as barras (diâmetros dos banzos e das diagonais)
+- Resistência mínima das soldas nos pontos de cruzamento
+- Tolerâncias de fabricação (altura, comprimento, espaçamento entre diagonais)
+- Identificação e marcação dos produtos
+
+As barras utilizadas na fabricação devem atender à **ABNT NBR 7480** (CA-60 para as diagonais e banzos principais).
+
+## Vantagens das Treliças em Relação à Armação Convencional
+
+**Redução de escoramento:** a treliça confere rigidez à vigota durante a concretagem, permitindo reduzir ou eliminar o escoramento intermediário em muitos casos — economia significativa em material e mão de obra.
+
+**Velocidade de execução:** posicionar treliças é muito mais rápido do que montar armadura convencional barra a barra. Equipes treinadas conseguem trabalhar com 3 a 4 vezes mais velocidade.
+
+**Controle de qualidade industrial:** espaçamento, altura e geometria são controlados na fabricação. No canteiro, não há variação por erro humano.
+
+**Compatibilidade com vigotas:** treliças são projetadas para encaixar perfeitamente com vigotas pré-moldadas de concreto, formando um sistema laje-vigota eficiente.
+
+**Rastreabilidade:** treliças fabricadas por indústrias certificadas possuem identificação de lote e certificado de qualidade — fundamental para obras que exigem controle tecnológico do concreto.
+
+## Como Escolher a Treliça Correta?
+
+O engenheiro calculista é o responsável pela especificação. Os critérios principais são:
+
+1. **Vão livre da laje:** determina a altura mínima necessária da treliça
+2. **Carga de utilização:** residencial, comercial ou industrial influencia a seção do banzo
+3. **Espessura total da laje:** a treliça deve ficar totalmente embutida no concreto com cobrimento mínimo de 20 mm
+4. **Compatibilidade com o sistema de laje:** vigota + treliça, pré-laje ou laje moldada in loco
+
+## O Que Verificar na Hora da Compra?
+
+- Certificado de qualidade do lote (conformidade com ABNT NBR 14862)
+- Dimensões conferidas fisicamente: altura, comprimento e espaçamento entre diagonais
+- Ausência de oxidação excessiva (oxidação superficial leve é aceitável — o óxido melhora a aderência)
+- Soldas íntegras em todos os pontos de cruzamento
+
+A **BR Aço** fornece treliças metálicas em todas as alturas comerciais, com certificação ABNT, produção industrial e entrega rápida em Goiânia e todo o estado de Goiás. Solicite seu orçamento com as especificações do projeto e receba o melhor custo-benefício do mercado.`
+  },
+  {
+    id: 15,
+    slug: "tela-soldada-ou-malha-pop-piso-industrial",
+    category: "Produtos",
+    title: "Tela Soldada ou Malha Pop: Qual Escolher para Piso Industrial?",
+    metaDescription: "Compare tela soldada e malha pop para piso industrial: resistência, custo, aplicação e normas ABNT. Saiba qual é a melhor escolha para cada projeto.",
+    keyword: "tela soldada malha pop piso industrial",
+    date: "31 Jan 2026",
+    summary: "Análise técnica comparando tela soldada e malha pop para aplicação em pisos industriais: diferenças de resistência, espaçamento, custo e adequação conforme normas ABNT.",
+    content: `## Tela Soldada e Malha Pop: São a Mesma Coisa?
+
+No mercado da construção civil, os termos "tela soldada" e "malha pop" costumam ser usados como sinônimos — e em grande parte são. Ambos se referem a painéis planos de fios de aço CA-60 dispostos perpendicularmente e soldados eletronicamente nos pontos de cruzamento.
+
+A diferença principal está na especificação: a **malha pop** é um produto comercial com dimensões e especificações padronizadas para consumo de varejo e obras menores. A **tela soldada** é o termo técnico amplo, que inclui desde malhas leves até painéis de alta resistência para aplicações industriais pesadas.
+
+Ambos são regidos pela norma **ABNT NBR 7481** (Telas de aço soldadas para armadura de concreto).
+
+## Características Técnicas
+
+### Malha Pop (Q-92 e Q-138)
+
+As malhas pop mais comuns no mercado são as especificações **Q-92** e **Q-138**, com as seguintes características:
+
+- Fio: φ 4,2 mm (Q-92) ou φ 4,9 mm (Q-138), CA-60
+- Espaçamento entre fios: 15 cm × 15 cm
+- Seção transversal por metro linear: 92 mm² (Q-92) ou 138 mm² (Q-138)
+- Dimensão padrão do painel: 2,45 m × 6,0 m (± 14,7 m²)
+- Aplicações típicas: pisos residenciais, calçadas, pisos comerciais leves
+
+### Telas Soldadas Estruturais (Q-196 a Q-503 e superiores)
+
+Para pisos industriais com cargas médias a pesadas, são especificadas telas com maior seção transversal:
+
+| Especificação | Diâmetro do Fio | Seção (mm²/m) | Aplicação Típica |
+|---|---|---|---|
+| Q-196 | φ 5,0 mm | 196 | Pisos com cargas leves a médias |
+| Q-283 | φ 6,0 mm | 283 | Galpões e armazéns |
+| Q-385 | φ 7,0 mm | 385 | Pisos industriais médios |
+| Q-503 | φ 8,0 mm | 503 | Industriais pesados, pátios |
+| Q-636 | φ 9,0 mm | 636 | Pavimentos especiais |
+
+## Por Que a Malha Pop Isolada Não Basta para Piso Industrial?
+
+Esse é o erro mais comum de orçamento em projetos industriais. A malha pop Q-92 ou Q-138 foi desenvolvida para controlar a fissuração em pisos residenciais e lajes de baixa carga — não para suportar as cargas de um piso industrial.
+
+Em pisos industriais, os requisitos são muito mais exigentes:
+- **Cargas de empilhadeiras:** 3 a 12 toneladas por eixo
+- **Cargas de prateleiras e racks:** concentradas em áreas pequenas
+- **Abrasão superficial** por passagem contínua de equipamentos
+- **Exigências de planicidade** mais rigorosas (conforme ABNT NBR 13092)
+
+Usar malha insuficiente resulta em fissuração precoce, perda de planicidade, desplacamento da superfície e necessidade de reparos custosos em curto prazo.
+
+## O Que Especificar para Cada Tipo de Piso Industrial?
+
+A norma **ABNT NBR 13092** (Projeto e execução de pisos de concreto para fins industriais) orienta o dimensionamento. De forma simplificada:
+
+**Piso de galpão logístico (cargas de empilhadeira até 4 t por eixo):**
+Tela Q-196 ou Q-283, espessura de concreto 12 a 15 cm, concreto fck ≥ 25 MPa.
+
+**Piso industrial médio (manufatura, armazenagem com racks):**
+Tela Q-283 ou Q-385, espessura 15 a 18 cm, concreto fck ≥ 30 MPa.
+
+**Piso industrial pesado (pátio de contêineres, mineração, frigoríficos):**
+Tela Q-503 ou Q-636, fibras de aço ou polipropileno em complemento, espessura ≥ 20 cm, concreto fck ≥ 35 MPa.
+
+**Pisos com exigência de alta resistência ao impacto** podem requerer armadura dupla (cama superior e inferior) com telas sobrepostas.
+
+## Vantagens das Telas sobre Armadura Convencional em Pisos
+
+Em pisos de grande área, as telas soldadas levam vantagem clara sobre a armação barra a barra:
+
+- **Uniformidade perfeita** no espaçamento dos fios — essencial para controle de fissuração
+- **Velocidade de execução:** uma equipe de 3 pessoas posiciona 500 m² de tela em um turno de 8 horas
+- **Rastreabilidade:** a tela vem com identificação de lote e certificado ABNT
+- **Redução de perdas:** painéis prontos geram muito menos sobras que armação manual
+
+## Checklist de Compra de Tela para Piso Industrial
+
+Antes de fechar o pedido, verifique:
+
+- [ ] O engenheiro especificou a seção em mm²/m (não apenas o "tipo" de malha)
+- [ ] A tela tem certificação ABNT NBR 7481
+- [ ] O fornecedor entrega com certificado do lote
+- [ ] O espaçamento da tela é compatível com o projeto de juntas
+- [ ] A cobertura mínima de concreto sobre a tela atende a ABNT NBR 6118
+
+A **BR Aço** fornece telas soldadas e malhas pop em todas as especificações, com certificação ABNT, corte sob medida quando necessário e entrega em todo o estado de Goiás. Consulte nossa equipe técnica para garantir que você está comprando o produto correto para o seu projeto.`
+  },
+  {
+    id: 16,
+    slug: "como-evitar-desperdicio-de-aco-na-obra",
+    category: "Gestão de Obra",
+    title: "Como Evitar Desperdício de Aço na Obra: 5 Estratégias Práticas",
+    metaDescription: "Descubra 5 estratégias comprovadas para eliminar o desperdício de aço na construção civil e reduzir custos sem comprometer a qualidade estrutural.",
+    keyword: "desperdício de aço na obra",
+    date: "07 Fev 2026",
+    summary: "Cinco estratégias práticas e comprovadas para reduzir o desperdício de vergalhão e aço na construção civil, com impacto direto na margem e no prazo da obra.",
+    content: `## O Tamanho do Problema
+
+Dados levantados por pesquisadores da construção civil brasileira mostram que o desperdício de aço em obras que utilizam armação manual no canteiro varia entre 5% e 15% do total comprado. Em um projeto com 50 toneladas de aço, isso representa de 2,5 a 7,5 toneladas de material perdido — o equivalente a dezenas de milhares de reais literalmente jogados fora.
+
+Essas perdas ocorrem por diferentes causas: pontas de corte, erros de medida, dobras incorretas, danos por armazenamento inadequado e até furtos. A boa notícia é que cada uma dessas causas tem solução.
+
+## Estratégia 1 — Adote o Corte e Dobra Industrial
+
+A principal fonte de desperdício de aço na construção civil é o corte manual no canteiro. Quando armadores trabalham com barras inteiras de 12 metros e cortam conforme a necessidade, inevitavelmente sobram pontas. Essas pontas raramente têm uso posterior e vão para o sucateiro por uma fração do valor original.
+
+O **corte e dobra industrial** resolve esse problema na raiz: as máquinas CNC otimizam automaticamente o aproveitamento das barras, encaixando múltiplos comprimentos em uma única barra de 12 metros para minimizar as sobras. O software de nesting (corte ótimo) chega a reduzir o desperdício para menos de 1% do total.
+
+Para obras a partir de 5 toneladas de aço, a economia gerada pelo corte e dobra já supera o custo do serviço na maioria dos casos.
+
+## Estratégia 2 — Exija Projeto Estrutural Detalhado Antes de Comprar
+
+Comprar aço sem projeto estrutural aprovado é uma das formas mais rápidas de gerar desperdício. Sem as quantidades exatas, construtores tendem a comprar mais do que o necessário "por segurança" — e o excesso não aproveitado vira prejuízo.
+
+O projeto estrutural com planilha de ferro permite comprar exatamente o que a obra precisa, diâmetro por diâmetro. Se você ainda não tem o projeto, não compre o aço. Se já tem, envie para a BR Aço — fazemos a quantificação gratuitamente.
+
+## Estratégia 3 — Controle o Recebimento de Material
+
+Desperdício também começa no recebimento. Aço entregue incorretamente (diâmetro errado, quantidade diferente da nota, barras danificadas) gera retrabalho, pedidos emergenciais e perdas.
+
+Implemente um protocolo de recebimento:
+
+1. Confira o peso bruto do caminhão (ou pesagem por amostragem) contra o peso da nota fiscal
+2. Verifique o diâmetro de cada feixe com paquímetro
+3. Confira o número de barras por feixe
+4. Registre qualquer divergência antes de assinar o recebimento
+5. Exija o certificado de qualidade ABNT de cada lote
+
+## Estratégia 4 — Armazene o Aço Corretamente no Canteiro
+
+Aço armazenado inadequadamente pode perder peso por corrosão, dificultar o manuseio (gerando mais pontas desperdiçadas) e aumentar o risco de acidentes.
+
+Regras de armazenamento:
+
+- **Elevar o aço do solo:** use dormentes de madeira ou cavaletes metálicos — nunca deposite barras diretamente na terra
+- **Separar por diâmetro e tipo:** cada tipo de barra em seu lugar, identificado com etiqueta
+- **Cobrir contra chuva prolongada:** lona ou telhado provisório para estoques de longa duração
+- **Definir área de estoque:** delimitar e controlar o acesso reduz furtos e perdas por manuseio inadequado
+
+## Estratégia 5 — Planeje as Etapas de Compra Conforme o Cronograma
+
+Comprar todo o aço da obra de uma só vez pode parecer prático, mas gera problemas: aço que deveria ser usado em 6 meses fica exposto às intempéries, ocupa espaço valioso no canteiro e corrói em excesso.
+
+Planeje as compras em fases alinhadas ao cronograma físico:
+
+- **Fase 1:** fundações (sapatas, blocos, estacas)
+- **Fase 2:** estrutura vertical (pilares)
+- **Fase 3:** vigas e lajes de cada pavimento
+- **Fase 4:** complementares (escadas, muros, coberturas)
+
+Com um fornecedor que entrega em até 48 horas, você não precisa manter estoque excessivo — o aço chega quando a obra precisa.
+
+## O Impacto Real na Margem da Obra
+
+Para uma obra com orçamento de R$ 200.000 em aço:
+
+- 10% de desperdício evitado = **R$ 20.000 economizados**
+- Adicionando a redução de mão de obra com corte e dobra (até 50%): outros **R$ 15.000 a R$ 30.000**
+- Total potencial de economia: **R$ 35.000 a R$ 50.000** na mesma obra
+
+Essas economias vão diretamente para a margem do construtor ou podem ser repassadas ao cliente em uma proposta mais competitiva.
+
+A **BR Aço** é o parceiro de obras que ajuda você a eliminar o desperdício: corte e dobra com aproveitamento otimizado, entrega just-in-time em até 48 horas e equipe técnica disponível para tirar dúvidas sobre quantificação. Fale com a gente e descubra quanto você pode economizar na sua próxima obra.`
+  },
+  {
+    id: 17,
+    slug: "normas-abnt-vergalhao-o-que-engenheiro-precisa-saber",
+    category: "Normas ABNT",
+    title: "Normas ABNT para Vergalhão: O Que Todo Engenheiro Precisa Saber",
+    metaDescription: "Guia completo sobre as normas ABNT aplicáveis a vergalhões: NBR 7480, NBR 6118, NBR 6122 e outras. Requisitos técnicos, ensaios obrigatórios e responsabilidades.",
+    keyword: "normas ABNT vergalhão",
+    date: "14 Fev 2026",
+    summary: "Panorama completo das normas ABNT que regulamentam vergalhões para concreto armado: requisitos de produto, de projeto e de execução que todo engenheiro civil deve conhecer.",
+    content: `## O Sistema Normativo do Aço para Concreto Armado
+
+A utilização de vergalhões na construção civil brasileira é regulamentada por um conjunto de normas técnicas da ABNT (Associação Brasileira de Normas Técnicas) que abrange desde a fabricação do aço até sua aplicação em projeto e execução. Conhecer esse sistema normativo é obrigação de todo engenheiro civil — tanto por responsabilidade técnica quanto por responsabilidade legal.
+
+O desconhecimento ou o descumprimento dessas normas pode resultar em obras com desempenho estrutural abaixo do projetado, autuações do CREA, responsabilização civil em caso de acidentes e problemas com seguros de obras.
+
+## NBR 7480:2007 — A Norma Principal do Produto
+
+A **ABNT NBR 7480** é o ponto de partida. Intitulada "Aço destinado a armaduras para estruturas de concreto armado — Especificação", ela define os requisitos que os vergalhões e fios de aço devem atender.
+
+### O que a norma especifica:
+
+**Classificação:** o aço é classificado como CA-25, CA-50 ou CA-60, conforme sua tensão de escoamento característica em MPa.
+
+**Requisitos mecânicos:**
+
+| Grau | fy,k mín (MPa) | ft,k mín (MPa) | Alongamento mín. (%) |
+|---|---|---|---|
+| CA-25 | 250 | 1,20 × fy | 18% |
+| CA-50 | 500 | 1,10 × fy | 8% (φ ≤ 20 mm) / 6% (φ > 20 mm) |
+| CA-60 | 600 | 1,05 × fy | 5% |
+
+**Requisitos de aderência:** a norma define índices mínimos de aderência que as nervuras devem garantir para que haja transferência adequada de esforços entre aço e concreto.
+
+**Identificação:** todo vergalhão deve ter gravado em relevo o símbolo do fabricante e o grau do aço (25, 50 ou 60). Essa identificação permite rastreabilidade em campo.
+
+**Ensaios obrigatórios por lote:** ensaio de tração (para verificar fy, ft e alongamento), ensaio de dobramento e verificações dimensionais.
+
+## NBR 6118:2014 — Projeto de Estruturas de Concreto
+
+A **ABNT NBR 6118** é a norma de projeto. Ela define como os vergalhões devem ser dimensionados, detalhados e utilizados em estruturas de concreto armado. Os pontos mais relevantes para a escolha e especificação do aço:
+
+**Cobrimento nominal (c_nom):** define a espessura mínima de concreto entre a superfície da estrutura e a face externa da armadura. Varia conforme a classe de agressividade ambiental (CAA):
+
+| Classe de Agressividade | Ambiente | c_nom vigas/pilares |
+|---|---|---|
+| I | Rural/suburbano leve | 25 mm |
+| II | Urbano | 30 mm |
+| III | Marinho/industrial | 40 mm |
+| IV | Altamente agressivo | 50 mm |
+
+**Espaçamento mínimo entre barras:** a norma define espaçamentos mínimos para garantir que o concreto envolva adequadamente cada barra.
+
+**Emendas por traspasse:** define os comprimentos mínimos de emenda conforme o diâmetro e o grau de solicitação da seção.
+
+**Ganchos e dobramento:** raios mínimos de dobramento para evitar fissuração no aço durante a execução.
+
+## NBR 6122:2022 — Projeto e Execução de Fundações
+
+Para fundações de concreto armado, a **ABNT NBR 6122** complementa a NBR 6118 com requisitos específicos para sapatas, blocos sobre estacas, tubulões e radiers. Pontos críticos para o projetista:
+
+- Armadura mínima de distribuição em sapatas: 0,15% da área da seção transversal
+- Comprimento de ancoragem das barras nos pilares
+- Armadura de cintamento para blocos sobre estacas múltiplas
+
+## NBR 7481:1990 — Telas de Aço Soldadas
+
+Para armaduras em forma de malha (telas soldadas), a norma vigente é a **ABNT NBR 7481**, que especifica os fios de aço CA-60 utilizados na fabricação, os requisitos de soldagem nos pontos de cruzamento e a classificação das malhas (Q, R, L, C).
+
+## NBR 14862:2002 — Armaduras Treliçadas Eletrossoldadas
+
+Rege a fabricação das treliças metálicas utilizadas em lajes. Define tolerâncias dimensionais, resistência mínima das soldas e requisitos de identificação.
+
+## Responsabilidade do Engenheiro e do Fornecedor
+
+O engenheiro calculista é responsável por especificar o aço correto no projeto. O engenheiro de execução (ou o responsável técnico pela obra) é responsável por verificar se o material recebido atende às especificações. O fornecedor é responsável por garantir e comprovar que o produto atende às normas.
+
+**Documentos que o fornecedor deve fornecer obrigatoriamente:**
+- Certificado de qualidade do lote com resultados dos ensaios mecânicos
+- Identificação da corrida siderúrgica (rastreabilidade)
+- Declaração de conformidade com a ABNT NBR 7480
+
+**O que verificar no recebimento:**
+- Identificação gravada nas barras (fabricante + grau)
+- Certificado do lote específico entregue
+- Conferência dimensional de amostras por lote
+
+A **BR Aço** fornece certificado ABNT NBR 7480 de cada lote, com rastreabilidade completa desde a usina siderúrgica até o canteiro. Nossa equipe técnica está disponível para esclarecer dúvidas sobre especificação e garantir que você está comprando o produto correto para cada aplicação.`
+  },
+  {
+    id: 18,
+    slug: "fundacao-em-radier-como-dimensionar-armadura",
+    category: "Normas ABNT",
+    title: "Fundação em Radier: Como Dimensionar a Armadura Corretamente",
+    metaDescription: "Guia técnico sobre dimensionamento de armadura para fundação em radier: quando usar, espessura, taxa de aço mínima conforme ABNT NBR 6118 e NBR 6122.",
+    keyword: "fundação em radier armadura",
+    date: "21 Fev 2026",
+    summary: "Guia técnico completo sobre fundação em radier: conceito, quando é indicado, dimensionamento da armadura conforme ABNT NBR 6118 e NBR 6122, e boas práticas de execução.",
+    content: `## O Que É uma Fundação em Radier?
+
+O radier (ou radier geral) é um tipo de fundação superficial que consiste em uma laje de concreto armado que cobre toda a área da edificação — ou de parte dela — e distribui as cargas de todos os pilares e paredes para o solo de forma contínua.
+
+Diferentemente das fundações pontuais (sapatas isoladas) ou lineares (vigas de baldrame), o radier funciona como um elemento único que age em conjunto. Essa característica o torna especialmente eficiente quando a capacidade de suporte do solo é baixa e uniforme, ou quando as cargas da edificação são distribuídas de forma relativamente uniforme.
+
+## Quando o Radier É a Solução Mais Adequada?
+
+O engenheiro geotécnico ou o projetista estrutural decide pelo radier com base no sondagem do solo (SPT ou CPTU) e nas cargas da edificação. Os cenários mais comuns:
+
+- **Solo com baixa capacidade de suporte (σ_adm < 50 kPa):** sapatas isoladas precisariam ser tão grandes que a distância entre elas seria menor que as próprias dimensões — nesse caso o radier é mais econômico
+- **Obras em solos variáveis:** quando a resistência do solo varia lateralmente, o radier acomoda recalques diferenciais de forma mais controlada
+- **Edificações leves com cargas distribuídas:** galpões pré-moldados, casas térreas em solos de baixa resistência
+- **Solos expansivos:** em regiões com solo argiloso expansivo, o radier controla melhor os movimentos do solo
+- **Pisos industriais integrados à fundação:** em alguns projetos, a laje de piso industrial serve simultaneamente como radier
+
+## Espessura Mínima do Radier
+
+A espessura mínima do radier é determinada por três critérios:
+
+1. **Critério estrutural:** a espessura deve ser suficiente para resistir aos esforços de flexão e cisalhamento gerados pelas cargas dos pilares e pela reação do solo. Calculada pelo engenheiro.
+
+2. **Critério de cobrimento (ABNT NBR 6118):** o cobrimento nominal mínimo para fundações é de **40 mm (CAA II)** a **50 mm (CAA III)**, mais a tolerância de execução de 10 mm. Na prática, a maioria dos radiers tem 50 a 60 mm de cobrimento.
+
+3. **Critério mínimo normativo:** a ABNT NBR 6118 define espessura mínima de **15 cm** para lajes de fundação. Na prática, a maioria dos radiers residenciais tem entre **15 e 30 cm**, e os industriais entre **20 e 50 cm**.
+
+## Dimensionamento da Armadura: Conceitos Fundamentais
+
+O radier é dimensionado como uma laje invertida — as cargas vêm de cima (pilares, paredes, cargas permanentes e variáveis) e a reação vem de baixo (pressão do solo). Os esforços resultantes são de flexão e cisalhamento.
+
+### Armadura de Flexão
+
+A armadura principal é disposta nas duas direções (X e Y), tanto na face inferior (armadura positiva, para o momento de vão) quanto na face superior (armadura negativa, sobre os pilares, onde ocorre momento negativo).
+
+**Taxa mínima de armadura (ABNT NBR 6118, tabela 17.3):**
+
+Para lajes de fundação (radier), a taxa de armadura mínima em cada direção é:
+
+- **CA-50:** ρ_mín = 0,15% (sobre a seção bruta de concreto)
+
+Para uma seção de 1 m de largura com espessura de 20 cm:
+- Área de seção = 1.000 mm × 200 mm = 200.000 mm²
+- Armadura mínima = 0,0015 × 200.000 = **300 mm²/m**
+
+Isso equivale, por exemplo, a barras φ 10,0 mm CA-50 a cada 26 cm, ou φ 12,5 mm a cada 40 cm.
+
+### Armadura de Cisalhamento (Punção)
+
+Na região dos pilares, o radier está sujeito ao esforço de **punção** — cisalhamento bidirecional provocado pela concentração de carga. A verificação de punção segue o método da ABNT NBR 6118 (item 19.5).
+
+Quando a punção ultrapassa a capacidade do concreto, é necessário adicionar **armadura de punção** (estribos ou conectores de aço) na região ao redor do pilar.
+
+## Armadura Prática: O Que o Calculista Define
+
+O projeto estrutural do radier deve indicar:
+
+- **Armadura de fundo:** barras na direção X e na direção Y, com diâmetro, espaçamento e comprimento
+- **Armadura de topo:** barras nas mesmas direções, geralmente com maior concentração sobre os pilares
+- **Bordas:** armadura de reforço nas bordas livres do radier
+- **Região de pilares:** eventual armadura de punção
+- **Emendas e ancoragens:** comprimentos conforme ABNT NBR 6118
+
+**Exemplo de configuração para radier residencial (espessura 20 cm, CAA I):**
+- Fundo: φ 10,0 CA-50 a cada 20 cm nas duas direções (As = 393 mm²/m)
+- Topo: φ 10,0 CA-50 a cada 20 cm nas duas direções
+- Bordas: φ 12,5 CA-50 a cada 20 cm + dobre nas extremidades
+
+## Erros Comuns no Dimensionamento e Execução
+
+1. **Cobrimento insuficiente:** em solos com umidade, o cobrimento abaixo de 40 mm leva à corrosão precoce da armadura
+2. **Não verificar a punção:** pode resultar em ruptura frágil e súbita ao redor dos pilares
+3. **Desconsiderar recalques diferenciais:** solos heterogêneos exigem modelagem mais cuidadosa
+4. **Concreto sem controle de resistência:** o concreto do radier deve ter fck mínimo de **20 MPa** (residencial) a **30 MPa** (industrial), com controle tecnológico por ensaios de compressão
+5. **Armar somente o fundo:** esquecer a armadura de topo sobre pilares é erro que compromete a segurança
+
+## A BR Aço no Seu Projeto de Radier
+
+A **BR Aço** fornece vergalhões CA-50 em todos os diâmetros necessários para o radier, com certificação ABNT NBR 7480 e rastreabilidade de lote. Oferecemos também o serviço de **corte e dobra** para as armaduras de borda e os elementos especiais do projeto. Envie sua planta e receba orçamento em 24 horas.`
+  },
+  {
+    id: 19,
+    slug: "gestao-de-materiais-construcao-civil-guia-pratico",
+    category: "Gestão de Obra",
+    title: "Gestão de Materiais na Construção Civil: Guia Prático",
+    metaDescription: "Aprenda a gerenciar materiais de construção civil de forma eficiente: controle de estoque, recebimento, armazenamento e redução de perdas com processos simples.",
+    keyword: "gestão de materiais construção civil",
+    date: "28 Fev 2026",
+    summary: "Guia prático de gestão de materiais na construção civil: processos de compra, recebimento, armazenamento, controle de estoque e estratégias para reduzir perdas e custos.",
+    content: `## Por Que a Gestão de Materiais É Crítica?
+
+Em obras de construção civil, materiais representam entre **55% e 65% do custo total** do projeto. A mão de obra, embora visível e fácil de medir, ocupa um percentual menor. Isso significa que ganhos em eficiência na gestão de materiais têm impacto financeiro muito maior do que a maioria dos construtores imagina.
+
+Estudos do IPT (Instituto de Pesquisas Tecnológicas) e da Escola Politécnica da USP estimam que as perdas de materiais na construção civil brasileira variam entre **10% e 30%** do total consumido, dependendo do tipo de material e da maturidade do canteiro.
+
+Para aço e vergalhão especificamente, as perdas giram entre 5% e 15% em obras com armação manual — e caem para menos de 2% quando se adota o corte e dobra industrial.
+
+## Os Quatro Pilares da Gestão de Materiais
+
+### 1. Planejamento de Compras
+
+O planejamento começa no projeto. Sem projeto aprovado, qualquer compra é um chute. Com o projeto em mãos, o processo correto é:
+
+- Extrair as quantidades de cada material por etapa da obra (quantitativo físico)
+- Cruzar com o cronograma físico para definir o momento ideal de cada compra
+- Solicitar cotações com prazo suficiente para análise (não comprar às pressas)
+- Manter cadastro de fornecedores aprovados por material
+
+Para aço, o quantitativo pode ser extraído da planilha de ferro do projeto estrutural. Caso não tenha a planilha, fornecedores como a BR Aço fazem essa quantificação gratuitamente a partir do projeto.
+
+### 2. Processo de Recebimento
+
+O recebimento é onde os problemas começam se não houver protocolo. Materiais incorretos recebidos sem contestação geram prejuízo imediato:
+
+**Protocolo de recebimento de aço:**
+
+1. Exigir nota fiscal e certificado de qualidade ABNT antes de descarregar
+2. Verificar se os diâmetros das barras conferem com o pedido (use paquímetro)
+3. Conferir a identificação gravada nas barras (fabricante + grau do aço)
+4. Pesar por amostragem para conferência com a nota (ou pesagem total em obras grandes)
+5. Registrar o recebimento com data, lote e condições
+6. Comunicar imediatamente o fornecedor em caso de divergência — antes de assinar qualquer documento
+
+**Regra de ouro:** não assine a nota fiscal sem conferência física do material.
+
+### 3. Armazenamento e Controle de Estoque
+
+O armazenamento inadequado é uma das causas de perdas mais fáceis de eliminar. Para materiais metálicos:
+
+**Aço e vergalhão:**
+- Armazenar em cavaletes ou dormentes, nunca no solo
+- Separar por tipo, grau e diâmetro, com identificação clara
+- Em obras longas, cobrir com lona para evitar oxidação excessiva
+- Manter registro de entrada e saída por tipo de material
+
+**Sistema de controle simples (funciona em obra de qualquer tamanho):**
+
+Use uma planilha (pode ser Excel ou até um caderno) com:
+- Data de entrada, quantidade e fornecedor
+- Data de saída, quantidade e destino (qual etapa/elemento da obra)
+- Saldo disponível
+
+Esse controle simples já permite identificar desvios e confrontar o consumo real com o consumo projetado.
+
+### 4. Controle de Consumo e Redução de Perdas
+
+O controle de consumo é o que transforma dados em decisão. Ao acompanhar o consumo real por etapa da obra, você consegue:
+
+- Identificar etapas com consumo acima do previsto (possível desvio ou erro de quantitativo)
+- Detectar subtração de material (furtos)
+- Ajustar pedidos futuros com base na realidade, não em estimativas
+
+**Indicador simples de controle:**
+
+**Taxa de perda (%) = (consumo real − consumo previsto) / consumo previsto × 100**
+
+Se essa taxa para aço está acima de 5%, há algo errado. Investigue antes de continuar comprando.
+
+## Estratégias para Reduzir Perdas de Aço Especificamente
+
+### Adote o Corte e Dobra
+
+Como abordado na estratégia de compras, o corte e dobra industrial elimina virtualmente o desperdício de pontas. É a medida de maior impacto isolado na redução de perdas de aço.
+
+### Defina Locais Fixos e Controlados de Estoque
+
+Aço solto pelo canteiro é convite a furtos e danos. Defina uma área de estoque com acesso controlado — mesmo em obras menores, uma divisória simples com cadeado já reduz perdas.
+
+### Conscientize a Equipe
+
+O mestre de obras e os encarregados são peças-chave. Uma reunião de início de obra explicando os objetivos de redução de perdas e a importância do controle de material gera engajamento e responsabilidade.
+
+### Faça Inventários Periódicos
+
+A cada 15 dias, confira o saldo físico de aço com o saldo no controle. Divergências pequenas e recorrentes indicam problemas que podem ser corrigidos antes de se tornarem grandes.
+
+## Tecnologia Simples que Ajuda
+
+Não é necessário investir em softwares complexos de ERP para ter uma boa gestão de materiais em obras de pequeno e médio porte. Ferramentas gratuitas como:
+
+- Google Sheets (controle de estoque compartilhado em tempo real)
+- WhatsApp (comunicação ágil entre obra e escritório)
+- Fotos com timestamp (registro do estado do material no recebimento)
+
+Já resolvem a maior parte das necessidades de controle.
+
+## Parceria com Fornecedores Confiáveis
+
+Parte importante da gestão de materiais é a qualidade do fornecedor. Um fornecedor que entrega no prazo combinado, com a quantidade certa, o produto certificado e o certificado ABNT incluso elimina boa parte do retrabalho de recebimento e controle.
+
+A **BR Aço** é parceira de obras de todos os portes em Goiânia e Goiás: entrega de vergalhões, treliças, malhas e serviço de corte e dobra com prazo cumprido, certificação ABNT e equipe técnica disponível. Entre em contato e descubra como podemos simplificar a gestão de materiais metálicos na sua obra.`
+  },
+  {
+    id: 20,
+    slug: "corte-manual-vs-corte-e-dobra-industrial-goias",
+    category: "Corte e Dobra",
+    title: "O Custo Real do Corte Manual vs Corte e Dobra Industrial em Goiás",
+    metaDescription: "Compare o custo real do corte manual de aço no canteiro versus o corte e dobra industrial em Goiânia e Goiás com dados de mercado e análise de ROI.",
+    keyword: "corte e dobra industrial Goiás custo",
+    date: "07 Mar 2026",
+    summary: "Análise de custo comparativa entre armação manual no canteiro e corte e dobra industrial em Goiânia e no estado de Goiás, com dados de mercado local e cálculo de retorno do investimento.",
+    content: `## A Comparação Que Todo Construtor Goiano Deveria Fazer
+
+Em Goiânia e no interior de Goiás, ainda existe uma percepção generalizada de que contratar armadores e cortar o aço no canteiro é mais barato do que o serviço de corte e dobra industrial. Essa percepção é equivocada — e os números do mercado local provam isso.
+
+Este artigo faz uma comparação honesta entre os dois métodos, com dados baseados na realidade do mercado de Goiás em 2026.
+
+## Componentes de Custo: O Que Entra na Conta
+
+Para fazer uma comparação justa, é preciso contabilizar **todos** os custos de cada método — não apenas o preço do material.
+
+### Método Manual (Armação no Canteiro)
+
+**1. Material de aço:**
+- Barras de 12 metros são compradas inteiras
+- Perda de 5% a 12% em pontas e rejeitos (referência: média de obras em Goiânia)
+- Em uma obra com 20 toneladas de aço previsto, isso representa 1 a 2,4 toneladas compradas e não aproveitadas
+
+**2. Mão de obra:**
+- Armador oficial em Goiânia (2026): salário de R$ 2.800 a R$ 3.500/mês + encargos (aprox. 68%) = custo real de R$ 4.700 a R$ 5.900/mês por profissional
+- Equipe típica para 20 t de aço: 3 armadores + 2 ajudantes ≈ R$ 20.000 a R$ 25.000/mês em encargos trabalhistas
+- Prazo para armar 20 t manualmente em uma obra residencial de médio porte: 6 a 8 semanas
+
+**3. Equipamentos e ferramentas:**
+- Serra policorte (aluguel ou compra): R$ 800 a R$ 1.500/mês
+- Dobradeiras manuais, esmerilhadeiras: R$ 200 a R$ 500/mês
+- EPI dos armadores: R$ 150 a R$ 300/mês por profissional
+
+**4. Espaço e organização do canteiro:**
+- Área de corte consome espaço produtivo do canteiro
+- Entulho de aço (pontas e rejeitos) exige descarte e custo de caçamba
+
+**5. Tempo:**
+- O prazo maior de armação manual atrasa as etapas seguintes (formas, concretagem, escoramento)
+- Cada semana de atraso tem custo de aluguel de equipamentos, equipes paradas e impacto no fluxo de caixa
+
+### Método Industrial (Corte e Dobra BR Aço)
+
+**1. Material de aço + serviço:**
+- O preço do corte e dobra já inclui o vergalhão e o processamento
+- Perda de material: menos de 1% (otimização por software de nesting)
+- O pedido é exato — você não compra barra inteira, compra a peça que precisa
+
+**2. Mão de obra:**
+- Equipe de obra precisa apenas de armadores para montagem e amarração — não de cortadores
+- Redução de equipe: 2 a 3 profissionais a menos no canteiro
+- Economia estimada em Goiânia: R$ 8.000 a R$ 15.000/mês em pessoal
+
+**3. Velocidade:**
+- Aço entregue pronto e identificado por elemento (pilar P1, viga V3, etc.)
+- Tempo de montagem cai 40% a 60% em relação à armação manual
+- Cada semana economizada no cronograma tem valor direto
+
+**4. Logística:**
+- Entrega diretamente no canteiro em até 7 dias úteis
+- Sem custo de armazenamento prolongado de barras inteiras
+
+## Simulação Numérica: Obra de 20 Toneladas de Aço em Goiânia
+
+Para tornar a comparação concreta, vamos simular uma obra residencial de médio porte em Goiânia com consumo de 20 toneladas de vergalhão CA-50, diâmetros variados.
+
+**Método Manual:**
+
+| Item | Custo Estimado |
+|---|---|
+| Vergalhão (20 t × R$ 5.200/t médio Goiânia 2026) | R$ 104.000 |
+| Perda de 8% (1,6 t × R$ 5.200) | R$ 8.320 |
+| Mão de obra (equipe 5 pessoas × 7 semanas) | R$ 32.000 |
+| Equipamentos (7 semanas) | R$ 3.500 |
+| **Total estimado** | **R$ 147.820** |
+
+**Corte e Dobra Industrial:**
+
+| Item | Custo Estimado |
+|---|---|
+| Corte e dobra (material + serviço, 20 t) | R$ 115.000 |
+| Mão de obra de montagem (equipe 3 pessoas × 4,5 semanas) | R$ 14.000 |
+| **Total estimado** | **R$ 129.000** |
+
+**Economia com corte e dobra: aproximadamente R$ 18.820 (13%)** — sem contar o ganho de 2,5 semanas no cronograma.
+
+Se cada semana de obra tem custo fixo de R$ 5.000 (aluguel de equipamentos, encargos de equipe geral, administração), as 2,5 semanas economizadas representam mais **R$ 12.500**.
+
+**Economia total potencial: R$ 31.000 em uma obra de R$ 147.000 em aço — redução de 21%.**
+
+## O Mercado de Goiânia Tem Características Específicas
+
+Alguns fatores locais tornam o corte e dobra ainda mais vantajoso em Goiás:
+
+**Clima:** Goiânia tem temperatura média alta e chuvas concentradas no verão. Armadores que trabalham ao sol têm produtividade menor nos meses de outubro a março. A entrega de aço pronto reduz o tempo de exposição das equipes às condições adversas.
+
+**Mercado de mão de obra:** a construção civil em Goiânia tem alta demanda por profissionais qualificados, o que pressionou os salários dos armadores acima da média histórica. O custo da mão de obra local reforça a vantagem do corte e dobra.
+
+**Logística:** a BR Aço está localizada em Goiânia e entrega em todo o estado — prazo de entrega para a capital é de até 7 dias úteis, e para regiões como Aparecida de Goiânia, Anápolis, Senador Canedo e Trindade, o prazo é similar.
+
+## Quando o Corte Manual Ainda Pode Fazer Sentido?
+
+Para ser justo: existem situações em que o corte manual é razoável:
+
+- **Obras muito pequenas** (menos de 2 toneladas de aço), onde o pedido mínimo de corte e dobra pode não compensar o frete
+- **Obras em locais de difícil acesso** onde a entrega é logisticamente complexa
+- **Ajustes e complementações** — pequenas quantidades de barras para correções no canteiro
+
+Para todo o resto — e isso representa a grande maioria das obras residenciais, comerciais e industriais de Goiânia — o corte e dobra industrial é mais econômico quando todos os custos são contabilizados.
+
+## Próximo Passo: Faça Sua Própria Comparação
+
+Não tome essa decisão baseado apenas em estimativas genéricas. Envie o projeto da sua próxima obra para a **BR Aço** e receba:
+
+1. Quantitativo completo extraído da planilha de ferro
+2. Orçamento de corte e dobra com preços para a sua obra específica
+3. Comparação de custo personalizada para sua realidade
+
+Nossa equipe técnica faz essa análise gratuitamente. Entre em contato pelo WhatsApp ou pelo site e descubra quanto você pode economizar na sua próxima obra em Goiás.`
   }
 ];
 
-export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço'];
+export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço'];

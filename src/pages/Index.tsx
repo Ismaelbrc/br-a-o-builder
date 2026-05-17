@@ -8,19 +8,13 @@ import StatsSection from '@/components/home/StatsSection';
 import ComparisonSection from '@/components/home/ComparisonSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
-import QuoteFormSection from '@/components/home/QuoteFormSection';
 import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 import PartnersSection from '@/components/home/PartnersSection';
 import heroFallback from '@/assets/hero-warehouse.png';
 
-const Index = () => {
-  const scrollToOrcamento = () => {
-    const orcamentoSection = document.getElementById('orcamento');
-    if (orcamentoSection) {
-      orcamentoSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+const WHATSAPP_URL = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
+const Index = () => {
   const scrollToProducts = () => {
     const productsSection = document.getElementById('produtos');
     if (productsSection) {
@@ -62,15 +56,15 @@ const Index = () => {
           <div className="animate-fade-in-up">
             <span className="inline-flex items-center gap-2 bg-brand-orange/20 text-brand-orange px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm border border-brand-orange/30">
               <Trophy className="w-4 h-4" />
-              Maior indústria de aço de Goiás
+              O melhor corte e dobra de Goiás
             </span>
           </div>
 
           {/* Título H1 */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl animate-fade-in-up animation-delay-100">
-            Seus projetos na{' '}
-            <span className="text-primary">velocidade</span>{' '}
-            máxima
+            O melhor{' '}
+            <span className="text-primary">corte e dobra industrial</span>{' '}
+            de Goiás. Entregue na sua obra.
           </h1>
 
           {/* Subtítulo */}
@@ -84,12 +78,14 @@ const Index = () => {
 
           {/* Botões CTA */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-fade-in-up animation-delay-300">
-            <button
-              onClick={scrollToOrcamento}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-8 py-4 text-lg shadow-lg shadow-brand-orange/30 transition-all duration-300 inline-flex items-center justify-center gap-2"
             >
               Solicitar Orçamento
-            </button>
+            </a>
             <button
               onClick={scrollToProducts}
               className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg px-8 py-4 text-lg backdrop-blur-sm border border-white/20 transition-all duration-300 inline-flex items-center justify-center gap-2"
@@ -152,9 +148,6 @@ const Index = () => {
 
       {/* CTA Banner Section */}
       <CtaBannerSection />
-
-      {/* Formulário de Orçamento Section */}
-      <QuoteFormSection />
 
       {/* Blog Preview Section */}
       <BlogPreviewSection />

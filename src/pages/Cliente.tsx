@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -9,7 +9,7 @@ import { ChevronRight, Lock, MessageCircle, Bell } from 'lucide-react';
 export default function Cliente() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ nome: '', email: '' });
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

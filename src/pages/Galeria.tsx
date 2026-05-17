@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Play, X, Image as ImageIcon, Film } from 'lucide-react';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -199,7 +199,7 @@ const Galeria = () => {
             Agende uma visita técnica e conheça de perto nossa estrutura e processos de produção.
           </p>
           <a
-            href="https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20à%20fábrica."
+            href="https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20à%20fábrica."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-6 bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-full px-8 py-4 transition-colors"

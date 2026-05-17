@@ -2,13 +2,6 @@ import { MessageCircle } from 'lucide-react';
 import ctaBackground from '@/assets/cta-background.jpg';
 
 const CtaBannerSection = () => {
-  const scrollToOrcamento = () => {
-    const orcamentoSection = document.getElementById('orcamento');
-    if (orcamentoSection) {
-      orcamentoSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
@@ -40,12 +33,6 @@ const CtaBannerSection = () => {
             <MessageCircle className="w-5 h-5" />
             Falar no WhatsApp
           </a>
-          <button
-            onClick={scrollToOrcamento}
-            className="w-full sm:w-auto border-2 border-white text-white rounded-full px-6 sm:px-8 py-4 hover:bg-white hover:text-brand-orange transition-colors font-semibold"
-          >
-            Preencher Formulário ↓
-          </button>
         </div>
       </div>
     </section>

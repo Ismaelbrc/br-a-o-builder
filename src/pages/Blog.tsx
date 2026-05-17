@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -7,7 +7,7 @@ import { blogPosts, categories } from '@/data/blogPosts';
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('Todos');
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
 
   const filteredPosts = activeCategory === 'Todos' 
     ? blogPosts 

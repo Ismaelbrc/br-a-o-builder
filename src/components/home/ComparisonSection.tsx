@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import { 
   Truck, Package, CreditCard, Headphones, ShieldCheck, 
   UserCheck, Recycle, Cpu, X, CheckCircle, MessageCircle,
@@ -53,7 +53,7 @@ const ComparisonSection = () => {
     }
   };
 
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
   return (
     <section id="comparativo" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background" ref={sectionRef}>

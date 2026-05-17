@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
+﻿import { useParams, Link, Navigate } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
@@ -7,7 +7,7 @@ import { blogPosts } from '@/data/blogPosts';
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find(p => p.slug === slug);
-  const whatsappUrl = "https://wa.me/5562982858558?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.";
 
   if (!post) {
     return <Navigate to="/blog" replace />;
