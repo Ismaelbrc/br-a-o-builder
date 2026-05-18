@@ -1,0 +1,384 @@
+// Dados dos produtos para landing pages programáticas
+// Template usa {city} = nome da cidade/bairro, {state} = UF
+
+export type LandingProduct = {
+  slug: string;
+  name: string;         // "Vergalhão"
+  nameFull: string;     // "Vergalhão CA-50 e CA-60"
+  verb: string;         // "Comprar" | "Solicitar" | "Pedir"
+  preposition: string;  // "em" | "para"
+  shortDesc: string;    // 1 linha para pills/badges
+  metaDesc: (city: string, state: string) => string;
+  h1: (city: string) => string;
+  intro: (city: string, state: string, deliveryLabel: string) => string;
+  features: { icon: string; title: string; desc: string }[];
+  faq: { q: (city: string) => string; a: (city: string, deliveryLabel: string) => string }[];
+  relatedSlugs: string[];
+  whatsappMsg: (city: string) => string;
+  pageTitle: (city: string) => string;
+};
+
+export const landingProducts: Record<string, LandingProduct> = {
+
+  'corte-e-dobra': {
+    slug: 'corte-e-dobra',
+    name: 'Corte e Dobra',
+    nameFull: 'Corte e Dobra de Vergalhão',
+    verb: 'Solicitar',
+    preposition: 'em',
+    shortDesc: 'Aço cortado e dobrado conforme seu projeto',
+    pageTitle: (city) => `Corte e Dobra de Vergalhão em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Corte e dobra de vergalhão em ${city} – ${state}. Produção industrial automatizada, entrega em até 48h, peças etiquetadas por elemento. Solicite orçamento grátis.`,
+    h1: (city) => `Corte e Dobra de Vergalhão em ${city}`,
+    intro: (city, state, deliveryLabel) =>
+      `A BR Aço é a maior indústria de corte e dobra de vergalhão de Goiás e atende obras em ${city} com ${deliveryLabel}. Nosso processo 100% automatizado garante peças cortadas e dobradas exatamente conforme o projeto estrutural — sem desperdício de pontas e com redução de até 60% no tempo de armação no canteiro.`,
+    features: [
+      { icon: '⚙️', title: 'Produção CNC automatizada', desc: 'Dobras com precisão de ±1 mm. Cada peça sai exatamente conforme o detalhamento estrutural.' },
+      { icon: '🏷️', title: 'Etiquetado por elemento', desc: 'Pilares, vigas, estribos e laços chegam identificados (P1, V1, E1...) para montagem direta.' },
+      { icon: '📋', title: 'Quantitativo grátis', desc: 'Envie a planta e receba o quantitativo completo de aço + orçamento em até 24h, sem custo.' },
+      { icon: '🚚', title: `Entrega ${deliveryLabel}`, desc: `Frota própria, entrega programada para a sua obra em ${city}.` },
+      { icon: '📜', title: 'Certificação ABNT', desc: 'Vergalhão CA-50 e CA-60 com laudo de qualidade ABNT NBR 7480 em cada lote.' },
+      { icon: '💰', title: 'Economia de até 15%', desc: 'Menos desperdício + menos mão de obra de armação = custo total menor.' },
+    ],
+    faq: [
+      {
+        q: (city) => `Como funciona o corte e dobra para obras em ${city}?`,
+        a: (city, dl) => `Você envia a planta estrutural ou a planilha de armação por WhatsApp. Nossa equipe faz o quantitativo, confirma o orçamento e inicia a produção. O aço chega em ${city} ${dl}, identificado por elemento, pronto para montagem.`,
+      },
+      {
+        q: () => 'Qual a diferença entre corte e dobra e comprar a barra inteira?',
+        a: () => 'Na compra de barra inteira, o armador corta e dobra no canteiro — gerando perda de 8% a 15% de aço e consumindo tempo de mão de obra qualificada. No corte e dobra industrial, a perda cai para menos de 2% e a equipe de armação só faz a montagem.',
+      },
+      {
+        q: (city) => `A BR Aço atende projetos grandes em ${city}?`,
+        a: (city) => `Sim. A BR Aço atende desde residências unifamiliares até edifícios multifamiliares, galpões industriais e obras de infraestrutura em ${city} e em todo o estado de Goiás. Temos capacidade para processar centenas de toneladas por mês.`,
+      },
+      {
+        q: () => 'O serviço inclui projeto de armação?',
+        a: () => 'Não fazemos o projeto estrutural, mas nossa equipe técnica confere a planilha de armação do engenheiro e avisa sobre inconsistências antes de iniciar a produção.',
+      },
+    ],
+    relatedSlugs: ['vergalhao', 'trelica', 'malha', 'barra'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para corte e dobra de vergalhão para obra em ${city}. Tenho o projeto estrutural e gostaria de saber prazo e preço.`,
+  },
+
+  'vergalhao': {
+    slug: 'vergalhao',
+    name: 'Vergalhão',
+    nameFull: 'Vergalhão CA-50 e CA-60',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'CA-25, CA-50 e CA-60 com certificação ABNT',
+    pageTitle: (city) => `Vergalhão em ${city} | BR Aço – CA-50 e CA-60`,
+    metaDesc: (city, state) =>
+      `Vergalhão CA-50 e CA-60 em ${city} – ${state}. Todos os diâmetros de 6,3 mm a 40 mm, certificação ABNT NBR 7480, entrega em até 48h. Solicite orçamento.`,
+    h1: (city) => `Vergalhão em ${city} – CA-50 e CA-60`,
+    intro: (city, state, deliveryLabel) =>
+      `Compre vergalhão CA-50 e CA-60 em ${city} diretamente da maior indústria de aço de Goiás. A BR Aço fornece vergalhões de todos os diâmetros (6,3 mm a 40 mm) com certificação ABNT NBR 7480 e ${deliveryLabel}. Atendemos obras residenciais, comerciais e de infraestrutura em ${city} e em todo ${state}.`,
+    features: [
+      { icon: '📏', title: 'Todos os diâmetros', desc: 'De ø6,3 mm a ø40 mm — CA-50 e CA-60 para qualquer aplicação estrutural.' },
+      { icon: '📜', title: 'Certificação ABNT NBR 7480', desc: 'Laudo de qualidade Gerdau / ArcelorMittal em cada lote. Aceito em obras com vistoria da CEF (MCMV).' },
+      { icon: '✂️', title: 'Corte e dobra inclusos', desc: 'Solicite o vergalhão já cortado e dobrado conforme o projeto — sem custo adicional de processo.' },
+      { icon: '🚚', title: 'Entrega rápida', desc: 'Frota própria com entrega programada direto no canteiro de obras.' },
+      { icon: '📦', title: 'Venda por quilo ou tonelada', desc: 'Sem mínimo de pedido imposto — atendemos de pequenas obras a grandes empreendimentos.' },
+      { icon: '🤝', title: 'Suporte técnico', desc: 'Equipe técnica para orientar sobre a classe e diâmetro correto para cada elemento.' },
+    ],
+    faq: [
+      {
+        q: (city) => `Qual o preço do vergalhão em ${city}?`,
+        a: (city) => `O preço do vergalhão em ${city} varia conforme o diâmetro, a classe (CA-50 ou CA-60) e o volume do pedido. Em 2026, a faixa de preço gira entre R$ 5,80 e R$ 7,50/kg para CA-50, e R$ 6,00 a R$ 7,50/kg para CA-60. Solicite orçamento atualizado diretamente pelo WhatsApp.`,
+      },
+      {
+        q: () => 'Qual a diferença entre CA-50 e CA-60?',
+        a: () => 'O CA-50 tem limite de escoamento de 500 MPa e é usado em pilares, vigas e fundações. O CA-60 tem 600 MPa e é ideal para lajes treliçadas, telas soldadas e estribos de pequeno diâmetro. A escolha depende do projeto estrutural.',
+      },
+      {
+        q: (city) => `Vocês entregam vergalhão em ${city}?`,
+        a: (city, dl) => `Sim, a BR Aço entrega vergalhão em ${city} ${dl}. O material sai da nossa fábrica em Aparecida de Goiânia diretamente para o canteiro de obras.`,
+      },
+      {
+        q: () => 'É possível comprar vergalhão já cortado?',
+        a: () => 'Sim. Além da venda de barras inteiras (12 m), a BR Aço oferece o serviço de corte e dobra: o vergalhão chega cortado nas medidas exatas do projeto, identificado por elemento, pronto para montagem.',
+      },
+    ],
+    relatedSlugs: ['corte-e-dobra', 'barra', 'trelica', 'malha'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para vergalhão em ${city}. Podem me informar preço e prazo de entrega?`,
+  },
+
+  'coluna': {
+    slug: 'coluna',
+    name: 'Coluna',
+    nameFull: 'Colunas Pré-Moldadas de Aço',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Colunas pré-montadas para agilizar a estrutura',
+    pageTitle: (city) => `Colunas de Aço em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Colunas pré-moldadas de aço em ${city} – ${state}. Armadura pronta com barras longitudinais e estribos, entrega rápida. Solicite orçamento na BR Aço.`,
+    h1: (city) => `Colunas de Aço Pré-Montadas em ${city}`,
+    intro: (city, _state, deliveryLabel) =>
+      `A BR Aço fornece colunas (gaiolas de pilar) pré-montadas para obras em ${city}, com ${deliveryLabel}. Cada coluna sai da fábrica com as barras longitudinais e os estribos já posicionados no espaçamento definido pelo projeto — reduzindo em até 70% o tempo de armação de pilares no canteiro.`,
+    features: [
+      { icon: '🏗️', title: 'Gaiolas prontas', desc: 'Barras longitudinais + estribos montados e amarrados conforme o projeto do engenheiro.' },
+      { icon: '📐', title: 'Espaçamento exato', desc: 'Estribos posicionados conforme NBR 6118 — espaçamento de emenda reduzido automaticamente.' },
+      { icon: '⚡', title: 'Montagem 70% mais rápida', desc: 'A equipe só posiciona e concreta — sem cortar, dobrar ou amarrar estribos no canteiro.' },
+      { icon: '📏', title: 'Qualquer seção', desc: 'Colunas para seções de 10×10 cm até 60×80 cm e maiores.' },
+      { icon: '📜', title: 'Conformidade NBR', desc: 'Produção conforme NBR 6118 e NBR 7480. Laudo disponível.' },
+      { icon: '🚚', title: 'Entrega programada', desc: 'Colunas entregues por etapa de obra para facilitar a logística no canteiro.' },
+    ],
+    faq: [
+      {
+        q: (city) => `Vocês fazem colunas pré-montadas para obras em ${city}?`,
+        a: (city, dl) => `Sim. A BR Aço produz gaiolas de pilar (colunas pré-montadas) conforme o projeto estrutural e entrega em ${city} ${dl}.`,
+      },
+      {
+        q: () => 'O que inclui a coluna pré-montada?',
+        a: () => 'A coluna inclui as barras longitudinais CA-50, os estribos (CA-50 ou CA-60) já dobrados com ganchos de 135°, e a armação completa com espaçamento conforme o projeto. Não inclui o concreto nem as formas.',
+      },
+      {
+        q: () => 'Como enviar o projeto para orçamento de colunas?',
+        a: () => 'Envie o detalhamento estrutural dos pilares (seção, barras, número e espaçamento de estribos) por WhatsApp. Retornamos com quantitativo e orçamento em até 24h.',
+      },
+    ],
+    relatedSlugs: ['corte-e-dobra', 'vergalhao', 'barra', 'arame'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para colunas (gaiolas de pilar) pré-montadas para obra em ${city}. Tenho o projeto dos pilares.`,
+  },
+
+  'barra': {
+    slug: 'barra',
+    name: 'Barra de Aço',
+    nameFull: 'Barras de Aço para Construção Civil',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Barras CA-50 e CA-60 em todos os diâmetros',
+    pageTitle: (city) => `Barra de Aço em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Barras de aço CA-50 e CA-60 em ${city} – ${state}. Diâmetros de 6,3 mm a 40 mm, barras de 12 m, certificação ABNT. Entrega rápida. Orçamento grátis.`,
+    h1: (city) => `Barras de Aço em ${city} – CA-50 e CA-60`,
+    intro: (city, _state, deliveryLabel) =>
+      `Compre barras de aço em ${city} com ${deliveryLabel} e certificação ABNT NBR 7480. A BR Aço fornece barras CA-50 e CA-60 de 6,3 mm a 40 mm, em comprimentos padrão de 12 metros ou já cortadas nas medidas do projeto.`,
+    features: [
+      { icon: '📏', title: 'Barras de 12 metros', desc: 'Comprimento padrão ABNT para transporte e armazenamento. Disponível em todos os diâmetros CA-50 e CA-60.' },
+      { icon: '✂️', title: 'Corte sob medida', desc: 'Corte nas medidas exatas do projeto — sem desperdício de pontas no canteiro.' },
+      { icon: '📜', title: 'Certificação ABNT', desc: 'Barras rastreáveis com marcação do fabricante e laudo de qualidade por lote.' },
+      { icon: '⚖️', title: 'Venda por kg ou tonelada', desc: 'Atendemos pequenos volumes e grandes empreendimentos com o mesmo padrão de qualidade.' },
+      { icon: '🚚', title: 'Entrega no canteiro', desc: 'Frota própria com entrega direta na obra, no prazo combinado.' },
+      { icon: '🤝', title: 'Assessoria técnica', desc: 'Orientamos sobre diâmetro e classe certa para cada elemento estrutural.' },
+    ],
+    faq: [
+      {
+        q: (city) => `Qual o preço da barra de aço em ${city}?`,
+        a: () => 'O preço varia pelo diâmetro e volume. CA-50 ø10 mm e ø12,5 mm costumam estar entre R$ 5,80 e R$ 6,50/kg em 2026. Solicite cotação atualizada pelo WhatsApp.',
+      },
+      {
+        q: () => 'Qual o comprimento padrão das barras?',
+        a: () => 'As barras são fornecidas em comprimentos padrão de 12 metros, conforme ABNT NBR 7480. Também realizamos corte nas medidas do projeto antes da entrega.',
+      },
+      {
+        q: (city) => `Vocês entregam barras de aço em ${city}?`,
+        a: (city, dl) => `Sim, entregamos em ${city} ${dl} com frota própria diretamente no canteiro.`,
+      },
+    ],
+    relatedSlugs: ['vergalhao', 'corte-e-dobra', 'arame', 'prego'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para barras de aço para obra em ${city}. Podem me informar preços e disponibilidade?`,
+  },
+
+  'malha': {
+    slug: 'malha',
+    name: 'Malha de Aço',
+    nameFull: 'Malha de Aço (Malha Pop)',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Malha pop para lajes e contrapisos',
+    pageTitle: (city) => `Malha de Aço em ${city} | BR Aço – Malha Pop`,
+    metaDesc: (city, state) =>
+      `Malha de aço (malha pop) em ${city} – ${state}. Ideal para lajes, contrapisos e pisos industriais. Entrega rápida com certificação ABNT. Solicite orçamento.`,
+    h1: (city) => `Malha de Aço (Malha Pop) em ${city}`,
+    intro: (city, _state, deliveryLabel) =>
+      `Compre malha de aço (malha pop) em ${city} com ${deliveryLabel}. A BR Aço fornece malhas soldadas CA-60 em painéis para armação de lajes, contrapisos, pisos industriais e platibandas. Praticidade no canteiro sem abrir mão da resistência.`,
+    features: [
+      { icon: '🔲', title: 'Painéis prontos', desc: 'Malhas em painéis de 2,0 × 3,0 m e 2,0 × 6,0 m — fácil transporte e instalação.' },
+      { icon: '⚡', title: 'Montagem rápida', desc: 'Instalação 3× mais rápida que vergalhão avulso — painéis posicionados diretamente sobre espaçadores.' },
+      { icon: '📐', title: 'Espaçamento uniforme', desc: 'Fios soldados com espaçamento constante garantido em fábrica — sem risco de erro no canteiro.' },
+      { icon: '📜', title: 'CA-60 certificado', desc: 'Fios de aço CA-60 conforme ABNT NBR 7480 e painéis conforme ABNT NBR 7481.' },
+      { icon: '🏭', title: 'Para pisos industriais', desc: 'Malha estrutural para contrapisos de alta carga — supermercados, galpões, estacionamentos.' },
+      { icon: '🚚', title: 'Entrega em obra', desc: 'Painéis entregues empilhados e amarrados para facilitar o manuseio no canteiro.' },
+    ],
+    faq: [
+      {
+        q: () => 'O que é malha pop?',
+        a: () => 'Malha pop é a denominação popular para tela soldada em painéis de pequenas dimensões (normalmente 2×3 m). É composta por fios CA-60 soldados em forma de grelha, usada principalmente em lajes de pequeno vão, contrapisos e pisos industriais.',
+      },
+      {
+        q: (city) => `Qual a diferença entre malha pop e tela soldada em ${city}?`,
+        a: () => 'Tecnicamente são o mesmo produto — fios de aço CA-60 soldados em grelha. "Malha pop" é o nome comercial para painéis de menor dimensão (2×3 m), enquanto "tela soldada" pode se referir a painéis maiores (2×6 m) ou rolos. A escolha depende do espaço disponível no canteiro.',
+      },
+      {
+        q: (city) => `Vocês entregam malha de aço em ${city}?`,
+        a: (city, dl) => `Sim, entregamos em ${city} ${dl}.`,
+      },
+    ],
+    relatedSlugs: ['tela', 'trelica', 'vergalhao', 'corte-e-dobra'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para malha de aço (malha pop) para obra em ${city}. Podem me enviar preços e especificações?`,
+  },
+
+  'tela': {
+    slug: 'tela',
+    name: 'Tela Soldada',
+    nameFull: 'Tela Soldada para Construção Civil',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Telas soldadas CA-60 para lajes e pisos',
+    pageTitle: (city) => `Tela Soldada em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Tela soldada CA-60 em ${city} – ${state}. Para lajes, pisos industriais e contrapisos. Painéis 2×3 m e 2×6 m. Certificação ABNT. Entrega rápida.`,
+    h1: (city) => `Tela Soldada em ${city} – CA-60`,
+    intro: (city, _state, deliveryLabel) =>
+      `A BR Aço fornece tela soldada CA-60 em ${city} com ${deliveryLabel}. Painéis de 2×3 m e 2×6 m com fios ø4,2 mm a ø8,0 mm, para armação de lajes treliçadas, lajes maciças, pisos industriais e contrapisos.`,
+    features: [
+      { icon: '🔲', title: 'Painéis 2×3 m e 2×6 m', desc: 'Formatos padrão para fácil transporte, corte e instalação em qualquer planta.' },
+      { icon: '📜', title: 'ABNT NBR 7481', desc: 'Telas soldadas produzidas conforme norma brasileira. Laudo disponível por lote.' },
+      { icon: '🏭', title: 'Pisos industriais', desc: 'Telas ø6,3 e ø8,0 mm para contrapisos de galpões, supermercados e estacionamentos.' },
+      { icon: '🏠', title: 'Lajes residenciais', desc: 'Armadura de distribuição e negativa em lajes treliçadas residenciais.' },
+      { icon: '✂️', title: 'Corte sob medida', desc: 'Painéis cortados nas dimensões da loja antes da entrega, se necessário.' },
+      { icon: '🚚', title: 'Entrega programada', desc: 'Entrega direta no canteiro, data e hora combinados.' },
+    ],
+    faq: [
+      {
+        q: () => 'Qual tela soldada usar em laje treliçada?',
+        a: () => 'Para lajes treliçadas residenciais, usa-se geralmente tela de ø4,2 mm ou ø5,0 mm como armadura de distribuição (armadura positiva sobre as treliças) e tela de ø5,0 mm ou ø6,3 mm como armadura negativa sobre os apoios.',
+      },
+      {
+        q: (city) => `Qual o preço da tela soldada em ${city}?`,
+        a: () => 'O preço varia pelo diâmetro do fio. Em 2026, telas ø4,2 mm giram em torno de R$ 6,00 a R$ 7,50/m² e telas ø6,3 mm entre R$ 9,00 e R$ 12,00/m². Solicite orçamento atualizado.',
+      },
+      {
+        q: (city) => `Vocês entregam tela soldada em ${city}?`,
+        a: (city, dl) => `Sim, entregamos em ${city} ${dl}.`,
+      },
+    ],
+    relatedSlugs: ['malha', 'trelica', 'vergalhao', 'corte-e-dobra'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para tela soldada para obra em ${city}. Podem me informar preços por m² e prazos?`,
+  },
+
+  'trelica': {
+    slug: 'trelica',
+    name: 'Treliça',
+    nameFull: 'Treliças Metálicas para Laje',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Treliças T6, T8, T10 e T12 para laje treliçada',
+    pageTitle: (city) => `Treliça Metálica em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Treliças metálicas T6, T8, T10 e T12 em ${city} – ${state}. Para lajes treliçadas conforme ABNT NBR 14859. Entrega rápida. Solicite orçamento na BR Aço.`,
+    h1: (city) => `Treliças Metálicas para Laje em ${city}`,
+    intro: (city, _state, deliveryLabel) =>
+      `A BR Aço fornece treliças metálicas (T6, T8, T10 e T12) para laje treliçada em ${city} com ${deliveryLabel}. Produzidas conforme ABNT NBR 14859, as treliças chegam cortadas no comprimento do vão da laje, prontas para posicionamento sobre as formas.`,
+    features: [
+      { icon: '🏗️', title: 'Tipos T6, T8, T10 e T12', desc: 'Treliças para alturas de laje de 12 cm a 20 cm ou mais. Escolha conforme o projeto estrutural.' },
+      { icon: '📜', title: 'ABNT NBR 14859', desc: 'Treliças produzidas com aço CA-60, conforme norma vigente. Laudo de qualidade disponível.' },
+      { icon: '✂️', title: 'Cortadas no vão exato', desc: 'Cada treliça cortada no comprimento do vão da laje — sem sobras e sem necessidade de corte no canteiro.' },
+      { icon: '🏠', title: 'Lajes de até 7 m de vão', desc: 'Lajes treliçadas economizam até 40% de concreto e reduzem o peso da estrutura em relação à laje maciça.' },
+      { icon: '⚡', title: 'Montagem rápida', desc: 'Treliças posicionadas diretamente sobre as formas — sem necessidade de armação negativa adicional na maioria dos casos.' },
+      { icon: '🚚', title: 'Entrega em obra', desc: 'Treliças amarradas em pacotes, entregues diretamente na obra.' },
+    ],
+    faq: [
+      {
+        q: () => 'Qual treliça usar na minha laje?',
+        a: () => 'Depende da espessura e do vão da laje. Para vãos de 3 a 4 m, o T8 é o mais comum (laje de 16 cm). Para vãos de 4 a 5 m, T10 (laje de 20 cm). Para vãos maiores, consulte o engenheiro estrutural.',
+      },
+      {
+        q: (city) => `Como comprar treliças para laje em ${city}?`,
+        a: (city, dl) => `Envie as dimensões da laje (comprimento, largura e vão) por WhatsApp. Calculamos a quantidade de treliças necessária e entregamos em ${city} ${dl}.`,
+      },
+      {
+        q: () => 'Qual a diferença entre laje maciça e laje treliçada?',
+        a: () => 'A laje treliçada usa treliças metálicas + elementos de preenchimento (EPS ou cerâmico) + capa de concreto. Ela consome até 50% menos concreto e pesa 30% a 40% menos que a maciça, reduzindo o custo da fundação. Em contrapartida, a laje maciça tem maior rigidez e é indicada para cargas muito concentradas.',
+      },
+    ],
+    relatedSlugs: ['tela', 'malha', 'vergalhao', 'corte-e-dobra'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para treliças metálicas para laje em ${city}. A laje tem [dimensões]. Qual o preço e prazo?`,
+  },
+
+  'prego': {
+    slug: 'prego',
+    name: 'Prego',
+    nameFull: 'Pregos para Construção Civil',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Pregos para obra em todos os tamanhos',
+    pageTitle: (city) => `Prego para Construção em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Pregos para construção civil em ${city} – ${state}. Todos os tamanhos para formas, madeiramento, acabamento. Venda por kg. Entrega rápida. Solicite orçamento.`,
+    h1: (city) => `Pregos para Construção Civil em ${city}`,
+    intro: (city, _state, deliveryLabel) =>
+      `A BR Aço fornece pregos para construção civil em ${city} com ${deliveryLabel}. Todos os tamanhos e tipos — pregos de obra para formas, madeiramento e acabamento — vendidos por kg, com ou sem cabeça.`,
+    features: [
+      { icon: '🔨', title: 'Todos os tamanhos', desc: 'De 13×15 (preguinho de acabamento) ao 75×200 (prego de obra pesada). Consulte disponibilidade.' },
+      { icon: '⚖️', title: 'Venda por kg ou caixa', desc: 'Sem mínimo — atendemos o mestre de obras com uma caixa e o empreiteiro com uma tonelada.' },
+      { icon: '🏗️', title: 'Para formas de concreto', desc: 'Pregos 20×48 e 17×27 são os mais usados em montagem de formas de pilares e vigas.' },
+      { icon: '🏠', title: 'Para madeiramento de telhado', desc: 'Pregos 30×72 e 38×120 para estrutura de telhado e assentamento de caibros.' },
+      { icon: '📦', title: 'Entrega junto com o aço', desc: 'Peça pregos junto com o vergalhão e receba tudo no mesmo pedido.' },
+      { icon: '💰', title: 'Preço de distribuidor', desc: 'Compra direta da indústria — sem intermediário no preço.' },
+    ],
+    faq: [
+      {
+        q: (city) => `Qual o preço do prego de obra em ${city}?`,
+        a: () => 'O preço varia pelo tipo e tamanho. Em 2026, pregos de obra giram entre R$ 7,00 e R$ 12,00/kg. Consulte o preço atualizado pelo WhatsApp.',
+      },
+      {
+        q: () => 'Qual prego usar para formas de concreto?',
+        a: () => 'Para formas de pilares e vigas, os mais usados são o prego 20×48 e o 17×27. Para montagem de escoras de madeira, o 30×72 é o padrão no mercado.',
+      },
+      {
+        q: (city) => `Vocês entregam pregos em ${city}?`,
+        a: (city, dl) => `Sim, entregamos em ${city} ${dl}. É possível incluir os pregos no mesmo pedido do vergalhão, sem custo adicional de frete.`,
+      },
+    ],
+    relatedSlugs: ['arame', 'barra', 'vergalhao'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para pregos para obra em ${city}. Podem me informar preços e tipos disponíveis?`,
+  },
+
+  'arame': {
+    slug: 'arame',
+    name: 'Arame',
+    nameFull: 'Arames para Construção Civil',
+    verb: 'Comprar',
+    preposition: 'em',
+    shortDesc: 'Arame recozido e farpado para obra',
+    pageTitle: (city) => `Arame para Construção em ${city} | BR Aço`,
+    metaDesc: (city, state) =>
+      `Arame recozido e farpado para construção civil em ${city} – ${state}. Para amarração de armadura, telas e cercas. Venda por kg. Entrega rápida.`,
+    h1: (city) => `Arame para Construção Civil em ${city}`,
+    intro: (city, _state, deliveryLabel) =>
+      `A BR Aço fornece arames para construção civil em ${city} com ${deliveryLabel}. Arame recozido para amarração de armadura e telas soldadas, além de arame farpado e liso para cercas e vedações.`,
+    features: [
+      { icon: '🔗', title: 'Arame recozido', desc: 'Para amarração de vergalhão, treliças e telas soldadas. Fácil de torcer manualmente ou com torquês.' },
+      { icon: '🌾', title: 'Arame farpado', desc: 'Para cercas e divisas de terreno. Vendido em rolos.' },
+      { icon: '⚖️', title: 'Venda por kg ou rolo', desc: 'Atendemos desde pequenas obras até grandes quantidades.' },
+      { icon: '📦', title: 'Entrega junto com o aço', desc: 'Receba o arame no mesmo pedido do vergalhão, sem custo adicional de frete.' },
+      { icon: '💰', title: 'Preço competitivo', desc: 'Compra direta da indústria — distribuidor autorizado.' },
+      { icon: '🚚', title: 'Entrega rápida', desc: 'Frota própria com entrega direta no canteiro.' },
+    ],
+    faq: [
+      {
+        q: () => 'Qual arame usar para amarração de armadura?',
+        a: () => 'O arame recozido é o padrão para amarração de armadura em concreto armado. O mais usado é o n° 18 (diâmetro 1,25 mm), que é macio o suficiente para torcer manualmente ou com alicate torquês.',
+      },
+      {
+        q: (city) => `Qual o preço do arame recozido em ${city}?`,
+        a: () => 'Em 2026, o arame recozido n° 18 está entre R$ 8,00 e R$ 12,00/kg. Consulte preço atualizado pelo WhatsApp.',
+      },
+      {
+        q: (city) => `Vocês entregam arame em ${city}?`,
+        a: (city, dl) => `Sim, entregamos em ${city} ${dl}. É possível incluir no mesmo pedido do vergalhão.`,
+      },
+    ],
+    relatedSlugs: ['prego', 'barra', 'vergalhao', 'malha'],
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para arame para obra em ${city}. Podem me informar tipos disponíveis e preços?`,
+  },
+
+};
+
+export const productSlugs = Object.keys(landingProducts);

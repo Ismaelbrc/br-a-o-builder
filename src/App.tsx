@@ -15,6 +15,7 @@ import Cliente from "./pages/Cliente";
 import Galeria from "./pages/Galeria";
 import Faq from "./pages/Faq";
 import CalculadoraVergalhao from "./pages/CalculadoraVergalhao";
+import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,8 @@ function AppRoutes() {
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
+          {/* Landing pages: /:productSlug/:locationSlug */}
+          <Route path="/:productSlug/:locationSlug" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
     </Routes>
   );
