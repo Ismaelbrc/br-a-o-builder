@@ -153,7 +153,14 @@ export default function CalculadoraVergalhao() {
   const [grauPeso, setGrauPeso] = useState<'CA-50' | 'CA-60'>('CA-50');
   const [resultadoPeso, setResultadoPeso] = useState<ResultadoPeso | null>(null);
 
+  // ── Calculadora 3: Quantidade por peso ──
+  const [pesoEntrada, setPesoEntrada] = useState('');
+  const [diametroQtd, setDiametroQtd] = useState('10.0');
+  const [grauQtd, setGrauQtd] = useState<'CA-50' | 'CA-60'>('CA-50');
+  const [resultadoQtd, setResultadoQtd] = useState<{ barras: number; metrosLineares: number; diametro: string; kgm: number; kgBarra: number } | null>(null);
+
   const tabelaPeso = grauPeso === 'CA-50' ? diametros : diametrosCA60;
+  const tabelaQtd  = grauQtd  === 'CA-50' ? diametros : diametrosCA60;
 
   const calcularTela = () => {
     const L = parseFloat(larguraTela);
@@ -193,6 +200,22 @@ export default function CalculadoraVergalhao() {
       kgm,
       pesoTotal: Math.round(pesoTotal * 100) / 100,
     });
+  };
+
+  const calcularQtd = () => {
+    const peso = parseFloat(pesoEntrada);
+    const d = parseFloat(diametroQtd);
+    if (!peso || !d) return;
+
+    const diam = tabelaQtd.find(x => x.mm === d);
+    const kgm = diam?.kgm ?? 0;
+    if (!kgm) return;
+
+    const kgBarra = kgm * 12; // peso de 1 barra de 12 m
+    const barras = Math.ceil(peso / kgBarra);
+    const metrosLineares = Math.ceil(peso / kgm);
+
+    setResultadoQtd({ barras, metrosLineares, diametro: diam?.label ?? '', kgm, kgBarra: Math.round(kgBarra * 1000) / 1000 });
   };
 
   const whatsappMsgTela = resultadoTela
@@ -496,6 +519,90 @@ export default function CalculadoraVergalhao() {
                   </div>
                   <p className="text-xs text-gray-400 mt-4">
                     {resultadoPeso.quantidade} barras × {resultadoPeso.comprimento} m × {resultadoPeso.kgm} kg/m = {resultadoPeso.pesoTotal} kg
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* ══ CALCULADORA 3: QUANTIDADE POR PESO ══ */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
+              <h2 className="text-xl font-bold text-brand-navy">
+                🔢 Calculadora de Quantidade — Peso → Barras de 12 m
+              </h2>
+              <p className="text-sm text-brand-gray-medium mt-1">
+                Informe o peso total em kg e o diâmetro — calculamos quantas barras de 12 m você precisa
+              </p>
+            </div>
+
+            <div className="p-6 space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-brand-navy mb-1">
+                    Peso total (kg)
+                  </label>
+                  <input
+                    type="number"
+                    min="0.1"
+                    step="0.1"
+                    placeholder="Ex: 500"
+                    value={pesoEntrada}
+                    onChange={e => setPesoEntrada(e.target.value)}
+                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-brand-navy mb-1">Grau do aço</label>
+                  <select
+                    value={grauQtd}
+                    onChange={e => { setGrauQtd(e.target.value as 'CA-50' | 'CA-60'); setDiametroQtd(e.target.value === 'CA-50' ? '10.0' : '4.2'); }}
+                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
+                  >
+                    <option value="CA-50">CA-50</option>
+                    <option value="CA-60">CA-60</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-brand-navy mb-1">Diâmetro</label>
+                  <select
+                    value={diametroQtd}
+                    onChange={e => setDiametroQtd(e.target.value)}
+                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
+                  >
+                    {tabelaQtd.map(d => (
+                      <option key={d.mm} value={d.mm}>
+                        {d.label} — {d.kgm} kg/m
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <Button
+                onClick={calcularQtd}
+                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white rounded-lg"
+              >
+                <Calculator className="w-4 h-4 mr-2" />
+                Calcular Quantidade de Barras
+              </Button>
+
+              {resultadoQtd && (
+                <div className="mt-4 bg-brand-navy rounded-xl p-6 text-white">
+                  <h3 className="font-bold text-lg mb-4">Resultado — {pesoEntrada} kg de {resultadoQtd.diametro}</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-white/10 rounded-lg p-4 text-center">
+                      <p className="text-3xl font-bold text-brand-orange">{resultadoQtd.barras}</p>
+                      <p className="text-sm text-gray-300 mt-1">barras de 12 m</p>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-4 text-center">
+                      <p className="text-3xl font-bold text-brand-orange">{resultadoQtd.metrosLineares}</p>
+                      <p className="text-sm text-gray-300 mt-1">metros lineares</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-400 mt-4">
+                    {pesoEntrada} kg ÷ {resultadoQtd.kgBarra} kg/barra = {resultadoQtd.barras} barras (arredondado para cima)
+                    &nbsp;·&nbsp;{resultadoQtd.kgm} kg/m
                   </p>
                 </div>
               )}
