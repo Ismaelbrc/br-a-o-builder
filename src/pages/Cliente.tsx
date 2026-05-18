@@ -6,9 +6,7 @@ import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
 import { ChevronRight, Lock, MessageCircle, Bell } from 'lucide-react';
 
-// Formspree endpoint — obter em formspree.io/register
-// Após criar conta, vá em "New Form", copie o endpoint e cole abaixo
-const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || '';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mlgveona';
 
 export default function Cliente() {
   const { toast } = useToast();
