@@ -6,24 +6,48 @@ import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
 import { ChevronRight, Lock, MessageCircle, Bell } from 'lucide-react';
 
+// Formspree endpoint — obter em formspree.io/register
+// Após criar conta, vá em "New Form", copie o endpoint e cole abaixo
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || '';
+
 export default function Cliente() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ nome: '', email: '' });
+  const [sending, setSending] = useState(false);
   const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.";
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!formData.nome.trim() || !formData.email.trim()) {
-      return;
+
+    if (!formData.nome.trim() || !formData.email.trim()) return;
+
+    setSending(true);
+
+    try {
+      if (FORMSPREE_ENDPOINT) {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ nome: formData.nome, email: formData.email }),
+        });
+        if (!res.ok) throw new Error('Falha no envio');
+      }
+
+      toast({
+        title: "✓ Cadastro realizado!",
+        description: "Você será avisado quando a Área do Cliente estiver disponível.",
+      });
+
+      setFormData({ nome: '', email: '' });
+    } catch {
+      toast({
+        title: "Erro ao cadastrar",
+        description: "Tente novamente ou nos chame no WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
     }
-
-    toast({
-      title: "✓ Cadastro realizado!",
-      description: "Você será avisado quando a Área do Cliente estiver disponível.",
-    });
-
-    setFormData({ nome: '', email: '' });
   };
 
   return (
@@ -76,12 +100,13 @@ export default function Cliente() {
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                   className="flex-1 rounded-xl"
                 />
-                <Button 
+                <Button
                   type="submit"
-                  className="bg-brand-orange hover:bg-brand-orange-hover text-white rounded-xl px-6"
+                  disabled={sending}
+                  className="bg-brand-orange hover:bg-brand-orange-hover text-white rounded-xl px-6 disabled:opacity-60"
                 >
                   <Bell className="w-4 h-4 mr-2" />
-                  Avisar-me
+                  {sending ? 'Enviando…' : 'Avisar-me'}
                 </Button>
               </div>
             </form>
