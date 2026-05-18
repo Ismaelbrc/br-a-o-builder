@@ -11,7 +11,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
 import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 import PartnersSection from '@/components/home/PartnersSection';
-import heroFallback from '@/assets/hero-warehouse.png';
+
 
 const WHATSAPP_URL = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
 
@@ -33,9 +33,8 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section with Video Background */}
-      <section 
+      <section
         className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden"
-        style={{ backgroundImage: `url(${heroFallback})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         {/* Camada 1: Vídeo de Fundo */}
         <video
