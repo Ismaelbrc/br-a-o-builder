@@ -37,7 +37,7 @@ export const landingProducts: Record<string, LandingProduct> = {
       { icon: '⚙️', title: 'Produção CNC automatizada', desc: 'Dobras com precisão de ±1 mm. Cada peça sai exatamente conforme o detalhamento estrutural.' },
       { icon: '🏷️', title: 'Etiquetado por elemento', desc: 'Pilares, vigas, estribos e laços chegam identificados (P1, V1, E1...) para montagem direta.' },
       { icon: '📋', title: 'Quantitativo grátis', desc: 'Envie a planta e receba o quantitativo completo de aço + orçamento em até 24h, sem custo.' },
-      { icon: '🚚', title: `Entrega ${deliveryLabel}`, desc: `Frota própria, entrega programada para a sua obra em ${city}.` },
+      { icon: '🚚', title: 'Entrega rápida', desc: 'Frota própria com entrega programada direto no canteiro de obras.' },
       { icon: '📜', title: 'Certificação ABNT', desc: 'Vergalhão CA-50 e CA-60 com laudo de qualidade ABNT NBR 7480 em cada lote.' },
       { icon: '💰', title: 'Economia de até 15%', desc: 'Menos desperdício + menos mão de obra de armação = custo total menor.' },
     ],

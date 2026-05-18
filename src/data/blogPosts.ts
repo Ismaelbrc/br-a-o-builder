@@ -1833,7 +1833,7 @@ Suponha uma casa térrea com laje de 60 m², vão de 3,5 m, treliçada:
 - Barras CA-50 de 8,0 mm (malha) + CA-60 (distribuição): composição definida pelo projeto
 - Adicionar 5% de margem: **378 kg** (para cortes e rejeitos)
 
-Com o serviço de **corte e dobra** da BR Aço, o desperdício cai para menos de 1%, então a estimativa pode ser mais precisa — use a calculadora de vergalhão em `/calculadora-vergalhao`.
+Com o serviço de **corte e dobra** da BR Aço, o desperdício cai para menos de 1%, então a estimativa pode ser mais precisa — use a calculadora de vergalhão em \`/calculadora-vergalhao\`.
 
 ## O que Não Está Incluso nessa Tabela
 
