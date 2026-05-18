@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { MapPin, Clock, CheckCircle, MessageCircle, ChevronRight, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { useSEO } from '@/hooks/useSEO';
-import { landingProducts, productSlugs } from '@/data/landingProducts';
+import { landingProducts } from '@/data/landingProducts';
 import { landingLocations, getDeliveryLabel } from '@/data/landingLocations';
 import { analytics } from '@/lib/analytics';
 
@@ -13,24 +13,28 @@ export default function LandingPage() {
 
   const product = landingProducts[productSlug];
   const location = landingLocations[locationSlug];
+  const isValid = !!product && !!location;
 
-  // Redireciona se combinação inválida
-  if (!product || !location) return <Navigate to="/" replace />;
+  // Deriva dados para o SEO — valores vazios são usados quando a combinação é inválida
+  const cityName     = isValid ? location!.name  : '';
+  const stateLabel   = isValid ? location!.state : '';
+  const isNeighborhood = isValid && location!.type === 'neighborhood';
+  const displayCity  = isNeighborhood ? `${cityName}, ${location!.city}` : cityName;
+  const deliveryLabel = isValid ? getDeliveryLabel(location!.distanceKm) : '';
 
-  const deliveryLabel = getDeliveryLabel(location.distanceKm);
-  const cityName = location.name;
-  const stateLabel = location.state;
-  const isNeighborhood = location.type === 'neighborhood';
-  const displayCity = isNeighborhood ? `${cityName}, ${location.city}` : cityName;
-  const waMsg = encodeURIComponent(product.whatsappMsg(displayCity));
-  const waUrl = `${WA_BASE}${waMsg}`;
-
+  // ⚠️ useSEO DEVE ficar antes de qualquer return condicional (regra de hooks)
   useSEO({
-    title: product.pageTitle(displayCity),
-    description: product.metaDesc(displayCity, stateLabel),
-    canonical: `https://grupobraco.com.br/${productSlug}/${locationSlug}`,
-    keywords: `${product.name} ${cityName}, ${product.nameFull} ${cityName}, aço construção ${cityName}`,
+    title:       isValid ? product!.pageTitle(displayCity)               : 'BR Aço',
+    description: isValid ? product!.metaDesc(displayCity, stateLabel)   : '',
+    canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : undefined,
+    keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
   });
+
+  // Redireciona se combinação inválida (após todos os hooks)
+  if (!isValid) return <Navigate to="/" replace />;
+
+  const waMsg = encodeURIComponent(product!.whatsappMsg(displayCity));
+  const waUrl = `${WA_BASE}${waMsg}`;
 
   // Posts relacionados: mesmos produtos + cidades próximas da mesma região
   const relatedProducts = product.relatedSlugs

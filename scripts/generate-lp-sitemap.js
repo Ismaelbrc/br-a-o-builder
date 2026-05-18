@@ -79,7 +79,7 @@ const locations = [
       'aparecida-independencia','aparecida-jardim-flores','aparecida-jardim-bela-vista','aparecida-vila-sao-tomas',
       'aparecida-parque-nacoes','aparecida-bernardi','aparecida-bom-jesus','aparecida-bom-pastor',
       'aparecida-caribi','aparecida-cruzeiro-sul','aparecida-estrela-dalva','aparecida-finsocial',
-      'aparecida-industrial','aparecida-jardim-america','aparecida-lago-azul','aparecida-marajó',
+      'aparecida-industrial','aparecida-jardim-america','aparecida-lago-azul','aparecida-marajo',
       'aparecida-nova-aparecida','aparecida-nova-esperanca','aparecida-olimpico','aparecida-primavera',
       'aparecida-recanto-tropical','aparecida-rio-claro','aparecida-santo-andre','aparecida-serra',
       'aparecida-serra-dourada','aparecida-tocantins','aparecida-vila-brasilia','aparecida-vila-rica',
@@ -90,7 +90,7 @@ const locations = [
   // bairros Anápolis
   ...['anapolis-centro','anapolis-setor-sul','anapolis-setor-norte','anapolis-jundiai',
       'anapolis-vila-gois','anapolis-recanto-sol','anapolis-maracana','anapolis-parque-brasilia',
-      'anapolis-calixtolândia','anapolis-daltro-filho','anapolis-progresso','anapolis-cidade-jardim',
+      'anapolis-calixtoladia','anapolis-daltro-filho','anapolis-progresso','anapolis-cidade-jardim',
       'anapolis-arco-verde','anapolis-antonio-azevedo','anapolis-vila-jaiara','anapolis-bandeirantes',
       'anapolis-industrial','anapolis-itamaraty','anapolis-santos-dumont','anapolis-sao-carlos',
       'anapolis-sao-francisco','anapolis-portela','anapolis-estadio','anapolis-setor-novo',
