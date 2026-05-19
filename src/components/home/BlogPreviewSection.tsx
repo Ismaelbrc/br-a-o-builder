@@ -1,10 +1,31 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import { blogPosts } from '@/data/blogPosts';
 
-// Show latest 3 posts on homepage
 const latestPosts = blogPosts.slice(0, 3);
+
+function readingTime(content: string): number {
+  return Math.ceil(content.split(/\s+/).length / 200);
+}
+
+const CATEGORY_ACCENT: Record<string, string> = {
+  'Corte e Dobra':   '#F97316',
+  'Vergalhões':      '#2563EB',
+  'Dicas Técnicas':  '#16A34A',
+  'Normas ABNT':     '#9333EA',
+  'Normas Técnicas': '#9333EA',
+  'Treliças':        '#D97706',
+  'Malhas':          '#0D9488',
+  'Fundação':        '#78716C',
+  'BR Aço':          '#1E3A5F',
+  'Produtos':        '#4F46E5',
+  'Gestão de Obra':  '#DC2626',
+};
+
+function accent(category: string): string {
+  return CATEGORY_ACCENT[category] ?? '#F97316';
+}
 
 const BlogPreviewSection = () => {
   return (
@@ -20,44 +41,37 @@ const BlogPreviewSection = () => {
             <Link
               key={post.id}
               to={`/blog/${post.slug}`}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 group block"
+              className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col"
             >
-              {/* Image Placeholder */}
-              <div 
-                className="h-48"
-                style={{
-                  background: 'linear-gradient(135deg, hsl(var(--brand-navy)) 0%, hsl(var(--brand-orange) / 0.8) 100%)'
-                }}
-              />
-
-              {/* Content */}
-              <div className="p-6">
-                <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">
+              <div className="h-1 w-full flex-shrink-0" style={{ backgroundColor: accent(post.category) }} />
+              <div className="p-6 flex flex-col flex-1">
+                <span
+                  className="text-xs font-bold uppercase tracking-wider"
+                  style={{ color: accent(post.category) }}
+                >
                   {post.category}
                 </span>
-                <h3 className="text-lg font-semibold text-brand-navy mt-2 line-clamp-2 group-hover:text-brand-orange transition-colors">
+                <h3 className="text-lg font-semibold text-brand-navy mt-2 line-clamp-2 group-hover:text-brand-orange transition-colors leading-snug flex-1">
                   {post.title}
                 </h3>
                 <p className="text-sm text-brand-gray-medium mt-2 line-clamp-2">
                   {post.summary}
                 </p>
-
-                {/* Footer */}
                 <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
-                  <span className="text-xs text-brand-gray-medium">
-                    {post.date}
-                  </span>
-                  <span className="text-sm text-brand-orange font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Ler mais
-                    <ArrowRight className="w-4 h-4" />
-                  </span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs text-brand-gray-medium">{post.date}</span>
+                    <span className="flex items-center gap-1 text-xs text-brand-gray-medium">
+                      <Clock className="w-3 h-3" />
+                      {readingTime(post.content)} min
+                    </span>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-brand-orange group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        {/* CTA Button */}
         <div className="text-center mt-10">
           <Link
             to="/blog"
