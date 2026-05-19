@@ -4849,6 +4849,186 @@ A **ABNT NBR 9062** (Projeto e Execução de Estruturas Pré-Moldadas) exige:
 Para construtoras e fábricas de pré-moldados em Goiás, a BR Aço fornece CA-50 e CA-60 em barras e rolos, além de serviço de corte e dobra para gaiolas de armação. Atendemos pedidos regulares com prazo garantido.
 
 Consulte nossa equipe técnica para necessidades específicas de armação de pré-moldados.`
+  },
+  {
+    id: 73,
+    slug: 'ferragista-goiania-como-escolher',
+    category: 'Dicas Técnicas',
+    title: 'Ferragista em Goiânia: Como Escolher o Melhor Fornecedor de Aço',
+    metaDescription: 'Como escolher a melhor ferragista em Goiânia? Veja os critérios certos: certificação ABNT, entrega, corte e dobra e suporte técnico. Evite erros caros na compra do aço.',
+    keyword: 'ferragista Goiânia',
+    date: '29 Jan 2026',
+    summary: 'Com várias opções de ferragistas em Goiânia e região, escolher o fornecedor errado pode custar caro na obra. Veja os critérios essenciais para avaliar antes de comprar o aço.',
+    content: `## O Que é Uma Ferragista de Construção?
+
+No contexto da construção civil, "ferragista" é o fornecedor especializado nos aços estruturais da obra: vergalhões, treliças, malhas soldadas, arames e pregos. É diferente de uma ferragem de acabamento (que vende fechaduras, dobradiças e puxadores).
+
+Para uma obra em Goiânia, escolher a ferragista certa impacta diretamente o custo do material, a qualidade da estrutura e o prazo de execução.
+
+## 7 Critérios para Escolher a Ferragista Certa
+
+### 1. Certificação ABNT NBR 7480
+
+Todo vergalhão vendido legalmente no Brasil deve atender à **ABNT NBR 7480**. Exija o certificado de qualidade de cada lote — ele deve conter o número de corrida rastreável até a usina.
+
+Ferragistas que não fornecem laudo estão vendendo aço sem garantia de conformidade — risco estrutural e problema na ART.
+
+### 2. Serviço de Corte e Dobra Industrial
+
+Ferragistas que oferecem **corte e dobra industrial** CNC entregam peças com tolerância de ±5 mm — impossível de conseguir manualmente na obra. Além disso, o processamento industrial reduz a perda de material de 8–15% para menos de 3%.
+
+Para obras com projeto estrutural, o corte e dobra é indispensável.
+
+### 3. Estoque Amplo em Goiânia
+
+Verifique se a ferragista tem estoque físico de **todos os diâmetros** que o projeto especifica. Uma ferragista que só tem 10 mm e 12,5 mm não serve se o projeto precisa de 8 mm, 16 mm e 20 mm.
+
+### 4. Prazo de Entrega Garantido
+
+Atraso na entrega de aço para a obra pode paralisar toda uma etapa estrutural. Exija o prazo por escrito e confirme que a ferragista tem frota própria — terceirização de frete aumenta o risco de atraso.
+
+### 5. Suporte Técnico
+
+Uma boa ferragista tem engenheiros ou técnicos disponíveis para revisar a planilha de ferro, identificar inconsistências antes do processamento e orientar sobre bitola e classe corretos.
+
+### 6. Transparência de Preço
+
+Orçamentos por escrito, com preço por bitola, prazo e condições de pagamento. Desconfie de ferragistas que só dão preço verbal ou que incluem taxas surpresa no faturamento.
+
+### 7. Referências de Obras em Goiânia
+
+Pergunte por clientes que a ferragista já atendeu na região. Construtoras locais que usam o mesmo fornecedor regularmente são a melhor prova de confiabilidade.
+
+## Por Que a BR Aço é a Ferragista Referência em Goiânia?
+
+- **Maior parque de corte e dobra de Goiás** — produção CNC com tolerância ±5 mm
+- **Estoque permanente** de CA-25, CA-50 e CA-60 em todos os diâmetros
+- **Laudo ABNT NBR 7480** em cada lote, rastreável até a usina
+- **Entrega em até 48h** em toda a região metropolitana com frota própria
+- **Equipe técnica** disponível para revisar planilhas de ferro
+
+Solicite orçamento pelo WhatsApp e receba resposta em até 2 horas.`
+  },
+  {
+    id: 74,
+    slug: 'distribuidoras-ferro-aco-goiania',
+    category: 'Produtos',
+    title: 'Distribuidoras de Ferro e Aço em Goiânia: O Que Avaliar Antes de Comprar',
+    metaDescription: 'Guia para escolher distribuidoras de ferro e aço em Goiânia: diferenciais de qualidade, serviços, entrega e certificação. Como não errar na compra do aço da obra.',
+    keyword: 'distribuidoras de ferro e aço Goiânia',
+    date: '31 Jan 2026',
+    summary: 'Goiânia tem várias distribuidoras de ferro e aço. Saber o que avaliar além do preço por kg define se a compra vai poupar ou custar mais na obra. Veja os diferenciais que realmente importam.',
+    content: `## O Mercado de Ferro e Aço em Goiânia
+
+Goiânia e a região metropolitana têm um dos mercados de construção civil mais ativos do Centro-Oeste. Com isso, há dezenas de distribuidoras de ferro e aço disputando o mesmo cliente.
+
+O preço por kg é o critério mais comparado — mas raramente é o mais importante na decisão final quando se considera o **custo total da compra**.
+
+## O Que Está Incluído no "Preço por kg"?
+
+Quando uma distribuidora cota "R$ 6,00/kg de CA-50 φ 10 mm", você precisa saber:
+
+- **Inclui frete?** (frete pode custar R$ 0,30 a R$ 0,80/kg dependendo da distância)
+- **Inclui corte e dobra?** (processamento industrial pode custar R$ 0,50 a R$ 1,00/kg)
+- **O laudo de qualidade está incluído?** (sem laudo, o material pode ser recusado em obras fiscalizadas)
+- **O prazo de entrega está garantido?** (um dia de atraso na estrutura pode custar mais do que a diferença de R$ 0,50/kg)
+
+## Serviços que Diferenciam Distribuidoras em Goiânia
+
+### Serviço Center (Corte e Dobra)
+Distribuidoras integradas com indústria de corte e dobra são mais eficientes: o aço é processado antes de sair da fábrica. Você recebe peças etiquetadas, prontas para montagem.
+
+### Estoque Disponível na Praça
+Distribuidoras com estoque físico em Goiânia entregam em 24–48h. As que dependem de pedido à usina demoram 5–15 dias úteis — inviável para obras com cronograma apertado.
+
+### Atendimento Técnico
+Ter acesso a um técnico ou engenheiro da distribuidora para verificar a planilha de ferro antes do processamento evita erros caros de armação.
+
+## Comparativo de Modelo de Negócio
+
+| Modelo | Prós | Contras |
+|---|---|---|
+| Distribuidor puro (sem corte) | Preço por kg menor | Você ainda precisa cortar, perda de 8–15% |
+| Distribuidor + serviço center | Custo total geralmente menor | Preço por kg ligeiramente maior |
+| Home center (Leroy, etc.) | Comodidade | Bitolas limitadas, sem corte industrial |
+| Compra direto de usina | Menor preço para volume | Mínimo de 20–50 ton, prazo longo |
+
+## BR Aço: Distribuidora + Serviço Center em Goiânia
+
+A BR Aço reúne distribuição e indústria de corte e dobra em um único endereço em Aparecida de Goiânia:
+
+- Vergalhões CA-25, CA-50 e CA-60 em todos os diâmetros
+- Corte e dobra industrial com tolerância ±5 mm (CNC)
+- Treliças TR-08, TR-10 e TR-12 no comprimento do vão
+- Telas soldadas e malhas Q-92 a Q-196
+- Laudo ABNT NBR 7480 em cada lote
+- Entrega em até 48h em toda a região metropolitana
+
+Solicite orçamento pelo WhatsApp com a planilha de ferro e receba resposta em até 2 horas.`
+  },
+  {
+    id: 75,
+    slug: 'vergalhao-preco-kg-goias-2026',
+    category: 'Produtos',
+    title: 'Vergalhão por kg em Goiás: Referência de Preços e Onde Comprar em 2026',
+    metaDescription: 'Referência de preços de vergalhão por kg em Goiás e DF em 2026. CA-50 e CA-60 nos principais diâmetros. Como comprar com entrega rápida em Goiânia e região.',
+    keyword: 'preço vergalhão kg Goiás',
+    date: '02 Fev 2026',
+    summary: 'O preço do vergalhão CA-50 em Goiás em 2026 varia entre R$ 5,80 e R$ 7,50/kg dependendo do diâmetro e volume. Veja a tabela de referência e onde comprar com entrega rápida.',
+    content: `## Preço do Vergalhão CA-50 em Goiás — Referência 2026
+
+Os preços abaixo são referências de mercado para Goiânia e região metropolitana (primeiro semestre de 2026). Preços reais variam conforme volume, prazo de pagamento e condições do pedido.
+
+| Diâmetro | Classe | Faixa de preço (R$/kg) | Peso (kg/m) |
+|---|---|---|---|
+| φ 6,3 mm | CA-50 | R$ 5,80 – R$ 6,80 | 0,245 |
+| φ 8,0 mm | CA-50 | R$ 5,80 – R$ 6,80 | 0,395 |
+| φ 10,0 mm | CA-50 | R$ 5,90 – R$ 6,90 | 0,617 |
+| φ 12,5 mm | CA-50 | R$ 6,00 – R$ 7,00 | 0,963 |
+| φ 16,0 mm | CA-50 | R$ 6,00 – R$ 7,20 | 1,578 |
+| φ 20,0 mm | CA-50 | R$ 6,20 – R$ 7,50 | 2,466 |
+| φ 25,0 mm | CA-50 | R$ 6,50 – R$ 7,80 | 3,853 |
+
+> Preços incluem o vergalhão em barra de 12 m. Corte e dobra industrial é cotado separadamente ou incluso dependendo do fornecedor.
+
+## Como o Preço Varia ao Longo do Ano?
+
+O vergalhão é um commodity com preço dinâmico, influenciado por:
+- **Cotação do minério de ferro** (mercado internacional)
+- **Câmbio** (R$/USD)
+- **Demanda da construção civil** (alta no início do ano)
+- **Sazonalidade logística** (fretes sobem em períodos de alta demanda)
+
+Em Goiás, o preço também é influenciado pelo **frete das usinas** (principalmente Minas Gerais). Distribuidoras locais com estoque próprio absorvem parte dessa variação.
+
+## Ferro 3/8" e 5/16" — O Que São?
+
+Muitos compradores buscam "ferro 3/8" ou "ferro 5/16" — denominações antigas em polegadas que correspondem a:
+- **5/16" (0,3125 in)** ≈ **φ 8,0 mm** (CA-50 ou CA-60)
+- **3/8" (0,375 in)** ≈ **φ 9,5 mm** → equivalente comercial: **φ 10,0 mm**
+- **1/2" (0,5 in)** ≈ **φ 12,5 mm**
+- **5/8" (0,625 in)** ≈ **φ 16,0 mm**
+
+Ao solicitar orçamento, informe o diâmetro em milímetros para evitar confusão.
+
+## Vergalhão no DF: Entregamos em Brasília e Entorno
+
+A BR Aço atende todo o Distrito Federal e a região do Entorno com entrega em até 48–72h:
+
+- Brasília, Taguatinga, Ceilândia, Samambaia, Gama
+- Valparaíso de Goiás, Luziânia, Águas Lindas, Planaltina
+- Novo Gama, Formosa, Planaltina-GO
+
+Para obras no DF, solicite orçamento pelo WhatsApp indicando o CEP ou endereço da obra.
+
+## Como Comprar Vergalhão com o Melhor Custo Total
+
+1. **Tenha a planilha de ferro** antes de pedir cotação — permite comparar total e não só o preço/kg
+2. **Peça orçamento com corte e dobra incluso** — o custo total geralmente é menor
+3. **Confirme o laudo de qualidade** ABNT NBR 7480 no orçamento
+4. **Solicite prazo de entrega por escrito** com o orçamento
+
+A BR Aço fornece orçamento detalhado por bitola em até 2 horas. Entre em contato pelo WhatsApp.`
   }
 ];
 

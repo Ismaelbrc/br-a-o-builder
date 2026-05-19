@@ -14,19 +14,26 @@ const root = join(__dirname, '..');
 const productSlugs = [
   'corte-e-dobra', 'vergalhao', 'coluna', 'barra',
   'malha', 'tela', 'trelica', 'prego', 'arame',
+  'ferragista', 'ferragens', 'ferro-e-aco',
+  'material-de-construcao', 'distribuidora-de-ferro',
 ];
 
 // Prioridades por tipo de produto
 const productPriority = {
-  'corte-e-dobra': '0.8',
-  'vergalhao':     '0.8',
-  'trelica':       '0.7',
-  'malha':         '0.7',
-  'tela':          '0.7',
-  'coluna':        '0.7',
-  'barra':         '0.6',
-  'prego':         '0.6',
-  'arame':         '0.6',
+  'corte-e-dobra':          '0.8',
+  'vergalhao':              '0.8',
+  'ferragista':             '0.8',
+  'ferragens':              '0.8',
+  'ferro-e-aco':            '0.8',
+  'material-de-construcao': '0.7',
+  'distribuidora-de-ferro': '0.7',
+  'trelica':                '0.7',
+  'malha':                  '0.7',
+  'tela':                   '0.7',
+  'coluna':                 '0.7',
+  'barra':                  '0.6',
+  'prego':                  '0.6',
+  'arame':                  '0.6',
 };
 
 // Prioridades por tipo de localização
@@ -112,8 +119,13 @@ for (const prod of productSlugs) {
     const lPrio = locationPriority[loc.type] || '0.6';
     // Prioridade final = média das duas, com boost para corte-e-dobra + goiania
     const finalPrio = (
-      prod === 'corte-e-dobra' && loc.type === 'city' ? '0.9' :
-      prod === 'vergalhao'     && loc.type === 'city' ? '0.8' :
+      prod === 'corte-e-dobra'          && loc.type === 'city' ? '0.9' :
+      prod === 'vergalhao'              && loc.type === 'city' ? '0.8' :
+      prod === 'ferragista'             && loc.type === 'city' ? '0.9' :
+      prod === 'ferragens'              && loc.type === 'city' ? '0.8' :
+      prod === 'ferro-e-aco'            && loc.type === 'city' ? '0.8' :
+      prod === 'material-de-construcao' && loc.type === 'city' ? '0.8' :
+      prod === 'distribuidora-de-ferro' && loc.type === 'city' ? '0.8' :
       Math.min(0.8, (parseFloat(pPrio) + parseFloat(lPrio)) / 2 + 0.05).toFixed(1)
     );
 
