@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { MapPin, Clock, CheckCircle, MessageCircle, ChevronRight, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { useSEO } from '@/hooks/useSEO';
@@ -30,10 +31,87 @@ export default function LandingPage() {
     keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
   });
 
+  // Schemas JSON-LD: FAQPage + BreadcrumbList + LocalBusiness
+  useEffect(() => {
+    if (!isValid) return;
+
+    const canonicalUrl = `https://grupobraco.com.br/${productSlug}/${locationSlug}`;
+
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": product!.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q(cityName),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a(cityName, deliveryLabel)
+        }
+      }))
+    };
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",           "item": "https://grupobraco.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": product!.name,    "item": `https://grupobraco.com.br/${productSlug}/goiania` },
+        { "@type": "ListItem", "position": 3, "name": displayCity,      "item": canonicalUrl }
+      ]
+    };
+
+    const localBusinessSchema = {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "HardwareStore"],
+      "name": "BR Aço – Casa Brasileira de Aço",
+      "description": product!.metaDesc(displayCity, stateLabel),
+      "url": canonicalUrl,
+      "telephone": "+55-62-99924-7285",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua 41, S/N, Quadra 30, Lotes 01/02/03/17/18/19/20/21/22",
+        "addressLocality": "Aparecida de Goiânia",
+        "addressRegion": "GO",
+        "postalCode": "74912-130",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": cityName },
+        { "@type": "State", "name": "Goiás" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/grupobraco_",
+        "https://www.facebook.com/bracogoiania/"
+      ]
+    };
+
+    const inject = (id: string, data: object) => {
+      let el = document.getElementById(id);
+      if (!el) {
+        el = document.createElement('script');
+        el.id = id;
+        (el as HTMLScriptElement).type = 'application/ld+json';
+        document.head.appendChild(el);
+      }
+      el.textContent = JSON.stringify(data);
+    };
+
+    inject('lp-faq-schema', faqSchema);
+    inject('lp-breadcrumb-schema', breadcrumbSchema);
+    inject('lp-localbusiness-schema', localBusinessSchema);
+
+    return () => {
+      document.getElementById('lp-faq-schema')?.remove();
+      document.getElementById('lp-breadcrumb-schema')?.remove();
+      document.getElementById('lp-localbusiness-schema')?.remove();
+    };
+  }, [isValid, productSlug, locationSlug, cityName, displayCity, stateLabel, deliveryLabel]);
+
   // Redireciona se combinação inválida (após todos os hooks)
   if (!isValid) return <Navigate to="/" replace />;
 
-  const waMsg = encodeURIComponent(product!.whatsappMsg(displayCity));
+  const waMsg = encodeURIComponent(`[src:lp-${locationSlug}] ${product!.whatsappMsg(displayCity)}`);
   const waUrl = `${WA_BASE}${waMsg}`;
 
   // Posts relacionados: mesmos produtos + cidades próximas da mesma região

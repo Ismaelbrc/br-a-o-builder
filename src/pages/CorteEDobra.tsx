@@ -15,7 +15,7 @@ import { analytics } from '@/lib/analytics';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
-  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
+  const whatsappUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20or%C3%A7amento%3F";
   
   const scrollToForm = () => {
     document.getElementById('orcamento-cd')?.scrollIntoView({ behavior: 'smooth' });
@@ -407,7 +407,7 @@ const FaqSection = () => {
 
 // ═══ FINAL CTA WHATSAPP ═══
 const FinalCtaSection = () => {
-  const waUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
+  const waUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20Corte%20e%20Dobra.";
 
   return (
     <section id="orcamento-cd" className="py-20 md:py-24 bg-brand-navy">
@@ -453,7 +453,7 @@ const FinalCtaSection = () => {
 
 // ═══ CDA SECTION ═══
 const CdaSection = () => {
-  const whatsappCda = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%2C%20Dobra%20e%20Armação%20(CDA).%20Poderia%20me%20enviar%20um%20orçamento?";
+  const whatsappCda = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Corte%2C%20Dobra%20e%20Arma%C3%A7%C3%A3o%20(CDA).%20Poderia%20me%20enviar%20um%20or%C3%A7amento%3F";
 
   return (
     <section className="py-20 md:py-24 bg-brand-gray-light">

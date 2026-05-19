@@ -29,7 +29,7 @@ const contactCards = [
     title: 'WhatsApp',
     text: '(62) 99924-7285',
     subtext: 'Atendimento rápido e direto',
-    href: 'https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20falar%20com%20a%20BR%20Aço.',
+    href: 'https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BR%20A%C3%A7o.',
   },
   {
     icon: Mail,

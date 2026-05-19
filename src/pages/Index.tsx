@@ -13,7 +13,7 @@ import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 import PartnersSection from '@/components/home/PartnersSection';
 
 
-const WHATSAPP_URL = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20minha%20obra.";
+const WHATSAPP_URL = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
 const Index = () => {
   useSEO({

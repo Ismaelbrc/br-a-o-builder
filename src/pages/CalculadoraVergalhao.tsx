@@ -220,12 +220,12 @@ export default function CalculadoraVergalhao() {
 
   const whatsappMsgTela = resultadoTela
     ? encodeURIComponent(
-        `Olá! Calculei a necessidade de tela soldada para uma laje/piso de ${resultadoTela.area} m².\n` +
+        `[src:calculadora] Olá! Calculei a necessidade de tela soldada para uma laje/piso de ${resultadoTela.area} m².\n` +
         `Malha sugerida: ${telasSoldadas[resultadoTela.tipoIdx].tipo} (${telasSoldadas[resultadoTela.tipoIdx].malha} cm — ø${telasSoldadas[resultadoTela.tipoIdx].diametro} mm)\n` +
         `Quantidade: ${resultadoTela.paineis} painéis — ${resultadoTela.pesoTotal} kg\n` +
         `Gostaria de solicitar um orçamento.`
       )
-    : encodeURIComponent(`Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.`);
+    : encodeURIComponent(`[src:calculadora] Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.`);
 
   return (
     <Layout>
@@ -685,7 +685,7 @@ export default function CalculadoraVergalhao() {
               Envie o resultado da calculadora ou o projeto estrutural e receba o orçamento em até 2 horas.
             </p>
             <a
-              href="https://wa.me/5562999247285?text=Olá!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20de%20vergalhão."
+              href="https://wa.me/5562999247285?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange font-bold rounded-full px-8 py-4 hover:bg-gray-100 transition-colors"
