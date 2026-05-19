@@ -2381,6 +2381,2474 @@ Com o projeto estrutural em mãos, a BR Aço:
 4. Emite laudo de qualidade e nota fiscal
 
 Envie sua planta pelo WhatsApp e receba o orçamento completo em até 24h.`
+  },
+  {
+    id: 33,
+    slug: 'diferenca-ca-25-ca-50-ca-60',
+    category: 'Vergalhões',
+    title: 'CA-25, CA-50 e CA-60: Qual a Diferença e Quando Usar Cada Um?',
+    metaDescription: 'Entenda as diferenças entre CA-25, CA-50 e CA-60: resistência, aplicações e norma ABNT. Saiba qual vergalhão escolher para laje, pilar e fundação.',
+    keyword: 'diferença CA-25 CA-50 CA-60',
+    date: '10 Nov 2025',
+    summary: 'CA-25, CA-50 e CA-60 são as principais classes de vergalhão usadas na construção civil. Cada uma tem resistência e aplicação ideais. Entenda qual usar em cada elemento estrutural.',
+    content: `## O Que Significa CA no Vergalhão?
+
+CA significa **Carbono de Alta resistência** — a sigla usada pela norma **ABNT NBR 7480** para classificar o aço para concreto armado. O número que vem depois indica o limite de escoamento mínimo em MPa (megapascal), ou seja, a resistência que o aço suporta antes de se deformar permanentemente.
+
+## CA-25: O Mais Maleável
+
+O CA-25 tem limite de escoamento de **250 MPa** — o mais baixo entre as três classes. Por ser mais dúctil, dobra facilmente sem trincar.
+
+### Aplicações típicas do CA-25
+- Estribos (cintas) de pilares e vigas
+- Armadura de distribuição em lajes
+- Esperas de fundação onde há dobramento intenso
+
+### Características
+- Superfície lisa (fio liso ou pouco nervurado)
+- Diâmetros usuais: 5, 6,3 e 8 mm
+- Facilidade de conformação manual
+
+## CA-50: O Mais Utilizado na Construção Civil
+
+Com limite de escoamento de **500 MPa**, o CA-50 é o vergalhão padrão para a grande maioria das estruturas. Alia boa resistência com razoável ductilidade.
+
+### Aplicações típicas do CA-50
+- Armadura longitudinal de vigas e pilares
+- Armadura principal de lajes maciças e treliçadas
+- Fundações (radier, sapata, estaca)
+- Vergas e contravergas de alvenaria
+
+### Características
+- Superfície nervurada (aumenta aderência ao concreto)
+- Diâmetros: 6,3 mm a 32 mm
+- Disponível em barras de 12 m e em rolos (até 10 mm)
+
+## CA-60: Para Esforços Elevados
+
+O CA-60 atinge **600 MPa** de escoamento. É produzido por trefilação a frio — processo que aumenta a resistência mas reduz a ductilidade.
+
+### Aplicações típicas do CA-60
+- Telas soldadas e malhas pop
+- Treliças metálicas para laje
+- Armaduras de pré-moldados e pré-esforçados leves
+- Barras de pequeno diâmetro (até 10 mm)
+
+### Características
+- Superfície nervurada ou entalhada
+- Diâmetros usuais: 4,2 a 10 mm
+- Menor deformação antes da ruptura
+
+## Comparativo Rápido
+
+| Classe | Escoamento | Ductilidade | Uso Principal |
+|---|---|---|---|
+| CA-25 | 250 MPa | Alta | Estribos, esperas |
+| CA-50 | 500 MPa | Média | Estrutura em geral |
+| CA-60 | 600 MPa | Baixa | Telas, treliças |
+
+## Como a BR Aço Trabalha com Cada Classe
+
+A BR Aço fornece vergalhões CA-25, CA-50 e CA-60 em todos os diâmetros previstos na NBR 7480. Nosso serviço de **corte e dobra industrial** já entrega o aço nas dimensões exatas do projeto, eliminando desperdício e retrabalho na obra.
+
+Envie o projeto estrutural pelo WhatsApp e receba orçamento com a classe e diâmetro corretos para cada peça.`
+  },
+  {
+    id: 34,
+    slug: 'vergalhao-nervurado-caracteristicas-vantagens',
+    category: 'Vergalhões',
+    title: 'Vergalhão Nervurado: Por Que as Nervuras Fazem Toda a Diferença?',
+    metaDescription: 'Descubra por que o vergalhão nervurado é superior ao liso na construção civil. Aderência ao concreto, norma ABNT e quando cada tipo deve ser usado.',
+    keyword: 'vergalhão nervurado',
+    date: '12 Nov 2025',
+    summary: 'As nervuras do vergalhão aumentam a aderência ao concreto em até 40%, tornando a estrutura mais segura e eficiente. Entenda a diferença técnica e quando usar cada tipo.',
+    content: `## O Que São as Nervuras do Vergalhão?
+
+As **nervuras** são as saliências helicoidais ou transversais na superfície do vergalhão. Elas não são apenas estéticas — são um elemento técnico fundamental que muda completamente o comportamento da armadura dentro do concreto.
+
+## Por Que a Aderência Importa Tanto?
+
+O concreto armado funciona porque o **concreto resiste à compressão** e o **aço resiste à tração**. Para que isso funcione, os dois materiais precisam trabalhar juntos — e isso só é possível com boa aderência entre eles.
+
+Se o aço escorrega dentro do concreto, as tensões não são transferidas corretamente, e a estrutura perde resistência — podendo colapsar de forma súbita e sem aviso.
+
+## Vergalhão Liso vs Nervurado
+
+| Característica | Liso (CA-25) | Nervurado (CA-50/CA-60) |
+|---|---|---|
+| Aderência ao concreto | Baixa (mecânica de atrito) | Alta (mecânica de apoio) |
+| Ancoragem necessária | Gancho obrigatório | Gancho pode ser dispensado |
+| Aplicação principal | Estribos, esperas | Armadura estrutural |
+| Norma | NBR 7480 | NBR 7480 |
+
+## O Que a Norma Diz
+
+A **ABNT NBR 7480** classifica os aços para concreto armado e define os requisitos de nervuração. Os vergalhões CA-50 e CA-60 devem obrigatoriamente ter superfície nervurada, garantindo índice de conformação superficial mínimo de **0,056** (para diâmetros ≤ 6,3 mm) a **0,075** (para diâmetros > 10 mm).
+
+## Vantagens Práticas do Vergalhão Nervurado
+
+- **Menor comprimento de ancoragem:** O aço pode ser emendado ou ancorado em comprimentos menores
+- **Eliminação de ganchos em barras retas:** Economiza material e tempo de montagem
+- **Maior segurança estrutural:** Resistência ao deslizamento muito superior
+- **Compatibilidade com projeto:** Engenheiros calculam pensando em CA-50 nervurado como padrão
+
+## Onde Comprar Vergalhão Nervurado em Goiás?
+
+A BR Aço trabalha exclusivamente com vergalhões CA-50 e CA-60 nervurados certificados pela NBR 7480. Todos os lotes têm **laudo de qualidade** e **nota fiscal** com especificação técnica completa.
+
+Solicite seu orçamento via WhatsApp — entregamos em até **48h em Goiânia e região**.`
+  },
+  {
+    id: 35,
+    slug: 'tabela-bitolas-vergalhao-diametros',
+    category: 'Vergalhões',
+    title: 'Tabela de Bitolas de Vergalhão: Diâmetros, Pesos e Aplicações',
+    metaDescription: 'Tabela completa de bitolas de vergalhão CA-50: diâmetros de 6,3 mm a 32 mm com peso por metro e aplicações estruturais. Referência para engenheiros e mestres de obra.',
+    keyword: 'tabela bitolas vergalhão',
+    date: '14 Nov 2025',
+    summary: 'Tabela de bitolas de vergalhão com diâmetros, peso por metro linear e usos típicos em laje, viga, pilar e fundação. Indispensável para dimensionamento e pedido de material.',
+    content: `## Bitolas de Vergalhão CA-50 — Tabela Completa
+
+| Diâmetro (mm) | Área (cm²) | Peso (kg/m) | Uso Típico |
+|---|---|---|---|
+| 6,3 | 0,312 | 0,245 | Armadura de distribuição, estribos leves |
+| 8,0 | 0,503 | 0,395 | Laje maciça fina, estribos de viga |
+| 10,0 | 0,785 | 0,617 | Laje, verga, contraverga |
+| 12,5 | 1,227 | 0,963 | Viga, pilar pequeno, radier |
+| 16,0 | 2,011 | 1,578 | Pilar, viga principal |
+| 20,0 | 3,142 | 2,466 | Pilar, viga de grande vão |
+| 25,0 | 4,909 | 3,853 | Fundação profunda, pilar robusto |
+| 32,0 | 8,042 | 6,313 | Estruturas especiais, grandes cargas |
+
+> Dados conforme ABNT NBR 7480. Peso calculado com densidade do aço = 7.850 kg/m³.
+
+## Bitolas de Vergalhão CA-25 (Estribos)
+
+| Diâmetro (mm) | Peso (kg/m) | Uso Típico |
+|---|---|---|
+| 5,0 | 0,154 | Estribo leve (viga pequena) |
+| 6,3 | 0,245 | Estribo padrão |
+| 8,0 | 0,395 | Estribo de pilar robusto |
+
+## Como Calcular o Peso Total
+
+Para calcular a quantidade de aço em kg:
+
+**Peso (kg) = Comprimento total (m) × Peso por metro (kg/m)**
+
+### Exemplo prático
+Preciso de 120 m de vergalhão φ 12,5 mm:
+120 m × 0,963 kg/m = **115,6 kg**
+
+## Quais Bitolas a BR Aço Fornece?
+
+A BR Aço mantém estoque de CA-50 e CA-25 em todos os diâmetros da tabela acima. Para o serviço de **corte e dobra**, cortamos na bitola e no comprimento exato do seu projeto — sem sobras e sem falta.
+
+Envie a planilha de ferro ou o projeto estrutural e receba orçamento detalhado por bitola em até **24h**.`
+  },
+  {
+    id: 36,
+    slug: 'vergalhao-ca-70-quando-usar',
+    category: 'Vergalhões',
+    title: 'Vergalhão CA-70 e CA-80: Quando São Usados na Construção?',
+    metaDescription: 'CA-70 e CA-80 são classes de aço de alta resistência para estruturas especiais. Entenda quando o engenheiro especifica esses vergalhões e suas diferenças do CA-50.',
+    keyword: 'vergalhão CA-70',
+    date: '16 Nov 2025',
+    summary: 'CA-70 e CA-80 são vergalhões de altíssima resistência usados em pré-moldados, protendidos e estruturas especiais. Saiba quando o projeto os exige e por quê são raros na construção residencial.',
+    content: `## Além do CA-60: Existem Classes Ainda Mais Resistentes?
+
+Sim. A **ABNT NBR 7480** também contempla as classes **CA-70** (700 MPa) e **CA-80** (800 MPa), mas elas têm um nicho bem definido e raramente aparecem em obras residenciais comuns.
+
+## CA-70 — Características
+
+- Limite de escoamento: **700 MPa**
+- Produzido por trefilação a frio de fio-máquina de alta resistência
+- Diâmetros disponíveis: geralmente 4,2 mm a 12,5 mm
+- Ductilidade: muito reduzida (fratura frágil sob dobramento excessivo)
+
+### Onde é Usado
+- Elementos pré-moldados de concreto (vigas, painéis, lajes alveolares)
+- Cabos de protensão em estruturas de médio porte
+- Armaduras de distribuição em pré-fabricados industriais
+
+## CA-80 — Características
+
+- Limite de escoamento: **800 MPa**
+- Apenas em diâmetros pequenos (4,2 mm a 6,3 mm)
+- Usado principalmente em telas soldadas de altíssima resistência
+- Estruturas especiais calculadas por especialistas
+
+## Por Que CA-70/CA-80 São Raros em Obras Residenciais?
+
+1. **Ductilidade muito baixa:** Dobramento em campo pode causar trincas ou ruptura
+2. **Custo elevado:** O processo de trefilação encarece o produto
+3. **Norma restritiva:** A NBR 6118 limita o uso dessas classes em estruturas convencionais
+4. **Difícil controle em obra:** Requer mão de obra especializada e equipamentos adequados
+
+## O Que Usar em Obras Convencionais?
+
+Para a esmagadora maioria das obras residenciais, comerciais e industriais de pequeno/médio porte, o trio **CA-25 + CA-50 + CA-60** resolve tudo:
+
+- **CA-25:** Estribos e esperas
+- **CA-50:** Armadura estrutural principal
+- **CA-60:** Telas soldadas e treliças
+
+## BR Aço: Vergalhões CA-25, CA-50 e CA-60 em Goiás
+
+A BR Aço fornece e processa as classes mais usadas na construção civil goiana. Nosso parque industrial de corte e dobra é calibrado para CA-25 e CA-50 nas bitolas de 5 mm a 32 mm, com entrega em até 48h.
+
+Consulte nossa equipe técnica sobre a melhor solução para o seu projeto.`
+  },
+  {
+    id: 37,
+    slug: 'vergalhao-enferrujado-pode-usar',
+    category: 'Vergalhões',
+    title: 'Vergalhão Enferrujado Pode Ser Usado? O Que Diz a Norma',
+    metaDescription: 'Vergalhão com ferrugem pode ou não ser usado? Entenda o que a ABNT NBR 7480 diz sobre oxidação superficial, ferrugem agressiva e quando o aço deve ser descartado.',
+    keyword: 'vergalhão enferrujado pode usar',
+    date: '18 Nov 2025',
+    summary: 'Nem toda ferrugem em vergalhão é problema — a norma diferencia oxidação superficial de corrosão agressiva. Saiba identificar o que é aceitável e quando o aço deve ser descartado.',
+    content: `## Todo Vergalhão Enferrujado É Inutilizável?
+
+Não. A **ABNT NBR 7480** e o **ACI 318** distinguem dois tipos de oxidação no aço para concreto:
+
+1. **Ferrugem superficial (oxidação leve):** Fina camada avermelhada que não compromete a aderência nem as propriedades mecânicas
+2. **Corrosão agressiva (pite ou laminação):** Ataca a seção transversal, reduz a área de aço e compromete a resistência
+
+## Como Identificar Ferrugem Superficial (Aceitável)
+
+- Coloração avermelhada uniforme, sem descamação
+- Ao esfregar com estopa, a ferrugem sai e revela metal brilhante abaixo
+- Não há perda visível de seção (o diâmetro nominal é mantido)
+- Nervuras preservadas e nítidas
+
+> A ferrugem superficial pode, inclusive, **aumentar** a aderência ao concreto em alguns casos — a rugosidade adicional melhora o engrenamento mecânico.
+
+## Como Identificar Corrosão Grave (Não Aceitável)
+
+- Descamação em lâminas (exfoliação)
+- Pites (cavidades) visíveis na superfície
+- Nervuras corroídas ou apagadas
+- Redução mensurável do diâmetro (perda de seção > 2%)
+- Presença de água empoçada ou umidade constante no local de armazenamento
+
+## O Teste Prático da Escova de Aço
+
+1. Escove vigorosamente o vergalhão com escova de aço
+2. Limpe com estopa seca
+3. Meça o diâmetro com paquímetro
+4. Compare com o diâmetro nominal da tabela NBR 7480
+5. Se a perda de seção for **maior que 2%**, descarte o vergalhão
+
+## Armazenamento Correto Evita Corrosão
+
+- Armazene em local coberto e ventilado
+- Eleve as barras do chão (cavaletes ou pallets de madeira)
+- Não deixe em contato direto com terra ou concreto úmido
+- Use lona de proteção mas mantenha ventilação — umidade retida acelera a corrosão
+
+## Vergalhão Novo, Qualidade Garantida
+
+A BR Aço fornece vergalhões diretamente da usina, com **certificado de qualidade** e armazenados em galpão coberto. Cada lote tem rastreabilidade de origem — você sabe exatamente de onde vem o aço da sua obra.
+
+Solicite orçamento via WhatsApp e receba em até **48h com laudo técnico**.`
+  },
+  {
+    id: 38,
+    slug: 'taxa-armadura-laje-viga-pilar',
+    category: 'Vergalhões',
+    title: 'Taxa de Armadura: Quanto Aço Usar em Laje, Viga e Pilar?',
+    metaDescription: 'Taxas de armadura mínimas e máximas para laje, viga e pilar segundo a NBR 6118. Entenda como o engenheiro define a quantidade de vergalhão em cada elemento estrutural.',
+    keyword: 'taxa de armadura',
+    date: '20 Nov 2025',
+    summary: 'A NBR 6118 define taxas mínimas e máximas de armadura para cada elemento estrutural. Entender esses limites ajuda a verificar se o projeto está correto e evitar sub ou superarmação.',
+    content: `## O Que É Taxa de Armadura?
+
+A taxa de armadura (ρ) é a relação entre a **área de aço** e a **área da seção transversal de concreto**:
+
+**ρ = As / Ac**
+
+Onde:
+- As = área da seção de aço (cm²)
+- Ac = área da seção de concreto (cm²)
+
+A **ABNT NBR 6118** estabelece limites mínimos e máximos para essa taxa em cada tipo de elemento estrutural, evitando tanto a subarmação (peça frágil) quanto a superarmação (ruptura súbita do concreto).
+
+## Taxas de Armadura por Elemento
+
+### Laje Maciça (armadura principal)
+| Limite | Taxa (ρ) |
+|---|---|
+| Mínimo | 0,15% (CA-50) |
+| Máximo | 1,5% (recomendado) |
+
+### Viga (armadura longitudinal de tração)
+| Limite | Taxa (ρ) |
+|---|---|
+| Mínimo | 0,15% da seção bruta |
+| Máximo | 4% (limite absoluto NBR 6118) |
+
+### Pilar (armadura longitudinal)
+| Limite | Taxa (ρ) |
+|---|---|
+| Mínimo | 0,4% da área do pilar |
+| Máximo | 8% (CA-50) |
+
+> Valores de referência para CA-50. Consulte sempre o engenheiro calculista para valores de projeto.
+
+## Por Que Existem Limites Mínimos?
+
+Sem armadura mínima, a peça de concreto pode apresentar:
+- Fissuração excessiva por retração
+- Ruptura frágil e sem aviso após a fissuração
+- Comportamento imprevisível sob cargas de serviço
+
+## Por Que Existem Limites Máximos?
+
+Com armadura excessiva:
+- O concreto não consegue envolver todas as barras (problemas de concretagem)
+- Antes de o aço escoar, o concreto comprimido estoura — ruptura explosiva
+- Aumento de custo sem melhoria proporcional de resistência
+
+## Exemplo Prático: Viga 20×50 cm
+
+Seção bruta: 20 × 50 = 1.000 cm²
+- Armadura mínima: 1.000 × 0,15% = **1,5 cm²** → 2 barras φ 10 mm (As = 1,57 cm²) ✓
+- Armadura máxima: 1.000 × 4% = **40 cm²** → valor raramente atingido em projeto normal
+
+## Corte e Dobra nas Dimensões do Projeto
+
+A BR Aço processa o aço exatamente como especificado no projeto estrutural — bitola, comprimento e dobramento corretos para cada elemento. Evite retrabalho e perda de material: envie a planilha de ferro e receba as peças prontas para montagem.`
+  },
+  {
+    id: 39,
+    slug: 'corte-dobra-vs-barra-inteira-vantagens',
+    category: 'Corte e Dobra',
+    title: 'Corte e Dobra vs Barra Inteira: Qual Vale Mais a Pena?',
+    metaDescription: 'Comparativo técnico e financeiro entre comprar vergalhão em barra inteira e contratar corte e dobra industrial. Veja onde está a economia real para obras em Goiás.',
+    keyword: 'corte e dobra vs barra inteira',
+    date: '22 Nov 2025',
+    summary: 'Muitos compradores comparam apenas o preço por kg. Mas o custo real inclui perda de material, mão de obra, tempo e qualidade. Veja onde corte e dobra industrial vence na prática.',
+    content: `## A Comparação Mais Comum (e Incompleta)
+
+Quando um comprador pergunta "o vergalhão em barra fica mais barato?", ele geralmente compara apenas o **preço por kg** da barra com o da peça cortada e dobrada. Essa comparação ignora os custos ocultos.
+
+## Custos da Barra Inteira (12 metros)
+
+| Item | Detalhe |
+|---|---|
+| Compra do vergalhão | Preço por kg × total |
+| Transporte | Caminhão especial para barras de 12m |
+| Perda de material | Pontas e aparas: 8% a 15% do total |
+| Mão de obra de corte | Cortador + equipamento na obra |
+| Mão de obra de dobra | Dobradeira manual ou locação de máquina |
+| Erros de medição | Retrabalho e desperdício adicional |
+| Espaço de estoque | Área na obra para barras longas |
+
+## Custos do Corte e Dobra Industrial
+
+| Item | Detalhe |
+|---|---|
+| Peça pronta | Preço inclui material + processo |
+| Transporte | Peças curtas cabem em qualquer caminhão |
+| Perda de material | Otimizada por software: < 3% |
+| Mão de obra de corte | Zero (já incluso) |
+| Mão de obra de dobra | Zero (já incluso) |
+| Erros | Tolerância ±5 mm por norma |
+| Estoque | Peças entregues no dia certo, sem acúmulo |
+
+## A Perda de Material Muda Tudo
+
+Na barra inteira, as pontas descartadas na obra somam de **8% a 15%** do material comprado. Em uma obra com 5 toneladas de vergalhão, isso representa de **400 kg a 750 kg de aço** jogado fora — aço que você pagou e não usou.
+
+No corte e dobra industrial, otimizamos o encaixe das peças por software. A perda cai para menos de 3%.
+
+## Quando a Barra Pode Ser Vantajosa
+
+- Peças muito longas e retas (sem dobramento)
+- Obras muito pequenas onde o lote mínimo do corte e dobra não compensa
+- Quando o projeto ainda não está finalizado e as medidas vão mudar
+
+## O Que Fazemos na BR Aço
+
+Recebemos o **projeto estrutural ou a planilha de ferro** e entregamos cada peça identificada, cortada e dobrada nas medidas exatas. Sem desperdício, sem retrabalho, sem custo de mão de obra de armação bruta.
+
+Solicite orçamento via WhatsApp — respondemos em até 2 horas.`
+  },
+  {
+    id: 40,
+    slug: 'desperdicio-vergalhao-obra-como-reduzir',
+    category: 'Corte e Dobra',
+    title: 'Como Reduzir o Desperdício de Vergalhão na Obra',
+    metaDescription: 'O desperdício de vergalhão chega a 15% em obras sem planejamento. Veja técnicas práticas para reduzir perdas de aço e economizar no orçamento da construção.',
+    keyword: 'desperdício vergalhão obra',
+    date: '24 Nov 2025',
+    summary: 'Obras sem planejamento de armação perdem até 15% do aço comprado. Veja as principais causas de desperdício e como eliminá-las com projeto detalhado e corte e dobra industrial.',
+    content: `## Quanto Aço é Desperdiçado nas Obras Brasileiras?
+
+Estudos de controle tecnológico indicam que obras residenciais sem gestão de armação desperdiçam entre **8% e 15%** do vergalhão comprado. Em uma casa de 150 m², isso pode representar **500 kg a 900 kg de aço** — valor considerável no orçamento.
+
+## Principais Causas de Desperdício
+
+### 1. Corte manual sem otimização
+O cortador na obra ajusta as medidas "no olho", gerando pontas que não se encaixam em nenhuma outra peça. Cada ponta pequena vai para o sucateiro.
+
+### 2. Erros de medição
+Barras cortadas com medida errada precisam ser refeitas. A barra original vira sucata.
+
+### 3. Falta de projeto de armação detalhado
+Sem detalhamento preciso, o mestre compra material "a mais" por segurança — o excesso sobra na obra.
+
+### 4. Retrabalho por alterações de projeto
+Alterações no projeto depois do corte inutilizam peças já processadas.
+
+### 5. Oxidação por armazenamento inadequado
+Vergalhões empilhados no chão úmido corroem e não podem ser usados — perda total.
+
+## Como Eliminar Cada Causa
+
+### Para o corte manual
+Use **corte e dobra industrial** com software de otimização de corte. A perda cai de 8-15% para menos de 3%.
+
+### Para erros de medição
+Exija um **projeto estrutural detalhado** com planilha de ferro antes de comprar qualquer material.
+
+### Para falta de projeto
+Contrate um engenheiro calculista. O custo do projeto é irrisório frente à economia no material.
+
+### Para retrabalho
+Congele o projeto antes de iniciar o corte. Alterações após o início do processamento multiplicam o custo.
+
+### Para oxidação
+Armazene vergalhões em local coberto, sobre cavaletes, longe de umidade e produtos químicos.
+
+## O Papel do Corte e Dobra Industrial
+
+A BR Aço recebe a planilha de ferro do seu projeto e otimiza automaticamente o encaixe de todas as peças nas barras de 12 m. O resultado:
+
+- Perda de material < 3%
+- Peças identificadas por elemento (pilar, viga, laje)
+- Entrega no prazo certo para cada etapa da obra
+
+Envie seu projeto via WhatsApp e veja quanto você pode economizar comparado ao corte na obra.`
+  },
+  {
+    id: 41,
+    slug: 'como-funciona-corte-dobra-industrial',
+    category: 'Corte e Dobra',
+    title: 'Como Funciona o Corte e Dobra Industrial de Vergalhão?',
+    metaDescription: 'Entenda o processo de corte e dobra industrial: máquinas CNC, tolerâncias, planilha de ferro e como o serviço elimina desperdício e erros na obra.',
+    keyword: 'como funciona corte e dobra industrial',
+    date: '26 Nov 2025',
+    summary: 'O corte e dobra industrial usa máquinas CNC programadas com a planilha de ferro do projeto. O resultado são peças com tolerância de ±5 mm, prontas para montagem direto na obra.',
+    content: `## Da Planilha de Ferro à Peça Pronta: O Processo Completo
+
+O serviço de corte e dobra industrial transforma o projeto estrutural em peças de vergalhão prontas para montagem. Veja cada etapa do processo que usamos na BR Aço.
+
+## Etapa 1: Recebimento do Projeto
+
+Tudo começa com a **planilha de ferro** (ou detalhamento de armadura) fornecida pelo engenheiro calculista. Essa planilha contém:
+
+- Tipo de peça (pilar, viga, laje, fundação)
+- Bitola (diâmetro em mm)
+- Comprimento total de cada barra
+- Dobras, ganchos e ângulos
+- Quantidade de cada peça
+
+Sem a planilha do engenheiro, o serviço de corte e dobra não pode ser executado com precisão. Isso é um ponto crítico.
+
+## Etapa 2: Programação das Máquinas
+
+Os dados da planilha são inseridos no **software de otimização de corte** da fábrica. O software:
+
+1. Calcula o encaixe ideal das peças nas barras de 12 m
+2. Minimiza o comprimento das pontas (retalhos)
+3. Gera o programa de corte para cada máquina
+4. Agrupa peças iguais para ganho de escala
+
+## Etapa 3: Corte com Máquina CNC
+
+A **tesoura de corte CNC** recebe as barras de vergalhão (12 m) e corta nos comprimentos programados. Características:
+
+- Tolerância de corte: **±5 mm** (norma ABNT NBR 7480)
+- Velocidade: centenas de cortes por hora
+- Força de corte: adequada para bitolas até 32 mm (CA-50)
+
+## Etapa 4: Dobramento
+
+A **dobradeira CNC** realiza os ganchos e dobras nos ângulos especificados no projeto:
+
+- Ângulos programáveis: 90°, 135°, 180° (ganchos)
+- Raio de dobramento controlado (evita trincas no aço)
+- Conformação a frio: sem aquecimento, sem alteração das propriedades
+
+## Etapa 5: Identificação e Separação
+
+Cada peça sai da linha identificada com:
+- Marcação do elemento (P1, V3, L2...)
+- Bitola e quantidade
+- Etiqueta de rastreabilidade
+
+As peças são amarradas em feixes por elemento estrutural, facilitando a montagem na obra.
+
+## Etapa 6: Entrega
+
+Os feixes são carregados em caminhão e entregues no canteiro de obras. Com peças curtas e separadas por elemento, o descarregamento é rápido e o montador vai direto ao trabalho.
+
+## BR Aço: Corte e Dobra em Goiás
+
+Contamos com o maior parque de corte e dobra de Goiás — máquinas de última geração, equipe técnica treinada e entrega em até **48h em Goiânia e região**. Envie a planilha de ferro e receba o orçamento em até 2 horas.`
+  },
+  {
+    id: 42,
+    slug: 'como-enviar-projeto-corte-dobra',
+    category: 'Corte e Dobra',
+    title: 'Como Enviar o Projeto para o Corte e Dobra: Passo a Passo',
+    metaDescription: 'Guia prático para engenheiros e mestres de obra: como preparar e enviar a planilha de ferro para o serviço de corte e dobra. Formatos aceitos e informações necessárias.',
+    keyword: 'como enviar projeto corte e dobra',
+    date: '28 Nov 2025',
+    summary: 'Para contratar corte e dobra industrial você precisa enviar a planilha de ferro com bitola, comprimento e dobras de cada peça. Veja quais formatos são aceitos e como montar o arquivo corretamente.',
+    content: `## O Que Você Precisa Enviar
+
+Para solicitar o serviço de corte e dobra, você precisa de um documento com as **peças de armadura detalhadas**. Esse documento pode ser chamado de:
+
+- Planilha de ferro
+- Detalhamento de armadura
+- Quadro de ferragens
+- Lista de corte
+
+O nome varia, mas o conteúdo é o mesmo: **cada peça identificada com bitola, comprimento e dobras**.
+
+## Formato Mínimo da Planilha
+
+| Campo | Exemplo | Obrigatório? |
+|---|---|---|
+| Referência da peça | P1-E1 (Pilar 1, Estribo 1) | Sim |
+| Diâmetro | φ 12,5 mm | Sim |
+| Comprimento total | 240 cm | Sim |
+| Número de dobras | 2 dobras a 90° | Sim |
+| Quantidade | 48 peças | Sim |
+| Elemento estrutural | Pilar térreo | Recomendado |
+
+## Formatos de Arquivo Aceitos
+
+A BR Aço aceita projetos em:
+- **PDF** (pranchas do projeto estrutural)
+- **Excel / planilha** (quadro de ferragens)
+- **DWG / DXF** (arquivo CAD)
+- **Foto legível** da prancha impressa (para urgências)
+- **WhatsApp:** envio direto pelo aplicativo
+
+## O Que Acontece Depois do Envio
+
+1. Nossa equipe técnica analisa o projeto (**prazo: até 2 horas em dias úteis**)
+2. Verificamos dúvidas e inconsistências (informamos o cliente antes de processar)
+3. Enviamos o **orçamento detalhado por bitola e elemento**
+4. Após aprovação, iniciamos o processamento
+5. Entrega em até **48h** (Goiânia e região metropolitana)
+
+## E Se Eu Não Tiver a Planilha Pronta?
+
+Se você tiver apenas o projeto estrutural (pranchas de armação), nossa equipe pode extrair as informações das peças. Para obras simples (lajes residenciais), também aceitamos **croquis com medidas** feitos pelo mestre de obras.
+
+Para obras maiores, recomendamos sempre trabalhar com a planilha formal do engenheiro calculista — isso evita erros e garante rastreabilidade do projeto.
+
+## Envie Agora pelo WhatsApp
+
+Mande o arquivo para nosso WhatsApp e receba o orçamento em até 2 horas: **+55 62 99924-7285**.`
+  },
+  {
+    id: 43,
+    slug: 'precisao-corte-dobra-industrial-tolerancias',
+    category: 'Corte e Dobra',
+    title: 'Precisão no Corte e Dobra: O Que a Norma Exige e Por Que Importa',
+    metaDescription: 'A NBR 7480 define tolerâncias de ±5 mm para corte e dobra de vergalhão. Entenda como a precisão industrial evita problemas estruturais e reduz retrabalho na obra.',
+    keyword: 'precisão corte e dobra vergalhão',
+    date: '30 Nov 2025',
+    summary: 'A norma NBR 7480 exige tolerância de ±5 mm no corte de vergalhão. Saiba como a precisão industrial protege a estrutura, evita retrabalho e garante o comprimento de ancoragem do projeto.',
+    content: `## Por Que Precisão no Corte de Vergalhão Importa?
+
+Um erro de 5 cm no comprimento de uma barra pode parecer pequeno. Mas dependendo do elemento estrutural, esse erro pode:
+
+- Comprometer o **comprimento de ancoragem** da barra (reduz a aderência ao concreto)
+- Forçar o armador a fazer **emendas não previstas** no projeto
+- Deixar a **cobertura mínima de concreto** abaixo do exigido pela NBR 6118
+- Causar interferência entre barras de elementos diferentes
+
+## O Que a NBR 7480 Define
+
+A **ABNT NBR 7480** — norma que regulamenta barras e fios de aço para concreto armado — estabelece as tolerâncias dimensionais para corte:
+
+| Comprimento da barra | Tolerância máxima |
+|---|---|
+| Até 3 m | ±5 mm |
+| De 3 m a 6 m | ±10 mm |
+| Acima de 6 m | ±15 mm |
+
+Essas tolerâncias são para **produção industrial**. No corte manual em obra, erros de 2 cm a 5 cm são comuns.
+
+## Tolerâncias de Dobramento
+
+Para dobras (ganchos, estribos, grampos), a norma exige:
+
+- Ângulo de dobramento: **±2°** em relação ao especificado
+- Posição da dobra ao longo da barra: **±5 mm**
+
+Isso garante que o estribo fique exatamente no posicionamento do projeto, com a cobertura correta em todos os lados.
+
+## O Comprimento de Ancoragem: O Mais Crítico
+
+O comprimento de ancoragem (lb) é o comprimento mínimo que a barra deve ter dentro do concreto para transferir a força de tração. Se a barra for cortada curta demais, a ancoragem é insuficiente — e a peça pode falhar.
+
+A NBR 6118 calcula lb em função do diâmetro e da classe do aço. Para uma barra φ 16 mm CA-50 em concreto C25:
+- lb mínimo ≈ 40 × 16 mm = **640 mm = 64 cm**
+
+Um erro de 5 cm nessa barra reduz a ancoragem em 7,8% — margem que pode tornar a ancoragem insuficiente.
+
+## Precisão Industrial vs Corte Manual
+
+| Critério | Corte Manual (obra) | Corte Industrial (BR Aço) |
+|---|---|---|
+| Tolerância típica | ±2 cm a ±5 cm | ±5 mm (conforme NBR) |
+| Consistência | Varia por operário | Uniforme (CNC) |
+| Velocidade | Lenta | Alta (centenas de peças/hora) |
+| Rastreabilidade | Nenhuma | Planilha de controle |
+
+## Peças Fora de Tolerância: O Que Fazer?
+
+Se receber peças fora da tolerância NBR:
+1. Meça com trena e registre a diferença
+2. Não monte a armação com peças fora de tolerância sem autorização do engenheiro
+3. Solicite substituição ao fornecedor
+
+A BR Aço tem controle de qualidade em linha — peças fora de especificação são identificadas e substituídas antes da entrega.`
+  },
+  {
+    id: 44,
+    slug: 'vantagens-corte-dobra-goiania',
+    category: 'Corte e Dobra',
+    title: 'Vantagens de Contratar Corte e Dobra em Goiânia: Economia e Agilidade',
+    metaDescription: 'Contratar corte e dobra em Goiânia elimina desperdício, reduz mão de obra na obra e agiliza o cronograma. Veja os benefícios reais para construtoras e autoconstrutores.',
+    keyword: 'vantagens corte e dobra Goiânia',
+    date: '02 Dez 2025',
+    summary: 'Para obras em Goiânia e Goiás, o corte e dobra local oferece entrega rápida, suporte técnico presencial e economia real no orçamento. Entenda por que a maioria das construtoras terceiriza essa etapa.',
+    content: `## Por Que Contratar Corte e Dobra em Vez de Cortar na Obra?
+
+A decisão entre cortar na obra ou contratar corte e dobra industrial impacta diretamente o **custo, o prazo e a qualidade** da estrutura. Para obras em Goiânia e região, as vantagens do serviço industrializado são ainda maiores pela proximidade da fábrica.
+
+## 1. Redução de Desperdício
+
+O corte manual em obra gera 8% a 15% de perda de material. O corte industrial, com otimização de encaixe, cai para menos de 3%. Em uma obra com 10 toneladas de aço, essa diferença representa **500 kg a 1.200 kg de vergalhão economizado**.
+
+## 2. Eliminação de Mão de Obra de Armação Bruta
+
+Ao receber as peças prontas, o armador na obra faz apenas a **montagem e amarração** — não precisa operar tesouras, dobradeiras ou réguas de corte. Isso:
+- Reduz o tempo de armação em até 40%
+- Elimina o custo de locação de equipamentos de corte
+- Diminui o risco de acidentes com ferramentas de corte
+
+## 3. Prazo Confiável
+
+Na obra, o corte depende da disponibilidade de mão de obra, equipamento e turno. Na fábrica, o prazo é controlado: a BR Aço entrega em até **48 horas** após aprovação do orçamento — garantido contratualmente.
+
+## 4. Qualidade Uniforme
+
+Cada peça sai com a mesma tolerância de ±5 mm, independentemente de quem operou a máquina. Na obra, a qualidade varia conforme o cortador do dia.
+
+## 5. Suporte Técnico Local
+
+Em Goiânia, a BR Aço está a minutos da maior parte das obras da cidade. Se houver dúvida técnica, inconsistência no projeto ou necessidade de ajuste urgente, nossa equipe resolve rápido — sem depender de suporte remoto.
+
+## 6. Logística Simplificada
+
+Barras de 12 m exigem caminhão com cama baixa e permissão especial de tráfego. As peças cortadas chegam em caminhão convencional, sem complicação logística.
+
+## Quem Mais Usa Corte e Dobra em Goiás?
+
+- Construtoras de médio e grande porte (padrão de mercado)
+- Empreiteiras especializadas em estrutura
+- Autoconstrutores com projeto estrutural aprovado
+- Engenheiros que querem controle total do material
+
+A BR Aço atende desde a residência unifamiliar até grandes empreendimentos. Envie o projeto e veja quanto você economiza.`
+  },
+  {
+    id: 45,
+    slug: 'corte-dobra-para-casa-residencia',
+    category: 'Corte e Dobra',
+    title: 'Corte e Dobra Para Casa: Vale a Pena em Obras Residenciais?',
+    metaDescription: 'O corte e dobra industrial compensa em obras residenciais? Entenda o lote mínimo, o custo-benefício e como funciona o serviço para casas de até 300 m² em Goiânia.',
+    keyword: 'corte e dobra para casa',
+    date: '04 Dez 2025',
+    summary: 'Corte e dobra industrial não é só para grandes construtoras. Para casas a partir de 80 m² com projeto estrutural, o serviço reduz desperdício e acelera a obra. Veja como funciona.',
+    content: `## Corte e Dobra Serve para Obras Pequenas?
+
+Sim — e com vantagens claras. O mito de que corte e dobra industrial é "só para grandes obras" não se sustenta. Uma casa de **80 m² a 300 m²** com projeto estrutural pode se beneficiar muito do serviço.
+
+## A Lógica Econômica para Residências
+
+Uma casa residencial típica em Goiás usa entre **800 kg e 3.000 kg** de vergalhão, dependendo do tamanho e do sistema estrutural. Nessa faixa:
+
+| Cenário | Perda de material | Custo estimado de perda |
+|---|---|---|
+| Corte manual na obra | 10% | R$ 800 – R$ 2.400 |
+| Corte industrial (BR Aço) | < 3% | R$ 240 – R$ 720 |
+
+A diferença no material já paga boa parte do custo do processamento — e você ainda economiza em mão de obra.
+
+## O Que Você Precisa para Contratar
+
+Para uma casa residencial, você precisa de:
+
+1. **Projeto estrutural aprovado** com prancha de armação
+2. **Planilha de ferro** emitida pelo engenheiro calculista
+3. Endereço de entrega em Goiânia ou região metropolitana
+
+Se você ainda não tem o projeto estrutural, o primeiro passo é contratar um engenheiro calculista — não é possível fazer corte e dobra preciso sem esse documento.
+
+## O Que a BR Aço Entrega
+
+Para obras residenciais, entregamos:
+- Peças identificadas por elemento (P = pilar, V = viga, L = laje, F = fundação)
+- Feixes separados por etapa da obra (fundação, pilares, laje)
+- Nota fiscal e laudo de qualidade
+- Entrega programada conforme cronograma da obra
+
+## Lote Mínimo
+
+A BR Aço atende obras residenciais a partir de **500 kg de aço processado** (lote mínimo). Obras menores que isso podem ser atendidas pontualmente — consulte nossa equipe.
+
+## Entrega em Goiânia e Região
+
+Entregamos em toda a região metropolitana de Goiânia: Aparecida de Goiânia, Senador Canedo, Trindade, Goianira, Inhumas e municípios próximos. Prazo: **48 horas após aprovação**.
+
+Fale com a nossa equipe pelo WhatsApp e receba o orçamento para sua residência.`
+  },
+  {
+    id: 46,
+    slug: 'como-calcular-ferragem-laje',
+    category: 'Dicas Técnicas',
+    title: 'Como Calcular a Ferragem de uma Laje: Guia Prático',
+    metaDescription: 'Aprenda a calcular a quantidade de vergalhão para laje maciça e treliçada. Fórmulas práticas, tabelas de referência e dicas para não errar no pedido de material.',
+    keyword: 'como calcular ferragem laje',
+    date: '06 Dez 2025',
+    summary: 'Calcular a ferragem da laje corretamente evita falta de material ou desperdício. Veja as fórmulas para laje maciça e treliçada com exemplos práticos em metros quadrados.',
+    content: `## Por Que Calcular a Ferragem Antes de Comprar?
+
+Comprar aço sem cálculo preciso leva a dois problemas:
+1. **Falta de material:** para a obra, atraso no cronograma
+2. **Excesso:** capital imobilizado em material parado no canteiro
+
+O cálculo preciso começa sempre pelo **projeto estrutural** — mas existem referências práticas para estimativa inicial.
+
+## Laje Maciça: Cálculo de Armadura
+
+A laje maciça tem duas camadas de armadura: **armadura principal** (vão menor) e **armadura de distribuição** (vão maior).
+
+### Fórmula simplificada
+
+**Área de aço por m² (As/m²) = h × ρ × 100**
+
+Onde:
+- h = espessura da laje em metros
+- ρ = taxa de armadura (use 0,15% para estimativa)
+
+### Exemplo: Laje de 12 cm de espessura
+
+As/m² = 0,12 × 0,0015 × 100 = **1,8 cm²/m²**
+
+Para cobrir 1 m² com barras φ 6,3 mm (As = 0,312 cm²):
+Barras por metro = 1,8 / 0,312 = **5,8 barras** → 1 barra a cada 17 cm
+
+## Tabela de Referência: Espaçamento por Bitola e Espessura
+
+| Espessura (cm) | Bitola | Espaçamento (cm) | Taxa atendida |
+|---|---|---|---|
+| 10 cm | φ 6,3 mm | 20 | 0,15% |
+| 12 cm | φ 8,0 mm | 20 | 0,21% |
+| 15 cm | φ 8,0 mm | 15 | 0,22% |
+| 18 cm | φ 10,0 mm | 15 | 0,22% |
+
+> Valores de referência para CA-50. O engenheiro calculista define os valores exatos do projeto.
+
+## Laje Treliçada: Estimativa de Aço
+
+Na laje treliçada, o aço vem em dois componentes:
+
+1. **Treliças metálicas:** geralmente TR-08, TR-10 ou TR-12 — espaçamento conforme projeto
+2. **Armadura complementar:** barras φ 5 mm a φ 8 mm para nervuras e topos
+
+### Consumo típico de treliças
+- TR-08 (altura 8 cm): **4 a 5 kg/m²**
+- TR-10 (altura 10 cm): **5 a 7 kg/m²**
+- TR-12 (altura 12 cm): **6 a 9 kg/m²**
+
+## Calculadora Online Gratuita
+
+A BR Aço disponibiliza a **Calculadora de Vergalhão** em nosso site. Informe o vão, a espessura e o sistema de laje — receba a estimativa de material em segundos.
+
+Depois, envie o projeto para o corte e dobra e receba o orçamento com os valores exatos.`
+  },
+  {
+    id: 47,
+    slug: 'calcular-consumo-aco-laje-m2',
+    category: 'Dicas Técnicas',
+    title: 'Consumo de Aço por m² de Laje: Tabela de Referência',
+    metaDescription: 'Tabela de consumo de aço por m² para lajes maciças e treliçadas em kg/m². Referência para orçamento de obras residenciais e comerciais com vergalhão CA-50.',
+    keyword: 'consumo de aço por m2 de laje',
+    date: '08 Dez 2025',
+    summary: 'O consumo de aço em laje varia de 8 a 20 kg/m² dependendo do tipo, vão e carga. Veja a tabela de referência para laje maciça e treliçada e como usar no orçamento da obra.',
+    content: `## Consumo de Aço em Laje: Por Que Varia Tanto?
+
+O consumo de vergalhão em laje depende de:
+- **Tipo de laje:** maciça, treliçada, nervurada, plana
+- **Vão entre apoios:** quanto maior o vão, mais aço
+- **Carga de utilização:** residencial (1,5 kN/m²) vs. comercial (3 kN/m²) vs. industrial
+- **Espessura da laje:** determinada pelo engenheiro
+- **fck do concreto:** concreto mais resistente permite reduzir a armadura
+
+## Tabela: Consumo de Aço por m² de Laje (Estimativa)
+
+### Laje Maciça CA-50
+
+| Vão livre | Espessura | Consumo (kg/m²) |
+|---|---|---|
+| Até 3 m | 8 – 10 cm | 8 – 12 |
+| 3 m a 4 m | 10 – 12 cm | 10 – 15 |
+| 4 m a 5 m | 12 – 16 cm | 14 – 20 |
+| Acima de 5 m | 16 cm+ | 18 – 30+ |
+
+### Laje Treliçada (aço total: treliças + armadura complementar)
+
+| Vão livre | Altura total | Consumo (kg/m²) |
+|---|---|---|
+| Até 3,5 m | 12 – 14 cm | 7 – 10 |
+| 3,5 m a 5 m | 14 – 20 cm | 9 – 14 |
+| 5 m a 6 m | 20 – 25 cm | 12 – 18 |
+
+> Valores de referência para obras residenciais com carga de 1,5 kN/m². O projeto estrutural define os valores reais.
+
+## Como Usar Esta Tabela no Orçamento
+
+1. Identifique o vão livre de cada painel de laje
+2. Classifique como residencial ou comercial
+3. Use o consumo médio da tabela
+4. Multiplique pela área total de cada painel
+5. Some todos os painéis para a quantidade total estimada
+6. Adicione 5% de margem para perdas e ajustes
+
+### Exemplo Prático
+
+Casa com 3 painéis de laje:
+- Painel A: 4 m × 3 m = 12 m² → vão 4 m → 14 kg/m² → **168 kg**
+- Painel B: 5 m × 4 m = 20 m² → vão 5 m → 17 kg/m² → **340 kg**
+- Painel C: 3 m × 3 m = 9 m² → vão 3 m → 11 kg/m² → **99 kg**
+- Total: **607 kg + 5% = ~637 kg**
+
+## Da Estimativa ao Pedido Preciso
+
+A tabela acima serve para orçamento inicial. Para o pedido real, você precisa da **planilha de ferro** do engenheiro calculista — que determina cada barra com precisão.
+
+Com a planilha em mãos, envie para a BR Aço e receba o orçamento de corte e dobra em até 2 horas.`
+  },
+  {
+    id: 48,
+    slug: 'calcular-ferragem-pilar-viga',
+    category: 'Dicas Técnicas',
+    title: 'Como Calcular a Ferragem de Pilar e Viga: Passo a Passo',
+    metaDescription: 'Aprenda a estimar a quantidade de vergalhão em pilares e vigas. Fórmulas práticas para armadura longitudinal e estribos com exemplos reais de obra.',
+    keyword: 'calcular ferragem pilar viga',
+    date: '10 Dez 2025',
+    summary: 'Pilares e vigas concentram a maior parte do aço estrutural de uma edificação. Veja como calcular a armadura longitudinal e os estribos com fórmulas práticas e exemplos numéricos.',
+    content: `## Pilares: Armadura Longitudinal
+
+A armadura longitudinal de pilar resiste à compressão e à flambagem. O dimensionamento segue a NBR 6118, mas para estimativa inicial você pode usar:
+
+### Fórmula de Estimativa
+
+**As = ρ × b × h × 100** (cm²)
+
+Onde:
+- ρ = taxa de armadura (use 1% a 2% para estimativa)
+- b, h = dimensões do pilar em centímetros
+
+### Exemplo: Pilar 20×20 cm
+
+As = 0,01 × 20 × 20 = **4,0 cm²**
+
+Barras possíveis: 4 barras φ 12,5 mm (As = 4 × 1,227 = 4,91 cm²) ✓
+
+### Altura da barra longitudinal
+
+Comprimento = **pé-direito + comprimento de emenda** (≈ 50× o diâmetro)
+
+Para pé-direito de 3 m e φ 12,5 mm:
+Comprimento ≈ 3,00 + 0,50 + (50 × 0,0125) = 3,00 + 0,50 + 0,625 = **4,125 m por barra**
+
+## Pilares: Estribos
+
+Os estribos envolvem as barras longitudinais e resistem ao cisalhamento. Para pilar 20×20 cm com 4 barras nos cantos:
+
+**Perímetro do estribo = 2 × (b + h) + ganchos**
+= 2 × (18 + 18) + 2 × (10 × φ) para gancho de 135°
+= 72 + 25 = **~97 cm por estribo** (use 1 m para arredondamento)
+
+Espaçamento de estribos: conforme projeto (tipicamente 10 a 20 cm)
+Para pé-direito de 3 m com espaçamento de 15 cm: **20 estribos × 1 m = 20 m de φ 6,3 mm**
+
+## Vigas: Armadura Longitudinal
+
+Para vigas de concreto armado, a armadura longitudinal de tração fica na face tracionada (geralmente a inferior no vão e a superior no apoio).
+
+### Estimativa simplificada
+
+As mínimo = 0,15% × b × d (cm²)
+
+Para viga 20×50 cm (d ≈ 44 cm):
+As mín = 0,0015 × 20 × 44 = **1,32 cm²** → 2 barras φ 10 mm
+
+Na prática, vigas de edifícios residenciais usam de **2 a 4 barras φ 12,5 a φ 16 mm** na armadura principal.
+
+## Vigas: Estribos
+
+Estribos de viga 20 cm de largura:
+Perímetro ≈ 2 × (largura interna + altura interna) + ganchos
+≈ 2 × (17 + 44) + 0,25 = **~1,47 m por estribo**
+
+Espaçamento: d/2 = 22 cm (máximo por norma em região de cisalhamento)
+Para viga de 4 m: aproximadamente **20 estribos × 1,5 m = 30 m de φ 6,3 mm**
+
+## Da Estimativa ao Projeto Formal
+
+Esses cálculos são estimativas para orçamento. O dimensionamento real exige análise estrutural completa pelo engenheiro calculista, considerando cargas, combinações e verificações de estado limite.
+
+Com o projeto em mãos, envie para o corte e dobra da BR Aço e receba as peças prontas para montagem em **até 48h em Goiânia**.`
+  },
+  {
+    id: 49,
+    slug: 'consumo-vergalhao-m2-construcao',
+    category: 'Dicas Técnicas',
+    title: 'Consumo de Vergalhão por m² de Construção: Quanto Usar?',
+    metaDescription: 'Referência de consumo de vergalhão por m² para obras residenciais, comerciais e industriais. Saiba quanto aço planejar por metro quadrado de construção.',
+    keyword: 'consumo vergalhão por m2',
+    date: '12 Dez 2025',
+    summary: 'O consumo médio de vergalhão em obras residenciais fica entre 20 e 40 kg/m². Entenda o que influencia essa variação e como fazer uma estimativa confiável para o orçamento.',
+    content: `## Por Que o Consumo por m² Varia Tanto?
+
+"Quanto de vergalhão preciso por m² de obra?" é a pergunta mais frequente nos orçamentos iniciais. A resposta depende de múltiplos fatores — por isso as referências de mercado têm faixas amplas.
+
+## Fatores que Influenciam o Consumo
+
+- **Tipo de estrutura:** Alvenaria estrutural usa menos aço que concreto armado convencional
+- **Número de pavimentos:** Cada andar adiciona carga nos pilares e fundações
+- **Tipo de solo:** Solo fraco exige fundação mais robusta (mais aço)
+- **Tipo de laje:** Treliçada usa menos aço que maciça
+- **Cargas de uso:** Residencial vs. comercial vs. industrial
+- **Qualidade do projeto:** Projeto otimizado pode reduzir até 20% o consumo
+
+## Tabela de Consumo por Tipo de Obra
+
+| Tipo de Obra | Consumo típico (kg/m²) |
+|---|---|
+| Casa térrea alvenaria estrutural | 15 – 25 |
+| Casa térrea concreto armado | 25 – 40 |
+| Sobrado 2 pavimentos | 30 – 50 |
+| Edifício residencial 4–8 pavimentos | 35 – 60 |
+| Galpão industrial (estrutura leve) | 10 – 20 |
+| Galpão industrial (estrutura pesada) | 20 – 40 |
+
+> Referência para estimativa inicial. O projeto estrutural é a única fonte precisa para pedido de material.
+
+## Onde Vai o Aço na Construção?
+
+| Elemento | % típica do total de aço |
+|---|---|
+| Fundação | 25 – 35% |
+| Pilares | 20 – 30% |
+| Vigas | 20 – 30% |
+| Lajes | 15 – 25% |
+| Vergas e contravergas | 2 – 5% |
+
+## Exemplo de Estimativa: Casa de 120 m²
+
+- Tipo: casa térrea em concreto armado
+- Consumo estimado: 35 kg/m²
+- Total estimado: 120 m² × 35 kg = **4.200 kg de vergalhão**
+
+Para uma estimativa mais precisa, peça ao engenheiro calculista a quantificação do projeto.
+
+## Orçamento com a BR Aço
+
+Com a planilha de ferro do projeto, a BR Aço fornece orçamento detalhado por bitola, elemento e etapa da obra — sem surpresas no meio da construção. Solicite via WhatsApp.`
+  },
+  {
+    id: 50,
+    slug: 'espaçamento-vergalhao-laje-nbr6118',
+    category: 'Normas Técnicas',
+    title: 'Espaçamento de Vergalhão em Laje: O Que Diz a NBR 6118',
+    metaDescription: 'A NBR 6118 define espaçamentos máximos e mínimos de armadura em laje. Entenda as regras de espaçamento para não reprovar na fiscalização e garantir a segurança estrutural.',
+    keyword: 'espaçamento vergalhão laje NBR 6118',
+    date: '14 Dez 2025',
+    summary: 'A NBR 6118 limita o espaçamento máximo entre barras na laje a 2h ou 20 cm. Entender essas regras evita reprova na fiscalização e garante que a armadura funcione como calculada.',
+    content: `## Por Que o Espaçamento das Barras Importa?
+
+O espaçamento entre as barras de armadura na laje não é uma decisão estética — é calculado para garantir:
+
+1. **Distribuição uniforme das tensões** no concreto
+2. **Controle de fissuração** por retração e cargas
+3. **Facilidade de concretagem** (a pasta de cimento precisa envolver todas as barras)
+
+A **ABNT NBR 6118** (projeto de estruturas de concreto) define limites de espaçamento que devem ser respeitados sob pena de reprovação na fiscalização da ART.
+
+## Espaçamento Máximo (NBR 6118 — Item 17.3.5)
+
+Para **laje maciça**, o espaçamento máximo entre barras é:
+
+| Situação | Espaçamento máximo |
+|---|---|
+| Armadura principal | 2h ≤ 20 cm (h = espessura da laje) |
+| Armadura de distribuição | 3h ≤ 30 cm |
+
+### Exemplos práticos
+
+Laje de 10 cm:
+- Armadura principal: 2 × 10 = 20 cm → **espaçamento máximo: 20 cm** (o menor prevalece)
+- Armadura de distribuição: 3 × 10 = 30 cm → **espaçamento máximo: 30 cm**
+
+Laje de 15 cm:
+- Armadura principal: 2 × 15 = 30 cm → **limitado a 20 cm** (regra geral)
+- Armadura de distribuição: 3 × 15 = 45 cm → **limitado a 30 cm** (regra geral)
+
+## Espaçamento Mínimo (NBR 6118 — Item 8.3.2)
+
+O espaçamento mínimo entre barras paralelas, medido entre as faces externas, deve ser:
+
+- **Maior que o diâmetro da barra**
+- **Maior que 1,2 × diâmetro máximo do agregado graúdo**
+- **Mínimo absoluto: 20 mm**
+
+Isso garante que o concreto preencha todos os espaços entre as barras.
+
+### Exemplo
+Para φ 10 mm com brita nº 1 (diâmetro máximo = 19 mm):
+- Mínimo pelo diâmetro: 10 mm
+- Mínimo pelo agregado: 1,2 × 19 = 22,8 mm
+- **Espaçamento mínimo adotado: 25 mm (arredondado)**
+
+## Consequências de Não Respeitar o Espaçamento
+
+- **Espaçamento excessivo:** Fissuração entre barras, comportamento estrutural diferente do calculado
+- **Espaçamento insuficiente:** Nichos de concretagem, segregação do concreto, corrosão prematura das barras
+
+## Laje Treliçada: Regras Específicas
+
+Em lajes treliçadas, as nervuras são espaçadas por módulo do EPS (tipicamente 40 cm a 50 cm). A **armadura de distribuição** (lajotas e capa) segue as mesmas regras da laje maciça para o espaçamento.
+
+A BR Aço fornece treliças metálicas nos espaçamentos exigidos pelo projeto. Consulte nossa equipe técnica para escolher o modelo correto.`
+  },
+  {
+    id: 51,
+    slug: 'custo-ferragem-percentual-obra',
+    category: 'Gestão de Obra',
+    title: 'Quanto a Ferragem Representa no Custo Total da Obra?',
+    metaDescription: 'A ferragem representa de 5% a 15% do custo total de uma obra. Entenda como controlar esse custo, otimizar o pedido de aço e evitar desperdício no orçamento.',
+    keyword: 'custo ferragem percentual obra',
+    date: '16 Dez 2025',
+    summary: 'A ferragem responde por 5% a 15% do custo total da construção, dependendo do sistema estrutural. Entenda como otimizar esse custo sem comprometer a segurança estrutural.',
+    content: `## O Peso do Aço no Orçamento da Construção
+
+O custo da ferragem (vergalhão, telas, treliças) varia conforme o tipo de estrutura, mas geralmente representa uma fatia relevante do orçamento total. Entender essa proporção ajuda no planejamento financeiro da obra.
+
+## Participação da Ferragem por Tipo de Obra
+
+| Tipo de Obra | Ferragem (% do custo total) |
+|---|---|
+| Casa térrea alvenaria estrutural | 3 – 6% |
+| Casa térrea concreto armado | 6 – 10% |
+| Sobrado 2 pavimentos | 8 – 12% |
+| Edifício residencial multifamiliar | 10 – 15% |
+| Galpão estrutura metálica leve | 15 – 25% |
+
+> Referência baseada em obras no Centro-Oeste (2024-2025). Varia conforme região, preço do aço e eficiência do projeto.
+
+## O Que Compõe o Custo da Ferragem
+
+1. **Material:** vergalhão, telas soldadas, treliças, arame recozido
+2. **Processamento:** corte e dobra (ou mão de obra de armação na obra)
+3. **Transporte:** frete do fornecedor até a obra
+4. **Perda:** pontas, aparas, peças com erro (se cortado na obra)
+
+## Como Reduzir o Custo da Ferragem sem Comprometer a Estrutura
+
+### 1. Projeto otimizado
+Um engenheiro calculista experiente dimensiona com precisão — nem aço a mais, nem a menos. O custo do projeto é irrisório frente à economia de material.
+
+### 2. Corte e dobra industrial
+Reduz perdas de 10-15% para menos de 3%. Em uma obra de R$ 500 mil com 8% de ferragem (R$ 40 mil), essa economia pode chegar a R$ 2.400 – R$ 4.800.
+
+### 3. Pedido programado por etapa
+Comprar o aço de toda a obra de uma vez imobiliza capital. Planeje o pedido por etapa (fundação, pilares, laje) para melhor fluxo de caixa.
+
+### 4. Fornecedor com estoque garantido
+Falta de material no meio da etapa gera custo de mobilização adicional. Escolha um fornecedor com estoque confiável em todas as bitolas do projeto.
+
+## BR Aço: Transparência no Orçamento
+
+Fornecemos orçamentos detalhados por bitola e elemento, com peso exato de cada lote. Você sabe exatamente quanto está pagando por cada tonelada — sem surpresas no faturamento.
+
+Solicite sua cotação via WhatsApp e receba em até 2 horas.`
+  },
+  {
+    id: 52,
+    slug: 'como-ler-projeto-armacao-vergalhao',
+    category: 'Dicas Técnicas',
+    title: 'Como Ler um Projeto de Armação: Guia para Mestres de Obra',
+    metaDescription: 'Aprenda a interpretar as pranchas de armação do projeto estrutural: símbolos, notações de bitola, comprimento de ancoragem e como usar o detalhamento no canteiro.',
+    keyword: 'como ler projeto de armação',
+    date: '18 Dez 2025',
+    summary: 'Ler um projeto de armação é essencial para que o mestre de obras execute a estrutura corretamente. Veja os principais símbolos, notações e como interpretar o detalhamento de pilares, vigas e lajes.',
+    content: `## O Que é o Projeto de Armação?
+
+O projeto de armação (ou detalhamento estrutural) é o documento técnico que especifica cada barra de vergalhão a ser colocada em cada elemento da estrutura. Ele é elaborado pelo engenheiro calculista com base nos cálculos estruturais.
+
+Sem entender esse documento, o mestre de obras não consegue executar a armação corretamente — mesmo com o melhor aço do mercado.
+
+## Notação de Bitola e Quantidade
+
+A forma mais comum de indicar armadura em projetos brasileiros:
+
+> N01 - 4 φ 12.5 c/ 15
+
+Leitura: **Barra N01 — 4 barras de diâmetro 12,5 mm, espaçadas de 15 em 15 cm**
+
+Outros formatos comuns:
+- **4 φ 10** = 4 barras de 10 mm (sem espaçamento — barras fixas em quantidade)
+- **φ 8 c/20** = barras de 8 mm a cada 20 cm
+- **2L φ 12,5** = 2 camadas de barras φ 12,5 mm
+
+## Lendo o Detalhamento de Pilar
+
+No corte transversal de um pilar você verá:
+- Os pontos (•) representando as barras longitudinais nos cantos e faces
+- Os retângulos externos representando os estribos
+- A cota do pilar (ex.: 20×30 cm)
+
+### Exemplo de notação
+> 4 φ 16 + 2 φ 12,5 — Estribos φ 6,3 c/15(10)
+
+Significa: 4 barras de 16 mm + 2 barras de 12,5 mm na armadura longitudinal. Estribos de 6,3 mm espaçados de 15 cm (com adensamento para 10 cm nas zonas críticas).
+
+## Lendo o Detalhamento de Viga
+
+Na vista longitudinal da viga:
+- Barras inferiores: resistem à tração no vão
+- Barras superiores: resistem à tração no apoio (negativo)
+- Linha pontilhada indica barra dobrada
+- Número acima/abaixo da linha indica comprimento de corte ou dobra
+
+## Lendo o Detalhamento de Laje
+
+A planta da laje mostra:
+- Setas com notação indicando sentido e espaçamento das barras
+- Armadura principal → sentido do vão menor
+- Armadura de distribuição → sentido do vão maior
+- Armadura negativa (sobre vigas) indicada em separado
+
+## Símbolos Mais Comuns
+
+| Símbolo | Significado |
+|---|---|
+| φ (phy) | Diâmetro da barra |
+| c/ ou @ | Espaçamento entre barras |
+| L = | Comprimento total da barra |
+| lb = | Comprimento de ancoragem |
+| Estr. | Estribo |
+| Cintas | Estribos (termo alternativo) |
+
+## Quando a Dúvida Persiste
+
+Diante de qualquer dúvida na interpretação do projeto, **não improvise** — consulte o engenheiro calculista. Uma barra colocada no lugar errado pode comprometer toda a estrutura.
+
+A BR Aço também oferece suporte técnico para clientes: enviamos as peças identificadas por elemento para facilitar a montagem na obra.`
+  },
+  {
+    id: 53,
+    slug: 'nbr-7480-vergalhao-o-que-exige',
+    category: 'Normas ABNT',
+    title: 'NBR 7480: O Que Esta Norma Exige do Vergalhão que Você Compra?',
+    metaDescription: 'A NBR 7480 é a norma brasileira que regula vergalhões para concreto armado. Entenda o que ela exige em termos de resistência, composição química e rastreabilidade.',
+    keyword: 'NBR 7480 vergalhão',
+    date: '20 Dez 2025',
+    summary: 'A ABNT NBR 7480 define os requisitos mínimos de qualidade para vergalhões CA-25, CA-50 e CA-60. Todo aço usado em obra deve ter rastreabilidade para essa norma.',
+    content: `## O Que é a NBR 7480?
+
+A **ABNT NBR 7480:2007** — "Aço destinado a armaduras para estruturas de concreto armado" — é a norma que define os requisitos técnicos mínimos que todo vergalhão vendido no Brasil deve atender.
+
+Se o vergalhão que você compra não está em conformidade com a NBR 7480, você está colocando sua obra e sua responsabilidade em risco.
+
+## O Que a Norma Exige?
+
+### 1. Propriedades Mecânicas
+
+| Classe | Limite de escoamento (MPa) | Resistência à tração (MPa) | Alongamento mín. |
+|---|---|---|---|
+| CA-25 | ≥ 250 | ≥ 420 | ≥ 22% |
+| CA-50 | ≥ 500 | ≥ 590 | ≥ 8% |
+| CA-60 | ≥ 600 | ≥ 660 | ≥ 5% |
+
+### 2. Composição Química
+
+A norma limita o teor de carbono equivalente para garantir a soldabilidade e evitar fragilização:
+
+- **CA-50:** carbono equivalente máximo de 0,50%
+- Limites de enxofre, fósforo e outros elementos são controlados
+
+### 3. Conformação Superficial
+
+Barras CA-50 e CA-60 devem ter superfície nervurada com índice de conformação superficial mínimo conforme tabela da norma — garante aderência adequada ao concreto.
+
+### 4. Dimensões e Tolerâncias
+
+A norma define:
+- Diâmetros nominais padronizados
+- Massa linear nominal (kg/m)
+- Tolerâncias de massa: **±6%** para vergalhões individuais
+- Tolerâncias dimensionais de corte: **±5 mm** por metro de comprimento
+
+### 5. Marcação e Rastreabilidade
+
+Cada lote deve ser identificado com:
+- Nome ou marca do fabricante
+- Classe do aço (CA-25, CA-50, CA-60)
+- Número de corrida (rastreabilidade até a usina)
+
+## Como Verificar a Conformidade?
+
+1. Solicite o **certificado de qualidade** do lote ao fornecedor
+2. Verifique se o documento indica conformidade com NBR 7480
+3. Confira se a classe (CA-50, etc.) está correta para o projeto
+4. Para obras críticas, solicite **ensaio em laboratório acreditado** pelo INMETRO
+
+## BR Aço: Vergalhão com Certificado NBR 7480
+
+Todo aço fornecido pela BR Aço vem acompanhado de **laudo técnico** com número de corrida rastreável até a usina de origem. Entregamos com nota fiscal e documentação completa para o arquivo da obra.`
+  },
+  {
+    id: 54,
+    slug: 'nbr-6118-estruturas-concreto-armado',
+    category: 'Normas ABNT',
+    title: 'NBR 6118: A Norma que Governa Todas as Estruturas de Concreto',
+    metaDescription: 'A NBR 6118 é a principal norma de projeto para estruturas de concreto armado no Brasil. Entenda o que ela regulamenta e como afeta decisões de armação na obra.',
+    keyword: 'NBR 6118 estruturas concreto armado',
+    date: '22 Dez 2025',
+    summary: 'A ABNT NBR 6118 define os critérios de projeto para toda estrutura de concreto armado no Brasil. Engenheiros, construtores e mestres de obra precisam conhecer seus princípios básicos.',
+    content: `## O Que é a NBR 6118?
+
+A **ABNT NBR 6118** — "Projeto de estruturas de concreto — Procedimento" — é a principal norma técnica brasileira para dimensionamento de estruturas de concreto armado e protendido.
+
+Toda obra com estrutura de concreto armado no Brasil deve ser projetada conforme a NBR 6118. É o documento que o engenheiro calculista usa como referência absoluta.
+
+## O Que a Norma Regulamenta?
+
+A NBR 6118 é extensa (mais de 200 páginas) e cobre praticamente todos os aspectos do projeto estrutural:
+
+### Materiais
+- Características do concreto (fck de C20 a C90)
+- Propriedades do aço para armadura (CA-25, CA-50, CA-60)
+- Coeficientes de minoração e majoração
+
+### Dimensionamento
+- Estado Limite Último (ELU): resistência da estrutura
+- Estado Limite de Serviço (ELS): deformações, fissuração, vibrações
+- Flexão, cisalhamento, compressão, torção
+
+### Detalhamento
+- Cobrimento mínimo de concreto
+- Comprimentos de ancoragem e emenda
+- Espaçamento mínimo e máximo de barras
+- Armaduras mínimas por elemento
+
+## Cobrimento Mínimo: O Que Você Precisa Saber
+
+A NBR 6118 exige cobrimento mínimo de concreto sobre as armaduras para proteger o aço contra corrosão:
+
+| Classe de agressividade | Exemplo de ambiente | Cobrimento mínimo (vigas/pilares) |
+|---|---|---|
+| I (fraca) | Rural seco, interior | 25 mm |
+| II (moderada) | Urbano, costeiro afastado | 35 mm |
+| III (forte) | Marinho, industrial | 45 mm |
+| IV (muito forte) | Submerso em mar, industrial agressivo | 65 mm |
+
+> Para lajes: redução de 5 mm em relação aos valores acima.
+
+## Por Que o Mestre de Obra Precisa Conhecer a NBR 6118?
+
+O mestre não precisa calcular estruturas — mas precisa entender as exigências de cobrimento, espaçamento e ancoragem para executar a armação conforme projetado.
+
+Erros comuns que violam a NBR 6118:
+- Espaçadores insuficientes (cobrimento menor que o mínimo)
+- Barras emendadas fora do local indicado no projeto
+- Ganchos com raio menor que o especificado
+
+## BR Aço e a Conformidade com Normas
+
+O serviço de corte e dobra da BR Aço é executado respeitando as tolerâncias da NBR 7480, e nossas peças são compatíveis com os detalhamentos da NBR 6118. Consulte nossa equipe técnica para esclarecer dúvidas sobre conformidade normativa.`
+  },
+  {
+    id: 55,
+    slug: '5-normas-abnt-construcao-civil',
+    category: 'Normas ABNT',
+    title: '5 Normas ABNT que Todo Construtor Precisa Conhecer',
+    metaDescription: 'As 5 normas ABNT mais importantes para obras de concreto armado: NBR 6118, NBR 7480, NBR 12655, NBR 6120 e NBR 9062. Resumo prático para engenheiros e mestres de obra.',
+    keyword: 'normas ABNT construção civil',
+    date: '24 Dez 2025',
+    summary: 'Conhecer as principais normas ABNT de construção civil evita reprova em vistoria, garante a segurança estrutural e protege o responsável técnico. Veja as 5 normas essenciais para obras de concreto.',
+    content: `## Por Que Conhecer as Normas ABNT?
+
+Normas ABNT não são "sugestões" — são documentos técnicos de observância obrigatória para obras com ART (Anotação de Responsabilidade Técnica) assinada. O engenheiro que projeta e o construtor que executa são solidariamente responsáveis pela conformidade.
+
+## 1. NBR 6118 — Projeto de Estruturas de Concreto
+
+A norma-mãe do concreto armado brasileiro. Define:
+- Requisitos de materiais (concreto e aço)
+- Critérios de dimensionamento (ELU e ELS)
+- Detalhamento de armaduras (cobrimento, ancoragem, emendas)
+- Controle de fissuração e deformação
+
+**Quem precisa:** engenheiro calculista (obrigatório), mestre de obras (boas práticas)
+
+## 2. NBR 7480 — Aço para Concreto Armado
+
+Regulamenta barras e fios de aço para armadura. Define:
+- Classes CA-25, CA-50 e CA-60 com seus requisitos mecânicos
+- Tolerâncias dimensionais
+- Marcação e rastreabilidade
+- Conformação superficial (nervuração)
+
+**Quem precisa:** engenheiro, comprador de material, fiscal de obra
+
+## 3. NBR 12655 — Concreto: Preparo, Controle e Recebimento
+
+Define os procedimentos para:
+- Especificação do concreto (fck, consistência, tamanho do agregado)
+- Controle tecnológico (corpos de prova, ensaios)
+- Critérios de recebimento (aceita ou rejeita a carga)
+
+**Quem precisa:** engenheiro, mestre de obras que recebe o concreto usinado
+
+## 4. NBR 6120 — Cargas para o Cálculo de Estruturas
+
+Define as cargas variáveis que devem ser consideradas no projeto:
+- Residencial: 1,5 kN/m²
+- Escritórios: 2,0 kN/m²
+- Bibliotecas: 4,0 kN/m²
+- Garagens: 3,0 kN/m²
+
+**Quem precisa:** engenheiro calculista (entrada para o dimensionamento)
+
+## 5. NBR 9062 — Projeto e Execução de Estruturas Pré-Moldadas
+
+Essencial para quem usa:
+- Lajes alveolares
+- Vigas pré-moldadas
+- Pilares pré-fabricados
+
+Define requisitos de projeto, fabricação, transporte e montagem de elementos pré-moldados.
+
+**Quem precisa:** engenheiro de projetos pré-moldados, construtor
+
+## Onde Adquirir as Normas ABNT
+
+As normas são vendidas no site da **ABNT (abnt.org.br)**. Engenheiros com registro no CREA podem ter acesso a alguns documentos por meio de convênios da entidade.
+
+## BR Aço: Fornecimento em Conformidade com Normas
+
+Todos os nossos vergalhões atendem a NBR 7480, e o serviço de corte e dobra segue as tolerâncias exigidas. Entregamos com documentação completa para suportar a ART da obra.`
+  },
+  {
+    id: 56,
+    slug: 'cobrimento-concreto-armadura-importancia',
+    category: 'Normas Técnicas',
+    title: 'Cobrimento de Concreto sobre a Armadura: Por Que É Tão Crítico?',
+    metaDescription: 'O cobrimento de concreto protege a armadura contra corrosão. A NBR 6118 exige entre 25 e 65 mm conforme a agressividade do ambiente. Entenda como garantir o cobrimento correto na obra.',
+    keyword: 'cobrimento concreto armadura',
+    date: '26 Dez 2025',
+    summary: 'O cobrimento insuficiente de concreto é a causa mais comum de corrosão de armadura em obras brasileiras. Saiba o que exige a NBR 6118 e como garantir o cobrimento correto com espaçadores.',
+    content: `## O Que é o Cobrimento de Concreto?
+
+O cobrimento é a distância entre a face externa do concreto e a face da barra de armadura mais próxima. Ele forma uma **barreira protetora** que impede a entrada de água, gás carbônico e cloretos até o aço.
+
+Sem cobrimento adequado, a armadura corrói, expande, fissura o concreto e pode levar ao colapso estrutural — às vezes décadas depois da construção.
+
+## Cobrimentos Mínimos pela NBR 6118
+
+A **ABNT NBR 6118** define os cobrimentos mínimos conforme a **classe de agressividade ambiental (CAA)**:
+
+| CAA | Ambiente | Lajes | Vigas/Pilares | Fundações |
+|---|---|---|---|---|
+| I | Rural seco, interior protegido | 20 mm | 25 mm | 30 mm |
+| II | Urbano, industrial moderado | 25 mm | 35 mm | 40 mm |
+| III | Marinho, industrial agressivo | 35 mm | 45 mm | 50 mm |
+| IV | Altamente agressivo | 45 mm | 65 mm | 65 mm |
+
+> A maioria das obras residenciais urbanas em Goiânia se enquadra na CAA II.
+
+## Por Que o Cobrimento é Frequentemente Violado?
+
+1. **Falta de espaçadores:** barras apoiadas diretamente na forma ou na laje = cobrimento zero
+2. **Espaçadores errados:** pastilhas de concreto ou plástico com espessura incorreta
+3. **Deslocamento durante concretagem:** vibração intensa move as barras para a face externa
+4. **Projeto sem especificação:** o mestre coloca "achando que está certo"
+
+## Como Garantir o Cobrimento Correto
+
+### Espaçadores (pastilhas)
+Use espaçadores industriais de plástico ou concreto, especificados para o cobrimento do projeto:
+- Pastilhas plásticas clipe: variam de 15 mm a 50 mm
+- Espaçadores de concreto moldado: para fundações e peças estruturais
+
+### Posicionamento correto
+- Coloque espaçadores a cada **1 m a 1,5 m** ao longo das barras de fundo
+- Nas laterais de vigas e pilares: use espaçadores laterais (clipes ou aranha)
+- Verifique após o posicionamento de toda a armação, antes de concretar
+
+### Durante a Concretagem
+- Evite vibração excessiva perto das formas laterais
+- Não empurre barras com o vibrador
+- Confira o cobrimento com pente calibrador antes de lançar o concreto
+
+## Corrosão de Armadura: Consequências
+
+Quando o cobrimento é insuficiente:
+1. CO₂ do ar carbonata o concreto até a armadura (perda de pH protetor)
+2. Cloretos atingem o aço (obras em regiões costeiras ou com cura com água salgada)
+3. O aço corrói e expande: 3 a 6 vezes o volume original
+4. Fissuras aparecem na face do concreto, acelerando o processo
+5. Ruptura do cobrimento (spalling) expõe a armadura
+
+Recuperação estrutural de obras com corrosão de armadura custa de 3 a 10 vezes o custo de fazer certo na primeira vez.
+
+## BR Aço: Aço de Qualidade com Documentação
+
+O aço com certificado NBR 7480 e o cobrimento correto são os dois pilares da durabilidade estrutural. A BR Aço entrega a primeira parte — certifique-se de que sua equipe entrega a segunda.`
+  },
+  {
+    id: 57,
+    slug: 'laje-macica-vs-trelichada-qual-escolher',
+    category: 'Treliças',
+    title: 'Laje Maciça vs Treliçada: Qual é a Melhor para Sua Obra?',
+    metaDescription: 'Compare laje maciça e treliçada: peso, custo, vão máximo e aplicação. Saiba qual sistema de laje é mais econômico e adequado para casas e edifícios em Goiás.',
+    keyword: 'laje maciça vs treliçada',
+    date: '28 Dez 2025',
+    summary: 'Laje maciça e treliçada têm custos, pesos e aplicações diferentes. Entenda quando cada sistema é mais vantajoso e como o tipo de laje afeta a quantidade de aço necessária.',
+    content: `## Dois Sistemas, Mesma Função
+
+Tanto a laje maciça quanto a treliçada servem para criar o piso/teto entre pavimentos. A diferença está na **forma de resistir às cargas** e nos **materiais utilizados** — o que impacta diretamente o custo e a quantidade de aço.
+
+## Laje Maciça
+
+A laje maciça é uma placa sólida de concreto armado, sem vazios.
+
+### Características
+- Espessura uniforme: 8 cm a 20 cm (típico: 10 a 15 cm para residências)
+- Armadura: telas de vergalhão CA-50 em duas direções
+- Concreto: usinado ou em obra
+- Peso próprio: alto (1,92 kN/m² por cm de espessura)
+
+### Vantagens
+- Maior rigidez (menos vibração)
+- Melhor distribuição de cargas em vãos irregulares
+- Sem limitação de furo (adaptável a qualquer planta)
+- Execução mais simples (forma plana)
+
+### Desvantagens
+- Mais pesada (exige estrutura mais robusta)
+- Mais cara em grandes vãos
+- Maior consumo de concreto e aço
+
+## Laje Treliçada (com EPS ou Cerâmica)
+
+A laje treliçada combina treliças metálicas com enchimento de EPS (isopor) ou lajotas cerâmicas, formando nervuras de concreto com vazios entre elas.
+
+### Características
+- Altura total: 12 cm a 25 cm (treliça + capa de concreto)
+- Armadura: treliças TR-08, TR-10 ou TR-12 + barras de distribuição
+- Enchimento: EPS (isopor) ou lajota cerâmica
+- Peso próprio: médio (30% a 40% menor que a maciça equivalente)
+
+### Vantagens
+- Mais leve (estrutura de suporte menos robusta)
+- Melhor isolamento térmico e acústico (com EPS)
+- Menor consumo de concreto
+- Custo inferior em vãos de 3 a 6 m
+
+### Desvantagens
+- Limitações de furo (não pode cortar as nervuras sem reforço)
+- Menor rigidez em vãos irregulares
+- Execução mais trabalhosa (posicionar treliças e enchimento)
+
+## Quando Usar Cada Sistema?
+
+| Situação | Melhor escolha |
+|---|---|
+| Vão < 3 m | Maciça (simples e barata) |
+| Vão de 3 m a 6 m | Treliçada (mais econômica) |
+| Vão > 6 m | Maciça nervurada ou pré-moldada |
+| Planta irregular com muitos furos | Maciça |
+| Necessidade de isolamento térmico | Treliçada com EPS |
+| Alto tráfego ou cargas concentradas | Maciça |
+
+## Treliças da BR Aço para Goiânia
+
+A BR Aço fornece treliças metálicas TR-08, TR-10 e TR-12 com certificação ABNT. Entregamos em Goiânia e toda a região metropolitana em até **48h**. Consulte nosso catálogo e receba orçamento via WhatsApp.`
+  },
+  {
+    id: 58,
+    slug: 'calcular-laje-trelichada-materiais',
+    category: 'Treliças',
+    title: 'Como Calcular os Materiais para Laje Treliçada',
+    metaDescription: 'Aprenda a calcular treliças metálicas, lajotas, concreto e aço complementar para laje treliçada. Fórmulas práticas para orçamento e pedido de material.',
+    keyword: 'calcular laje treliçada materiais',
+    date: '30 Dez 2025',
+    summary: 'Para orçar uma laje treliçada você precisa calcular treliças, lajotas ou EPS, aço complementar e concreto de capeamento. Veja as fórmulas e um exemplo completo para 50 m².',
+    content: `## Componentes da Laje Treliçada
+
+Uma laje treliçada com lajotas cerâmicas ou EPS é composta por:
+
+1. **Treliças metálicas** (TR-08, TR-10 ou TR-12) — a estrutura principal
+2. **Lajotas ou blocos EPS** — enchimento entre as nervuras
+3. **Armadura complementar** — barras perpendiculares às treliças
+4. **Concreto de capeamento** — camada superior (5 a 7 cm)
+5. **Escoramento** — apoio temporário durante a cura
+
+## Passo 1: Escolha o Tipo de Treliça
+
+A escolha depende do vão e da carga. Tabela simplificada:
+
+| Modelo | Altura (cm) | Vão máximo | Carga |
+|---|---|---|---|
+| TR-08 | 8 | Até 3,5 m | Residencial |
+| TR-10 | 10 | Até 4,5 m | Residencial/comercial |
+| TR-12 | 12 | Até 5,5 m | Comercial |
+
+## Passo 2: Calcular a Quantidade de Treliças
+
+Treliças são posicionadas com espaçamento de **40 cm a 50 cm** (conforme o módulo da lajota).
+
+**Número de treliças = largura do painel ÷ espaçamento**
+
+Para um painel de 4 m de largura com espaçamento de 0,40 m:
+= 4 ÷ 0,40 = **10 treliças**
+
+**Comprimento de cada treliça** = vão livre + 2 × apoio (≈ 10 cm cada lado)
+Para vão de 4 m: 4,00 + 0,20 = **4,20 m**
+
+## Passo 3: Calcular as Lajotas
+
+**Lajotas por m²** = 1 / (módulo da lajota em m²)
+Para lajota 8×25 cm (módulo 0,40 × 0,25): 1 / (0,40 × 0,25) = **10 lajotas/m²**
+
+## Passo 4: Calcular a Armadura Complementar
+
+Barras transversais (perpendiculares às treliças), geralmente φ 5 mm CA-60, espaçadas de 25 a 30 cm:
+
+**Quantidade de barras** = comprimento do painel ÷ espaçamento
+**Comprimento de cada barra** = largura do painel + 2 × ancoragem (10 cm)
+
+## Passo 5: Calcular o Concreto de Capeamento
+
+**Volume de concreto (m³)** = área × espessura da capa
+
+Para capa de 5 cm sobre 50 m²:
+= 50 × 0,05 = **2,5 m³** de concreto
+
+Na prática, adicione 10% de folga: **2,75 m³**.
+
+## Exemplo Completo: Painel 5 m × 10 m (50 m²)
+
+- **Treliças TR-10** (espaçamento 40 cm): 10 m ÷ 0,40 = 25 treliças × 5,20 m = 130 m
+- **Lajotas 8×25**: 50 m² × 10 = 500 lajotas
+- **Concreto (capa 5 cm)**: 50 × 0,05 × 1,10 = 2,75 m³
+- **Armadura complementar φ 5**: 5 m ÷ 0,25 = 20 barras × 10,20 m = 204 m
+
+## Peça as Treliças Prontas pela BR Aço
+
+A BR Aço fornece treliças TR-08, TR-10 e TR-12 no comprimento exato da sua laje, com corte e identificação. Elimine o desperdício de pontas e o retrabalho na obra. Solicite orçamento via WhatsApp.`
+  },
+  {
+    id: 59,
+    slug: 'tipos-trelihas-tr8-tr10-tr12-diferenças',
+    category: 'Treliças',
+    title: 'TR-08, TR-10, TR-12: Diferenças e Quando Usar Cada Treliça',
+    metaDescription: 'Diferenças entre TR-08, TR-10 e TR-12: altura, vão máximo e aplicação. Guia técnico para escolher a treliça metálica certa para cada projeto de laje.',
+    keyword: 'tipos de treliça TR-08 TR-10 TR-12',
+    date: '01 Jan 2026',
+    summary: 'TR-08, TR-10 e TR-12 são os modelos mais comuns de treliça para laje. A diferença está na altura e na capacidade de vão. Saiba qual escolher para cada projeto.',
+    content: `## O Que Define o Modelo da Treliça?
+
+O código **TR-XX** indica a **altura nominal da treliça em centímetros**. Uma TR-08 tem 8 cm de altura; uma TR-12, 12 cm. Essa altura determina a rigidez da treliça e, consequentemente, o **vão máximo que ela pode vencer** com segurança.
+
+## Composição da Treliça Metálica
+
+Toda treliça é composta por:
+- **Barra superior (BS):** vergalhão CA-60, diâmetro variável
+- **Barras inferiores (BI):** dois vergalhões CA-60, diâmetro variável
+- **Diagonais (D):** arame trefilado CA-60, soldado a ponto entre BS e BI
+
+A altura é medida do eixo da BI ao eixo da BS.
+
+## TR-08: Para Vãos Curtos
+
+| Característica | TR-08 |
+|---|---|
+| Altura nominal | 8 cm |
+| Altura total da laje | 12 – 14 cm |
+| Vão máximo recomendado | Até 3,5 m |
+| Carga típica | Residencial (1,5 kN/m²) |
+| Consumo de aço | 4 – 5 kg/m² |
+
+**Quando usar TR-08:**
+- Banheiros, corredores, varandas
+- Lajes sobre garagem (pé-direito baixo)
+- Qualquer vão até 3,5 m com carga residencial
+
+## TR-10: O Modelo Mais Utilizado
+
+| Característica | TR-10 |
+|---|---|
+| Altura nominal | 10 cm |
+| Altura total da laje | 14 – 16 cm |
+| Vão máximo recomendado | Até 4,5 m |
+| Carga típica | Residencial/comercial leve |
+| Consumo de aço | 5 – 7 kg/m² |
+
+**Quando usar TR-10:**
+- Salas, quartos e cozinhas de residências
+- Escritórios de pequeno e médio porte
+- Vãos de 3,5 m a 4,5 m
+
+## TR-12: Para Vãos Maiores
+
+| Característica | TR-12 |
+|---|---|
+| Altura nominal | 12 cm |
+| Altura total da laje | 17 – 20 cm |
+| Vão máximo recomendado | Até 5,5 m |
+| Carga típica | Comercial (2,0 – 3,0 kN/m²) |
+| Consumo de aço | 6 – 9 kg/m² |
+
+**Quando usar TR-12:**
+- Salas comerciais e lojas
+- Área de serviço com equipamentos pesados
+- Vãos de 4,5 m a 5,5 m
+
+## E Para Vãos Maiores que 5,5 m?
+
+Vãos acima de 5,5 m geralmente requerem:
+- Laje maciça calculada especificamente
+- Laje nervurada com vigotas especiais
+- Análise do engenheiro calculista caso a caso
+
+## BR Aço: Treliças nos Modelos TR-08, TR-10 e TR-12
+
+Fornecemos treliças metálicas nos comprimentos exatos do projeto, com certificação NBR e laudo de qualidade. Entrega em Goiânia e região em até **48h**. Solicite orçamento via WhatsApp.`
+  },
+  {
+    id: 60,
+    slug: 'tela-soldada-vs-vergalhao-laje',
+    category: 'Malhas',
+    title: 'Tela Soldada vs Vergalhão em Laje: Qual é Mais Econômica?',
+    metaDescription: 'Compare tela soldada e vergalhão para armadura de laje: custo, praticidade, velocidade de montagem e aplicações. Saiba quando cada opção é mais vantajosa.',
+    keyword: 'tela soldada vs vergalhão laje',
+    date: '03 Jan 2026',
+    summary: 'Tela soldada e vergalhão têm custos parecidos por kg, mas a tela economiza mão de obra de montagem. Entenda quando usar cada solução e como combiná-las corretamente.',
+    content: `## Duas Formas de Armar uma Laje
+
+A armadura de uma laje pode ser feita com:
+1. **Barras de vergalhão** cortadas, dobradas e amarradas na obra
+2. **Tela soldada** (malha eletrossoldada) — painel industrializado pronto para uso
+
+Ambas atendem a NBR 6118, mas têm características operacionais muito diferentes.
+
+## Vergalhão em Laje: Vantagens e Desvantagens
+
+### Vantagens
+- Flexibilidade total para qualquer geometria
+- Fácil adaptação de espaçamentos
+- Disponível em todos os diâmetros para qualquer cálculo
+- Prático para obras com plantas muito irregulares
+
+### Desvantagens
+- Mão de obra intensiva (corte, montagem, amarração)
+- Risco de espaçamento incorreto na colocação
+- Maior tempo de armação
+
+## Tela Soldada: Vantagens e Desvantagens
+
+### Vantagens
+- Velocidade de colocação: uma laje que levaria 1 dia em vergalhão pode ser armada em 2 horas
+- Espaçamento garantido de fábrica (precisão de ±5 mm)
+- Redução de mão de obra de armação em até 60%
+- Menos geração de resíduos na obra
+
+### Desvantagens
+- Desperdício em obras com muitos cantos e recortes (sobras de malha)
+- Limitação de diâmetros (geralmente 4,2 mm a 8 mm)
+- Menos flexível para projetos com espaçamentos não padronizados
+
+## Comparativo Financeiro (estimativa)
+
+| Item | Vergalhão φ 6,3 c/20 | Tela Q-138 equivalente |
+|---|---|---|
+| Custo do material | Médio | Médio a ligeiramente maior |
+| Mão de obra de armação | Alta | Muito baixa |
+| Perda de material | 5 – 10% | 5 – 15% (em planta irregular) |
+| **Custo total** | Médio | **Geralmente menor** em obras regulares |
+
+## Quando Usar Cada Opção?
+
+| Situação | Melhor escolha |
+|---|---|
+| Laje com planta regular e grande área | Tela soldada (economia de MO) |
+| Planta com muitos recortes e furos | Vergalhão (menos desperdício) |
+| Armadura de distribuição em laje treliçada | Tela soldada (praticidade) |
+| Armadura calculada com bitola especial | Vergalhão |
+| Capeamento de lajes grandes | Tela soldada Q-138 ou Q-196 |
+
+## Malhas e Telas da BR Aço
+
+A BR Aço fornece telas soldadas e malhas pop em todos os modelos padronizados (Q-61, Q-92, Q-138, Q-196). Entregas em Goiânia e região em até **48h**. Consulte nossa equipe para escolher o modelo correto para o seu projeto.`
+  },
+  {
+    id: 61,
+    slug: 'malha-pop-o-que-e-quando-usar',
+    category: 'Malhas',
+    title: 'Malha Pop: O Que É e Para Que Serve?',
+    metaDescription: 'Malha pop é uma tela soldada de baixo custo usada em contrapisos, calçadas e revestimentos. Entenda sua composição, resistência e quando substituir por tela estrutural.',
+    keyword: 'malha pop o que é',
+    date: '05 Jan 2026',
+    summary: 'Malha pop é uma tela soldada CA-60 com fios de 4,2 mm, usada em contrapisos, calçadas e reforço de argamassa. Entenda quando ela é suficiente e quando o projeto exige tela estrutural.',
+    content: `## O Que é a Malha Pop?
+
+A **malha pop** (ou tela pop) é uma tela soldada de aço CA-60 com fios de **diâmetro 4,2 mm** e malha **15 × 15 cm**. É o produto de menor calibre na família das telas soldadas.
+
+Apesar do nome informal, o produto atende a **ABNT NBR 7480** e tem rastreabilidade de produção.
+
+## Composição Técnica
+
+- **Classe do aço:** CA-60
+- **Diâmetro dos fios:** 4,2 mm
+- **Malha:** 150 mm × 150 mm
+- **Dimensão do painel:** tipicamente 2,45 m × 6,00 m (14,7 m²)
+- **Peso por painel:** aproximadamente 24 kg
+- **Área de aço (As):** 0,92 cm²/m em cada direção
+
+## Para Que Serve a Malha Pop?
+
+A malha pop é dimensionada para controle de **fissuração por retração** — não para cargas estruturais.
+
+### Aplicações corretas
+- **Contrapiso:** controla as fissuras de retração da argamassa
+- **Calçadas e passeios:** distribuição de carga leve em concreto simples
+- **Capa de concreto em lajes treliçadas:** junto com o capeamento
+- **Reforço de argamassa em paredes:** aplicações especiais
+- **Pisos industriais leves:** baixa carga
+
+### Quando a malha pop NÃO é suficiente
+- Estruturas calculadas por engenheiro que especificam tela Q-92 ou superior
+- Lajes maciças com carga residencial → use vergalhão CA-50 ou tela Q-138
+- Pisos de alta carga (estacionamentos, galpões industriais)
+
+## Malha Pop vs Tela Estrutural Q-92
+
+| Característica | Malha Pop | Tela Q-92 |
+|---|---|---|
+| Diâmetro dos fios | 4,2 mm | 4,2 mm |
+| Malha | 150 × 150 mm | 100 × 100 mm |
+| As (cm²/m) | 0,92 | 1,39 |
+| Aplicação | Contrapiso, calçada | Laje, piso estrutural |
+
+## BR Aço: Malhas Pop e Telas Soldadas em Goiânia
+
+Fornecemos malha pop em painéis prontos, com entrega em Goiânia e região. Para obras maiores, consulte também nossas **telas Q-92, Q-138 e Q-196** para aplicações estruturais. Orçamento via WhatsApp em até 2 horas.`
+  },
+  {
+    id: 62,
+    slug: 'concreto-fck-c20-c25-diferenca',
+    category: 'Dicas Técnicas',
+    title: 'fck C20, C25, C30: Qual a Diferença e Qual Usar na Sua Obra?',
+    metaDescription: 'Entenda as classes de resistência do concreto: C20, C25 e C30 (fck). Saiba qual fck usar em fundação, laje e pilar segundo a NBR 6118 e como isso afeta a armadura.',
+    keyword: 'fck concreto C20 C25 diferença',
+    date: '07 Jan 2026',
+    summary: 'C20, C25 e C30 são as classes de resistência do concreto mais usadas em obras residenciais. Entenda o que o fck significa, as diferenças práticas e qual usar em cada elemento estrutural.',
+    content: `## O Que é o fck do Concreto?
+
+O **fck** (resistência característica à compressão) é o valor abaixo do qual apenas 5% dos resultados de ensaio se situam, em corpos de prova cilíndricos com 28 dias de cura. É a propriedade mais importante para dimensionamento estrutural.
+
+A classificação usa a letra **C** seguida do valor em MPa: **C20** = fck de 20 MPa.
+
+## Classes de Concreto por Elemento Estrutural (NBR 6118)
+
+A NBR 6118 define a resistência mínima conforme a classe de agressividade ambiental:
+
+| Elemento | CAA I (rural seco) | CAA II (urbano) | CAA III/IV (agressivo) |
+|---|---|---|---|
+| Fundação direta | C20 | C25 | C30 |
+| Pilares e vigas | C20 | C25 | C30 |
+| Laje | C20 | C25 | C30 |
+| Peças pré-moldadas | C25 | C30 | C35 |
+
+> Na prática, em Goiânia (CAA II), **C25 é o mínimo** para a maioria dos elementos.
+
+## Diferenças Práticas entre C20, C25 e C30
+
+| Característica | C20 | C25 | C30 |
+|---|---|---|---|
+| Resistência (MPa) | 20 | 25 | 30 |
+| Custo relativo | Base (100%) | +8% a 12% | +15% a 20% |
+| Aplicação típica | Obras simples/rurais | Residencial urbano padrão | Comercial, estrutural exigente |
+| Influência na armadura | Exige mais aço | Equilibrada | Permite menos aço |
+
+## Como o fck Afeta a Quantidade de Aço?
+
+Quanto maior o fck, maior a resistência à compressão do concreto — e o engenheiro pode dimensionar a armadura com **menos aço** mantendo a mesma capacidade estrutural.
+
+Para um pilar 20×20 cm sob mesma carga:
+- **C20:** pode exigir 6 barras φ 12,5 mm
+- **C25:** pode ser resolvido com 4 barras φ 12,5 mm
+
+O custo adicional do concreto de maior fck pode ser compensado pela economia no aço.
+
+## Como Pedir o Concreto Usinado Correto?
+
+Ao encomendar concreto usinado, especifique:
+- **fck** (ex.: C25)
+- **Abatimento (slump)** em mm (ex.: 100 mm para lajes)
+- **Diâmetro máximo do agregado** (ex.: 19 mm para lajes convencionais)
+
+## Aço Compatível com o Concreto
+
+O CA-50 é compatível com todos os fck de C20 a C90. O que muda com o fck é a **quantidade** de aço, não o tipo. A BR Aço fornece vergalhão CA-50 certificado para qualquer classe de concreto que seu projeto especificar.`
+  },
+  {
+    id: 63,
+    slug: 'fundacao-goiania-tipos-solo',
+    category: 'Fundação',
+    title: 'Tipos de Fundação em Goiânia: O Que Funciona Melhor no Solo Goiano?',
+    metaDescription: 'O solo de Goiânia e região tem características específicas que influenciam o tipo de fundação. Saiba qual fundação funciona melhor e qual armadura cada tipo exige.',
+    keyword: 'fundação Goiânia tipos',
+    date: '09 Jan 2026',
+    summary: 'Goiânia tem solos variados — da argila porosa ao latossolo firme — e cada tipo exige uma fundação diferente. Entenda quais sistemas funcionam melhor na região e como isso afeta a armadura.',
+    content: `## O Solo de Goiânia e Região
+
+A geologia da região de Goiânia é predominantemente composta por **latossolos vermelhos e vermelho-amarelos** — solos tropicais argilosos com boa capacidade de suporte em camadas mais profundas, mas que podem apresentar:
+
+- Colapso de estrutura (solos colapsíveis) quando saturados
+- Expansão por umidade em solos argilosos pesados
+- Variação de SPT conforme microrregião (de N=5 a N=30 nos primeiros metros)
+
+Por isso, é **obrigatória a realização de sondagem SPT** antes de projetar a fundação em qualquer obra em Goiânia.
+
+## Tipos de Fundação Usados na Região
+
+### 1. Sapata Isolada
+A mais comum em residências de 1 a 2 pavimentos com boa capacidade de suporte.
+- Solo adequado: SPT ≥ 10 a partir de 1 m de profundidade
+- Armadura: grelha de vergalhão CA-50 em dois sentidos
+- Consumo de aço: 15 – 30 kg por sapata (varia muito)
+
+### 2. Radier
+Laje de fundação que cobre toda a área construída. Indicado quando o solo é fraco em toda a extensão.
+- Solo adequado: SPT baixo (< 8) nos primeiros metros
+- Armadura: tela soldada Q-138 ou Q-196 + reforços pontuais
+- Consumo de aço: 15 – 25 kg/m²
+
+### 3. Estacas (Hélice Contínua, Strauss)
+Para solos muito fracos ou cargas elevadas (edifícios).
+- Profundidade típica em Goiânia: 8 m a 20 m
+- Armadura: gaiola de vergalhão CA-50 com estribos
+- Consumo: calculado pelo engenheiro geotécnico
+
+### 4. Bloco sobre Estacas
+Complementa o sistema de estacas com blocos de concreto armado na cabeça.
+- Armadura: grelha de barras CA-50 dimensionada para o esforço das estacas
+
+## Como a Sondagem Influencia a Fundação
+
+| SPT médio (3 m) | Fundação indicada |
+|---|---|
+| N < 5 | Radier ou estacas |
+| 5 ≤ N < 10 | Radier com reforços ou sapatas rasas |
+| 10 ≤ N < 20 | Sapata isolada ou corrida |
+| N ≥ 20 | Sapata, tubulão ou bloco conforme carga |
+
+## Aço para Fundação na BR Aço
+
+A BR Aço fornece vergalhão CA-50 em todas as bitolas usadas em fundações, além de telas Q-138 e Q-196 para radier. Entregas em Goiânia e região em até **48h** — peça o orçamento antes de iniciar a escavação.`
+  },
+  {
+    id: 64,
+    slug: 'sapata-vs-radier-fundacao-residencial',
+    category: 'Fundação',
+    title: 'Sapata vs Radier: Qual Fundação Escolher para Casa?',
+    metaDescription: 'Compare sapata isolada e radier para fundação residencial: custo, prazo, armadura e tipo de solo indicado. Guia prático para escolher a fundação certa para sua casa.',
+    keyword: 'sapata vs radier fundação',
+    date: '11 Jan 2026',
+    summary: 'Sapata e radier são as fundações rasas mais usadas em residências. A escolha depende do solo, da carga e do custo. Entenda as diferenças técnicas e financeiras entre os dois sistemas.',
+    content: `## O Que é Fundação Rasa?
+
+Fundações rasas (ou diretas) são aquelas executadas a pouca profundidade (geralmente 0,5 m a 2 m) que transmitem a carga da estrutura ao solo por pressão direta. As duas mais comuns em residências são:
+
+- **Sapata isolada:** bloco de concreto armado sob cada pilar
+- **Radier:** laje de concreto armado cobrindo toda a área
+
+## Sapata Isolada: Quando Usar?
+
+### Condições ideais
+- Solo com boa capacidade de suporte (SPT ≥ 10) nos primeiros metros
+- Estrutura com pilares bem definidos (concreto armado ou metálica)
+- Cargas concentradas (não distribuídas uniformemente)
+
+### Armadura da Sapata
+A sapata é armada em grelha (malha de barras cruzadas) na parte inferior, para distribuir a força de tração gerada pela pressão do solo:
+
+**Fórmula simplificada (estimativa):**
+As ≈ 0,15% × B × D (cm²)
+
+Para sapata 80×80 cm (D ≈ 30 cm):
+As ≈ 0,0015 × 80 × 30 = **3,6 cm²** → use 5 barras φ 10 mm em cada direção
+
+### Vantagens da Sapata
+- Menor volume de concreto e aço que o radier
+- Execução independente por pilar (permite trabalho paralelo)
+- Mais econômica quando o solo é bom
+
+### Desvantagens
+- Impraticável em solos fracos (risco de recalque diferencial)
+- Mais escavação e formas que o radier em solos instáveis
+
+## Radier: Quando Usar?
+
+### Condições ideais
+- Solo fraco ou heterogêneo nos primeiros metros
+- Edificação com cargas distribuídas (alvenaria estrutural)
+- Lençol freático alto (o radier forma barreira contra umidade)
+
+### Armadura do Radier
+O radier é armado em duas camadas (superior e inferior) com tela soldada ou barras:
+
+| Carga | Armadura |
+|---|---|
+| Residencial leve | Tela Q-138 ou barras φ 8 c/20 |
+| Residencial médio | Tela Q-196 ou barras φ 10 c/20 |
+| Reforços em bordas e pilares | Barras adicionais CA-50 conforme projeto |
+
+### Vantagens do Radier
+- Distribui a carga uniformemente (evita recalque diferencial)
+- Menos sensível a variação local do solo
+- Execução mais rápida (uma única concretagem)
+- Funciona como contraventamento horizontal da fundação
+
+### Desvantagens
+- Maior consumo de concreto e aço que a sapata em solo bom
+- Exige base muito bem compactada e nivelada
+
+## Comparativo Resumido
+
+| Critério | Sapata | Radier |
+|---|---|---|
+| Solo indicado | Bom (SPT ≥ 10) | Fraco ou variável |
+| Custo em solo bom | Menor | Maior |
+| Custo em solo fraco | Maior | Menor |
+| Prazo de execução | Médio | Rápido |
+| Consumo de aço | Moderado | Alto por m² |
+
+## BR Aço: Aço para Fundação em Goiânia
+
+Fornecemos vergalhão CA-50 e telas soldadas Q-138/Q-196 para fundações em toda a região. Com o projeto do engenheiro, cortamos na bitola e dimensão exatas — sem desperdício. Entrega em até **48h**. Consulte via WhatsApp.`
+  },
+  {
+    id: 65,
+    slug: 'armadura-fundacao-pilar-como-funciona',
+    category: 'Fundação',
+    title: 'Armadura de Fundação e Pilar: Como a Estrutura Funciona do Solo ao Teto',
+    metaDescription: 'Entenda como a armadura conecta fundação, pilares, vigas e laje em um sistema estrutural contínuo. O papel das esperas, ancoragens e emendas na transmissão de cargas.',
+    keyword: 'armadura fundação pilar',
+    date: '13 Jan 2026',
+    summary: 'A estrutura de concreto armado é um sistema contínuo de transmissão de cargas, do teto até o solo. Entenda como a armadura conecta cada elemento e por que as esperas de fundação são críticas.',
+    content: `## A Estrutura Como um Sistema Contínuo
+
+Uma edificação de concreto armado funciona como uma cadeia de transmissão de cargas:
+
+**Laje → Vigas → Pilares → Fundação → Solo**
+
+Para que essa cadeia funcione, a armadura deve ser **contínua e bem ancorada** em cada ligação. Uma falha em qualquer ponto compromete todo o sistema.
+
+## Fundação: Onde Tudo Começa
+
+A fundação recebe as cargas dos pilares e as distribui para o solo. A armadura da fundação deve:
+
+1. **Resistir à tração do solo** (pressão ascendente que "dobra" a sapata)
+2. **Ancorar as esperas dos pilares** com comprimento adequado
+3. **Resistir ao puncionamento** (esforço cortante concentrado na base do pilar)
+
+### Esperas de Pilar na Fundação
+As esperas são barras que sobram da fundação para fazer a emenda com a armadura longitudinal do pilar. Elas têm comprimento calculado para garantir a transferência de força:
+
+**Comprimento da espera** = comprimento de emenda = 50 × diâmetro da barra
+
+Para φ 16 mm: espera mínima = 50 × 16 mm = **80 cm acima do topo da fundação**
+
+## Pilar: Transmitindo a Carga
+
+O pilar comprime as barras longitudinais e distribui a carga para a fundação. A armadura do pilar é composta por:
+
+- **Barras longitudinais:** resistem à compressão e ao momento fletor
+- **Estribos (cintas):** resistem ao cisalhamento, evitam a flambagem das longitudinais
+
+### Emenda de Pilar entre Pavimentos
+No pavimento superior, as barras do pilar inferior são emendadas com as do superior por:
+- **Emenda por transpasse:** barras sobrepostas por comprimento calculado
+- **Emenda com luva mecânica:** usada em diâmetros maiores (φ ≥ 20 mm)
+
+## Viga: Conectando Pilares
+
+A viga recebe a carga da laje e transfere para os pilares. A armadura longitudinal de tração fica na face tracionada; a armadura nos apoios vai para a face oposta (negativo de viga).
+
+A viga deve ter barras que "entram" no pilar — esse comprimento de ancoragem é calculado pelo engenheiro.
+
+## O Que Acontece Quando a Espera Está Errada?
+
+- **Espera muito curta:** a carga do pilar não é transmitida para a fundação — risco de deslizamento
+- **Espera torta:** pilar fica fora de prumo, comprometendo o alinhamento e a carga excêntrica
+- **Espera com diâmetro errado:** capacidade de transferência insuficiente
+
+## BR Aço: Esperas, Pilares e Fundações em Goiânia
+
+Fornecemos o aço para cada elemento estrutural, cortado e identificado por etapa. Esperas de fundação, armaduras de pilar e grelhas de sapata — tudo com o comprimento e bitola exatos do projeto. Solicite via WhatsApp.`
+  },
+  {
+    id: 66,
+    slug: 'estribos-pilares-vigas-funcao-calculo',
+    category: 'Dicas Técnicas',
+    title: 'Estribos em Pilares e Vigas: Função, Espaçamento e Cálculo',
+    metaDescription: 'Estribos resistem ao cisalhamento em pilares e vigas. Entenda a função estrutural dos estribos, o espaçamento máximo exigido pela NBR 6118 e como calcular a quantidade necessária.',
+    keyword: 'estribos pilares vigas',
+    date: '15 Jan 2026',
+    summary: 'Estribos são a armadura transversal que impede o colapso por cisalhamento em pilares e vigas. A NBR 6118 define espaçamentos máximos rigorosos que devem ser respeitados na execução.',
+    content: `## O Que São Estribos?
+
+Estribos (também chamados cintas, aros ou grampos) são barras de aço dobradas em forma fechada (retangular, quadrada, circular ou poligonal) que envolvem as barras longitudinais de pilares e vigas.
+
+Eles são uma das armaduras mais críticas da estrutura — e frequentemente mal executadas em obras sem supervisão técnica adequada.
+
+## Funções dos Estribos
+
+### 1. Resistência ao Cisalhamento
+O principal papel dos estribos é resistir às **forças cortantes** que agem transversalmente à peça. Sem estribos suficientes, a peça pode apresentar fissuras diagonais de cisalhamento — ruptura súbita e sem aviso.
+
+### 2. Confinamento do Concreto
+Em pilares, os estribos "confinam" o núcleo de concreto comprimido, aumentando sua resistência e ductilidade. Pilares sem estribos ou com estribos muito espaçados colapsam de forma explosiva.
+
+### 3. Impedimento da Flambagem das Longitudinais
+Barras longitudinais de pilar comprimidas tendem a flambar (desviar lateralmente). Os estribos funcionam como "travamentos" que impedem esse desvio.
+
+## Espaçamento Máximo de Estribos (NBR 6118)
+
+### Pilares (Item 18.4.2)
+O espaçamento máximo de estribos em pilares é o menor valor entre:
+- **b** (menor dimensão da seção)
+- **24 × diâmetro do estribo**
+- **20 cm** (limite geral)
+
+Para pilar 20×30 cm com estribo φ 6,3 mm:
+- b = 20 cm
+- 24 × 6,3 = 151 mm ≈ 15 cm
+- **Espaçamento máximo: 15 cm**
+
+### Vigas (Item 17.4.1)
+Nas **zonas de cisalhamento crítico** (próximo ao apoio):
+- Espaçamento ≤ d/2 (d = altura útil)
+- Para viga com d = 44 cm: espaçamento máximo = **22 cm**
+
+## Zonas de Adensamento: Estribos Mais Próximos
+
+Nas regiões de emenda de pilar e nos nós (pilar-viga), a norma exige adensamento de estribos:
+- Espaçamento reduzido para **2/3 do espaçamento geral**
+- Comprimento da zona: pelo menos **maior dimensão da seção** × 2
+
+## Cálculo Simplificado de Estribos
+
+**Quantidade de estribos = comprimento da peça ÷ espaçamento**
+
+Para pilar de 3 m com espaçamento de 15 cm:
+= 300 ÷ 15 = **20 estribos**
+
+**Comprimento do estribo = perímetro + ganchos**
+Para pilar 20×20 cm: 4 × 18 (interno) + 2 × 10 (ganchos) = **92 cm ≈ 1 m**
+
+Total de aço em estribos φ 6,3 mm:
+20 × 1 m × 0,245 kg/m = **4,9 kg por pilar**
+
+## BR Aço: Estribos Cortados e Dobrados em Goiânia
+
+A BR Aço produz estribos em qualquer bitola e formato — retos, quadrados, retangulares, poligonais. Entregamos identificados por elemento da estrutura, prontos para montagem. Solicite via WhatsApp.`
+  },
+  {
+    id: 67,
+    slug: 'preco-vergalhao-2025-goias',
+    category: 'Produtos',
+    title: 'Preço do Vergalhão em 2025: Como Funciona e O Que Afeta o Custo',
+    metaDescription: 'Entenda os fatores que determinam o preço do vergalhão em 2025: cotação do minério de ferro, câmbio, demanda da construção civil e logística. Como comprar melhor em Goiás.',
+    keyword: 'preço vergalhão 2025',
+    date: '17 Jan 2026',
+    summary: 'O preço do vergalhão em 2025 é influenciado por minério de ferro, câmbio, energia e demanda da construção civil. Saiba como esses fatores funcionam e como fazer uma compra mais estratégica.',
+    content: `## Por Que o Preço do Vergalhão Oscila Tanto?
+
+O vergalhão é um commodity — seu preço acompanha variáveis nacionais e internacionais que mudam semanalmente. Entender essa dinâmica ajuda a tomar decisões de compra mais estratégicas.
+
+## Fatores que Influenciam o Preço do Vergalhão
+
+### 1. Minério de Ferro
+O minério de ferro é a principal matéria-prima do aço. Quando o preço internacional do minério sobe (geralmente puxado pela demanda chinesa), o custo de produção das usinas aumenta e o preço do vergalhão segue.
+
+### 2. Energia Elétrica
+As usinas de aço são grandes consumidoras de energia. Aumentos nas tarifas de energia — como bandeiras tarifárias e reajustes regulatórios — se refletem no preço final.
+
+### 3. Câmbio (R$/USD)
+Grande parte dos insumos do setor é cotada em dólar. Um real mais fraco encarece a produção, pressionando os preços internos.
+
+### 4. Demanda da Construção Civil
+Em períodos de boom da construção (financiamentos baratos, programas habitacionais), a demanda por vergalhão aumenta e pressiona os preços. Em recessão, o inverso.
+
+### 5. Logística e Frete
+Para Goiás, o frete do vergalhão produzido em Minas Gerais ou São Paulo impacta o preço final. Fornecedores locais podem ter vantagem competitiva de logística.
+
+## Como Comprar Vergalhão de Forma Estratégica
+
+### Planeje com antecedência
+Compras de última hora em período de alta de preços custam mais. Com o projeto estrutural pronto, você pode fechar o preço com antecedência.
+
+### Compre por etapa, não tudo de uma vez
+A menos que haja perspectiva clara de alta, comprar por etapa (fundação, pilares, laje) preserva o fluxo de caixa e evita estoque parado.
+
+### Peça cotações formais
+Cotações verbais não têm validade. Solicite proposta por escrito com prazo de validade, especificação técnica (NBR 7480) e condições de entrega.
+
+### Considere o custo total, não só o preço por kg
+Um fornecedor com menor preço por kg mas sem laudo de qualidade, sem entrega garantida ou com perdas altas no corte pode custar mais no final.
+
+## Transparência de Preço na BR Aço
+
+Fornecemos proposta detalhada com preço por bitola, prazo de validade, especificação técnica e condições de entrega. Sem surpresas no faturamento. Solicite sua cotação via WhatsApp.`
+  },
+  {
+    id: 68,
+    slug: 'como-economizar-aco-obra-sem-comprometer-estrutura',
+    category: 'Gestão de Obra',
+    title: 'Como Economizar no Aço da Obra Sem Comprometer a Estrutura',
+    metaDescription: 'Estratégias legítimas para reduzir o custo da ferragem: projeto otimizado, corte e dobra industrial, compra programada e redução de perdas. Sem riscos estruturais.',
+    keyword: 'economizar aço obra',
+    date: '19 Jan 2026',
+    summary: 'É possível economizar significativamente no aço da obra sem comprometer a segurança estrutural. As estratégias passam por projeto otimizado, corte industrial e gestão de estoque.',
+    content: `## Economizar no Aço: Sim, É Possível — Se Feito Corretamente
+
+A ferragem representa até 15% do custo total de uma obra. Qualquer economia aqui tem impacto real no orçamento. Mas economizar "errado" — usando aço de qualidade duvidosa ou reduzindo armaduras sem autorização do engenheiro — compromete a segurança estrutural.
+
+Aqui estão as **estratégias corretas** para economizar.
+
+## 1. Invista em Projeto Estrutural de Qualidade
+
+O engenheiro calculista é o principal agente de economia no aço. Um projeto bem dimensionado usa exatamente o aço necessário — nem mais, nem menos.
+
+**Regra prática:** o custo de um projeto estrutural é recuperado na primeira tonelada de aço economizada.
+
+## 2. Use Corte e Dobra Industrial
+
+Como vimos, o corte manual gera 8–15% de perda. O corte industrial cai para menos de 3%. Em uma obra com 5 toneladas de aço:
+
+- Perda no corte manual: 500 kg (custo: ~R$ 3.000)
+- Perda no corte industrial: 150 kg (custo: ~R$ 900)
+- **Economia: R$ 2.100 só em perdas de material**
+
+## 3. Planeje a Compra por Etapa
+
+Comprar todo o aço antes de começar a obra:
+- Imobiliza capital que poderia estar rendendo
+- Gera estoque exposto (risco de furto e corrosão)
+- Desnecessário se o fornecedor tem estoque confiável
+
+Compre a ferragem de cada etapa no momento certo — fundação, pilares, laje — com a planilha detalhada.
+
+## 4. Padronize as Bitolas
+
+Quanto mais bitolas diferentes no projeto, mais complexo e caro é o pedido. Engenheiros experientes tentam usar **2 a 3 bitolas** na maior parte da estrutura, reduzindo a variedade e simplificando a compra.
+
+## 5. Evite Projetos com Alterações Frequentes
+
+Cada alteração de projeto depois de cortado o aço gera sucata. Congele o projeto antes de processar as peças.
+
+## 6. Monitore o Recebimento
+
+Verifique peso, bitola e quantidade de cada entrega com nota fiscal. Divergências devem ser apontadas imediatamente.
+
+## O Que NÃO Fazer para Economizar
+
+- **Não reduza armaduras por conta própria** sem autorização do engenheiro
+- **Não compre aço sem laudo de qualidade** — aço inferior ao especificado é ilegal e perigoso
+- **Não reutilize aço de demolição** sem ensaio técnico
+
+## BR Aço: Parceiro na Gestão do Custo
+
+Oferecemos consultoria técnica gratuita para análise da planilha de ferro, entrega programada por etapa e relatório de controle de qualidade em cada lote. Entre em contato pelo WhatsApp.`
+  },
+  {
+    id: 69,
+    slug: 'fabrica-vs-distribuidor-vergalhao',
+    category: 'Produtos',
+    title: 'Comprar Vergalhão de Fábrica ou Distribuidor: Qual a Diferença?',
+    metaDescription: 'Entenda as diferenças entre comprar vergalhão diretamente da usina ou de um distribuidor com serviços agregados. Como avaliar qual opção oferece melhor custo-benefício para sua obra.',
+    keyword: 'fábrica vs distribuidor vergalhão',
+    date: '21 Jan 2026',
+    summary: 'Usinas vendem a granel para grandes volumes; distribuidores oferecem serviços, variedade e lotes menores. Para a maioria das obras, o distribuidor com serviço de corte e dobra é a opção mais prática.',
+    content: `## Cadeia de Suprimentos do Vergalhão
+
+O vergalhão percorre o seguinte caminho até sua obra:
+
+**Usina Siderúrgica → Distribuidor/Serviço Center → Obra**
+
+Cada elo da cadeia agrega valor (ou custo) diferente. Entender essa cadeia ajuda a decidir onde comprar.
+
+## Comprando Diretamente da Usina
+
+### Quem tem acesso
+- Construtoras com pedidos acima de **20 a 50 toneladas** por mês
+- Distribuidores (que revendem para o mercado)
+- Grandes empreiteiras com contratos de longo prazo
+
+### Vantagens
+- Menor preço por tonelada
+- Rastreabilidade direta (corrida de aço da própria usina)
+- Garantia de conformidade técnica
+
+### Desvantagens
+- Volume mínimo de pedido muito alto
+- Entrega em barras de 12 m (exige transporte especial e corte na obra)
+- Prazo de entrega: 5 a 15 dias úteis
+- Sem serviços de corte e dobra
+
+## Comprando de Distribuidor com Serviço Center
+
+### Quem usa
+- Construtoras de médio porte
+- Autoconstrutores
+- Engenheiros e mestres de obra de qualquer escala
+
+### O Que um Serviço Center Oferece
+- Estoque de várias bitolas e classes (CA-25, CA-50, CA-60)
+- **Corte e dobra industrial** (serviço principal)
+- Lotes menores (a partir de 500 kg na maioria)
+- Entrega rápida (24 a 48h)
+- Suporte técnico local
+- Documentação completa (nota fiscal, laudo NBR 7480)
+
+### Diferença de Preço
+O distribuidor acrescenta uma margem sobre o preço da usina. Mas quando você soma:
+- Custo de transporte especial da barra de 12 m
+- Custo do corte e dobra na obra
+- Custo do desperdício (8–15%)
+- Custo da mão de obra extra
+
+O distribuidor com serviço de corte e dobra frequentemente resulta em **custo total menor** para obras de até 50 toneladas.
+
+## Para Obras em Goiás: Por Que Comprar Local Importa
+
+Um distribuidor regional como a BR Aço tem:
+- Estoque físico em Goiânia (sem prazo de viagem)
+- Atendimento técnico presencial
+- Entrega programada em toda a região metropolitana
+- Relacionamento de longo prazo (prioridade em períodos de escassez)
+
+Solicite cotação via WhatsApp e compare o custo total — não apenas o preço por kg.`
+  },
+  {
+    id: 70,
+    slug: 'aco-reciclado-sustentabilidade-construcao',
+    category: 'BR Aço',
+    title: 'Aço Reciclado na Construção Civil: Sustentabilidade que Economiza',
+    metaDescription: 'O aço é o material mais reciclado do mundo. Entenda como o aço reciclado mantém a mesma qualidade do virgem, reduz a pegada de carbono e contribui para obras sustentáveis.',
+    keyword: 'aço reciclado construção civil',
+    date: '23 Jan 2026',
+    summary: 'O aço para construção civil é produzido em grande parte com sucata reciclada, sem perda de propriedades mecânicas. Entenda o ciclo do aço e como isso contribui para construções mais sustentáveis.',
+    content: `## O Aço Como Símbolo de Sustentabilidade
+
+O **aço é o material mais reciclado do mundo** — e isso não é coincidência. Suas propriedades mecânicas são completamente preservadas após o processo de reciclagem, ao contrário de plástico ou papel, que perdem qualidade a cada ciclo.
+
+## Como o Aço é Reciclado?
+
+### Rota do Forno Elétrico a Arco (EAF)
+A maioria dos vergalhões produzidos no Brasil é feita em fornos elétricos a arco, que fundem **sucata siderúrgica** (sucata de aço):
+
+1. Sucata coletada (estruturas antigas, automóveis, eletrodomésticos, pontas de obra)
+2. Separação e classificação da sucata
+3. Fusão no forno elétrico a arco (temperatura > 1.600°C)
+4. Ajuste de composição química (adição de ligas)
+5. Lingotamento contínuo em tarugos
+6. Laminação a quente → vergalhões
+
+### Conteúdo reciclado
+Vergalhões CA-50 produzidos em fornos elétricos têm tipicamente **80% a 100% de conteúdo reciclado**. As propriedades mecânicas (resistência, ductilidade) são idênticas às do aço virgem.
+
+## Vantagens Ambientais do Aço Reciclado
+
+| Indicador | Aço Virgem (alto-forno) | Aço Reciclado (forno elétrico) |
+|---|---|---|
+| Emissão de CO₂ por tonelada | ~2,0 toneladas | ~0,4 toneladas |
+| Consumo de água | Alto | Menor |
+| Consumo de minério de ferro | 1.600 kg/tonelada | ~100 kg/tonelada (correção) |
+| Consumo de carvão | Alto | Zero (usa eletricidade) |
+
+**Cada tonelada de vergalhão reciclado evita a emissão de 1,6 toneladas de CO₂** comparado ao processo integrado de alto-forno.
+
+## Aço Reciclado Atende às Normas?
+
+Sim. A **ABNT NBR 7480** não distingue entre aço virgem e reciclado — o que importa são as propriedades mecânicas finais. Os fornos elétricos a arco modernos produzem aço com qualidade totalmente equivalente ao virgem.
+
+## O Ciclo do Aço na Obra
+
+O aço da sua obra também será reciclado no futuro:
+- Estrutura em uso → décadas de vida útil
+- Demolição → recuperação da armadura
+- Sucata → novo aço
+
+O aço não "morre" — ele entra em um ciclo praticamente infinito de reutilização.
+
+## BR Aço e a Cadeia Responsável
+
+A BR Aço fornece vergalhões com rastreabilidade de origem, permitindo identificar a rota de produção e o conteúdo reciclado de cada lote. Construir com aço é construir com o material mais sustentável da estrutura.`
+  },
+  {
+    id: 71,
+    slug: 'green-steel-aco-verde-tendencia',
+    category: 'BR Aço',
+    title: 'Green Steel: O Que É o Aço Verde e Por Que Importa para a Construção?',
+    metaDescription: 'Green steel é o aço produzido com hidrogênio verde ou energia renovável, com emissões próximas de zero. Entenda a tendência global e como ela chegará às obras brasileiras.',
+    keyword: 'green steel aço verde',
+    date: '25 Jan 2026',
+    summary: 'O green steel é produzido com hidrogênio verde ou energia renovável, reduzindo as emissões de CO₂ do processo siderúrgico a quase zero. Entenda a revolução que está chegando ao setor.',
+    content: `## O Que é Green Steel?
+
+**Green steel** (aço verde) é o aço produzido com processos que eliminam ou reduzem drasticamente as emissões de CO₂. A siderurgia convencional é responsável por cerca de **8% das emissões globais de CO₂** — mais do que o setor de aviação.
+
+O green steel representa a resposta da indústria ao desafio climático.
+
+## Tecnologias de Produção do Green Steel
+
+### 1. Hidrogênio Verde (H₂ DRI)
+No processo convencional, carvão (carbono) é usado para reduzir o minério de ferro. No green steel, o **hidrogênio verde** (produzido por eletrólise com energia renovável) substitui o carvão:
+
+- Fe₂O₃ + 3H₂ → 2Fe + 3H₂O
+- O subproduto é **água** em vez de CO₂
+
+Empresas como SSAB (Suécia) e Voestalpine (Áustria) já produzem protótipos de aço com hidrogênio verde.
+
+### 2. Forno Elétrico com Energia Renovável
+Fundições que já usam sucata podem alimentar seus fornos elétricos a arco exclusivamente com energia solar ou eólica. Isso reduz as emissões para próximo de zero.
+
+### 3. Captura e Armazenamento de Carbono (CCS)
+Tecnologia que captura o CO₂ emitido nos fornos e o armazena geologicamente, evitando que chegue à atmosfera.
+
+## Onde o Green Steel Está Disponível?
+
+Em 2024–2025, o green steel ainda é:
+- **Disponível comercialmente em volume limitado** (principalmente na Europa)
+- **30% a 80% mais caro** que o aço convencional (custo do hidrogênio verde)
+- **Comprometido por grandes corporações** como Volvo, BMW e Mercedes para reduzir o Scope 3 (emissões da cadeia de fornecimento)
+
+No Brasil, as usinas siderúrgicas estão investindo em:
+- Forno elétrico a arco com energia limpa (alguns já fazem)
+- Projetos piloto com hidrogênio
+- Certificação de emissões por lote
+
+## Impacto para a Construção Civil Brasileira
+
+Para obras residenciais e comerciais em Goiás, o green steel chegará gradualmente:
+
+1. **Curto prazo (2025–2027):** disponível como "opção premium" via distribuidores especializados
+2. **Médio prazo (2028–2032):** tornar-se padrão em projetos com certificação LEED ou AQUA
+3. **Longo prazo (pós-2035):** tendência de ser o padrão do mercado conforme o custo cai
+
+## Construção Sustentável Começa Hoje
+
+Mesmo sem o green steel, você já pode reduzir a pegada de carbono da sua obra:
+- Usando vergalhão com alto conteúdo reciclado
+- Evitando desperdício com corte e dobra industrial
+- Especificando concreto com adição de escória de alto-forno (cimento CP III)
+
+A BR Aço acompanha as tendências do setor e já fornece vergalhões rastreáveis com informação de origem e conteúdo reciclado. Fale conosco pelo WhatsApp.`
+  },
+  {
+    id: 72,
+    slug: 'aco-pre-moldado-vantagens-obras',
+    category: 'Produtos',
+    title: 'Aço em Pré-Moldados: Quando Usar Estrutura Pré-Fabricada?',
+    metaDescription: 'Estruturas pré-moldadas de concreto usam armaduras especiais. Entenda quando o pré-moldado é mais vantajoso que o concreto armado moldado in loco para galpões e edifícios.',
+    keyword: 'aço pré-moldado vantagens',
+    date: '27 Jan 2026',
+    summary: 'Elementos pré-moldados (pilares, vigas, lajes) são fabricados em fábrica com controle total de qualidade. Entenda quando essa solução economiza tempo e custo em relação ao concreto moldado in loco.',
+    content: `## O Que São Estruturas Pré-Moldadas?
+
+Estruturas pré-moldadas (ou pré-fabricadas) são elementos estruturais produzidos em fábrica — pilares, vigas, lajes alveolares, painéis de fachada — e transportados prontos para o canteiro de obras, onde são montados como um sistema.
+
+O aço usado em pré-moldados tem características específicas diferentes do vergalhão convencional moldado in loco.
+
+## Tipos de Armadura em Pré-Moldados
+
+### 1. Armadura Passiva (CA-50 e CA-60)
+Igual ao concreto armado convencional, usada em elementos com menor nível de força ou em zonas específicas de conexão.
+
+### 2. Armadura Ativa (Protensão)
+Cordoalhas ou barras de aço de alta resistência (700 a 1.800 MPa) que são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento.
+
+- **Pré-tensão:** tensionamento antes da concretagem (em fábrica)
+- **Pós-tensão:** tensionamento após a cura (no canteiro)
+
+A protensão permite vencer vãos muito maiores com seções mais esbeltas.
+
+## Quando o Pré-Moldado é Mais Vantajoso?
+
+| Situação | Vantagem do Pré-Moldado |
+|---|---|
+| Repetição de elementos iguais | Custo de produção em série |
+| Vãos grandes (> 12 m) | Vigas protendidas economizam estrutura |
+| Prazo muito apertado | Montagem rápida (sem espera de cura) |
+| Obras em locais de difícil acesso | Montagem em dia, sem obra civil |
+| Galpões industriais | Sistema completo já testado |
+| Controle de qualidade crítico | Produção em fábrica controlada |
+
+## Quando o Concreto Moldado In Loco é Melhor?
+
+| Situação | Vantagem do Moldado In Loco |
+|---|---|
+| Planta irregular (muitas variações) | Não compensa produção em série |
+| Obras de pequeno porte | Volume insuficiente para pré-moldado |
+| Reformas e ampliações | Difícil integração com existente |
+| Cargas horizontais intensas (terramotos) | Sistema monolítico mais eficiente |
+
+## Armação de Pré-Moldados: Exigências Especiais
+
+A **ABNT NBR 9062** (Projeto e Execução de Estruturas Pré-Moldadas) exige:
+
+- Cobrimento mínimo maior que o moldado in loco (exposição durante transporte)
+- Armaduras de içamento (suportam o peso durante o transporte)
+- Conexões calculadas para transmitir forças entre elementos
+- Controle de produção mais rígido que obra convencional
+
+## BR Aço e o Mercado de Pré-Moldados
+
+Para construtoras e fábricas de pré-moldados em Goiás, a BR Aço fornece CA-50 e CA-60 em barras e rolos, além de serviço de corte e dobra para gaiolas de armação. Atendemos pedidos regulares com prazo garantido.
+
+Consulte nossa equipe técnica para necessidades específicas de armação de pré-moldados.`
   }
 ];
 
