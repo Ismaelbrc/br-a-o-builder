@@ -245,7 +245,15 @@ function calcularPilar(input: TebasInput, _viga: VigaResult): PilarResult {
   // Área tributária por pilar:
   // Estimativa: grelha regular com espaçamento ≈ √área / 3
   // (3 vãos por direção = 4 pilares por frente para uma planta quadrada)
-  const espacamento = Math.max(Math.sqrt(input.area) / 3, 3.0); // m
+  //
+  // LIMITE SUPERIOR: o espaçamento entre pilares NUNCA pode exceder o vão
+  // declarado pelo usuário — se a laje vence 4 m, os pilares não podem
+  // estar a 7 m de distância. Sem este limite, edificações grandes com vão
+  // pequeno produzem nPilares artificialmente fixo em 9 (√A/3 sempre dá aTrib≈A/9).
+  const espacamento = Math.max(
+    Math.min(input.vao, Math.sqrt(input.area) / 3),
+    3.0
+  ); // m
   const aTrib = espacamento * espacamento; // m²
 
   // Carga permanente por pavimento (estimativa global kN/m²):
