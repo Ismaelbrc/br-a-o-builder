@@ -93,7 +93,11 @@ export default function TebasResultado() {
   }, [navigate]);
 
   // useMemo DEVE ficar antes de qualquer early return (Rules of Hooks)
-  const aco = useMemo(() => resultado ? calcularAco(resultado) : null, [resultado]);
+  const aco = useMemo(() => {
+    if (!resultado) return null;
+    try { return calcularAco(resultado); }
+    catch { return null; }
+  }, [resultado]);
 
   if (!resultado) return null;
 
