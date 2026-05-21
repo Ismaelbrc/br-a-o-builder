@@ -7591,6 +7591,2158 @@ Se o calculista dimensionou a armação, use exatamente o que foi especificado.
 | Melhor para | Lajes simples, pisos, controle de retração | Lajes estruturais com cálculo |
 
 A decisão final deve sempre ser do engenheiro calculista, que conhece as solicitações reais da laje.`
+
+  },
+  {
+    id: 116,
+    slug: "laje-nervurada-guia-completo",
+    category: "Projeto Estrutural",
+    title: "Laje Nervurada: Guia Completo para Engenheiros",
+    metaDescription: "Tudo sobre laje nervurada: tipos, vigotas, nervos, espaçamentos, armação, vantagens e quando usar segundo a NBR 6118. Tabelas técnicas e detalhamento.",
+    keyword: "laje nervurada",
+    date: "21 Mai 2026",
+    summary: "Guia técnico completo sobre laje nervurada: tipos (unidirecional e bidirecional), vigotas, nervos, armação, cobrimento e comparativo com outros sistemas.",
+    content: `## O que é Laje Nervurada?
+
+Laje nervurada é o sistema estrutural composto por nervuras (nervos) espaçadas regularmente, preenchidas com elementos de enchimento — blocos cerâmicos, EPS ou lajotas de concreto — que não contribuem estruturalmente. A zona de compressão é garantida pela mesa (capa) de concreto sobre os enchimentos.
+
+A NBR 6118:2014, item 13.2.4, define laje nervurada como aquela com espaçamento entre eixos de nervuras não superior a 65 cm e altura total inferior a 30 cm.
+
+## Tipos de Laje Nervurada
+
+### Laje Nervurada Unidirecional
+Nervuras em uma única direção. Indicada para vãos retangulares com relação comprimento/largura ≥ 2:1. Comporta-se como conjunto de vigas T paralelas.
+
+### Laje Nervurada Bidirecional
+Nervuras cruzadas nas duas direções, formando grelha. Indicada para painéis próximos do quadrado (relação < 2:1). Maior rigidez e melhor distribuição de cargas.
+
+### Laje Treliçada
+Subcategoria com vigotas pré-moldadas de concreto e treliças de aço incorporadas. Detalhada em artigo específico.
+
+## Geometria: Dimensões Usuais
+
+| Parâmetro | Valor usual | Limite NBR 6118 |
+|-----------|-------------|-----------------|
+| Espessura da mesa (capa) | 5 a 7 cm | ≥ 4 cm (sem tráfego) / ≥ 5 cm (com tráfego) |
+| Largura do nervo (bw) | 8 a 15 cm | ≥ 5 cm |
+| Altura total | 12 a 25 cm | — |
+| Espaçamento entre eixos dos nervos | 40 a 65 cm | ≤ 65 cm |
+
+## Elementos de Enchimento
+
+| Tipo | Material | Observação |
+|------|----------|------------|
+| Bloco cerâmico | Cerâmica | Mais comum em GO — fôrma permanente |
+| Bloco de EPS | Poliestireno expandido | Mais leve, menor absorção de água |
+| Lajota de concreto | Concreto simples | Alta durabilidade, maior peso |
+| Fôrma removível | Plástico/borracha | Nervos moldados in loco sem enchimento permanente |
+
+Os blocos cerâmicos e de EPS não são computados na resistência estrutural — servem apenas de fôrma e reduzem o peso próprio da laje.
+
+## Armação da Laje Nervurada
+
+### Armação dos Nervos (armadura principal)
+Cada nervo comporta-se como viga T. A armação positiva (parte inferior, região de tração em vão) é colocada dentro da seção do nervo. Diâmetro mínimo: 6,3 mm (CA-60) ou 8 mm (CA-50).
+
+### Armação da Mesa (capa)
+Armadura construtiva para controle de fissuração por retração e distribuição de cargas concentradas.
+
+**Taxa mínima da mesa (NBR 6118):**
+- ≥ 0,9 cm²/m em ambas as direções
+- Espaçamento máximo: 33 cm
+
+### Cobrimento Nominal nos Nervos
+
+| Classe de agressividade | Cobrimento nominal (vigas/lajes) |
+|------------------------|----------------------------------|
+| I — Fraca (interior seco) | 25 mm |
+| II — Moderada (urbano) | 35 mm |
+| III — Forte (marinha/respingos) | 45 mm |
+| IV — Muito forte (imersão) | 65 mm |
+
+## Quando Usar Laje Nervurada?
+
+| Situação | Indicação |
+|----------|-----------|
+| Vãos de 5 a 9 m | ✅ Ideal — otimiza peso e materiais |
+| Carga distribuída ≤ 5 kN/m² | ✅ Padrão residencial e comercial |
+| Vãos > 9 m | ⚠️ Avaliar protendido ou outros sistemas |
+| Cargas concentradas pesadas | ❌ Prefer laje maciça + vigas de distribuição |
+| Piso industrial com tráfego de veículos | ❌ Não recomendado |
+
+## Comparativo: Laje Nervurada vs Laje Maciça
+
+| Critério | Nervurada | Maciça |
+|----------|-----------|--------|
+| Peso próprio | Menor | Maior |
+| Consumo de concreto | Menor | Maior |
+| Execução | Mais demorada (blocos) | Mais simples |
+| Cargas concentradas | Menos adequada | Mais adequada |
+| Vãos longos (> 6 m) | Mais econômica | Menos econômica |
+
+A escolha entre sistemas deve ser definida pelo engenheiro calculista após análise do vão, cargas e condições de execução da obra.`
+  },
+  {
+    id: 117,
+    slug: "armacao-de-vigas-concreto-armado",
+    category: "Projeto Estrutural",
+    title: "Armação de Vigas em Concreto Armado: Guia Técnico Completo",
+    metaDescription: "Detalhamento da armação de vigas: armadura longitudinal positiva e negativa, estribos, ancoragem, comprimentos de transpasse e tabelas NBR 6118.",
+    keyword: "armação de vigas concreto armado",
+    date: "21 Mai 2026",
+    summary: "Guia técnico para armação de vigas: armadura positiva, negativa, estribos, ancoragem e comprimentos de transpasse conforme NBR 6118.",
+    content: `## Comportamento Estrutural da Viga
+
+Uma viga em concreto armado trabalha à flexão. Na região de vão, a fibra inferior fica em tração e a superior em compressão. Nos apoios, o diagrama de momentos se inverte: a face superior fica em tração.
+
+**Regra fundamental:** o aço resiste à tração; o concreto resiste à compressão. A armadura vai sempre onde a tração ocorre.
+
+## Tipos de Armadura em Vigas
+
+### Armadura Longitudinal Principal (positiva)
+Vergalhões CA-50 ou CA-60 na face inferior da viga, resistindo ao momento fletor positivo.
+
+### Armadura Longitudinal Negativa
+Vergalhões na face superior, sobre os apoios. Em vigas contínuas, estende-se além do apoio pelo comprimento calculado.
+
+### Armadura de Montagem (construtiva)
+Vergalhões que mantêm a geometria da gaiola. Diâmetro mínimo: 10 mm (NBR 6118, item 17.3.5.2.1).
+
+### Estribos (armadura transversal)
+Alças fechadas de CA-60 ou CA-50 que resistem ao esforço cortante e à torção.
+
+## Taxa de Armadura (NBR 6118, item 17.3.5)
+
+| Limite | Valor |
+|--------|-------|
+| Taxa mínima (ρs,min) | 0,15% de bw × d |
+| Taxa máxima (ρs,max) | 4% de bw × d |
+
+*bw = largura da alma; d = altura útil (total menos cobrimento e raio do estribo)*
+
+## Diâmetros Usuais (CA-50)
+
+| Elemento | Bitolas comuns | Observação |
+|----------|---------------|------------|
+| Viga residencial (vão ≤ 5 m) | 10, 12,5 mm | Armadura principal |
+| Viga residencial (vão 5–8 m) | 12,5, 16 mm | Armadura principal |
+| Viga de grande porte | 16, 20, 25 mm | Definido em projeto |
+| Armadura de montagem | 10, 12,5 mm | Mínimo 10 mm por norma |
+
+## Detalhamento dos Estribos
+
+### Diâmetros Mínimos
+
+| Situação | Diâmetro mínimo |
+|----------|----------------|
+| Vigas em geral | 5 mm (CA-60) ou 6,3 mm (CA-50) |
+| Vigas de grande porte | 8 ou 10 mm |
+
+### Espaçamento Máximo (NBR 6118, item 18.3.3.2)
+
+| Zona da viga | Espaçamento máximo |
+|--------------|-------------------|
+| Apoio (zona crítica) com torção | 0,6 × d ≤ 20 cm |
+| Apoio sem torção | d/2 ≤ 30 cm |
+| Vão (cisalhamento baixo) | 0,8 × d ≤ 30 cm |
+
+## Comprimento Básico de Ancoragem — CA-50
+
+| fck | Barra reta (lb) | Com gancho (lb,ef) |
+|-----|----------------|-------------------|
+| C20 | 63 × φ | 38 × φ |
+| C25 | 54 × φ | 33 × φ |
+| C30 | 47 × φ | 28 × φ |
+| C35 | 43 × φ | 26 × φ |
+
+*φ = diâmetro da barra em mm. Posição boa de concretagem (barra horizontal com ≤ 30 cm de concreto abaixo).*
+
+**Exemplo:** barra 12,5 mm em C25 → lb = 54 × 12,5 = 675 mm ≈ 70 cm
+
+## Comprimento de Transpasse
+
+lt = α1 × lb,ef
+
+| % de barras emendadas na mesma seção | α1 |
+|-------------------------------------|-----|
+| ≤ 25% | 1,0 |
+| ≤ 50% | 1,4 |
+| 100% | 2,0 |
+
+**Boas práticas:** nunca emendar todas as barras na mesma seção. Escalonar as emendas ao longo do comprimento.
+
+## Armadura Negativa — Comprimento além do Apoio
+
+A armadura negativa deve se estender:
+- Pelo menos o comprimento de ancoragem (lb,ef) além da face do pilar
+- Ou até o ponto onde o momento negativo se anula, mais lb/3
+
+**Regra prática:** armadura negativa costuma se estender 1/4 do vão além da face do apoio.
+
+## Verificações Obrigatórias em Projeto
+
+1. **Momento fletor** positivo e negativo → armaduras longitudinais
+2. **Esforço cortante** → estribos
+3. **Torção** (quando presente) → estribos adicionais + barras longitudinais de torção
+4. **Flecha** → estado limite de serviço
+5. **Fissuração** → cobrimento adequado e taxa de armadura controlada
+
+A BR Aço fornece todas as bitolas CA-50 para vigas, com corte e dobra conforme planilha de ferro do projeto estrutural.`
+  },
+  {
+    id: 118,
+    slug: "armacao-de-escadas-concreto-armado",
+    category: "Projeto Estrutural",
+    title: "Armação de Escadas em Concreto Armado: Tipos e Detalhamento",
+    metaDescription: "Como armar escadas de concreto armado: tipos estruturais, lances, patamares, armadura principal e de distribuição, ancoragem e junta reentrante.",
+    keyword: "armação de escadas concreto armado",
+    date: "21 Mai 2026",
+    summary: "Detalhamento completo da armação de escadas: tipos estruturais, armadura de lance e patamar, distribuição, ancoragem e junta reentrante.",
+    content: `## Tipos Estruturais de Escadas
+
+### 1. Escada em Lance Simples (Laje Inclinada)
+Lance como laje inclinada apoiada nos dois extremos — na viga do piso inferior e na viga do patamar ou piso superior. Tipo mais comum em edifícios residenciais.
+
+**Comportamento:** laje inclinada como laje simplesmente apoiada ou com continuidade. Tração principal na face inferior.
+
+### 2. Escada com Patamar Intermediário
+Dois lances com patamar entre eles, apoiado nas paredes laterais ou em viga específica.
+
+### 3. Escada em Balanço (Engastada)
+Cada degrau engastado na viga ou parede lateral. Estruturalmente mais complexa — requer projeto específico.
+
+### 4. Escada com Viga de Bordo
+Lajes dos degraus apoiadas em vigas inclinadas laterais. Comum em escadas externas.
+
+## Geometria dos Degraus
+
+**Fórmula de Blondel:** 2h + b = 63 a 65 cm
+
+| Uso | Altura do espelho (h) | Largura do piso (b) |
+|-----|----------------------|---------------------|
+| Residencial | 17 a 18 cm | 28 a 29 cm |
+| Comercial/público | 16 a 17 cm | 30 a 32 cm |
+| Emergência (NBR 9077) | ≤ 18 cm | ≥ 25 cm |
+
+## Cargas de Projeto (NBR 6120:2019)
+
+| Uso | Carga acidental |
+|-----|----------------|
+| Escadas residenciais | 2,5 kN/m² |
+| Escadas de uso público | 5,0 kN/m² |
+
+Peso próprio da escada (concreto + degraus): 4 a 6 kN/m² na projeção horizontal.
+
+## Armação do Lance
+
+### Armadura Principal
+Na face inferior da laje inclinada, paralela ao comprimento do lance.
+
+### Armadura de Distribuição
+Perpendicular à principal, face inferior. Taxa mínima: 20% da armadura principal, ≥ 0,9 cm²/m.
+
+### Cobrimento Nominal
+Ambiente interno (classe I): 25 mm.
+
+### Tabela Orientativa — Lance Residencial (CA-50)
+
+| Vão (m) | Espessura | Armadura principal | Espaçamento |
+|---------|-----------|--------------------|-------------|
+| 2,5 m | 10 cm | φ 8 | 15 cm |
+| 3,0 m | 12 cm | φ 10 | 15 cm |
+| 3,5 m | 13 cm | φ 10 | 12,5 cm |
+| 4,0 m | 15 cm | φ 12,5 | 15 cm |
+
+*Valores orientativos para cargas residenciais. Confirmar com calculista.*
+
+## Armação do Patamar
+
+Laje horizontal apoiada ou contínua. Para patamares residenciais de até 1,5 m de vão: φ 8 a 10 mm CA-50, espaçamento 15 cm.
+
+## Ancoragem nos Apoios
+
+- **Apoio inferior (viga de piso):** ancoragem com lb,ef ≥ 20 × φ ou gancho
+- **Apoio superior:** mesmo critério
+
+## Junta Lance-Patamar — Detalhe Crítico
+
+A ligação entre a laje inclinada e a laje horizontal cria canto reentrante. É obrigatório dispor **armadura diagonal no vértice interno** para evitar fissuração diagonal.
+
+**Detalhe:**
+- 2 a 3 barras diagonais de φ 10 ou 12,5 mm a 45°
+- Comprimento de cada barra: 50 cm de cada lado do vértice
+
+## Verificações Finais
+
+1. Cobrimento nominal em todas as faces expostas
+2. Armadura principal no sentido do vão
+3. Distribuição transversal ≥ 20% da principal
+4. Ancoragem nos apoios ≥ lb,ef
+5. Barras diagonais nas juntas reentrantes
+6. Diâmetro máximo das barras ≤ h/8`
+  },
+  {
+    id: 119,
+    slug: "laje-plana-cogumelo-quando-usar",
+    category: "Projeto Estrutural",
+    title: "Laje Plana e Laje Cogumelo: Diferenças, Armação e Verificação de Punção",
+    metaDescription: "O que é laje plana e laje cogumelo, diferenças, verificação de punção segundo NBR 6118, armação por faixas e quando usar em edifícios.",
+    keyword: "laje plana cogumelo",
+    date: "21 Mai 2026",
+    summary: "Laje plana vs laje cogumelo: definições, comportamento, verificação de punção, armação por faixas e indicações de uso.",
+    content: `## O que é Laje Plana?
+
+Laje plana é o sistema em que a laje é apoiada diretamente nos pilares, sem vigas. A transferência de carga da laje para os pilares ocorre por cisalhamento — fenômeno chamado de **punção**.
+
+A NBR 6118:2014 trata da laje plana no item 14.7 e exige verificação rigorosa da punção.
+
+## O que é Laje Cogumelo?
+
+Laje cogumelo é variação da laje plana com **capitel** (alargamento) ao redor do pilar. O capitel reduz as tensões de punção e dispensa vigas com mais segurança.
+
+| Característica | Laje Plana | Laje Cogumelo |
+|----------------|------------|---------------|
+| Apoio nos pilares | Direto, sem capitel | Através de capitel |
+| Espessura típica | 20 a 35 cm | 18 a 30 cm (corpo) |
+| Verificação de punção | Crítica — exige armadura | Menos crítica |
+| Fôrma | Plana, mais econômica | Requer fôrma do capitel |
+| Pé-direito livre | Máximo | Reduzido pelo capitel |
+
+## Espessura Mínima (NBR 6118, item 13.2.3)
+
+- h ≥ L/40 (L = maior vão entre apoios)
+- h mínimo absoluto = 16 cm para lajes planas sem protensão
+
+| Vão | h mínima por fórmula | h adotado |
+|-----|---------------------|-----------|
+| 6,0 m | 150 mm | 16 cm |
+| 7,5 m | 188 mm | 20 cm |
+| 9,0 m | 225 mm | 23 cm |
+
+## Faixas de Projeto (NBR 6118, item 14.7.8)
+
+| Faixa | Posição | Momentos |
+|-------|---------|---------|
+| Faixa de pilar | Largura = vão/4 de cada lado do eixo do pilar | Maiores momentos — mais aço |
+| Faixa de vão | Região entre faixas de pilar | Menores momentos — menos aço |
+
+## Verificação de Punção (NBR 6118, item 19.5)
+
+### Perímetro Crítico
+Definido a uma distância de 2d da face do pilar (d = altura útil da laje).
+
+### Tensão de Cisalhamento
+τ = Fsd / (u × d)
+
+- Fsd = força de projeto no pilar (kN)
+- u = comprimento do perímetro crítico (mm)
+- d = altura útil da laje (mm)
+
+Se τ > τRd1, é obrigatório adicionar **armadura de punção** (studs ou estribos verticais).
+
+## Taxa Mínima de Armadura
+
+ρs,min = 0,15% em ambas as direções (para fck = 25 MPa).
+
+## Quando Usar Laje Plana?
+
+| Situação | Indicação |
+|----------|-----------|
+| Edifícios com vãos regulares 6–9 m | ✅ Ideal |
+| Plantas comerciais ou escritório | ✅ Pé-direito livre |
+| Garagens | ✅ Sem vigas facilita circulação |
+| Vãos > 10 m | ⚠️ Avaliar protendido |
+| Cargas > 10 kN/m² | ⚠️ Punção e flecha críticos |
+| Pilares irregulares | ❌ Distribuição complexa |
+
+## Vantagens
+- Pé-direito máximo (sem vigas no teto)
+- Fôrma plana simplificada
+- Flexibilidade de layout das paredes
+- Facilita passagem de instalações
+
+## Limitações
+- Punção crítica — verificação e armadura obrigatórias
+- Flecha pode ser excessiva em vãos longos
+- Exige armadura de integridade estrutural (NBR 6118, item 19.5.4)
+- Não deve ser executada sem projeto estrutural específico`
+  },
+  {
+    id: 120,
+    slug: "muros-de-arrimo-tipos-armacao",
+    category: "Projeto Estrutural",
+    title: "Muros de Arrimo: Tipos, Pressão do Solo e Armação",
+    metaDescription: "Guia técnico sobre muros de arrimo: tipos (gravidade, cantilever, contraforte), pressão ativa do solo, armação e verificações de estabilidade segundo NBR 11682.",
+    keyword: "muros de arrimo tipos armação",
+    date: "21 Mai 2026",
+    summary: "Tipos de muros de arrimo, cálculo da pressão ativa do solo, armação do fuste e base, drenagem e verificações de estabilidade.",
+    content: `## O que é um Muro de Arrimo?
+
+Muro de arrimo (ou muro de contenção) é a estrutura que retém um maciço de terra, impedindo seu deslizamento. A função é resistir à **pressão lateral do solo** — chamada de pressão ativa — que age horizontalmente contra a face interna.
+
+## Tipos de Muro de Arrimo
+
+### 1. Muro de Gravidade
+Retém o solo pela própria massa — concreto simples ou pedra argamassada, sem armação. Econômico para alturas ≤ 1,5 m.
+
+### 2. Muro Cantilever (Muro em L ou T invertido)
+Tipo mais comum em concreto armado. Composto por:
+- **Fuste:** parede vertical que retém o solo
+- **Base (sapata):** laje horizontal que garante estabilidade por peso e fricção
+
+O fuste funciona como viga em balanço engastada na base. **Indicado para alturas de 2,0 a 7,0 m.**
+
+### 3. Muro com Contrafortes
+Cantilever com nervuras verticais (contrafortes) na face posterior. Reduz esforços no fuste para alturas superiores a 5–6 m.
+
+### 4. Muro de Gabião
+Caixas de tela metálica preenchidas com pedra. Drenante e flexível. Não é concreto armado.
+
+## Pressão Ativa do Solo
+
+### Coeficiente de Rankine (solo sem coesão)
+Ka = tg²(45° − φ/2)
+
+| Tipo de solo | φ (graus) | Ka |
+|-------------|-----------|-----|
+| Areia fofa | 25° | 0,41 |
+| Areia compacta | 35° | 0,27 |
+| Argila mole | 15° | 0,59 |
+| Argila firme | 25° | 0,41 |
+
+### Resultante da Pressão Ativa
+Ea = 0,5 × Ka × γs × H²
+
+Atuando a H/3 do fundo do muro (γs = peso específico do solo ≈ 17 a 20 kN/m³).
+
+## Verificações de Estabilidade (NBR 11682)
+
+| Verificação | FS mínimo |
+|-------------|-----------|
+| Deslizamento na base | ≥ 1,5 |
+| Tombamento (ponta da base) | ≥ 2,0 |
+| Resultante no terço médio da base | e ≤ B/6 |
+| Estabilidade global (talude) | ≥ 1,5 |
+
+## Armação do Muro Cantilever
+
+### Fuste (Parede Vertical)
+Trabalha como viga em balanço. A pressão do solo gera momento máximo na base.
+
+- **Armadura principal:** na face oposta ao solo (onde há tração no balanço)
+- **Armadura horizontal mínima:** ρs,min = 0,15% × espessura × 1 m
+- **Cobrimento nominal:** Classe III (solo úmido) = 45 mm; Classe IV (solo agressivo) = 65 mm
+
+### Base (Sapata)
+
+| Região | Comportamento | Armadura |
+|--------|--------------|----------|
+| Aba ativa (sob o aterro) | Balanço com tração superior | Armadura superior |
+| Aba passiva (sem aterro) | Tração inferior | Armadura inferior |
+
+### Pré-dimensionamento Orientativo (solo φ = 30°)
+
+| Altura (H) | Espessura do fuste | Largura da base | Espessura da base |
+|------------|--------------------|-----------------|-------------------|
+| 2,0 m | 20 cm | 1,0 m | 25 cm |
+| 3,0 m | 25 cm | 1,5 m | 30 cm |
+| 4,0 m | 30 cm | 2,2 m | 35 cm |
+| 5,0 m | 35 cm | 3,0 m | 40 cm |
+| 6,0 m | 40 cm | 3,6 m | 45 cm |
+
+*Confirmar em projeto estrutural.*
+
+## Drenagem — Imperativo
+
+Todo muro de arrimo **deve ter sistema de drenagem** por trás do fuste: dreno francês, manta drenante + tubos de PVC para saída d'água. Sem drenagem, a pressão da água subterrânea pode triplicar a força sobre o muro.
+
+## Erros Comuns
+
+1. Falta de dreno → sobrecarga hidrostática
+2. Concreto inadequado → mínimo C25 com cobrimento 45 mm (solo úmido)
+3. Base muito curta → tombamento por falta de comprimento resistente
+4. Sem armadura horizontal → fissuração vertical por retração
+5. Aterro compactado com rolo pesado diretamente contra o fuste → impacto dinâmico não previsto`
+
+  },
+  {
+    id: 121,
+    slug: "concreto-protendido-quando-especificar",
+    category: "Projeto Estrutural",
+    title: "Concreto Protendido: O que É, Quando Usar e Diferenças para Concreto Armado",
+    metaDescription: "O que é concreto protendido, tipos (pré-tensão e pós-tensão), quando especificar, vantagens, limitações e comparativo com concreto armado convencional.",
+    keyword: "concreto protendido quando usar",
+    date: "21 Mai 2026",
+    summary: "Concreto protendido: conceito, tipos (pré e pós-tensão), vantagens, quando especificar e comparativo com concreto armado convencional.",
+    content: `## O que é Concreto Protendido?
+
+Concreto protendido é o concreto armado no qual as armaduras ativas (cabos de aço de alta resistência) são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento estrutural. Essa compressão prévia compensa (parcial ou totalmente) as trações causadas pelas cargas de serviço.
+
+**Princípio:** o concreto é um material que resiste bem à compressão mas mal à tração. Ao pré-comprimir o elemento, compensa-se a tração que as cargas irão gerar, permitindo vãos maiores e seções menores.
+
+## Tipos de Protensão
+
+### Pré-tensão (Pré-moldados)
+Os cabos são tensionados **antes** da concretagem, ancorados em pórticos de protensão. Após a cura, os cabos são liberados e transferem a compressão para o concreto por aderência.
+
+- Executada em fábrica (pré-moldados)
+- Produção em série (lajes alveolares, vigas duplo T)
+- Cabos de aço CA-190 ou CP-190 (fios ou cordoalhas)
+
+### Pós-tensão (In loco)
+Os cabos são colocados em bainhas (conduítes) dentro das fôrmas e tensionados **após** a cura do concreto, com macaco hidráulico. Ancoragem nas extremidades por placas e cunhas.
+
+- Executada no canteiro
+- Vigas e lajes moldadas no local
+- Permite traçados curvos dos cabos (cabos parabólicos)
+
+## Armaduras Ativas vs Passivas
+
+| Armadura | Função | Material | Resistência |
+|----------|--------|----------|-------------|
+| Ativa (cabos de protensão) | Compressão prévia | Cordoalhas CP-190 ou CP-170 | fpu ≥ 1700 MPa |
+| Passiva (vergalhões) | Controle de fissuração e esforços secundários | CA-50, CA-60 | fy = 500 ou 600 MPa |
+
+## Quando Especificar Concreto Protendido?
+
+| Situação | Indicação |
+|----------|-----------|
+| Vãos ≥ 12 m (vigas) | ✅ Protensão viabiliza estrutura |
+| Vãos ≥ 9 m (lajes) | ✅ Reduz espessura e flecha |
+| Flecha crítica (hospitais, laboratórios) | ✅ Controla deformação |
+| Construção com concreto aparente liso | ✅ Evita fissuração visível |
+| Vãos < 8 m e cargas convencionais | ❌ Concreto armado é mais econômico |
+| Obras sem mão de obra especializada | ❌ Exige equipe técnica específica |
+
+## Vantagens do Concreto Protendido
+
+- **Maior vão livre** com seção menor — lajes mais esbeltas (h ≈ L/35 a L/45)
+- **Controle de fissuração** — estrutura praticamente sem fissuras em serviço
+- **Menor peso próprio** — menos concreto = menos carga nos pilares e fundações
+- **Melhor durabilidade** — menor permeabilidade do concreto comprimido
+
+## Limitações e Cuidados
+
+- **Mão de obra especializada** obrigatória — protensão requer equipe treinada e equipamento específico
+- **Concreto de alta resistência** — mínimo C30; frequentemente C35 a C45
+- **Perdas de protensão** — atrito nos cabos, acomodação das ancoragens, fluência e retração do concreto devem ser calculadas
+- **Custo inicial mais alto** — compensado em vãos longos ou exigências de serviço rígidas
+- **Não improvisa** — qualquer modificação pós-execução é muito complexa
+
+## Relação fck e Protensão
+
+| fck mínimo | Aplicação |
+|-----------|-----------|
+| C30 | Protensão parcial — fissuras controladas |
+| C35 | Protensão plena — sem fissuras |
+| C40 ou mais | Lajes alveolares, vigas de grande vão |
+
+## Exemplos de Aplicação
+
+| Estrutura | Sistema usual |
+|-----------|--------------|
+| Lajes de edifícios altos (vão > 8 m) | Pós-tensão com cabos engraxados |
+| Vigas de garagem (vão > 12 m) | Pós-tensão |
+| Lajes alveolares pré-fabricadas | Pré-tensão em fábrica |
+| Pontes e viadutos | Pós-tensão ou pré-tensão |
+| Reservatórios circulares | Pré-tensão circunferencial |
+
+## Comparativo: Protendido vs Armado Convencional
+
+| Critério | Protendido | Armado Convencional |
+|----------|------------|---------------------|
+| Vão econômico | > 9 m (lajes) / > 12 m (vigas) | 4 a 8 m (lajes) / 4 a 10 m (vigas) |
+| Altura da laje (L/h) | L/35 a L/45 | L/25 a L/35 |
+| Fissuração | Controlada ou nula | Fissuras admissíveis (w ≤ 0,3 mm) |
+| Durabilidade | Superior | Boa com cobrimento correto |
+| Custo por m² (vão curto) | Maior | Menor |
+| Custo por m² (vão longo) | Menor | Maior |`
+  },
+  {
+    id: 122,
+    slug: "laje-alveolar-pre-fabricada",
+    category: "Projeto Estrutural",
+    title: "Laje Alveolar (Painel Pré-moldado): Características, Vantagens e Limitações",
+    metaDescription: "O que é laje alveolar, como funciona, dimensões comerciais, capacidade de carga, vantagens sobre outros sistemas e limitações técnicas.",
+    keyword: "laje alveolar pré-fabricada",
+    date: "21 Mai 2026",
+    summary: "Laje alveolar pré-moldada: princípio estrutural, dimensões, capacidade de carga, vantagens e quando usar.",
+    content: `## O que é Laje Alveolar?
+
+Laje alveolar (também chamada painel alveolar ou hollow-core slab) é um elemento pré-moldado de concreto protendido com seção transversal perfurada por alvéolos (furos longitudinais). Os alvéolos reduzem o peso próprio sem comprometer significativamente a resistência à flexão.
+
+É produzida em fábrica por extrusão ou pré-tensão em pistas longas (30 a 150 m), depois cortada nos comprimentos de projeto.
+
+## Composição
+
+- **Concreto:** fck ≥ 40 MPa (alta resistência para protensão)
+- **Armadura:** cordoalhas de aço CP-190 pré-tensionadas, distribuídas ao longo da peça
+- **Alvéolos:** furos circulares ou ovais que percorrem toda a extensão — reduzem o peso em 30 a 50%
+
+## Dimensões Comerciais Típicas
+
+| Espessura | Largura padrão | Vão máximo usual | Carga máxima (kN/m²) |
+|-----------|---------------|-----------------|----------------------|
+| 12 cm | 120 cm | 5 a 6 m | 5 a 7 |
+| 16 cm | 120 cm | 6 a 8 m | 7 a 10 |
+| 20 cm | 120 cm | 7 a 10 m | 8 a 12 |
+| 25 cm | 120 cm | 9 a 12 m | 10 a 15 |
+| 32 cm | 120 cm | 12 a 16 m | 12 a 18 |
+
+*Capacidades orientativas — variam por fabricante e classe do concreto.*
+
+## Capa de Concreto Complementar
+
+Sobre os painéis alveolares é comum aplicar capa de concreto in loco (5 a 7 cm) para:
+- Solidarizar os painéis transversalmente
+- Nivelar a superfície
+- Receber instalações embutidas
+- Melhorar a distribuição de cargas concentradas
+
+Com a capa, o conjunto forma uma seção mista com maior rigidez.
+
+## Vantagens
+
+- **Velocidade de execução:** painéis montados em horas, sem fôrmas e escoramento
+- **Vãos longos sem vigas intermediárias** (até 16 m com painéis de 32 cm)
+- **Peso próprio reduzido** pelos alvéolos — menor carga nas fundações
+- **Controle de qualidade elevado** (produção industrial em fábrica)
+- **Passagem de instalações:** instalações passam pelos alvéolos sem furar a estrutura
+
+## Limitações
+
+| Limitação | Detalhamento |
+|-----------|-------------|
+| Sem flexibilidade de corte | Furos na laje exigem planejamento prévio — corte em obra é difícil |
+| Apoio mínimo exigido | ≥ 5 cm sobre viga ou parede (verificar com fabricante) |
+| Cargas concentradas | Distribuição transversal limitada sem capa — requer análise |
+| Sem continuidade estrutural | Simplesmente apoiada — comportamento diferente de laje moldada in loco |
+| Logística de transporte | Painéis grandes exigem caminhões longos e guindaste |
+| Projeto de lajes especiais | Aberturas grandes, pilares intermediários — requerem detalhamento especial |
+
+## Quando Usar Laje Alveolar?
+
+| Situação | Indicação |
+|----------|-----------|
+| Galpões industriais (vão ≥ 8 m) | ✅ Sistema quase padrão |
+| Edifícios comerciais/residenciais com planta livre | ✅ Elimina vigas intermediárias |
+| Obras com prazo curto | ✅ Montagem rápida |
+| Plantas com muitas aberturas irregulares | ⚠️ Planejar com antecedência |
+| Estruturas com grandes cargas concentradas | ⚠️ Verificar com fabricante |
+| Lajes com vãos < 5 m e cargas normais | ❌ Laje treliçada pode ser mais econômica |
+
+## Comparativo com Outros Sistemas
+
+| Critério | Alveolar | Treliçada | Maciça in loco |
+|----------|----------|-----------|----------------|
+| Vão máximo sem vigas | Até 16 m | 4 a 7 m | 5 a 8 m |
+| Velocidade | Alta | Média | Baixa |
+| Flexibilidade de projeto | Baixa | Alta | Alta |
+| Controle de qualidade | Alto (fábrica) | Médio | Depende da execução |
+| Custo (vão curto) | Maior | Menor | Médio |
+| Custo (vão longo) | Menor | Maior | Maior |`
+  },
+  {
+    id: 123,
+    slug: "consolos-balancos-detalhamento",
+    category: "Projeto Estrutural",
+    title: "Consolos e Balanços em Concreto Armado: Detalhamento e Armação",
+    metaDescription: "Detalhamento técnico de consolos e lajes em balanço: comportamento estrutural, armação principal e de suspensão, verificações de cisalhamento e ancoragem.",
+    keyword: "consolo balanço concreto armado",
+    date: "21 Mai 2026",
+    summary: "Consolos e lajes em balanço: comportamento estrutural, armação principal, armadura de suspensão, cisalhamento e ancoragem.",
+    content: `## O que é um Consolo?
+
+Consolo (ou console) é um elemento em balanço engastado em um pilar ou parede, com comprimento pequeno em relação à altura. Recebe cargas verticais (geralmente de vigas pré-moldadas, guarda-corpos ou coberturas metálicas).
+
+**Classificação pela relação a/d:**
+- **Consolo curto:** a/d ≤ 1,0 (comportamento de treliça — biela-tirante)
+- **Consolo longo:** a/d > 1,0 (comportamento de viga em balanço)
+
+*a = distância da carga à face do pilar; d = altura útil do consolo*
+
+## Comportamento Estrutural do Consolo Curto
+
+No consolo curto, as tensões não seguem a teoria de Bernoulli (seção plana). O comportamento é melhor descrito pelo **modelo de biela-tirante:**
+- **Biela comprimida:** concreto transmite carga em diagonal da força aplicada até o engaste
+- **Tirante tracionado:** armadura horizontal superior resiste à tração gerada pela carga vertical
+
+## Armação do Consolo Curto
+
+### Armadura Principal (Tirante)
+Armadura horizontal posicionada na face superior (zona de tração), ancorada com gancho de 90° dentro do pilar.
+
+**Comprimento mínimo de ancoragem no pilar:** 15 × φ (fora da dobra do gancho) ou conforme cálculo.
+
+### Armadura de Suspensão (Estribos Fechados)
+Estribos fechados ou grampos distribuídos ao longo do consolo. Segundo a NBR 6118, a área de armadura de suspensão deve ser ≥ 0,5 × As (onde As = área do tirante principal).
+
+### Armadura Longitudinal de Compressão (face inferior)
+Armadura mínima construtiva na face inferior para controle de fissuração por retração.
+
+### Cobrimento
+Consolidar o cobrimento lateral, superior e inferior conforme classe de agressividade (mínimo 35 mm em ambiente urbano — classe II).
+
+## Verificações no Consolo Curto (NBR 6118, item 22.4)
+
+| Verificação | Critério |
+|-------------|----------|
+| Biela comprimida | σc ≤ 0,72 × fcd |
+| Tirante (armadura superior) | Ancorada corretamente no pilar |
+| Cisalhamento na face de apoio | τ ≤ τRd (definido em norma) |
+| Força horizontal (frenagem, temperatura) | Armadura adicional de suspensão |
+
+## Laje em Balanço
+
+Laje em balanço (ou laje em consolo) é o elemento de laje que se projeta além do apoio sem suporte na extremidade livre. Exemplos: varanda, platibanda, aba de cobertura.
+
+### Comportamento
+Momento negativo (tração na face superior) ao longo de todo o comprimento do balanço. O momento máximo ocorre no engaste (apoio).
+
+### Armação da Laje em Balanço
+
+| Armadura | Posição | Observação |
+|----------|---------|------------|
+| Principal | Face superior, paralela ao comprimento do balanço | Dimensionada pelo momento no engaste |
+| Distribuição | Face superior, perpendicular ao balanço | ≥ 20% da principal, espaç. ≤ 33 cm |
+| Construtiva inferior | Face inferior | ≥ 0,9 cm²/m, controle de retração |
+
+### Comprimento da Armadura Principal além do Apoio
+A armadura superior deve se estender **para dentro da laje de apoio** pelo comprimento de ancoragem mais o comprimento onde o momento negativo está presente.
+
+**Regra prática:** estender a armadura negativa pelo menos:
+- Comprimento de ancoragem lb,ef dentro da laje de apoio
+- Mais 1/4 do vão da laje adjacente (se existir)
+
+### Espessura Mínima da Laje em Balanço (NBR 6118, item 13.2.3)
+- h ≥ L/10 (para lajes em balanço)
+- h mínimo = 7 cm
+
+**Exemplos:**
+- Balanço de 1,0 m: h ≥ 10 cm
+- Balanço de 1,5 m: h ≥ 15 cm
+
+### Verificação de Flecha em Balanços
+A flecha em balanços é amplificada em relação a lajes apoiadas. Verificar estado limite de serviço — flecha máxima = L/250 (NBR 6118).
+
+## Erros Comuns em Balanços
+
+1. **Armadura na face errada:** posicionar aço na face inferior (como em laje convencional) é erro grave — a tração está na face superior
+2. **Ancoragem insuficiente:** armadura não entra suficientemente na laje de apoio
+3. **Espessura insuficiente:** varanda muito fina → flecha excessiva + fissuração
+4. **Sobrecarga no final do balanço:** grades pesadas, mureta alta → recalcular`
+  },
+  {
+    id: 124,
+    slug: "glossario-tecnico-concreto-armado",
+    category: "Normas Técnicas",
+    title: "Glossário Técnico de Concreto Armado e Estruturas: 60 Termos Definidos",
+    metaDescription: "Glossário completo com 60 termos técnicos de concreto armado, estruturas e NBR 6118: definições precisas para engenheiros, calculistas e construtores.",
+    keyword: "glossário concreto armado termos técnicos",
+    date: "21 Mai 2026",
+    summary: "60 termos técnicos definidos com precisão: concreto armado, estruturas, armação, normas NBR, fundações e patologias.",
+    content: `## Por que um Glossário Técnico?
+
+A terminologia técnica precisa é fundamental para evitar erros em projeto e obra. Termos usados de forma incorreta causam desde retrabalho até falhas estruturais. Este glossário reúne os 60 termos mais importantes do domínio de estruturas de concreto armado, com definições baseadas na NBR 6118:2014 e na prática de projeto.
+
+## A
+
+**Altura útil (d):** distância entre a face comprimida do elemento e o centroide da armadura de tração. Difere da altura total (h) pelo cobrimento e diâmetro das barras.
+
+**Ancoragem:** dispositivo ou comprimento de barra que garante a transferência de esforços entre a armadura e o concreto, impedindo o deslizamento da barra. Pode ser por aderência (comprimento reto) ou mecânica (gancho, placa de ancoragem).
+
+**Armadura de distribuição:** armadura secundária perpendicular à principal, que distribui esforços e controla a fissuração por retração. Taxa mínima: 20% da armadura principal.
+
+**Armadura de montagem:** barras de aço dispostas para manter a geometria da gaiola de armação durante a concretagem. Não dimensionadas por esforços estruturais, mas com diâmetro mínimo de 10 mm em vigas (NBR 6118).
+
+**Armadura passiva:** vergalhões convencionais (CA-50, CA-60) sem pré-tensionamento. Resiste a esforços após fissuração do concreto.
+
+**Armadura ativa:** cabos de aço de alta resistência (CP-190, CP-170) tensionados para introduzir compressão prévia no elemento — usada no concreto protendido.
+
+## B
+
+**Balanço (consolo):** elemento estrutural com apoio em apenas uma extremidade (engastado), sem apoio na extremidade livre. Momento máximo no engaste; tração sempre na face superior.
+
+**Biela comprimida:** elemento virtual de concreto comprimido em diagonal, no modelo de biela-tirante. Resiste às forças de compressão no concreto.
+
+**Bloco de coroamento:** elemento de fundação que conecta as estacas ao pilar ou parede estrutural, distribuindo e transferindo os esforços do pilar para as estacas.
+
+**Britas:** agregado graúdo (pedra britada) usado na composição do concreto. A granulometria máxima (dmáx) influencia o cobrimento mínimo exigido.
+
+## C
+
+**CA-50:** aço para armadura com limite de escoamento característico fyk = 500 MPa. O mais usado em vigas, pilares e lajes dimensionadas pelo calculista.
+
+**CA-60:** aço para armadura com fyk = 600 MPa. Usado em diâmetros menores (4,2 a 10 mm) — estribos, malhas soldadas, treliças.
+
+**Capeamento:** camada de concreto moldado in loco sobre lajes pré-fabricadas (treliçadas ou alveolares) para solidarizar os elementos e nivelar a superfície.
+
+**Carbonatação:** processo de neutralização do concreto pela reação do CO₂ atmosférico com o Ca(OH)₂ do cimento, reduzindo o pH do concreto de ~13 para ~8,5. Quando a frente de carbonatação atinge a armadura, o aço perde a proteção passiva e inicia a corrosão.
+
+**Classe de agressividade ambiental (CAA):** classificação do ambiente de exposição da estrutura conforme a NBR 6118, tabela 6.1. Define o cobrimento mínimo e o fck mínimo do concreto. Classes I (fraca) a IV (muito forte).
+
+**Cobrimento nominal (c_nom):** distância entre a face da armadura (ou do estribo mais externo) e a superfície do concreto. c_nom = c_min + Δc, onde Δc = 10 mm (tolerância de execução).
+
+**Concreto armado:** concreto com armadura passiva projetada e dimensionada para resistir aos esforços de tração e cisalhamento que o concreto simples não suporta.
+
+**Corpo de prova (CP):** cilindro de concreto (10 × 20 cm ou 15 × 30 cm) moldado durante a concretagem para ensaios de compressão e verificação do fck. NBR 5738 regula a moldagem; NBR 5739 o ensaio de compressão.
+
+**Cortina:** parede de concreto armado ou de estacas contíguas usada para contenção vertical de taludes ou escavações profundas.
+
+## D
+
+**Detalhe estrutural:** representação gráfica no projeto que especifica a geometria, posição e dimensionamento das armaduras em determinado ponto ou elemento da estrutura.
+
+**Diâmetro nominal (φ):** diâmetro nominal da barra de aço, expresso em mm. Usado em todo o Brasil como referência de identificação (φ 8, φ 10, φ 12,5, φ 16, φ 20, φ 25, φ 32 mm).
+
+**Dobramento:** operação de curvar a barra de aço a frio para formar ganchos, estribos, ancoragens e formas curvas. Os raios mínimos de dobramento são definidos pela NBR 6118, tabela 9.2.
+
+## E
+
+**Emenda por transpasse (sobreposição):** união de duas barras por sobreposição paralela por comprimento lt mínimo. A NBR 6118 proíbe emendar mais de 50% das barras na mesma seção transversal.
+
+**Estribo:** armadura transversal fechada (laço) de aço CA-50 ou CA-60, disposta perpendicularmente ao eixo do elemento, que resiste ao esforço cortante, à torção e confina o concreto.
+
+**Esforço cortante (V):** força interna perpendicular ao eixo do elemento, gerada pelas cargas transversais. Combate à "tesoura" na seção transversal.
+
+**Estado limite último (ELU):** estado em que a estrutura atinge sua capacidade resistente máxima — colapso. Verificação de resistência.
+
+**Estado limite de serviço (ELS):** estado em que a estrutura não atinge a capacidade resistente, mas apresenta deformação, fissuração ou vibração excessiva. Verificação de funcionalidade.
+
+## F
+
+**fck:** resistência característica à compressão do concreto, determinada a 28 dias de cura. Valor abaixo do qual se espera no máximo 5% dos resultados. Expresso em MPa.
+
+**fcj:** resistência do concreto à compressão na idade j dias (qualquer idade, não necessariamente 28 dias). Usado para verificações em idades diferentes de 28 dias (desforma, protensão).
+
+**Fissuração:** abertura de fissuras no concreto armado. A NBR 6118 limita a abertura máxima de fissuras (wk) em estado de serviço: 0,2 mm (classe III e IV) ou 0,3 mm (classes I e II).
+
+**Flecha:** deformação vertical de um elemento estrutural sob carga. A NBR 6118 limita a flecha total a L/250 e a flecha adicional (pós-revestimento) a L/350 ou 20 mm (o que for menor).
+
+**Fôrma:** molde temporário de madeira, aço, alumínio ou plástico que define a geometria do elemento de concreto durante a concretagem.
+
+## G
+
+**Gaiola de armação:** conjunto de vergalhões pré-montados formando a armação completa de pilares, vigas ou outros elementos, antes de ser posicionado na fôrma.
+
+**Gancho:** dobramento de 90°, 135° ou 180° na extremidade de uma barra, que aumenta a ancoragem por ação mecânica, além da aderência.
+
+**Graute:** concreto ou argamassa de alta resistência, de consistência fluida, usado para preencher juntas, fixar chumbadores ou solidarizar pré-moldados.
+
+## L
+
+**Laje nervurada:** sistema de laje com nervuras (vigotas) espaçadas, preenchidas com blocos de enchimento. Espaçamento ≤ 65 cm e altura total < 30 cm (NBR 6118, item 13.2.4).
+
+**Laje plana:** laje apoiada diretamente nos pilares, sem vigas. Sujeita à verificação de punção (NBR 6118, item 19.5).
+
+**Laje treliçada:** laje com vigotas pré-moldadas que incorporam treliças de aço. A capa de concreto e os blocos de enchimento completam o sistema.
+
+## M
+
+**Mesa colaborante:** aba de laje que, em vigas T, contribui com a resistência à compressão. A largura efetiva da mesa é limitada pela NBR 6118, item 14.6.2.
+
+**Momento fletor (M):** esforço interno que tende a curvar o elemento. Gera compressão em uma face e tração na outra.
+
+## N
+
+**Nó estrutural:** ponto de ligação entre dois ou mais elementos estruturais (viga-pilar, viga-viga). Região de concentração de esforços, que exige detalhamento específico.
+
+**NBR 6118:** norma brasileira que rege o projeto de estruturas de concreto — Procedimento. Versão vigente: NBR 6118:2014 (com erratas e emendas).
+
+## P
+
+**Parede estrutural:** elemento de concreto armado com espessura reduzida (≤ 1/10 da altura) que resiste a cargas verticais e/ou horizontais.
+
+**Pilar-parede:** pilar com seção muito alongada (relação b1/b2 > 5), que se comporta parcialmente como parede estrutural.
+
+**Punção:** ruptura por cisalhamento ao redor do pilar em lajes planas, formando um cone de concreto que "fura" a laje. Verificação obrigatória em lajes sem vigas.
+
+## R
+
+**Recalque:** deslocamento vertical de uma fundação sob carga. Recalque diferencial é a diferença de recalque entre dois pontos da estrutura — causa fissuração e distorção da estrutura.
+
+**Retração:** redução de volume do concreto durante a secagem e hidratação. Gera trações internas que podem fissurar o concreto antes de qualquer carga externa.
+
+## S
+
+**Slump (abatimento):** medida da consistência do concreto fresco. Determinado pelo ensaio de abatimento com tronco de cone (NBR NM 67). Slump alto = concreto mais fluido. Slump padrão para estruturas convencionais: 10 a 16 cm.
+
+**Sondagem SPT (Standard Penetration Test):** ensaio de penetração padrão que quantifica a resistência do solo ao longo da profundidade. O NSPT (número de golpes por 30 cm de penetração) orienta o tipo e a profundidade da fundação.
+
+## T
+
+**Taxa de armadura (ρs):** relação entre a área de aço e a área de concreto da seção transversal. Expressa em %, define se o elemento está dentro dos limites normalizados.
+
+**Tirante:** barra de aço ou cabo sob tração que transfere força de tração de um elemento para outro, ou ancora uma estrutura no solo.
+
+**Transpasse:** ver "Emenda por transpasse".
+
+## V
+
+**Vão livre:** distância entre as faces internas dos apoios de um elemento.
+
+**Vão teórico (l):** distância entre os centros dos apoios. Usado no cálculo de momentos fletores.
+
+**Vergalhão:** denominação popular do aço para concreto armado (CA-25, CA-50, CA-60) em formato de barras longas. Produzido em bitolas de 4,2 a 40 mm de diâmetro.
+
+**Vigota:** viga pré-moldada de pequena seção usada como nervura em lajes treliçadas ou como viga de distribuição.`
+  },
+  {
+    id: 125,
+    slug: "tabela-referencia-nbr-6118-completa",
+    category: "Normas Técnicas",
+    title: "Tabela de Referência NBR 6118: Cobrimento, Emendas, Ganchos e Estribos",
+    metaDescription: "Tabela unificada de referência rápida da NBR 6118:2014 — cobrimento nominal por classe de agressividade, comprimentos de ancoragem, emendas por transpasse e ganchos.",
+    keyword: "tabela NBR 6118 cobrimento ancoragem emenda",
+    date: "21 Mai 2026",
+    summary: "Referência rápida da NBR 6118:2014: cobrimento nominal, ancoragem, transpasse e ganchos — todos os valores em uma única página.",
+    content: `## Cobrimento Nominal por Classe de Agressividade (NBR 6118, Tabela 7.2)
+
+O cobrimento nominal (c_nom) é a distância entre a face da armadura mais externa (estribo) e a superfície do concreto.
+
+**c_nom = c_min + Δc** (onde Δc = 10 mm — tolerância de execução para estruturas convencionais)
+
+| Classe de agressividade | Ambiente típico | c_nom — Lajes e paredes | c_nom — Vigas e pilares |
+|------------------------|-----------------|------------------------|------------------------|
+| I — Fraca | Interior seco, rural não agressivo | 20 mm | 25 mm |
+| II — Moderada | Urbano, submerso em água doce | 25 mm | 35 mm |
+| III — Forte | Marinho, industrial, respingos | 35 mm | 45 mm |
+| IV — Muito forte | Imersão em água do mar, agressividade química | 45 mm | 65 mm |
+
+**Observação:** para elementos em contato com o solo, usar no mínimo 45 mm. Para concreto projetado, adicionar 10 mm.
+
+## fck Mínimo por Classe de Agressividade (NBR 6118, Tabela 7.1)
+
+| Classe de agressividade | fck mínimo | Relação a/c máxima |
+|------------------------|-----------|-------------------|
+| I | 20 MPa | 0,65 |
+| II | 25 MPa | 0,60 |
+| III | 30 MPa | 0,55 |
+| IV | 35 MPa | 0,45 |
+
+## Comprimento Básico de Ancoragem — CA-50 (lb = φ × σs / 4τbd)
+
+Valores para posição **boa de concretagem** (barra horizontal com ≤ 30 cm de concreto abaixo — NBR 6118, tabela 9.1):
+
+| fck | Barra reta em tração (lb) | Com gancho 90° (lb,ef) | Compressão (lb,comp) |
+|-----|--------------------------|----------------------|----------------------|
+| C20 | 63 × φ | 38 × φ | 44 × φ |
+| C25 | 54 × φ | 33 × φ | 38 × φ |
+| C30 | 47 × φ | 28 × φ | 33 × φ |
+| C35 | 43 × φ | 26 × φ | 30 × φ |
+| C40 | 40 × φ | 24 × φ | 28 × φ |
+
+Para posição **ruim de concretagem** (barra horizontal com > 30 cm de concreto abaixo): multiplicar lb por **1,4**.
+
+**Exemplo:** barra CA-50 φ 12,5 mm em concreto C25, posição boa:
+- Barra reta em tração: lb = 54 × 12,5 = 675 mm ≈ 68 cm
+- Com gancho 90°: lb,ef = 33 × 12,5 = 413 mm ≈ 42 cm
+
+## Comprimento Básico de Ancoragem — CA-60
+
+| fck | Barra reta em tração (lb) | Com gancho 90° (lb,ef) |
+|-----|--------------------------|----------------------|
+| C20 | 76 × φ | 46 × φ |
+| C25 | 65 × φ | 39 × φ |
+| C30 | 57 × φ | 34 × φ |
+| C35 | 52 × φ | 31 × φ |
+
+## Comprimento de Transpasse por Emenda (NBR 6118, item 9.4.2)
+
+lt = α1 × lb,ef (mínimo: 0,3 × lb, nunca inferior a 15 × φ ou 20 cm)
+
+| % de barras emendadas na mesma seção (em comprimento ≤ 1,3 × lt) | α1 |
+|------------------------------------------------------------------|-----|
+| ≤ 25% | 1,0 |
+| 26 a 50% | 1,4 |
+| > 50% | 2,0 |
+
+## Raios Mínimos de Dobramento (NBR 6118, Tabela 9.2)
+
+| Bitola | Raio mínimo de dobramento (r) |
+|--------|-------------------------------|
+| φ ≤ 20 mm | 3,5 × φ (CA-50) / 2,5 × φ (CA-25) |
+| φ > 20 mm | 5,0 × φ (CA-50) |
+
+## Ganchos Padrão
+
+### Gancho de 180°
+- Dobragem de 180° + extensão reta mínima: 4 × φ (mínimo: 60 mm)
+
+### Gancho de 90°
+- Dobragem de 90° + extensão reta mínima: 8 × φ (mínimo: 60 mm)
+
+### Gancho de 135° (Estribos)
+- Dobragem de 135° + extensão reta: 5 × φ (para estribos — NBR 6118, item 9.4.7.2)
+
+## Espaçamento Mínimo entre Barras (NBR 6118, item 8.4)
+
+| Situação | Espaçamento livre mínimo (horizontal) |
+|----------|--------------------------------------|
+| Entre barras paralelas | Maior de: φ, 1,2 × dmáx (brita), 20 mm |
+| Em camadas sobrepostas | Maior de: φ, 1,2 × dmáx, 20 mm |
+
+## Diâmetro Máximo da Barra em Lajes
+
+| Espessura da laje (h) | Diâmetro máximo da armadura principal |
+|-----------------------|--------------------------------------|
+| 10 cm | 12,5 mm (h/8 = 12,5 mm) |
+| 12 cm | 16 mm (limitado a 12,5 mm na prática) |
+| 15 cm | 16 mm |
+| 20 cm | 20 mm |
+
+## Espaçamento Máximo da Armadura em Lajes (NBR 6118, item 17.3.3.2)
+
+| Situação | Espaçamento máximo |
+|----------|--------------------|
+| Armadura principal (momentos) | 2 × h ou 20 cm (o menor) |
+| Armadura secundária (distribuição) | 3 × h ou 33 cm (o menor) |
+
+## Armadura Mínima em Lajes (NBR 6118, item 17.3.5.2.2)
+
+| fck | Taxa mínima (ρs,min) para lajes |
+|-----|--------------------------------|
+| 20 MPa | 0,15% |
+| 25 MPa | 0,15% |
+| 30 MPa | 0,15% |
+| ≥ 35 MPa | 0,15% (verificar em projeto) |
+
+## Espaçamento Máximo de Estribos em Vigas (NBR 6118, item 18.3.3.2)
+
+| Zona | Espaçamento máximo |
+|------|-------------------|
+| Região próxima ao apoio (cisalhamento alto) | d/2 ≤ 30 cm |
+| Região de vão (cisalhamento baixo) | 0,8 × d ≤ 30 cm |
+
+## Espaçamento Máximo de Estribos em Pilares (NBR 6118, item 18.4.2.3)
+
+| Critério | Valor |
+|----------|-------|
+| Regra geral | menor de: b (menor dimensão), 20 × φl (barra longitudinal), 400 mm |
+| Região de emenda | menor de: 12 × φl, 200 mm |
+| Zona de pilar (zonas críticas sísmicas) | menor de: 10 × φl, 200 mm |`
+
+  },
+  {
+    id: 126,
+    slug: "selecao-sistema-estrutural",
+    category: "Projeto Estrutural",
+    title: "Como Escolher o Sistema Estrutural: Pórticos, Paredes e Laje Plana",
+    metaDescription: "Como selecionar o sistema estrutural: pórticos (vigas e pilares), paredes estruturais, laje plana, laje plana protendida — critérios técnicos e econômicos.",
+    keyword: "seleção sistema estrutural",
+    date: "21 Mai 2026",
+    summary: "Critérios para escolha do sistema estrutural: pórticos, paredes, laje plana e sistemas mistos — vantagens, limitações e quando usar cada um.",
+    content: `## O que Determina a Escolha do Sistema Estrutural?
+
+O sistema estrutural define como as cargas são transferidas da laje até as fundações. A escolha influencia o custo, o prazo de execução, a flexibilidade de uso e a durabilidade da edificação.
+
+Os principais fatores a considerar são:
+- Altura e número de pavimentos
+- Tipo de uso (residencial, comercial, industrial)
+- Planta livre vs planta rígida
+- Vãos entre apoios
+- Orçamento disponível
+- Disponibilidade de mão de obra especializada
+
+## Sistemas Estruturais Principais
+
+### 1. Sistema de Pórticos (Vigas + Pilares)
+
+O mais tradicional no Brasil. As cargas das lajes são transferidas às vigas, que as transferem aos pilares e, finalmente, às fundações.
+
+**Características:**
+- Vigas e pilares formam pórticos resistentes às cargas horizontais e verticais
+- Alta flexibilidade de posicionamento de paredes (paredes não estruturais)
+- Vãos de laje: 4 a 8 m
+- Altura de vigas: L/10 a L/15 (L = vão)
+
+**Indicado para:**
+- Edifícios residenciais de qualquer altura
+- Obras com planta variável entre pavimentos
+- Mão de obra convencional (sem especialização)
+
+**Limitação:**
+- Vigas aparentes no teto limitam pé-direito útil
+- Custo de fôrma relativamente alto
+
+### 2. Paredes Estruturais
+
+As cargas são transferidas por paredes de concreto armado (ou alvenaria estrutural), sem vigas e pilares convencionais.
+
+**Paredes de concreto armado moldadas in loco:**
+- Espessura: 12 a 20 cm
+- fck ≥ 20 MPa (paredes de concreto — ABNT NBR 16055)
+- Planta rígida — paredes não podem ser removidas após execução
+
+**Paredes de alvenaria estrutural:**
+- Blocos de concreto ou cerâmicos estruturais
+- Altura: até 12 pavimentos (geralmente até 15 m)
+- Não requer mão de obra de concreto armado especializada
+
+**Indicado para:**
+- Edifícios com planta repetida (flats, habitação social)
+- Obras de alto volume e prazo curto
+- Regiões com mão de obra de concreto armado escassa
+
+**Limitação:**
+- Planta rígida — dificulta mudanças de uso
+- Paredes não podem ser removidas
+
+### 3. Laje Plana (sem vigas)
+
+Laje apoiada diretamente nos pilares. Tratado em artigo específico.
+
+**Indicado para:**
+- Edifícios comerciais e de escritórios com planta livre
+- Garagens
+- Vãos regulares de 6 a 9 m
+
+### 4. Laje Plana Protendida
+
+Laje plana com cabos de protensão — permite vãos maiores com espessura menor.
+
+**Indicado para:**
+- Escritórios, shoppings, hospitais com vãos 9 a 14 m
+- Exigência de pé-direito máximo
+
+### 5. Sistema Misto (Pórticos + Paredes)
+
+Combinação de pilares, vigas e núcleos rígidos de concreto (caixas de elevadores, escadas). Os núcleos resistem às forças horizontais (vento).
+
+**Indicado para:**
+- Edifícios altos (> 20 pavimentos)
+- Edifícios em região de ventos intensos
+
+## Critérios de Escolha por Tipo de Obra
+
+| Tipo de obra | Sistema recomendado |
+|-------------|---------------------|
+| Casa residencial 1–2 pavimentos | Pórtico simples (laje treliçada ou maciça) |
+| Edifício residencial 3–15 pav. | Pórticos ou paredes estruturais |
+| Edifício comercial / escritórios | Laje plana ou laje plana protendida |
+| Habitação social em larga escala | Paredes de concreto (ABNT NBR 16055) |
+| Galpão industrial | Pré-moldados (alveolar + vigas pré) |
+| Edifício alto > 20 andares | Sistema misto com núcleos rígidos |
+
+## Comparativo Econômico Orientativo
+
+| Sistema | Consumo de concreto | Consumo de aço | Custo de fôrma | Prazo |
+|---------|--------------------|-----------------|--------------|----|
+| Pórtico convencional | Médio | Médio | Alto | Médio |
+| Paredes de concreto | Alto | Médio | Baixo (fôrma sistêmica) | Rápido |
+| Laje plana | Médio-alto | Médio-alto | Baixo | Médio |
+| Laje plana protendida | Médio | Alto | Baixo | Rápido |
+
+A decisão final é sempre do engenheiro calculista, que analisa a estrutura completa incluindo as cargas, os ventos e as condições do solo.`
+  },
+  {
+    id: 127,
+    slug: "cargas-em-estruturas-como-calcular",
+    category: "Projeto Estrutural",
+    title: "Cargas em Estruturas de Concreto Armado: Como Calcular e Combinar",
+    metaDescription: "Como calcular cargas permanentes, variáveis e acidentais em estruturas de concreto armado segundo a NBR 6120:2019 e NBR 6118:2014. Tabelas de valores.",
+    keyword: "cargas em estruturas concreto armado",
+    date: "21 Mai 2026",
+    summary: "Cargas em estruturas: permanentes (peso próprio, revestimento), variáveis (uso), acidentais (vento) — valores da NBR 6120 e combinações de projeto.",
+    content: `## Por que Calcular Cargas Corretamente?
+
+O cálculo de cargas é a entrada de todo projeto estrutural. Subestimar cargas leva a estruturas inseguras; superestimar aumenta custo desnecessariamente. As cargas são classificadas conforme a ABNT NBR 6118:2014 e quantificadas pela NBR 6120:2019.
+
+## Classificação das Cargas
+
+### Cargas Permanentes (g)
+Atuam de forma contínua e com magnitude praticamente constante ao longo da vida útil da estrutura.
+
+**Exemplos:** peso próprio do concreto, revestimentos, impermeabilização, paredes fixas, instalações permanentes.
+
+### Cargas Variáveis (q)
+Atuam intermitentemente ou com magnitude variável — cargas de uso, vento, temperatura.
+
+**Exemplos:** pessoas, mobiliário, equipamentos, veículos, cargas de construção.
+
+### Cargas Acidentais
+Cargas excepcionais — impacto de veículo, explosão, sismo.
+
+## Peso Próprio dos Materiais (NBR 6120:2019)
+
+| Material | Peso específico (kN/m³) |
+|----------|------------------------|
+| Concreto armado | 25,0 |
+| Concreto simples | 24,0 |
+| Argamassa de cimento | 21,0 |
+| Alvenaria de tijolo cerâmico | 13,0 a 19,0 |
+| Alvenaria de bloco de concreto | 14,0 a 17,0 |
+| Cerâmica (piso + contrapiso) | 1,0 a 1,5 kN/m² |
+| Madeira | 6,0 a 11,0 |
+| Aço | 78,5 |
+
+## Cargas de Uso por Tipo de Ambiente (NBR 6120:2019, Tabela 3)
+
+| Uso | Carga variável (kN/m²) |
+|-----|----------------------|
+| Dormitórios residenciais | 1,5 |
+| Salas, corredores, banheiros residenciais | 2,0 |
+| Escritórios sem partições pesadas | 2,0 |
+| Escritórios com partições (divisórias) | 3,0 |
+| Salas de reunião, auditórios | 3,0 |
+| Bares, restaurantes, halls de hotel | 3,0 |
+| Escadas residenciais | 2,5 |
+| Escadas de uso público | 5,0 |
+| Corredores de uso público | 3,0 a 5,0 |
+| Garagens para carros de passeio | 2,5 |
+| Garagens para veículos pesados | 5,0 |
+| Cobertura com acesso de pessoas | 2,0 |
+| Cobertura sem acesso (manutenção) | 0,5 |
+| Biblioteca — salas de leitura | 3,0 |
+| Biblioteca — depósito de livros | 6,0 a 9,0 |
+| Lojas e comércio | 3,0 a 5,0 |
+| Hospitais — quartos | 2,0 |
+| Hospitais — corredores e salas | 3,0 |
+
+## Como Calcular o Peso Próprio de uma Laje
+
+**Peso próprio da laje (kN/m²) = espessura (m) × 25 kN/m³**
+
+| Espessura | Peso próprio |
+|-----------|-------------|
+| 8 cm | 2,0 kN/m² |
+| 10 cm | 2,5 kN/m² |
+| 12 cm | 3,0 kN/m² |
+| 15 cm | 3,75 kN/m² |
+| 20 cm | 5,0 kN/m² |
+
+**Exemplo de carga total em laje residencial:**
+- Peso próprio (laje 10 cm): 2,5 kN/m²
+- Revestimento (cerâmica + contrapiso): 1,2 kN/m²
+- Paredes divisórias (NBR 6120 permite equivalente): 1,0 kN/m²
+- Carga variável (uso residencial): 1,5 kN/m²
+- **Total característico: 6,2 kN/m²**
+
+## Combinações de Cargas para o ELU (NBR 6118, item 11.7)
+
+Para o Estado Limite Último (cálculo de resistência), as cargas são combinadas com fatores de ponderação:
+
+**Fd = γg × Fgk + γq × (Fq1k + Σψ0j × Fqjk)**
+
+Coeficientes parciais mais usados:
+- γg = 1,4 (cargas permanentes de grandes variabilidades) ou 1,25 (pequena variabilidade)
+- γq = 1,4 (cargas variáveis)
+- ψ0 = 0,5 a 0,7 (fator de combinação, varia pelo tipo de carga)
+
+**Exemplo simplificado (combinação fundamental, sem vento):**
+
+Fd = 1,4 × gk + 1,4 × qk
+
+Para a laje residencial acima:
+- gk = 2,5 + 1,2 + 1,0 = 4,7 kN/m²
+- qk = 1,5 kN/m²
+- **Fd = 1,4 × 4,7 + 1,4 × 1,5 = 6,58 + 2,10 = 8,68 kN/m²**
+
+## Cargas de Vento
+
+O vento é calculado pela ABNT NBR 6123. A velocidade básica do vento (V0) depende da região geográfica.
+
+| Região | V0 (m/s) |
+|--------|----------|
+| Goiânia / Goiás interior | 35 a 40 m/s |
+| Brasília / DF | 35 m/s |
+| Litoral brasileiro | 40 a 50 m/s |
+
+A pressão dinâmica do vento: q = 0,613 × V²k (N/m²), onde Vk é a velocidade de projeto.
+
+## Cargas de Temperatura
+
+Em estruturas expostas, variações de temperatura geram esforços internos. A NBR 6118 recomenda considerar variação de ±15°C em estruturas abrigadas e ±25°C em estruturas expostas ao sol.
+
+## Carga nas Vigas e Pilares
+
+A partir das cargas nas lajes, os engenheiros calculam as cargas transmitidas às vigas (em kN/m) e aos pilares (em kN), considerando as áreas de influência de cada elemento.
+
+Para uma estimativa rápida de carga em pilar de edifício convencional:
+- **N ≈ 10 a 15 kN/m² × área de influência × número de pavimentos**
+
+*Esse valor deve ser sempre confirmado em projeto estrutural.*`
+  },
+  {
+    id: 128,
+    slug: "diagrama-momento-fletor-esforco-cortante",
+    category: "Projeto Estrutural",
+    title: "Diagramas de Momento Fletor e Esforço Cortante: Como Interpretar",
+    metaDescription: "Como ler e interpretar diagramas de momento fletor (DMF) e esforço cortante (DEF) em vigas e pórticos. Conceitos de sinal, máximos e relação com a armação.",
+    keyword: "diagrama momento fletor esforço cortante",
+    date: "21 Mai 2026",
+    summary: "Interpretação de diagramas de momento fletor (DMF) e esforço cortante (DEF): sinais, posições de máximo, zero de momento e relação com armação.",
+    content: `## Por que os Diagramas de Esforços São Importantes?
+
+Os diagramas de momento fletor (DMF) e esforço cortante (DEF) são a linguagem visual do projeto estrutural. Eles mostram como os esforços internos variam ao longo do elemento. Interpretar corretamente esses diagramas é essencial para:
+- Posicionar a armadura no lugar certo (onde há tração)
+- Definir os pontos de corte das barras
+- Dimensionar os estribos ao longo da viga
+
+## O que é Momento Fletor?
+
+Momento fletor (M) é o esforço interno que tende a curvar o elemento estrutural. É causado por cargas transversais e desbalanceadas.
+
+**Convenção de sinais mais usada em vigas:**
+- **Momento positivo (+):** curva a viga "para baixo" (concavidade para cima) — tração na fibra inferior
+- **Momento negativo (−):** curva a viga "para cima" (concavidade para baixo) — tração na fibra superior
+
+**Consequência para a armação:**
+- Momento positivo → armadura **na parte de baixo** da viga
+- Momento negativo → armadura **na parte de cima** da viga
+
+## Formas do DMF para Cargas Comuns
+
+### Viga simplesmente apoiada com carga distribuída uniforme
+DMF: parábola com máximo no meio do vão.
+M_max = w × L² / 8
+
+| w (kN/m) | L (m) | M_max (kN·m) |
+|----------|-------|-------------|
+| 20 | 5 | 62,5 |
+| 20 | 6 | 90 |
+| 30 | 5 | 93,75 |
+| 30 | 6 | 135 |
+
+### Viga simplesmente apoiada com carga pontual no meio
+DMF: dois segmentos de reta com máximo no ponto de aplicação.
+M_max = P × L / 4
+
+### Viga engastada-livre (balanço) com carga distribuída
+DMF: parábola com máximo no engaste e zero na extremidade livre.
+M_max = w × L² / 2
+
+### Viga contínua (dois vãos iguais, carga distribuída)
+- Momento positivo máximo em cada vão: menor que na viga simplesmente apoiada
+- Momento negativo máximo sobre o apoio central
+- **Ponto de momento zero:** existe entre o apoio e o vão — onde a armadura muda de face
+
+## O que é Esforço Cortante?
+
+Esforço cortante (V) é a força interna perpendicular ao eixo do elemento — tende a "cortar" a seção transversal. É máximo próximo aos apoios e nulo no centro de vão (para carga uniforme simétrica).
+
+### Viga simplesmente apoiada com carga distribuída
+DEF: função linear, máximo nos apoios, zero no meio do vão.
+V_max = w × L / 2
+
+### Diagrama de esforço cortante e estribos
+O espaçamento dos estribos é definido pelo esforço cortante local:
+- Onde V é alto (próximo ao apoio): estribos mais espaços
+- Onde V é baixo (meio do vão): estribos mais afastados
+
+## Ponto de Momento Zero — Importância para a Armação
+
+O ponto de momento zero é onde o momento fletor muda de sinal (de positivo para negativo ou vice-versa). Nesse ponto:
+- As barras de armadura positiva podem (potencialmente) ser cortadas
+- A armadura negativa começa
+
+**Na prática:** as barras não são cortadas exatamente no ponto de zero — precisam se estender além pelo comprimento de ancoragem lb,ef. A NBR 6118 exige que a barra vá além do ponto teórico de zero de momento por no mínimo d (altura útil) ou lb (o que for maior).
+
+## Diagrama em Pilares
+
+Em pilares, os diagramas mais relevantes são:
+- **Diagrama de força normal (N):** força axial de compressão — constante ao longo do pilar para cargas verticais uniformes
+- **Diagrama de momento fletor:** gerado pelo vento ou pela excentricidade da carga — máximo na base e no topo do pilar
+
+## Como Ler um Diagrama no Projeto Estrutural
+
+1. **Sinal (+ ou −):** define em qual face da seção está a tração — e portanto onde vai a armadura
+2. **Valor máximo:** define a quantidade de armação no ponto mais solicitado
+3. **Variação ao longo do elemento:** indica se é possível reduzir (cortar) barras em regiões menos solicitadas
+4. **Posição dos zeros:** indica onde as armaduras podem ter seus comprimentos iniciados ou terminados
+
+## Relação Prática com a Planilha de Ferro
+
+A planilha de ferro (mapa de armação) é a tradução dos diagramas de esforços para quantidades de aço. Cada variação no diagrama corresponde a uma mudança no detalhamento:
+
+| Região no DMF | Armação necessária |
+|---------------|--------------------|
+| Máximo positivo (vão) | Mais barras inferiores — bitola maior ou mais barras |
+| Máximo negativo (apoio) | Mais barras superiores |
+| Zona de transição | Barras intercaladas, escalonadas |
+| Esforço cortante alto | Estribos com espaçamento menor |
+| Esforço cortante baixo | Estribos com espaçamento maior |`
+  },
+  {
+    id: 129,
+    slug: "impermeabilizacao-estruturas-concreto",
+    category: "Projeto Estrutural",
+    title: "Impermeabilização de Estruturas de Concreto: Tipos e Quando Aplicar",
+    metaDescription: "Tipos de impermeabilização para estruturas de concreto: mantas asfálticas, argamassas, cristalização, pintura epóxi — quando usar cada um e detalhes de execução.",
+    keyword: "impermeabilização estruturas concreto",
+    date: "21 Mai 2026",
+    summary: "Sistemas de impermeabilização para estruturas de concreto: mantas, argamassas, cristalização e pinturas — aplicação, vantagens e limitações.",
+    content: `## Por que Impermeabilizar Estruturas de Concreto?
+
+O concreto é poroso e permeável a líquidos e gases. A penetração de água e cloretos é a principal causa de corrosão das armaduras — o processo que mais deteriora estruturas de concreto no Brasil.
+
+A impermeabilização protege a estrutura em duas frentes:
+1. **Evita a penetração de água** que causa corrosão das armaduras, eflorescência e infiltrações
+2. **Mantém o ambiente interno seco** (garagens subterrâneas, reservatórios, subsolos)
+
+A ABNT NBR 9575 classifica as impermeabilizações e define os requisitos de projeto.
+
+## Classificação Geral
+
+### Por flexibilidade
+- **Rígida:** argamassa impermeabilizante, cristalização — sem capacidade de acompanhar movimentos
+- **Semi-rígida:** argamassas flexíveis com polímeros
+- **Flexível:** mantas e membranas — acompanha movimentos da estrutura
+
+### Por tipo de aplicação
+- **Externa (positiva):** aplicada na face oposta à pressão d'água — mais eficiente
+- **Interna (negativa):** aplicada na face de onde a água vem — menor eficiência, usada quando o externo não é acessível
+
+## Sistemas de Impermeabilização
+
+### 1. Manta Asfáltica
+Manta pré-fabricada de asfalto modificado com armadura interna (poliéster, alumínio ou fibra de vidro).
+
+| Tipo | Espessura | Uso |
+|------|-----------|-----|
+| Manta APP (polipropileno atático) | 3 a 6 mm | Coberturas expostas ao sol — alta resistência UV |
+| Manta SBS (butadieno-estireno) | 3 a 4 mm | Terraços, jardineiras, lajes enterradas |
+| Manta autoadesiva | 1,5 a 3 mm | Subsolos, fundações — sem chama |
+
+**Aplicação:** maçarico (manta termofusível) ou autoadesiva. Requer primer de limpeza e imprimação betuminosa.
+
+**Vantagem:** alta resistência mecânica e durabilidade. Cobre fissuras de até 1,5 mm.
+**Limitação:** sensível a perfurações. Requer proteção mecânica em pisos transitáveis.
+
+### 2. Argamassa Impermeabilizante Rígida
+Argamassa de cimento, areia e aditivos impermeabilizantes cristalizantes ou poliméricos.
+
+**Uso:** caixas d'água, piscinas, reservatórios, paredes de subsolos — onde a estrutura não apresenta movimentos.
+**Espessura:** 1 a 3 cm em duas a três camadas.
+**Vantagem:** fácil aplicação, baixo custo.
+**Limitação:** não suporta movimentação — fissura facilmente se a estrutura trabalhar.
+
+### 3. Argamassa Flexível (Bicomponente)
+Argamassa com polímero líquido (componente B) que aumenta a elasticidade. Resiste a fissuras de até 0,5 mm.
+
+**Uso:** fachadas, lajes de cobertura, varandas, piscinas com leve movimentação.
+**Aplicação:** pintura com rolo ou broxa em 2 a 3 demãos.
+
+### 4. Cristalização (Produtos Cristalizantes)
+Compostos que penetram nos poros do concreto e reagem com a água formando cristais insolúveis que obstruem os capilares.
+
+**Uso:** reservatórios, fundações, concreto aparente — ideal onde há pressão d'água positiva (interna) e a face externa não é acessível.
+**Vantagem:** auto-regenerante (continua cristalizando ao longo da vida útil).
+**Limitação:** eficaz apenas em concreto são, sem fissuras. Não funciona em fissuras ativas.
+
+### 5. Pintura Epóxi
+Pintura de base epóxi em duas ou mais demãos. Impermeabiliza e protege contra agentes químicos.
+
+**Uso:** pisos de garagens, reservatórios de substâncias químicas, piscinas de fibra.
+**Vantagem:** alta resistência química.
+**Limitação:** requer superfície completamente seca e limpa. Sensível à umidade durante aplicação.
+
+### 6. Membrana Poliuretânica
+Membrana líquida que cura formando filme elástico contínuo.
+
+**Uso:** coberturas com tráfego, varandas, sacadas — alta elasticidade e capacidade de acompanhar movimentos.
+**Espessura final:** 1,5 a 2,5 mm.
+**Vantagem:** aplicação rápida, sem emendas, excelente aderência.
+
+## Guia de Seleção por Aplicação
+
+| Local | Sistema recomendado |
+|-------|---------------------|
+| Cobertura plana exposta ao sol | Manta APP 4 mm + proteção mecânica |
+| Terraço com jardim (jardineira) | Manta SBS 4 mm + manta drenante |
+| Subsolo / garagem subterrânea | Manta autoadesiva (externa) ou cristalização (interna) |
+| Caixa d'água de concreto | Argamassa rígida ou cristalização |
+| Piscina | Argamassa rígida + pintura epóxi ou poliuretano |
+| Varanda / sacada | Membrana poliuretânica 2 mm |
+| Fundação radier exposta ao solo | Manta autoadesiva ou argamassa flexível |
+| Banheiro / área molhada | Argamassa flexível bicomponente |
+
+## Detalhes Críticos de Execução
+
+1. **Rodapé impermeabilizante:** a impermeabilização deve subir na parede no mínimo 30 cm acima do nível d'água ou do piso
+2. **Juntas de dilatação:** impermeabilizar com mastique flexível ou perfil de neoprene — nunca aplicar manta rígida sobre junta ativa
+3. **Ralos e passantes:** pontos onde a tubulação atravessa a laje são as maiores fontes de infiltração — arrematar com reforço de manta e mangas de PVC
+4. **Cantos:** reforçar com tira adicional de manta (aba de reforço) em todos os cantos reentrantes
+5. **Superfície:** limpa, seca, sem pontas de aço, sem laitância — uma preparação mal-feita invalida todo o sistema`
+  },
+  {
+    id: 130,
+    slug: "faq-engenheiro-estruturas-concreto",
+    category: "Normas Técnicas",
+    title: "FAQ Técnico: 30 Perguntas Frequentes de Engenheiros sobre Estruturas de Concreto",
+    metaDescription: "30 perguntas técnicas frequentes de engenheiros respondidas: NBR 6118, cobrimento, ancoragem, emendas, fck, lajes, pilares, estacas e patologias.",
+    keyword: "perguntas frequentes engenheiros estruturas concreto",
+    date: "21 Mai 2026",
+    summary: "30 perguntas técnicas frequentes de engenheiros com respostas diretas: NBR 6118, armação, concreto, lajes, fundações e patologias.",
+    content: `## Sobre Normas e Fundamentos
+
+**1. Qual a diferença entre fck e fcj?**
+fck é a resistência característica à compressão do concreto determinada a 28 dias de cura. fcj é a resistência na idade j dias — pode ser qualquer idade. Para liberação de fôrma ou aplicação de protensão, usa-se fcj.
+
+**2. O que é classe de agressividade ambiental (CAA)?**
+Classificação da NBR 6118 (tabela 6.1) que define o nível de agressividade do ambiente onde a estrutura está inserida: Classe I (fraca), II (moderada), III (forte), IV (muito forte). Determina o cobrimento mínimo e o fck mínimo.
+
+**3. Qual o fck mínimo para ambiente urbano?**
+Classe II (urbano): fck mínimo = 25 MPa. Relação água/cimento máxima = 0,60.
+
+**4. Qual a diferença entre cobrimento nominal e cobrimento mínimo?**
+Cobrimento mínimo (c_min) é o valor definido pela classe de agressividade. Cobrimento nominal (c_nom) = c_min + 10 mm (tolerância de execução). O projeto deve especificar c_nom; em obra, o mínimo aceitável é c_min.
+
+**5. A NBR 6118:2014 ainda é a versão vigente?**
+Sim, com algumas emendas. Uma revisão (NBR 6118:2023 ou 2024) está em elaboração, mas a versão 2014 (com erratas) segue como referência normativa vigente até nova publicação formal.
+
+---
+
+## Sobre Armação e Detalhamento
+
+**6. Qual o comprimento mínimo de ancoragem para CA-50 em C25?**
+Para barra reta em posição boa de concretagem: lb = 54 × φ. Para barra com gancho de 90°: lb,ef = 33 × φ.
+
+Exemplo: φ 12,5 mm → barra reta: 54 × 12,5 = 675 mm ≈ 68 cm.
+
+**7. Posso emendar todas as barras na mesma seção?**
+Não. A NBR 6118 proíbe emendar mais de 50% das barras em uma mesma seção (definida como zona de comprimento 1,3 × lt). Recomenda-se escalonar as emendas para minimizar a concentração de esforços.
+
+**8. Qual o diâmetro mínimo de estribo em vigas?**
+5 mm (CA-60) ou 6,3 mm (CA-50). Na prática, φ 5 e φ 6,3 mm são os mais usados em vigas convencionais.
+
+**9. Posso usar CA-60 como armadura principal em vigas?**
+Sim, tecnicamente. Mas CA-60 é disponível em diâmetros pequenos (até 10 mm) e tem menor ductilidade que CA-50. Para armaduras principais de vigas (que precisam de ductilidade), CA-50 é mais indicado.
+
+**10. Qual a armadura de distribuição mínima em lajes?**
+20% da armadura principal, com taxa mínima de 0,9 cm²/m. Espaçamento máximo: 3 × h ou 33 cm (o menor).
+
+**11. Qual o cobrimento para ferragem em contato com o solo?**
+Mínimo 45 mm (equivalente à Classe III). Se o solo for agressivo (presença de sulfatos, cloretos), usar 65 mm (Classe IV).
+
+**12. Qual a diferença entre armadura de montagem e armadura construtiva?**
+Armadura de montagem garante a geometria da gaiola durante a concretagem (diâmetro mínimo: 10 mm em vigas). Armadura construtiva (ou de distribuição) controla fissuração por retração — geralmente nas faces perpendiculares à armadura principal.
+
+---
+
+## Sobre Lajes
+
+**13. Qual a espessura mínima de uma laje maciça?**
+Segundo NBR 6118, item 13.2.3: h ≥ L/35 (lajes com uma direção predominante) ou h ≥ L/40 (lajes em duas direções); mínimo absoluto de 7 cm para lajes não transitáveis ou 8 cm para lajes com tráfego leve.
+
+**14. Posso usar laje com 7 cm de espessura para piso de casa?**
+Não é recomendado. Para piso residencial: mínimo de 8 a 10 cm. Lajes de 7 cm são indicadas apenas para lajes de cobertura não transitáveis.
+
+**15. Qual a diferença entre laje nervurada e laje treliçada?**
+Laje treliçada usa vigotas pré-moldadas com treliças incorporadas. Laje nervurada tem nervos moldados in loco (ou com fôrma removível), sem vigotas. Ambas são subcategorias de laje nervurada conforme a NBR 6118.
+
+**16. Quanto de aço precisa por m² de laje?**
+Varia com o vão e a carga. Orientativo para lajes residenciais:
+- Laje treliçada (vão 4–5 m): 8 a 12 kg/m²
+- Laje maciça (vão 4–5 m): 10 a 18 kg/m²
+- Laje nervurada (vão 6–8 m): 12 a 20 kg/m²
+
+---
+
+## Sobre Pilares e Vigas
+
+**17. Qual a dimensão mínima de um pilar?**
+NBR 6118, item 13.2.3: menor dimensão da seção transversal ≥ 19 cm. Para pilares de seção circular: diâmetro ≥ 19 cm.
+
+**18. Qual a taxa de armadura mínima em pilares?**
+ρs,min = 0,4% da área bruta do pilar. Taxa máxima: 4% (fora de emendas) ou 8% (em emendas).
+
+**19. O pilar tem armadura nos quatro cantos, mas também precisa de barras intermediárias?**
+Sim. O espaçamento máximo entre barras consecutivas do pilar na face é 20 cm (NBR 6118, item 18.4.2.2). Barras intermediárias são necessárias quando os cantos ficam a mais de 20 cm de distância.
+
+**20. Quando é necessário usar viga de baldrame?**
+Sempre que as fundações forem isoladas (sapatas ou blocos), a viga de baldrame interliga os pilares no nível do piso, distribui e equaliza os recalques diferenciais, e serve de apoio para as paredes do embasamento.
+
+---
+
+## Sobre Fundações
+
+**21. Qual a diferença entre sapata isolada e sapata corrida?**
+Sapata isolada recebe a carga de um único pilar. Sapata corrida recebe a carga de uma parede ou de vários pilares alinhados — funciona como viga de fundação.
+
+**22. Quando usar fundação profunda (estacas) ao invés de fundação rasa (sapatas)?**
+Quando a capacidade de suporte do solo superficial é insuficiente para suportar as cargas da estrutura. A sondagem SPT indica a necessidade: solos com NSPT < 5 nos primeiros 2–3 metros geralmente exigem fundação profunda.
+
+**23. O que é o índice NSPT?**
+Número de golpes necessários para cravar 30 cm o amostrador padrão na sondagem SPT. NSPT < 5 = solo mole; NSPT 5 a 10 = solo médio; NSPT > 20 = solo firme a muito resistente.
+
+---
+
+## Sobre Concreto
+
+**24. Qual a diferença entre C25 e C30?**
+fck: C25 = 25 MPa; C30 = 30 MPa. Em prática: C30 tem maior resistência, menor permeabilidade, maior custo (~10-15% mais caro). Use C30 para ambientes agressivos (Classe III) ou cargas elevadas.
+
+**25. O que é slump e qual o valor ideal para lajes?**
+Slump (abatimento) mede a consistência do concreto fresco. Para lajes bombeadas: 14 a 18 cm. Para pilares e vigas com forma adensável: 10 a 16 cm. Slump alto facilita o lançamento mas pode reduzir a resistência se não controlado.
+
+**26. Por quanto tempo curar o concreto?**
+NBR 14931: cura úmida mínima de 3 dias para cimentos CP-V; 7 dias para CP-II, CP-III, CP-IV; mais tempo para ambientes agressivos. A cura inadequada pode reduzir a resistência em até 30%.
+
+---
+
+## Sobre Patologias
+
+**27. O que causa fissuras diagonais a 45° em vigas?**
+Esforço cortante excessivo — cisalhamento. Indica insuficiência de estribos ou concreto de baixa resistência. É um sinal crítico que requer avaliação estrutural urgente.
+
+**28. Manchas brancas na superfície do concreto são perigosas?**
+Dependem da causa. Eflorescência (sais brancos na superfície por migração de cálcio) é estética e indica umidade, mas não compromete estruturalmente. Lixiviação (perda de cálcio do concreto por lavagem contínua) é mais séria — fragiliza o material.
+
+**29. Como saber se a ferragem está enferrujando?**
+Sinais: manchas de ferrugem no concreto, fissuras longitudinais paralelas à armadura, desplacamento do cobrimento (lascamento). Em fase inicial, pode ser detectada por termografia ou mapeamento de potencial de corrosão.
+
+**30. O que fazer quando encontrar barra de aço exposta em uma estrutura existente?**
+1. Avaliar a extensão da corrosão (martelo de borracha — concreto delamina soa oco)
+2. Remover todo o concreto comprometido (demolição cirúrgica até 2 cm após a ferragem)
+3. Tratar a ferragem com convertedor de ferrugem ou jato de areia
+4. Reconstituir o cobrimento com argamassa de reparo polimérica
+5. Avaliar necessidade de reforço estrutural se a seção da barra estiver reduzida`
+
+  },
+  {
+    id: 131,
+    slug: "como-especificar-corte-e-dobra-projeto",
+    category: "Corte e Dobra",
+    title: "Como Especificar Corte e Dobra no Projeto Estrutural e na Planilha de Ferro",
+    metaDescription: "Guia para engenheiros sobre como especificar corte e dobra no memorial descritivo e na planilha de ferro, com os dados necessários para orçamento e fabricação.",
+    keyword: "como especificar corte e dobra projeto",
+    date: "21 Mai 2026",
+    summary: "O que o engenheiro precisa especificar para contratar corte e dobra: planilha de ferro, memorial descritivo, tolerâncias e dados para orçamento.",
+    content: `## Por que a Especificação Correta de Corte e Dobra Importa?
+
+A qualidade do serviço de corte e dobra depende diretamente das informações fornecidas pelo engenheiro calculista ou pelo responsável pela obra. Uma planilha de ferro incompleta resulta em peças erradas, retrabalho, atraso na entrega e custo adicional.
+
+Este guia é direcionado a engenheiros calculistas, arquitetos com projeto estrutural e gestores de obra que querem garantir que a indústria de corte e dobra produza exatamente o que o projeto especifica.
+
+## O que é a Planilha de Ferro (Mapa de Armação)?
+
+A planilha de ferro (também chamada mapa de armação ou boletim de aço) é o documento que relaciona todas as barras de aço de uma obra, organizadas por:
+- Elemento estrutural (pilar P1, viga V1, laje L1, etc.)
+- Posição dentro do elemento (armadura longitudinal, estribo, armadura negativa)
+- Bitola (diâmetro)
+- Comprimento das barras
+- Número de barras
+- Forma das dobras (se houver)
+
+É a base de fabricação do serviço de corte e dobra.
+
+## Dados Mínimos para a Planilha de Ferro
+
+| Campo | Descrição | Exemplo |
+|-------|-----------|---------|
+| Elemento | Identificação do elemento estrutural | P1, V-102, L3 |
+| Posição | Designação da barra no detalhe | 1, 2, 3... |
+| Material | Classe do aço | CA-50, CA-60 |
+| Diâmetro (φ) | Bitola em mm | 8, 10, 12,5, 16 mm |
+| Comprimento total | Comprimento desenvolvido da barra | 1,50 m, 2,35 m |
+| Quantidade | Número de barras iguais | 8 barras |
+| Forma de dobramento | Tipo de dobra (reta, com gancho, estribo) | Gancho 180° em ambas as extremidades |
+| Raio de dobramento | Raio da dobra em mm | 3,5 × φ (padrão CA-50) |
+
+## Como Montar a Planilha de Ferro: Passo a Passo
+
+### 1. Extrair as barras do projeto estrutural
+Analisar cada detalhe de armação (pilares, vigas, lajes, fundações) e listar cada barra com suas características.
+
+### 2. Calcular o comprimento desenvolvido
+O comprimento desenvolvido é o comprimento real do aço, incluindo os trechos retos e os arcos de dobra.
+
+**Para gancho de 90°:** acrescentar 8 × φ ao comprimento reto.
+**Para gancho de 180°:** acrescentar 4,5 × φ.
+**Para estribo fechado com ganchos de 135°:** comprimento = (2 × altura + 2 × largura) + 2 × 5 × φ (extensão do gancho).
+
+### 3. Multiplicar pela quantidade
+Quantidade × comprimento desenvolvido = comprimento total de cada bitola/tipo.
+
+### 4. Calcular o peso
+Peso (kg) = comprimento total (m) × peso linear (kg/m)
+
+| Bitola | Peso linear (kg/m) |
+|--------|-------------------|
+| φ 4,2 mm | 0,109 |
+| φ 5,0 mm | 0,154 |
+| φ 6,3 mm | 0,245 |
+| φ 8,0 mm | 0,395 |
+| φ 10,0 mm | 0,617 |
+| φ 12,5 mm | 0,963 |
+| φ 16,0 mm | 1,578 |
+| φ 20,0 mm | 2,466 |
+| φ 25,0 mm | 3,853 |
+| φ 32,0 mm | 6,313 |
+
+## O que Incluir no Memorial Descritivo Estrutural
+
+O memorial descritivo é o documento que acompanha o projeto e define as especificações técnicas. Para corte e dobra, deve conter:
+
+1. **Normas de referência:** NBR 6118:2014, NBR 7480 (aço)
+2. **Classes de aço:** CA-50 para armaduras principais; CA-60 para estribos e malhas; especificar claramente onde cada classe é usada
+3. **Dimensões das barras:** comprimentos mínimos e máximos aceitáveis (tolerância ± 5 mm é padrão industrial)
+4. **Raios de dobramento:** conforme NBR 7480 e NBR 6118 (mínimo 3,5 × φ para CA-50 com φ ≤ 20 mm)
+5. **Identificação:** cada peça deve vir etiquetada com o elemento estrutural e a posição (ex.: "P1 - pos.2")
+6. **Prazo de entrega:** alinhado com o cronograma de concretagem da obra
+
+## Comunicação com a Indústria de Corte e Dobra
+
+### O que enviar para solicitar orçamento
+- Planilha de ferro (Excel ou PDF) com todos os campos acima
+- Ou: projeto estrutural (PDF) com detalhes de armação claramente legíveis
+- Endereço da obra e prazo desejado de entrega
+
+### O que esperar receber
+- Orçamento por kg de aço, por bitola ou por pacote/lote
+- Prazo de produção e entrega
+- Método de identificação das peças
+
+### Tolerâncias de Fabricação (NBR 7480)
+| Dimensão | Tolerância |
+|----------|------------|
+| Comprimento das barras ≤ 6 m | ± 5 mm |
+| Comprimento das barras > 6 m | ± 10 mm |
+| Ângulo de dobra | ± 2° |
+| Diâmetro | ± 4% do nominal |
+
+## Erros Comuns ao Especificar Corte e Dobra
+
+1. **Esquecer o comprimento de ancoragem:** especificar apenas o comprimento do elemento estrutural sem incluir os ganchos ou comprimentos de transpasse
+2. **Não indicar a classe do aço:** "vergalhão 10 mm" sem especificar CA-50 ou CA-60
+3. **Dobras sem dimensões:** detalhar a forma das dobras sem indicar as dimensões dos tramos retos
+4. **Planilha de ferro sem a posição:** números de posição não vinculados ao detalhe do projeto — dificulta conferência em obra
+
+A BR Aço aceita projetos estruturais em PDF e planilhas de ferro em Excel ou AutoCAD. Nossa equipe técnica confere cada detalhe antes da produção para evitar erros e retrabalho.`
+  },
+  {
+    id: 132,
+    slug: "nbr-8800-estrutura-metalica-vs-concreto",
+    category: "Projeto Estrutural",
+    title: "NBR 8800: Estrutura Metálica vs Concreto Armado — Quando Usar Cada Uma",
+    metaDescription: "Diferenças entre estrutura metálica (NBR 8800) e concreto armado (NBR 6118): quando usar cada sistema, comparativo técnico e econômico.",
+    keyword: "estrutura metálica vs concreto armado quando usar",
+    date: "21 Mai 2026",
+    summary: "Comparativo técnico e econômico entre estrutura metálica (NBR 8800) e concreto armado (NBR 6118): peso, prazo, custo, durabilidade e manutenção.",
+    content: `## Dois Sistemas Estruturais, Um Objetivo
+
+Estrutura metálica e concreto armado são os dois grandes sistemas de construção civil para edificações. Cada um tem vantagens em situações específicas. A escolha correta afeta custo, prazo, durabilidade e flexibilidade da obra.
+
+## Estrutura Metálica — NBR 8800
+
+A NBR 8800:2008 rege o projeto de estruturas de aço para edificações. Usa perfis de aço estrutural (aço ASTM A36, A572 ou equivalentes brasileiros — MR250, MR350, ASTM A572 Gr50) ligados por parafusos, pinos ou solda.
+
+### Tipos de perfis estruturais
+- **Perfis laminados:** I, H, U, L, T (produzidos por laminação a quente)
+- **Perfis soldados:** montados em fábrica por soldagem de chapas
+- **Perfis formados a frio:** fios e chapas conformados a frio — telhas, painéis, montantes de drywall
+
+### Módulo de elasticidade do aço estrutural
+E_aço = 200.000 MPa — 7 vezes maior que o concreto (E_concreto ≈ 28.000 MPa para C25).
+
+Isso significa que a estrutura metálica é muito mais rígida com a mesma quantidade de material.
+
+## Comparativo Técnico: Aço Estrutural vs Concreto Armado
+
+| Critério | Estrutura Metálica | Concreto Armado |
+|----------|-------------------|-----------------|
+| Resistência à tração | ✅ Excelente (peça inteira trabalha à tração) | ❌ Depende do aço (concreto não resiste à tração) |
+| Resistência à compressão | ✅ Boa (verificar flambagem) | ✅ Excelente |
+| Peso próprio | ✅ Muito leve (peso 1/3 do concreto equivalente) | ❌ Pesado — concreto: 25 kN/m³ |
+| Resistência ao fogo | ❌ Perde 50% da resistência a 550°C sem proteção | ✅ Melhor resistência natural ao fogo |
+| Resistência à corrosão | ❌ Requer proteção (pintura, galvanização) | ✅ Melhor (armadura protegida pelo concreto) |
+| Velocidade de execução | ✅ Rápida — montagem a seco | ❌ Mais lenta — cura do concreto, fôrmas |
+| Flexibilidade de redesign | ✅ Alta — parafusos podem ser removidos | ❌ Baixa — concreto é permanente |
+| Manutenção | ❌ Pintura periódica necessária | ✅ Menor manutenção em condições normais |
+| Custo de material (por kg) | ❌ Maior | ✅ Menor |
+| Custo total em vãos curtos | ❌ Geralmente maior | ✅ Geralmente menor |
+| Custo total em vãos longos | ✅ Pode ser menor | ❌ Geralmente maior |
+
+## Quando Usar Estrutura Metálica?
+
+| Situação | Motivo |
+|----------|--------|
+| Galpões industriais com vãos > 15 m | Perfis metálicos cobrem grandes vãos com baixo peso próprio |
+| Obras com prazo muito curto | Montagem a seco — sem esperar cura do concreto |
+| Edifícios de escritórios com planta livre | Vãos longos e leveza |
+| Towers de telecomunicação | Leveza e facilidade de transporte e montagem |
+| Estruturas provisórias | Facilidade de desmontagem e reaproveitamento |
+| Reformas e ampliações | Menos carga sobre estrutura existente |
+
+## Quando Usar Concreto Armado?
+
+| Situação | Motivo |
+|----------|--------|
+| Edifícios residenciais até 20 pavimentos | Custo otimizado, tradição construtiva, mão de obra disponível |
+| Fundações | Concreto é o material padrão para fundações |
+| Estruturas expostas a umidade e corrosão | Durabilidade superior sem manutenção intensiva |
+| Reservatórios, piscinas, silos | Impermeabilidade natural |
+| Regiões sem mão de obra metálica especializada | Concreto armado tem mão de obra mais disponível no Brasil |
+
+## Estruturas Mistas (Aço + Concreto)
+
+O sistema misto combina o melhor dos dois mundos: perfis de aço como viga (que resiste à tração) e laje de concreto como mesa de compressão. A laje e a viga são solidarizadas por conectores de cisalhamento (studs).
+
+Muito usado em edifícios de escritórios e galpões de médio porte.
+
+## Normas Brasileiras Relevantes
+
+| Norma | Assunto |
+|-------|---------|
+| NBR 8800:2008 | Projeto de estruturas de aço para edificações |
+| NBR 6118:2014 | Projeto de estruturas de concreto armado |
+| NBR 14323 | Estruturas de aço em situação de incêndio |
+| NBR 7190 | Projeto de estruturas de madeira |
+| NBR 6120:2019 | Ações para o cálculo de estruturas |
+
+## O Papel do Aço de Construção Civil (CA-50, CA-60)
+
+O aço CA-50 e CA-60 — os vergalhões usados no concreto armado — são um produto completamente diferente dos perfis de aço estrutural da NBR 8800. Vergalhão é aço para armação de concreto; aço estrutural (perfis I, H, U) é para estruturas metálicas independentes.
+
+A BR Aço fornece vergalhões CA-50 e CA-60 para concreto armado, com serviço de corte e dobra conforme projeto estrutural.`
+  },
+  {
+    id: 133,
+    slug: "armacao-de-lajes-detalhamento-completo",
+    category: "Projeto Estrutural",
+    title: "Armação de Lajes: Detalhamento Completo das Armaduras Conforme NBR 6118",
+    metaDescription: "Detalhamento completo da armação de lajes maciças: armadura positiva e negativa, bordas, distribuição, construtiva, ancoragem e comprimentos mínimos segundo NBR 6118.",
+    keyword: "armação de lajes detalhamento",
+    date: "21 Mai 2026",
+    summary: "Detalhamento da armação de lajes maciças: positiva, negativa, distribuição, bordas livres, ancoragem e tabelas de comprimentos mínimos.",
+    content: `## Tipos de Armadura em Lajes Maciças
+
+Uma laje maciça pode ter até 5 tipos de armadura, cada uma com função específica:
+
+### 1. Armadura Positiva (principal de flexão)
+Posicionada na face inferior da laje, na direção do menor vão (Lx). Resiste ao momento fletor positivo (tração na parte inferior, típico do vão central).
+
+### 2. Armadura Negativa (sobre apoios)
+Posicionada na face superior da laje, sobre as vigas ou paredes de apoio. Resiste ao momento fletor negativo (tração na parte superior, gerado pelo engastamento no apoio).
+
+### 3. Armadura de Distribuição (construtiva transversal)
+Posicionada na mesma face que a armadura principal, mas na direção perpendicular. Taxa mínima: 20% da armadura principal, com mínimo de 0,9 cm²/m.
+
+### 4. Armadura de Borda Livre
+Lajes com borda não apoiada (balanços, aberturas) recebem armaduras adicionais de borda.
+
+### 5. Armadura Construtiva (face comprimida)
+Na face oposta à principal (face superior no vão), armadura mínima para controle de retração: ≥ 0,9 cm²/m.
+
+## Espessura Mínima por Situação (NBR 6118, item 13.2.3)
+
+| Situação | h mínima |
+|----------|---------|
+| Laje de cobertura não transitável | 7 cm |
+| Laje com tráfego leve de pedestres | 8 cm |
+| Laje com tráfego de veículos leves | 10 cm |
+| Laje plana (sem vigas) | 16 cm |
+| Laje nervurada — espessura da capa | 4 cm (sem tráfego) / 5 cm (com tráfego) |
+
+## Direção Preferencial do Momento
+
+Para laje com quatro apoios (bidirecional), o menor vão (Lx) recebe maior momento. A armadura principal segue o menor vão.
+
+Para laje com dois apoios opostos (unidirecional): toda a armadura principal segue a direção do vão.
+
+**Regra:** se Ly/Lx > 2, a laje funciona praticamente em uma direção (unidirecional).
+
+## Dimensionamento Orientativo — Lajes Residenciais (CA-50)
+
+### Laje Maciça Unidirecional — Simplesmente Apoiada
+
+| Vão (m) | Carga total (kN/m²) | Espessura (cm) | Armadura positiva | Espaçamento |
+|---------|--------------------|--------------|--------------------|-------------|
+| 3,0 | 6 a 8 | 10 | φ 8 | 20 cm |
+| 4,0 | 6 a 8 | 12 | φ 8 | 15 cm |
+| 4,5 | 6 a 8 | 13 | φ 10 | 20 cm |
+| 5,0 | 6 a 8 | 15 | φ 10 | 17,5 cm |
+| 5,5 | 6 a 8 | 16 | φ 10 | 15 cm |
+
+*Valores orientativos para lajes de cobertura/piso residencial. Verificar com calculista.*
+
+## Comprimento da Armadura Positiva além dos Apoios
+
+As barras da armadura positiva devem se estender além da face do apoio (viga ou parede) por:
+
+**Comprimento mínimo além da face do apoio:**
+- Para apoio de extremidade (borda): ≥ lb,ef (comprimento de ancoragem com gancho)
+- Para apoio intermediário (laje contínua): ≥ lb,ef ou até o ponto de inflexão + lb/3
+
+**Regra prática:** barras de fundo devem entrar no apoio pelo menos 12 cm além da face do apoio (mínimo absoluto para boas condições de ancoragem).
+
+## Comprimento da Armadura Negativa
+
+A armadura negativa sobre o apoio deve se estender para dentro dos vãos adjacentes até o ponto onde o momento negativo se anula. Na ausência de cálculo preciso:
+
+**Extensão mínima além da face do apoio:** L/4 (onde L é o vão adjacente)
+
+Para lajes com diferença de vão entre tramos adjacentes, usar o maior vão para determinar o comprimento da armadura negativa.
+
+## Espaçamento Máximo da Armadura (NBR 6118, item 17.3.3.2)
+
+| Armadura | Espaçamento máximo |
+|----------|-------------------|
+| Armadura principal (momentos) | 2 × h ≤ 20 cm |
+| Armadura de distribuição | 3 × h ≤ 33 cm |
+
+*h = espessura total da laje*
+
+## Detalhamento das Bordas Livres (NBR 6118, item 14.6.8)
+
+Bordas livres (não apoiadas) de lajes devem receber armadura especial:
+- Uma barra de borda ao longo da borda, com cobrimento normal
+- Ou armadura em U (laço) circundando a borda
+
+A NBR 6118 exige armadura de borda em todas as bordas de lajes não apoiadas.
+
+## Aberturas em Lajes
+
+Aberturas (para escadas, dutos, poços de elevador) interrompem as armaduras. Ao redor da abertura, adicionar:
+- Barras paralelas à abertura em quantidade equivalente às barras interrompidas
+- Barras diagonais nos cantos da abertura (φ 10 ou 12,5 mm, comprimento ≥ 1 m de cada lado)
+
+**Regra:** pequenas aberturas (< h × h) podem ser executadas sem reforço estrutural. Aberturas maiores exigem avaliação do calculista.
+
+## Checklist de Verificação antes da Concretagem
+
+- [ ] Cobrimento verificado com espaçadores em todas as faces
+- [ ] Armadura positiva na face correta (inferior)
+- [ ] Armadura negativa posicionada sobre os apoios (face superior)
+- [ ] Diâmetro máximo das barras ≤ h/8
+- [ ] Espaçamento das barras dentro dos limites normativos
+- [ ] Barras de borda nas bordas livres
+- [ ] Reforço nas aberturas
+- [ ] Comprimentos de ancoragem nos apoios`
+  },
+  {
+    id: 134,
+    slug: "classes-do-concreto-quando-usar",
+    category: "Concreto",
+    title: "Classes do Concreto: Quando Usar C20, C25, C30, C35 e C40",
+    metaDescription: "Guia completo sobre as classes de concreto: fck de C20 a C50, quando especificar cada classe, requisitos mínimos da NBR 6118 por classe de agressividade e aplicações.",
+    keyword: "classes do concreto C20 C25 C30 quando usar",
+    date: "21 Mai 2026",
+    summary: "Quando usar cada classe de concreto: fck mínimo por classe de agressividade, propriedades e aplicações do C20 ao C50.",
+    content: `## O que Significa a Classe do Concreto?
+
+A classe do concreto é definida pelo seu fck (resistência característica à compressão simples) determinado a 28 dias de cura. A designação "C25" significa fck = 25 MPa — abaixo desse valor, pode-se encontrar no máximo 5% dos resultados de compressão.
+
+A NBR 6118:2014 define os requisitos mínimos por classe de agressividade ambiental, mas o engenheiro pode especificar uma classe superior quando as solicitações estruturais assim exigem.
+
+## Propriedades Principais por Classe
+
+| Classe | fck (MPa) | Ec (GPa) | fctm (MPa) | Cobrimento mín. (col/viga) | fck mín. por norma? |
+|--------|----------|---------|-----------|---------------------------|---------------------|
+| C20 | 20 | 25,1 | 2,21 | 25 mm (classe I) | Sim — CAA I |
+| C25 | 25 | 28,0 | 2,56 | 35 mm (classe II) | Sim — CAA II |
+| C30 | 30 | 30,7 | 2,90 | 45 mm (classe III) | Sim — CAA III |
+| C35 | 35 | 33,0 | 3,21 | 65 mm (classe IV) | Sim — CAA IV |
+| C40 | 40 | 35,2 | 3,51 | — | Não exigido por agressividade |
+| C45 | 45 | 37,2 | 3,80 | — | Por requisitos de projeto |
+| C50 | 50 | 39,1 | 4,07 | — | Por requisitos de projeto |
+
+*Ec = módulo de elasticidade secante; fctm = resistência à tração média*
+
+## C20 — Quando Usar
+
+**fck = 20 MPa**
+
+- **Uso:** estruturas em ambiente interno seco (Classe I) — residências, interiores protegidos
+- **Mínimo por norma:** CAA I
+- **Limitações:** não usar em ambientes úmidos, costeiros ou industriais
+- **Exemplo:** vigas e pilares de residências unifamiliares em regiões secas sem agentes agressivos
+
+Atenção: embora seja o mínimo normativo para CAA I, muitos projetistas adotam C25 mesmo para CAA I como margem de segurança e facilidade de controle.
+
+## C25 — Quando Usar
+
+**fck = 25 MPa**
+
+- **Uso:** o concreto mais comum em estruturas residenciais e comerciais convencionais
+- **Mínimo por norma:** CAA II (urbano)
+- **Quando especificar:** a maioria dos edifícios residenciais em cidades (ambiente urbano = CAA II)
+- **Vantagem:** fácil disponibilidade em toda rede de usinas de concreto
+- **Aplicações:** pilares, vigas, lajes, fundações em ambiente urbano seco a moderado
+
+C25 cobre 80% das obras residenciais e comerciais convencionais no Brasil.
+
+## C30 — Quando Usar
+
+**fck = 30 MPa**
+
+- **Uso:** ambientes agressivos (CAA III), estruturas mais solicitadas, ou quando há exigência de menor permeabilidade
+- **Mínimo por norma:** CAA III (marinha, industrial, respingos de cloretos)
+- **Quando especificar:**
+  - Obras na costa marítima ou com exposição a cloretos
+  - Pilares expostos (garagens abertas, coberturas)
+  - Lajes de garagem com tráfego de veículos
+  - Obras com carga elevada onde C25 resultaria em seções muito grandes
+
+**Propriedades melhores que C25:**
+- Permeabilidade 30 a 40% menor
+- Módulo de elasticidade maior (menos flecha)
+- Melhor resistência ao desgaste
+
+## C35 — Quando Usar
+
+**fck = 35 MPa**
+
+- **Uso:** CAA IV (muito forte — imersão, solos agressivos), ou por requisito de projeto
+- **Mínimo por norma:** CAA IV
+- **Quando especificar:**
+  - Pilares de edifícios muito altos (compressão elevada)
+  - Vigas de grande vão (flecha controlada)
+  - Concreto protendido parcial (cabos com menor tensão)
+  - Estruturas em solos com sulfatos ou alta salinidade
+
+## C40 a C50 — Quando Usar
+
+**fck = 40 a 50 MPa**
+
+- **Uso:** projetos especiais — protensão, edifícios altos, obras de infraestrutura
+- **Quando especificar:**
+  - Concreto protendido (pós-tensão ou pré-tensão): mínimo C30 a C40
+  - Lajes alveolares pré-fabricadas: geralmente C40 a C50
+  - Pilares de edifícios com mais de 20 andares (seção reduzida)
+  - Pontes e viadutos
+  - Pisos industriais de alto tráfego
+
+**Nota:** concretos de alta resistência exigem controle tecnológico mais rigoroso e nem sempre estão disponíveis em usinas de menor porte.
+
+## Escolha da Classe: Guia Rápido
+
+| Situação | Classe recomendada |
+|----------|-------------------|
+| Residência unifamiliar em interior seco | C20 (mínimo) ou C25 (preferível) |
+| Edifício residencial urbano | C25 |
+| Edifício comercial / laje de garagem | C30 |
+| Estrutura costeira ou industrial | C30 a C35 |
+| Concreto protendido | C30 mínimo (C35 a C40 usuais) |
+| Edifício alto (> 20 pav.) | C35 a C40 |
+| Laje alveolar pré-fabricada | C40 a C50 |
+
+## Impacto da Classe no Custo
+
+O custo do concreto cresce com o fck:
+
+| Classe | Índice de custo relativo |
+|--------|--------------------------|
+| C20 | 1,00 (base) |
+| C25 | 1,08 |
+| C30 | 1,18 |
+| C35 | 1,32 |
+| C40 | 1,50 |
+
+O custo maior de um concreto de maior fck é compensado pela possibilidade de reduzir seções transversais (menos concreto e aço), pela maior durabilidade e pela redução de manutenção ao longo da vida útil da estrutura.
+
+## Classes de Concreto e o Consumo de Aço
+
+Concreto de maior resistência:
+- Permite seções menores nas peças estruturais
+- Reduz a taxa de armadura mínima em alguns casos
+- Aumenta a resistência de aderência às armaduras (menor comprimento de ancoragem necessário)
+
+Para projetos onde o custo do aço é preponderante, aumentar a classe do concreto pode ser economicamente vantajoso mesmo que eleve o custo do concreto em si.`
+  },
+  {
+    id: 135,
+    slug: "viga-t-secao-composta-comportamento",
+    category: "Projeto Estrutural",
+    title: "Viga T em Concreto Armado: Comportamento, Largura Efetiva e Armação",
+    metaDescription: "O que é viga T, como a laje colabora com a viga, largura efetiva da mesa segundo NBR 6118 e implicações para dimensionamento e armação.",
+    keyword: "viga T concreto armado largura efetiva",
+    date: "21 Mai 2026",
+    summary: "Viga T: colaboração da laje como mesa de compressão, largura efetiva pela NBR 6118 e implicações para dimensionamento da armação.",
+    content: `## O que é uma Viga T?
+
+Em edifícios de concreto armado, as vigas raramente funcionam isoladas. Quando a laje é concretada solidariamente com a viga, parte da laje passa a colaborar com a resistência à compressão da viga. O conjunto viga + aba de laje forma uma **seção T** (ou seção em forma de T).
+
+A colaboração da mesa de laje é vantajosa: aumenta a área de compressão e reduz a quantidade de aço necessária na viga.
+
+## Quando a Seção T é Reconhecida?
+
+A NBR 6118:2014, item 14.6.2, permite considerar a colaboração da mesa (laje) quando:
+- A laje é solidária com a viga (concretagem monolítica ou conectores adequados)
+- A espessura da mesa (laje) é adequada
+- A largura efetiva definida na norma é respeitada
+
+Para vigas simplesmente armadas (tração na parte inferior): a mesa de compressão é a laje — o benefício é máximo.
+
+Para vigas contínuas sobre apoios: na zona de momentos negativos, a tração passa para a face superior. Nessa zona, a mesa de laje fica em tração e **não colabora** com a compressão — a seção comporta-se como viga retangular.
+
+## Largura Efetiva da Mesa (NBR 6118, item 14.6.2)
+
+A largura efetiva bf é a largura de mesa que pode ser considerada no cálculo. Depende do vão, da geometria e da posição da viga.
+
+### Viga com mesa em ambos os lados (viga interna)
+
+bf = bw + 2 × bi (de cada lado)
+
+Onde bi é o menor dos seguintes valores:
+- L/10 (L = vão teórico da viga)
+- 0,5 × distância livre entre vigas adjacentes
+- 8 × espessura da laje (t_f)
+
+### Viga com mesa em um só lado (viga de borda)
+
+bf = bw + bi (de apenas um lado)
+
+bi = menor de: L/20, 0,5 × distância à viga adjacente, 6 × t_f
+
+### Exemplo de cálculo
+
+Dados:
+- Viga com bw = 25 cm, vão L = 6,0 m
+- Laje com espessura tf = 12 cm
+- Distância entre vigas: 3,5 m → distância livre = 3,5 − 0,25 = 3,25 m → 0,5 × 3,25 = 1,625 m
+
+Calculando bi (de cada lado, viga interna):
+- L/10 = 6,0/10 = 0,60 m
+- 0,5 × distância livre = 1,625 m
+- 8 × tf = 8 × 0,12 = 0,96 m
+
+bi = min(0,60; 1,625; 0,96) = **0,60 m**
+
+bf = 0,25 + 2 × 0,60 = **1,45 m**
+
+## Implicações para o Dimensionamento
+
+### No Vão (momento positivo — mesa em compressão)
+
+Com mesa de 1,45 m de largura, a linha neutra muito provavelmente está dentro da espessura da laje. Nesse caso:
+
+- A seção T comporta-se como uma seção retangular de largura bf = 1,45 m
+- O braço de momento interno (d − tf/2 ≈ d − 6 cm) é grande
+- **Resultado:** a armação de tração (face inferior) é significativamente menor do que em viga retangular com a mesma seção bw × h
+
+### No Apoio (momento negativo — mesa em tração)
+
+Na região de momento negativo (sobre o pilar), a laje está na zona de tração — não colabora. A seção resiste como retângulo com largura bw.
+
+- Armadura negativa (face superior) calculada para seção retangular bw × h
+- Maior consumo de aço por unidade de momento
+
+## Armação em Vigas T
+
+### Armadura de Vão (positiva)
+Vergalhões CA-50 posicionados na face inferior, dentro da alma (bw). A seção T reduz a quantidade necessária, mas as barras ficam apenas dentro da alma, não na mesa.
+
+### Armadura de Apoio (negativa)
+Vergalhões posicionados na face superior. Podem se espalhar pela mesa (largura bf) para melhor controle de fissuração.
+
+**Distribuição da armadura negativa pela mesa:**
+- Concentrar 2/3 da armadura dentro de largura bw + 0,6 × bf
+- Restante distribuir pela largura total bf
+
+### Estribos
+Os estribos envolvem apenas a alma (bw) da viga T — não precisam envolver a mesa.
+
+## Armação da Interface Mesa-Alma (Cisalhamento Longitudinal)
+
+A força de cisalhamento horizontal na interface laje-viga deve ser verificada (NBR 6118, item 14.6.2.4). Em geral, para obras convencionais com concretagem monolítica, essa verificação é satisfeita com a armadura transversal existente na laje.
+
+## Viga T Pré-moldada (Vigota + Laje)
+
+Nas lajes treliçadas, a vigota pré-moldada e a capa de concreto formam uma viga T invertida. O princípio de colaboração da mesa é o mesmo — a capa (laje) colabora com a compressão da vigota.
+
+A largura efetiva da mesa nesse caso é definida pelo espaçamento entre vigotas e pela espessura da capa.`
   }
 ];
 
