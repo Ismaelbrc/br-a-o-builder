@@ -92,12 +92,12 @@ export default function TebasResultado() {
     }
   }, [navigate]);
 
+  // useMemo DEVE ficar antes de qualquer early return (Rules of Hooks)
+  const aco = useMemo(() => resultado ? calcularAco(resultado) : null, [resultado]);
+
   if (!resultado) return null;
 
   const { laje, viga, pilar, sapata, input, geradoEm } = resultado;
-
-  // Resumo de aço calculado sob demanda (cálculo puro, sem efeitos colaterais)
-  const aco = useMemo(() => calcularAco(resultado), [resultado]);
 
   const TIPO_LABEL: Record<string, string> = {
     terreo: 'Térrea',
@@ -269,7 +269,7 @@ export default function TebasResultado() {
             )}
 
             {/* ── RESUMO AÇO ── */}
-            {activeTab === 'aco' && (
+            {activeTab === 'aco' && aco && (
               <div className="flex flex-col gap-5">
                 <h3 className="font-semibold" style={{ color: TEXT }}>
                   Estimativa de aço — orçamento preliminar
