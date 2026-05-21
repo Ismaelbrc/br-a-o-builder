@@ -334,11 +334,11 @@ describe('calcularPilar', () => {
     expect(r.pilar.areaTributaria).toBeCloseTo(16.0, 0);
   });
 
-  it('REGRESSÃO — 500 m² com vão=4 m deve ter nPilares >> 9', () => {
+  it('REGRESSÃO — 500 m² com vão=4 m: grelha correta = 49 pilares (não 9 nem 31)', () => {
     const r = calcular(GRANDE_VAO_PEQUENO);
     const aco = calcularAco(r);
-    // Com o bug corrigido: 500/16 = ~31 pilares
-    expect(aco.nPilares).toBeGreaterThan(20);
+    // Grelha 7×7: spacing=4m, aTrib=16, nBays=6 → (6+1)²=49
+    expect(aco.nPilares).toBe(49);
   });
 });
 
@@ -438,11 +438,24 @@ describe('calcularAco', () => {
     expect(somaP).toBeLessThanOrEqual(105);
   });
 
-  it('nPilares = max(round(area / aTrib), 4)', () => {
+  it('nPilares = (ceil(sqrt(area/aTrib)) + 1)² — fórmula de grelha correta', () => {
+    // Fórmula correta: conta pilares (vãos+1)², não vãos²
     const res = calcular(BASE);
     const aco = calcularAco(res);
-    const expected = Math.max(Math.round(BASE.area / res.pilar.areaTributaria), 4);
+    const nBays    = Math.ceil(Math.sqrt(BASE.area / res.pilar.areaTributaria));
+    const expected = Math.max((nBays + 1) ** 2, 4);
     expect(aco.nPilares).toBe(expected);
+  });
+
+  it('nPilares: distância entre pilares ≤ vão declarado', () => {
+    // A grelha não pode ter span > vão declarado — senão parte da laje fica em balanço
+    for (const inp of [BASE, SOBRADO2, SOBRADO3, COBERTURA, GARAGEM, GRANDE_VAO_PEQUENO]) {
+      const res = calcular(inp);
+      const aco = calcularAco(res);
+      const pilarsPerSide = Math.round(Math.sqrt(aco.nPilares));
+      const actualSpan = Math.sqrt(inp.area) / (pilarsPerSide - 1);
+      expect(actualSpan).toBeLessThanOrEqual(inp.vao + 0.01); // tolerância mínima de arredondamento
+    }
   });
 
   it('nPavimentos correto: sobrado2 → 2', () => {
@@ -469,16 +482,20 @@ describe('calcularAco', () => {
     expect(r3.totalKg).toBeGreaterThan(r2.totalKg);
   });
 
-  it('caso base ≈ 754 kg total (±20% — tolerância de estimativa)', () => {
-    // Backtest manual: ~754 kg para casa térrea 80 m²
+  it('caso base ≈ 1.012 kg total (±20% — tolerância de estimativa)', () => {
+    // Backtest manual com fórmula correta de nPilares (16 pilares, grelha 4×4):
+    // Laje: ~128 kg | Viga tração: ~217 kg | Viga estribo: ~73 kg
+    // Pilar long: ~348 kg | Pilar estribo: ~54 kg | Sapata: ~192 kg → ~1.012 kg
+    // (antes da correção: 9 pilares → ~754 kg — mas grelha deixava span de 4,47 m > vão=4 m)
     const r = calcularAco(calcular(BASE));
-    expect(r.totalKg).toBeGreaterThan(754 * 0.80);
-    expect(r.totalKg).toBeLessThan(754 * 1.20);
+    expect(r.totalKg).toBeGreaterThan(1012 * 0.80);
+    expect(r.totalKg).toBeLessThan(1012 * 1.20);
   });
 
-  it('REGRESSÃO — 500 m² vão=4 m: nPilares > 20 (não mais 9 fixos)', () => {
+  it('REGRESSÃO — 500 m² vão=4 m: nPilares ≈ 49 (grelha 7×7)', () => {
+    // spacing=4m, aTrib=16, nBays=ceil(sqrt(500/16))=ceil(5.59)=6 → (6+1)²=49
     const r = calcularAco(calcular(GRANDE_VAO_PEQUENO));
-    expect(r.nPilares).toBeGreaterThan(20);
+    expect(r.nPilares).toBe(49);
   });
 
   it('6 linhas de aço geradas (laje, viga tração, viga estribo, pilar long, pilar estribo, sapata)', () => {

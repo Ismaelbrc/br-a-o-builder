@@ -408,8 +408,20 @@ export function calcularAco(resultado: TebasResult): AcoResult {
   const { input, laje, viga, pilar, sapata } = resultado;
   const nPav = nPavimentos(input.tipo);
 
-  // Número estimado de pilares (planta regular)
-  const nPilares = Math.max(Math.round(input.area / pilar.areaTributaria), 4);
+  // Número estimado de pilares (planta regular — grelha quadrada)
+  //
+  // O espaçamento entre pilares é √(areaTributaria). Para cobrir a edificação
+  // precisamos de ceil(L/s) VÃOS em cada direção, logo (vãos+1) PILARES por lado.
+  //
+  // Fórmula correta: nPilares = (ceil(√(área/aTrib)) + 1)²
+  //
+  // ERRO histórico: round(área/aTrib) conta vãos², não pilares.
+  // Exemplo: 500 m², aTrib=16 → round(31,25)=31 pilares, mas a grelha tem
+  // ceil(5,59)=6 vãos → 7 pilares por lado → 49 pilares.
+  // Com 31 pilares a distância real entre eles seria 22,4/5,57≈4,89 m > vão
+  // declarado → parte da laje ficaria em balanço sem apoio.
+  const nBays    = Math.ceil(Math.sqrt(input.area / pilar.areaTributaria));
+  const nPilares = Math.max((nBays + 1) ** 2, 4);
 
   // Altura padrão de pavimento (piso-a-piso, inclui viga)
   const hPav = 3.0; // m
