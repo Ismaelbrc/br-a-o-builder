@@ -1,9 +1,14 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { TebasLayout } from '@/components/tebas/TebasLayout';
 import type { TebasResult } from '@/lib/tebas-types';
 import { TEBAS_RESULT_KEY } from '@/lib/tebas-types';
 import { calcularAco } from '@/lib/tebas-calc';
+
+// Three.js é pesado — carregado só quando a aba 3D é aberta
+const Tebas3D = lazy(() =>
+  import('@/components/tebas/Tebas3D').then(m => ({ default: m.Tebas3D }))
+);
 
 // ── Paleta ────────────────────────────────────────────────────────────────────
 const ORANGE = '#F47A20';
@@ -14,10 +19,11 @@ const TEXT = '#F1F5F9';
 const TEXT_DIM = 'rgba(241,245,249,0.55)';
 const GREEN = '#22C55E';
 
-type TabKey = 'laje' | 'viga' | 'pilar' | 'sapata' | 'aco';
+type TabKey = 'laje' | 'viga' | 'pilar' | 'sapata' | 'aco' | '3d';
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: 'aco',    label: 'Resumo Aço' },
+  { key: '3d',     label: '3D' },
   { key: 'laje',   label: 'Laje' },
   { key: 'viga',   label: 'Viga' },
   { key: 'pilar',  label: 'Pilar' },
@@ -269,6 +275,34 @@ export default function TebasResultado() {
                   </div>
                 )}
                 <NormaBox text={sapata.norma} />
+              </div>
+            )}
+
+            {/* ── VISUALIZAÇÃO 3D ── */}
+            {activeTab === '3d' && aco && (
+              <div className="flex flex-col gap-3">
+                <p className="text-xs" style={{ color: TEXT_DIM }}>
+                  Modelo esquemático gerado a partir dos dados de pré-dimensionamento.
+                  Ative <strong style={{ color: TEXT }}>Concreto</strong> e/ou{' '}
+                  <strong style={{ color: ORANGE }}>Aço</strong> para alternar as camadas.
+                  Arraste para girar · scroll para zoom.
+                </p>
+                <Suspense
+                  fallback={
+                    <div
+                      className="flex items-center justify-center rounded-xl"
+                      style={{ height: 480, background: SURFACE2, color: TEXT_DIM, fontSize: 14 }}
+                    >
+                      Carregando visualizador 3D…
+                    </div>
+                  }
+                >
+                  <Tebas3D resultado={resultado} aco={aco} />
+                </Suspense>
+                <p className="text-xs" style={{ color: TEXT_DIM }}>
+                  ⚠ Geometria simplificada para fins ilustrativos. Espaçamento de barras e
+                  quantidade de estribos são aproximações do dimensionamento calculado.
+                </p>
               </div>
             )}
 
