@@ -17,6 +17,9 @@ import type {
   ClasseConcreto,
   TipoEdificacao,
   UsoLaje,
+  AcoLinha,
+  AcoBitola,
+  AcoResult,
 } from './tebas-types';
 
 // ── Constantes ───────────────────────────────────────────────────────────────
@@ -138,9 +141,11 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
   const d = (h - 5); // cm
 
   // ── Carregamento na viga ──
-  // Largura tributária de laje: considera dois painéis de laje (um de cada lado)
-  // bTrib ≈ vão da laje / 2 (cada painel apoia metade na viga)
-  const bTrib = input.vao / 2; // m
+  // Viga interna (caso mais desfavorável): recebe carga dos dois painéis laterais de laje.
+  // Reação de cada painel biapoiado = (g+q) × L_laje / 2 por cada lado.
+  // Largura tributária total = vão_laje/2 + vão_laje/2 = vão_laje.
+  // Adotar bTrib = vão (conservador — viga interna, ambos os lados contribuem).
+  const bTrib = input.vao; // m — viga interna (condição mais carregada)
 
   // Carga permanente:
   //   peso próprio laje ~GAMMA_CA × h_laje/100 ≈ 25 × 0,16 = 4 kN/m²
@@ -193,6 +198,8 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
     estribos: estribosStr,
     momentoCalculo: parseFloat(Md.toFixed(1)),
     vaoEstimado: parseFloat(LViga.toFixed(1)),
+    nBarrasTracao: nBarras,
+    diametroTracao: 16,
     norma: [
       `NBR 6118:2023 §14.4 — h ≥ L/10 = ${(LViga / 10 * 100).toFixed(0)} cm → adotado ${h} cm`,
       `Md = ${Md.toFixed(1)} kN.m`,
@@ -226,15 +233,19 @@ function calcularPilar(input: TebasInput, _viga: VigaResult): PilarResult {
   // Carga de cálculo (ELU) com coeficiente simplificado
   const Nd = GAMMA_F * Nk; // kN
 
-  // Área de concreto mínima (pilar curto, compressão centrada + exc. mínima):
-  // NRd = 0,85 × fcd × Ac + fyd × As
+  // Área de concreto mínima — NBR 6118:2023 §17.6.3.3 (compressão com exc. mínima):
+  // NRd = 0,80 × (αv2 × fcd × Ac + fyd × As)
+  //
+  //   αv2 = 1 − fck/250  (coeficiente de ductilidade — reduz resistência efetiva do concreto)
+  //   0,80 = fator de redução por excentricidade mínima obrigatória (e_min = h/30 ≥ 2 cm)
+  //
   // Assumindo ρ = 2% (taxa usual em edificações residenciais)
   const rho = 0.02;
-  // NRd = Ac × (0,85 × fcd + ρ × fyd)  [fcd, fyd em MPa]
-  // Ac [cm²] = Nd [kN] × 10 / (0,85 × fcd + ρ × fyd)
-  // (conversão: 1 kN = 1000 N; 1 MPa × cm² = 100 N → Nd_N = Nd_kN × 1000; fcd_Ncm2 = fcd_MPa × 100)
-  // Ac = Nd×1000 / [(0,85×fcd + ρ×fyd)×100] = Nd×10 / (0,85×fcd + ρ×fyd)
-  const capacidade = 0.85 * fcdVal + rho * FYD; // MPa
+  const alphav2 = 1 - fck(input.concreto) / 250; // ex: C25 → αv2 = 0,90
+  // NRd = Ac × 0,80 × (αv2 × fcd + ρ × fyd)
+  // Ac [cm²] = Nd [kN] × 10 / [0,80 × (αv2 × fcd + ρ × fyd)]
+  // (conversão: 1 kN = 1000 N; 1 MPa × cm² = 100 N)
+  const capacidade = 0.80 * (alphav2 * fcdVal + rho * FYD); // MPa
   const acMin = (Nd * 10) / capacidade; // cm²
 
   // Seção padronizada
@@ -242,13 +253,13 @@ function calcularPilar(input: TebasInput, _viga: VigaResult): PilarResult {
 
   // Armadura adotada
   const asAdot = rho * bPilar * hPilar; // cm²
-  // Série de barras: 4 barras φ12,5 = 4,91 cm² / 4φ16 = 8,04 / 4φ20 = 12,57
+  // Série de barras: [Área cm², label, nBarras, diâmetro mm]
   let armStr: string;
-  const barras: Array<[number, string]> = [
-    [4.91, '4φ12,5 mm'],
-    [8.04, '4φ16 mm'],
-    [12.57, '4φ20 mm'],
-    [20.11, '4φ25 mm'],
+  const barras: Array<[number, string, number, number]> = [
+    [4.91,  '4φ12,5 mm', 4, 12.5],
+    [8.04,  '4φ16 mm',   4, 16  ],
+    [12.57, '4φ20 mm',   4, 20  ],
+    [20.11, '4φ25 mm',   4, 25  ],
   ];
   const barra = barras.find(([as]) => as >= asAdot);
   if (barra) {
@@ -256,6 +267,17 @@ function calcularPilar(input: TebasInput, _viga: VigaResult): PilarResult {
   } else {
     armStr = `${asAdot.toFixed(1)} cm² — verificar com projetista`;
   }
+
+  // Verificação indicativa de esbeltez (NBR 6118:2023 §11.5)
+  // le = 0,7 × h_pav (engastado-articulado, estimativa para edificação corrente)
+  // i  = menorDim / √12  (raio de giração da seção retangular)
+  const hPavEst = 3.0; // m — altura de piso estimada
+  const le_mm   = 0.7 * hPavEst * 1000; // mm
+  const i_mm    = (Math.min(bPilar, hPilar) * 10) / Math.sqrt(12); // mm
+  const lambda   = parseFloat((le_mm / i_mm).toFixed(1));
+  const avEsb    = lambda > 35
+    ? `⚠ λ ≈ ${lambda} > 35 — pilar de esbeltez MÉDIA: verificar 2ª ordem com projetista`
+    : `λ ≈ ${lambda} ≤ 35 — pilar curto (2ª ordem desprezível)`;
 
   return {
     largura: bPilar,
@@ -266,11 +288,14 @@ function calcularPilar(input: TebasInput, _viga: VigaResult): PilarResult {
     cargaCalculo: parseFloat(Nd.toFixed(0)),
     areaTributaria: parseFloat(aTrib.toFixed(1)),
     acMin: parseFloat(acMin.toFixed(1)),
+    nBarrasLongitudinal: barra ? barra[2] : 4,
+    diametroLongitudinal: barra ? barra[3] : 25,
     norma: [
-      `NBR 6118:2023 §15 — Nd = ${Nd.toFixed(0)} kN`,
+      `NBR 6118:2023 §17.6.3.3 — Nd = ${Nd.toFixed(0)} kN · αv2 = ${alphav2.toFixed(2)}`,
       `A_trib = ${aTrib.toFixed(1)} m² · ${nPav} pav.`,
       `Ac_min = ${acMin.toFixed(1)} cm² → seção ${bPilar}×${hPilar} cm`,
       `Seção mínima 20 cm (NBR 6118 §15.7.1)`,
+      avEsb,
     ].join(' | '),
   };
 }
@@ -315,11 +340,169 @@ function calcularSapata(input: TebasInput, pilar: PilarResult): SapataResult {
     sptUsado,
     norma: [
       `NBR 6122:2019 §8.3 — σ_adm = 13×NSPT = ${sigmaAdm} kN/m² (NSPT=${sptUsado})`,
+      `Correlação válida para solos finos (argilas/siltes) — solos arenosos exigem laudo geotécnico específico`,
       `Área = ${aNec.toFixed(2)} m² → L = ${lado.toFixed(2)} m`,
-      `h = ${h.toFixed(2)} m`,
+      `h ≥ (L−b)/4 = ${h.toFixed(2)} m (biela rígida — NBR 6118 §22.6.1)`,
       input.temSpt ? '' : '⚠ SPT não informado — SPT=5 (conservador)',
     ].filter(Boolean).join(' | '),
   };
+}
+
+// ── 5. RESUMO DE AÇO (estimativa para projeção de custo) ─────────────────────
+
+/**
+ * Peso linear (kg/m) de vergalhão por diâmetro nominal d (mm).
+ * Fórmula: ρ = (π/4 × d²) × γ_aço = (π/4 × d²) × 7,85×10⁻³ kg/mm²/m
+ * Verificação: φ16 → π/4 × 256 × 7,85e-3 = 1,578 kg/m ✓ (tabela CA-50)
+ */
+function kgPorMetro(d: number): number {
+  return (Math.PI / 4) * d * d * 7.85e-3; // kg/m
+}
+
+/**
+ * Estima as quantidades de aço por elemento para orçamento preliminar.
+ *
+ * Modelo simplificado de grelha:
+ *   - Total de vigas por pavimento ≈ 6 × √área (perímetro 4√A + ~2 vigas internas)
+ *   - Nº de pilares ≈ área / areaTributária, mínimo 4
+ *   - Altura de pavimento padrão: 3,0 m
+ *
+ * Tolerância esperada: ±30–40%. Destina-se exclusivamente a estudo de viabilidade.
+ */
+export function calcularAco(resultado: TebasResult): AcoResult {
+  const { input, laje, viga, pilar, sapata } = resultado;
+  const nPav = nPavimentos(input.tipo);
+
+  // Número estimado de pilares (planta regular)
+  const nPilares = Math.max(Math.round(input.area / pilar.areaTributaria), 4);
+
+  // Altura padrão de pavimento (piso-a-piso, inclui viga)
+  const hPav = 3.0; // m
+
+  // Comprimento total de vigas por pavimento: 6 × √A (perímetro + vigas internas)
+  const L_vigas_pav = 6.0 * Math.sqrt(input.area); // m/pav
+  const L_vigas_tot = L_vigas_pav * nPav;           // m total
+
+  // ─── Laje — malha soldada CA-60 φ4,2 c/15×15 cm ────────────────────────────
+  const dMalha = 4.2;    // mm
+  const espc  = 0.15;    // m
+  // Peso bidirecional por m²: 2 × (1/0,15) × kg/m = ~1,45 kg/m²
+  const kgM2_laje       = 2 * (1 / espc) * kgPorMetro(dMalha);
+  const areaLajeTot     = input.area * nPav;         // m²
+  const comprLaje       = areaLajeTot * 2 / espc;    // m lineares
+  const pesoLaje        = areaLajeTot * kgM2_laje * 1.10; // +10% emendas
+
+  // ─── Viga — tração (bitola fixa φ16 CA-50) ──────────────────────────────────
+  // Allow. ganchos: 0,8 m por extremidade → ratio = 1 + 1,6/vão
+  const hookRatio       = 1 + 1.6 / viga.vaoEstimado;
+  const comprTracao     = viga.nBarrasTracao * hookRatio * L_vigas_tot; // m lineares
+  const pesoVigaTracao  = comprTracao * kgPorMetro(viga.diametroTracao);
+
+  // ─── Viga — estribos φ6,3 CA-50 ─────────────────────────────────────────────
+  // Perímetro do estribo = nervura abaixo da laje (h - espessura_laje) + bw + ganchos
+  const hNerv_cm        = viga.altura - laje.espessura; // cm
+  const perimEstrV_m    = 2 * (viga.largura + hNerv_cm) / 100 + 0.12; // m
+  const sEstrV          = 0.18; // m — espaçamento médio (extremos ~15 cm, centro ~20 cm)
+  const nEstrV          = L_vigas_tot / sEstrV;
+  const comprEstrV      = nEstrV * perimEstrV_m;
+  const pesoVigaEstr    = comprEstrV * kgPorMetro(6.3);
+
+  // ─── Pilar — longitudinal ────────────────────────────────────────────────────
+  // +15% para emendas e ancoragem nas fundações/lajes
+  const comprLongPilar  = pilar.nBarrasLongitudinal * nPilares * nPav * hPav * 1.15;
+  const pesoPilarLong   = comprLongPilar * kgPorMetro(pilar.diametroLongitudinal);
+
+  // ─── Pilar — estribos φ6,3 CA-50 ────────────────────────────────────────────
+  const perimEstrP_m    = 2 * (pilar.largura + pilar.altura) / 100 + 0.12; // m
+  const sEstrP_m        = Math.min(pilar.largura, 20) / 100; // ≤ menor dim. seção, ≤ 20 cm
+  const nEstrP          = nPilares * nPav * hPav / sEstrP_m;
+  const comprEstrP      = nEstrP * perimEstrP_m;
+  const pesoPilarEstr   = comprEstrP * kgPorMetro(6.3);
+
+  // ─── Sapata — malha φ10 CA-50 c/15 cm ──────────────────────────────────────
+  const dSap            = 10; // mm
+  const kgM2_sap        = 2 * (1 / espc) * kgPorMetro(dSap); // ~8,23 kg/m²
+  const areaUmaSap      = sapata.lado * sapata.lado; // m²
+  const comprSap        = nPilares * areaUmaSap * 2 / espc; // m lineares
+  const pesoSap         = nPilares * areaUmaSap * kgM2_sap * 1.10; // +10% emendas
+
+  // ─── Helpers de formatação ───────────────────────────────────────────────────
+  const arred = (n: number) => Math.round(n);
+  const dStr  = (d: number) =>
+    d % 1 !== 0 ? d.toFixed(1).replace('.', ',') : String(d);
+
+  // ─── Montar linhas ───────────────────────────────────────────────────────────
+  const linhas: AcoLinha[] = [
+    {
+      elemento:         `Laje (${nPav} pav.)`,
+      bitola:           'φ4,2 CA-60',
+      diametro:         4.2,
+      comprimentoTotal: arred(comprLaje),
+      pesoKg:           arred(pesoLaje),
+      descricao:        `Tela Q-92 · ${areaLajeTot} m² · c/15×15 cm (+10%)`,
+    },
+    {
+      elemento:         `Viga (${nPav} pav.)`,
+      bitola:           `φ${dStr(viga.diametroTracao)} CA-50`,
+      diametro:         viga.diametroTracao,
+      comprimentoTotal: arred(comprTracao),
+      pesoKg:           arred(pesoVigaTracao),
+      descricao: `${viga.nBarrasTracao} barras/seção · ~${arred(L_vigas_pav)} m viga/pav.`,
+    },
+    {
+      elemento:         `Viga (${nPav} pav.)`,
+      bitola:           'φ6,3 CA-50',
+      diametro:         6.3,
+      comprimentoTotal: arred(comprEstrV),
+      pesoKg:           arred(pesoVigaEstr),
+      descricao:        `Estribos c/18 cm méd. · ${arred(nEstrV)} uni.`,
+    },
+    {
+      elemento:         `Pilar (${nPav} pav.)`,
+      bitola:           `φ${dStr(pilar.diametroLongitudinal)} CA-50`,
+      diametro:         pilar.diametroLongitudinal,
+      comprimentoTotal: arred(comprLongPilar),
+      pesoKg:           arred(pesoPilarLong),
+      descricao: `${pilar.nBarrasLongitudinal} barras/pilar · ${nPilares} pilares`,
+    },
+    {
+      elemento:         `Pilar (${nPav} pav.)`,
+      bitola:           'φ6,3 CA-50',
+      diametro:         6.3,
+      comprimentoTotal: arred(comprEstrP),
+      pesoKg:           arred(pesoPilarEstr),
+      descricao: `Estribos c/${arred(sEstrP_m * 100)} cm · ${arred(nEstrP)} uni.`,
+    },
+    {
+      elemento:         'Sapata (fund.)',
+      bitola:           'φ10 CA-50',
+      diametro:         10,
+      comprimentoTotal: arred(comprSap),
+      pesoKg:           arred(pesoSap),
+      descricao: `${nPilares} sap. ${sapata.lado.toFixed(2)}×${sapata.lado.toFixed(2)} m`,
+    },
+  ];
+
+  // ─── Agrupar por bitola ──────────────────────────────────────────────────────
+  const bitolaMap = new Map<string, { diametro: number; pesoKg: number }>();
+  for (const l of linhas) {
+    const cur = bitolaMap.get(l.bitola);
+    if (cur) cur.pesoKg += l.pesoKg;
+    else bitolaMap.set(l.bitola, { diametro: l.diametro, pesoKg: l.pesoKg });
+  }
+
+  const totalKg = linhas.reduce((s, l) => s + l.pesoKg, 0);
+
+  const porBitola: AcoBitola[] = Array.from(bitolaMap.entries())
+    .map(([bitola, v]) => ({
+      bitola,
+      diametro:   v.diametro,
+      pesoKg:     v.pesoKg,
+      percentual: Math.round((v.pesoKg / totalKg) * 100),
+    }))
+    .sort((a, b) => a.diametro - b.diametro);
+
+  return { linhas, porBitola, totalKg, nPavimentos: nPav, nPilares };
 }
 
 // ── Motor principal ───────────────────────────────────────────────────────────

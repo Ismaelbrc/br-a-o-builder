@@ -36,6 +36,8 @@ export interface VigaResult {
   estribos: string;
   momentoCalculo: number;  // kN.m
   vaoEstimado: number;   // m
+  nBarrasTracao: number;   // qtd barras de tração adotadas
+  diametroTracao: number;  // mm — bitola das barras de tração
   norma: string;
 }
 
@@ -48,6 +50,8 @@ export interface PilarResult {
   cargaCalculo: number;  // kN
   areaTributaria: number; // m²
   acMin: number;         // cm²
+  nBarrasLongitudinal: number;   // qtd barras longitudinais adotadas
+  diametroLongitudinal: number;  // mm — bitola longitudinal
   norma: string;
 }
 
@@ -68,6 +72,32 @@ export interface TebasResult {
   pilar: PilarResult;
   sapata: SapataResult;
   geradoEm: string;
+}
+
+// ── Resumo de aço (projeção de custo) ────────────────────────────────────────
+
+export interface AcoLinha {
+  elemento: string;          // ex: "Laje (2 pav.)"
+  bitola: string;            // ex: "φ4,2 CA-60"
+  diametro: number;          // mm — para ordenação
+  comprimentoTotal: number;  // m lineares totais
+  pesoKg: number;            // kg
+  descricao: string;         // nota de quantidade
+}
+
+export interface AcoBitola {
+  bitola: string;
+  diametro: number;
+  pesoKg: number;
+  percentual: number;        // % do total
+}
+
+export interface AcoResult {
+  linhas: AcoLinha[];
+  porBitola: AcoBitola[];
+  totalKg: number;
+  nPavimentos: number;
+  nPilares: number;
 }
 
 // sessionStorage key

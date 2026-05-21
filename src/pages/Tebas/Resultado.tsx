@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { TebasLayout } from '@/components/tebas/TebasLayout';
 import type { TebasResult } from '@/lib/tebas-types';
 import { TEBAS_RESULT_KEY } from '@/lib/tebas-types';
+import { calcularAco } from '@/lib/tebas-calc';
 
 // ── Paleta ────────────────────────────────────────────────────────────────────
 const ORANGE = '#F47A20';
@@ -13,13 +14,14 @@ const TEXT = '#F1F5F9';
 const TEXT_DIM = 'rgba(241,245,249,0.55)';
 const GREEN = '#22C55E';
 
-type TabKey = 'laje' | 'viga' | 'pilar' | 'sapata';
+type TabKey = 'laje' | 'viga' | 'pilar' | 'sapata' | 'aco';
 
 const TABS: { key: TabKey; label: string }[] = [
-  { key: 'laje', label: 'Laje' },
-  { key: 'viga', label: 'Viga' },
-  { key: 'pilar', label: 'Pilar' },
+  { key: 'laje',   label: 'Laje' },
+  { key: 'viga',   label: 'Viga' },
+  { key: 'pilar',  label: 'Pilar' },
   { key: 'sapata', label: 'Fundação' },
+  { key: 'aco',    label: 'Resumo Aço' },
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -93,6 +95,9 @@ export default function TebasResultado() {
   if (!resultado) return null;
 
   const { laje, viga, pilar, sapata, input, geradoEm } = resultado;
+
+  // Resumo de aço calculado sob demanda (cálculo puro, sem efeitos colaterais)
+  const aco = useMemo(() => calcularAco(resultado), [resultado]);
 
   const TIPO_LABEL: Record<string, string> = {
     terreo: 'Térrea',
@@ -260,6 +265,116 @@ export default function TebasResultado() {
                   </div>
                 )}
                 <NormaBox text={sapata.norma} />
+              </div>
+            )}
+
+            {/* ── RESUMO AÇO ── */}
+            {activeTab === 'aco' && (
+              <div className="flex flex-col gap-5">
+                <h3 className="font-semibold" style={{ color: TEXT }}>
+                  Estimativa de aço — orçamento preliminar
+                </h3>
+
+                {/* KPIs: total + custo orientativo */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="p-3 rounded-xl" style={{ background: SURFACE2, border: `1px solid ${BORDER}` }}>
+                    <span className="text-xs uppercase tracking-wide font-semibold" style={{ color: ORANGE }}>
+                      Total estimado
+                    </span>
+                    <p className="text-xl font-bold mt-1" style={{ color: TEXT }}>
+                      {aco.totalKg.toLocaleString('pt-BR')} kg
+                    </p>
+                    <p className="text-xs mt-0.5" style={{ color: TEXT_DIM }}>
+                      {aco.nPilares} pilares · {aco.nPavimentos} pav.
+                    </p>
+                  </div>
+                  <div className="p-3 rounded-xl" style={{ background: SURFACE2, border: `1px solid ${BORDER}` }}>
+                    <span className="text-xs uppercase tracking-wide font-semibold" style={{ color: ORANGE }}>
+                      Custo orientativo
+                    </span>
+                    <p className="text-xl font-bold mt-1" style={{ color: TEXT }}>
+                      R${' '}
+                      {(aco.totalKg * 7).toLocaleString('pt-BR', { maximumFractionDigits: 0 })}
+                      {' – '}
+                      {(aco.totalKg * 10).toLocaleString('pt-BR', { maximumFractionDigits: 0 })}
+                    </p>
+                    <p className="text-xs mt-0.5" style={{ color: TEXT_DIM }}>R$7–10/kg (mercado 2025)</p>
+                  </div>
+                </div>
+
+                {/* Tabela por elemento × bitola */}
+                <div>
+                  <p className="text-xs uppercase tracking-wide mb-2 font-semibold" style={{ color: TEXT_DIM }}>
+                    Por elemento
+                  </p>
+                  <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${BORDER}` }}>
+                    <div className="flex items-center px-3 py-2 text-xs font-semibold gap-2"
+                      style={{ background: SURFACE2, color: TEXT_DIM }}>
+                      <span className="flex-1">Elemento / Bitola</span>
+                      <span className="w-14 text-right">Comp. (m)</span>
+                      <span className="w-14 text-right">Peso (kg)</span>
+                    </div>
+                    {aco.linhas.map((l, i) => (
+                      <div key={i} className="flex items-start px-3 py-2 gap-2"
+                        style={{
+                          background: i % 2 === 0 ? SURFACE : 'rgba(255,255,255,0.02)',
+                          borderTop: `1px solid ${BORDER}`,
+                        }}>
+                        <div className="flex-1 min-w-0">
+                          <span className="text-xs font-medium block" style={{ color: TEXT }}>{l.elemento}</span>
+                          <span className="text-xs font-semibold" style={{ color: ORANGE }}>{l.bitola}</span>
+                          <span className="text-xs block mt-0.5" style={{ color: TEXT_DIM }}>{l.descricao}</span>
+                        </div>
+                        <span className="text-xs w-14 text-right pt-0.5" style={{ color: TEXT_DIM }}>
+                          {l.comprimentoTotal.toLocaleString('pt-BR')}
+                        </span>
+                        <span className="text-xs font-semibold w-14 text-right pt-0.5" style={{ color: TEXT }}>
+                          {l.pesoKg.toLocaleString('pt-BR')}
+                        </span>
+                      </div>
+                    ))}
+                    <div className="flex items-center px-3 py-2 gap-2 text-sm font-bold"
+                      style={{ background: 'rgba(244,122,32,0.08)', borderTop: `1px solid ${BORDER}` }}>
+                      <span className="flex-1" style={{ color: ORANGE }}>TOTAL</span>
+                      <span className="w-14" />
+                      <span className="w-14 text-right" style={{ color: ORANGE }}>
+                        {aco.totalKg.toLocaleString('pt-BR')}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Por bitola com barra de progresso */}
+                <div>
+                  <p className="text-xs uppercase tracking-wide mb-2 font-semibold" style={{ color: TEXT_DIM }}>
+                    Por bitola
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    {aco.porBitola.map(b => (
+                      <div key={b.bitola}>
+                        <div className="flex justify-between text-xs mb-1">
+                          <span className="font-semibold" style={{ color: TEXT }}>{b.bitola}</span>
+                          <span style={{ color: TEXT_DIM }}>
+                            {b.pesoKg.toLocaleString('pt-BR')} kg · {b.percentual}%
+                          </span>
+                        </div>
+                        <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ background: SURFACE2 }}>
+                          <div className="h-full rounded-full transition-all duration-500"
+                            style={{ width: `${b.percentual}%`, background: ORANGE }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Disclaimer aço */}
+                <div className="p-3 rounded-lg text-xs leading-relaxed"
+                  style={{ background: SURFACE2, border: `1px solid ${BORDER}`, color: TEXT_DIM }}>
+                  ⚠ Estimativa para <strong style={{ color: TEXT }}>orçamento preliminar</strong>{' '}
+                  com tolerância de ±30–40%. Assume {aco.nPilares} pilares, piso-a-piso 3,0 m,
+                  malha de vigas simplificada (6×√área/pav.) e uma sapata por pilar.
+                  Quantitativos reais dependem do projeto estrutural definitivo.
+                </div>
               </div>
             )}
           </div>

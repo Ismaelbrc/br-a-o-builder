@@ -83,6 +83,32 @@ function NumberInput({
   step?: number;
   unit: string;
 }) {
+  // Nº de casas decimais derivado do step: step < 1 → 1 decimal, caso contrário inteiro
+  const decimals = step < 1 ? 1 : 0;
+  const fmt = (n: number) => (decimals > 0 ? n.toFixed(decimals) : String(Math.round(n)));
+
+  const [display, setDisplay] = useState(() => fmt(value));
+
+  // Sincroniza display quando o valor muda pelos botões +/−
+  useEffect(() => {
+    setDisplay(fmt(value));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value]);
+
+  // Confirma e normaliza o valor ao sair do campo
+  const commit = (raw: string) => {
+    const parsed = parseFloat(raw.replace(',', '.'));
+    const committed = isNaN(parsed) ? value : Math.min(max, Math.max(min, parsed));
+    onChange(committed);
+    setDisplay(fmt(committed));
+  };
+
+  // Botões de incremento — arredondamento evita artefatos float (ex: 4.0 + 0.5 = 4.499...)
+  const step_ = (dir: 1 | -1) => {
+    const next = Math.round((value + dir * step) * 1e9) / 1e9;
+    onChange(Math.min(max, Math.max(min, next)));
+  };
+
   return (
     <div className="flex items-center gap-3">
       <div
@@ -90,15 +116,18 @@ function NumberInput({
         style={{ background: SURFACE, border: `2px solid ${BORDER_ACTIVE}` }}
       >
         <input
-          type="number"
-          value={value}
-          min={min}
-          max={max}
-          step={step}
+          type="text"
+          inputMode={decimals > 0 ? 'decimal' : 'numeric'}
+          value={display}
           onChange={e => {
-            const v = parseFloat(e.target.value);
-            if (!isNaN(v)) onChange(Math.min(max, Math.max(min, v)));
+            setDisplay(e.target.value);
+            // Atualiza em tempo real apenas quando já é um número válido no intervalo
+            const v = parseFloat(e.target.value.replace(',', '.'));
+            if (!isNaN(v) && v >= min && v <= max) onChange(v);
           }}
+          onBlur={e => commit(e.target.value)}
+          onFocus={e => e.target.select()}
+          onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); }}
           className="text-2xl font-bold w-24 bg-transparent border-none outline-none text-center"
           style={{ color: ORANGE }}
         />
@@ -107,7 +136,7 @@ function NumberInput({
       <div className="flex flex-col gap-1">
         <button
           type="button"
-          onClick={() => onChange(Math.min(max, value + step))}
+          onClick={() => step_(1)}
           className="w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
           style={{ background: SURFACE, color: TEXT }}
         >
@@ -115,7 +144,7 @@ function NumberInput({
         </button>
         <button
           type="button"
-          onClick={() => onChange(Math.max(min, value - step))}
+          onClick={() => step_(-1)}
           className="w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
           style={{ background: SURFACE, color: TEXT }}
         >
