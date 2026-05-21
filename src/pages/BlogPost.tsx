@@ -213,11 +213,6 @@ function BlogPostContent({ slug }: { slug: string }) {
     keywords: post.keyword,
   });
 
-  // Scroll to top on page load
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
-
   // Article + BreadcrumbList JSON-LD
   useEffect(() => {
     const articleSchema = {
