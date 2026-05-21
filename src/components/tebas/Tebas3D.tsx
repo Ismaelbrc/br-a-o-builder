@@ -273,12 +273,12 @@ function VigaAco({ from, to, vigaW, vigaH, nBarras, diam }: {
 }
 
 // ── Malha da laje ─────────────────────────────────────────────────────────────
-function MalhaLaje({ cols, rows, spacing, pilarW, y }: {
+function MalhaLaje({ cols, rows, spacing, pilarW, y, step = 0.3, r = 0.004 }: {
   cols: number; rows: number; spacing: number; pilarW: number; y: number;
+  step?: number; r?: number;
 }) {
   const W = (cols - 1) * spacing + pilarW;
   const D = (rows - 1) * spacing + pilarW;
-  const step = 0.3; // espacamento 30cm (simplificado)
   const bars: [V3, V3][] = [];
   const yBar = y + 0.04;
 
@@ -290,7 +290,31 @@ function MalhaLaje({ cols, rows, spacing, pilarW, y }: {
   }
   return (
     <>
-      {bars.map(([a, b], i) => <Barra key={i} from={a} to={b} r={0.004} />)}
+      {bars.map(([a, b], i) => <Barra key={i} from={a} to={b} r={r} />)}
+    </>
+  );
+}
+
+// ── Aço da sapata (malha bidirecional de tirantes) ────────────────────────────
+function SapataAco({ pos, lado, sapH }: { pos: V3; lado: number; sapH: number }) {
+  const half  = lado / 2 - 0.06;  // recuo de cobrimento
+  const step  = 0.15;              // espaçamento 15 cm
+  const yBot  = -sapH + 0.07;      // camada inferior (cobrimento 7 cm)
+  const yTop  = -sapH + 0.12;      // camada superior (cruzada 5 cm acima)
+  const bars: [V3, V3][] = [];
+
+  // Camada inferior — barras no eixo X
+  for (let z = -half; z <= half + 0.001; z += step) {
+    bars.push([[pos[0] - half, yBot, pos[2] + z] as V3, [pos[0] + half, yBot, pos[2] + z] as V3]);
+  }
+  // Camada superior — barras no eixo Z (cruzada)
+  for (let x = -half; x <= half + 0.001; x += step) {
+    bars.push([[pos[0] + x, yTop, pos[2] - half] as V3, [pos[0] + x, yTop, pos[2] + half] as V3]);
+  }
+
+  return (
+    <>
+      {bars.map(([a, b], i) => <Barra key={i} from={a} to={b} r={0.007} />)}
     </>
   );
 }
@@ -459,6 +483,18 @@ export function Tebas3D({ resultado, aco }: { resultado: TebasResult; aco: AcoRe
         {/* ── Aço ─────────────────────────────────────────────────────── */}
         {showSteel && (
           <>
+            {/* Aço das sapatas (malha bidirecional de tirantes) */}
+            {positions.map((pos, i) => (
+              <SapataAco key={i} pos={pos} lado={sapLado} sapH={sapH} />
+            ))}
+
+            {/* Aço do piso (laje de contrapiso no nível do terreno) */}
+            <MalhaLaje
+              cols={cols} rows={rows}
+              spacing={spacing} pilarW={pilarW}
+              y={0} step={0.20} r={0.005}
+            />
+
             {/* Aço dos pilares */}
             {positions.map((pos, i) => (
               <PilarAco
