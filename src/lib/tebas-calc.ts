@@ -123,8 +123,10 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
   const fcdVal = fcd(input.concreto); // MPa
   const q = sobrecarga(input.usoLaje);
 
-  // Vão estimado da viga principal ≈ √(área) — estimativa da maior dimensão
-  const LViga = Math.sqrt(input.area); // m
+  // Vão de dimensionamento = maior vão livre da laje (já informado pelo usuário).
+  // √(área) é usado apenas em calcularAco para estimar comprimento total de vigas na planta —
+  // coisa diferente do vão de dimensionamento de uma seção individual.
+  const LViga = input.vao; // m
 
   // Pré-dimensionamento (NBR 6118 §14.4 — prática de projeto):
   // h ≈ L/10 para viga de pórtico engastada; mínimo = h_laje + 5 cm
@@ -134,8 +136,9 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
   );
   const h = hMin; // cm
 
-  // Largura: bw ≈ h/3, mínimo 12 cm (NBR 6118 §17.3.1)
-  const bw = Math.max(ceil_n(Math.ceil(h / 3), 5), 12); // cm
+  // Largura: bw ≈ h/2 para vãos residenciais (≤ 6 m), mínimo 14 cm.
+  // Garante espaçamento mínimo entre barras φ16 em uma fila.
+  const bw = Math.max(ceil_n(Math.ceil(h / 2), 5), 14); // cm
 
   // Altura útil d (cobrimento nominal 3,5 cm + estribo φ6,3 + barra φ16/2 ≈ 5 cm total)
   const d = (h - 5); // cm

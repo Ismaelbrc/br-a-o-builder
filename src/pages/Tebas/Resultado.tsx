@@ -17,11 +17,11 @@ const GREEN = '#22C55E';
 type TabKey = 'laje' | 'viga' | 'pilar' | 'sapata' | 'aco';
 
 const TABS: { key: TabKey; label: string }[] = [
+  { key: 'aco',    label: 'Resumo Aço' },
   { key: 'laje',   label: 'Laje' },
   { key: 'viga',   label: 'Viga' },
   { key: 'pilar',  label: 'Pilar' },
   { key: 'sapata', label: 'Fundação' },
-  { key: 'aco',    label: 'Resumo Aço' },
 ];
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -77,7 +77,7 @@ function NormaBox({ text }: { text: string }) {
 export default function TebasResultado() {
   const navigate = useNavigate();
   const [resultado, setResultado] = useState<TebasResult | null>(null);
-  const [activeTab, setActiveTab] = useState<TabKey>('laje');
+  const [activeTab, setActiveTab] = useState<TabKey>('aco');
 
   useEffect(() => {
     const raw = sessionStorage.getItem(TEBAS_RESULT_KEY);
