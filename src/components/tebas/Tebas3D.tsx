@@ -1,5 +1,5 @@
 import { Canvas, useThree } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Html } from '@react-three/drei';
 import { useState, useMemo, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import type { TebasResult } from '@/lib/tebas-types';
@@ -319,6 +319,44 @@ function SapataAco({ pos, lado, sapH }: { pos: V3; lado: number; sapH: number })
   );
 }
 
+// ── Rótulo 3D (Html ancorado em ponto do mundo) ───────────────────────────────
+// distanceFactor faz o label crescer conforme o zoom:
+//   longe → texto pequeno (não atrapalha visão geral)
+//   perto → texto legível (detalhes aparecem ao aproximar)
+function Label3D({ position, title, sub, accent = '#F47A20' }: {
+  position: V3;
+  title: string;
+  sub?: string;
+  accent?: string;
+}) {
+  return (
+    <Html
+      position={position}
+      distanceFactor={7}
+      center
+      zIndexRange={[10, 0]}
+      style={{ pointerEvents: 'none' }}
+    >
+      <div style={{
+        background: 'rgba(10,22,36,0.82)',
+        border: `1px solid ${accent}55`,
+        borderRadius: 4,
+        padding: '2px 7px',
+        fontFamily: '"Courier New", Courier, monospace',
+        lineHeight: 1.5,
+        whiteSpace: 'nowrap',
+        userSelect: 'none',
+        pointerEvents: 'none',
+      }}>
+        <div style={{ color: accent, fontWeight: 700, fontSize: 11 }}>{title}</div>
+        {sub && (
+          <div style={{ color: 'rgba(241,245,249,0.50)', fontSize: 9 }}>{sub}</div>
+        )}
+      </div>
+    </Html>
+  );
+}
+
 // ── Componente principal exportado ────────────────────────────────────────────
 export function Tebas3D({ resultado, aco }: { resultado: TebasResult; aco: AcoResult }) {
   const [showConcrete, setShowConcrete] = useState(true);
@@ -543,6 +581,89 @@ export function Tebas3D({ resultado, aco }: { resultado: TebasResult; aco: AcoRe
             })}
           </>
         )}
+
+        {/* ── Rótulos 3D ancorados nos elementos ─────────────────────────── */}
+        {positions.length > 0 && (() => {
+          // Pilar mais próximo da câmera (último da grade — canto frontal direito)
+          const lp = positions[positions.length - 1];
+
+          // Viga: par que inclui o último pilar
+          const lastIdx = positions.length - 1;
+          const vigaPair = beamPairs.find(([i, j]) => i === lastIdx || j === lastIdx);
+          const vigaLabelPos: V3 | null = vigaPair ? (() => {
+            const [ai, bi] = vigaPair;
+            const [ax, , az] = positions[ai];
+            const [bx, , bz] = positions[bi];
+            // perpendicular ao eixo da viga para offset lateral
+            const dx = bx - ax, dz = bz - az;
+            const len = Math.sqrt(dx * dx + dz * dz);
+            const px = -dz / len, pz = dx / len; // perpendicular
+            return [
+              (ax + bx) / 2 + px * (vigaW / 2 + 0.18),
+              sapH + hPav - vigaH * 0.5,
+              (az + bz) / 2 + pz * (vigaW / 2 + 0.18),
+            ];
+          })() : null;
+
+          // Sapata: ao lado do pilar mais próximo, nível subsolo
+          const sapLabelPos: V3 = [
+            lp[0] + sapLado * 0.55 + 0.12,
+            -sapH * 0.55,
+            lp[2],
+          ];
+
+          // Pilar: à direita do pilar, meia-altura
+          const pilarLabelPos: V3 = [
+            lp[0] + pilarW * 0.5 + 0.18,
+            sapH + nPav * hPav * 0.45,
+            lp[2],
+          ];
+
+          // Laje: borda frontal, ligeiramente acima
+          const lajeLabelPos: V3 = [
+            0,
+            sapH + nPav * hPav + lajeH + 0.12,
+            (rows - 1) * spacing * 0.5 + pilarW * 0.5 + 0.15,
+          ];
+
+          return (
+            <>
+              {/* Sapata */}
+              <Label3D
+                position={sapLabelPos}
+                title={`Sapata ${sapata.lado.toFixed(2)}×${sapata.lado.toFixed(2)} m`}
+                sub={sapata.armadura}
+                accent="#7a94a8"
+              />
+
+              {/* Pilar */}
+              <Label3D
+                position={pilarLabelPos}
+                title={`Pilar ${pilar.largura}×${pilar.altura} cm`}
+                sub={`${pilar.nBarrasLongitudinal}φ${pilar.diametroLongitudinal} CA-50 · φ6,3/estribo`}
+                accent="#b0ccd6"
+              />
+
+              {/* Viga */}
+              {vigaLabelPos && (
+                <Label3D
+                  position={vigaLabelPos}
+                  title={`Viga ${viga.largura}×${viga.altura} cm`}
+                  sub={`${viga.nBarrasTracao}φ${viga.diametroTracao} CA-50 (tração)`}
+                  accent="#c8a84a"
+                />
+              )}
+
+              {/* Laje */}
+              <Label3D
+                position={lajeLabelPos}
+                title={`Laje ${laje.espessura} cm`}
+                sub="vigota + tavela · φ4,2 CA-60 c/15"
+                accent="#6ab0d8"
+              />
+            </>
+          );
+        })()}
       </Canvas>
     </div>
   );
