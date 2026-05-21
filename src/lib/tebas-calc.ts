@@ -144,11 +144,11 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
   const d = (h - 5); // cm
 
   // ── Carregamento na viga ──
-  // Viga interna (caso mais desfavorável): recebe carga dos dois painéis laterais de laje.
-  // Reação de cada painel biapoiado = (g+q) × L_laje / 2 por cada lado.
-  // Largura tributária total = vão_laje/2 + vão_laje/2 = vão_laje.
-  // Adotar bTrib = vão (conservador — viga interna, ambos os lados contribuem).
-  const bTrib = input.vao; // m — viga interna (condição mais carregada)
+  // Modelo: viga de borda (cenário típico residencial) — recolhe laje de um só lado.
+  // bTrib = L_laje / 2 (meia largura do painel de laje).
+  // Obs: viga interna teria bTrib = L_laje (carga dobrada); o projetista
+  //      deve verificar esse caso se houver vigas internas no projeto.
+  const bTrib = input.vao / 2; // m — viga de borda (metade do vão de laje)
 
   // Carga permanente:
   //   peso próprio laje ~GAMMA_CA × h_laje/100 ≈ 25 × 0,16 = 4 kN/m²
@@ -167,25 +167,49 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
 
   // Armadura de tração (seção retangular, z ≈ 0,9d — válido para kMd < 0,259)
   // As = Md / (fyd × z) onde z = 0,9d
-  // Unidades: Md [kN.m] = Md × 10^3 [N.m] = Md × 10^6 [N.mm]
-  //           fyd [MPa] = [N/mm²], d [mm] = d_cm × 10
   const dMm = d * 10; // mm
   const MdNmm = Md * 1e6; // N.mm
   const asCalc = MdNmm / (FYD * 0.9 * dMm); // mm²
   const asCalcCm2 = asCalc / 100; // cm²
 
   // Armadura mínima: ρ_min = 0,26 × fctm/fyk (NBR 6118 Tab. 17.3)
-  // fctm = 0,3 × fck^(2/3) para C20-C50
   const fctm = 0.3 * Math.pow(fck(input.concreto), 2 / 3); // MPa
   const rhoMin = 0.26 * (fctm / FYK);
-  const asMin = rhoMin * bw * d; // cm² (bw e d em cm)
+  const asMin = rhoMin * bw * d; // cm²
 
   const asAdot = Math.max(asCalcCm2, asMin);
 
-  // Seleção de barras CA-50 φ16 mm (área unitária = 2,01 cm²)
-  const nBarras = Math.ceil(asAdot / 2.01);
-  const asReal = nBarras * 2.01;
-  const armStr = `${nBarras}φ16 mm (As = ${asReal.toFixed(2)} cm²)`;
+  // ── Seleção de bitola CA-50 ──────────────────────────────────────────────────
+  // Percorre do menor para o maior diâmetro e escolhe o primeiro que caiba
+  // numa única fila dentro da largura útil da viga.
+  // Critério de encaixe (NBR 6118 §18.3.2.2):
+  //   espaçamento mínimo = max(d_barra, 25 mm)
+  //   cobrimento + estribo φ6,3 ≈ 31,3 mm de cada lado
+  const BITOLAS_CA50 = [10, 12.5, 16, 20, 25]; // mm
+  const coverMm = 25 + 6.3; // ≈ 31,3 mm (cada face)
+  const availWidthMm = bw * 10 - 2 * coverMm; // mm disponível para barras
+
+  let selDiam = 16;
+  let selN    = Math.ceil(asAdot / 2.011); // fallback φ16
+  let selArea = selN * 2.011;
+
+  for (const dia of BITOLAS_CA50) {
+    const aBarCm2   = (Math.PI / 4) * (dia / 10) ** 2; // cm²/barra
+    const nNeeded   = Math.ceil(asAdot / aBarCm2);
+    const espcMin   = Math.max(dia, 25);                // mm entre faces
+    const reqWidth  = nNeeded * dia + (nNeeded - 1) * espcMin; // mm
+    if (reqWidth <= availWidthMm) {
+      selDiam = dia;
+      selN    = nNeeded;
+      selArea = nNeeded * aBarCm2;
+      break;
+    }
+  }
+
+  const dStrBar = selDiam % 1 !== 0
+    ? selDiam.toFixed(1).replace('.', ',')
+    : String(selDiam);
+  const armStr = `${selN}φ${dStrBar} mm (As = ${selArea.toFixed(2)} cm²)`;
 
   // Estribos: φ6,3 mm (A_w = 0,31 cm²) — espaçamento simplificado
   const sMaxEstribo = Math.min(0.6 * d, 30); // cm (NBR 6118 §18.3.3.2)
@@ -201,12 +225,12 @@ function calcularViga(input: TebasInput, laje: LajeResult): VigaResult {
     estribos: estribosStr,
     momentoCalculo: parseFloat(Md.toFixed(1)),
     vaoEstimado: parseFloat(LViga.toFixed(1)),
-    nBarrasTracao: nBarras,
-    diametroTracao: 16,
+    nBarrasTracao: selN,
+    diametroTracao: selDiam,
     norma: [
       `NBR 6118:2023 §14.4 — h ≥ L/10 = ${(LViga / 10 * 100).toFixed(0)} cm → adotado ${h} cm`,
-      `Md = ${Md.toFixed(1)} kN.m`,
-      `As_calc = ${asCalcCm2.toFixed(2)} cm² · As_min = ${asMin.toFixed(2)} cm²`,
+      `Viga de borda: bTrib = L/2 = ${bTrib.toFixed(1)} m · Md = ${Md.toFixed(1)} kN.m`,
+      `As_calc = ${asCalcCm2.toFixed(2)} cm² · As_min = ${asMin.toFixed(2)} cm² → ${armStr}`,
     ].join(' | '),
   };
 }
