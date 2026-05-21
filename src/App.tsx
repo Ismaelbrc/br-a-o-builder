@@ -23,6 +23,7 @@ import Galeria from "./pages/Galeria";
 import Faq from "./pages/Faq";
 import CalculadoraVergalhao from "./pages/CalculadoraVergalhao";
 import LandingPage from "./pages/LandingPage";
+import Meta from "./pages/Meta";
 import NotFound from "./pages/NotFound";
 import TebasLanding from "./pages/Tebas/index";
 import TebasCalcular from "./pages/Tebas/Calcular";
@@ -48,6 +49,8 @@ function AppRoutes() {
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
+          {/* Tracking / redirect pages */}
+          <Route path="/meta" element={<Meta />} />
           {/* Tebas — deve vir antes do catch-all /:productSlug/:locationSlug */}
           <Route path="/tebas" element={<TebasLanding />} />
           <Route path="/tebas/calcular" element={<TebasCalcular />} />
