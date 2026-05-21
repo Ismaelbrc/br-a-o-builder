@@ -14,7 +14,7 @@ interface ComparisonRow {
 }
 
 const comparisonData: ComparisonRow[] = [
-  { icon: Truck, criterion: "Prazo de Entrega", others: "5 a 7 dias úteis", braco: "48 horas (prontos) · 7 dias (Corte e Dobra)" },
+  { icon: Truck, criterion: "Prazo de Entrega", others: "5 a 7 dias úteis", braco: "48 horas (prontos) · a partir de 7 dias (Corte e Dobra)" },
   { icon: Package, criterion: "Variedade de Produtos", others: "Limitada", braco: "Linha completa — 8 categorias" },
   { icon: CreditCard, criterion: "Condições de Pagamento", others: "Rígidas", braco: "Flexíveis · Até 10x no cartão" },
   { icon: Headphones, criterion: "Suporte Técnico", others: "Básico", braco: "Consultivo · Engenheiros dedicados" },

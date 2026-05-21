@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useSEO } from '@/hooks/useSEO';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -7,15 +6,15 @@ import { Button } from '@/components/ui/button';
 import {
   Scissors, MessageCircle, Upload, FileCheck, PackageCheck,
   TrendingDown, Recycle, Target, Truck, Wallet, ClipboardCheck,
-  Tag, HardHat, ChevronDown, CheckCircle, ChevronRight, Zap,
-  LucideIcon, Wrench, ShieldCheck, Layers
+  Tag, HardHat, ChevronDown, CheckCircle, ChevronRight,
+  LucideIcon, Wrench, ShieldCheck, Layers, Zap
 } from 'lucide-react';
 import frotaImage from '@/assets/frota-propria.jpg';
 import { analytics } from '@/lib/analytics';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
-  const whatsappUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20or%C3%A7amento%3F";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
   
   const scrollToForm = () => {
     document.getElementById('orcamento-cd')?.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +49,7 @@ const HeroSection = () => {
             
             <p className="text-lg text-gray-300 mt-6 leading-relaxed">
               Aço cortado e dobrado sob medida, com equipamentos de alta tecnologia. 
-              Entrega em até 7 dias úteis, precisão milimétrica e zero desperdício de material.
+              Entrega a partir de 7 dias úteis, precisão milimétrica e zero desperdício de material.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -75,7 +74,7 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 mt-8">
-              {['50% economia', 'Zero desperdício', '7 dias entrega'].map((badge, i) => (
+              {['50% economia', 'Zero desperdício', 'A partir de 7 dias'].map((badge, i) => (
                 <div key={i} className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
                   <CheckCircle className="w-4 h-4 text-brand-orange" />
                   <span className="text-white/80 text-sm font-medium">{badge}</span>
@@ -84,25 +83,24 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right - Stats card */}
-          <div className="hidden lg:flex flex-col h-80 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6">
-            <div className="grid grid-cols-2 gap-3 flex-1">
+          {/* Right - Stats Grid */}
+          <div className="hidden lg:block bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-80">
+            <div className="grid grid-cols-2 gap-4 h-full">
               {[
-                { icon: Scissors, title: 'Corte e Dobra', label: 'Produção 100% automatizada' },
-                { icon: Truck, title: '+7 estados', label: 'Cobertura de entrega' },
-                { icon: ShieldCheck, title: 'ABNT NBR 7480', label: 'Certificação garantida' },
-                { icon: Zap, title: '48h', label: 'Para projetos expressos' },
-              ].map(({ icon: Icon, title, label }) => (
-                <div key={title} className="bg-white/5 rounded-xl p-4 flex flex-col justify-center">
-                  <Icon className="w-7 h-7 text-brand-orange mb-2" />
-                  <span className="text-white font-bold text-base">{title}</span>
-                  <span className="text-gray-400 text-xs mt-0.5">{label}</span>
-                </div>
-              ))}
-            </div>
-            <div className="flex items-center gap-2 mt-3 justify-center">
-              <CheckCircle className="w-4 h-4 text-green-400" />
-              <span className="text-xs text-gray-400">Gerdau • ArcelorMittal • Belgo</span>
+                { icon: Scissors, value: 'Corte e Dobra', label: 'Produção 100% automatizada' },
+                { icon: Truck,    value: '+7 estados',    label: 'Cobertura de entrega' },
+                { icon: ShieldCheck, value: 'ABNT NBR 7480', label: 'Certificação garantida' },
+                { icon: Zap,      value: '48h',           label: 'Para projetos expressos' },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="bg-white/5 rounded-xl p-4 flex flex-col justify-center">
+                    <Icon className="w-7 h-7 text-brand-orange mb-2" />
+                    <p className="text-white font-bold text-base leading-tight">{item.value}</p>
+                    <p className="text-gray-400 text-xs mt-0.5">{item.label}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -116,7 +114,7 @@ const HowItWorksCD = () => {
   const steps = [
     { icon: Upload, title: "Envie seu Projeto", description: "Mande a planta estrutural ou a lista de materiais para nossos engenheiros analisarem por WhatsApp ou e-mail." },
     { icon: FileCheck, title: "Receba o Orçamento", description: "Em até 24 horas, nosso time técnico responde com uma proposta detalhada, incluindo quantidades, preços e prazo de entrega." },
-    { icon: PackageCheck, title: "Receba na Obra", description: "Aço cortado e dobrado com precisão, identificado por peça e etapa, entregue diretamente no canteiro em até 7 dias úteis." },
+    { icon: PackageCheck, title: "Receba na Obra", description: "Aço cortado e dobrado com precisão, identificado por peça e etapa, entregue diretamente no canteiro a partir de 7 dias úteis." },
   ];
 
   return (
@@ -321,45 +319,25 @@ const StatsCD = () => {
 
 // ═══ FAQ ═══
 const faqData = [
-  {
-    question: "O que é corte e dobra de aço?",
-    answer: "Corte e dobra de aço é o serviço industrial que processa vergalhões conforme o projeto estrutural da obra. As peças são cortadas e dobradas em máquinas CNC com precisão milimétrica, identificadas por elemento (pilar, viga, sapata) e entregues prontas para armar diretamente no canteiro."
-  },
-  {
-    question: "Qual o preço do corte e dobra de aço em Goiânia?",
-    answer: "O preço do corte e dobra varia conforme o volume, os diâmetros utilizados e a complexidade do projeto. Para obras residenciais de médio porte, o serviço completo (material + processamento) costuma ser 10% a 20% mais econômico que comprar barras inteiras e armar manualmente. Solicite um orçamento gratuito: enviamos o preço exato em até 24 horas após receber o projeto."
-  },
-  {
+  { 
     question: "Como funciona o serviço de Corte e Dobra?",
-    answer: "Você nos envia a planta estrutural ou lista de materiais por WhatsApp ou e-mail. Nossa equipe técnica analisa, quantifica e elabora o orçamento. Após aprovação, cortamos e dobramos o aço com máquinas automatizadas, identificamos cada peça por etapa da obra e entregamos no canteiro pronto para armar."
+    answer: "Você nos envia a planta estrutural ou lista de materiais. Nossa equipe técnica analisa, quantifica e faz o orçamento. Após aprovação, cortamos e dobramos o aço com máquinas automatizadas, identificamos cada peça e entregamos na sua obra pronto para armar."
   },
-  {
-    question: "Qual o prazo de entrega do corte e dobra?",
-    answer: "O prazo padrão é de até 7 dias úteis após a aprovação do orçamento. Para regiões de Goiânia e Grande Goiânia, frequentemente conseguimos entregas em 3 a 5 dias úteis. Para obras com urgência, consulte nossa equipe sobre entregas expressas."
+  { 
+    question: "Qual o prazo de entrega?",
+    answer: "O prazo padrão é a partir de 7 dias úteis após a aprovação do orçamento. Para obras com urgência, consulte nossa equipe sobre possibilidade de entregas expressas."
   },
-  {
+  { 
     question: "Qual a economia real com Corte e Dobra?",
-    answer: "Em média, nossos clientes economizam até 50% nos custos com mão de obra de armação, pois o aço chega pronto para montar. Além disso, a eliminação de desperdício gera economia adicional de 5% a 12% no consumo total de aço. Em uma obra com 20 toneladas de aço, isso representa R$ 15.000 a R$ 30.000 em economia total."
+    answer: "Em média, nossos clientes economizam até 50% nos custos com mão de obra de armação. Além disso, a eliminação de desperdício de material gera economia adicional de 3% a 8% no consumo total de aço da obra."
   },
-  {
-    question: "Vocês atendem obras fora de Goiânia?",
-    answer: "Sim. Entregamos em toda a Grande Goiânia (Aparecida, Senador Canedo, Trindade, Goianira), Anápolis, Brasília/DF, Itumbiara, Rio Verde e demais cidades de Goiás. O prazo e o frete variam conforme a localidade — consulte nossa equipe."
-  },
-  {
-    question: "O aço da BR Aço tem certificação ABNT?",
-    answer: "Sim. Todos os nossos vergalhões são produzidos em conformidade com a ABNT NBR 7480/2007. Cada lote possui certificado de qualidade com rastreabilidade completa, disponível para o cliente. O serviço de corte e dobra mantém as propriedades mecânicas originais do aço certificado."
-  },
-  {
-    question: "Preciso ter projeto estrutural para contratar o corte e dobra?",
-    answer: "O ideal é ter a planta estrutural ou a planilha de ferro elaborada pelo engenheiro calculista. No entanto, se você ainda não tem o projeto, nossa equipe técnica pode auxiliar na interpretação e quantificação. Entre em contato e explique sua situação."
-  },
-  {
+  { 
     question: "Atendem obras de todos os portes?",
-    answer: "Sim. Atendemos desde uma casa residencial simples até grandes empreendimentos comerciais, galpões industriais e edifícios de múltiplos pavimentos. Não há volume mínimo obrigatório — cada projeto recebe atenção personalizada."
+    answer: "Sim. Atendemos desde uma casa residencial simples até grandes empreendimentos com milhares de toneladas. Cada projeto recebe atenção personalizada."
   },
-  {
+  { 
     question: "Quais as formas de pagamento?",
-    answer: "Aceitamos boleto bancário, transferência, PIX e cartão de crédito em até 10x. Para clientes com volume recorrente, oferecemos condições especiais de prazo. Consulte nossa equipe comercial."
+    answer: "Aceitamos boleto, transferência bancária, PIX e cartão de crédito em até 10x. Consulte nossa equipe comercial para condições especiais em grandes volumes."
   },
 ];
 
@@ -407,44 +385,45 @@ const FaqSection = () => {
 
 // ═══ FINAL CTA WHATSAPP ═══
 const FinalCtaSection = () => {
-  const waUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20Corte%20e%20Dobra.";
+  const whatsappUrl = "https://wa.me/5562999247285?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
 
   return (
     <section id="orcamento-cd" className="py-20 md:py-24 bg-brand-navy">
-      <div className="max-w-4xl mx-auto px-4 text-center">
+      <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white">
           Solicite seu orçamento agora
         </h2>
-        <p className="text-gray-400 mt-4 text-lg">
-          Resposta em até 24h &bull; Sem compromisso &bull; Atendimento técnico especializado
+        <p className="text-gray-300 mt-3 text-lg">
+          Resposta em até 24h&nbsp;•&nbsp;Sem compromisso&nbsp;•&nbsp;Atendimento técnico
         </p>
 
-        <div className="mt-10">
-          <a
-            href={waUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => analytics.whatsappClick('cda-final')}
-            className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl transition-colors shadow-lg shadow-green-500/25"
-          >
-            <MessageCircle className="w-7 h-7" />
-            Falar no WhatsApp — Orçamento Grátis
-          </a>
-        </div>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => analytics.whatsappClick('cda-final')}
+          className="mt-8 inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl shadow-lg shadow-green-500/25 transition-colors"
+        >
+          <MessageCircle className="w-6 h-6" />
+          Falar no WhatsApp — Orçamento Grátis
+        </a>
 
-        <div className="flex justify-center gap-8 md:gap-16 mt-12">
+        <div className="flex justify-center gap-8 md:gap-16 mt-10">
           {[
-            { icon: Upload, label: 'Mande a planta' },
-            { icon: Zap, label: 'Orçamento em 24h' },
-            { icon: Truck, label: 'Entrega programada' },
-          ].map(({ icon: Icon, label }) => (
-            <div key={label} className="flex flex-col items-center gap-2">
-              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
-                <Icon className="w-6 h-6 text-brand-orange" />
+            { icon: Upload,      label: 'Mande a planta' },
+            { icon: Zap,         label: 'Orçamento em 24h' },
+            { icon: Truck,       label: 'Entrega programada' },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div key={i} className="flex flex-col items-center gap-2">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <Icon className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-gray-300 text-sm text-center">{item.label}</span>
               </div>
-              <span className="text-sm text-gray-400">{label}</span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -453,7 +432,7 @@ const FinalCtaSection = () => {
 
 // ═══ CDA SECTION ═══
 const CdaSection = () => {
-  const whatsappCda = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Corte%2C%20Dobra%20e%20Arma%C3%A7%C3%A3o%20(CDA).%20Poderia%20me%20enviar%20um%20or%C3%A7amento%3F";
+  const whatsappCda = "https://wa.me/5562999247285?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%2C%20Dobra%20e%20Armação%20(CDA).%20Poderia%20me%20enviar%20um%20orçamento?";
 
   return (
     <section className="py-20 md:py-24 bg-brand-gray-light">
@@ -610,37 +589,6 @@ const FrotaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
-  useSEO({
-    title: 'Corte e Dobra de Vergalhão em Goiânia | BR Aço',
-    description: 'Corte e dobra industrial sob medida em Goiânia. Produção 100% automatizada, precisão milimétrica, entrega em até 7 dias úteis, certificação ABNT. Reduza 50% da mão de obra. Solicite orçamento.',
-    canonical: 'https://grupobraco.com.br/corte-e-dobra',
-  });
-
-  // FAQ Schema — gera rich snippet (posição 0) no Google
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqData.map(item => ({
-        "@type": "Question",
-        "name": item.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.answer
-        }
-      }))
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-schema';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => {
-      const existing = document.getElementById('faq-schema');
-      if (existing) existing.remove();
-    };
-  }, []);
-
   return (
     <Layout>
       <HeroSection />
