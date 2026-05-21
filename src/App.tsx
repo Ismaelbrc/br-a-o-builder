@@ -24,6 +24,9 @@ import Faq from "./pages/Faq";
 import CalculadoraVergalhao from "./pages/CalculadoraVergalhao";
 import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
+import TebasLanding from "./pages/Tebas/index";
+import TebasCalcular from "./pages/Tebas/Calcular";
+import TebasResultado from "./pages/Tebas/Resultado";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +48,10 @@ function AppRoutes() {
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
+          {/* Tebas — deve vir antes do catch-all /:productSlug/:locationSlug */}
+          <Route path="/tebas" element={<TebasLanding />} />
+          <Route path="/tebas/calcular" element={<TebasCalcular />} />
+          <Route path="/tebas/resultado" element={<TebasResultado />} />
           {/* Landing pages: /:productSlug/:locationSlug */}
           <Route path="/:productSlug/:locationSlug" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
