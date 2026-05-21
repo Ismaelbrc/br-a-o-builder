@@ -1,4 +1,5 @@
-import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
+import { useEffect, useState, useMemo, lazy, Suspense, Component } from 'react';
+import type { ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { TebasLayout } from '@/components/tebas/TebasLayout';
 import type { TebasResult } from '@/lib/tebas-types';
@@ -9,6 +10,24 @@ import { calcularAco } from '@/lib/tebas-calc';
 const Tebas3D = lazy(() =>
   import('@/components/tebas/Tebas3D').then(m => ({ default: m.Tebas3D }))
 );
+
+// ErrorBoundary para capturar erros do componente 3D sem quebrar a página
+class ErrorBoundary3D extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: ReactNode; fallback: ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) return this.props.fallback;
+    return this.props.children;
+  }
+}
 
 // ── Paleta ────────────────────────────────────────────────────────────────────
 const ORANGE = '#F47A20';
@@ -287,18 +306,33 @@ export default function TebasResultado() {
                   <strong style={{ color: ORANGE }}>Aço</strong> para alternar as camadas.
                   Arraste para girar · scroll para zoom.
                 </p>
-                <Suspense
+                <ErrorBoundary3D
                   fallback={
                     <div
-                      className="flex items-center justify-center rounded-xl"
+                      className="flex items-center justify-center rounded-xl flex-col gap-3"
                       style={{ height: 480, background: SURFACE2, color: TEXT_DIM, fontSize: 14 }}
                     >
-                      Carregando visualizador 3D…
+                      <span style={{ fontSize: 32 }}>🏗</span>
+                      <span>Visualização 3D indisponível neste dispositivo.</span>
+                      <span style={{ fontSize: 12, color: 'rgba(241,245,249,0.3)' }}>
+                        Consulte os dados nas demais abas.
+                      </span>
                     </div>
                   }
                 >
-                  <Tebas3D resultado={resultado} aco={aco} />
-                </Suspense>
+                  <Suspense
+                    fallback={
+                      <div
+                        className="flex items-center justify-center rounded-xl"
+                        style={{ height: 480, background: SURFACE2, color: TEXT_DIM, fontSize: 14 }}
+                      >
+                        Carregando visualizador 3D…
+                      </div>
+                    }
+                  >
+                    <Tebas3D resultado={resultado} aco={aco} />
+                  </Suspense>
+                </ErrorBoundary3D>
                 <p className="text-xs" style={{ color: TEXT_DIM }}>
                   ⚠ Geometria simplificada para fins ilustrativos. Espaçamento de barras e
                   quantidade de estribos são aproximações do dimensionamento calculado.
