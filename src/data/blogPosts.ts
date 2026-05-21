@@ -5029,7 +5029,2569 @@ Para obras no DF, solicite orçamento pelo WhatsApp indicando o CEP ou endereço
 4. **Solicite prazo de entrega por escrito** com o orçamento
 
 A BR Aço fornece orçamento detalhado por bitola em até 2 horas. Entre em contato pelo WhatsApp.`
+  },
+  {
+    id: 76,
+    slug: "escalas-em-projetos-estruturais",
+    category: "Projeto Estrutural",
+    title: "Escalas em Projetos Estruturais: Como Interpretar e Usar Corretamente",
+    metaDescription: "Entenda como funcionam as escalas em projetos de engenharia, como converter medidas no papel para a realidade e quais escalas são usadas em cada tipo de desenho técnico.",
+    keyword: "escalas em projetos estruturais",
+    date: "10 Mar 2026",
+    summary: "Entenda como funcionam as escalas em projetos de engenharia, como converter medidas no papel para a realidade e quais escalas são usadas em cada tipo de desenho técnico.",
+    content: `## O que é Escala em Projetos de Engenharia?
+
+Escala é a relação entre a dimensão representada no desenho e a dimensão real do elemento construído. Uma escala 1:50 significa que 1 cm no papel equivale a 50 cm na obra — ou seja, a planta é 50 vezes menor que a realidade.
+
+A escala não é um detalhe: ela define o nível de detalhe que o projeto precisa mostrar e é a base para qualquer conferência de medida em campo.
+
+## Escalas Mais Usadas em Projetos Estruturais
+
+| Escala | Uso Típico |
+|---|---|
+| 1:1 | Detalhes de emendas, ganchos e chumbadores |
+| 1:5 / 1:10 | Detalhes de armação de pilares e vigas |
+| 1:20 / 1:25 | Seções de elementos, cortes de lajes |
+| 1:50 | Plantas de forma e armação (pavimentos) |
+| 1:100 | Plantas gerais, locação de pilares |
+| 1:200 | Implantação e plantas de grandes obras |
+
+Em projetos de casas populares é comum a escala 1:50 para tudo. Em edificações de grande porte, cada folha usa a escala mais adequada ao nível de detalhe exigido.
+
+## Como Converter Medidas na Escala
+
+A fórmula é simples:
+
+**Medida real = medida no papel × denominador da escala**
+
+Exemplo: numa planta 1:50, você mede 3 cm com a régua. A dimensão real é 3 × 50 = 150 cm = 1,50 m.
+
+**Medida no papel = medida real ÷ denominador**
+
+Para desenhar uma viga de 6,00 m em escala 1:100: 600 cm ÷ 100 = 6 cm no papel.
+
+Use sempre o escalímetro — régua triangular com múltiplas escalas impressas — para leitura direta sem necessidade de cálculo.
+
+## Escalímetro: Como Usar
+
+O escalímetro tem faces com escalas impressas (normalmente 1:20, 1:25, 1:50, 1:75, 1:100, 1:125). Posicione a face correta sobre o desenho e leia diretamente em centímetros ou metros.
+
+Dica: sempre confirme a escala escrita no rodapé da folha antes de medir. Projetos impressos em formato diferente do original (ex.: A4 em vez de A1) perdem a correspondência de escala — nesse caso, use apenas as cotas escritas no projeto.
+
+## Escala Numérica vs Escala Gráfica
+
+- **Escala numérica** (1:50, 1:100): válida apenas se a impressão estiver no formato original
+- **Escala gráfica** (barra com divisões no rodapé): mantém a proporção mesmo se o papel for reduzido ou ampliado
+
+Projetos de qualidade incluem ambas.
+
+## Qual Escala Pedir ao Projetista?
+
+Para execução de armação em canteiro, peça detalhes na escala 1:20 ou 1:25 para pilares e vigas, e 1:50 para a planta geral. Detalhes críticos (ligações, ancoragens especiais) devem vir em 1:10 ou 1:5 para que as dimensões de gancho e transpasse fiquem legíveis sem ambiguidade.`
+  },
+  {
+    id: 77,
+    slug: "cotagem-em-projetos-de-engenharia",
+    category: "Projeto Estrutural",
+    title: "Cotagem em Projetos de Engenharia: Guia Prático para Leitura de Cotas",
+    metaDescription: "Aprenda a ler cotas em projetos estruturais, hidráulicos e elétricos. Entenda linhas de cota, cotas acumuladas, cotas de nível e como interpretar tolerâncias dimensionais.",
+    keyword: "cotagem projetos engenharia",
+    date: "11 Mar 2026",
+    summary: "Aprenda a ler cotas em projetos estruturais, hidráulicos e elétricos — linhas de cota, cotas acumuladas, cotas de nível e tolerâncias dimensionais.",
+    content: `## O que é Cotagem?
+
+Cotagem é o conjunto de linhas, símbolos e valores numéricos que informam as dimensões de um elemento no projeto. Sem cotas, a escala não é suficiente para garantir precisão na execução — e qualquer erro de impressão se transforma em erro construtivo.
+
+## Elementos de uma Cota
+
+Uma cota é formada por três partes:
+
+1. **Linha de extensão** — parte do elemento e vai até a linha de cota, sem tocá-lo
+2. **Linha de cota** — paralela ao elemento, terminando em setas, traços ou pontos
+3. **Valor da cota** — a medida em cm, mm ou m (dependendo da norma do escritório)
+
+No Brasil, a ABNT NBR 8403 padroniza a representação de cotas em desenho técnico. Em projetos estruturais, o mais comum é usar **centímetros** nas plantas de forma e **milímetros** nos detalhes de armação.
+
+## Tipos de Cota
+
+### Cota Linear
+Indica uma distância entre dois pontos. A mais comum em projetos de estrutura.
+
+### Cota de Nível (Altitude)
+Representada pelo símbolo ▽ ou com seta vertical, informa a altura de um elemento em relação a um referencial (geralmente o piso do térreo = ±0,00).
+
+> ▽ +2,80 significa que a face inferior de uma viga está a 2,80 m acima do piso de referência.
+
+### Cota Acumulada (cota progressiva)
+Parte de um ponto fixo (eixo de referência) e vai acumulando as dimensões. Facilita a locação de múltiplos elementos a partir de um único ponto de origem.
+
+### Cota de Eixo
+Indica a posição do eixo de um pilar ou parede, não a face externa. Atenção: ao executar, some ou subtraia metade da largura do elemento para encontrar a face.
+
+## Cotas em Projeto Estrutural vs Projeto Arquitetônico
+
+- **Projeto arquitetônico**: cota a dimensão interna dos ambientes (vão livre entre paredes)
+- **Projeto estrutural**: cota eixo a eixo de pilares e de eixo de viga a eixo de viga
+
+Essa diferença é fonte frequente de conflito em obra. O engenheiro de estruturas e o arquiteto precisam usar o mesmo referencial de eixos.
+
+## Como Ler Cotas de Armação
+
+Em desenhos de armação, as cotas indicam:
+- Comprimento de cada barra após o corte
+- Posição de dobramentos (distância da extremidade ao ponto de dobra)
+- Comprimento de ganchos
+- Espaçamento entre estribos (ex.: "c/15" = de 15 em 15 cm)
+
+Sempre confira o comprimento total das barras somando as cotas parciais — qualquer discrepância indica erro de detalhamento que precisa ser resolvido antes da produção.`
+  },
+  {
+    id: 78,
+    slug: "como-ler-planta-baixa-estrutural",
+    category: "Projeto Estrutural",
+    title: "Como Ler uma Planta Baixa Estrutural: Pilares, Vigas e Lajes no Projeto",
+    metaDescription: "Guia prático para interpretar plantas baixas estruturais. Aprenda a identificar pilares, vigas, lajes, eixos de referência e convenções de representação no projeto de estrutura.",
+    keyword: "como ler planta baixa estrutural",
+    date: "12 Mar 2026",
+    summary: "Guia prático para interpretar plantas baixas estruturais — como identificar pilares, vigas, lajes e convenções de representação no projeto de estrutura.",
+    content: `## O que é a Planta Baixa Estrutural?
+
+A planta baixa estrutural (também chamada planta de forma ou planta de fôrma) é o desenho que mostra, visto de cima, a disposição dos elementos estruturais de um pavimento: pilares, vigas, lajes e aberturas. É o desenho mais consultado durante a execução da estrutura.
+
+## Como Identificar os Elementos
+
+### Pilares
+Representados como retângulos cheios (hachurados) ou com a sigla P seguida de número (P1, P2, P3…). A posição indica o eixo do pilar; as dimensões aparecem em cota ou em tabela separada.
+
+Exemplo: **P7 (20×60)** = pilar número 7, com seção de 20 cm por 60 cm.
+
+### Vigas
+Representadas por linhas cheias entre pilares, com identificação como V ou VP (viga principal) e VC (viga de contraventamento). A seção aparece junto: **V3 (14×50)** = viga 3, largura 14 cm, altura 50 cm.
+
+As vigas podem ser:
+- **Vigas embutidas na laje**: só aparecem como linha pontilhada (invisíveis na vista superior)
+- **Vigas aparentes abaixo da laje**: aparecem com hachura e dimensão visível
+
+### Lajes
+A região entre vigas e pilares é a laje. No projeto de forma, as lajes aparecem numeradas (L1, L2…) com indicação de espessura (ex.: **L1 e=12**) e tipo (maciça, nervurada, pré-moldada).
+
+Setas inclinadas indicam o sentido de armação principal das lajes.
+
+### Aberturas e Reservatórios
+Furos na laje são indicados por um X ou hachura especial com as dimensões anotadas. Reservatórios superiores aparecem como retângulo com espessura de parede e capacidade.
+
+## Eixos de Referência
+
+A maioria dos projetos estruturais usa uma malha de eixos numerados (1, 2, 3…) no sentido horizontal e letras (A, B, C…) no sentido vertical. Os pilares ficam nos cruzamentos desses eixos.
+
+Exemplo: **Pilar no cruzamento do eixo 3 com o eixo B** = P(3B).
+
+Essa referência é fundamental para locação em campo: use trena ou estação total para marcar os eixos primeiro, depois posicione os pilares em relação a eles.
+
+## Planta de Forma vs Planta de Armação
+
+| Planta de Forma | Planta de Armação |
+|---|---|
+| Mostra a geometria dos elementos (dimensões) | Mostra as barras de aço dentro de cada elemento |
+| Usada para executar fôrmas e cimbramento | Usada para cortar, dobrar e montar armaduras |
+| Escala 1:50 ou 1:100 | Escala 1:20 ou 1:25 (detalhes em 1:10) |
+
+Ambas as plantas precisam estar disponíveis na obra durante toda a execução da estrutura.
+
+## Dicas Práticas de Leitura
+
+- Sempre verifique o **norte arquitetônico** e a **escala** no rodapé antes de qualquer medição
+- Confirme que a planta que você tem é a **revisão mais recente** (número de revisão no carimbo)
+- Em caso de dúvida sobre dimensão, **prevalecem as cotas escritas** sobre a medição direta no papel
+- Se o projeto não tiver cota explícita para algum elemento, **solicite ao projetista** antes de executar`
+  },
+  {
+    id: 79,
+    slug: "cortes-e-secoes-em-projetos-estruturais",
+    category: "Projeto Estrutural",
+    title: "Cortes e Seções em Projetos: Como Identificar Elementos Estruturais",
+    metaDescription: "Aprenda a ler cortes e seções transversais em projetos estruturais. Entenda como interpretar vigas, pilares, lajes e fundações representados em vista de corte.",
+    keyword: "cortes seções projetos estruturais",
+    date: "13 Mar 2026",
+    summary: "Aprenda a ler cortes e seções transversais em projetos estruturais — como interpretar vigas, pilares, lajes e fundações em vista de corte.",
+    content: `## O que são Cortes e Seções em Projetos?
+
+Um corte é um plano imaginário que "fatia" a edificação, permitindo visualizar elementos que não aparecem na planta baixa. Seção é o resultado dessa fatia — a figura que aparece no desenho técnico mostrando o interior do elemento.
+
+### Corte x Seção
+- **Corte**: vista que mostra o que há além do plano de corte (fundo visível)
+- **Seção**: mostra apenas a superfície exata do plano de corte, sem fundo
+
+Na prática em projetos de estrutura, os dois termos são usados de forma intercambiável.
+
+## Como Identificar um Corte no Projeto
+
+Na planta baixa, o corte é indicado por uma linha tracejada grossa com setas nas extremidades (indicando a direção do olhar) e uma letra ou número: **Corte A-A**, **Corte B-B**, **Corte 1-1**, etc.
+
+Na folha de detalhes, o corte aparece desenhado com o mesmo rótulo e na escala indicada.
+
+## O que o Corte Mostra
+
+### Corte de Viga
+Mostra a seção transversal da viga: largura (bw), altura total (h), cobrimento, armadura longitudinal (barras no fundo e topo) e estribos. É a representação mais usada para detalhar armação.
+
+### Corte de Pilar
+Mostra a seção do pilar com as dimensões, quantidade e posição de barras longitudinais, e o detalhe do estribo. Pilares com seção não-retangular (L, T, circulares) precisam de corte para deixar claro o arranjo de barras.
+
+### Corte de Laje
+O corte de laje mostra a espessura, a posição das armaduras inferiores e superiores (positiva e negativa), e, se for nervurada, as dimensões das nervuras e do capeamento.
+
+### Corte de Fundação
+Mostra a profundidade e dimensões da sapata, bloco ou radier, incluindo armação de fundo, armação de parede lateral e a ligação com o pilar (barras de espera ou colarinho).
+
+## Hachuras no Corte
+
+As hachuras indicam o material cortado:
+- **Concreto**: losangos ou quadriculado fino
+- **Aço / armadura**: círculos sólidos (seção de barras) ou símbolo de metal
+- **Alvenaria**: retângulos alternados (tijolo)
+- **Solo**: traços inclinados com pontos (terra)
+- **Madeira (fôrma)**: traços curvos paralelos
+
+## Corte de Armação (Planta de Armação)
+
+Nos projetos de armação, o corte mostra as barras "de frente" (representadas como linhas) e as barras perpendiculares ao plano (representadas como círculos com o diâmetro indicado).
+
+> ● 5φ12.5 = cinco barras de 12,5 mm de diâmetro na posição indicada
+
+Sempre verifique se o corte está na mesma revisão da planta de forma — inconsistências entre eles são fonte de erros graves na montagem da armação.`
+  },
+  {
+    id: 80,
+    slug: "simbologia-projetos-armacao-aco",
+    category: "Projeto Estrutural",
+    title: "Simbologia em Projetos de Armação de Aço: Guia de Referência Rápida",
+    metaDescription: "Tabela completa dos símbolos usados em projetos de armação de concreto armado: diâmetros, dobramentos, estribos, espaçamentos e notações da NBR 7480 e NBR 6118.",
+    keyword: "simbologia projetos armação aço",
+    date: "14 Mar 2026",
+    summary: "Tabela completa dos símbolos usados em projetos de armação — diâmetros, dobramentos, estribos, espaçamentos e notações segundo NBR 7480 e NBR 6118.",
+    content: `## Por que Dominar a Simbologia?
+
+Um projeto de armação contém dezenas de símbolos e abreviações. Interpretá-los errado gera barras com comprimento, diâmetro ou posição incorretos — e retrabalho custoso após a concretagem. Este guia reúne as notações mais usadas no Brasil.
+
+## Notação de Barras
+
+A notação padrão é:
+
+**nφd / comprimento**
+
+Onde:
+- **n** = quantidade de barras
+- **φ** = símbolo de diâmetro (phi)
+- **d** = diâmetro nominal em mm
+- **comprimento** = comprimento de corte total
+
+Exemplos:
+- 4φ12.5 = quatro barras de 12,5 mm
+- 2φ20.0 L=6,00 = duas barras de 20 mm com 6 metros
+- 6φ6.3 c/15 = seis barras de 6,3 mm espaçadas de 15 em 15 cm
+
+## Diâmetros Comerciais (CA-50/CA-60)
+
+| Símbolo | Diâmetro (mm) | Peso (kg/m) |
+|---|---|---|
+| φ6.3 | 6,3 | 0,245 |
+| φ8.0 | 8,0 | 0,395 |
+| φ10.0 | 10,0 | 0,617 |
+| φ12.5 | 12,5 | 0,963 |
+| φ16.0 | 16,0 | 1,578 |
+| φ20.0 | 20,0 | 2,466 |
+| φ25.0 | 25,0 | 3,853 |
+| φ32.0 | 32,0 | 6,313 |
+
+## Abreviações Comuns
+
+| Símbolo | Significado |
+|---|---|
+| c/ | espaçamento (de ... em ... cm) |
+| L= | comprimento total da barra |
+| comp. | comprimento |
+| c.c. | comprimento de corte |
+| cb | cobrimento (cover) |
+| gancho | dobramento a 90° ou 180° na extremidade |
+| Est. | estribo |
+| φt | diâmetro do estribo |
+| n.est | número de ramos do estribo |
+| asp | armadura superior positiva |
+| ain | armadura inferior negativa |
+
+## Estribos: Notação Completa
+
+Estribos são representados como:
+
+**φt c/s n-ramos**
+
+Exemplo: **φ6.3 c/10 2R** = estribo de 6,3 mm, espaçado de 10 em 10 cm, 2 ramos.
+
+A zona de confinamento (região com espaçamento menor) aparece separada:
+- **φ6.3 c/7 (extremidades) / c/15 (meio)**
+
+## Classes de Aço
+
+| Marca | Classe | Resistência (fyk) |
+|---|---|---|
+| CA-50 | Nervurado | 500 MPa |
+| CA-60 | Nervurado ou liso fio | 600 MPa |
+
+CA-50 é o mais usado para barras acima de φ10. CA-60 predomina para barras finas (φ5.0 a φ8.0) e telas soldadas.
+
+## Representação de Dobramentos
+
+Dobramentos são indicados no croqui da barra com:
+- Ângulo de dobramento (90°, 135°, 180°)
+- Comprimento de cada trecho após o dobramento
+- Diâmetro interno de dobramento (mandril) conforme NBR 6118 Tabela 9.1`
+  },
+  {
+    id: 81,
+    slug: "nbr-14931-execucao-estruturas-concreto",
+    category: "Normas ABNT",
+    title: "NBR 14931: Tudo sobre a Norma de Execução de Estruturas de Concreto",
+    metaDescription: "Entenda o que exige a NBR 14931 para execução de estruturas de concreto armado: fôrmas, armação, concretagem, cura e controle de qualidade em obras.",
+    keyword: "NBR 14931 execução estruturas concreto",
+    date: "15 Mar 2026",
+    summary: "Entenda o que exige a NBR 14931 para execução de estruturas de concreto — fôrmas, armação, concretagem, cura e controle de qualidade em obras.",
+    content: `## O que é a NBR 14931?
+
+A **ABNT NBR 14931:2003** — "Execução de estruturas de concreto — Procedimento" — é a norma que regulamenta como executar estruturas de concreto armado ou protendido no Brasil. Ela é complementar à NBR 6118 (projeto) e define os requisitos mínimos que o construtor deve atender.
+
+A norma se aplica a estruturas de edifícios, pontes, obras de arte e estruturas industriais.
+
+## Estrutura da Norma
+
+A NBR 14931 está organizada nos seguintes temas:
+
+1. **Materiais** — requisitos para cimento, agregados, água, aço e aditivos
+2. **Fôrmas e escoramentos** — projeto, montagem, desforma e prazo
+3. **Armação** — recebimento, armazenamento, corte, dobramento e montagem
+4. **Concretagem** — transporte, lançamento, adensamento e cura
+5. **Controle tecnológico** — ensaios e aceitação do concreto
+6. **Tolerâncias** — desvios admissíveis em posição, dimensão e planejamento
+
+## Requisitos de Armação (Seção 7)
+
+A norma exige:
+- Barras identificadas com o número de corrida e lote de fornecimento
+- Armazenamento protegido da umidade e separado por bitola
+- Corte e dobramento conforme projeto, com tolerância de ±1 cm no comprimento
+- Ausência de ferrugem com escamas, terra ou graxa nas barras antes da concretagem
+- Espaçadores em número e posição suficientes para manter o cobrimento
+
+> Espaçadores devem ter resistência mecânica compatível com o concreto e não podem ser de madeira ou argamassa de cimento puro.
+
+## Requisitos de Concretagem (Seção 8)
+
+**Lançamento:** Altura máxima de queda livre de 2,0 m para concreto sem bombas. Acima disso, usar tubo de queda (elefante).
+
+**Adensamento:** Vibrador de imersão com penetração na camada inferior de 5 a 10 cm para garantir aderência entre camadas. Tempo de vibração: até que as bolhas de ar cessem (tipicamente 5 a 15 segundos por ponto).
+
+**Camadas:** máximo de 50 cm por camada em elementos verticais (pilares e paredes).
+
+## Cura: Prazos Mínimos
+
+| Condição de exposição | Cura úmida mínima |
+|---|---|
+| Ambiente seco (UR < 50%) | 7 dias |
+| Condição normal | 3 dias |
+| Concreto com cimento de alta resistência inicial | 1 dia |
+
+A cura pode ser feita com água, manta úmida, filmes plásticos ou compostos de cura química (curing compound).
+
+## Tolerâncias Construtivas
+
+| Elemento | Tolerância admissível |
+|---|---|
+| Pilar (prumo) | ≤ h/300 ou 30 mm (o menor) |
+| Viga (nível) | ±10 mm |
+| Espessura de laje | ±5 mm |
+| Cobrimento | –5 mm / +10 mm |
+| Posição de pilar em planta | ±15 mm |
+
+Desvios acima dessas tolerâncias exigem avaliação pelo engenheiro responsável antes de prosseguir.
+
+## Responsabilidade Técnica
+
+Todo serviço de execução de estrutura de concreto exige **ART (Anotação de Responsabilidade Técnica)** assinada por engenheiro civil habilitado, nos termos da Lei 6.496/77 e resoluções CREA/CFE.`
+  },
+  {
+    id: 82,
+    slug: "formas-para-concreto-tipos-e-boas-praticas",
+    category: "Dicas Técnicas",
+    title: "Fôrmas para Concreto: Tipos, Materiais e Boas Práticas de Execução",
+    metaDescription: "Conheça os tipos de fôrmas para concreto armado — madeira, metálica, plástica e alumínio — e as melhores práticas de montagem, desmoldante, escoramento e desforma.",
+    keyword: "formas para concreto tipos",
+    date: "17 Mar 2026",
+    summary: "Conheça os tipos de fôrmas para concreto — madeira, metálica, plástica e alumínio — e as melhores práticas de montagem, desmoldante, escoramento e desforma.",
+    content: `## O que é Fôrma em Construção Civil?
+
+Fôrma (ou forma) é o conjunto de painéis e suportes que moldam o concreto fresco até que ele adquira resistência suficiente para se sustentar. É um componente temporário, mas que define a geometria definitiva da estrutura.
+
+Um sistema de fôrmas mal projetado pode causar acidentes graves — o colapso de fôrmas é uma das principais causas de acidentes fatais em obras.
+
+## Tipos de Fôrma por Material
+
+### Madeira (compensado)
+O sistema mais tradicional no Brasil. Usa pranchas de compensado (12, 15 ou 18 mm) fixadas em estrutura de pontaletes e sarrafos.
+
+**Vantagens:** custo inicial baixo, fácil adaptação a formas irregulares.
+**Desvantagens:** poucas reutilizações (5 a 10 vezes com cuidado), absorve água e pode empenar.
+
+### Metálica (aço)
+Painéis metálicos padronizados (60×120 cm, 90×180 cm, etc.) montados com pinos e grampos.
+
+**Vantagens:** até 300 reutilizações, acabamento liso, menor mão de obra na montagem.
+**Desvantagens:** peso elevado (necessita grua em pavimentos altos), dificulta formas não-modulares.
+
+### Alumínio
+Sistema modular leve, muito usado em residências seriadas (programas habitacionais).
+
+**Vantagens:** peso reduzido (≈ 20–25 kg/painel), produtividade alta em obras repetitivas, até 500 reutilizações.
+**Desvantagens:** custo inicial alto, pouco flexível para plantas variadas.
+
+### Plástica e Reusável (PP e PEAD)
+Painéis de polipropileno injetado. Indicados para lajes nervuradas (cubetas), pilares e elementos repetitivos.
+
+**Vantagens:** leveza, não absorve umidade, limpa com agua.
+**Desvantagens:** baixa rigidez em grandes painéis, requer suporte metálico.
+
+## Projeto de Fôrmas
+
+A NBR 14931 exige que o sistema de fôrmas seja projetado para suportar:
+- **Carga do concreto fresco**: 24–26 kN/m³ × altura de concreto
+- **Sobrecarga de execução**: mínimo de 2,5 kN/m²
+- **Carga de vibração**: impacto de vibradores internos
+
+O projeto deve ser assinado por engenheiro e inclui dimensionamento dos painéis, escoras e contraventamentos.
+
+## Desmoldante: Tipos e Aplicação
+
+Desmoldante é o produto aplicado na face interna da fôrma antes da concretagem para facilitar a desforma e proteger o painel.
+
+- **Óleo mineral**: o mais barato; deixa manchas castanhas no concreto
+- **Emulsão aquosa**: menos manchas, boa para concreto aparente
+- **Desmoldante químico a base de solvente**: melhor acabamento, mais caro
+
+Aplique em camada fina e uniforme. Excesso de desmoldante cria bolhas e manchas.
+
+## Prazo de Desforma (NBR 14931)
+
+| Elemento | Mínimo para desformar |
+|---|---|
+| Faces laterais de vigas e pilares | 3 dias (ou fcj ≥ 0,5 × fck) |
+| Fundo de viga (com escora) | 7 dias |
+| Lajes (com escora mantida) | 7 a 14 dias |
+| Lajes (sem escora, vão ≤ 5 m) | 21 dias com cimento CPII |
+| Lajes (vão > 5 m) | 28 dias mínimo |
+
+Esses prazos assumem temperatura ambiente ≥ 20 °C. Em clima frio ou com concreto de baixo fck, o engenheiro deve avaliar a desforma por ensaio de resistência.`
+  },
+  {
+    id: 83,
+    slug: "cura-do-concreto-como-fazer-certo",
+    category: "Concreto",
+    title: "Cura do Concreto: Por que É Essencial e Como Fazer Certo na Obra",
+    metaDescription: "Entenda a importância da cura do concreto para resistência e durabilidade. Aprenda os métodos de cura úmida, química e protegida e os prazos mínimos segundo a NBR 14931.",
+    keyword: "cura do concreto como fazer",
+    date: "18 Mar 2026",
+    summary: "Entenda por que a cura do concreto é decisiva para resistência e durabilidade — métodos úmido, químico e protegido, e prazos mínimos segundo NBR 14931.",
+    content: `## O que é Cura do Concreto?
+
+Cura é o processo de controlar a temperatura e a umidade do concreto após o lançamento, garantindo que as reações de hidratação do cimento ocorram adequadamente. Sem cura, o concreto perde resistência, trinca e reduz drasticamente sua durabilidade.
+
+A hidratação do cimento é uma reação exotérmica que consome água. Se a água evapora antes que a reação se complete, a estrutura cristalina do concreto fica incompleta — como se você cozinhasse um bolo e retirasse antes do tempo.
+
+## Quanto a Falta de Cura Prejudica?
+
+Estudos mostram que concreto sem cura adequada pode perder até **40% da resistência** esperada aos 28 dias. Em regiões com temperatura acima de 30 °C e umidade baixa (como em Goiás no período seco), a evaporação é muito rápida e o risco é ainda maior.
+
+## Métodos de Cura
+
+### Cura Úmida (mais eficiente)
+Manter o concreto molhado continuamente com água:
+- **Aspersão de água**: molhar 2 a 3 vezes ao dia, mais frequentemente em dias quentes e ventosos
+- **Manta úmida (serapilheira ou estopa)**: cobre a superfície e mantém umidade por horas
+- **Lâmina d'água**: encharca a laje com bordas de areia; ideal para lajes planas
+
+### Cura Química (compound de cura)
+Aplicação de produto formador de membrana que retém a umidade. Usado principalmente em pisos industriais e lajes de cobertura de acesso difícil.
+
+**Cuidado:** o compound cria uma película que impede a aderência de revestimentos. Se houver contrapiso ou cerâmica sobre a laje, use cura úmida ou escolha compound removível.
+
+### Cura Protegida (plástico)
+Cobrir o concreto com filme plástico (lona) imediatamente após a sarrafeamento impede a evaporação. Prático para lajes, mas menos eficiente que a cura úmida.
+
+## Prazos Mínimos de Cura (NBR 14931)
+
+| Condição do ambiente | CP II e CP III | CP V ARI |
+|---|---|---|
+| Temperatura ≥ 20 °C, UR ≥ 70% | 3 dias | 1 dia |
+| Temperatura ≥ 20 °C, UR 50–70% | 7 dias | 3 dias |
+| Temperatura ≥ 20 °C, UR < 50% | 10 dias | 5 dias |
+| Temperatura < 10 °C (cima fria) | avaliação individual |
+
+> Em Goiânia, onde a umidade relativa cai a 20–30% no inverno (junho a agosto), adote no mínimo 7 dias de cura úmida.
+
+## Cura de Pilares
+
+Pilares são os elementos mais negligenciados quanto à cura — por ficarem com a fôrma, muitos acreditam que estão "protegidos". A fôrma de madeira absorve parte da umidade; a de metal, se aquecida pelo sol, acelera a evaporação. Após a desforma (3 dias), aplique água nas faces expostas por mais 4 a 7 dias.
+
+## Cura em Climas Quentes e Secos
+
+- Concretar de madrugada ou início da manhã (temperatura mais baixa)
+- Usar aditivo retardador para ampliar o tempo de trabalhabilidade
+- Proteger as superfícies do vento com telas de proteção
+- Iniciar a cura imediatamente após o acabamento (não esperar "puxar")`
+  },
+  {
+    id: 84,
+    slug: "juntas-de-concretagem-dilatacao",
+    category: "Concreto",
+    title: "Juntas de Concretagem e Dilatação: Quando e Como Usar em Estruturas",
+    metaDescription: "Entenda a diferença entre juntas de concretagem, de dilatação e de retração. Aprenda quando cada uma é necessária e como executar corretamente segundo a NBR 6118.",
+    keyword: "juntas de concretagem dilatação",
+    date: "19 Mar 2026",
+    summary: "Entenda a diferença entre juntas de concretagem, dilatação e retração — quando são necessárias e como executar corretamente segundo NBR 6118.",
+    content: `## Por que Existem Juntas em Estruturas de Concreto?
+
+O concreto é susceptível a variações volumétricas por temperatura, retração e fluência. Em estruturas longas ou com mudanças de rigidez, essas variações causam fissuras indesejadas se não forem controladas. As juntas são o mecanismo que permite à estrutura "se mover" sem fissuras.
+
+## Tipos de Juntas
+
+### Junta de Concretagem (ou de Construção)
+Ocorre quando uma concretagem é interrompida e reiniciada. É uma junta de execução, não de projeto — mas precisa ser tratada corretamente para não virar ponto fraco.
+
+**Como tratar:**
+1. Aguardar o concreto antigo atingir resistência suficiente (mínimo 12 horas)
+2. Lavar com jato d'água a superfície para remover nata e expor o agregado
+3. Aplicar argamassa de ligação ou concreto de consistência fluída antes de reiniciar
+4. Posicionar a junta em local de baixo esforço cortante (meio do vão, não nos apoios)
+
+### Junta de Dilatação (ou de Movimentação)
+Divide a estrutura em blocos independentes, permitindo que cada bloco se mova sem transferir esforços para o adjacente.
+
+**Quando usar:**
+- Edifícios com comprimento total > 30–40 m
+- Mudança de altura entre blocos (piscina + torre, por exemplo)
+- Fundações em solos diferentes (risco de recalque diferencial)
+- Edifícios em L, T ou U em planta (concentração de esforços nos cantos)
+
+A junta de dilatação atravessa toda a estrutura, da fundação ao telhado, incluindo revestimentos. A largura mínima depende da magnitude dos movimentos esperados — tipicamente 2 a 5 cm.
+
+### Junta de Retração
+Usada principalmente em pisos e lajes sobre solo para controlar a fissuração por retração plástica. São cortes serrados (serragem a fresco ou guilhotina) que forçam a fissuração a ocorrer num local controlado, não aleatoriamente.
+
+**Dimensionamento empírico:**
+- Pisos industriais: a cada 4 a 6 vezes a espessura da laje
+- Calçadas: painéis de 3×3 m a 4×4 m
+
+## Posicionamento das Juntas de Concretagem em Vigas e Pilares
+
+| Elemento | Posição correta da junta |
+|---|---|
+| Viga | 1/3 central do vão (onde Vsd é mínimo) |
+| Pilar | Topo da fundação ou topo do pilar anterior |
+| Laje | Próximo aos eixos de vigas (não no centro da laje) |
+
+Nunca posicione a junta de concretagem de vigas sobre o apoio (pilar) — ali o esforço cortante é máximo.
+
+## Materiais de Preenchimento de Juntas
+
+- **Isopor (EPS)**: para juntas de dilatação em pisos, rodapés e paredes
+- **Mastic bicomponente (poliuretano)**: elastomérico, adequado para juntas externas expostas à água
+- **Perfil de alumínio**: juntas aparentes em pisos e paredes
+- **Fita de bentonita**: em juntas subterrâneas (caixas d'água, subsolo) para vedação contra água`
+  },
+  {
+    id: 85,
+    slug: "barras-de-espera-como-detalhar",
+    category: "Projeto Estrutural",
+    title: "Barras de Espera: O que São e Como Detalhar Corretamente no Projeto",
+    metaDescription: "Entenda o que são barras de espera em concreto armado, para que servem, comprimento mínimo de transpasse e como detalhar corretamente na ligação pilar-fundação e pilar-pilar.",
+    keyword: "barras de espera concreto armado",
+    date: "20 Mar 2026",
+    summary: "O que são barras de espera, para que servem, comprimento de transpasse e como detalhar na ligação pilar-fundação e pilar-pilar.",
+    content: `## O que são Barras de Espera?
+
+Barras de espera (ou "ferros de espera") são as armaduras longitudinais que saem de um elemento de concreto concretado anteriormente — como uma fundação ou um pilar inferior — para dentro do próximo elemento — pilar superior, laje ou viga. Elas garantem a continuidade estrutural e a transferência de esforços entre os elementos.
+
+Sem barras de espera corretas, a ligação entre fundação e pilar, ou entre pavimentos de um pilar, fica comprometida mecanicamente.
+
+## Onde São Usadas
+
+- **Pilar sobre fundação (sapata, bloco, radier)**: as barras de espera saem da fundação e formam o esqueleto do pilar do 1º pavimento
+- **Pilar de um pavimento para o próximo**: as barras saem do pilar inferior e se empalmarão com as barras do pilar superior
+- **Viga sobre alvenaria**: barras saem da parede ou pilar para ancoragem da viga
+- **Escada sobre viga ou laje**: barras de espera para a futura laje da escada
+
+## Comprimento de Transpasse Mínimo
+
+O comprimento de transpasse (ld) é definido pela **NBR 6118 — Tabela 9.3** e depende de:
+- Diâmetro da barra (φ)
+- Resistência do concreto (fck)
+- Posição de concretagem (barra boa: armada > 30 cm do fundo; barra má: armada < 30 cm ou horizontal no topo)
+
+Valores orientativos para CA-50, fck = 25 MPa:
+
+| Diâmetro | Barra boa (ld) | Barra má (ld) |
+|---|---|---|
+| φ 8,0 mm | ≈ 30 cm | ≈ 40 cm |
+| φ 12,5 mm | ≈ 45 cm | ≈ 60 cm |
+| φ 16,0 mm | ≈ 60 cm | ≈ 80 cm |
+| φ 20,0 mm | ≈ 75 cm | ≈ 100 cm |
+| φ 25,0 mm | ≈ 90 cm | ≈ 120 cm |
+
+> A barra de espera deve sair da fundação com comprimento mínimo = ld (comprimento de ancoragem na fundação) + comprimento de transpasse no pilar.
+
+## Proteção de Barras de Espera Expostas
+
+Barras de espera ficam expostas durante o prazo de execução do elemento seguinte — às vezes semanas ou meses. Nesse período:
+
+- Não devem ser dobradas e endireitadas (isso fragiliza o aço)
+- Devem ser protegidas com graxa, tinta anticorrosiva ou mangas plásticas se houver risco de ferrugem agressiva
+- Devem ter o posicionamento verificado antes da concretagem do próximo elemento — se estiverem fora da posição, use gabarito para reposicionar antes da concretagem (nunca após)
+
+## Dica Prática: Gabarito de Posicionamento
+
+Para garantir que as barras de espera fiquem na posição correta durante a concretagem da fundação, use um gabarito de madeira ou metal com os furos nas posições exatas do projeto. O gabarito é colocado no topo da fôrma da fundação, as barras passam pelos furos e são fixadas ao gabarito até o concreto endurecer.`
+  },
+  {
+    id: 86,
+    slug: "espacadores-cobrimento-concreto",
+    category: "Normas ABNT",
+    title: "Espaçadores e Cobrimento do Concreto: Tipos, Normas e Aplicação Correta",
+    metaDescription: "Entenda o que é cobrimento nominal, como calcular cobrimento mínimo segundo a NBR 6118, tipos de espaçadores e como posicioná-los corretamente para garantir durabilidade.",
+    keyword: "espaçadores cobrimento concreto NBR 6118",
+    date: "21 Mar 2026",
+    summary: "Cobrimento nominal, cobrimento mínimo segundo NBR 6118, tipos de espaçadores e como posicioná-los corretamente para durabilidade.",
+    content: `## O que é Cobrimento do Concreto?
+
+Cobrimento é a distância entre a face externa do concreto e a superfície da armadura (barra). Ele protege o aço contra:
+- **Carbonatação** (neutralização do pH do concreto, que destrói a camada passivadora do aço)
+- **Cloretos** (penetração de íons de cloreto que causam corrosão ativa)
+- **Fogo** (o concreto funciona como isolamento térmico da armadura)
+
+Cobrimento insuficiente é a principal causa de patologia estrutural no Brasil.
+
+## Cobrimento Nominal vs Mínimo
+
+A **NBR 6118:2014** distingue dois valores:
+
+- **Cobrimento mínimo (cmin)**: o menor valor admissível, determinado pela classe de agressividade ambiental
+- **Cobrimento nominal (cnom)**: o valor adotado no projeto e especificado para execução
+
+> **cnom = cmin + Δc**  (onde Δc = tolerância de execução, tipicamente 10 mm)
+
+## Cobrimento Mínimo por Classe de Agressividade (NBR 6118 Tabela 7.2)
+
+| Classe | Ambiente | Laje | Viga/Pilar | Fundação |
+|---|---|---|---|---|
+| I — fraca | rural, interior seco | 10 mm | 15 mm | 25 mm |
+| II — moderada | urbano | 15 mm | 20 mm | 30 mm |
+| III — forte | marinho, industrial | 20 mm | 25 mm | 40 mm |
+| IV — muito forte | splashing marinho, industrial quím. | 25 mm | 35 mm | 50 mm |
+
+Goiânia e Brasília são tipicamente Classe II para estruturas expostas e I para elementos internos protegidos.
+
+## Tipos de Espaçadores
+
+### Espaçadores de Concreto (pastilha ou cadeira)
+Os mais usados no Brasil. Fabricados com pasta de cimento e areia, têm resistência compatível com o concreto. Vêm em espessuras de 10, 15, 20, 25, 30, 40 e 50 mm.
+
+**Para lajes:** espaçadores circulares ou quadrados sob a malha inferior.
+**Para vigas:** cadeiras metálicas ou pastilhas laterais fixadas com arame aos estribos.
+**Para pilares:** pastilhas ou clips plásticos fixados às faces do estribo.
+
+### Espaçadores Plásticos (clips)
+Encaixam diretamente na barra ou tela. Rápidos de instalar em telas soldadas.
+
+### Espaçadores Metálicos (cadeiras)
+Usados para sustentar malhas de laje a grandes alturas (lajes com capeamento acima de 8 cm).
+
+## Posicionamento e Quantidade
+
+A NBR 14931 exige:
+- **Fundações e lajes**: 4 a 6 espaçadores por m²
+- **Paredes e pilares**: 2 a 4 espaçadores por m² de face
+- **Vigas**: espaçadores laterais a cada 1,0 m e na base a cada 1,5 m
+
+Espaçadores devem ser de material resistente e compatível com o concreto. **São proibidos:** pedaços de tijolo, pedras, pedaços de madeira ou arames dobrados.`
+  },
+  {
+    id: 87,
+    slug: "ganchos-dobramentos-armaduras-nbr-6118",
+    category: "Normas ABNT",
+    title: "Ganchos e Dobramentos em Armaduras: O que Diz a NBR 6118",
+    metaDescription: "Aprenda os tipos de ganchos em barras de aço para concreto armado, comprimentos mínimos de gancho, diâmetros de dobramento e o que exige a NBR 6118 para estribos e barras longitudinais.",
+    keyword: "ganchos dobramentos armaduras NBR 6118",
+    date: "22 Mar 2026",
+    summary: "Tipos de ganchos em barras de aço, comprimentos mínimos, diâmetros de dobramento e o que exige a NBR 6118 para estribos e barras longitudinais.",
+    content: `## Por que Ganchos São Necessários?
+
+Ganchos são dobras nas extremidades das barras de aço que aumentam o comprimento de ancoragem dentro do concreto sem aumentar o comprimento físico da barra. Eles são necessários quando o comprimento disponível de ancoragem reta é insuficiente — situação comum em apoios extremos de vigas, extremidades de pilares e estribos.
+
+## Tipos de Gancho (NBR 6118)
+
+### Gancho de 180° (semicircular)
+A barra é dobrada em semicírculo e tem um trecho reto adicional. O mais eficiente em termos de ancoragem, mas ocupa mais espaço.
+
+- Ângulo de dobramento: 180°
+- Trecho reto após o gancho: ≥ 4φ (mínimo 6 cm)
+- Usado em: estribos, ganchos de ancoragem em apoios extremos
+
+### Gancho de 135°
+Dobramento a 135° com trecho reto de ≥ 10φ após o gancho.
+
+- Usado em: estribos de pilares (sismo ou confinamento), especialmente onde a extremidade do estribo fica no interior da seção
+- Mais difícil de executar que o de 90° mas mais eficiente
+
+### Gancho de 90°
+O mais comum em campo. Barra dobrada a 90° com trecho reto de ≥ 12φ.
+
+- Menos eficiente que o de 180° para ancoragem longitudinal
+- Facilmente confeccionado em dobradeira manual
+
+## Diâmetro Mínimo de Dobramento (Mandril)
+
+A NBR 6118 Tabela 9.1 define o diâmetro interno mínimo do dobramento (diâmetro do mandril da dobradeira):
+
+| Diâmetro da barra | Barras retas (dobrada 1x) | Estribos |
+|---|---|---|
+| φ ≤ 20 mm | 4φ | 3φ (CA-50), 2φ (CA-60) |
+| φ > 20 mm | 7φ | não aplicável |
+
+> Dobrar barras com mandril menor que o mínimo provoca microfissuras no aço e reduz a resistência da barra.
+
+## Comprimento de Ancoragem com Gancho
+
+O gancho de 180° reduz o comprimento de ancoragem necessário. A NBR 6118 permite:
+
+- Gancho de 180° com trecho reto ≥ 4φ: ld reduzido em 30%
+- Gancho de 90° com trecho reto ≥ 12φ: ld reduzido em 20%
+
+Exemplo: se ld = 60 cm sem gancho, com gancho de 180° → ld efetivo = 42 cm de comprimento reto + gancho.
+
+## Estribos: Ganchos Obrigatórios
+
+Todo estribo deve ter gancho nas duas extremidades. A NBR 6118 aceita:
+
+- Dois ganchos de 90° em lados opostos (mais comum)
+- Dois ganchos de 135° (recomendado em zonas sísmicas ou confinamento)
+
+Os ganchos dos estribos devem ficar alternados (não todos do mesmo lado) para distribuir melhor a ancoragem no interior do concreto.
+
+## Dobramento a Frio vs a Quente
+
+O CA-50 é dobrado **a frio** na obra, com dobradeira mecânica ou manual. Nunca aplique calor para dobrar barras CA-50 — o aquecimento altera a microestrutura do aço e reduz a resistência de forma imprevisível. Barras emendadas por solda exigem aço soldável especificado e procedimento qualificado.`
+  },
+  {
+    id: 88,
+    slug: "emendas-de-vergalhao-transpasse-luva-solda",
+    category: "Normas ABNT",
+    title: "Emendas de Vergalhão: Transpasse, Luvas Mecânicas e Solda Conforme NBR 6118",
+    metaDescription: "Entenda os três tipos de emenda de barras de aço — transpasse, luva mecânica e solda — comprimentos mínimos, posicionamento e o que diz a NBR 6118 para cada situação.",
+    keyword: "emendas vergalhão transpasse luva solda",
+    date: "24 Mar 2026",
+    summary: "Transpasse, luva mecânica e solda — comprimentos mínimos, posicionamento de emendas e o que exige a NBR 6118 para barras de aço em concreto armado.",
+    content: `## Por que Precisamos de Emendas?
+
+Barras de aço são fornecidas em comprimentos padrão de 12 metros. Elementos estruturais como pilares de edifícios altos, vigas longas e muros precisam de comprimentos maiores — ou é necessário empaimar barras em locais estratégicos para viabilizar a construção (como barras de espera de pilar que se iniciam na fundação e sobem por vários pavimentos).
+
+## Tipo 1: Emenda por Transpasse (Sobreposição)
+
+É o método mais simples e econômico: duas barras paralelas se sobrepõem por um comprimento mínimo definido por cálculo (comprimento de transpasse, lt).
+
+**lt** é calculado com base no comprimento de ancoragem (ld) da barra e depende de:
+- Diâmetro e classe do aço
+- Resistência do concreto (fck)
+- Posição de concretagem (boa ou má posição)
+- Percentual de barras emendadas na mesma seção
+
+### Regras de posicionamento:
+- Não empalmar mais de **50% da armadura** na mesma seção transversal
+- Escalonar as emendas com separação mínima de 1,3 × lt entre elas
+- Nunca empalmar no meio do vão de vigas em tração (momento positivo máximo) ou no topo de pilares
+
+### Limites práticos de lt (CA-50, fck 25 MPa, barra boa, ≤50%):
+
+| φ | lt mínimo |
+|---|---|
+| 8,0 mm | 35 cm |
+| 12,5 mm | 55 cm |
+| 16,0 mm | 70 cm |
+| 20,0 mm | 90 cm |
+| 25,0 mm | 110 cm |
+
+## Tipo 2: Luva Mecânica (Emenda Mecânica)
+
+Dispositivo metálico (luva rosqueada, prensada ou por atrito) que une duas barras topo a topo, transferindo esforços diretamente por compressão ou tração.
+
+**Vantagens:** sem comprimento adicional, permite empalmar 100% das barras na mesma seção, reduz congestionamento de armação.
+
+**Desvantagens:** custo maior, exige qualificação do aplicador, precisa de aprovação do projetista.
+
+Tipos comuns: luva de rosca paralela (coneflange), luva de rosca cônica (taper-lock), luva prensada (swage).
+
+## Tipo 3: Solda
+
+Solda estrutural de barras CA-50 exige:
+- Aço com composição química adequada (carbono equivalente ≤ 0,43%)
+- Procedimento de soldagem qualificado (PQS) conforme AWS ou NBR
+- Inspeção por ensaio não destrutivo (END) em soldas críticas
+
+A solda de topo (V ou duplo V) é a mais usada. Solda tipo filete ou "ponto" no encontro de barras cruzadas não transmite esforços longitudinais — é apenas fixação de posição.
+
+> **Atenção:** CA-60 (fios e telas soldadas) é soldável em fábrica durante a produção, mas **não deve ser soldado em campo** sem procedimento qualificado — o processo de trefilação altera a microestrutura e a soldagem pode reduzir a resistência local abaixo do mínimo.
+
+## Qual Método Escolher?
+
+| Critério | Transpasse | Luva | Solda |
+|---|---|---|---|
+| Custo | Baixo | Alto | Médio |
+| Complexidade | Simples | Média | Alta |
+| Congestionamento | Aumenta | Não aumenta | Não aumenta |
+| % máxima emendada | 50% | 100% | 100% (c/ inspeção) |
+| Aplicação típica | Pilares residenciais | Pilares altos, pontes | Estruturas especiais |`
+  },
+  {
+    id: 89,
+    slug: "armadura-montagem-vs-armadura-principal",
+    category: "Dicas Técnicas",
+    title: "Armadura de Montagem vs Armadura Principal: Diferenças e Função Estrutural",
+    metaDescription: "Entenda a diferença entre armadura de montagem (ou construtiva) e armadura principal de cálculo em vigas, pilares e lajes conforme a NBR 6118.",
+    keyword: "armadura de montagem vs armadura principal",
+    date: "25 Mar 2026",
+    summary: "Diferença entre armadura de montagem e armadura principal em vigas, pilares e lajes — função estrutural, dimensionamento mínimo e aplicação prática.",
+    content: `## Armadura Principal (de Cálculo)
+
+A armadura principal é a armadura dimensionada para resistir aos esforços internos da estrutura: momento fletor, força normal e esforço cortante. Ela é calculada pelo engenheiro estrutural com base nas solicitações do modelo de cálculo.
+
+Em vigas, a armadura principal de flexão fica na face tracionada (inferior no meio do vão, superior nos apoios). Em pilares, as barras longitudinais resistem à compressão e ao momento fletor.
+
+## Armadura de Montagem (Construtiva)
+
+A armadura de montagem — também chamada armadura construtiva, armadura de distribuição ou armadura mínima — não é dimensionada por cálculo: ela serve para:
+
+1. **Fixar e manter o posicionamento** da armadura principal durante a montagem e a concretagem
+2. **Distribuir esforços de retração** e temperatura uniformemente no elemento
+3. **Complementar os estribos** na formação da gaiola de vigas e pilares
+4. **Controlar fissuração** em regiões de baixos esforços
+
+## Na Prática: Como Distinguir no Projeto
+
+Em vigas, o projeto indica tipicamente:
+- **2φ10 (A')**: duas barras de 10 mm no **topo** do vão → armadura de montagem (região comprimida)
+- **3φ16 (A)**: três barras de 16 mm no **fundo** → armadura principal de tração
+
+Em lajes, a norma exige armadura mínima de distribuição perpendicular à armadura principal:
+> Amin = 0,0015 × b × d (para CA-50 em lajes com vão dominante numa direção)
+
+## Armadura Mínima por Elemento (NBR 6118)
+
+| Elemento | Armadura mínima |
+|---|---|
+| Viga (seção retangular) | 0,15% × bw × d (CA-50) |
+| Pilar | 0,4% × Ac (seção de concreto) |
+| Laje (armadura principal) | 0,15% × bw × d |
+| Laje (armadura de distribuição) | 20% da principal, mínimo 0,0015 × b × h |
+
+Esses mínimos existem mesmo quando o cálculo indicaria menos aço, para garantir ductilidade e controle de fissuração.
+
+## Armadura de Montagem no Pilar
+
+Em pilares, costuma-se usar barras de φ6.3 ou φ8.0 mm como armadura de montagem intermediária (entre barras de canto) para:
+- Manter os estribos no espaçamento correto durante a montagem
+- Reduzir o espaçamento livre entre barras longitudinais (que não deve exceder 20 cm conforme NBR 6118)
+- Facilitar o adensamento do concreto (vibrador precisa de espaço para entrar)
+
+## Erro Frequente em Campo
+
+Um erro comum é confundir as barras superiores de montagem de vigas com a armadura negativa (de apoio). As barras de montagem têm diâmetro e comprimento reduzidos e **não** são contínuas sobre os apoios. Se o projeto indicar "2φ10 montagem" no topo de uma viga, colocar essas barras em toda a extensão não substitui a armadura negativa sobre o pilar — que é calculada separadamente.`
+  },
+  {
+    id: 90,
+    slug: "planilha-de-ferro-como-elaborar-e-interpretar",
+    category: "Gestão de Obra",
+    title: "Planilha de Ferro: Como Elaborar e Interpretar para Comprar com Precisão",
+    metaDescription: "Aprenda a montar ou ler uma planilha de ferro (quadro de armação): diâmetros, quantidades, comprimentos de corte, pesos por barra e total — base para orçar vergalhão com exatidão.",
+    keyword: "planilha de ferro como elaborar",
+    date: "26 Mar 2026",
+    summary: "Como montar ou ler uma planilha de ferro (quadro de armação) — diâmetros, quantidades, comprimentos de corte e cálculo de peso total para orçar com precisão.",
+    content: `## O que é a Planilha de Ferro?
+
+A planilha de ferro (também chamada de quadro de armação ou lista de corte) é o documento que quantifica cada barra de aço da estrutura: tipo, diâmetro, comprimento de corte, quantidade e peso. É o documento que o responsável pela obra entrega ao fornecedor para cotar o corte e dobra ou comprar o vergalhão em barras.
+
+Sem planilha, você compra "a olho" — e invariavelmente sobra ou falta material.
+
+## Estrutura da Planilha
+
+Uma planilha de ferro padrão tem as colunas:
+
+| Marca | Elemento | Tipo | φ (mm) | Forma | n | L corte (cm) | Peso unit. (kg/m) | Peso total (kg) |
+|---|---|---|---|---|---|---|---|---|
+| N01 | P1 | estribo | 6,3 | retangular | 48 | 98 | 0,245 | 11,54 |
+| N02 | P1 | long. | 12,5 | reto | 4 | 350 | 0,963 | 13,48 |
+
+Onde:
+- **Marca**: identificação da barra no projeto (N01, N02...)
+- **Elemento**: onde essa barra vai (P1 = pilar 1, V3 = viga 3, L2 = laje 2)
+- **Tipo**: longitudinal, estribo, distribuição, negativa...
+- **φ**: diâmetro nominal em mm
+- **Forma**: croqui simplificado da barra (com ganchos, dobras e cotas)
+- **n**: quantidade total de barras dessa marca na obra
+- **L corte**: comprimento total após desdobrar (soma de todos os trechos)
+- **Peso unit.**: kg por metro linear (tabela padrão por φ)
+- **Peso total**: n × L corte × Peso unit. ÷ 100
+
+## Tabela de Pesos por Diâmetro (CA-50)
+
+| φ (mm) | Peso (kg/m) |
+|---|---|
+| 6,3 | 0,245 |
+| 8,0 | 0,395 |
+| 10,0 | 0,617 |
+| 12,5 | 0,963 |
+| 16,0 | 1,578 |
+| 20,0 | 2,466 |
+| 25,0 | 3,853 |
+| 32,0 | 6,313 |
+
+## Como Calcular o Comprimento de Corte
+
+Para barras retas: L = soma dos trechos retos
+
+Para barras com ganchos: L = soma dos trechos + comprimento dos ganchos
+
+Para estribos retangulares: L = 2 × (a + b) + 2 × gancho
+onde a e b são as dimensões internas do estribo.
+
+> Atenção: desconte o encurtamento por dobramento. Em dobras de 90°, o encurtamento é ≈ 2 × r (onde r = raio de dobramento). Para barras finas isso é marginal, mas em φ20+ pode representar 2–3 cm por dobra.
+
+## Como Usar a Planilha com o Fornecedor
+
+1. Envie a planilha (Excel ou PDF com croquis) para a empresa de corte e dobra
+2. Peça orçamento separado por peso total de cada diâmetro
+3. Confirme o laudo de qualidade ABNT 7480 incluso no preço
+4. Solicite as peças identificadas com etiquetas por marca — facilita a montagem no canteiro
+
+Uma boa planilha elimina dúvidas, evita erros de corte e permite comparar orçamentos de diferentes fornecedores de forma objetiva.`
+  },
+  {
+    id: 91,
+    slug: "interferencias-entre-projetos-na-obra",
+    category: "Gestão de Obra",
+    title: "Interferências entre Projetos na Obra: Como Coordenar e Evitar Problemas",
+    metaDescription: "Como identificar e resolver interferências entre projetos estrutural, elétrico, hidrossanitário e arquitetônico antes da execução. Compatibilização de projetos e BIM.",
+    keyword: "interferências entre projetos obra",
+    date: "27 Mar 2026",
+    summary: "Como identificar e resolver interferências entre projetos estrutural, elétrico, hidrossanitário e arquitetônico — compatibilização antes da execução.",
+    content: `## O Problema das Interferências
+
+Imagine descobrir na hora de concretar que um pilar passa no meio da janela projetada pelo arquiteto — ou que a caixa de passagem elétrica conflita com uma viga. Essas são interferências: situações em que dois projetos de especialidade diferentes se sobrepõem no mesmo espaço físico.
+
+As interferências descobertas em campo são caras: exigem retrabalho, modificações de projeto de emergência, quebra de elementos já executados ou, no pior caso, comprometimento estrutural.
+
+## Tipos de Interferência
+
+### Estrutural × Arquitetônico
+- Pilar ocupa espaço de porta ou janela
+- Viga reduz pé-direito abaixo do mínimo funcional
+- Laje nervurada conflita com recuos de teto do projeto de interiores
+- Escada estrutural com geometria incompatível com o projeto arquitetônico
+
+### Estrutural × Hidrossanitário
+- Passagem de esgoto (tubo PVC 100 mm) conflita com nervura de laje ou fundo de viga
+- Caixas de gordura ou inspeção sob lajes com espaço insuficiente
+- Shafts hidráulicos conflitando com pilares
+
+### Estrutural × Elétrico
+- Eletrodutos embutidos em pilares ou vigas (proibido pela NBR 6118 sem verificação)
+- Caixa de luz ou tomada localizada onde há barra de armação
+- Prumadas de eletrocalha conflitando com vigas
+
+### Hidrossanitário × Elétrico
+- Shafts elétrico e hidráulico no mesmo espaço (risco e norma)
+
+## Como Realizar a Compatibilização
+
+### Método Tradicional (sobreposição em CAD)
+Imprima as plantas de cada especialidade em transparências e sobreponha fisicamente (ou no AutoCAD). Marque cada conflito e solicite revisão dos projetistas.
+
+### Método BIM
+No modelo BIM (Revit, Archicad, etc.), todas as especialidades habitam o mesmo modelo 3D. O software detecta automaticamente interferências (clash detection) e gera relatório com cada conflito: elemento A × elemento B, posição, gravidade.
+
+## Hierarquia de Decisão em Conflitos
+
+Quando há interferência, a hierarquia geral para resolução é:
+1. **Estrutura** tem prioridade (não se mexe sem cálculo)
+2. **Hidrossanitário** tem segunda prioridade (gravidade, caimento)
+3. **Elétrico** é o mais flexível (pode contornar)
+4. **Arquitetônico** de acabamento é o mais adaptável
+
+Qualquer mudança no projeto estrutural exige aprovação do engenheiro calculista e nova ART.
+
+## Quando Compatibilizar
+
+A compatibilização deve ocorrer **antes** do início da execução — idealmente antes do licenciamento. O custo de resolver interferências em papel é 5 a 10 vezes menor que resolver na obra, e 50 vezes menor que corrigir estrutura executada.
+
+Estabeleça reuniões semanais de compatibilização durante a fase de projeto com os responsáveis de cada especialidade.`
+  },
+  {
+    id: 92,
+    slug: "bim-na-construcao-civil-o-que-o-engenheiro-precisa-saber",
+    category: "Gestão de Obra",
+    title: "BIM na Construção Civil: O que o Engenheiro Precisa Saber em 2026",
+    metaDescription: "Guia objetivo sobre BIM (Building Information Modeling) para engenheiros e construtores: o que é, níveis de maturidade, softwares, exigência legal no Brasil e benefícios práticos.",
+    keyword: "BIM construção civil engenheiro",
+    date: "28 Mar 2026",
+    summary: "BIM para engenheiros e construtores — o que é, níveis de maturidade, softwares, exigências do Decreto 9983/2019 e benefícios práticos no canteiro.",
+    content: `## O que é BIM?
+
+BIM (Building Information Modeling — Modelagem da Informação da Construção) é uma metodologia que usa um modelo digital tridimensional e inteligente da edificação como base para todo o ciclo de vida do projeto: concepção, projeto, construção e operação.
+
+Diferente de um desenho 3D comum, o modelo BIM contém informações vinculadas a cada elemento: dimensões, materiais, resistências, fornecedores, custo estimado, cronograma e muito mais.
+
+## Níveis de Maturidade BIM
+
+| Nível | Descrição |
+|---|---|
+| 0 | CAD 2D, sem colaboração (modo tradicional) |
+| 1 | Modelo 3D individual, arquivos separados por especialidade |
+| 2 | Modelos federados — especialidades compartilham informações em formato comum (IFC) |
+| 3 | Modelo único integrado na nuvem, todos colaborando em tempo real |
+
+No Brasil, a maioria das obras privadas está no Nível 1 ou Nível 2. O mercado de grandes obras já exige Nível 2.
+
+## Decreto 9983/2019 — BIM Obrigatório no Brasil
+
+O **Decreto Federal 9.983/2019** estabelece a Estratégia Nacional de Disseminação do BIM. A partir de **1º de janeiro de 2024**, obras públicas financiadas pela União exigem o uso de BIM nas fases de projeto de estruturas e instalações prediais (Nível 1 mínimo).
+
+Para obras privadas, a adoção ainda é voluntária — mas a tendência é de exigência crescente por parte de grandes incorporadoras e financiadoras.
+
+## Softwares Principais
+
+| Área | Software | Empresa |
+|---|---|---|
+| Arquitetura / Estrutura | Revit | Autodesk |
+| Estrutura (concreto) | TQS BIM, Eberick | AltoQi / TQS |
+| Instalações | Revit MEP, MagiCAD | Autodesk |
+| Clash detection | Navisworks | Autodesk |
+| Open BIM (IFC) | FreeCAD, Archicad | Gratuito / Graphisoft |
+
+O formato aberto IFC (Industry Foundation Classes) permite que diferentes softwares troquem modelos sem perda de informação.
+
+## Benefícios Reais para o Engenheiro Estrutural
+
+1. **Quantitativos automáticos**: o modelo gera automaticamente a lista de armação, volume de concreto e área de fôrma — sem contagem manual
+2. **Clash detection**: detecta interferências antes da obra (ver artigo anterior)
+3. **Visualização 4D**: o cronograma é vinculado ao modelo — você vê a obra sendo construída virtualmente
+5. **As-built digital**: o modelo atualizado durante a obra fica como documentação permanente para manutenção
+
+## BIM para Obras Pequenas: Vale a Pena?
+
+Para residências unifamiliares e pequenas obras, o custo de implantação do BIM ainda não se paga. O ponto de inflexão está em obras com 4+ pavimentos, áreas > 1.500 m² ou obras seriadas (condomínios com unidades repetidas). Para esses casos, o BIM reduz significativamente o retrabalho e as revisões de projeto.`
+  },
+  {
+    id: 93,
+    slug: "memorial-descritivo-estrutural",
+    category: "Projeto Estrutural",
+    title: "Memorial Descritivo Estrutural: O que Contém e Como Usar na Obra",
+    metaDescription: "Entenda o que é o memorial descritivo estrutural, quais informações ele deve conter — materiais, normas, cargas, solos, concretagem — e como usar como guia de execução.",
+    keyword: "memorial descritivo estrutural",
+    date: "29 Mar 2026",
+    summary: "O que é o memorial descritivo estrutural, quais informações ele deve conter e como usar como guia de execução na obra.",
+    content: `## O que é o Memorial Descritivo Estrutural?
+
+O memorial descritivo estrutural é o documento escrito que acompanha as pranchas de projeto e descreve as premissas, materiais, normas e condições de execução adotadas pelo engenheiro calculista. Ele complementa os desenhos com informações que não cabem ou não são adequadas para representação gráfica.
+
+É um documento obrigatório segundo o CREA para a aprovação do projeto e é parte integrante da ART do engenheiro.
+
+## O que Deve Conter
+
+### 1. Identificação do Projeto
+- Nome da obra e endereço
+- Proprietário ou contratante
+- Engenheiro calculista e número do CREA
+- Data de emissão e revisão
+
+### 2. Normas Técnicas Adotadas
+Lista das NBRs utilizadas no projeto:
+> ABNT NBR 6118:2014, NBR 6120:2019, NBR 6123:1988, NBR 7480:2007, NBR 14931:2003, etc.
+
+### 3. Materiais Especificados
+
+**Concreto:**
+- Resistência característica à compressão: fck (MPa)
+- Consistência (slump): em mm ou cm
+- Dimensão máxima do agregado (Dmax)
+- Tipo de cimento recomendado
+
+**Aço:**
+- Classe: CA-50 (fyk = 500 MPa) ou CA-60 (fyk = 600 MPa)
+- Fornecedor preferencial (opcional)
+
+### 4. Carregamentos Adotados
+
+- **Cargas permanentes**: peso próprio dos elementos + revestimentos + alvenaria
+- **Sobrecargas de uso**: escritório (2,0 kN/m²), residencial (1,5 kN/m²), garagem (3,0 kN/m²)
+- **Carga de vento**: calculada conforme NBR 6123 (velocidade básica V0 da região)
+
+### 5. Dados do Solo
+
+- Tipo de fundação adotada
+- Tensão admissível do solo (σadm) em kPa
+- Laudo de sondagem SPT de referência (data e empresa)
+- Profundidade de fundação
+
+### 6. Condições de Exposição
+
+- Classe de agressividade ambiental (I a IV, conforme NBR 6118 Tabela 6.1)
+- Cobrimentos nominais adotados por elemento
+
+### 7. Instruções de Execução
+
+Informações complementares para o executor:
+- Sequência de concretagem recomendada
+- Prazo mínimo de desforma
+- Posição e tratamento de juntas de concretagem
+- Restrições de carga durante a obra (proibição de estoque de material sobre lajes frescas)
+
+## Como Usar em Campo
+
+O memorial deve estar disponível no canteiro junto com as pranchas. Antes de iniciar qualquer serviço estrutural, confira no memorial:
+- O fck especificado → concreteira deve fornecer com esse fck
+- O cobrimento nominal → define o espaçador a usar
+- As condições de desforma → evita remover escoras cedo demais
+
+Em caso de dúvida ou impossibilidade de seguir alguma especificação do memorial, entre em contato com o engenheiro calculista. **Nunca altere materiais ou condições de execução sem anuência do projetista.**`
+  },
+  {
+    id: 94,
+    slug: "concretagem-planejamento-execucao-adensamento",
+    category: "Concreto",
+    title: "Concretagem: Planejamento, Execução e Adensamento para Estruturas de Qualidade",
+    metaDescription: "Guia completo de concretagem para obras: como planejar o dia de concretagem, lançar e adensar o concreto, evitar segregação e garantir a qualidade da estrutura.",
+    keyword: "concretagem planejamento execução adensamento",
+    date: "31 Mar 2026",
+    summary: "Como planejar e executar a concretagem — lançamento, adensamento, sequência, controle de temperatura e coleta de corpos de prova para estruturas de qualidade.",
+    content: `## Por que o Planejamento da Concretagem É Crítico?
+
+Uma vez que o caminhão betoneira chega ao canteiro, o processo é irreversível. O concreto tem janela de trabalhabilidade (usualmente 1,5 a 2 horas após a mistura) — se houver atraso, fila de caminhões, equipamento com defeito ou falta de equipe, o concreto endurece prematuramente e o elemento precisa ser demolido.
+
+Planejar é proteger a estrutura.
+
+## Lista de Verificação Pré-Concretagem
+
+Antes de solicitar o concreto:
+
+- [ ] Fôrmas montadas, escoradas e travadas
+- [ ] Armação posicionada e conferida (bitolas, espaçamentos, cobrimentos)
+- [ ] Espaçadores instalados em quantidade e posição corretos
+- [ ] Eletrodutos e caixas de instalações fixados com arame
+- [ ] Aberturas (furos de laje, embutidos) posicionados e fixados
+- [ ] Pontos de concretagem definidos (início, sequência, término)
+- [ ] Vibradores testados e com vibrador reserva disponível
+- [ ] Equipe de acabamento posicionada (para lajes)
+- [ ] Responsável técnico (ou encarregado de confiança) presente
+
+## Sequência de Lançamento
+
+**Pilares:** concretar de baixo para cima em camadas de máximo 50 cm. Vibrar cada camada antes de lançar a próxima, com penetração de 5–10 cm na camada inferior.
+
+**Vigas e lajes:** o ideal é concretar vigas e lajes monoliticamente no mesmo dia. Se isso não for possível, respeite o posicionamento da junta de concretagem previsto no projeto.
+
+**Sequência em laje:** avance num único sentido (não preencha ilhas separadas), partindo do ponto mais distante da bomba/grua. Isso evita aprisionamento de ar e segregação.
+
+## Adensamento com Vibrador de Imersão
+
+- Insira o vibrador **verticalmente** a distâncias de 30 a 50 cm (≈ 1,5 × raio de ação do vibrador)
+- Mantenha o vibrador por 5 a 15 segundos em cada ponto — até que não apareçam mais bolhas na superfície
+- **Não rastre o vibrador horizontalmente** — isso segrega o concreto (separa areia/pedra/cimento)
+- **Não vibre a armadura** — a vibração transmitida à barra cria micro-bolhas ao redor dela
+
+## Temperatura e Condições Críticas
+
+**Calor extremo (> 35 °C):** concrete de madrugada ou manhã cedo; use gelo na água de amassamento; aditivo retardador; pré-resfrie a fôrma com água.
+
+**Chuva intensa:** interrompa a concretagem se a chuva for forte o suficiente para aumentar a relação a/c. Aguarde a chuva passar e remova a água acumulada.
+
+**Vento seco:** cubra as superfícies imediatamente após o acabamento para evitar fissuração plástica (retração por evaporação rápida).
+
+## Coleta de Corpos de Prova
+
+A norma **NBR 5738** exige a moldagem de corpos de prova para controle de resistência:
+- Mínimo de 2 CPs por lote de concretagem (para rompimento aos 28 dias)
+- Coletar no intervalo entre o 1/4 e o 3/4 de cada caminhão
+- Curar em câmara úmida até o ensaio
+
+O resultado do ensaio (NBR 5739) confirma se o fck especificado foi atingido. Se o resultado for inferior ao mínimo, o engenheiro avalia se a estrutura pode ser aceita com restrições ou se precisa de reforço.`
+  },
+  {
+    id: 95,
+    slug: "slump-test-o-que-mede-e-como-interpretar",
+    category: "Concreto",
+    title: "Slump Test: O que Mede, Como Fazer e Como Interpretar o Resultado",
+    metaDescription: "Entenda o que é o slump test (abatimento do tronco de cone), o que ele mede, como realizá-lo corretamente conforme NBR NM 67 e o que fazer quando o concreto está fora do especificado.",
+    keyword: "slump test concreto abatimento",
+    date: "01 Abr 2026",
+    summary: "O que é o slump test, o que ele mede, como realizar corretamente conforme NBR NM 67 e o que fazer quando o concreto está fora do especificado.",
+    content: `## O que é o Slump Test?
+
+O slump test (ensaio de abatimento do tronco de cone) é o método mais simples e rápido para avaliar a consistência (trabalhabilidade) do concreto fresco. Ele indica a fluidez do concreto — ou seja, quão fácil é de lançar, adulterar e vibrar.
+
+O ensaio é regulamentado pela **NBR NM 67:1998** (método de ensaio) e pela **ASTM C143** (norma americana equivalente).
+
+## Equipamento Necessário
+
+- Cone de Abrams: molde troncocônico de chapa metálica (base inferior Ø20 cm, base superior Ø10 cm, altura 30 cm)
+- Haste de socamento: barra de aço φ16 mm, ponta esférica, 60 cm de comprimento
+- Placa metálica de base (≥ 50 × 50 cm)
+- Régua metálica ou trena
+
+## Como Realizar o Ensaio (NBR NM 67)
+
+1. Umedeça o cone e a placa de base
+2. Fixe o cone pisando nas abas da base e segure as alças laterais
+3. Preencha em 3 camadas iguais (~10 cm cada), socando cada camada **25 vezes** com a haste
+4. Após a terceira camada, raspe o excesso rente à borda superior
+5. Retire o cone verticalmente e com movimento uniforme em ≈ 5 segundos
+6. Meça a diferença de altura entre o topo do cone e o ponto mais alto do concreto abatido
+
+Esse valor em cm ou mm é o **abatimento** (slump).
+
+## Valores de Referência
+
+| Consistência | Slump | Aplicação |
+|---|---|---|
+| Seca | 0 a 2 cm | Concreto compactado a soco (pré-moldados) |
+| Plástica | 4 a 7 cm | Pilares e vigas com vibrador |
+| Fluida | 8 a 12 cm | Peças densamente armadas, bombeamento |
+| Muito fluida | 14 a 22 cm | Concreto autoadensável (CAA) |
+
+O memorial descritivo especifica o slump aceito para cada elemento. Valores típicos:
+- **Pilares e vigas** convencionais: 8 ± 2 cm
+- **Lajes** com bomba: 10 ± 2 cm
+- **CAA**: medido por espalhamento (flow table), não por slump
+
+## O que Fazer Quando o Slump Está Fora do Especificado?
+
+**Slump abaixo do mínimo (concreto seco demais):**
+- Risco de adensamento insuficiente, ninhos de concreto, concretagem deficiente
+- **Não adicione água ao caminhão sem autorização** — isso altera a relação a/c e reduz a resistência
+- Consulte o projetista; a solução correta é adicionar superplastificante, não água
+
+**Slump acima do máximo (concreto fluido demais):**
+- Risco de segregação e perda de resistência
+- Se a água foi adicionada em excesso no canteiro, o caminhão deve retornar
+- Se o concreto chegou dentro do slump e o responsável da obra adicionou água, há responsabilidade civil pelo serviço
+
+## Slump vs Resistência
+
+Maior slump ≠ menor resistência, necessariamente — desde que a fluidez seja obtida com superplastificante e não com excesso de água. Um concreto C30 com slump 16 cm (usando plastificante) pode ter a mesma resistência que um C30 com slump 8 cm. O que reduz resistência é a relação a/c elevada — não o slump em si.`
+  },
+  {
+    id: 96,
+    slug: "tipos-de-fundacao-como-escolher",
+    category: "Fundação",
+    title: "Tipos de Fundação: Como Escolher a Solução Certa para Cada Obra",
+    metaDescription: "Guia completo dos tipos de fundação — sapata, bloco, radier, estacas e tubulão — como escolher conforme o tipo de solo, carga da estrutura e custo da obra.",
+    keyword: "tipos de fundação como escolher",
+    date: "02 Abr 2026",
+    summary: "Guia completo dos tipos de fundação — sapata, bloco, radier, estacas e tubulão — como escolher conforme solo, carga e custo.",
+    content: `## Por que a Escolha da Fundação É Decisiva?
+
+A fundação transfere as cargas da estrutura para o solo. Se a fundação for subdimensionada ou inadequada para o solo, ocorre recalque (afundamento) — diferencial ou uniforme — que causa fissuras, inclinações e, nos casos graves, colapso estrutural.
+
+Trocar o tipo de fundação após a obra iniciada é extremamente caro. A escolha deve ser feita com base no **laudo de sondagem SPT** antes do início do projeto.
+
+## Fundações Rasas (Diretas)
+
+Transmitem a carga para o solo por pressão na base, sem necessidade de perfuração profunda. Usadas quando o solo resistente está próximo da superfície (até 2–3 m de profundidade).
+
+### Sapata Isolada
+Elemento de concreto armado que distribui a carga de um pilar numa área maior de solo. A mais comum em edificações residenciais e comerciais de médio porte.
+
+- Indicada para: solos com σadm ≥ 150 kPa, cargas por pilar de 300 kN a 2.000 kN
+- Forma: quadrada, retangular ou trapezoidal
+
+### Sapata Corrida
+Distribui a carga de uma parede ou fileira de pilares. Usada em alvenaria estrutural e fundações de muros.
+
+### Radier
+Laje de concreto armado que cobre toda a área da edificação. Indicado quando o solo tem baixa resistência e sapatas individuais seriam tão grandes que se sobreporiam.
+
+- Indicado para: σadm < 80 kPa, terrenos argilosos moles
+- Custo de material alto, mas elimina escavação de múltiplas sapatas
+
+### Bloco de Fundação
+Elemento de concreto simples (sem armação, ou com armação mínima) que transmite a carga de um pilar para o solo através de compressão. Usado quando a carga é baixa e o solo é de boa capacidade.
+
+## Fundações Profundas
+
+Transmitem a carga para camadas mais profundas do solo (abaixo de 3 m), seja por atrito lateral ou por resistência de ponta.
+
+### Estaca Hélice Contínua
+Executada com trado helicoidal contínuo, injetando concreto durante a retirada do trado. Não causa vibrações. A mais usada em edificações urbanas hoje.
+
+### Estaca Franki
+Percussão de tubo com maçarico, formando um bulbo de concreto na base. Boa capacidade de carga em solos arenosos.
+
+### Estaca Raiz
+Perfurada a trado, preenchida com argamassa de cimento e barra de aço central. Para solos difíceis, encostas e recuperação de fundações existentes.
+
+### Tubulão a Céu Aberto
+Escavado manualmente ou mecanicamente, com alargamento da base. Capacidade de carga muito alta, mas custo elevado e risco de instabilidade da escavação.
+
+## Como Escolher
+
+| Condição | Fundação recomendada |
+|---|---|
+| Solo resistente próximo da superfície, obra pequena | Sapata isolada |
+| Solo fraco superficialmente com camada resistente a 10–15 m | Estaca hélice contínua |
+| Solo fraco em toda a profundidade (argila mole) | Radier ou estaca flutuante |
+| Necessidade de não vibrações (vizinhança sensível) | Estaca raiz ou hélice contínua |
+| Reforma / reforço de fundação existente | Estaca raiz |`
+  },
+  {
+    id: 97,
+    slug: "sondagem-spt-como-interpretar-laudo",
+    category: "Fundação",
+    title: "Sondagem SPT: O que É e Como Interpretar o Laudo para Projetar Fundações",
+    metaDescription: "Entenda o que é a sondagem SPT, como é realizada, o que significa o índice NSPT e como interpretar o laudo de sondagem para definir o tipo e profundidade de fundação.",
+    keyword: "sondagem SPT interpretar laudo",
+    date: "03 Abr 2026",
+    summary: "O que é a sondagem SPT, como é realizada, o que significa o NSPT e como interpretar o laudo para projetar fundações.",
+    content: `## O que é a Sondagem SPT?
+
+SPT (Standard Penetration Test — Ensaio de Penetração Padrão) é o ensaio geotécnico mais utilizado no Brasil para investigar o subsolo. Ele determina a resistência do solo em diferentes profundidades e permite classificar o tipo de solo encontrado.
+
+A sondagem SPT é regulamentada pela **NBR 6484:2001** e deve ser realizada por empresa especializada antes de qualquer projeto de fundação.
+
+## Como é Realizada
+
+1. Perfura-se o terreno com trado manual ou mecânico até a profundidade de ensaio
+2. Um amostrador padrão (Split Spoon Sampler, Ø50 mm) é inserido no furo
+3. Um peso de 65 kg é solto em queda livre de 75 cm (martelo Terzaghi)
+4. Conta-se o número de golpes necessários para cravar o amostrador **30 cm** no solo
+5. Esse número de golpes = **NSPT** (índice de penetração padrão)
+6. Repete-se a cada metro de profundidade
+
+A amostra de solo retirada pelo amostrador é descrita (cor, textura, plasticidade) pelo sondador qualificado.
+
+## O que Significa o NSPT
+
+| NSPT | Classificação do solo |
+|---|---|
+| 0 (não crava) | Solo muito mole / sem resistência |
+| 1 – 4 | Argila mole, areia fofa |
+| 5 – 8 | Argila média, areia medianamente compacta |
+| 9 – 18 | Argila rija, areia compacta |
+| 19 – 30 | Argila dura, areia muito compacta |
+| > 30 | Solo muito denso ou rocha branda |
+| "Impenetrável" | Rocha ou matacão |
+
+Em geral, fundações rasas exigem NSPT ≥ 6 a 8 nas camadas de apoio. Estacas buscam NSPT ≥ 15 a 20 na base.
+
+## Como Ler o Laudo de Sondagem
+
+O laudo de sondagem contém:
+- Perfil estratigráfico (coluna com tipos de solo por profundidade)
+- Gráfico de NSPT × profundidade
+- Nível d'água (NA) — profundidade em que encontrou água
+- Número e posição dos furos (SP-01, SP-02, etc.)
+- Profundidade de impenetrabilidade
+
+### Exemplo de interpretação:
+> SP-01: 0–2m (argila porosa, NSPT 3-5) → solo fraco
+> 2–5m (argila arenosa, NSPT 8-12) → solo médio
+> 5–8m (areia compacta, NSPT 20-28) → camada de apoio
+> 8m: impenetrável (rocha)
+
+Nesse caso, estaca de 6 m seria adequada para atingir a camada de areia compacta.
+
+## Número Mínimo de Sondagens
+
+A **NBR 8036:1983** define:
+- Área até 200 m²: mínimo 2 sondagens
+- Área de 200 a 1.200 m²: 1 sondagem para cada 200 m² adicionais
+- Área > 1.200 m²: 1 sondagem para cada 500 m² adicionais, mínimo 6
+
+Para obras residenciais unifamiliares, 2 a 3 sondagens em cantos opostos do terreno já permitem uma análise adequada.
+
+## Cuidado: Limitações do SPT
+
+O SPT não detecta:
+- **Matacões** (pedras grandes isoladas) que podem ser confundidos com rocha
+- **Cavernas** e vazios no subsolo
+- **Solos cimentados** que podem dar NSPT alto mas não são rocha
+
+Em terrenos com histórico de aterro, antigas pedreiras ou próximos a corpos d'água, complementar o SPT com SPT-T (torque) ou ensaio de palheta (vane test) para solos argilosos.`
+  },
+  {
+    id: 98,
+    slug: "sapata-isolada-corrida-associada",
+    category: "Fundação",
+    title: "Sapata Isolada, Corrida e Associada: Diferenças, Usos e Dimensionamento Básico",
+    metaDescription: "Entenda as diferenças entre sapata isolada, sapata corrida e sapata associada em fundações de concreto armado — quando usar cada tipo e como dimensionar a área de base.",
+    keyword: "sapata isolada corrida associada fundação",
+    date: "04 Abr 2026",
+    summary: "Diferenças entre sapata isolada, corrida e associada — quando usar cada tipo e como dimensionar a área de base da fundação.",
+    content: `## O que é uma Sapata?
+
+Sapata é um elemento de fundação rasa que amplia a área de contato da estrutura com o solo, reduzindo a pressão transmitida ao terreno a um valor que o solo suporta sem recalque excessivo.
+
+É feita em concreto armado e trabalha predominantemente à flexão — ao contrário do bloco de fundação, que trabalha à compressão.
+
+## Sapata Isolada
+
+Serve um único pilar. É a solução mais simples e mais utilizada em edificações convencionais quando os pilares estão bem espaçados.
+
+**Geometria:** quadrada, retangular ou trapezoidal em planta; a altura cresce do bordo para o centro (forma escalonada ou piramidal). A espessura mínima da sapata é de 20 cm (NBR 6118).
+
+**Dimensionamento da área:**
+
+> A = N / σadm
+
+Onde:
+- A = área da base (m²)
+- N = carga do pilar (kN)
+- σadm = tensão admissível do solo (kPa = kN/m²)
+
+Exemplo: pilar com N = 500 kN em solo com σadm = 150 kPa → A = 500/150 = 3,33 m² → adotar sapata de 1,85 × 1,85 m (≈ 3,42 m²)
+
+**Armação:** malha bidirecional na face inferior, com cobrimento mínimo de 40–50 mm (classe de agressividade II–III para fundação).
+
+## Sapata Corrida
+
+Serve uma parede ou fileira de pilares alinhados. A largura é dimensionada pela pressão admissível e o comprimento acompanha o elemento.
+
+**Quando usar:**
+- Alvenaria estrutural (carga distribuída linear)
+- Muros de contenção com base de fundação
+- Fundações de paredes de subsolo
+
+**Dimensionamento:** largura = carga linear (kN/m) ÷ σadm (kPa)
+
+## Sapata Associada
+
+Liga dois ou mais pilares numa única sapata quando os pilares estão muito próximos (sapatas individuais se sobreporiam) ou quando um pilar está na divisa do terreno e não pode ser excêntrico.
+
+**Quando usar:**
+- Pilar de divisa: a sapata isolada seria excêntrica, gerando momento de tombamento no solo
+- Pilares próximos: distância entre eixos < 2× largura da sapata
+
+**Particularidade:** a sapata associada desenvolve um diagrama de pressão não uniforme no solo, exigindo cálculo cuidadoso da armação para evitar fissuração excessiva.
+
+## Profundidade Mínima de Fundação
+
+A NBR 6122 exige que sapatas estejam:
+- A pelo menos 0,50 m abaixo da superfície
+- Abaixo da camada de solo vegetal (húmus) e aterros
+- No mínimo a 0,50 m abaixo do nível d'água (ou com proteção especial)
+
+Em Goiás, a camada de solo vegetal (latossolo vermelho) costuma ter 0,5 a 1,2 m — portanto a profundidade mínima prática é 1,0 a 1,5 m.
+
+## Sapata vs Bloco: Qual a Diferença?
+
+| Sapata | Bloco |
+|---|---|
+| Concreto armado | Concreto simples ou ciclópico |
+| Trabalha à flexão | Trabalha à compressão |
+| Altura menor, mais econômica em aço | Altura maior, mais econômica em concreto |
+| Usada quando N é grande | Usada quando N é pequeno e σadm é alta |`
+  },
+  {
+    id: 99,
+    slug: "estacas-tipos-quando-usar-comparativo",
+    category: "Fundação",
+    title: "Estacas: Tipos, Quando Usar e Comparativo de Custo e Desempenho",
+    metaDescription: "Comparativo completo dos tipos de estacas para fundações profundas — hélice contínua, Franki, raiz, pré-moldada e metálica — com critérios de escolha e faixa de custo.",
+    keyword: "estacas tipos fundação quando usar",
+    date: "05 Abr 2026",
+    summary: "Comparativo dos tipos de estacas — hélice contínua, Franki, raiz, pré-moldada e metálica — critérios de escolha e faixa de custo.",
+    content: `## Quando Usar Fundação Profunda?
+
+Fundação profunda (estacas ou tubulões) é necessária quando o solo resistente está abaixo de 3 m de profundidade ou quando as cargas são grandes demais para fundações rasas. A principal referência é o laudo de sondagem SPT.
+
+## Tipos de Estaca
+
+### Estaca Hélice Contínua Monitorada (HCM)
+A mais popular atualmente em obras urbanas brasileiras. Um trado helicoidal contínuo penetra o solo com rotação; concreto bombeado é injetado durante a retirada do trado; depois, barra de aço (ou gaiola) é inserida por vibração.
+
+**Vantagens:** sem vibração, sem deslocamento de solo, produção rápida (8–15 estacas/dia), monitoramento eletrônico em tempo real.
+
+**Limitações:** não adequada para solos com matacões; gaiola de armação inserida a posteriori (dificuldade em estacas longas); concreto não pode ser inspecionado.
+
+**Diâmetros:** 30, 40, 50, 60, 70, 80 cm.
+
+### Estaca Franki (ou Brocas de Percussão)
+Tubo de aço cravado com queda de martelo, seguido de expansão da base com concreto seco. Forma um bulbo que aumenta a capacidade de ponta.
+
+**Vantagens:** alta capacidade de ponta, bom para solos arenosos e pedregulhos.
+**Limitações:** gera vibração e ruído (imprópria para vizinhança sensível), processo mais lento.
+
+### Estaca Raiz (ou Micro-Estaca)
+Perfurada com trado de pequeno diâmetro (10–25 cm), preenchida com argamassa de cimento sob pressão e com barra de aço central. Pode ser executada em qualquer inclinação.
+
+**Vantagens:** sem vibração, pode ser executada no interior de edificações, ideal para reforço de fundações existentes, adapta-se a solos com matacões.
+
+**Limitações:** capacidade por estaca mais baixa que a hélice; custo unitário mais alto.
+
+**Diâmetros:** 10, 15, 20, 25 cm.
+
+### Estaca Pré-Moldada de Concreto
+Peças de concreto fabricadas em usina e cravadas por percussão ou vibração. Seção quadrada, circular ou hexagonal.
+
+**Vantagens:** resistência conhecida antes da cravação, bom controle de qualidade.
+**Limitações:** ruído e vibração de cravação; emendas necessárias para grandes profundidades; transporte caro para peças longas.
+
+### Estaca Metálica (Perfil H ou Tubo)
+Perfis de aço cravados. Usados em obras de grande porte, pontes e estruturas offshore.
+
+## Comparativo Resumido
+
+| Tipo | Vibração | Prod. (est/dia) | Custo relativo | Melhor uso |
+|---|---|---|---|---|
+| Hélice contínua | Não | Alto | Médio | Obras urbanas gerais |
+| Franki | Sim | Médio | Médio | Solos arenosos |
+| Raiz | Não | Baixo | Alto | Reforço, matacões |
+| Pré-moldada | Sim | Alto | Baixo-Médio | Obras grandes |
+
+## Como Especificar Estacas
+
+No projeto de fundações, o engenheiro especifica:
+- Tipo de estaca e diâmetro nominal
+- Capacidade de carga de projeto (Nd em kN)
+- Profundidade mínima de assentamento na camada de solo resistente
+- Fator de segurança adotado (mínimo FS = 2 para NBR 6122)
+- Exigência de prova de carga ou ensaio de integridade`
+  },
+  {
+    id: 100,
+    slug: "pilares-de-concreto-armado-tipos-e-detalhamento",
+    category: "Projeto Estrutural",
+    title: "Pilares de Concreto Armado: Tipos, Dimensionamento Básico e Detalhamento",
+    metaDescription: "Entenda os tipos de pilares de concreto armado — intermediário, de canto, de divisa — dimensionamento básico por taxa de armação e detalhamento conforme NBR 6118.",
+    keyword: "pilares concreto armado tipos detalhamento",
+    date: "07 Abr 2026",
+    summary: "Tipos de pilares de concreto armado, dimensionamento básico por taxa de armação e detalhamento de barras e estribos conforme NBR 6118.",
+    content: `## O que é um Pilar em Concreto Armado?
+
+Pilar é um elemento estrutural predominantemente comprimido, com comprimento muito maior que as dimensões da seção transversal. Ele recebe as cargas das vigas e lajes e as transmite para as fundações.
+
+Em concreto armado, o pilar é formado por:
+- **Concreto** (resistência à compressão)
+- **Barras longitudinais** (resistência à tração e ao momento fletor)
+- **Estribos** (confinamento do concreto e resistência ao cisalhamento)
+
+## Classificação dos Pilares por Posição
+
+| Tipo | Localização | Característica |
+|---|---|---|
+| Pilar intermediário | Interior da edificação | Carga centrada, mais simples |
+| Pilar de divisa | Borda do edifício | Viga em apenas um lado → excentricidade |
+| Pilar de canto | Canto do edifício | Vigas em duas direções → momento biaxial |
+| Pilar-parede | Pilar estreito e longo (b ≤ h/4) | Comportamento de parede, regras especiais |
+
+## Dimensões Mínimas (NBR 6118)
+
+- Menor dimensão da seção: **≥ 19 cm** (regra geral)
+- Para pilares em paredes: pode ser reduzido a **12 cm** com verificações específicas
+- Seção mínima absoluta: **≥ 360 cm²**
+
+## Taxa de Armação Longitudinal
+
+A NBR 6118 exige que a armação longitudinal dos pilares esteja entre:
+
+- **Mínimo:** 0,4% da área bruta da seção (Ac)
+- **Máximo:** 8% de Ac (para evitar congestionamento)
+- **Prático usual:** 1% a 4%
+
+Exemplo: pilar 20×50 cm → Ac = 1.000 cm²
+- As,mín = 0,4% × 1.000 = 4,0 cm²
+- As,máx = 8,0% × 1.000 = 80,0 cm²
+
+## Estribos: Espaçamento Máximo
+
+O espaçamento máximo entre estribos em pilares (NBR 6118 item 18.3.3.2) é o menor de:
+
+- 20 × φl (diâmetro da barra longitudinal)
+- Menor dimensão da seção
+- 30 cm
+
+Exemplo: barra longitudinal φ12,5 mm em pilar 20×50 cm:
+- 20 × 12,5 = 250 mm = 25 cm
+- Menor dimensão = 20 cm ← **governa**
+- 30 cm
+
+Portanto, espaçamento máximo de estribos = **20 cm**.
+
+## Detalhamento Mínimo da Seção
+
+- Mínimo 4 barras longitudinais (uma em cada canto)
+- Espaçamento livre entre barras: ≥ 2 cm e ≥ 1,2 × Dmax do agregado
+- Espaçamento livre máximo entre barras adjacentes: ≤ 20 cm (para garantir ação conjunta)
+- Ganchos dos estribos alternados (no mínimo 1 gancho por face) entre estribos consecutivos
+
+## Pilar-Parede: Regra Especial
+
+Quando b/h ≤ 1/4, o elemento é chamado pilar-parede e requer:
+- Armadura distribuída nas faces laterais (armadura de pele)
+- Estribos horizontais com função de costura
+- Verificação à flambagem no sentido da espessura`
+  },
+  {
+    id: 101,
+    slug: "estribos-funcao-tipos-espacamento",
+    category: "Normas ABNT",
+    title: "Estribos em Concreto Armado: Função, Tipos e Espaçamento Conforme NBR 6118",
+    metaDescription: "Entenda a função dos estribos em vigas e pilares de concreto armado, os tipos (simples, duplo, múltiplo), cálculo de espaçamento e detalhamento conforme NBR 6118.",
+    keyword: "estribos concreto armado espaçamento NBR 6118",
+    date: "08 Abr 2026",
+    summary: "Função dos estribos, tipos simples/duplo/múltiplo, cálculo de espaçamento e detalhamento conforme NBR 6118 para vigas e pilares.",
+    content: `## O que São Estribos?
+
+Estribos são barras de aço dobradas em forma de laço (retangular, circular ou poligonal) que envolvem as barras longitudinais dos elementos estruturais. Eles são a armadura transversal dos pilares e vigas.
+
+## Funções dos Estribos
+
+### Em Vigas
+1. **Resistência ao cisalhamento (força cortante)**: principal função. O concreto sozinho não suporta esforço cortante acima de um determinado limiar — os estribos complementam essa resistência
+2. **Confinamento das barras longitudinais**: impede o flambamento lateral das barras comprimidas
+3. **Manutenção da geometria**: mantém a gaiola de armação no posicionamento correto durante a montagem e a concretagem
+
+### Em Pilares
+1. **Confinamento do concreto**: aumenta a ductilidade e a resistência do concreto comprimido (efeito de triaxialidade)
+2. **Prevenção de flambagem das barras longitudinais**
+3. **Resistência ao cisalhamento** em pilares sujeitos a forças horizontais (vento, sismo)
+
+## Tipos de Estribo
+
+### Simples (1 ramo)
+Estribo com dois ramos verticais e dois horizontais, formando um retângulo. Adequado para seções menores com poucas barras.
+
+### Duplo (2 ramos)
+Dois estribos simples sobrepostos, ou um estribo + garfo central. Usado quando o número de barras longitudinais ou a largura da seção exigem suporte intermediário.
+
+### Múltiplo
+3 ou mais ramos. Para seções largas ou com muitas barras.
+
+A regra da NBR 6118 é que **nenhuma barra longitudinal fique sem suporte de um canto de estribo ou de um grampo** a menos de 15 cm de um suporte.
+
+## Cálculo do Espaçamento em Vigas
+
+A NBR 6118 define o espaçamento máximo de estribos em vigas como:
+
+- **Em zona com cortante elevado (próximo ao apoio)**: espaçamento ≤ d/2 (d = altura útil da viga)
+- **Em zona de cortante baixo (meio do vão)**: espaçamento ≤ d
+
+E em nenhum caso: **> 30 cm** (valor absoluto máximo)
+
+**Região de confinamento em vigas (zona nodal):** estribos adicionais a cada d/4, no comprimento ≥ 2d a partir da face do pilar.
+
+## Exemplo Prático
+
+Viga 14×50 cm (h=50, d=44 cm), CA-50, fck=25 MPa:
+
+- Espaçamento junto ao apoio: máximo d/2 = 22 cm → adotar **c/15**
+- Espaçamento no vão: máximo d = 44 cm → adotar **c/20** ou **c/25**
+
+Para pilares com φl ≤ 12,5 mm e seção ≤ 20 cm: usar φt = 5,0 ou 6,3 mm para estribos.
+
+## Gancho dos Estribos
+
+Todo estribo precisa de gancho nas extremidades:
+- Ganchos de **135°** com trecho reto ≥ 10φt (recomendado para pilares)
+- Ganchos de **90°** com trecho reto ≥ 12φt (aceito para vigas)
+
+Os ganchos dos estribos consecutivos devem ser alternados em lados opostos do elemento.`
+  },
+  {
+    id: 102,
+    slug: "gaiola-de-armacao-pilares-como-montar",
+    category: "Dicas Técnicas",
+    title: "Gaiola de Armação de Pilares: Como Montar e Instalar Corretamente",
+    metaDescription: "Aprenda como montar a gaiola de armação de pilares de concreto armado — sequência de montagem, fixação de estribos, posicionamento de espaçadores e instalação na fôrma.",
+    keyword: "gaiola armação pilar como montar",
+    date: "09 Abr 2026",
+    summary: "Como montar a gaiola de armação de pilares — sequência de montagem, fixação de estribos, espaçadores e instalação na fôrma.",
+    content: `## O que é uma Gaiola de Pilar?
+
+A gaiola é a armação completa de um pilar: as barras longitudinais posicionadas e os estribos espaçados e fixados ao redor delas, formando um "esqueleto" de aço que será colocado dentro da fôrma antes da concretagem.
+
+A qualidade da gaiola — dimensões corretas, estribos bem espaçados, espaçadores fixados — determina diretamente a qualidade do pilar executado.
+
+## Materiais Necessários
+
+- Barras longitudinais (conforme projeto: φ, quantidade, comprimento)
+- Estribos (conforme projeto: φ, dimensão interna, espaçamento)
+- Arame recozido n°18 (para amarração)
+- Espaçadores de concreto (para garantir cobrimento)
+- Mesa de montagem (cavaletes de madeira ou metal)
+- Trena e marcador para espaçamento dos estribos
+
+## Sequência de Montagem
+
+### 1. Preparo das barras longitudinais
+- Corte e dobramento conforme planilha de ferro
+- Verifique o comprimento de transpasse se houver emenda
+- Alinhe as barras paralelamente sobre os cavaletes de montagem
+
+### 2. Marcação dos estribos
+- Marque as posições dos estribos nas barras longitudinais com giz ou caneta
+- Distâncias: conforme projeto, geralmente c/7 a c/10 nas zonas de confinamento e c/15 a c/20 no meio
+- Não esqueça de adicionar estribos extras no nó viga-pilar (zona nodal)
+
+### 3. Instalação dos estribos
+- Passe os estribos nas barras longitudinais na sequência
+- Amarre com arame dobrado em "8" ou gancho em cada cruzamento
+- Não é necessário amarrar todos os cruzamentos — amarre os de canto e alternadamente os internos
+
+### 4. Instalação dos espaçadores
+- Coloque espaçadores de concreto nas 4 faces da gaiola
+- Quantidade: 4 espaçadores por m² de face (NBR 14931) → praticamente 1 espaçador por metro linear de pilar em cada face
+- Prenda os espaçadores com arame para não se deslocarem durante a concretagem
+
+### 5. Verificação final antes de colocar na fôrma
+- [ ] Dimensões externas da gaiola ≤ dimensão da seção − 2× cobrimento
+- [ ] Espaçamento real dos estribos conforme projeto
+- [ ] Ganchos dos estribos alternados
+- [ ] Espaçadores em posição
+- [ ] Nenhuma barra com ferrugem com escamas, graxa ou argamassa
+
+## Instalação na Fôrma
+
+1. Posicione a fôrma de 3 faces (deixando 1 face aberta para a concretagem)
+2. Encaixe a gaiola sobre as barras de espera, verificando o alinhamento
+3. Feche a 4ª face da fôrma
+4. Verifique a prumalidade do conjunto (prumo de face e de quina)
+
+## Erro Comum: Estribo Aberto
+
+Um erro muito frequente em canteiros é deixar os estribos "abertos" (os ganchos não amarrados), pois facilita a passagem da gaiola sobre as barras de espera. Isso é um vício perigoso — os estribos devem ser fechados e amarrados antes da concretagem. Estribos abertos não confinam o concreto e não resistem ao cisalhamento adequadamente.`
+  },
+  {
+    id: 103,
+    slug: "viga-baldrame-funcao-diferenca-fundacao",
+    category: "Fundação",
+    title: "Viga Baldrame: Função, Detalhamento e Diferença para Viga de Fundação",
+    metaDescription: "Entenda o que é viga baldrame, para que serve, quando é necessária, como é armada e qual a diferença entre viga baldrame e viga de fundação em concreto armado.",
+    keyword: "viga baldrame função detalhamento",
+    date: "10 Abr 2026",
+    summary: "O que é viga baldrame, para que serve, quando é necessária, como é armada e diferença para viga de fundação.",
+    content: `## O que é Viga Baldrame?
+
+Viga baldrame (ou viga de equilíbrio, em alguns contextos) é a viga de concreto armado que liga as fundações entre si ao nível do solo, formando um grelha de amarração. Ela não transmite carga para o solo diretamente — sua função é estrutural e de ligação.
+
+O nome "baldrame" vem do latim *baldramum*, designando o elemento de base de uma estrutura.
+
+## Funções da Viga Baldrame
+
+1. **Distribuição de recalque**: se uma fundação recalcar mais que as outras, a viga baldrame distribui o esforço para as fundações adjacentes, evitando fissuras excessivas
+2. **Amarração horizontal**: impede que as fundações se "abram" sob cargas horizontais (empuxo de terra, vento, sismo)
+3. **Base para alvenaria**: em construções de alvenaria cerâmica, a viga baldrame é a base sobre a qual se inicia a alvenaria de elevação
+4. **Contenção de recheio**: forma um perímetro que retém o material de aterro interno antes da laje de piso
+
+## Quando é Obrigatória?
+
+A viga baldrame é tecnicamente necessária quando:
+- Há diferenças de carga entre fundações (risco de recalque diferencial)
+- O terreno é irregular ou de baixa resistência
+- A edificação tem subsolo ou desnível no terreno
+- Normas locais ou o projeto estrutural exigem a amarração
+
+Para construções simples em solos homogêneos e de boa capacidade, pode ser dispensada — mas a maioria dos projetos residenciais a inclui como boa prática.
+
+## Dimensões Usuais
+
+- **Largura:** 15 a 30 cm (coincide com a espessura da alvenaria ou com o pilar)
+- **Altura:** 30 a 60 cm
+- **Profundidade de assentamento:** deve apoiar sobre as fundações ou no solo compactado, nunca sobre material fofo
+
+## Armação Típica
+
+A viga baldrame trabalha como viga contínua (ou viga de grelha) — pode sofrer tração no fundo (centro do vão) e no topo (sobre as fundações). Por isso, a armação é bidirecional:
+
+**Barras longitudinais:**
+- 2 φ12,5 no fundo (mínimo)
+- 2 φ12,5 no topo (mínimo)
+- Ou conforme projeto estrutural
+
+**Estribos:**
+- φ6,3 ou φ8,0 mm
+- c/15 a c/20 cm
+
+**Cobrimento:** 40 a 50 mm (a fundação está em contato direto com o solo — classe de agressividade III ou IV).
+
+## Viga Baldrame vs Viga de Fundação
+
+| Viga Baldrame | Viga de Fundação |
+|---|---|
+| Liga fundações isoladas | É a própria fundação (transmite carga ao solo) |
+| Fica acima das sapatas | Fica apoiada no solo diretamente |
+| Função de amarração e distribuição | Função de fundação |
+| Pode ficar acima do nível do solo | Deve estar enterrada no solo resistente |
+
+Em algumas obras os dois termos são usados de forma intercambiável — o que importa é entender a função do elemento no projeto em questão.`
+  },
+  {
+    id: 104,
+    slug: "radier-quando-indicado-espessura",
+    category: "Fundação",
+    title: "Radier: Quando É Indicado, Vantagens e Como Calcular a Espessura",
+    metaDescription: "Entenda o que é o radier, quando ele é a melhor solução de fundação, como calcular a espessura mínima e como armar conforme as solicitações de projeto.",
+    keyword: "radier fundação quando indicado espessura",
+    date: "11 Abr 2026",
+    summary: "O que é radier, quando é indicado como solução de fundação, como calcular a espessura mínima e como armar corretamente.",
+    content: `## O que é Radier?
+
+Radier (do francês *radier*) é uma laje de fundação que cobre toda a área da edificação. Ele distribui as cargas de todos os pilares e paredes para o solo uniformemente, funcionando como uma "plataforma flutuante" sobre o terreno.
+
+Ao contrário das sapatas isoladas que pontualmente distribuem a carga, o radier transforma toda a edificação numa única fundação contínua.
+
+## Quando o Radier é Indicado?
+
+### Solo de baixa resistência (σadm < 80 kPa)
+Se a tensão admissível do solo é baixa, as sapatas ficariam tão grandes que se sobreporiam — é mais racional reunir tudo numa única laje.
+
+### Edificações leves e uniformes
+Residências térreas, galpões e edificações com carga relativamente uniforme distribuída. O radier funciona bem quando não há concentrações muito elevadas de carga.
+
+### Solos com variabilidade (risco de recalque diferencial)
+A rigidez do radier tende a distribuir recalques diferenciais entre os pilares, reduzindo o risco de fissuras por recalque não uniforme.
+
+### Edifícios em solos de aterro controlado
+Quando o terreno é todo aterrado e compactado com controle tecnológico, o radier pode ser a solução mais econômica.
+
+## Quando NÃO Usar Radier
+
+- Solo com camada resistente muito profunda (melhor usar estacas)
+- Edificações com cargas muito concentradas e desiguais (pilares com carga 10× maior que outros)
+- Terrenos com nível d'água elevado e variável (risco de subpressão de água)
+
+## Espessura Mínima do Radier
+
+A espessura mínima para radiers de edificações convencionais é determinada pelo maior dos seguintes critérios:
+
+1. **Punção nos pilares:** h ≥ Vd / (bo × fcd) — onde bo é o perímetro crítico (d ao redor do pilar)
+2. **Flexão:** h definida para limitar a altura de cálculo
+3. **Construtivo:** mínimo de **20 cm** para execução e cobrimento adequados
+
+Para residências unifamiliares (cargas baixas, σadm = 80–150 kPa), espessuras de 20 a 30 cm com malha dupla de φ10 c/15 são usuais. Para edificações comerciais, 30 a 50 cm são mais comuns.
+
+## Armação do Radier
+
+O radier trabalha como laje invertida — as reações do solo são as "cargas" e os pilares são os apoios. Por isso:
+
+- **Armadura principal: na face SUPERIOR** (região mais tracionada sobre pilares)
+- **Armadura de distribuição: na face INFERIOR** (região mais tracionada no meio dos vãos)
+
+Na prática, adota-se armação dupla (malha superior e inferior) com poucas variações — a incerteza na distribuição real de pressões no solo justifica a simetria.
+
+## Atenção ao Contato com o Solo
+
+Antes de concretar o radier:
+- Apiloar ou compactar o solo de fundação
+- Aplicar um lastro de concreto magro (Cc 8 a 10 MPa) de 5 cm — serve de superfície de trabalho e protege a armação do contato direto com o solo
+- Usar impermeabilização sob o lastro se houver risco de umidade ascensional`
+  },
+  {
+    id: 105,
+    slug: "bloco-de-coroamento-funcao-dimensionamento",
+    category: "Fundação",
+    title: "Bloco de Coroamento: Função, Dimensionamento e Ligação com as Estacas",
+    metaDescription: "Entenda o que é o bloco de coroamento em fundações profundas, como ele distribui a carga do pilar para as estacas e como dimensionar o número de estacas e a geometria do bloco.",
+    keyword: "bloco de coroamento estacas dimensionamento",
+    date: "12 Abr 2026",
+    summary: "O que é o bloco de coroamento, como distribui a carga do pilar para as estacas e como dimensionar o número de estacas e a geometria do bloco.",
+    content: `## O que é Bloco de Coroamento?
+
+Bloco de coroamento (ou simplesmente "bloco") é o elemento de fundação que reúne um grupo de estacas e transmite a carga do pilar para elas. É um elemento de concreto, geralmente de grandes dimensões, que fica entre o pilar e as estacas.
+
+Ao contrário da sapata (que distribui a carga diretamente ao solo), o bloco não apoia no solo — ele se sustenta pelas estacas.
+
+## Número de Estacas Necessárias
+
+A quantidade de estacas é determinada pela carga do pilar e pela capacidade individual de cada estaca (Nd):
+
+> n = N / Nd  (arredondado para cima, mínimo 2 estacas por pilar)
+
+Onde:
+- n = número de estacas
+- N = carga de cálculo do pilar (incluindo peso próprio do bloco)
+- Nd = carga admissível da estaca (fornecida pelo relatório de execução ou prova de carga)
+
+**Mínimo de 2 estacas por pilar** (para garantir estabilidade em qualquer direção horizontal).
+
+## Disposição das Estacas
+
+As estacas são distribuídas simetricamente em relação ao eixo do pilar:
+
+| Nº estacas | Disposição |
+|---|---|
+| 2 | Alinhadas |
+| 3 | Triângulo equilátero |
+| 4 | Quadrado |
+| 5 | Quadrado + centro |
+| 6 | Hexágono ou 2 fileiras de 3 |
+
+O espaçamento mínimo entre eixos de estacas é **3 × diâmetro** da estaca (NBR 6122), para evitar interferência entre os bulbos de pressão.
+
+## Dimensões do Bloco
+
+- **Largura:** borda da última estaca + balanço mínimo (geralmente Ø/2 a 1× o diâmetro da estaca)
+- **Comprimento:** idem no outro sentido
+- **Altura mínima:** 1,5× o diâmetro da estaca mais larga, com mínimo de 50 cm
+
+O bloco trabalha como uma viga de travação que distribui os esforços para cada estaca — por isso precisa de armação adequada (modelo de bielas e tirantes).
+
+## Armação pelo Modelo de Bielas e Tirantes
+
+O bloco de coroamento é dimensionado pelo modelo de bielas de compressão e tirantes de tração (strut-and-tie):
+
+- As bielas de compressão partem do pilar e chegam às estacas
+- O tirante é a armação de tração na base do bloco, que une os cabeços das estacas
+
+O comprimento de ancoragem do tirante deve ser garantido além do eixo das estacas — o que exige comprimento de ancoragem calculado.
+
+## Ligação Bloco-Estaca
+
+As estacas devem ser **embutidas no bloco** com comprimento mínimo de:
+- 5 cm (para estacas moldadas in loco — hélice contínua)
+- 10 a 15 cm para estacas pré-moldadas
+
+Após embutimento, as armaduras das estacas (ou as barras inseridas nas estacas hélice) se prolongam até a armação do bloco para garantir a ligação estrutural.`
+  },
+  {
+    id: 106,
+    slug: "recalque-diferencial-causas-prevencao",
+    category: "Fundação",
+    title: "Recalque Diferencial: Causas, Manifestações e Como Prevenir",
+    metaDescription: "Entenda o que é recalque diferencial, por que ele ocorre, como identificar suas manifestações — fissuras, inclinações, desníveis — e como prevenir com projeto adequado.",
+    keyword: "recalque diferencial fundação causas",
+    date: "14 Abr 2026",
+    summary: "O que é recalque diferencial, por que ocorre, como identificar fissuras e desníveis e como prevenir com projeto e execução adequados.",
+    content: `## O que é Recalque?
+
+Recalque é o afundamento (assentamento vertical) de uma fundação quando o solo se deforma sob a carga aplicada. Até certo ponto, o recalque é normal e previsto no projeto — o problema ocorre quando diferentes fundações da mesma edificação recalcam de forma desigual.
+
+**Recalque uniforme:** todas as fundações afundam igualmente → a estrutura desce, mas não fissura (raridade na prática).
+
+**Recalque diferencial:** fundações diferentes afundam por quantidades diferentes → a estrutura distorce, gerando esforços adicionais não previstos no cálculo, com consequente fissuração.
+
+## Causas do Recalque Diferencial
+
+### Solo heterogêneo
+O mais comum. O solo tem resistências diferentes nos pontos de cada fundação — comum em terrenos com variação lateral de solo ou com aterros irregulares.
+
+### Cargas desiguais entre pilares
+Pilar interno com 1.000 kN ao lado de pilar de borda com 200 kN, ambos em sapatas num solo uniforme — mesmo que proporcionalmente corretas, as deformações podem ser diferentes pela não-linearidade do solo.
+
+### Construção vizinha posterior
+Obra adjacente que escava ou carrega o solo altera as tensões no terreno da edificação existente.
+
+### Variação do lençol freático
+Rebaixamento do lençol comprime solos argilosos saturados (adensamento) → recalque lento mas expressivo em argilas moles.
+
+### Vazamento de água ou esgoto
+Amolece o solo localizado sob uma fundação específica.
+
+## Como Identificar Recalque Diferencial na Estrutura
+
+| Manifestação | O que pode indicar |
+|---|---|
+| Fissuras diagonais nas alvenarias (45°) | Distorção angular entre apoios |
+| Fissuras em janelas e portas (diagonal no canto) | Deformação da estrutura ao redor da abertura |
+| Portas que "empancam" ou deixam de vedar | Distorção do quadro pela deformação estrutural |
+| Desnível visível no piso ou no telhado | Recalque concentrado em um ponto |
+| Separação entre fachada e estrutura | Recalque diferencial entre estrutura e alvenaria |
+
+## Limites Normativos (NBR 6118)
+
+A NBR 6118 limita a distorção angular (Δ/L) em função do tipo de estrutura e do revestimento:
+
+- **Estruturas com vedação em alvenaria de tijolo:** Δ/L ≤ 1/600
+- **Estruturas com revestimento frágil (cerâmica):** Δ/L ≤ 1/1000
+- **Danos estruturais visíveis:** Δ/L > 1/150
+
+## Como Prevenir
+
+1. **Sondagem adequada**: laudo SPT em todos os cantos do terreno antes do projeto
+2. **Fundação uniforme**: usar o mesmo tipo de fundação para toda a edificação (misturar sapata e estaca aumenta o risco de diferencial)
+3. **Junta de dilatação**: separar blocos de cargas muito diferentes (torre + garagem)
+4. **Vigas de equilíbrio** (baldrames): redistribuem recalques diferenciais entre vizinhos`
+  },
+  {
+    id: 107,
+    slug: "no-viga-pilar-detalhes-criticos",
+    category: "Projeto Estrutural",
+    title: "Nó Viga-Pilar: Detalhes Críticos para Resistência e Ductilidade da Estrutura",
+    metaDescription: "Entenda o comportamento do nó viga-pilar em concreto armado, os tipos de nó (externo, interno, de topo), os esforços envolvidos e os detalhes de armação que a NBR 6118 exige.",
+    keyword: "nó viga-pilar detalhe concreto armado",
+    date: "15 Abr 2026",
+    summary: "Comportamento do nó viga-pilar, tipos de nó externo/interno/de topo, esforços envolvidos e detalhes de armação conforme NBR 6118.",
+    content: `## O que é o Nó Viga-Pilar?
+
+O nó viga-pilar (ou ligação viga-pilar, ou região nodal) é a zona do pilar onde uma ou mais vigas se conectam. É uma região de alta concentração de esforços, com tensões de compressão, tração e cisalhamento atuando simultaneamente.
+
+Uma detalhamento inadequado do nó pode levar à falha prematura da estrutura — mesmo que as vigas e pilares individualmente estejam bem dimensionados.
+
+## Tipos de Nó
+
+### Nó Externo (ou de Borda)
+Pilar de divisa com viga em apenas um lado. A armação superior da viga não "passa pelo pilar" — precisa ser ancorada dentro do nó com gancho ou armação adicional.
+
+### Nó Interno
+Pilar intermediário com vigas nos dois lados. As barras das vigas passam pelo nó de um lado ao outro — ancoragem mais simples, mas o nó ainda precisa de estribos adicionais.
+
+### Nó de Topo (Coroamento)
+Pilar com vigas na última laje. Região crítica para edifícios com carga de vento ou efeito de segunda ordem — requer atenção especial ao comprimento de ancoragem.
+
+## Esforços no Nó
+
+No nó ocorrem simultaneamente:
+- **Tração** na armadura longitudinal das vigas (face tracionada)
+- **Compressão** no concreto das bielas diagonais
+- **Cisalhamento** nas faces do nó
+
+Esses esforços combinados exigem:
+1. Ancoragem adequada das barras de viga dentro do nó
+2. Estribos de confinamento dentro do nó
+3. Concreto de qualidade suficiente (fck ≥ 20 MPa, preferencialmente ≥ 25 MPa)
+
+## Estribos de Confinamento no Nó (NBR 6118)
+
+A NBR 6118 exige que a zona nodal contenha estribos horizontais para confinar o concreto e resistir ao cisalhamento. O espaçamento deve ser **≤ h/4** (onde h é a altura do pilar) ou **≤ 10 cm** na zona nodal.
+
+Prática comum: dobrar a densidade de estribos no comprimento de 2d acima e abaixo da viga (d = altura útil da viga).
+
+## Ancoragem das Barras de Viga
+
+No nó externo, as barras superiores da viga (armadura negativa) precisam ser ancoradas com:
+- **Gancho de 90° vertical** dentro do pilar (comprimento de 12φ após o dobramento)
+- **Comprimento de ancoragem reta ld** disponível no pilar: se a largura do pilar for menor que ld, usar gancho
+
+Para o nó interno, as barras passam de um lado ao outro com comprimento mínimo de transpasse.
+
+## Erro Frequente: Viga "Pendurada" no Nó
+
+Um erro comum em projetos simplificados é projetar vigas que chegam ao nó com barras cortadas rente à face do pilar, sem ancoragem adequada. Isso cria uma ligação articulada (rótula) — a viga não consegue transferir momento para o pilar, o que significa que a estrutura é isostática quando o projeto supõe que é contínua.
+
+Sempre confira no projeto se o comprimento de ancoragem das barras de viga dentro dos pilares é suficiente.`
+  },
+  {
+    id: 108,
+    slug: "cimento-portland-tipos-cp-aplicacoes",
+    category: "Concreto",
+    title: "Cimento Portland: Tipos CP I ao CP V, Diferenças e Quando Usar Cada Um",
+    metaDescription: "Guia completo dos tipos de cimento Portland no Brasil — CP I, CP II, CP III, CP IV e CP V-ARI — diferenças de composição, resistência e aplicações indicadas para cada tipo.",
+    keyword: "cimento Portland tipos CP I CP II CP III CP IV CP V",
+    date: "16 Abr 2026",
+    summary: "Diferenças entre CP I, CP II, CP III, CP IV e CP V-ARI — composição, resistência e quando usar cada tipo de cimento Portland.",
+    content: `## O que é Cimento Portland?
+
+Cimento Portland é um aglomerante hidráulico produzido pela calcinação de calcário e argila a ~1450 °C (clinquer), seguida de moagem com adições reguladoras. O nome "Portland" vem de uma rocha da ilha de Portland (Inglaterra) que o produto original lembrava em cor e resistência.
+
+No Brasil, todos os tipos de cimento Portland são regulamentados pela **ABNT NBR 16697:2018**.
+
+## Composição do Cimento
+
+O cimento Portland é composto por:
+- **Clínquer**: base de todos os tipos (silicatos de cálcio que reagem com água)
+- **Gesso (CaSO₄·2H₂O)**: regula o tempo de pega (2–5%)
+- **Adições minerais**: escória de alto-forno, pozolana, fíler calcário — variam por tipo
+
+As adições reduzem a proporção de clínquer, o que diminui o calor de hidratação, reduz custo e melhora a durabilidade em ambientes agressivos.
+
+## Tipos de Cimento Portland (NBR 16697)
+
+### CP I — Cimento Portland Comum
+Apenas clínquer + gesso. Sem adições minerais significativas.
+
+**Uso:** Obras em geral onde não há requisitos especiais. Menos disponível no mercado atualmente.
+
+### CP II-E — Com Escória de Alto-Forno (6–34% escória)
+**Uso:** Estruturas em contato com solo ou água, por menor permeabilidade. O mais encontrado em GO como "CP II".
+
+### CP II-Z — Com Pozolana (6–14% pozolana)
+**Uso:** Obras em contato com sulfatos (esgotos, solos agressivos). Boa durabilidade.
+
+### CP II-F — Com Fíler Calcário (até 10% fíler)
+**Uso:** Concretos e argamassas convencionais. Bom custo-benefício.
+
+### CP III — Cimento de Alto-Forno (35–70% escória)
+Elevado teor de escória → baixo calor de hidratação, alta resistência a sulfatos, resistência final elevada (mas ganho lento).
+
+**Uso:** Barragens, grandes blocos de concreto (onde o calor é problema), estruturas subterrâneas e portuárias.
+
+### CP IV — Cimento Pozolânico (15–50% pozolana)
+**Uso:** Obras em ambiente marinho, estruturas em contato com sulfatos, meios ácidos. Disponível principalmente no Nordeste.
+
+### CP V-ARI — Alta Resistência Inicial
+Moagem mais fina + composição otimizada do clínquer → resistência alta já nos primeiros dias.
+
+**Uso:** Obras com desforma rápida (formas deslizantes, pré-moldados), concretagem em tempo frio, quando se precisa remover escoramento antes de 7 dias.
+
+> **fck 7 dias com CP V-ARI ≈ fck 28 dias com CP II** → grande vantagem quando o cronograma é apertado.
+
+## Comparativo Prático para GO/DF
+
+Em Goiânia e Brasília, o cimento mais disponível é o **CP II-E** e o **CP II-F** (vendido como "cimento CPII"). Para obras convencionais, ambos são adequados. Para obras com desforma rápida ou tempo frio, peça **CP V-ARI** especificamente.`
+  },
+  {
+    id: 109,
+    slug: "relacao-agua-cimento-resistencia",
+    category: "Concreto",
+    title: "Relação Água/Cimento: O Fator Mais Importante para a Resistência do Concreto",
+    metaDescription: "Entenda por que a relação a/c é o principal fator que controla a resistência e a durabilidade do concreto, como calcular e os valores máximos por classe de agressividade.",
+    keyword: "relação água cimento concreto resistência",
+    date: "17 Abr 2026",
+    summary: "Por que a relação a/c é o principal fator que controla a resistência e durabilidade do concreto, como calcular e valores máximos por classe de agressividade.",
+    content: `## A Lei de Abrams e a Relação a/c
+
+Em 1919, Duff Abrams estabeleceu empiricamente que **a resistência do concreto é inversamente proporcional à relação água/cimento (a/c)**:
+
+> fck ∝ 1 / (a/c)
+
+Quanto mais água em relação ao cimento, mais poroso e fraco o concreto. Esta é a lei mais importante da tecnologia do concreto e é válida para qualquer concreto convencional (sem aditivos especiais).
+
+## O que é a Relação a/c?
+
+É o quociente entre a massa de água e a massa de cimento usados na mistura:
+
+> a/c = massa de água (kg) / massa de cimento (kg)
+
+Exemplo: traço 1:2:3 (cimento:areia:brita) com 200 kg de água e 350 kg de cimento → a/c = 200/350 = 0,57
+
+## Efeito no fck
+
+Valores de referência (concreto com CP II, agregados normais, cura 28 dias):
+
+| a/c | fck estimado (MPa) |
+|---|---|
+| 0,35 | ≈ 55–65 MPa |
+| 0,45 | ≈ 35–45 MPa |
+| 0,55 | ≈ 25–30 MPa |
+| 0,65 | ≈ 18–22 MPa |
+| 0,75 | ≈ 12–16 MPa |
+
+> Atenção: esses valores dependem muito do tipo de cimento, dos agregados e das condições de cura. São apenas referências orientativas.
+
+## Limites por Classe de Agressividade (NBR 6118 Tabela 7.1)
+
+| Classe de agressividade | a/c máximo | fck mínimo |
+|---|---|---|
+| I — fraca | 0,65 | 20 MPa |
+| II — moderada | 0,60 | 25 MPa |
+| III — forte | 0,55 | 30 MPa |
+| IV — muito forte | 0,45 | 40 MPa |
+
+## Por que Não Adicionar Mais Água?
+
+É tentador adicionar água ao concreto no canteiro para facilitar o lançamento — mas cada litro extra de água:
+- Aumenta a relação a/c
+- Reduz a resistência de compressão
+- Aumenta a porosidade → facilita entrada de gás carbônico (carbonatação) e cloretos
+- Aumenta a retração → mais fissuras
+
+Adicionar 20 L de água a extra num caminhão de 7 m³ (14 sacos de cimento ≈ 350 kg) eleva a a/c de 0,55 para ~0,61, o que pode reduzir a resistência de C25 para C20.
+
+## Como Manter a a/c sem Sacrificar a Trabalhabilidade?
+
+Use **superplastificantes** (aditivos redutores de água de alta eficiência). Eles permitem aumentar o slump de 8 cm para 16 cm sem adicionar água — mantendo a a/c constante e a resistência intacta.
+
+Em obras com fck ≥ 30 MPa ou com bombeamento de concreto, o uso de superplastificante é praticamente obrigatório para garantir trabalhabilidade sem sacrificar a qualidade.`
+  },
+  {
+    id: 110,
+    slug: "fck-fcj-resistencia-caracteristica-dosagem",
+    category: "Concreto",
+    title: "fck e fcj: Resistência Característica e de Dosagem do Concreto — Entenda a Diferença",
+    metaDescription: "Entenda a diferença entre fck (resistência característica) e fcj (resistência de dosagem) do concreto, como são calculados, para que servem e o que são C20, C25, C30 e C40.",
+    keyword: "fck fcj resistência característica concreto",
+    date: "18 Abr 2026",
+    summary: "Diferença entre fck e fcj do concreto, como são calculados, para que servem e o que são os concretos C20, C25, C30 e C40.",
+    content: `## O que é fck?
+
+O **fck** (f = force, c = compression, k = characteristic) é a **resistência característica à compressão** do concreto, em MPa (ou kN/cm²). É o valor abaixo do qual somente 5% dos resultados dos ensaios devem cair — ou seja, é o valor que o concreto atinge em 95% dos casos.
+
+A **NBR 6118:2014** usa o fck como parâmetro de resistência em todas as fórmulas de dimensionamento estrutural.
+
+## Nomenclatura: C20, C25, C30…
+
+A nomenclatura comercial "C" + número indica o fck mínimo em MPa:
+
+| Classe | fck (MPa) | Uso típico |
+|---|---|---|
+| C15 | 15 | Concreto magro, lastro |
+| C20 | 20 | Estruturas em classe I (seco) |
+| C25 | 25 | Estruturas convencionais (classe II) |
+| C30 | 30 | Estruturas em classe III |
+| C35 | 35 | Pilares de edifícios altos |
+| C40 | 40 | Estruturas em classe IV, protendidas |
+| C50+ | 50+ | Concreto de alto desempenho |
+
+## O que é fcj?
+
+O **fcj** é a **resistência de dosagem** — o valor médio que a concreteira deve atingir para garantir que o fck especificado seja cumprido estatisticamente.
+
+Pela estatística (distribuição normal, 5% de probabilidade), o fcj é calculado como:
+
+> fcj = fck + 1,65 × σ
+
+Onde σ é o desvio padrão do controle de produção da concreteira. Para uma concreteira com controle rigoroso (σ = 4 MPa):
+> fcj para C25 = 25 + 1,65 × 4 = 31,6 MPa
+
+Isso explica por que um caminhão de "C25" rompido no laboratório frequentemente dá 30–35 MPa: o valor de dosagem é propositalmente mais alto para garantir o fck no campo.
+
+## Resistência aos 28 Dias vs Resistência Inicial
+
+Os valores de fck e fcj são sempre referidos aos **28 dias** de idade do concreto (cura úmida a 23 °C). Mas o concreto já tem resistência antes disso:
+
+| Idade | Resistência relativa (CP II) |
+|---|---|
+| 3 dias | ≈ 40–50% do fck28 |
+| 7 dias | ≈ 60–70% do fck28 |
+| 14 dias | ≈ 80–90% do fck28 |
+| 28 dias | 100% (valor de projeto) |
+| 90 dias | ≈ 115–120% do fck28 |
+
+Para o **CP V-ARI**, a resistência aos 7 dias é comparável ao fck28 do CP II — daí sua vantagem em obras com cronograma apertado.
+
+## Aceitação do Concreto (NBR 12655)
+
+Um lote de concreto é aceito se:
+- Nenhum resultado individual < 0,85 × fck
+- A média de qualquer grupo de 3 resultados consecutivos ≥ fck
+
+Se os resultados ficarem abaixo do mínimo, o engenheiro avalia por extração de testemunhos (corpos de prova extraídos da estrutura) se a resistência in loco é satisfatória antes de decidir pelo reforço ou demolição.`
+  },
+  {
+    id: 111,
+    slug: "agregados-para-concreto-granulometria",
+    category: "Concreto",
+    title: "Agregados para Concreto: Areia, Brita e Granulometria — O que Importa na Obra",
+    metaDescription: "Entenda como areia e brita afetam a resistência e trabalhabilidade do concreto — granulometria, dimensão máxima do agregado, módulo de finura e qualidade dos materiais.",
+    keyword: "agregados concreto areia brita granulometria",
+    date: "19 Abr 2026",
+    summary: "Como areia e brita afetam resistência e trabalhabilidade do concreto — granulometria, dimensão máxima do agregado, módulo de finura e qualidade.",
+    content: `## Por que os Agregados São Importantes?
+
+Os agregados (areia e brita) constituem 70 a 80% do volume do concreto. Sua qualidade afeta diretamente a trabalhabilidade, a resistência, a durabilidade e o consumo de cimento.
+
+Ao contrário do que muitos imaginam, **comprar cimento caro e usar areia ruim** compromete o resultado. Areia com excesso de finos, areia orgânica ou brita com muitas faces lisas podem reduzir a resistência do concreto em 20 a 40%.
+
+## Areia: Tipos e Classificação
+
+### Por granulometria (NBR 7211)
+- **Areia fina:** módulo de finura MF = 1,55 a 2,20
+- **Areia média:** MF = 2,20 a 2,90
+- **Areia grossa:** MF = 2,90 a 3,50
+
+**O módulo de finura** é calculado somando as percentagens retidas acumuladas nas peneiras 4,75, 2,36, 1,18, 0,60, 0,30 e 0,15 mm e dividindo por 100. Um MF alto indica areia grossa (partículas maiores).
+
+**Para concreto convencional:** areia média ou grossa é preferível — exige menos água para a mesma trabalhabilidade e produz concreto mais resistente.
+
+**Areia fina** consome mais cimento (mais área superficial para cobrir com pasta) e precisa de mais água — resultado: concreto mais poroso.
+
+### Por origem
+- **Areia natural de rio:** grãos arredondados, boa trabalhabilidade, pode ter argila e matéria orgânica
+- **Areia artificial (pó de pedra):** grãos angulosos, melhor aderência pasta-agregado, mais seco, pode ter excesso de finos
+
+## Brita: Tipos e Granulometria
+
+### Numeração comercial (por diâmetro máximo)
+
+| Número | Dmax (mm) | Dmin (mm) | Uso |
+|---|---|---|---|
+| Brita 0 (pedrisco) | 6,3 | 2,4 | Concreto bombeado, lajes finas |
+| Brita 1 | 12,5 | 4,8 | Uso geral, elementos com armação |
+| Brita 2 | 25,0 | 12,5 | Pilares, sapatas, grandes volumes |
+| Brita 3 | 50,0 | 25,0 | Concreto ciclópico, volumes sem armação |
+
+## Dimensão Máxima do Agregado (Dmax)
+
+O Dmax não pode ser maior que:
+- **1/4 da menor dimensão** do elemento (ex.: laje de 12 cm → Dmax ≤ 3 cm → Brita 1 ou Brita 0)
+- **3/4 do espaçamento mínimo** entre as barras de armação
+- **1/3 da espessura do cobrimento**
+
+Em lajes residenciais com h = 10 a 12 cm, use **Brita 0 ou Brita 1**. Em sapatas e blocos de fundação, **Brita 2** é adequada.
+
+## Qualidade dos Agregados
+
+Peça ao fornecedor o laudo de ensaios conforme NBR 7211, especialmente:
+- **Teor de material pulverulento (finos < 0,075 mm):** máximo 3% para brita, 10% para areia (em concreto estrutural)
+- **Teor de matéria orgânica (areia):** cor da solução no ensaio colorimétrico deve ser mais clara que a cor padrão
+- **Absorção de água da brita:** acima de 1,5% indica pedra porosa, que absorve água da pasta e reduz a trabalhabilidade`
+  },
+  {
+    id: 112,
+    slug: "controle-tecnologico-concreto-corpos-de-prova",
+    category: "Concreto",
+    title: "Controle Tecnológico do Concreto: Como Fazer e O que Exige a Norma",
+    metaDescription: "Entenda o controle tecnológico do concreto em obras — coleta de corpos de prova, moldagem, cura, ensaio de compressão e critérios de aceitação conforme NBR 12655 e NBR 5738.",
+    keyword: "controle tecnológico concreto corpos de prova",
+    date: "21 Abr 2026",
+    summary: "Controle tecnológico do concreto — coleta e moldagem de corpos de prova, cura, ensaio de compressão e critérios de aceitação conforme NBR 12655 e NBR 5738.",
+    content: `## Por que Controlar o Concreto?
+
+O controle tecnológico do concreto é a única forma de confirmar que o fck especificado no projeto foi efetivamente entregue pela concreteira e materializado na estrutura. Sem esse controle, você está aceitando uma estrutura sem saber se ela atende ao projeto.
+
+Além disso, a **NBR 12655** (preparo e controle) e a **NBR 14931** (execução) tornam o controle obrigatório para estruturas em classes de agressividade II ou superior.
+
+## Frequência de Coleta (NBR 12655)
+
+Para obras com volume de concreto ≤ 50 m³/dia:
+- Mínimo 1 amostragem a cada **20 m³** de concreto lançado
+- Cada amostragem deve gerar **pelo menos 2 CPs** (para rompimento aos 28 dias)
+- Recomenda-se também moldagem de CPs para rompimento aos 7 dias (indicador precoce)
+
+## Onde e Como Coletar
+
+A coleta deve ser feita **no ponto de lançamento** (não na saída do caminhão), para representar o concreto que efetivamente entra na estrutura:
+- Aguardar descarregar ~10% do caminhão
+- Coletar entre 20% e 80% da carga
+
+**Nunca coletar apenas da saída da canaleta** — o concreto do início pode ser mais seco (menos slump) que o restante.
+
+## Moldagem dos Corpos de Prova (NBR 5738)
+
+Forma padrão: cilindro de **10 × 20 cm** (Ø10 cm, altura 20 cm). Também aceitos 15 × 30 cm.
+
+**Procedimento de moldagem:**
+1. Preencher em 2 camadas (para CP de 10×20 cm)
+2. Socar cada camada 12 vezes com haste lisa
+3. Arredondar a superfície topo com espátula
+4. Cobrir com plástico e manter em temperatura ambiente por 24 horas
+5. Após 24h: desformar e levar à câmara de cura úmida (T = 23 ± 2 °C, UR ≥ 95%) até o dia do ensaio
+
+## Cura dos Corpos de Prova
+
+Os CPs não devem ficar sobre a laje sob o sol ou na van do laboratório. As condições de cura afetam significativamente o resultado:
+
+- CP curado fora da câmara úmida pode registrar resistência 15–25% menor
+- CP curado a 35 °C pode ganhar resistência mais rápido nos primeiros dias mas apresentar resistência final menor
+
+A câmara úmida padroniza as condições e torna os resultados comparáveis entre obras.
+
+## Ensaio de Compressão (NBR 5739)
+
+O CP é prensado axialmente até a ruptura numa prensa hidráulica calibrada. O resultado é:
+
+> fci = F / A
+
+Onde F é a força de ruptura (kN) e A é a área da seção (cm²).
+
+**Critérios de aceitação (NBR 12655):**
+- Nenhum resultado individual < **0,85 × fck**
+- Média de qualquer conjunto de 3 resultados consecutivos ≥ **fck**
+
+Se qualquer resultado estiver abaixo do mínimo, o engenheiro avalia por **extração de testemunhos** da estrutura para confirmar a resistência real.
+
+## Quem Deve Fazer o Controle?
+
+O controle tecnológico pode ser executado pelo próprio responsável técnico da obra, mas o ideal é contratar **laboratório credenciado** pelo INMETRO ou CREA. Para obras financiadas por banco (SBPE, FGTS, CEF), o controle por laboratório credenciado é obrigatório.`
+  },
+  {
+    id: 113,
+    slug: "patologias-do-concreto-fissuras-carbonatacao-corrosao",
+    category: "Concreto",
+    title: "Patologias do Concreto: Fissuras, Carbonatação e Corrosão de Armaduras",
+    metaDescription: "Guia das principais patologias do concreto armado — fissuração por retração e sobrecarga, carbonatação, corrosão de armaduras, manchas e ninhos — causas, diagnóstico e tratamento.",
+    keyword: "patologias concreto fissuras carbonatação corrosão",
+    date: "22 Abr 2026",
+    summary: "Principais patologias do concreto — fissuras por retração e sobrecarga, carbonatação, corrosão de armaduras, ninhos — causas, diagnóstico e tratamento.",
+    content: `## O que é Patologia em Estruturas?
+
+Patologia estrutural é o estudo das origens, mecanismos de desenvolvimento, manifestações e consequências das anomalias em estruturas de concreto. O termo "patologia" é emprestado da medicina — assim como doenças no corpo humano, as patologias do concreto têm causas, sintomas e tratamentos.
+
+## 1. Fissuração
+
+### Fissuras de Retração Plástica
+**Quando ocorrem:** nas primeiras horas após o lançamento, quando a superfície perde água mais rápido do que a exsudação compensa.
+
+**Aparência:** fissuras superficiais, paralelas, com comprimento de 10–50 cm e abertura < 0,5 mm.
+
+**Prevenção:** cobrir imediatamente após o acabamento; cura úmida intensa nas primeiras horas.
+
+### Fissuras por Sobrecarga (Flexão)
+**Aparência:** perpendiculares ao eixo da viga na região de momento máximo (meio do vão). Em pilares, inclinadas a 45° (cisalhamento).
+
+**Aceitabilidade:** NBR 6118 limita abertura de fissura a:
+- 0,4 mm para classe I
+- 0,3 mm para classe II
+- 0,2 mm para classes III e IV
+
+Fissuras ativas (que mudam de abertura) são mais preocupantes que fissuras estabilizadas.
+
+## 2. Carbonatação
+
+O CO₂ do ar reage com o hidróxido de cálcio do concreto, formando carbonato de cálcio. O pH do concreto cai de ~13 para < 9 — abaixo desse pH, a camada passivadora do aço é destruída.
+
+**Velocidade de carbonatação:** proporcional à raiz quadrada do tempo. Com cobrimento de 20 mm e concreto de baixa qualidade, a frente de carbonatação pode atingir a armadura em 10–15 anos.
+
+**Diagnóstico:** solução de fenolftaleína. Concreto alcalino (pH > 9) fica roxo; concreto carbonatado (pH < 9) fica incolor.
+
+## 3. Corrosão de Armaduras
+
+Após a destruição da passivação (por carbonatação ou cloretos), inicia-se a corrosão eletroquímica do aço.
+
+**Manifestações:** manchas ferrosas na superfície, fissuras longitudinais sobre a barra, delaminação (lascamento) do concreto.
+
+**Consequências:** cada 1 mm de corrosão na barra reduz a seção em ~15% em barras finas.
+
+**Tratamento:** remover concreto comprometido (≥ 2 cm além da barra), lixar a armadura até metal são, aplicar primer anticorrosivo, reconstruir com argamassa de reparação de alta aderência.
+
+## 4. Ninhos de Concreto (Bicheiras)
+
+**Causa:** adensamento insuficiente, excesso de armação, concreto seco demais ou fôrma não vedada.
+
+**Tratamento:** remover todo o concreto solto até área sã, preparar a superfície com jateamento, aplicar nata de cimento + argamassa de reparação em camadas.
+
+## 5. Manchas de Eflorescência
+
+Depósitos esbranquiçados de carbonato de cálcio na superfície, causados por migração de hidróxido de cálcio dissolvido em água.
+
+**Tratamento:** escovação seca + solução de ácido fosfórico diluído (5–10%) + lavagem. Para evitar recorrência, impermeabilizar a superfície.`
+  },
+  {
+    id: 114,
+    slug: "aco-ca50-vs-ca60-diferencas-tecnicas",
+    category: "Produtos",
+    title: "Aço CA-50 vs CA-60: Diferenças Técnicas e Quando Usar Cada Um",
+    metaDescription: "Entenda as diferenças entre aço CA-50 e CA-60 para concreto armado — resistência, diâmetros disponíveis, soldabilidade, dobramento e aplicações mais indicadas para cada classe.",
+    keyword: "aço CA-50 CA-60 diferenças aplicações",
+    date: "23 Abr 2026",
+    summary: "Diferenças técnicas entre CA-50 e CA-60 — resistência, diâmetros, soldabilidade, dobramento e quando usar cada classe de aço.",
+    content: `## O que Define a Classe do Aço?
+
+A classe do aço para concreto armado é definida pela sua **resistência de escoamento característica (fyk)**:
+
+- **CA-50:** fyk = 500 MPa
+- **CA-60:** fyk = 600 MPa
+
+Ambas as classes são regulamentadas pela **ABNT NBR 7480:2007** — Barras e fios de aço destinados a armaduras para concreto armado.
+
+## Características do CA-50
+
+- **Fyk:** 500 MPa
+- **Resistência de ruptura (fst):** ≥ 540 MPa
+- **Forma:** nervurado (com nervuras transversais na superfície)
+- **Diâmetros disponíveis:** φ 6,3 a 40,0 mm
+- **Alongamento mínimo:** 8%
+- **Soldabilidade:** sim, se carbono equivalente ≤ 0,43%
+
+**Onde é mais usado:**
+- Barras longitudinais de pilares e vigas (φ ≥ 10 mm)
+- Armadura principal de lajes maciças
+- Tirantes e barras estruturais em geral
+
+## Características do CA-60
+
+- **Fyk:** 600 MPa
+- **Forma:** nervurado ou liso (fios trefilados)
+- **Diâmetros disponíveis:** φ 1,6 a 10,0 mm
+- **Alongamento mínimo:** 5% (menor que CA-50)
+- **Soldabilidade:** limitada — fios CA-60 em geral NÃO são soldáveis em campo
+
+**Onde é mais usado:**
+- Estribos finos (φ 5,0 e φ 6,3 mm)
+- Telas soldadas (malha Q-92, Q-138, etc. — soldagem realizada em fábrica)
+- Armadura de distribuição em lajes pré-moldadas
+- Barras finas em geral (φ 5 a φ 8 mm)
+
+## Dobramento: Diferença Importante
+
+O CA-60 tem menor ductilidade que o CA-50 — o que significa que tolera menos dobramento antes de fissurar:
+
+| Classe | Diâmetro mínimo de dobramento |
+|---|---|
+| CA-50 φ ≤ 20 mm | 4φ (mandril mínimo) |
+| CA-60 | 3φ para estribos (mas atenção ao raio) |
+
+Na prática, estribos de CA-60 φ5 feitos com dobradeira bem regulada são adequados. O problema surge quando se tentam dobrar barras CA-60 de maior diâmetro com equipamento impróprio.
+
+## Qual Usar em Cada Situação?
+
+| Elemento | Aço recomendado |
+|---|---|
+| Barras longitudinais de vigas e pilares (φ ≥ 10) | CA-50 |
+| Estribos (φ 5,0 e φ 6,3) | CA-60 (ou CA-50 fina) |
+| Armadura de tela soldada | CA-60 (fabricação) |
+| Armadura de laje maciça φ 8–10 | CA-50 ou CA-60 |
+| Estruturas especiais (protendidas) | CA-50 (corpo) + CP (cabos de protensão) |
+
+## E o Custo?
+
+O CA-60 costuma ser ligeiramente mais barato por kg do que o CA-50, por ser produzido por trefilação (processo mais simples). Para estribos, onde a economia é em peso total, a diferença é marginal. A escolha deve ser guiada pela especificação do projeto — nunca substitua CA-50 por CA-60 ou vice-versa sem aprovação do projetista.`
+  },
+  {
+    id: 115,
+    slug: "malha-soldada-vs-armacao-convencional",
+    category: "Produtos",
+    title: "Malha Soldada vs Armação Convencional: Quando Usar Cada Uma em Lajes",
+    metaDescription: "Compare malha soldada (tela soldada) e armação convencional com vergalhão para lajes de concreto armado — custo, produtividade, aplicações e limitações de cada sistema.",
+    keyword: "malha soldada vs armação convencional lajes",
+    date: "24 Abr 2026",
+    summary: "Malha soldada versus armação convencional em lajes — custo, produtividade, aplicações e limitações de cada sistema.",
+    content: `## O que é Malha Soldada?
+
+Malha soldada (ou tela soldada eletrosoldada) é a armação composta por fios de aço CA-60 dispostos em grelha ortogonal e soldados nos cruzamentos em fábrica. As malhas vêm em rolos ou chapas padronizadas.
+
+Principais especificações comerciais no Brasil:
+
+| Tipo | Fio (mm) | Espaçamento (cm) | Peso (kg/m²) |
+|---|---|---|---|
+| Q-92 | 4,2 | 15×15 | 0,92 |
+| Q-138 | 5,0 | 15×15 | 1,38 |
+| Q-188 | 6,0 | 15×15 | 1,88 |
+| Q-257 | 7,0 | 15×15 | 2,57 |
+
+A letra **Q** indica malha bidirecional (igual nos dois sentidos); **R** indica malha com fios em uma direção e fios transversais de distribuição.
+
+## Quando Usar Malha Soldada
+
+### Lajes maciças residenciais (vão ≤ 5 m, carga padrão)
+Para lajes com espessura ≤ 15 cm, cargas residenciais (1,5–3,0 kN/m²) e vãos curtos, a malha Q-138 ou Q-188 costuma ser adequada — o dimensionamento deve ser confirmado pelo calculista.
+
+### Pisos industriais
+A malha soldada é a solução padrão para controle de retração em pisos sobre solo — não por resistência estrutural, mas por distribuir as fissuras de retração. Malha Q-138 é o mínimo usual.
+
+### Lajes de fundação sobre solo
+Onde a função é principalmente controle de retração e distribuição de cargas uniformes.
+
+### Estabilização de encostas e muros de arrimo
+Malhas eletrossoldadas para revestimento de concreto projetado.
+
+## Quando Usar Armação Convencional
+
+### Lajes com momentos elevados ou concentrados
+Quando a laje tem cargas pontuais, aberturas, vãos longos ou espessura > 15 cm, o projeto estrutural especifica quantidade e diâmetro exatos de vergalhão — o que a malha padronizada não consegue atender perfeitamente.
+
+### Lajes bidirecionais de edifícios
+Lajes com vigas nos quatro lados e momentos em duas direções com distribuição específica exigem armação variável — mais aço nos apoios, menos no meio do vão — impossível de obter com malha uniforme.
+
+### Qualquer laje com cálculo estrutural rigoroso
+Se o calculista dimensionou a armação, use exatamente o que foi especificado.
+
+## Comparativo Resumido
+
+| Critério | Malha Soldada | Armação Convencional |
+|---|---|---|
+| Produtividade | Alta (chapas pré-prontas) | Média (corte e dobra + montagem) |
+| Custo material | Médio-Alto (por kg) | Médio (vergalhão em barra) |
+| Custo mão de obra | Baixo | Alto |
+| Flexibilidade no dimensionamento | Baixa (tamanhos fixos) | Alta (qualquer diâmetro e espaçamento) |
+| Controle de qualidade | Alto (fábrica) | Depende da equipe em campo |
+| Melhor para | Lajes simples, pisos, controle de retração | Lajes estruturais com cálculo |
+
+A decisão final deve sempre ser do engenheiro calculista, que conhece as solicitações reais da laje.`
   }
 ];
 
-export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço'];
+export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural'];
