@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
-import { blogPosts } from '@/data/blogPosts';
+// ⚠  Importa só metadados (sem content) — mantem a home page leve
+import { blogPostsMeta } from '@/data/blogPostsMeta';
 
-const latestPosts = blogPosts.slice(0, 3);
-
-function readingTime(content: string): number {
-  return Math.ceil(content.split(/\s+/).length / 200);
-}
+// 3 posts mais recentes para exibir na home
+const latestPosts = [...blogPostsMeta].sort((a, b) => b.id - a.id).slice(0, 3);
 
 const CATEGORY_ACCENT: Record<string, string> = {
   'Corte e Dobra':   '#F97316',
@@ -21,6 +19,8 @@ const CATEGORY_ACCENT: Record<string, string> = {
   'BR Aço':          '#1E3A5F',
   'Produtos':        '#4F46E5',
   'Gestão de Obra':  '#DC2626',
+  'Concreto':        '#6B7280',
+  'Projeto Estrutural': '#0891B2',
 };
 
 function accent(category: string): string {
@@ -62,7 +62,7 @@ const BlogPreviewSection = () => {
                     <span className="text-xs text-brand-gray-medium">{post.date}</span>
                     <span className="flex items-center gap-1 text-xs text-brand-gray-medium">
                       <Clock className="w-3 h-3" />
-                      {readingTime(post.content)} min
+                      {post.readingTime} min
                     </span>
                   </div>
                   <ArrowRight className="w-4 h-4 text-brand-orange group-hover:translate-x-1 transition-transform" />

@@ -68,10 +68,13 @@ export default function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo - larger */}
             <Link to="/" className="flex items-center">
-              <img 
-                src={logoImage} 
-                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+              <img
+                src={logoImage}
+                alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-16 w-auto"
+                width="981"
+                height="197"
+                fetchPriority="high"
               />
             </Link>
 
@@ -191,10 +194,13 @@ export default function Header() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img 
-                src={logoImage} 
-                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+              <img
+                src={logoImage}
+                alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-10 w-auto"
+                width="981"
+                height="197"
+                fetchPriority="high"
               />
             </Link>
 

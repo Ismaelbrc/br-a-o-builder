@@ -38,10 +38,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <Link to="/" className="inline-block">
-              <img 
-                src={logoImage} 
-                alt="BR.AÇO - Seus projetos na velocidade máxima" 
+              <img
+                src={logoImage}
+                alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-24 w-auto"
+                width="1024"
+                height="1536"
+                loading="lazy"
               />
             </Link>
             <p className="text-sm text-muted-foreground mt-3 max-w-xs">

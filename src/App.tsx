@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,33 +12,36 @@ function ScrollToTop() {
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
 }
-import Index from "./pages/Index";
-import Sobre from "./pages/Sobre";
-import Produtos from "./pages/Produtos";
-import CorteEDobra from "./pages/CorteEDobra";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Contato from "./pages/Contato";
-import Cliente from "./pages/Cliente";
-import Galeria from "./pages/Galeria";
-import Faq from "./pages/Faq";
-import CalculadoraVergalhao from "./pages/CalculadoraVergalhao";
-import LandingPage from "./pages/LandingPage";
-import Meta from "./pages/Meta";
-import NotFound from "./pages/NotFound";
-import TebasLanding from "./pages/Tebas/index";
-import TebasCalcular from "./pages/Tebas/Calcular";
-import TebasResultado from "./pages/Tebas/Resultado";
+
+// ── Lazy-loaded pages — each route gets its own JS chunk ──────────────────────
+const Index               = lazy(() => import('./pages/Index'));
+const Sobre               = lazy(() => import('./pages/Sobre'));
+const Produtos            = lazy(() => import('./pages/Produtos'));
+const CorteEDobra         = lazy(() => import('./pages/CorteEDobra'));
+const Blog                = lazy(() => import('./pages/Blog'));
+const BlogPost            = lazy(() => import('./pages/BlogPost'));
+const Contato             = lazy(() => import('./pages/Contato'));
+const Cliente             = lazy(() => import('./pages/Cliente'));
+const Galeria             = lazy(() => import('./pages/Galeria'));
+const Faq                 = lazy(() => import('./pages/Faq'));
+const CalculadoraVergalhao = lazy(() => import('./pages/CalculadoraVergalhao'));
+const LandingPage         = lazy(() => import('./pages/LandingPage'));
+const Meta                = lazy(() => import('./pages/Meta'));
+const NotFound            = lazy(() => import('./pages/NotFound'));
+const TebasLanding        = lazy(() => import('./pages/Tebas/index'));
+const TebasCalcular       = lazy(() => import('./pages/Tebas/Calcular'));
+const TebasResultado      = lazy(() => import('./pages/Tebas/Resultado'));
+// ─────────────────────────────────────────────────────────────────────────────
 
 const queryClient = new QueryClient();
 
-// Inner component so it can use router hooks
 function AppRoutes() {
   usePageTracking();
   return (
     <>
       <ScrollToTop />
-    <Routes>
+      <Suspense fallback={null}>
+        <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/produtos" element={<Produtos />} />
@@ -58,7 +62,8 @@ function AppRoutes() {
           {/* Landing pages: /:productSlug/:locationSlug */}
           <Route path="/:productSlug/:locationSlug" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
-    </Routes>
+        </Routes>
+      </Suspense>
     </>
   );
 }
