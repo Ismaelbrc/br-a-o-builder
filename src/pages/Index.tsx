@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { analytics } from '@/lib/analytics';
 import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight, Calculator } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
@@ -42,7 +43,7 @@ const Index = () => {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="none"
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
           <source src="/hero-video.webm" type="video/webm" />
@@ -68,7 +69,7 @@ const Index = () => {
           </div>
 
           {/* Título H1 */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl animate-fade-in-up animation-delay-100">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl">
             O melhor{' '}
             <span className="text-primary">corte e dobra industrial</span>{' '}
             de Goiás. Entregue na sua obra.
@@ -104,24 +105,24 @@ const Index = () => {
 
           {/* Badges de Prova Social */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-10 animate-fade-in-up animation-delay-400">
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+            <Link to="/sobre" className="flex items-center gap-3 bg-white/5 hover:bg-white/15 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10 hover:border-brand-orange/50 transition-all cursor-pointer">
               <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
                 <Home className="w-5 h-5 text-brand-orange" />
               </div>
               <span className="text-white/90 text-sm font-medium">+10 mil casas construídas</span>
-            </div>
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+            </Link>
+            <Link to="/corte-e-dobra" className="flex items-center gap-3 bg-white/5 hover:bg-white/15 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10 hover:border-brand-orange/50 transition-all cursor-pointer">
               <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-brand-orange" />
               </div>
               <span className="text-white/90 text-sm font-medium">Entrega em até 2 dias</span>
-            </div>
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10">
+            </Link>
+            <Link to="/produtos" className="flex items-center gap-3 bg-white/5 hover:bg-white/15 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/10 hover:border-brand-orange/50 transition-all cursor-pointer">
               <div className="w-10 h-10 bg-brand-orange/20 rounded-lg flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-brand-orange" />
               </div>
               <span className="text-white/90 text-sm font-medium">Certificação ABNT</span>
-            </div>
+            </Link>
           </div>
         </div>
 

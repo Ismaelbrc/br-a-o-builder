@@ -3,9 +3,15 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from "react-router-dom";
 import { usePageTracking } from "@/hooks/usePageTracking";
 import { useEffect } from "react";
+
+// Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
+const ConteudoRedirect = () => {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`/blog/${slug}`} replace />;
+};
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -57,6 +63,8 @@ function AppRoutes() {
           {/* Tracking / redirect pages */}
           <Route path="/meta" element={<Meta />} />
           <Route path="/orcamento" element={<Orcamento />} />
+          {/* Legacy WordPress blog URLs → new SPA blog */}
+          <Route path="/conteudo/:slug" element={<ConteudoRedirect />} />
           {/* Tebas — deve vir antes do catch-all /:productSlug/:locationSlug */}
           <Route path="/tebas" element={<TebasLanding />} />
           <Route path="/tebas/calcular" element={<TebasCalcular />} />
