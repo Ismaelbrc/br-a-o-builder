@@ -1488,6 +1488,17 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Viga T: colaboração da laje como mesa de compressão, largura efetiva pela NBR 6118 e implicações para dimensionamento da armação.",
     readingTime: 4,
   },
+  {
+    id: 136,
+    slug: "tabela-de-peso-do-ferro-pronto",
+    category: "Vergalhões",
+    title: "Tabela de Peso do Ferro Pronto: CA-25, CA-50 e CA-60 por Diâmetro",
+    metaDescription: "Tabela completa do peso do ferro pronto (vergalhão) por diâmetro: CA-25, CA-50 e CA-60. Peso por metro (kg/m), peso por barra de 12m e área da seção. Consulte grátis.",
+    keyword: "tabela de peso do ferro pronto",
+    date: "22 Mai 2026",
+    summary: "Tabela de referência com o peso do ferro pronto (vergalhão CA-25, CA-50 e CA-60) por metro e por barra de 12m, para todos os diâmetros disponíveis no mercado. Referência indispensável para orçamento e compra de aço.",
+    readingTime: 6,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural'];

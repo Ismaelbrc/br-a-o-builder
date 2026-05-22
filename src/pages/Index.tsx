@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
-import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight, Calculator } from 'lucide-react';
+import { Trophy, Home, Zap, CheckCircle, ChevronDown, ArrowRight, Calculator, BookOpen, Weight, Scissors } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
 import DifferentialsSection from '@/components/home/DifferentialsSection';
@@ -70,9 +70,9 @@ const Index = () => {
 
           {/* Título H1 */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mt-6 max-w-4xl">
-            O melhor{' '}
+            BR Aço —{' '}
             <span className="text-primary">corte e dobra industrial</span>{' '}
-            de Goiás. Entregue na sua obra.
+            em Goiás. Entregue na sua obra.
           </h1>
 
           {/* Subtítulo */}
@@ -177,6 +177,45 @@ const Index = () => {
               className="flex-shrink-0 bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide text-sm whitespace-nowrap"
             >
               Calcular agora
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Guias Técnicos — internal links + SEO anchor text */}
+      <section className="py-10 bg-secondary border-t border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">Guias técnicos mais acessados</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Link
+              to="/blog/tabela-de-peso-do-ferro-pronto"
+              className="flex items-center gap-3 bg-card border border-border rounded-xl px-5 py-4 hover:border-brand-orange/40 hover:bg-brand-orange/5 transition-all group"
+            >
+              <Weight className="w-5 h-5 text-brand-orange flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-foreground text-sm group-hover:text-brand-orange transition-colors">Tabela de Peso do Ferro Pronto</p>
+                <p className="text-xs text-muted-foreground mt-0.5">CA-25, CA-50 e CA-60 — todos os diâmetros</p>
+              </div>
+            </Link>
+            <Link
+              to="/blog/o-que-e-corte-e-dobra-de-aco"
+              className="flex items-center gap-3 bg-card border border-border rounded-xl px-5 py-4 hover:border-brand-orange/40 hover:bg-brand-orange/5 transition-all group"
+            >
+              <Scissors className="w-5 h-5 text-brand-orange flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-foreground text-sm group-hover:text-brand-orange transition-colors">Guia Completo de Corte e Dobra</p>
+                <p className="text-xs text-muted-foreground mt-0.5">Como funciona, vantagens e economia na obra</p>
+              </div>
+            </Link>
+            <Link
+              to="/calculadora-vergalhao"
+              className="flex items-center gap-3 bg-card border border-border rounded-xl px-5 py-4 hover:border-brand-orange/40 hover:bg-brand-orange/5 transition-all group"
+            >
+              <Calculator className="w-5 h-5 text-brand-orange flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-foreground text-sm group-hover:text-brand-orange transition-colors">Calculadora de Vergalhão Grátis</p>
+                <p className="text-xs text-muted-foreground mt-0.5">Quantos kg você precisa? Resultado em segundos</p>
+              </div>
             </Link>
           </div>
         </div>
