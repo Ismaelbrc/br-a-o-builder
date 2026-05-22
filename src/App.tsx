@@ -27,6 +27,7 @@ const Faq                 = lazy(() => import('./pages/Faq'));
 const CalculadoraVergalhao = lazy(() => import('./pages/CalculadoraVergalhao'));
 const LandingPage         = lazy(() => import('./pages/LandingPage'));
 const Meta                = lazy(() => import('./pages/Meta'));
+const Orcamento           = lazy(() => import('./pages/Orcamento'));
 const NotFound            = lazy(() => import('./pages/NotFound'));
 const TebasLanding        = lazy(() => import('./pages/Tebas/index'));
 const TebasCalcular       = lazy(() => import('./pages/Tebas/Calcular'));
@@ -55,6 +56,7 @@ function AppRoutes() {
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
           {/* Tracking / redirect pages */}
           <Route path="/meta" element={<Meta />} />
+          <Route path="/orcamento" element={<Orcamento />} />
           {/* Tebas — deve vir antes do catch-all /:productSlug/:locationSlug */}
           <Route path="/tebas" element={<TebasLanding />} />
           <Route path="/tebas/calcular" element={<TebasCalcular />} />
