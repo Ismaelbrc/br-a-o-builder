@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { analytics } from '@/lib/analytics';
 import { Link } from 'react-router-dom';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
@@ -182,7 +183,13 @@ export default function Contato() {
                   );
 
                   return card.href ? (
-                    <a key={index} href={card.href} target="_blank" rel="noopener noreferrer">
+                    <a
+                      key={index}
+                      href={card.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => card.title === 'WhatsApp' ? analytics.whatsappClick('contato') : undefined}
+                    >
                       {content}
                     </a>
                   ) : (

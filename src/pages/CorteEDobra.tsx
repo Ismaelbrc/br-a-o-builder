@@ -589,6 +589,8 @@ const FrotaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
+  useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
+
   return (
     <Layout>
       <HeroSection />

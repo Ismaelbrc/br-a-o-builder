@@ -101,6 +101,9 @@ export default function LandingPage() {
     inject('lp-breadcrumb-schema', breadcrumbSchema);
     inject('lp-localbusiness-schema', localBusinessSchema);
 
+    // Analytics — ViewContent para Meta Pixel e GA4
+    analytics.viewContent(`${product!.name} - ${displayCity}`);
+
     return () => {
       document.getElementById('lp-faq-schema')?.remove();
       document.getElementById('lp-breadcrumb-schema')?.remove();

@@ -1,5 +1,6 @@
 ﻿import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { analytics } from '@/lib/analytics';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -214,6 +215,9 @@ export default function Produtos() {
       window.scrollTo({ top: 0 });
     }
   }, [hash]);
+
+  useEffect(() => { analytics.viewContent('Produtos'); }, []);
+
   const whatsappUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20A%C3%A7o.";
 
   return (
