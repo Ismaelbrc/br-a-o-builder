@@ -5,7 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { analytics } from '@/lib/analytics';
 
-const WHATSAPP_NUMBER = '556299247285';
+const WHATSAPP_NUMBER = '5562996472423';
 
 const QuoteFormSection = () => {
   const { toast } = useToast();

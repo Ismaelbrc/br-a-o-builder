@@ -272,7 +272,7 @@ const Galeria = () => {
             Agende uma visita técnica e conheça de perto nossa estrutura e processos de produção.
           </p>
           <a
-            href="https://wa.me/556299247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20f%C3%A1brica%20da%20BR%20A%C3%A7o."
+            href="https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20f%C3%A1brica%20da%20BR%20A%C3%A7o."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-6 bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-full px-8 py-4 transition-colors"

@@ -7,7 +7,7 @@ const SURFACE = '#132337';
 const BORDER  = 'rgba(255,255,255,0.08)';
 const DIM     = 'rgba(241,245,249,0.55)';
 const WA_URL  =
-  'https://wa.me/556299247285?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Finalizei%20o%20pr%C3%A9-dimensionamento%20no%20Tebas%20e%20gostaria%20de%20cotar%20o%20a%C3%A7o%20da%20obra.';
+  'https://wa.me/5562996472423?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Finalizei%20o%20pr%C3%A9-dimensionamento%20no%20Tebas%20e%20gostaria%20de%20cotar%20o%20a%C3%A7o%20da%20obra.';
 
 // ── Elementos que o Tebas calcula ─────────────────────────────────────────────
 const elementos = [

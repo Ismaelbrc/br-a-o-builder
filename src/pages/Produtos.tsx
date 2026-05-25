@@ -98,8 +98,8 @@ const products: Product[] = [
 const ProductSection = ({ product, index }: { product: Product; index: number }) => {
   const Icon = product.icon;
   const isEven = index % 2 === 0;
-  const whatsappUrl = `https://wa.me/556299247285?text=${encodeURIComponent('[src:site] ' + product.whatsappMsg)}`;
-  const genericWhatsappUrl = "https://wa.me/556299247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista.";
+  const whatsappUrl = `https://wa.me/5562996472423?text=${encodeURIComponent('[src:site] ' + product.whatsappMsg)}`;
+  const genericWhatsappUrl = "https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista.";
 
   const imageSection = (
     <div className="h-64 md:h-80 rounded-2xl overflow-hidden">
@@ -218,7 +218,7 @@ export default function Produtos() {
 
   useEffect(() => { analytics.viewContent('Produtos'); }, []);
 
-  const whatsappUrl = "https://wa.me/556299247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20A%C3%A7o.";
+  const whatsappUrl = "https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20A%C3%A7o.";
 
   return (
     <Layout>

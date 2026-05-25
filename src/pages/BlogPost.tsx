@@ -199,7 +199,7 @@ function parseDateISO(dateStr: string): string {
 
 function BlogPostContent({ slug }: { slug: string }) {
   const post = blogPosts.find(p => p.slug === slug)!;
-  const whatsappUrl = "https://wa.me/556299247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  const whatsappUrl = "https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
   const publishedTime = parseDateISO(post.date);
   const canonicalUrl = `https://grupobraco.com.br/blog/${post.slug}`;
 
