@@ -70,10 +70,10 @@ export default function LandingPage() {
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Rua 41, S/N, Quadra 30, Lotes 01/02/03/17/18/19/20/21/22",
+        "streetAddress": "Rua 11, Qd. 05, L7. 07 - Polo Industrial",
         "addressLocality": "Aparecida de Goiânia",
         "addressRegion": "GO",
-        "postalCode": "74912-130",
+        "postalCode": "74985-235",
         "addressCountry": "BR"
       },
       "areaServed": [
