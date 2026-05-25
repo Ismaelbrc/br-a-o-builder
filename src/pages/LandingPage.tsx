@@ -7,7 +7,7 @@ import { landingProducts } from '@/data/landingProducts';
 import { landingLocations, getDeliveryLabel } from '@/data/landingLocations';
 import { analytics } from '@/lib/analytics';
 
-const WA_BASE = 'https://wa.me/5562996472423?text=';
+const WA_BASE = 'https://wa.me/556299247285?text=';
 
 export default function LandingPage() {
   const { productSlug = '', locationSlug = '' } = useParams<{ productSlug: string; locationSlug: string }>();
@@ -179,7 +179,7 @@ export default function LandingPage() {
               Solicitar Orçamento Grátis
             </a>
             <a
-              href="tel:+5562996472423"
+              href="tel:+556299247285"
               className="flex items-center justify-center gap-2 border border-white/30 text-white hover:bg-white/10 rounded-full px-6 py-4 text-base transition-colors"
             >
               <Phone className="w-5 h-5" />
