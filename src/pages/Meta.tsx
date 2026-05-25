@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const WHATSAPP_URL =
-  'https://api.whatsapp.com/send?phone=556299247285&text=' +
+  'https://api.whatsapp.com/send?phone=556296472423&text=' +
   encodeURIComponent('Olá, quero saber mais da BR Aço');
 
 export default function Meta() {
