@@ -59,7 +59,7 @@ export default function Blog() {
   const [searchQuery, setSearchQuery]       = useState('');
   const [currentPage, setCurrentPage]       = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
-  const whatsappUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  const whatsappUrl = "https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
 
   useSEO({
     title: 'Blog BR Aço | Conteúdo Técnico sobre Aço e Construção Civil',

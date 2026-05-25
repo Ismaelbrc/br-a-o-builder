@@ -3,7 +3,7 @@ import ctaBackground from '@/assets/cta-background.jpg';
 import { analytics } from '@/lib/analytics';
 
 const CtaBannerSection = () => {
-  const whatsappUrl = "https://wa.me/5562999247285?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+  const whatsappUrl = "https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
   return (
     <section 

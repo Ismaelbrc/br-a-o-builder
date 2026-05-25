@@ -7,7 +7,7 @@ const SURFACE = '#132337';
 const BORDER = 'rgba(255,255,255,0.08)';
 const TEXT_DIM = 'rgba(241,245,249,0.55)';
 const WHATSAPP_URL =
-  'https://wa.me/5562999247285?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20teba%20(treliça%20metálica).';
+  'https://wa.me/5562996472423?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20teba%20(treliça%20metálica).';
 
 const tebaTypes = [
   { tipo: 'Teba 7', altura: '7 cm', vao: 'até 3,5 m', uso: 'Lajes leves — residencial padrão' },

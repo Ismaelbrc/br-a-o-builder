@@ -414,7 +414,7 @@ export default function CalculadoraVergalhao() {
 
                     {/* CTA WhatsApp */}
                     <a
-                      href={`https://wa.me/5562999247285?text=${whatsappMsgTela}`}
+                      href={`https://wa.me/5562996472423?text=${whatsappMsgTela}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg px-4 py-3 transition-colors text-sm"
@@ -685,7 +685,7 @@ export default function CalculadoraVergalhao() {
               Envie o resultado da calculadora ou o projeto estrutural e receba o orçamento em até 2 horas.
             </p>
             <a
-              href="https://wa.me/5562999247285?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
+              href="https://wa.me/5562996472423?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange font-bold rounded-full px-8 py-4 hover:bg-gray-100 transition-colors"
