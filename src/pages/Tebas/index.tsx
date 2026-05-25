@@ -2,105 +2,135 @@ import { Link } from 'react-router-dom';
 import { useSEO } from '@/hooks/useSEO';
 import { TebasLayout } from '@/components/tebas/TebasLayout';
 
-const ORANGE = '#F47A20';
+const ORANGE  = '#F47A20';
 const SURFACE = '#132337';
-const BORDER = 'rgba(255,255,255,0.08)';
-const TEXT_DIM = 'rgba(241,245,249,0.55)';
-const WHATSAPP_URL =
-  'https://wa.me/5562996472423?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20teba%20(treliça%20metálica).';
+const BORDER  = 'rgba(255,255,255,0.08)';
+const DIM     = 'rgba(241,245,249,0.55)';
+const WA_URL  =
+  'https://wa.me/5562996472423?text=%5Bsrc%3Atebas%5D%20Ol%C3%A1!%20Finalizei%20o%20pr%C3%A9-dimensionamento%20no%20Tebas%20e%20gostaria%20de%20cotar%20o%20a%C3%A7o%20da%20obra.';
 
-const tebaTypes = [
-  { tipo: 'Teba 7', altura: '7 cm', vao: 'até 3,5 m', uso: 'Lajes leves — residencial padrão' },
-  { tipo: 'Teba 8', altura: '8 cm', vao: 'até 4,0 m', uso: 'Residencial e comercial leve' },
-  { tipo: 'Teba 12', altura: '12 cm', vao: 'até 4,5 m', uso: 'Vãos médios — sobrado e comércio' },
-  { tipo: 'Teba 14', altura: '14 cm', vao: 'até 5,0 m', uso: 'Vãos maiores e cargas elevadas' },
-];
-
-const features = [
+// ── Elementos que o Tebas calcula ─────────────────────────────────────────────
+const elementos = [
   {
     icon: '⬜',
     title: 'Laje',
-    desc: 'Espessura mínima, tipo (vigota+tavela), capeamento e malha de distribuição',
+    color: '#6ab0d8',
+    desc: 'Espessura mínima (série comercial), tipo vigota + tavela, capeamento e malha de distribuição CA-60.',
   },
   {
     icon: '🔲',
-    title: 'Viga principal',
-    desc: 'Seção bw × h, altura útil, armadura de tração e estribos indicativos',
+    title: 'Viga',
+    color: '#c8a84a',
+    desc: 'Seção bw × h, altura útil, momento de cálculo, armadura de tração e espaçamento de estribos.',
   },
   {
     icon: '▮',
     title: 'Pilar',
-    desc: 'Seção transversal mínima, taxa de armadura e carga axial de cálculo',
+    color: '#b0ccd6',
+    desc: 'Seção transversal mínima conforme carga axial e classe do concreto, taxa e bitola da armadura longitudinal.',
   },
   {
     icon: '⬡',
     title: 'Sapata',
-    desc: 'Dimensões planta (L × L), altura mínima e tensão admissível do solo',
+    color: '#7a94a8',
+    desc: 'Dimensões planta (L × L), altura mínima e tensão admissível do solo a partir do NSPT informado.',
   },
 ];
 
+// ── Passos ────────────────────────────────────────────────────────────────────
 const steps = [
-  { n: 1, label: 'Descreva a edificação', desc: 'Tipo, área e vão da laje' },
-  { n: 2, label: 'Tebas calcula pelas NBRs', desc: '6118 · 6120 · 6122' },
-  { n: 3, label: 'Veja o pré-dimensionamento', desc: 'Com memória de cálculo' },
+  {
+    n: 1,
+    label: 'Descreva a edificação',
+    desc: 'Tipo (térrea / sobrado), área por pavimento, vão da laje, classe do concreto, uso e sondagem SPT.',
+  },
+  {
+    n: 2,
+    label: 'Tebas calcula pelas NBRs',
+    desc: 'Motor de cálculo conforme NBR 6118:2023, NBR 6120:2019 e NBR 6122:2019 — nenhuma IA envolvida.',
+  },
+  {
+    n: 3,
+    label: 'Resultado com memória de cálculo',
+    desc: 'Cada elemento vem com as fórmulas e normas usadas. Exportável para PDF.',
+  },
 ];
 
+// ── Diferenciais ──────────────────────────────────────────────────────────────
+const diferenciais = [
+  { emoji: '📐', titulo: '100% NBR', texto: 'Cálculos auditados conforme NBR 6118:2023, 6120:2019 e 6122:2019.' },
+  { emoji: '⚡', titulo: 'Resultado em segundos', texto: 'Sem espera, sem cadastro, sem dados pessoais.' },
+  { emoji: '🏗️', titulo: 'Visualização 3D', texto: 'Veja a estrutura em três dimensões com as armaduras destacadas.' },
+  { emoji: '💰', titulo: 'Estimativa de aço', texto: 'Projeção de kg por bitola para subsidiar o orçamento de materiais.' },
+];
+
+// ── FAQ ───────────────────────────────────────────────────────────────────────
 const faqs = [
   {
-    q: 'O que é teba na construção civil?',
-    a: 'Teba é o nome popular da treliça metálica, uma peça de aço usada como armação em lajes nervuradas (vigota + tavela). Ela compõe parte da armadura da laje, reduz mão de obra e minimiza o desperdício de concreto. O nome virou sinônimo genérico do produto, como "xerox" para fotocópia.',
+    q: 'O que é o Tebas?',
+    a: 'Tebas é uma ferramenta de pré-dimensionamento estrutural online desenvolvida pela BR Aço. O nome homenageia a antiga cidade grega de Tebas — símbolo de conhecimento e engenharia da Antiguidade. A ferramenta calcula laje, viga, pilar e sapata para edificações residenciais de até 3 pavimentos, com base nas normas ABNT vigentes.',
   },
   {
-    q: 'Como calcular a teba correta para minha laje?',
-    a: 'A escolha depende do vão livre da laje (distância entre vigas de apoio) e da carga prevista. Use a calculadora acima para obter um pré-dimensionamento indicativo conforme NBR 6118:2023. Para o projeto definitivo com ART, consulte um engenheiro estrutural.',
+    q: 'Para que serve o pré-dimensionamento?',
+    a: 'O pré-dimensionamento é a primeira estimativa estrutural de um projeto. Ele define as ordens de grandeza dos elementos (seções, armaduras, fundações) antes de contratar um engenheiro estrutural. É essencial para fazer orçamentos iniciais, comparar sistemas construtivos e dimensionar o investimento em aço e concreto.',
   },
   {
-    q: 'Qual a diferença entre teba 7 e teba 8?',
-    a: 'A numeração (teba 7, teba 8, teba 12 etc.) se refere à altura do perfil da treliça em centímetros. Quanto maior o número, maior a altura e, portanto, maior a capacidade de vão e carga. A teba 8 suporta vãos um pouco maiores que a teba 7 com a mesma espessura de capeamento.',
+    q: 'O Tebas substitui o projeto estrutural com ART?',
+    a: 'Não. O Tebas gera estimativas de anteprojeto. O projeto estrutural definitivo — necessário para execução da obra e aprovação junto à prefeitura — deve ser elaborado por engenheiro habilitado com emissão de ART no CREA. O Tebas é uma ferramenta auxiliar, não um substituto.',
   },
   {
-    q: 'A BR Aço fornece teba (treliça metálica)?',
-    a: 'Sim. A BR Aço produz e entrega treliças metálicas e todos os elementos de aço para lajes e estruturas em Goiânia e em todo o Goiás, com entrega em até 2 dias úteis. Solicite orçamento pelo WhatsApp.',
+    q: 'Que normas o Tebas aplica?',
+    a: 'NBR 6118:2023 (projeto de estruturas de concreto armado), NBR 6120:2019 (ações para o cálculo de estruturas) e NBR 6122:2019 (projeto e execução de fundações). Cada resultado vem acompanhado da memória de cálculo com as referências normativas utilizadas.',
   },
   {
-    q: 'O resultado do Tebas substitui o projeto estrutural?',
-    a: 'Não. O Tebas gera um pré-dimensionamento indicativo para anteprojeto e orçamento. O projeto estrutural definitivo deve ser elaborado por engenheiro habilitado com emissão de ART.',
+    q: 'Como é feito o cálculo? Usa inteligência artificial?',
+    a: 'Não. O motor de cálculo do Tebas é determinístico — usa as fórmulas e tabelas das normas NBR, sem modelos de IA ou inferência estatística. Isso garante que o mesmo conjunto de dados sempre produz o mesmo resultado, rastreável e auditável.',
+  },
+  {
+    q: 'Funciona para qualquer tipo de edificação?',
+    a: 'O Tebas foi desenvolvido para edificações residenciais simples de até 3 pavimentos (térrea, sobrado 2 ou 3 andares), com estrutura convencional de concreto armado. Edificações comerciais, industriais ou com geometrias irregulares requerem análise estrutural específica.',
   },
 ];
+
+// ═════════════════════════════════════════════════════════════════════════════
 
 export default function TebasLanding() {
   useSEO({
-    title: 'Calculadora de Teba Grátis Online | BR Aço Goiânia',
+    title: 'Tebas — Pré-dimensionamento Estrutural Online Grátis | BR Aço',
     description:
-      'Calcule teba e pré-dimensionamento estrutural grátis: laje, viga, pilar e sapata conforme NBR 6118:2023. Teba 7, teba 8, teba 12 — resultado instantâneo, sem cadastro. BR Aço Goiânia.',
+      'Calcule laje, viga, pilar e sapata grátis conforme NBR 6118:2023. Pré-dimensionamento estrutural para casas e sobrados até 3 pavimentos. Resultado em segundos, sem cadastro. BR Aço Goiânia.',
     canonical: 'https://grupobraco.com.br/tebas',
     keywords:
-      'calculadora teba, calcular teba, teba laje, teba 7, teba 8, teba 12, treliça metálica, pré-dimensionamento estrutural, dimensionamento teba, teba goiânia',
+      'pré-dimensionamento estrutural, calculadora estrutural, dimensionamento laje viga pilar sapata, NBR 6118, estrutura concreto armado, anteprojeto estrutural, calcular laje, calcular pilar, calcular sapata, BR Aço Goiânia',
   });
 
   return (
     <TebasLayout>
-      {/* ── Hero ─────────────────────────────────────────────── */}
+
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="flex flex-col items-center text-center px-6 pt-20 pb-16 gap-6">
+        {/* Badge de normas */}
         <div
           className="flex items-center gap-2 text-xs px-3 py-1.5 rounded-full"
-          style={{ background: SURFACE, border: `1px solid ${BORDER}`, color: TEXT_DIM }}
+          style={{ background: SURFACE, border: `1px solid ${BORDER}`, color: DIM }}
         >
           <span style={{ color: ORANGE }}>●</span>
           NBR 6118:2023 · NBR 6120:2019 · NBR 6122:2019
         </div>
 
+        {/* Headline */}
         <h1
           className="text-3xl sm:text-4xl font-bold leading-tight max-w-2xl"
           style={{ color: '#F1F5F9' }}
         >
-          Calculadora de Teba Gratuita —{' '}
-          <span style={{ color: ORANGE }}>Pré-dimensionamento Estrutural Online</span>
+          Pré-dimensionamento estrutural —{' '}
+          <span style={{ color: ORANGE }}>laje, viga, pilar e sapata</span>{' '}
+          em segundos
         </h1>
 
-        <p className="text-lg max-w-lg" style={{ color: TEXT_DIM }}>
-          Para casas e sobrados até 3 pavimentos. Do vão da laje ao tamanho da sapata, com base
-          nas normas ABNT. Resultado em segundos, sem cadastro.
+        <p className="text-lg max-w-lg" style={{ color: DIM }}>
+          Para casas e sobrados até 3 pavimentos. Resultado com memória de cálculo
+          conforme as normas ABNT. Gratuito, sem cadastro.
         </p>
 
         <Link
@@ -110,7 +140,7 @@ export default function TebasLanding() {
           onMouseEnter={e => (e.currentTarget.style.background = '#d96a10')}
           onMouseLeave={e => (e.currentTarget.style.background = ORANGE)}
         >
-          Iniciar cálculo gratuito
+          Iniciar pré-dimensionamento gratuito
           <span aria-hidden>→</span>
         </Link>
 
@@ -119,95 +149,55 @@ export default function TebasLanding() {
         </p>
       </section>
 
-      {/* ── O que é Teba ─────────────────────────────────────── */}
+      {/* ── O que o Tebas calcula ─────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#F1F5F9' }}>
-            O que é teba na construção civil?
-          </h2>
-          <p className="text-base leading-relaxed mb-4" style={{ color: TEXT_DIM }}>
-            <strong style={{ color: '#F1F5F9' }}>Teba</strong> é o nome popular da{' '}
-            <strong style={{ color: '#F1F5F9' }}>treliça metálica para laje</strong>, uma armação
-            de aço pré-fabricada usada em lajes nervuradas (lajes de vigota com tavela cerâmica ou
-            EPS). A peça combina dois arames diagonais soldados a uma barra superior e outra inferior,
-            formando uma treliça que garante resistência à flexão e ao cisalhamento.
+          <p
+            className="text-center text-xs font-semibold uppercase tracking-widest mb-8"
+            style={{ color: DIM }}
+          >
+            O que o Tebas calcula
           </p>
-          <p className="text-base leading-relaxed mb-4" style={{ color: TEXT_DIM }}>
-            O nome "teba" virou genérico no Brasil — como "xerox" para fotocópia — e hoje é usado
-            para designar qualquer treliça metálica, independentemente do fabricante. Ela reduz
-            significativamente a mão de obra na armação, elimina o uso de espaçadores manuais e
-            diminui o consumo de concreto em comparação com lajes maciças.
-          </p>
-          <p className="text-base leading-relaxed" style={{ color: TEXT_DIM }}>
-            A escolha do <strong style={{ color: '#F1F5F9' }}>tipo de teba correto</strong> (teba 7,
-            teba 8, teba 12 etc.) depende do vão livre da laje, da carga de projeto e da espessura
-            total do elemento. Nossa calculadora abaixo ajuda a identificar o pré-dimensionamento
-            adequado para cada situação.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Tipos de Teba ────────────────────────────────────── */}
-      <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold mb-2" style={{ color: '#F1F5F9' }}>
-            Tipos de teba — teba 7, teba 8, teba 12 e teba 14
-          </h2>
-          <p className="text-sm mb-8" style={{ color: TEXT_DIM }}>
-            A numeração indica a altura do perfil da treliça em centímetros. Quanto maior o número,
-            maior a capacidade de vão e carga.
-          </p>
-
-          <div className="overflow-x-auto rounded-xl" style={{ border: `1px solid ${BORDER}` }}>
-            <table className="w-full text-sm">
-              <thead>
-                <tr style={{ background: SURFACE }}>
-                  {['Tipo', 'Altura do perfil', 'Vão indicativo', 'Aplicação típica'].map(h => (
-                    <th
-                      key={h}
-                      className="text-left px-4 py-3 font-semibold"
-                      style={{ color: ORANGE, borderBottom: `1px solid ${BORDER}` }}
-                    >
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {tebaTypes.map((row, i) => (
-                  <tr
-                    key={row.tipo}
-                    style={{
-                      background: i % 2 === 0 ? 'transparent' : 'rgba(19,35,55,0.6)',
-                      borderBottom: `1px solid ${BORDER}`,
-                    }}
-                  >
-                    <td className="px-4 py-3 font-semibold" style={{ color: '#F1F5F9' }}>
-                      {row.tipo}
-                    </td>
-                    <td className="px-4 py-3" style={{ color: TEXT_DIM }}>
-                      {row.altura}
-                    </td>
-                    <td className="px-4 py-3" style={{ color: TEXT_DIM }}>
-                      {row.vao}
-                    </td>
-                    <td className="px-4 py-3" style={{ color: TEXT_DIM }}>
-                      {row.uso}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {elementos.map(el => (
+              <div
+                key={el.title}
+                className="p-5 rounded-xl"
+                style={{ background: SURFACE, border: `1px solid ${BORDER}` }}
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-xl">{el.icon}</span>
+                  <span className="font-semibold" style={{ color: el.color }}>
+                    {el.title}
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed" style={{ color: DIM }}>
+                  {el.desc}
+                </p>
+              </div>
+            ))}
           </div>
 
-          <p className="text-xs mt-3" style={{ color: 'rgba(241,245,249,0.3)' }}>
-            Valores indicativos para lajes residenciais com carga de 200 kg/m². Projetos com cargas
-            maiores exigem verificação com engenheiro estrutural.
-          </p>
+          {/* resumo de aço */}
+          <div
+            className="mt-4 p-5 rounded-xl flex items-start gap-4"
+            style={{ background: SURFACE, border: `1px solid rgba(244,122,32,0.25)` }}
+          >
+            <span className="text-xl shrink-0">📊</span>
+            <div>
+              <p className="font-semibold mb-1" style={{ color: ORANGE }}>
+                + Estimativa de aço por bitola
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: DIM }}>
+                Ao final, o Tebas gera uma tabela com os quilogramas estimados de cada bitola
+                (φ4,2 · φ6,3 · φ10 · φ12,5 · φ16 etc.) para subsidiar o orçamento de materiais.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── CTA Calculadora ──────────────────────────────────── */}
+      {/* ── CTA principal ────────────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div
           className="max-w-3xl mx-auto rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6"
@@ -215,11 +205,11 @@ export default function TebasLanding() {
         >
           <div className="flex-1 text-center sm:text-left">
             <h2 className="text-xl font-bold mb-2" style={{ color: '#F1F5F9' }}>
-              Calcule o pré-dimensionamento da sua estrutura
+              Pronto para estimar sua estrutura?
             </h2>
-            <p className="text-sm" style={{ color: TEXT_DIM }}>
-              Descreva o tipo de edificação, a área e o vão da laje. O Tebas usa IA com base nas
-              normas NBR para gerar laje, viga, pilar e sapata em segundos.
+            <p className="text-sm" style={{ color: DIM }}>
+              Informe o tipo, a área e o vão da edificação. O Tebas calcula tudo conforme
+              as normas e mostra cada passo do dimensionamento.
             </p>
           </div>
           <Link
@@ -234,20 +224,20 @@ export default function TebasLanding() {
         </div>
       </section>
 
-      {/* ── Como funciona ────────────────────────────────────── */}
+      {/* ── Como funciona ─────────────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div className="max-w-2xl mx-auto">
-          <h2
-            className="text-center text-sm font-semibold uppercase tracking-widest mb-10"
-            style={{ color: TEXT_DIM }}
+          <p
+            className="text-center text-xs font-semibold uppercase tracking-widest mb-10"
+            style={{ color: DIM }}
           >
             Como funciona
-          </h2>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-0">
+          </p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-start gap-8 sm:gap-0">
             {steps.map((s, i) => (
               <div
                 key={s.n}
-                className="flex sm:flex-1 items-center gap-4 sm:gap-0 sm:flex-col sm:text-center"
+                className="flex sm:flex-1 items-start gap-4 sm:gap-0 sm:flex-col sm:text-center"
               >
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shrink-0"
@@ -255,17 +245,17 @@ export default function TebasLanding() {
                 >
                   {s.n}
                 </div>
-                <div className="sm:mt-3">
+                <div className="sm:mt-3 sm:px-4">
                   <p className="font-semibold text-sm" style={{ color: '#F1F5F9' }}>
                     {s.label}
                   </p>
-                  <p className="text-xs mt-0.5" style={{ color: TEXT_DIM }}>
+                  <p className="text-xs mt-1 leading-relaxed" style={{ color: DIM }}>
                     {s.desc}
                   </p>
                 </div>
                 {i < steps.length - 1 && (
                   <div
-                    className="hidden sm:block sm:flex-1 h-px mx-4"
+                    className="hidden sm:block sm:absolute h-px"
                     style={{ background: BORDER }}
                   />
                 )}
@@ -275,44 +265,75 @@ export default function TebasLanding() {
         </div>
       </section>
 
-      {/* ── O que calcula ────────────────────────────────────── */}
+      {/* ── Diferenciais ──────────────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div className="max-w-3xl mx-auto">
-          <h2
-            className="text-center text-sm font-semibold uppercase tracking-widest mb-10"
-            style={{ color: TEXT_DIM }}
+          <p
+            className="text-center text-xs font-semibold uppercase tracking-widest mb-8"
+            style={{ color: DIM }}
           >
-            O que Tebas calcula
-          </h2>
+            Por que usar o Tebas
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {features.map(f => (
+            {diferenciais.map(d => (
               <div
-                key={f.title}
-                className="p-5 rounded-xl"
+                key={d.titulo}
+                className="p-5 rounded-xl flex items-start gap-4"
                 style={{ background: SURFACE, border: `1px solid ${BORDER}` }}
               >
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">{f.icon}</span>
-                  <span className="font-semibold" style={{ color: ORANGE }}>
-                    {f.title}
-                  </span>
+                <span className="text-2xl shrink-0">{d.emoji}</span>
+                <div>
+                  <p className="font-semibold mb-1" style={{ color: '#F1F5F9' }}>
+                    {d.titulo}
+                  </p>
+                  <p className="text-sm leading-relaxed" style={{ color: DIM }}>
+                    {d.texto}
+                  </p>
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: TEXT_DIM }}>
-                  {f.desc}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────── */}
+      {/* ── Sobre o nome Tebas ────────────────────────────────────────────── */}
+      <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
+        <div className="max-w-3xl mx-auto">
+          <div
+            className="rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6"
+            style={{ background: SURFACE, border: `1px solid ${BORDER}` }}
+          >
+            {/* coluna ícone */}
+            <div
+              className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl shrink-0"
+              style={{ background: 'rgba(244,122,32,0.12)', border: `1px solid rgba(244,122,32,0.25)` }}
+            >
+              🏛️
+            </div>
+            {/* coluna texto */}
+            <div>
+              <h2 className="text-lg font-bold mb-2" style={{ color: '#F1F5F9' }}>
+                Por que "Tebas"?
+              </h2>
+              <p className="text-sm leading-relaxed" style={{ color: DIM }}>
+                Tebas (em grego, Θῆβαι) foi uma das maiores cidades da Grécia Antiga — conhecida
+                pela arquitetura monumental, pela organização urbana e pelo legado em engenharia e
+                filosofia. O nome foi escolhido como homenagem à tradição de construir com rigor
+                e método, valores que guiam a ferramenta: cálculo estrutural baseado em normas,
+                com memória de cálculo completa e rastreável.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ───────────────────────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-8" style={{ color: '#F1F5F9' }}>
-            Perguntas frequentes sobre teba
+            Perguntas frequentes
           </h2>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4">
             {faqs.map(faq => (
               <div
                 key={faq.q}
@@ -322,7 +343,7 @@ export default function TebasLanding() {
                 <h3 className="font-semibold mb-2" style={{ color: '#F1F5F9' }}>
                   {faq.q}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: TEXT_DIM }}>
+                <p className="text-sm leading-relaxed" style={{ color: DIM }}>
                   {faq.a}
                 </p>
               </div>
@@ -331,18 +352,18 @@ export default function TebasLanding() {
         </div>
       </section>
 
-      {/* ── CTA WhatsApp ─────────────────────────────────────── */}
+      {/* ── CTA WhatsApp — BR Aço ─────────────────────────────────────────── */}
       <section className="px-6 py-14" style={{ borderTop: `1px solid ${BORDER}` }}>
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-4 text-center">
           <h2 className="text-xl font-bold" style={{ color: '#F1F5F9' }}>
-            Precisa de teba (treliça metálica) para sua obra?
+            Já tem o pré-dimensionamento? Cote o aço com a BR Aço.
           </h2>
-          <p className="text-sm max-w-md" style={{ color: TEXT_DIM }}>
-            A BR Aço fornece treliças metálicas e vergalhões cortados e dobrados sob medida.
-            Entrega em até 2 dias úteis em Goiânia e todo o Goiás.
+          <p className="text-sm max-w-md" style={{ color: DIM }}>
+            Vergalhões CA-50 e CA-60 cortados e dobrados sob medida, treliças e telas soldadas.
+            Entrega em Goiânia e em todo o Goiás a partir de 7 dias úteis.
           </p>
           <a
-            href={WHATSAPP_URL}
+            href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-lg transition-all no-underline"
@@ -350,29 +371,30 @@ export default function TebasLanding() {
             onMouseEnter={e => (e.currentTarget.style.background = '#1ebe5a')}
             onMouseLeave={e => (e.currentTarget.style.background = '#25D366')}
           >
-            Solicitar orçamento de teba →
+            Solicitar orçamento de aço →
           </a>
         </div>
       </section>
 
-      {/* ── Disclaimer ───────────────────────────────────────── */}
+      {/* ── Aviso técnico ────────────────────────────────────────────────── */}
       <section className="px-6 py-10" style={{ borderTop: `1px solid ${BORDER}` }}>
-        <div className="max-w-2xl mx-auto flex flex-col items-center gap-6 text-center">
+        <div className="max-w-2xl mx-auto">
           <div
-            className="w-full p-4 rounded-xl text-sm leading-relaxed"
+            className="p-4 rounded-xl text-sm leading-relaxed text-center"
             style={{
               background: 'rgba(244,122,32,0.08)',
               border: `1px solid rgba(244,122,32,0.2)`,
-              color: TEXT_DIM,
+              color: DIM,
             }}
           >
             <strong style={{ color: ORANGE }}>⚠ Aviso técnico:</strong>{' '}
-            Os resultados do Tebas são estimativas de pré-dimensionamento para fase de anteprojeto,
-            com base nas NBR 6118:2023, NBR 6122:2019 e NBR 6120:2019. Não substituem o projeto
-            estrutural definitivo com ART de engenheiro habilitado.
+            Os resultados do Tebas são estimativas de pré-dimensionamento para anteprojeto,
+            elaboradas com base nas NBR 6118:2023, NBR 6122:2019 e NBR 6120:2019.
+            Não substituem o projeto estrutural definitivo com ART de engenheiro habilitado.
           </div>
         </div>
       </section>
+
     </TebasLayout>
   );
 }
