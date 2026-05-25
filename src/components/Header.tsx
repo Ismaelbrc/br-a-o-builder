@@ -90,7 +90,7 @@ export default function Header() {
               </Link>
               <a
                 onClick={() => analytics.whatsappClick('header')}
-                href="https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+                href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide"
@@ -305,7 +305,7 @@ export default function Header() {
                 Área do Cliente
               </Link>
               <a
-                href="https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+                href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => { analytics.whatsappClick('header'); setIsMobileMenuOpen(false); }}

@@ -11,7 +11,7 @@ const navigationLinks = [
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora de Vergalhão', href: '/calculadora-vergalhao' },
   { name: 'FAQ', href: '/faq' },
-  { name: 'Contato', href: 'https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.' },
+  { name: 'Contato', href: 'https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.' },
   { name: 'Área do Cliente', href: '/cliente' },
 ];
 
@@ -123,7 +123,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/5562996472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+                  href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-muted-foreground text-sm hover:text-foreground transition-colors"
