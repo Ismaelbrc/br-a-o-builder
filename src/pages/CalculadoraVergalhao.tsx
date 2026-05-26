@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { useSEO } from '@/hooks/useSEO';
 import { Calculator, MessageCircle, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { analytics } from '@/lib/analytics';
 
 // Tabela de pesos CA-50 por diâmetro (kg/m) — ABNT NBR 7480
 const diametros = [
@@ -181,6 +182,7 @@ export default function CalculadoraVergalhao() {
       paineis,
       pesoTotal,
     });
+    analytics.calculatorUse('tela_soldada');
   };
 
   const calcularPeso = () => {
@@ -200,6 +202,7 @@ export default function CalculadoraVergalhao() {
       kgm,
       pesoTotal: Math.round(pesoTotal * 100) / 100,
     });
+    analytics.calculatorUse('peso_vergalhao');
   };
 
   const calcularQtd = () => {
@@ -216,6 +219,7 @@ export default function CalculadoraVergalhao() {
     const metrosLineares = Math.ceil(peso / kgm);
 
     setResultadoQtd({ barras, metrosLineares, diametro: diam?.label ?? '', kgm, kgBarra: Math.round(kgBarra * 1000) / 1000 });
+    analytics.calculatorUse('quantidade_barras');
   };
 
   const whatsappMsgTela = resultadoTela

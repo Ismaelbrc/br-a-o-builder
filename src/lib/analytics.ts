@@ -42,7 +42,8 @@ export const analytics = {
   },
 
   /**
-   * WhatsApp CTA click — primary conversion event.
+   * WhatsApp CTA click — primary engagement event.
+   * Fires its own GA4 event (whatsapp_click) separate from generate_lead.
    * @param source  Identifies which button was clicked (e.g. 'header', 'cta-banner', 'floating', 'footer')
    */
   whatsappClick(source: string) {
@@ -52,10 +53,11 @@ export const analytics = {
       content_category: source,
     });
 
-    // GA4
-    gtag('event', 'generate_lead', {
+    // GA4 — dedicated event (mark as Key Event in GA4 Admin)
+    gtag('event', 'whatsapp_click', {
       event_category: 'engagement',
       event_label: `whatsapp_${source}`,
+      source,
     });
 
     // Google Ads conversion
@@ -95,5 +97,17 @@ export const analytics = {
     fbq('track', 'ViewContent', { content_name: contentName });
     gtag('event', 'view_item', { item_name: contentName });
     clarity('view_content', contentName);
+  },
+
+  /**
+   * Vergalhão calculator used — tracks engagement with the interactive tool.
+   * @param type  Calculator type (e.g. 'vergalhao', 'laje')
+   */
+  calculatorUse(type: string) {
+    gtag('event', 'calculator_use', {
+      event_category: 'engagement',
+      calculator_type: type,
+    });
+    clarity('calculator_use', type);
   },
 };
