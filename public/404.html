@@ -35,7 +35,21 @@
         'tabela-de-peso-do-vergalhao': 'quanto-pesa-vergalhao-por-metro-tabela-completa',
         'vergalhao-em-anapolis-a-sustentacao-que-seu-projeto-precisa': 'entrega-aco-48-horas-goias',
         'br-aco-a-referencia-em-vergalhao-em-goiania': 'o-que-e-corte-e-dobra-de-aco',
-        'calculadora-vergalhao': 'calculadora-vergalhao'
+        'calculadora-vergalhao': 'calculadora-vergalhao',
+        'vergalhao-direto-da-fabrica-acelere-seus-projetos-com-a-br-aco': 'o-que-e-corte-e-dobra-de-aco',
+        'corte-e-dobra-de-ferro-barato-a-solucao-ideal-para-seus-projetos-de-construcao-3': 'o-que-e-corte-e-dobra-de-aco',
+        'corte-e-dobra-de-ferro-barato': 'o-que-e-corte-e-dobra-de-aco',
+        'vergalhao-goiania': 'entrega-aco-48-horas-goias',
+        'vergalhao-aparecida-de-goiania': 'entrega-aco-48-horas-goias',
+        'vergalhao-anapolis': 'entrega-aco-48-horas-goias',
+        'corte-e-dobra-de-aco-goiania': 'corte-manual-vs-corte-e-dobra-industrial-goias',
+        'corte-e-dobra-aparecida-de-goiania': 'corte-manual-vs-corte-e-dobra-industrial-goias',
+        'br-aco-vergalhao': 'o-que-e-corte-e-dobra-de-aco',
+        'ferro-para-construcao': 'quanto-pesa-vergalhao-por-metro-tabela-completa',
+        'tabela-vergalhao': 'quanto-pesa-vergalhao-por-metro-tabela-completa',
+        'preco-vergalhao': 'o-que-e-corte-e-dobra-de-aco',
+        'corte-dobra-industrial': 'o-que-e-corte-e-dobra-de-aco',
+        'armadura-pronta': 'o-que-e-corte-e-dobra-de-aco'
       };
 
       // Se a URL e do padrao antigo /conteudo/[slug] → redireciona para a homepage
@@ -52,8 +66,9 @@
             window.location.protocol + '//' + window.location.host + '/?/blog/' + newSlug
           );
         } else {
+          // Slug not mapped → send to blog listing (more relevant than homepage)
           window.location.replace(
-            window.location.protocol + '//' + window.location.host + '/'
+            window.location.protocol + '//' + window.location.host + '/?/blog'
           );
         }
         return;

@@ -8,6 +8,18 @@
     <link rel="shortcut icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- www/http → canonical redirect (must run before any analytics) -->
+    <script>
+      (function() {
+        var h = window.location.hostname;
+        if (h === 'www.grupobraco.com.br' || window.location.protocol === 'http:') {
+          window.location.replace(
+            'https://grupobraco.com.br' + window.location.pathname + window.location.search + window.location.hash
+          );
+        }
+      })();
+    </script>
+
     <!-- Google Search Console verification -->
     <meta name="google-site-verification" content="yJhjL5IC2Fa3UtswEFvYY-BRdbkd0kSAoslBP4uGmNk" />
 
