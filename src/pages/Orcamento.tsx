@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { analytics } from '@/lib/analytics';
 
 const WHATSAPP_URL =
   'https://api.whatsapp.com/send?phone=556299247285&text=' +
@@ -6,31 +7,18 @@ const WHATSAPP_URL =
 
 export default function Orcamento() {
   useEffect(() => {
-    // Google Ads — conversion "Clique WhatsApp via Orçamento"
-    // gtag já está inicializado globalmente no index.html (AW-16520884957)
+    // Dispara conversão principal contada (WhatsApp Click — MQ4NCOCD0a4cEN3l4sU9)
+    // + Meta Pixel Lead + GA4 whatsapp_click via analytics centralizado
+    analytics.whatsappClick('orcamento-google-ads');
+
+    // Dispara também a conversão específica de Orçamento (agora habilitada no Google Ads)
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'conversion', {
         send_to: 'AW-16520884957/owp-CPWhxbAcEN3l4sU9',
       });
     }
 
-    // GA4 — cross-attribution
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', {
-        event_category: 'google-ads',
-        event_label: 'whatsapp_orcamento',
-      });
-    }
-
-    // Meta Pixel — cross-attribution (opcional)
-    if (typeof window.fbq === 'function') {
-      window.fbq('track', 'Lead', {
-        content_name: 'WhatsApp Click',
-        content_category: 'google-ads',
-      });
-    }
-
-    // Redireciona após 1.5 s (tempo suficiente para o gtag enviar o beacon)
+    // Redireciona após 1.5 s (tempo suficiente para o gtag enviar os beacons)
     const timer = setTimeout(() => {
       window.location.href = WHATSAPP_URL;
     }, 1500);
