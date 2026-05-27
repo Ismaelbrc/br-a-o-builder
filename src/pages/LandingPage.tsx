@@ -172,7 +172,7 @@ export default function LandingPage() {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => analytics.whatsappClick('landing-hero')}
+              onClick={() => setTimeout(() => analytics.whatsappClick('landing-hero'), 0)}
               className="flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold rounded-full px-8 py-4 text-base transition-colors shadow-lg"
             >
               <MessageCircle className="w-5 h-5" />
@@ -257,7 +257,7 @@ export default function LandingPage() {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => analytics.whatsappClick('landing-steps')}
+              onClick={() => setTimeout(() => analytics.whatsappClick('landing-steps'), 0)}
               className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold rounded-full px-10 py-4 transition-colors shadow-lg text-base"
             >
               <MessageCircle className="w-5 h-5" />
@@ -306,7 +306,7 @@ export default function LandingPage() {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => analytics.whatsappClick('landing-final')}
+            onClick={() => setTimeout(() => analytics.whatsappClick('landing-final'), 0)}
             className="inline-flex items-center gap-2 mt-6 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold rounded-full px-10 py-4 transition-colors shadow-lg text-base"
           >
             <MessageCircle className="w-5 h-5" />

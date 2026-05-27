@@ -66,7 +66,7 @@ const HeroSection = () => {
                 asChild
                 className="text-white border border-white/30 hover:bg-white hover:text-brand-navy rounded-full px-8 py-6"
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => analytics.whatsappClick('cda-hero')}>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setTimeout(() => analytics.whatsappClick('cda-hero'), 0)}>
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Falar no WhatsApp
                 </a>
@@ -401,7 +401,7 @@ const FinalCtaSection = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => analytics.whatsappClick('cda-final')}
+          onClick={() => setTimeout(() => analytics.whatsappClick('cda-final'), 0)}
           className="mt-8 inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white font-semibold rounded-full px-12 py-6 text-xl shadow-lg shadow-green-500/25 transition-colors"
         >
           <MessageCircle className="w-6 h-6" />
@@ -472,7 +472,7 @@ const CdaSection = () => {
             </div>
 
             <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6">
-              <a href={whatsappCda} target="_blank" rel="noopener noreferrer" onClick={() => analytics.whatsappClick('cda-premium')}>
+              <a href={whatsappCda} target="_blank" rel="noopener noreferrer" onClick={() => setTimeout(() => analytics.whatsappClick('cda-premium'), 0)}>
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Solicitar Orçamento CDA
               </a>

@@ -30,7 +30,7 @@ const CtaBannerSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-orange font-semibold rounded-full px-6 sm:px-8 py-4 hover:bg-gray-100 shadow-lg transition-colors"
-            onClick={() => analytics.whatsappClick('cta-banner')}
+            onClick={() => setTimeout(() => analytics.whatsappClick('cta-banner'), 0)}
           >
             <MessageCircle className="w-5 h-5" />
             Falar no WhatsApp

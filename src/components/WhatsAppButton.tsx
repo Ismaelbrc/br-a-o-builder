@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 group"
       aria-label="Fale conosco no WhatsApp"
-      onClick={() => analytics.whatsappClick('floating')}
+      onClick={() => setTimeout(() => analytics.whatsappClick('floating'), 0)}
     >
       {/* Pulse ring animation */}
       <span className="absolute inset-0 rounded-full bg-brand-whatsapp animate-pulse-ring" />

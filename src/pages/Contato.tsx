@@ -188,7 +188,7 @@ export default function Contato() {
                       href={card.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => card.title === 'WhatsApp' ? analytics.whatsappClick('contato') : undefined}
+                      onClick={() => card.title === 'WhatsApp' ? setTimeout(() => analytics.whatsappClick('contato'), 0) : undefined}
                     >
                       {content}
                     </a>

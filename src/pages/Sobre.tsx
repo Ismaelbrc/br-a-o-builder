@@ -283,7 +283,7 @@ export default function Sobre() {
               href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => analytics.whatsappClick('sobre')}
+              onClick={() => setTimeout(() => analytics.whatsappClick('sobre'), 0)}
               className="border-2 border-white text-white font-semibold rounded-full px-8 py-4 hover:bg-white hover:text-brand-orange transition-colors text-center"
             >
               Solicitar Orçamento

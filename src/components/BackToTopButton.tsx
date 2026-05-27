@@ -5,12 +5,19 @@ export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let rafId: number;
     const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 500);
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        setIsVisible(window.scrollY > 500);
+      });
     };
-
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    // passive: true → never blocks scroll thread
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   const scrollToTop = () => {

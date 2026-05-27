@@ -32,11 +32,19 @@ export default function Header() {
   const location = useLocation();
 
   useEffect(() => {
+    let rafId: number;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 50);
+      });
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // passive: true → browser never waits for JS before scrolling (core INP fix)
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   useEffect(() => {
@@ -89,7 +97,7 @@ export default function Header() {
                 <span className="text-sm">Área do Cliente</span>
               </Link>
               <a
-                onClick={() => analytics.whatsappClick('header')}
+                onClick={() => setTimeout(() => analytics.whatsappClick('header'), 0)}
                 href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
@@ -308,7 +316,7 @@ export default function Header() {
                 href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => { analytics.whatsappClick('header'); setIsMobileMenuOpen(false); }}
+                onClick={() => { setTimeout(() => analytics.whatsappClick('header'), 0); setIsMobileMenuOpen(false); }}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide text-center block"
               >
                 Fale Conosco
