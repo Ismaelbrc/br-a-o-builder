@@ -6,26 +6,27 @@ const WHATSAPP_URL =
 
 export default function Meta() {
   useEffect(() => {
-    // Meta Pixel — o init já ocorreu no index.html global
-    if (typeof window.fbq === 'function') {
-      window.fbq('track', 'Lead', {
-        content_name: 'WhatsApp Click',
-        content_category: 'meta-ads',
-      });
-    }
-
-    // GA4 — cross-attribution
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', {
-        event_category: 'meta-ads',
-        event_label: 'whatsapp_meta',
-      });
-    }
-
-    // Redireciona após 1.5 s (tempo para o pixel enviar o evento)
+    // Redireciona após 1.4 s e dispara pixels DENTRO do timeout
+    // Assim só conta como Lead quem realmente foi redirecionado para o WhatsApp
     const timer = setTimeout(() => {
+      // Meta Pixel — o init já ocorreu no index.html global
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+          content_name: 'WhatsApp Click',
+          content_category: 'meta-ads',
+        });
+      }
+
+      // GA4 — cross-attribution
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'meta-ads',
+          event_label: 'whatsapp_meta',
+        });
+      }
+
       window.location.href = WHATSAPP_URL;
-    }, 1500);
+    }, 1400);
 
     return () => clearTimeout(timer);
   }, []);
