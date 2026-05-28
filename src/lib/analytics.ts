@@ -13,8 +13,9 @@ declare global {
   }
 }
 
-const GADS_ID    = 'AW-16520884957';
-const GADS_LABEL = 'MQ4NCOCD0a4cEN3l4sU9';
+const GADS_ID         = 'AW-16520884957';
+const GADS_LABEL      = 'MQ4NCOCD0a4cEN3l4sU9'; // WhatsApp Click (generic)
+const GADS_LABEL_CDA  = '13r7CLvf7bQcEN3l4sU9'; // Clique WhatsApp - Corte e Dobra
 
 // ── Safe callers (no-op if script not loaded yet) ──────────────────────────
 
@@ -60,10 +61,17 @@ export const analytics = {
       source,
     });
 
-    // Google Ads conversion
+    // Google Ads conversion — generic
     gtag('event', 'conversion', {
       send_to: `${GADS_ID}/${GADS_LABEL}`,
     });
+
+    // Google Ads conversion — page-specific (Corte e Dobra)
+    if (source.startsWith('cda-')) {
+      gtag('event', 'conversion', {
+        send_to: `${GADS_ID}/${GADS_LABEL_CDA}`,
+      });
+    }
 
     // Clarity
     clarity('whatsapp_click', source);
