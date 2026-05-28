@@ -71,6 +71,12 @@ export const analytics = {
       gtag('event', 'conversion', {
         send_to: `${GADS_ID}/${GADS_LABEL_CDA}`,
       });
+
+      // Meta Pixel — custom event for CDA page (use as optimization event in Meta Ads)
+      fbq('trackCustom', 'CDA_Lead', {
+        content_name: 'Corte e Dobra',
+        content_category: source,
+      });
     }
 
     // Clarity
