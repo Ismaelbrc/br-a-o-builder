@@ -11052,7 +11052,655 @@ Para obras com canteiros nas duas praças (construtoras com projetos simultâneo
 - Nota fiscal individualizada por CNPJ de cada obra
 
 O processo é o mesmo para os dois mercados: planilha de ferro → orçamento em 2h → produção → entrega com documentação completa.`
+  },
+  {
+    id: 152,
+    slug: "taxa-armadura-minima-maxima-nbr-6118",
+    category: "Normas ABNT",
+    title: "Taxa de Armadura Mínima e Máxima pela NBR 6118: Guia Técnico Completo",
+    metaDescription: "Entenda o que dizem as tabelas 17.1 e 17.3 da NBR 6118 sobre taxa de armadura mínima e máxima para vigas, pilares e lajes. Com exemplos de cálculo e impacto na escolha do aço.",
+    keyword: "taxa de armadura mínima NBR 6118",
+    date: "28 Mai 2026",
+    summary: "Guia técnico sobre taxas mínimas e máximas de armadura conforme NBR 6118, com tabelas, fórmulas e exemplos práticos para vigas, pilares e lajes.",
+    content: `## O Que São Taxas de Armadura e Por Que a NBR 6118 as Limita
+
+A taxa de armadura (ρ) é a relação entre a área de aço (As) e a área da seção transversal de concreto (Ac). Ela responde a uma pergunta crítica de projeto: quanto aço é necessário — e quanto é demais?
+
+A NBR 6118:2023 estabelece limites inferior e superior para essa taxa. Não por burocracia, mas por comportamento estrutural comprovado:
+
+- **Taxa mínima (ρ_mín)**: garante que o elemento não apresente ruptura frágil logo após a fissuração do concreto. Sem armadura mínima, o colapso pode ser súbito e sem aviso.
+- **Taxa máxima (ρ_máx)**: evita que o aço sofra deformações excessivas antes que o concreto alcance sua resistência. Uma seção super-armada falha pelo esmagamento do concreto — modo de ruptura frágil, indesejado e imprevisível.
+
+## Tabela de Taxa Mínima por Elemento (NBR 6118 — Tabela 17.1 e 17.3)
+
+### Vigas (item 17.3.5)
+
+| Tipo de solicitação | ρ_mín (As/Ac) |
+|---------------------|---------------|
+| Flexão simples — concreto C20 | 0,15% |
+| Flexão simples — concreto C30 | 0,17% |
+| Flexão simples — concreto C40 | 0,19% |
+| Flexão simples — concreto C50 | 0,21% |
+| Compressão (armadura de pele) | 0,10% (por face) |
+
+A fórmula exata é: ρ_mín = 0,26 × (fctm/fyk) ≥ 0,13%, onde fctm é a resistência média à tração do concreto e fyk é a resistência característica ao escoamento do aço.
+
+**Exemplo:** Viga 30×60 cm, concreto C30 (fctm = 2,9 MPa), CA-50 (fyk = 500 MPa)
+- ρ_mín = 0,26 × (2,9/500) = 0,151%
+- Área mínima = 0,00151 × (30 × 60) = 2,72 cm²
+- Solução prática: 3 barras ø12,5 mm CA-50 (As = 3,68 cm²) ✓
+
+### Pilares (item 17.3.6)
+
+| Condição | ρ_mín | ρ_máx |
+|----------|--------|--------|
+| Normal (compressão centrada ou excêntrica) | 0,40% | 8,00% |
+| Em regiões de emenda por traspasse simultâneas | — | 10,00% |
+
+### Lajes (item 17.3.7)
+
+| Tipo | ρ_mín |
+|------|--------|
+| Laje maciça — direção principal | 0,15% de bw × h |
+| Laje maciça — direção secundária | 0,90 cm²/m (armadura de distribuição) |
+| Armadura negativa sobre apoios | 20% da armadura positiva no vão |
+
+## Consequências da Violação dos Limites
+
+**Sub-armadura (ρ < ρ_mín):** fissuração excessiva em serviço, possibilidade de colapso frágil após fissuração do concreto, responsabilidade técnica do engenheiro calculista.
+
+**Super-armadura (ρ > ρ_máx):** dificuldade de adensamento do concreto, modo de ruptura por esmagamento sem aviso, custo desnecessário de aço sem ganho estrutural proporcional.
+
+## A Relação Entre Taxa de Armadura e Qualidade do Corte
+
+Uma taxa de armadura calculada com precisão nada vale se a barra chegar com comprimento errado. O desperdício do corte manual — pontas e erros de medida — obriga o armador a usar uma barra a mais para cobrir a diferença, alterando involuntariamente a taxa calculada.
+
+No corte e dobra industrial, a tolerância de corte é de ±3 mm (máquina CNC), contra ±15–25 mm no corte manual com disco. Isso significa que a taxa de armadura do canteiro corresponde exatamente à taxa calculada pelo engenheiro — sem aproximações, sem compensações com barras extras.
+
+Ao especificar corte e dobra industrial, o engenheiro garante que o projeto sai do papel exatamente como foi calculado.`
+  },
+  {
+    id: 153,
+    slug: "raio-minimo-dobra-vergalhao-nbr-6118",
+    category: "Normas ABNT",
+    title: "Raio Mínimo de Dobra de Vergalhão e Comprimento de Desenvolvimento pela NBR 6118",
+    metaDescription: "Tabela completa de raios mínimos de dobra para CA-50 e CA-60 pela NBR 6118. Saiba como calcular comprimento de desenvolvimento e por que dobra incorreta compromete a ancoragem.",
+    keyword: "raio mínimo dobra vergalhão NBR 6118",
+    date: "28 Mai 2026",
+    summary: "Tabela de raios mínimos de dobra para CA-50 e CA-60, comprimento de desenvolvimento e ancoragem conforme NBR 6118, com impacto prático na qualidade das armaduras.",
+    content: `## Dobrar Vergalhão Não é Só Dobrar: A NBR 6118 Regula Cada Detalhe
+
+A dobra de vergalhões é uma das operações mais executadas em obra e, ao mesmo tempo, uma das mais sujeitas a erros que comprometem o comportamento estrutural. A NBR 6118:2023 dedica a seção 9.4 ao tema, estabelecendo raios mínimos de dobramento que garantem a integridade do aço e a eficiência da ancoragem.
+
+## Por Que o Raio de Dobra Importa
+
+Quando um vergalhão é dobrado com raio insuficiente, três problemas surgem:
+
+1. **Fissuração do aço no ponto de dobra**: o encruamento da região dobrada pode criar microtrincas que propagam sob carga cíclica
+2. **Esmagamento do concreto no interior da curva**: a força que o aço transfere para o concreto no ponto de curvatura é inversamente proporcional ao raio
+3. **Ancoragem ineficiente**: a norma assume que o gancho padrão garante comprimento de ancoragem equivalente — se o raio for menor, essa equivalência não vale
+
+## Tabela de Raio Mínimo de Dobra (NBR 6118 — Tabela 9.1)
+
+| Diâmetro da barra (φ) | Raio mínimo CA-50 | Raio mínimo CA-60 |
+|-----------------------|-------------------|-------------------|
+| φ ≤ 20 mm | 3,5 φ | 5,0 φ |
+| φ > 20 mm | 5,0 φ | 7,0 φ |
+| CA-25 (qualquer) | 2,5 φ | — |
+
+**Exemplos práticos:**
+
+| Barra | Grau | Raio mínimo | Mandril mínimo |
+|-------|------|-------------|----------------|
+| ø8,0 mm | CA-50 | 28 mm | 56 mm |
+| ø12,5 mm | CA-50 | 43,75 mm | 87,5 mm |
+| ø16,0 mm | CA-50 | 56 mm | 112 mm |
+| ø20,0 mm | CA-50 | 70 mm | 140 mm |
+| ø25,0 mm | CA-50 | 125 mm | 250 mm |
+
+## Comprimento de Desenvolvimento — Tabela CA-50/C30
+
+| Diâmetro | Comprimento básico (posição boa) | Comprimento básico (posição ruim) |
+|----------|----------------------------------|-----------------------------------|
+| ø8,0 mm | 27,4 cm | 39,1 cm |
+| ø10,0 mm | 34,2 cm | 48,9 cm |
+| ø12,5 mm | 42,8 cm | 61,1 cm |
+| ø16,0 mm | 54,8 cm | 78,3 cm |
+| ø20,0 mm | 68,5 cm | 97,9 cm |
+| ø25,0 mm | 85,6 cm | 122,3 cm |
+
+## O Erro Mais Comum nos Canteiros
+
+O erro mais frequente é a dobra com mandril de diâmetro insuficiente. Para um vergalhão ø16 mm CA-50, o mandril mínimo é de 112 mm (11 cm). Uma chave de dobra caseira tipicamente usa mandris de 30–40 mm — menos de 40% do mínimo normativo.
+
+Mesmo que a barra chegue ao projeto em dimensão correta, a ancoragem pode ser ineficiente. O gancho não equivale ao comprimento necessário, e o elemento pode perder resistência de até 25%.
+
+## Dobra Industrial CNC vs Manual
+
+| Parâmetro | Dobra manual | Dobra CNC |
+|-----------|-------------|-----------|
+| Controle do raio de dobra | Visual/estimado | Programado para cada diâmetro |
+| Tolerância de ângulo | ±5° a ±10° | ±0,5° |
+| Mandril verificado por lote | Raramente | A cada setup de produção |
+| Conformidade NBR 6118 | Depende do armador | Garantida por parâmetro de máquina |
+
+O corte e dobra industrial garante, por definição, que cada barra entregue em obra atende ao raio mínimo normativo — porque o mandril da máquina CNC é configurado por diâmetro antes de iniciar a produção do lote.`
+  },
+  {
+    id: 154,
+    slug: "forma-incorporada-laje-o-que-e-br-aco-centro-oeste",
+    category: "Produtos",
+    title: "Forma Incorporada para Laje: O que é, Como Funciona e Por Que é Novidade no Centro-Oeste",
+    metaDescription: "Forma incorporada para laje elimina a carpintaria, permanece na estrutura e reduz prazo e custo. Saiba como funciona e por que a BR Aço é a única empresa a oferecer o produto no Centro-Oeste.",
+    keyword: "forma incorporada para laje",
+    date: "28 Mai 2026",
+    summary: "Guia completo sobre forma incorporada para laje: funcionamento técnico, vantagens sobre fôrma de madeira, normas aplicáveis e disponibilidade exclusiva no Centro-Oeste pela BR Aço.",
+    content: `## O Problema da Fôrma de Madeira que Todo Engenheiro Conhece
+
+Todo profissional de construção civil já vivenciou o ciclo frustrante da fôrma de madeira para laje: montagem, concretagem, descimbramento, desmontagem, transporte, reaproveitamento e descarte final. A carpintaria responde por 15% a 25% do prazo de execução de estruturas convencionais e exige mão de obra especializada cada vez mais escassa.
+
+A forma incorporada surgiu como resposta industrial a esse problema — e, no Centro-Oeste, a BR Aço é a única empresa que a fornece.
+
+## O Que é Forma Incorporada
+
+A forma incorporada é um componente estrutural de aço galvanizado que substitui a fôrma de madeira na concretagem de lajes. Diferente da fôrma convencional, ela não é retirada após a cura — incorpora-se permanentemente à estrutura como parte da armadura de tração da laje.
+
+**Composição:**
+- Chapa de aço galvanizado perfilada (perfil trapezoidal), espessura 0,80 mm a 1,20 mm
+- Galvanização por imersão a quente Z275 (275 g/m²)
+- Geometria projetada para travamento mecânico com o concreto
+
+## Funcionamento Técnico
+
+A forma incorporada funciona como armadura inferior de tração na laje mista. O concreto trabalha à compressão, a forma de aço trabalha à tração — princípio idêntico ao concreto armado convencional, porém com a forma servindo como "armadura distribuída".
+
+**Fase 1 — Pré-concretagem:** a chapa metálica atua como fôrma autoportante, sustentando o peso próprio do concreto fresco, operários e equipamentos. Vão máximo sem escoramento intermediário: 2,0 m a 4,5 m.
+
+**Fase 2 — Pós-cura:** o sistema aço+concreto trabalha como seção composta. A forma incorporada contribui com área de aço equivalente a uma tela soldada de distribuição, reduzindo a necessidade de armadura inferior adicional.
+
+## Vantagens Comparativas
+
+| Item | Fôrma Madeira | Forma Incorporada |
+|------|--------------|-------------------|
+| Montagem da forma | 2–4 dias (carpinteiro) | 4–8 h (servente) |
+| Descimbramento | 7–28 dias | Não necessário |
+| Desmontagem e limpeza | 1–2 dias | Não necessário |
+| Descarte de entulho | Alto (madeira tratada) | Zero |
+| Mão de obra especializada | Carpinteiro (custo premium) | Servente (treinamento rápido) |
+
+Em uma laje de 500 m², o ganho de prazo é de 7 a 14 dias úteis — sem contar o tempo de descimbramento. Para construtoras que pagam financiamento por dia de obra, esse prazo tem valor financeiro direto.
+
+## Normas Técnicas Aplicáveis
+
+- ABNT NBR 8800:2008 — Estruturas de aço e estruturas mistas
+- ABNT NBR 14762:2010 — Perfis formados a frio
+- ABNT NBR 6118:2023 — Armação complementar
+
+## Quando Usar Forma Incorporada
+
+Especialmente vantajosa em:
+1. Lajes de grandes vãos (> 3 m entre apoios) onde fôrma de madeira exige muitos pontaletes
+2. Pavimentos repetitivos (edifícios residenciais e comerciais) onde a velocidade de ciclo é crítica
+3. Obras com restrição de mão de obra de carpintaria — cenário atual em Goiânia e Brasília
+4. Construção a seco e industrializada — perfil de incorporação premium
+
+## A BR Aço e a Exclusividade no Centro-Oeste
+
+A forma incorporada está consolidada nos mercados de São Paulo, Rio de Janeiro e Sul do Brasil há mais de 15 anos. No Centro-Oeste, a disponibilidade é praticamente nula — o produto ou é comprado de fora com frete elevado, ou simplesmente não é especificado porque os engenheiros não sabem que existe regionalmente.
+
+A BR Aço é, atualmente, a única empresa no Centro-Oeste que fornece forma incorporada com entrega direta em Goiânia, Grande Goiânia e Brasília/DF. O produto sai da nossa linha de processamento junto com o aço estrutural — sem pedido separado, sem frete adicional de São Paulo, sem prazo de 15 dias.
+
+Para especificar forma incorporada em seu próximo projeto, entre em contato com nossa equipe técnica. Fornecemos tabelas de carga, fichas técnicas e apoio ao dimensionamento.`
+  },
+  {
+    id: 155,
+    slug: "laje-nervurada-dimensionamento-armadura-execucao",
+    category: "Projeto Estrutural",
+    title: "Laje Nervurada: Dimensionamento, Armação e Execução Correta pela NBR 6118",
+    metaDescription: "Guia técnico completo sobre laje nervurada: tipos, dimensionamento pela NBR 6118, armação de nervuras e mesa, e como o corte e dobra industrial elimina os principais erros de execução.",
+    keyword: "laje nervurada dimensionamento armadura",
+    date: "28 Mai 2026",
+    summary: "Tudo sobre laje nervurada: classificação, requisitos da NBR 6118, cálculo de armadura para nervuras e mesa, e boas práticas de execução com corte e dobra industrial.",
+    content: `## Por Que a Laje Nervurada Domina a Construção Brasileira
+
+A laje nervurada responde por mais de 60% das lajes executadas no Brasil em edificações residenciais acima de 4 pavimentos. Menor peso próprio, maior vão livre e possibilidade de integrar instalações hidráulicas e elétricas nas cavidades entre nervuras.
+
+## Requisitos Geométricos (NBR 6118 — item 13.2.4)
+
+| Parâmetro | Mínimo normativo | Recomendado |
+|-----------|-----------------|-------------|
+| Largura da nervura (bw) | 5 cm | 10 cm |
+| Altura da mesa (hf) sem tubulação | 4 cm | 6 cm |
+| Altura da mesa com tubulação | 5 cm (tubo ≤ hf/3) | 7 cm |
+| Espaçamento entre eixos (moldada) | — | Máx. 60 cm |
+| Espaçamento entre eixos (pré-moldada) | — | Máx. 65 cm |
+
+## Armação das Nervuras
+
+### Armadura de Tração (Inferior)
+Para nervura 10×15 cm, concreto C25:
+
+| Momento Md (kN.m/m) | Solução típica CA-50 |
+|--------------------|----------------------|
+| Até 1,5 | 1 ø14 mm (1,54 cm²) |
+| 1,5 a 2,5 | 1 ø18 mm (2,54 cm²) |
+| 2,5 a 4,0 | 2 ø16 mm (4,02 cm²) |
+
+### Armadura da Mesa (Distribuição)
+Mínimo normativo (NBR 6118 item 17.3.7): As_mesa ≥ 0,9 cm²/m
+
+Prática recomendada: malha 10×20 cm com ø5 mm CA-60 (As = 0,98 cm²/m), ou tela soldada Q-92.
+
+## Os 5 Erros Mais Comuns na Execução de Laje Nervurada
+
+1. **Mesa com espessura insuficiente** — causa fissuração diagonal logo após o descimbramento
+2. **Armadura de mesa omitida** — resultado: fissuração + perfuração da mesa sob carga concentrada
+3. **Cobrimento insuficiente nas nervuras** — nervura de 10 cm com estribos não tem espaço para o cobrimento correto
+4. **Vergalhão comprado em barra reta e cortado no canteiro** — gera 20%+ de desperdício nas nervuras de comprimento irregular
+5. **Barra da mesa colocada após concretagem** — cobrimento e aderência comprometidos
+
+O erro número 4 é resolvido diretamente pelo corte e dobra industrial: a programação de corte (nesting) otimiza o aproveitamento de todas as nervuras, reduzindo o desperdício de material a menos de 2%.
+
+## Forma Incorporada: Alternativa para Laje Nervurada
+
+A forma incorporada substitui simultaneamente a fôrma das nervuras e a armadura de distribuição da mesa em algumas geometrias. Para lajes com nervuras de vão ≤ 4,5 m e carga variável ≤ 3 kN/m², é possível eliminar totalmente a carpintaria e reduzir a armação inferior em 30% a 40%.
+
+A BR Aço fornece forma incorporada para esse tipo de aplicação em Goiânia e Brasília — único fornecedor do produto no Centro-Oeste.`
+  },
+  {
+    id: 156,
+    slug: "controle-tecnologico-aco-concreto-armado-ensaios",
+    category: "Normas ABNT",
+    title: "Controle Tecnológico do Aço para Concreto Armado: Ensaios, Certificações e Rastreabilidade",
+    metaDescription: "Quais ensaios de controle tecnológico do aço são exigidos pela NBR 7480 e NBR 6118? Saiba como verificar o certificado do aço, interpretar o laudo e garantir conformidade na obra.",
+    keyword: "controle tecnológico aço concreto armado",
+    date: "28 Mai 2026",
+    summary: "Guia completo sobre controle de qualidade do aço para concreto armado: ensaios normativos, interpretação de laudos, rastreabilidade por corrida e responsabilidade técnica.",
+    content: `## O Engenheiro é Responsável pelo Aço Que Entra na Obra
+
+A NBR 6118:2023 é clara no item 11.2: o responsável técnico deve garantir que os materiais utilizados atendam às especificações de projeto e às normas técnicas aplicáveis. Na prática, a maioria das obras aceita o aço verificando apenas se "parece certo" — diâmetro estimado a olho, ausência de ferrugem grosseira, rótulo no fardo. Isso não constitui controle tecnológico.
+
+## O Que a NBR 7480 Exige do Fabricante
+
+| Ensaio | Norma | Frequência |
+|--------|-------|-----------|
+| Tração (fy, ft, A%) | ABNT NBR ISO 15630-1 | 1 CP por corrida |
+| Dobramento simples | ABNT NBR ISO 15630-1 | 1 CP por corrida |
+| Geometria (diâmetro, massa) | ABNT NBR ISO 15630-1 | 5 CP por corrida |
+
+### Valores Exigidos — CA-50
+
+| Propriedade | Valor mínimo | Valor máximo |
+|-------------|-------------|-------------|
+| Resistência ao escoamento (fyk) | 500 MPa | 600 MPa |
+| Resistência à tração (ft) | 1,08 × fy | — |
+| Alongamento total (Agt) | 5,0% | — |
+| Relação ft/fy | 1,08 | 1,35 |
+
+## Como Interpretar o Certificado de Qualidade
+
+Cada lote deve vir com o certificado da corrida contendo:
+- Número da corrida (heat number) — deve coincidir com as nervuras das barras
+- fy medido (500–600 MPa para CA-50)
+- ft medido (≥ 1,08 × fy)
+- Agt (≥ 5%)
+- Carbono equivalente (Ceq ≤ 0,50% para CA-50)
+
+**Sinais de certificado problemático:**
+- Ausência de número de corrida — não rastreável
+- Apenas "conforme NBR 7480" sem valores numéricos — não é certificado, é declaração genérica
+- Agt ≤ 5,5% — material no limite de ductilidade
+
+## Rastreabilidade: O Número de Corrida
+
+Em caso de sinistro estrutural, o perito forense começa pelo rastreio da corrida do aço. Obras sem rastreabilidade não conseguem comprovar que usaram material conforme. O número de corrida está gravado nas nervuras do vergalhão e no certificado — sempre confira que ambos coincidem.
+
+## Aço com Rastreabilidade Completa no Serviço de CDA
+
+No serviço de corte e dobra da BR Aço, operamos exclusivamente com aço de usinas participantes do PSQ PBQP-H Nível A (Gerdau, ArcelorMittal, Ternium). O certificado da corrida é vinculado ao romaneio de entrega — cada peça cortada e dobrada tem rastreabilidade até a usina de origem. Para obras que exigem relatório de rastreabilidade, emitimos o documento junto com a entrega.`
+  },
+  {
+    id: 157,
+    slug: "planilha-de-ferro-como-ler-preparar-lista-corte",
+    category: "Projeto Estrutural",
+    title: "Planilha de Ferro: Como Ler e Preparar a Lista de Corte para o Serviço de CDA",
+    metaDescription: "Aprenda a ler a planilha de ferro de um projeto estrutural, entender os campos obrigatórios e como preparar a lista de corte para enviar ao serviço de corte e dobra industrial.",
+    keyword: "planilha de ferro lista de corte",
+    date: "28 Mai 2026",
+    summary: "Guia prático para engenheiros e mestres de obra sobre como ler a planilha de ferro, verificar os campos obrigatórios e preparar a lista de corte para o serviço de corte e dobra.",
+    content: `## A Planilha de Ferro é o "DNA" do Projeto Estrutural
+
+A planilha de ferro é o documento que traduz o projeto estrutural em quantidades e dimensões de barras. É o documento que você envia para o serviço de corte e dobra — e a qualidade desse documento determina diretamente a qualidade do que vai chegar na obra.
+
+## Estrutura da Planilha de Ferro — Campos Obrigatórios
+
+| Campo | Descrição | Exemplo |
+|-------|-----------|---------|
+| Posição | Código interno do projeto | P-07 |
+| Elemento | Identificação da peça estrutural | V3 (Viga 3) |
+| Diâmetro (φ) | Em milímetros | 16 mm |
+| Classe do aço | CA-25, CA-50 ou CA-60 | CA-50 |
+| Comprimento de corte (L) | Comprimento total antes da dobra, em cm | 635 cm |
+| Número de peças (n) | Quantidade de barras da posição | 8 |
+| Forma | Código de dobra ou croqui dimensional | F-12 (180°) |
+
+**Lendo a linha de exemplo:**
+Posição P-07, Viga V3, 8 barras de ø16 mm CA-50, cada barra com 635 cm, gancho de 180° numa extremidade.
+Peso: 8 × 6,35 × 1,578 kg/m = 79,8 kg
+
+## Erros Frequentes que Causam Problemas no CDA
+
+### Erro 1: Comprimento de Corte ≠ Comprimento de Forma
+O comprimento de corte (L) deve ser o comprimento em linha reta, antes de qualquer dobra. Alguns projetistas especificam o comprimento de forma (comprimento perimetral após dobra). Isso gera barras com comprimento errado.
+
+### Erro 2: Croqui de Dobra Sem Cotas Parciais
+Um croqui sem cotas individuais para cada trecho é insuficiente. O industrializador não sabe onde está o ponto de dobra ao longo da barra. Sempre especificar cotas a, b, c e ângulo de cada dobra.
+
+### Erro 3: Diâmetros Não Comerciais
+CA-50 disponível: 6,3 — 8,0 — 10,0 — 12,5 — 16,0 — 20,0 — 25,0 — 32,0 — 40,0 mm. Verificar disponibilidade antes de finalizar a planilha.
+
+### Erro 4: Omissão de Armaduras de Pele e Distribuição
+Armaduras de pele em vigas altas (h > 60 cm) e armadura de distribuição de lajes são frequentemente omitidas. O industrializador não adiciona o que não está na planilha.
+
+## Formatos Aceitos para Envio ao CDA
+
+| Formato | Uso |
+|---------|-----|
+| Excel/Sheets | Formato ideal — tabela com os campos obrigatórios |
+| PDF de projeto | Aceito, requer interpretação da equipe técnica |
+| DWG/CAD | Ideal para projetos com geometria complexa |
+| Foto/escaneamento | Aceito para orçamento estimativo, não para produção |
+
+## O Que Acontece Após o Envio
+
+1. Engenheiro da BR Aço revisa a planilha (1–4h)
+2. Retorno com confirmação de interpretação, prazo e preço
+3. Após aprovação: produção inicia no dia seguinte
+4. Romaneio de entrega com posição, diâmetro, quantidade e comprimento acompanha cada pacote
+
+Nossa equipe analisa planilhas em qualquer formato. Em casos de planilha incompleta, retornamos com lista de pendências antes de iniciar — não produzimos com dúvida.`
+  },
+  {
+    id: 158,
+    slug: "emenda-vergalhao-traspasse-nbr-6118-calculo",
+    category: "Normas ABNT",
+    title: "Emenda de Vergalhão por Traspasse: Regras da NBR 6118 e Como Calcular o Comprimento",
+    metaDescription: "Aprenda a calcular o comprimento de emenda por traspasse conforme NBR 6118. Tabelas, fatores de redução, regras para distribuição e por que emenda mal executada é causa comum de falha estrutural.",
+    keyword: "emenda vergalhão traspasse NBR 6118",
+    date: "28 Mai 2026",
+    summary: "Guia técnico completo sobre emenda de vergalhões por traspasse: cálculo do comprimento mínimo, fatores da NBR 6118, distribuição de emendas na seção e erros comuns em canteiro.",
+    content: `## Por Que a Emenda de Vergalhão é um Ponto Crítico Estrutural
+
+A região de emenda é, por definição, um ponto de menor resistência — duas barras que se sobrepõem transferem força por aderência com o concreto, não por solda ou conector mecânico. Comprimento insuficiente de emenda é causa documentada de colapso estrutural e está entre as falhas mais encontradas em perícias técnicas de edificações.
+
+## Cálculo do Comprimento de Traspasse (l0)
+
+### Fórmula NBR 6118 — item 9.5.4.2
+
+**l0 = α1 × lb,nec**
+
+| % de barras emendadas na mesma seção | Coeficiente α1 |
+|---------------------------------------|----------------|
+| ≤ 25% | 1,0 |
+| ≤ 50% | 1,4 |
+| > 50% | 2,0 |
+
+**Regra prática:** nunca emendar mais de 50% das barras na mesma seção transversal. Em pilares, distribuir emendas em seções espaçadas de pelo menos l0.
+
+### Tabela de Comprimento de Traspasse Mínimo — CA-50/C25
+
+| Diâmetro | l0 (≤25% emendas) | l0 (≤50% emendas) |
+|----------|-------------------|-------------------|
+| ø8,0 mm | 49 cm | 69 cm |
+| ø10,0 mm | 61 cm | 86 cm |
+| ø12,5 mm | 77 cm | 107 cm |
+| ø16,0 mm | 98 cm | 137 cm |
+| ø20,0 mm | 123 cm | 172 cm |
+| ø25,0 mm | 154 cm | 215 cm |
+
+### Comprimento Mínimo Absoluto
+
+Independente do cálculo: **l0 ≥ max(0,3 × α1 × lb; 15φ; 200 mm)**
+
+## Regras Para Distribuição das Emendas
+
+- **Vigas:** emendas da armadura de tração devem ser evitadas nas regiões de momento máximo (meio do vão). Preferir os apoios.
+- **Pilares:** emendas na região de momento reduzido — no ninho de pilar (2,0 m a 3,0 m acima do pavimento).
+- **Lajes:** emendas da armadura positiva no apoio, armadura negativa no terço central do vão.
+- **Afastamento lateral:** barras emendadas com afastamento ≥ 4φ entre si.
+
+## O Que Acontece Quando o Traspasse é Insuficiente
+
+| Situação encontrada em vistoria | Consequência estrutural |
+|---------------------------------|-------------------------|
+| l0 = 30 cm para ø16 CA-50 (deveria ser 98 cm) | Ancoragem efetiva de apenas 30% da carga |
+| 100% das barras emendadas na mesma seção | Seção enfraquecida — descontinuidade estrutural |
+| Emendas no terço médio de vigas | Região de momento máximo com menor resistência |
+
+## Como o Corte e Dobra Industrial Resolve o Problema
+
+Quando a planilha de ferro especifica corretamente os comprimentos de corte — incluindo os comprimentos de ancoragem e traspasse — o industrializador entrega cada barra exatamente no comprimento necessário. O armador posiciona a barra conforme o projeto e a emenda acontece no comprimento correto automaticamente.
+
+No corte manual, o armador frequentemente "aproxima" comprimentos para aproveitar a barra. Um traspasse de 98 cm vira "80 cm que é mais fácil de amarrar" — erro sistemático, silencioso e potencialmente grave.
+
+Para projetos com diâmetros grandes (ø20 mm a ø40 mm), onde os comprimentos de traspasse superam 1,5 m, o corte e dobra industrial é particularmente vantajoso: a barra chega com comprimento preciso e documentação de rastreabilidade.`
+  },
+  {
+    id: 159,
+    slug: "forma-incorporada-vs-forma-madeira-custo-produtividade",
+    category: "Gestão de Obra",
+    title: "Forma Incorporada vs Fôrma de Madeira: Comparativo de Custo e Produtividade para Construtores",
+    metaDescription: "Análise detalhada de custo e produtividade entre forma incorporada e fôrma de madeira para lajes. Inclui comparativo de MO, prazo de ciclo e break-even por metragem de laje.",
+    keyword: "forma incorporada vs forma madeira custo",
+    date: "28 Mai 2026",
+    summary: "Comparativo técnico e financeiro completo entre forma incorporada e fôrma de madeira para lajes: custo de material, mão de obra, prazo e ponto de break-even por m² de laje.",
+    content: `## A Decisão que Poucos Fazem com Dados
+
+A maioria dos construtores escolhe entre forma incorporada e fôrma de madeira com base em hábito, não em análise. "Sempre usei madeira" ou "nunca trabalhei com metálica" são os critérios mais comuns. Este artigo muda isso — com números.
+
+## Custo de Mão de Obra (100 m² de laje)
+
+### Fôrma de Madeira
+
+| Etapa | Profissional | Tempo | Custo estimado GO (mai/2026) |
+|-------|-------------|-------|-------------------------------|
+| Montagem da fôrma | Carpinteiro + servente | 2 dias (2 pessoas) | R$ 960,00 |
+| Desmontagem | Servente | 1 dia (2 pessoas) | R$ 480,00 |
+| Limpeza e transporte | Servente | 0,5 dia (2 pessoas) | R$ 240,00 |
+| **Total MO por ciclo** | | | **R$ 1.680,00** |
+| **Custo MO/m²** | | | **R$ 16,80/m²** |
+
+### Forma Incorporada
+
+| Etapa | Profissional | Tempo | Custo |
+|-------|-------------|-------|-------|
+| Posicionamento e fixação | Servente (sem carpinteiro) | 4–6 horas (2 pessoas) | R$ 240,00 |
+| Desmontagem | **Não há** | — | R$ 0,00 |
+| Limpeza | **Não há** | — | R$ 0,00 |
+| **Total MO por ciclo** | | | **R$ 240,00** |
+| **Custo MO/m²** | | | **R$ 2,40/m²** |
+
+**Economia de MO: R$ 14,40/m² de laje** — em um pavimento de 300 m², R$ 4.320,00 a menos só em mão de obra.
+
+## Comparativo de Prazo de Ciclo
+
+| Fase | Fôrma Madeira | Forma Incorporada | Diferença |
+|------|--------------|-------------------|-----------|
+| Montagem da forma | 2 dias | 4–6 horas | -1,5 dias |
+| Aguardar cura (descimbramento) | 7–21 dias | 0 dias | -7 a -21 dias |
+| Desmontagem | 1,5 dias | 0 dias | -1,5 dias |
+| **Total** | **10,5–24,5 dias** | **1 dia** | **-9,5 a -23,5 dias** |
+
+Para uma construtora com custo de capital de 1,5% ao mês em uma obra de R$ 3 milhões, cada dia economizado vale R$ 1.500,00.
+
+## Análise de Break-Even
+
+Com fôrma de madeira amortizada em 3 usos:
+
+| Item | Fôrma Madeira (3 usos) | Forma Incorporada |
+|------|----------------------|-------------------|
+| Material amortizado/m² | R$ 35,00 | R$ 75,00 |
+| MO/m² | R$ 16,80 | R$ 2,40 |
+| Descarte/limpeza/m² | R$ 4,00 | R$ 0,00 |
+| **Total/m²** | **R$ 55,80** | **R$ 77,40** |
+
+A madeira parece mais barata em custo direto — mas ignora o custo de oportunidade do prazo. Com 10 dias de diferença e custo diário de R$ 1.000 (obra pequena): R$ 10.000 extras para 300 m² = R$ 33/m² adicional. Resultado: forma incorporada com break-even positivo para obras acima de 150 m².
+
+## Disponibilidade no Centro-Oeste
+
+A forma incorporada ainda é produto raro em Goiás e no DF. Construtoras que tentam especificar enfrentam entrega de SP com 15–20 dias de prazo e frete que elimina a vantagem econômica.
+
+A BR Aço é a única empresa no Centro-Oeste que fornece forma incorporada com entrega local, integrada ao pedido de aço estrutural — sem frete adicional, sem pedido separado e com suporte técnico de nossos engenheiros para o dimensionamento. Para construtores que querem comparar no próximo projeto, nossa equipe faz o levantamento de custo total do ciclo para a obra específica.`
+  },
+  {
+    id: 160,
+    slug: "cobrimento-armadura-nbr-6118-tabela-valores",
+    category: "Normas ABNT",
+    title: "Cobrimento de Armadura pela NBR 6118: Tabela de Valores e Consequências de Erros de Execução",
+    metaDescription: "Tabela completa de cobrimento mínimo de armadura pela NBR 6118 por classe de agressividade ambiental. Entenda as consequências da redução do cobrimento e como controlar em campo.",
+    keyword: "cobrimento armadura NBR 6118 tabela",
+    date: "28 Mai 2026",
+    summary: "Tabela de cobrimentos mínimos por classe de agressividade (NBR 6118 Tabela 7.2), consequências estruturais da redução do cobrimento e métodos de controle em canteiro.",
+    content: `## O Cobrimento é a Primeira Linha de Defesa da Armadura
+
+O cobrimento nominal de concreto é a camada entre a face externa da estrutura e a face mais próxima da armadura. Ele cumpre duas funções simultâneas:
+
+1. **Proteção contra corrosão**: o concreto cria um ambiente alcalino (pH ≈ 12,5) ao redor do aço — passivando a superfície da barra e impedindo a corrosão. Quando o cobrimento é insuficiente, agentes externos (CO₂, cloretos) atingem o aço e quebram essa camada passivante.
+
+2. **Transmissão de esforços (aderência)**: menor cobrimento significa menos confinamento, menor aderência efetiva e comprimentos de ancoragem necessários maiores.
+
+## Tabela de Cobrimento Mínimo — NBR 6118 Tabela 7.2
+
+### Classes de Agressividade Ambiental
+
+| Classe | Ambiente | Risco |
+|--------|---------|-------|
+| I | Rural, submerso | Insignificante |
+| II | Urbano | Pequeno |
+| III | Marinha, industrial | Grande |
+| IV | Industrial severo | Muito grande |
+
+### Cobrimentos Mínimos em Milímetros
+
+| Elemento | Classe I | Classe II | Classe III | Classe IV |
+|----------|---------|----------|-----------|----------|
+| Laje | 20 mm | 25 mm | 35 mm | 45 mm |
+| Viga e pilar | 25 mm | 30 mm | 40 mm | 50 mm |
+| Fundação | 30 mm | 40 mm | 50 mm | 65 mm |
+| Pré-moldado (fábrica) | 15 mm | 20 mm | 25 mm | 35 mm |
+
+**Cobrimento nominal = cobrimento mínimo + 10 mm (tolerância de execução)**
+
+Exemplo: Viga em ambiente urbano (Classe II) → cobrimento mínimo = 30 mm → cobrimento nominal = **40 mm**
+
+### Goiânia e Brasília: Qual Classe?
+
+| Local | Classe | Justificativa |
+|-------|--------|---------------|
+| Goiânia (residencial) | II | Ambiente urbano |
+| Goiânia (setor industrial) | III | Agentes agressivos |
+| Brasília/DF (residencial) | II | Ambiente urbano |
+| Estruturas em contato com solo | III | Verificar sulfatos |
+
+## Consequências da Redução do Cobrimento
+
+**Curto prazo (0–5 anos):** fissuração paralela às barras, manchas de óxido na superfície, desplacamento do cobrimento.
+
+**Médio prazo (5–20 anos):** corrosão progressiva com redução da seção de até 30%, redução da resistência à flexão, comprometimento dos estribos.
+
+**Longo prazo (> 20 anos):** colapso estrutural localizado por ruptura de estribo oxidado, custo de recuperação de 3x a 8x o custo da estrutura original.
+
+**Dado de referência (IBRACON):** edificações com cobrimento médio inferior a 15 mm apresentam primeira manifestação de corrosão em 5–8 anos. Com cobrimento nominal de 40 mm (Classe II), a vida útil de projeto é de 50 anos.
+
+## Como Controlar o Cobrimento em Campo
+
+**Espaçadores certificados:** único método normativo. A NBR 14931:2004 exige espaçadores com resistência ≥ 0,25 × fck e distribuição mínima de 4 unidades/m² em lajes.
+
+**Verificação por pachômetro:** instrumento que detecta posição e profundidade das barras por indução eletromagnética. Usado em controle de qualidade e perícias.
+
+## Cobrimento e o Corte e Dobra Industrial
+
+A geometria precisa das barras do CDA impacta diretamente o cobrimento:
+
+- **Estribos com dimensões corretas**: estribo com largura interna calculada para cobrimento + barra longitudinal. No corte manual, estribos "ligeiramente maiores" para facilitar a amarração resultam em cobrimento reduzido.
+- **Ganchos de estribo no comprimento correto**: gancho com extensão insuficiente compromete o confinamento e o cobrimento na região de dobra.
+- **Dobras de 135° nos estribos**: a máquina CNC garante ângulo exato; a dobra manual frequentemente resulta em 120°–140°, alterando a distribuição do estribo na seção.`
+  },
+  {
+    id: 161,
+    slug: "sequenciamento-armacao-laje-projeto-ao-canteiro",
+    category: "Gestão de Obra",
+    title: "Sequenciamento de Armação de Laje: Do Projeto Estrutural ao Primeiro Vergalhão Montado",
+    metaDescription: "Guia prático do sequenciamento correto de armação de laje: ordem de montagem, verificações por etapa, pontos de inspeção e como o aço pré-cortado elimina os principais gargalos.",
+    keyword: "sequenciamento armação laje",
+    date: "28 Mai 2026",
+    summary: "Guia prático completo de sequenciamento de armação de laje: etapas da preparação ao fechamento da armadura, verificações normativas em cada fase e vantagens do aço pré-cortado.",
+    content: `## A Armação de Laje em 7 Etapas — e Onde Cada uma Pode Falhar
+
+A armação de laje é frequentemente vista como uma tarefa simples. Na prática, é uma operação com 7 etapas distintas, cada uma com pontos de falha que podem comprometer a integridade estrutural ou criar retrabalho caro.
+
+## Etapa 1: Preparação da Área e Verificação do Projeto
+
+- [ ] Projeto estrutural na versão final (não usar esboço ou versão preliminar)
+- [ ] Planilha de ferro impressa ou em dispositivo digital no canteiro
+- [ ] Cotas dos painéis de laje verificadas no local
+- [ ] Altura da laje marcada nos pilares e vigas de borda
+- [ ] Fôrma verificada: nivelamento, estanqueidade, escoramento calculado
+
+## Etapa 2: Recebimento e Separação do Aço
+
+**Com barra reta (sem CDA):** verificar diâmetros, separar por diâmetro, identificar cortes necessários para cada posição da planilha — 1 a 2 dias de trabalho para 500 m².
+
+**Com aço pré-cortado e dobrado:** conferir romaneio de entrega vs planilha — 15 a 30 minutos. Cada pacote vem identificado por posição.
+
+## Etapa 3: Posicionamento dos Espaçadores (Etapa Mais Negligenciada)
+
+- [ ] Espaçadores do tipo correto para o cobrimento nominal (cobrimento mín. + 10 mm)
+- [ ] Mínimo de 4 espaçadores/m² nas lajes (espaçamento ≤ 50 cm)
+- [ ] Espaçadores nas bordas para cobrimento lateral
+
+## Etapa 4: Armadura Positiva (Inferior)
+
+Ordem de montagem para laje bidirecional:
+1. Barras na direção de maior vão (Lx) — ficam mais baixo, maior braço de alavanca
+2. Barras na direção de menor vão (Ly) — sobre as primeiras
+
+**Espaçamentos máximos (NBR 6118 item 17.3.7):**
+- Armadura principal: ≤ 2h ou 20 cm (o menor)
+- Distribuição: ≤ 3h ou 30 cm (o menor)
+
+## Etapa 5: Armadura Negativa (Superior)
+
+A armadura negativa sobre os apoios é colocada sobre cadeirinhas metálicas. Altura da cadeirinha = h_laje − cobrimento inferior − φ_inf − φ_sup − cobrimento superior. Cadeirinhas mal calculadas resultam em armadura negativa sem cobrimento.
+
+- [ ] Cadeirinhas na quantidade e altura corretas
+- [ ] Comprimento de ancoragem no vão verificado
+- [ ] Posição das emendas por traspasse fora do ponto de momento máximo
+
+## Etapa 6: Instalações e Revisão Final
+
+- [ ] Eletrodutos com diâmetro ≤ h_laje/3 (NBR 6118 item 13.2.4.1)
+- [ ] Cruzamento de tubulações com reforço de armadura
+- [ ] Revisão geral: espaçadores presentes, nivelamento verificado
+
+## Etapa 7: Liberação para Concretagem
+
+Documentar a inspeção com fotos e lista de verificação assinada pelo responsável técnico.
+
+## O Impacto do Aço Pré-Cortado em Cada Etapa
+
+| Etapa | Com barra reta | Com CDA |
+|-------|---------------|---------|
+| Etapa 2 | 1–2 dias de corte + 20–30% desperdício | 30 min de conferência + 0% desperdício |
+| Etapa 4 | Armador mede e posiciona — variação ±3 cm | Barra no comprimento exato — variação ±3 mm |
+| Etapa 5 | Emendas improvisadas por barra curta | Comprimentos calculados chegam corretos |
+| Geral | 3–5 armadores + encarregado | 2–3 armadores para montagem pura |
+
+O corte e dobra industrial não elimina a necessidade de armadores experientes — mas elimina as tarefas de corte, dobra e medição que consomem 40%–60% do tempo de armação. O armador passa a fazer o que tem valor: montar, posicionar e garantir o projeto.
+
+Para obras em Goiânia e Brasília com prazo crítico, a BR Aço entrega o aço identificado por posição, com romaneio conferível e certificado de qualidade da corrida — pronto para montar no mesmo dia de chegada ao canteiro.`
   }
+];
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural'];
