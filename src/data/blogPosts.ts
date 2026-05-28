@@ -11701,6 +11701,5 @@ O corte e dobra industrial não elimina a necessidade de armadores experientes �
 Para obras em Goiânia e Brasília com prazo crítico, a BR Aço entrega o aço identificado por posição, com romaneio conferível e certificado de qualidade da corrida — pronto para montar no mesmo dia de chegada ao canteiro.`
   }
 ];
-];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural'];

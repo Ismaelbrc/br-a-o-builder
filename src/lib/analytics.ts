@@ -27,9 +27,20 @@ function gtag(...args: unknown[]) {
   if (typeof window.gtag === 'function') window.gtag(...args);
 }
 
-function clarity(event: string, value?: string) {
-  if (typeof window.clarity === 'function') window.clarity('event', event, value);
+function clarityEvent(name: string, value?: string) {
+  if (typeof window.clarity === 'function') window.clarity('event', name, value);
 }
+
+function clarityTag(key: string, value: string) {
+  if (typeof window.clarity === 'function') window.clarity('set', key, value);
+}
+
+function clarityUpgrade(reason: string) {
+  if (typeof window.clarity === 'function') window.clarity('upgrade', reason);
+}
+
+/** @deprecated use analytics.clarityEvent() */
+function clarity(event: string, value?: string) { clarityEvent(event, value); }
 
 // ── Public API ─────────────────────────────────────────────────────────────
 
@@ -79,8 +90,9 @@ export const analytics = {
       });
     }
 
-    // Clarity
-    clarity('whatsapp_click', source);
+    // Clarity — custom event + force priority recording for converting sessions
+    clarityEvent('whatsapp_click', source);
+    clarityUpgrade(`cta_${source}`);
   },
 
   /**
@@ -122,6 +134,31 @@ export const analytics = {
       event_category: 'engagement',
       calculator_type: type,
     });
-    clarity('calculator_use', type);
+    clarityEvent('calculator_use', type);
   },
+
+  // ── Clarity low-level API ─────────────────────────────────────────────────
+
+  /**
+   * Set a custom tag for session segmentation in Clarity.
+   * Shown as a filter in Clarity dashboard (Recordings, Heatmaps).
+   * @example analytics.clarityTag('traffic_source', 'meta')
+   * @example analytics.clarityTag('device', 'mobile')
+   */
+  clarityTag,
+
+  /**
+   * Fire a named custom event in Clarity.
+   * Appears in Clarity's event list and can be used as a funnel step.
+   * @example analytics.clarityEvent('scroll_75pct')
+   * @example analytics.clarityEvent('faq_open', 'q2')
+   */
+  clarityEvent,
+
+  /**
+   * Upgrade the current session to priority recording.
+   * Use on high-value interactions so Clarity doesn't drop them from sampling.
+   * @example analytics.clarityUpgrade('reached_cta')
+   */
+  clarityUpgrade,
 };

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SectionTitle from '@/components/SectionTitle';
@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import frotaImage from '@/assets/frota-propria.jpg';
 import { analytics } from '@/lib/analytics';
+import { useClarityLP } from '@/hooks/useClarityLP';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
@@ -230,6 +231,8 @@ const ApplicationsSection = () => {
 // ═══ INTERMEDIATE CTA ═══
 const CtaMidSection = () => {
   const scrollToForm = () => {
+    analytics.clarityEvent('cta_mid_click');
+    analytics.clarityUpgrade('cta_mid');
     document.getElementById('orcamento-cd')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -344,19 +347,28 @@ const faqData = [
 const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+  const handleFaqToggle = useCallback((index: number) => {
+    const isOpening = openIndex !== index;
+    setOpenIndex(isOpening ? index : null);
+    if (isOpening) {
+      // Track which objection the user checked — key insight for copy optimization
+      analytics.clarityEvent('faq_open', `q${index}`);
+    }
+  }, [openIndex]);
+
   return (
     <section className="py-20 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4">
-        <SectionTitle 
-          title="Perguntas Frequentes" 
-          subtitle="Tire suas dúvidas sobre o serviço de Corte e Dobra" 
+        <SectionTitle
+          title="Perguntas Frequentes"
+          subtitle="Tire suas dúvidas sobre o serviço de Corte e Dobra"
         />
-        
+
         <div className="max-w-3xl mx-auto mt-12">
           {faqData.map((item, index) => (
             <div key={index} className="border-b border-border">
               <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                onClick={() => handleFaqToggle(index)}
                 className="w-full flex justify-between items-center py-5 text-left"
               >
                 <span className="text-lg font-medium text-brand-navy pr-4">{item.question}</span>
@@ -591,6 +603,7 @@ const FrotaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
+  useClarityLP('corte-e-dobra');
   useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
 
   return (
