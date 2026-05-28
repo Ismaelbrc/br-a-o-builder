@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
 import { useSEO } from '@/hooks/useSEO';
+import { useClarityContent } from '@/hooks/useClarityContent';
+import { analytics } from '@/lib/analytics';
 
 // ─── Markdown content renderer ────────────────────────────────────────────────
 
@@ -213,6 +215,9 @@ function BlogPostContent({ slug }: { slug: string }) {
     keywords: post.keyword,
   });
 
+  // Clarity: scroll depth, time milestones, content tags
+  useClarityContent({ slug: post.slug, category: post.category });
+
   // Article + BreadcrumbList JSON-LD
   useEffect(() => {
     const articleSchema = {
@@ -351,10 +356,22 @@ function BlogPostContent({ slug }: { slug: string }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <Button asChild className="bg-brand-orange hover:bg-brand-orange-hover text-white rounded-full px-8">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</a>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setTimeout(() => analytics.whatsappClick('blog-cta-orcamento'), 0)}
+                >
+                  Solicitar Orçamento
+                </a>
               </Button>
               <Button variant="outline" asChild className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white rounded-full px-8">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setTimeout(() => analytics.whatsappClick('blog-cta-whatsapp'), 0)}
+                >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Fale no WhatsApp
                 </a>

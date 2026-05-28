@@ -603,7 +603,7 @@ const FrotaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
-  useClarityLP('corte-e-dobra');
+  useClarityLP({ pageName: 'corte-e-dobra' });
   useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
 
   return (

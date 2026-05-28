@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { MapPin, Clock, CheckCircle, MessageCircle, ChevronRight, ArrowRight, Phone } from 'lucide-react';
 import Layout from '@/components/Layout';
 import { useSEO } from '@/hooks/useSEO';
+import { useClarityLP } from '@/hooks/useClarityLP';
 import { landingProducts } from '@/data/landingProducts';
 import { landingLocations, getDeliveryLabel } from '@/data/landingLocations';
 import { analytics } from '@/lib/analytics';
@@ -110,6 +111,9 @@ export default function LandingPage() {
       document.getElementById('lp-localbusiness-schema')?.remove();
     };
   }, [isValid, productSlug, locationSlug, cityName, displayCity, stateLabel, deliveryLabel]);
+
+  // Clarity LP tracking — must be called unconditionally (hook rules)
+  useClarityLP({ pageName: `lp-${productSlug || 'unknown'}` });
 
   // Redireciona se combinação inválida (após todos os hooks)
   if (!isValid) return <Navigate to="/" replace />;

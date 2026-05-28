@@ -1,47 +1,38 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
+
+interface ClarityLPConfig {
+  /** Short name shown in Clarity tag filters. E.g. 'corte-e-dobra', 'lp-vergalhao'. */
+  pageName: string;
+  /**
+   * Element ID of the final CTA section to observe.
+   * Fires `reached_final_cta` when it enters the viewport.
+   * Defaults to 'orcamento-cd'. Pass null to disable.
+   */
+  ctaId?: string | null;
+}
 
 /**
  * Maximizes Clarity data collection on a landing page.
  *
- * What it does:
- *  1. Tags the session with UTM source/medium/campaign → filter recordings by ad campaign
- *  2. Tags device type → separate mobile vs desktop heatmaps
- *  3. Fires scroll depth milestones (25 / 50 / 75 / 90 %) → drop-off funnel
- *  4. Fires time milestones (60s / 120s) → distinguish engaged visits from bounces
- *  5. Fires `reached_final_cta` via IntersectionObserver on `#orcamento-cd`
- *  6. Calls `clarityUpgrade` at key moments so Clarity prioritizes these recordings
+ * NOTE: UTM tagging + device + page_section are handled globally by
+ * usePageTracking (runs on every route change). This hook adds what is
+ * specific to landing pages:
+ *
+ *  1. Tags the page as an LP with its name (lp_name)
+ *  2. Fires scroll depth milestones (25 / 50 / 75 / 90 %) → drop-off funnel
+ *  3. Fires time milestones (60s / 120s) → distinguish engaged visits from bounces
+ *  4. Fires `reached_final_cta` via IntersectionObserver on the configured CTA element
+ *  5. Calls `clarityUpgrade` at key moments so Clarity prioritizes these recordings
  *
  * Usage: call inside the landing page component — once per mount.
  */
-export function useClarityLP(pageName: string) {
-  const location = useLocation();
-
+export function useClarityLP({ pageName, ctaId = 'orcamento-cd' }: ClarityLPConfig) {
   useEffect(() => {
-    // ── 1. UTM / traffic source tagging ─────────────────────────────────────
-    const params = new URLSearchParams(location.search);
-    const source   = params.get('utm_source')   || 'direct';
-    const medium   = params.get('utm_medium')   || 'none';
-    const campaign = params.get('utm_campaign') || 'none';
+    // ── 1. LP identity tag ───────────────────────────────────────────────────
+    analytics.clarityTag('lp_name', pageName);
 
-    analytics.clarityTag('lp_name',       pageName);
-    analytics.clarityTag('utm_source',    source);
-    analytics.clarityTag('utm_medium',    medium);
-    analytics.clarityTag('utm_campaign',  campaign);
-
-    // Simplified traffic bucket for easy filtering
-    const trafficType =
-      source === 'direct'                       ? 'direct'  :
-      source === 'meta' || medium === 'paid'    ? 'meta_ads':
-      source === 'google'                       ? 'google'  :
-      medium === 'organic' || source === 'none' ? 'organic' : source;
-    analytics.clarityTag('traffic_type', trafficType);
-
-    // ── 2. Device type ───────────────────────────────────────────────────────
-    analytics.clarityTag('device', window.innerWidth < 768 ? 'mobile' : 'desktop');
-
-    // ── 3. Scroll depth milestones ───────────────────────────────────────────
+    // ── 2. Scroll depth milestones ───────────────────────────────────────────
     const fired = new Set<number>();
     const MILESTONES = [25, 50, 75, 90];
 
@@ -102,6 +93,5 @@ export function useClarityLP(pageName: string) {
       ctaObserver?.disconnect();
     };
   // location.search may change (UTM varies per ad) but pageName is stable
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageName]);
 }
