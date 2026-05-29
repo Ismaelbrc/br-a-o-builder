@@ -10,6 +10,8 @@ interface SEOProps {
   modifiedTime?: string;    // ISO 8601
   author?: string;
   keywords?: string;
+  /** Pass true to set robots=noindex,nofollow (thin content, paginated, etc.) */
+  noindex?: boolean;
 }
 
 /**
@@ -26,6 +28,7 @@ export function useSEO({
   modifiedTime,
   author = 'BR Aço',
   keywords,
+  noindex = false,
 }: SEOProps) {
   useEffect(() => {
     // --- Title ---
@@ -94,11 +97,13 @@ export function useSEO({
       setMetaAttr('property', 'article:section', 'Construção Civil');
     }
 
-    // --- Robots (padrão: index,follow) ---
-    setMetaAttr('name', 'robots', 'index, follow');
+    // --- Robots ---
+    setMetaAttr('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow');
 
     return () => {
       document.title = 'BR Aço | Corte e Dobra Industrial em Goiânia e Goiás';
+      // Restore default robots on unmount
+      setMetaAttr('name', 'robots', 'index, follow');
     };
-  }, [title, description, canonical, ogType, ogImage, publishedTime, modifiedTime, author, keywords]);
+  }, [title, description, canonical, ogType, ogImage, publishedTime, modifiedTime, author, keywords, noindex]);
 }

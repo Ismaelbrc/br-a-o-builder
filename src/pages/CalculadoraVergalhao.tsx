@@ -110,10 +110,10 @@ interface ResultadoPeso {
 
 export default function CalculadoraVergalhao() {
   useSEO({
-    title: 'Calculadora de Vergalhão Online | Calcule Peso e Quantidade | BR Aço',
-    description: 'Calcule a quantidade e o peso de vergalhão para laje, pilar ou viga gratuitamente. Calculadora online para CA-50 e CA-60 com tabela ABNT NBR 7480. Goiânia e Goiás.',
+    title: 'Tabela de Peso do Vergalhão CA-50/CA-60 + Calculadora Grátis | BR Aço',
+    description: 'Tabela completa de peso do vergalhão CA-50 e CA-60 por bitola (ABNT NBR 7480) + calculadora grátis de peso, quantidade de barras e tela soldada. Goiânia e Goiás.',
     canonical: 'https://grupobraco.com.br/calculadora-vergalhao',
-    keywords: 'calculadora vergalhão, calcular vergalhão laje, calculadora aço construção, quanto vergalhão para laje, peso vergalhão por metro',
+    keywords: 'tabela de peso do vergalhão, calculadora vergalhão, peso vergalhão CA-50, calcular vergalhão laje, vergalhão kg por metro, ABNT NBR 7480',
   });
 
   // Inject Calculator schema

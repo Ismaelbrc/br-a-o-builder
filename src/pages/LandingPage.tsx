@@ -30,6 +30,7 @@ export default function LandingPage() {
     description: isValid ? product!.metaDesc(displayCity, stateLabel)   : '',
     canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : undefined,
     keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
+    noindex:     true, // Thin programmatic LPs — conteúdo insuficiente para indexação
   });
 
   // Schemas JSON-LD: FAQPage + BreadcrumbList + LocalBusiness
