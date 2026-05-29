@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useParams } from "react-router-dom";
 import { usePageTracking } from "@/hooks/usePageTracking";
 import { useEffect } from "react";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { PageLoader } from "@/components/PageLoader";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
 const ConteudoRedirect = () => {
@@ -47,7 +49,7 @@ function AppRoutes() {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={null}>
+      <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre" element={<Sobre />} />
@@ -79,15 +81,17 @@ function AppRoutes() {
 }
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </ErrorBoundary>
 );
 
 export default App;
