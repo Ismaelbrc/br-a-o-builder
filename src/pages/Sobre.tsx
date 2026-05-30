@@ -214,19 +214,7 @@ export default function Sobre() {
             description="Três sócios, uma obsessão: transformar a construção civil de Goiás com engenharia, tecnologia e gente."
           />
 
-          {/* Animação sketch — os três chegando e dando as mãos */}
-          <Reveal className="mt-12">
-            <div className="relative rounded-2xl bg-metal overflow-hidden border border-hairline">
-              <div className="absolute inset-0 bg-blueprint opacity-[0.10]" aria-hidden="true" />
-              <span className="absolute top-4 left-5 label-eyebrow text-white/40">Sociedade · est. 2020</span>
-              <span className="absolute top-4 right-5 label-eyebrow text-white/40 hidden sm:block">Goiás · Brasil</span>
-              <div className="relative h-[220px] sm:h-[260px]">
-                <SociosSketch />
-              </div>
-            </div>
-          </Reveal>
-
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
             {socios.map((s, i) => <SocioCard key={s.name} s={s} index={i} />)}
           </div>
         </div>
