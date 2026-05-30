@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
 import { Home, Zap, CheckCircle, ArrowRight, Calculator, Weight, Scissors } from 'lucide-react';
@@ -32,24 +33,38 @@ const Index = () => {
     }
   };
 
+  // Vídeo do hero pesa ~6MB: só carrega em desktop com conexão boa.
+  // Mobile / dados / conexão lenta veem a base metal+blueprint (instantânea, ~0 byte de vídeo).
+  const [showHeroVideo, setShowHeroVideo] = useState(false);
+  useEffect(() => {
+    const conn = (navigator as { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+    const slow = !!conn && (conn.saveData === true || ['slow-2g', '2g', '3g'].includes(conn.effectiveType || ''));
+    if (window.innerWidth >= 1024 && !slow) setShowHeroVideo(true);
+  }, []);
+
   return (
     <Layout>
       {/* Hero Section with Video Background */}
       <section
-        className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden"
+        className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden bg-metal"
       >
-        {/* Camada 1: Vídeo de Fundo */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src="/hero-video.webm" type="video/webm" />
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        {/* Camada 0: base de engenharia (instantânea, aparece sem/antes do vídeo) */}
+        <div className="absolute inset-0 z-0 bg-blueprint opacity-[0.12]" aria-hidden="true" />
+
+        {/* Camada 1: Vídeo de Fundo — apenas desktop/conexão boa (economiza ~6MB no mobile) */}
+        {showHeroVideo && (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          >
+            <source src="/hero-video.webm" type="video/webm" />
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+        )}
 
         {/* Camada 2: Overlay Escuro com Gradiente */}
         <div

@@ -71,6 +71,9 @@ function VideoCard({ video, onPlay }: { video: typeof youtubeVideos[0]; onPlay: 
         <img
           src={thumbUrl}
           alt={video.title}
+          loading="lazy"
+          width="480"
+          height="360"
           className="w-full h-full object-cover opacity-90 group-hover:opacity-75 transition-opacity"
         />
       </div>
