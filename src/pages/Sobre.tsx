@@ -61,37 +61,26 @@ const socios: Socio[] = [
 ];
 
 function SocioCard({ s, index }: { s: Socio; index: number }) {
-  const color = `/socios/${s.id}-color.jpg`;
-  const sketch = `/socios/${s.id}-sketch.jpg`;
+  const initials = s.name.split(' ').filter(Boolean).map(w => w[0]).slice(0, 2).join('');
   return (
     <Reveal delay={index * 80}>
-      <div className="group h-full bg-card rounded-2xl border border-hairline overflow-hidden hover:border-brand-orange/40 hover:-translate-y-1 transition-all duration-300">
-        {/* Foto: sketch a lápis por padrão → ganha cor no hover */}
-        <div className="relative aspect-[4/5] overflow-hidden bg-[#f3efe9]">
-          <img src={color} alt={s.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-          <img
-            src={sketch}
-            alt=""
-            aria-hidden="true"
-            loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-out group-hover:opacity-0"
-          />
-          <span className="absolute top-4 left-4 label-eyebrow text-spec text-brand-navy/40">{String(index + 1).padStart(2, '0')}</span>
+      <div className="group h-full bg-card rounded-2xl border border-hairline p-6 sm:p-7 hover:border-brand-orange/40 transition-colors">
+        <div className="relative w-16 h-16 rounded-2xl overflow-hidden bg-metal border border-hairline flex items-center justify-center">
+          <div className="absolute inset-0 bg-blueprint opacity-[0.15]" aria-hidden="true" />
+          <span className="relative font-display text-xl font-bold text-brand-orange">{initials}</span>
         </div>
-        <div className="p-6">
-          <span className="label-eyebrow text-brand-orange block">{s.role}</span>
-          <h3 className="font-display text-xl font-semibold text-brand-navy mt-1.5 tracking-tight">{s.name}</h3>
-          <p className="text-brand-gray-medium text-sm leading-relaxed mt-3">{s.bio}</p>
-          <a
-            href={s.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-5 label-eyebrow text-brand-gray-medium hover:text-brand-orange transition-colors rule-tick pt-3"
-          >
-            <Linkedin className="w-4 h-4" />
-            Ver no LinkedIn
-          </a>
-        </div>
+        <span className="label-eyebrow text-brand-orange mt-5 block">{s.role}</span>
+        <h3 className="font-display text-xl font-semibold text-brand-navy mt-1.5 tracking-tight">{s.name}</h3>
+        <p className="text-brand-gray-medium text-sm leading-relaxed mt-3">{s.bio}</p>
+        <a
+          href={s.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-5 label-eyebrow text-brand-gray-medium hover:text-brand-orange transition-colors rule-tick pt-3"
+        >
+          <Linkedin className="w-4 h-4" />
+          Ver no LinkedIn
+        </a>
       </div>
     </Reveal>
   );
