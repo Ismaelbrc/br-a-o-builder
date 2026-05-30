@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useRef, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
-import { Button } from '@/components/ui/button';
+import Eyebrow from '@/components/Eyebrow';
+import SectionIntro from '@/components/SectionIntro';
 import { useSEO } from '@/hooks/useSEO';
-import { Calculator, MessageCircle, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Calculator, MessageCircle, ChevronRight, Ruler, Weight, Boxes, GraduationCap } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 
 // Tabela de pesos CA-50 por diâmetro (kg/m) — ABNT NBR 7480
@@ -19,93 +20,59 @@ const diametros = [
   { mm: 40.0, fracao: '1.1/2"', kgm: 9.865, label: '40,0 mm (1.1/2")' },
 ];
 
-// ── Telas Soldadas / Malha Pop — Gerdau ──
+const diametrosCA60 = [
+  { mm: 3.4, fracao: '—', kgm: 0.071, label: '3,4 mm' },
+  { mm: 4.2, fracao: '—', kgm: 0.109, label: '4,2 mm' },
+  { mm: 5.0, fracao: '—', kgm: 0.154, label: '5,0 mm' },
+  { mm: 6.0, fracao: '—', kgm: 0.222, label: '6,0 mm' },
+  { mm: 7.0, fracao: '—', kgm: 0.302, label: '7,0 mm' },
+  { mm: 8.0, fracao: '—', kgm: 0.395, label: '8,0 mm' },
+  { mm: 10.0, fracao: '—', kgm: 0.617, label: '10,0 mm' },
+  { mm: 12.5, fracao: '—', kgm: 0.963, label: '12,5 mm' },
+];
+
 const telasSoldadas = [
-  {
-    tipo: 'LEVE',
-    malha: '20 × 20',
-    diametro: 3.4,
-    largura: 2,
-    comprimento: 3,
-    areaPainel: 6,
-    pesoKgPainel: 4.3,
-    indicacao: 'Piso residencial leve, calçadas e pisos de garagem',
-    cor: 'bg-green-50 border-green-300',
-    badge: 'text-green-700 bg-green-100',
-  },
-  {
-    tipo: 'MÉDIO',
-    malha: '15 × 15',
-    diametro: 3.4,
-    largura: 2,
-    comprimento: 3,
-    areaPainel: 6,
-    pesoKgPainel: 6.0,
-    indicacao: 'Laje residencial, contrapisos e lajes de cobertura leve',
-    cor: 'bg-blue-50 border-blue-300',
-    badge: 'text-blue-700 bg-blue-100',
-  },
-  {
-    tipo: 'REFORÇADO',
-    malha: '15 × 15',
-    diametro: 4.2,
-    largura: 2,
-    comprimento: 3,
-    areaPainel: 6,
-    pesoKgPainel: 9.0,
-    indicacao: 'Laje comercial, pavimentos com maior carga e lajes de piso',
-    cor: 'bg-orange-50 border-orange-300',
-    badge: 'text-orange-700 bg-orange-100',
-  },
-  {
-    tipo: 'PESADO',
-    malha: '10 × 10',
-    diametro: 4.2,
-    largura: 2,
-    comprimento: 3,
-    areaPainel: 6,
-    pesoKgPainel: 13.2,
-    indicacao: 'Laje industrial, galpões, pisos de alto tráfego e cargas pesadas',
-    cor: 'bg-red-50 border-red-300',
-    badge: 'text-red-700 bg-red-100',
-  },
+  { tipo: 'LEVE', malha: '20 × 20', diametro: 3.4, largura: 2, comprimento: 3, areaPainel: 6, pesoKgPainel: 4.3, indicacao: 'Piso residencial leve, calçadas e pisos de garagem' },
+  { tipo: 'MÉDIO', malha: '15 × 15', diametro: 3.4, largura: 2, comprimento: 3, areaPainel: 6, pesoKgPainel: 6.0, indicacao: 'Laje residencial, contrapisos e lajes de cobertura leve' },
+  { tipo: 'REFORÇADO', malha: '15 × 15', diametro: 4.2, largura: 2, comprimento: 3, areaPainel: 6, pesoKgPainel: 9.0, indicacao: 'Laje comercial, pavimentos com maior carga e lajes de piso' },
+  { tipo: 'PESADO', malha: '10 × 10', diametro: 4.2, largura: 2, comprimento: 3, areaPainel: 6, pesoKgPainel: 13.2, indicacao: 'Laje industrial, galpões, pisos de alto tráfego e cargas pesadas' },
 ] as const;
 
 type TipoUso = 'leve' | 'residencial' | 'comercial' | 'industrial';
+const indicacaoPorUso: Record<TipoUso, number> = { leve: 0, residencial: 1, comercial: 2, industrial: 3 };
 
-const indicacaoPorUso: Record<TipoUso, number> = {
-  leve:        0, // LEVE
-  residencial: 1, // MÉDIO
-  comercial:   2, // REFORÇADO
-  industrial:  3, // PESADO
-};
+// ── Helpers ──────────────────────────────────────────────────────────────────
+const nf = (n: number, d = 2) => n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: d });
 
-interface ResultadoTela {
-  area: number;
-  areaComTranspasse: number;
-  tipoIdx: number;
-  paineis: number;
-  pesoTotal: number;
+const inputCls =
+  'w-full border border-hairline rounded-lg px-3 py-2.5 text-sm bg-card text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-orange/40 focus:border-brand-orange transition';
+const labelCls = 'label-eyebrow text-brand-gray-medium mb-2 block';
+
+// Chip de termo da fórmula (o "momento professor")
+function Term({ value, unit, label, accent }: { value: ReactNode; unit?: string; label: string; accent?: boolean }) {
+  return (
+    <span className={`inline-flex flex-col items-center rounded-lg border px-3 py-1.5 min-w-[64px] ${accent ? 'border-brand-orange bg-brand-orange/5' : 'border-hairline bg-card'}`}>
+      <span className={`font-display font-bold tabular-nums leading-none ${accent ? 'text-brand-orange text-lg' : 'text-brand-navy'}`}>
+        {value}<span className="text-xs font-normal text-brand-gray-medium ml-0.5">{unit}</span>
+      </span>
+      <span className="label-eyebrow text-brand-gray-medium mt-1 text-[0.6rem]">{label}</span>
+    </span>
+  );
 }
 
-// CA-60 (vergalhão liso ou tela soldada)
-const diametrosCA60 = [
-  { mm: 3.4, kgm: 0.071, label: '3,4 mm' },
-  { mm: 4.2, kgm: 0.109, label: '4,2 mm' },
-  { mm: 5.0, kgm: 0.154, label: '5,0 mm' },
-  { mm: 6.0, kgm: 0.222, label: '6,0 mm' },
-  { mm: 7.0, kgm: 0.302, label: '7,0 mm' },
-  { mm: 8.0, kgm: 0.395, label: '8,0 mm' },
-  { mm: 10.0, kgm: 0.617, label: '10,0 mm' },
-  { mm: 12.5, kgm: 0.963, label: '12,5 mm' },
-];
+function Op({ children }: { children: ReactNode }) {
+  return <span className="font-display text-xl text-brand-gray-medium px-0.5">{children}</span>;
+}
 
-interface ResultadoPeso {
-  quantidade: number;
-  comprimento: number;
-  diametro: string;
-  kgm: number;
-  pesoTotal: number;
+// Card de conceito (modo professor)
+function ConceptCard({ icon: Icon, term, children }: { icon: typeof Ruler; term: string; children: ReactNode }) {
+  return (
+    <div className="bg-card p-7 flex flex-col">
+      <Icon className="w-7 h-7 text-brand-orange" strokeWidth={1.5} />
+      <h3 className="font-display text-lg font-semibold text-brand-navy mt-5 tracking-tight">{term}</h3>
+      <p className="text-brand-gray-medium text-sm leading-relaxed mt-2">{children}</p>
+    </div>
+  );
 }
 
 export default function CalculadoraVergalhao() {
@@ -116,7 +83,6 @@ export default function CalculadoraVergalhao() {
     keywords: 'tabela de peso do vergalhão, calculadora vergalhão, peso vergalhão CA-50, calcular vergalhão laje, vergalhão kg por metro, ABNT NBR 7480',
   });
 
-  // Inject Calculator schema
   useEffect(() => {
     const schema = {
       "@context": "https://schema.org",
@@ -127,11 +93,7 @@ export default function CalculadoraVergalhao() {
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "Web",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
-      "provider": {
-        "@type": "Organization",
-        "name": "BR Aço – Casa Brasileira de Aço",
-        "url": "https://grupobraco.com.br"
-      }
+      "provider": { "@type": "Organization", "name": "BR Aço – Casa Brasileira de Aço", "url": "https://grupobraco.com.br" }
     };
     const script = document.createElement('script');
     script.type = 'application/ld+json';
@@ -141,581 +103,475 @@ export default function CalculadoraVergalhao() {
     return () => { document.getElementById('calc-schema')?.remove(); };
   }, []);
 
-  // ── Calculadora 1: Tela Soldada / Malha Pop ──
-  const [larguraTela, setLarguraTela] = useState('');
-  const [comprimentoTela, setComprimentoTela] = useState('');
-  const [tipoUso, setTipoUso] = useState<TipoUso>('residencial');
-  const [resultadoTela, setResultadoTela] = useState<ResultadoTela | null>(null);
-
-  // ── Calculadora 2: Peso por quantidade ──
-  const [qtdBarras, setQtdBarras] = useState('');
+  // ── Calc 1: Peso por quantidade ──
+  const [qtdBarras, setQtdBarras] = useState('50');
   const [compBarra, setCompBarra] = useState('12');
-  const [diametroPeso, setDiametroPeso] = useState('10.0');
   const [grauPeso, setGrauPeso] = useState<'CA-50' | 'CA-60'>('CA-50');
-  const [resultadoPeso, setResultadoPeso] = useState<ResultadoPeso | null>(null);
-
-  // ── Calculadora 3: Quantidade por peso ──
-  const [pesoEntrada, setPesoEntrada] = useState('');
-  const [diametroQtd, setDiametroQtd] = useState('10.0');
-  const [grauQtd, setGrauQtd] = useState<'CA-50' | 'CA-60'>('CA-50');
-  const [resultadoQtd, setResultadoQtd] = useState<{ barras: number; metrosLineares: number; diametro: string; kgm: number; kgBarra: number } | null>(null);
-
+  const [diametroPeso, setDiametroPeso] = useState('10.0');
   const tabelaPeso = grauPeso === 'CA-50' ? diametros : diametrosCA60;
-  const tabelaQtd  = grauQtd  === 'CA-50' ? diametros : diametrosCA60;
 
-  const calcularTela = () => {
-    const L = parseFloat(larguraTela);
-    const C = parseFloat(comprimentoTela);
-    if (!L || !C) return;
+  // ── Calc 2: Quantidade por peso ──
+  const [pesoEntrada, setPesoEntrada] = useState('1000');
+  const [grauQtd, setGrauQtd] = useState<'CA-50' | 'CA-60'>('CA-50');
+  const [diametroQtd, setDiametroQtd] = useState('10.0');
+  const tabelaQtd = grauQtd === 'CA-50' ? diametros : diametrosCA60;
 
-    const area = L * C;
-    const areaComTranspasse = area * 1.10; // +10% para transpasse
-    const tipoIdx = indicacaoPorUso[tipoUso];
-    const tela = telasSoldadas[tipoIdx];
-    const paineis = Math.ceil(areaComTranspasse / tela.areaPainel);
-    const pesoTotal = Math.round(paineis * tela.pesoKgPainel * 10) / 10;
+  // ── Calc 3: Tela soldada ──
+  const [larguraTela, setLarguraTela] = useState('5');
+  const [comprimentoTela, setComprimentoTela] = useState('8');
+  const [tipoUso, setTipoUso] = useState<TipoUso>('residencial');
 
-    setResultadoTela({
-      area: Math.round(area * 100) / 100,
-      areaComTranspasse: Math.round(areaComTranspasse * 100) / 100,
-      tipoIdx,
-      paineis,
-      pesoTotal,
-    });
-    analytics.calculatorUse('tela_soldada');
+  // ── Resultados ao vivo ──
+  const resultadoPeso = useMemo(() => {
+    const qtd = parseFloat(qtdBarras), comp = parseFloat(compBarra), d = parseFloat(diametroPeso);
+    if (!qtd || !comp || !d) return null;
+    const diam = tabelaPeso.find(x => x.mm === d); const kgm = diam?.kgm ?? 0;
+    if (!kgm) return null;
+    return { quantidade: qtd, comprimento: comp, diametro: diam?.label ?? '', kgm, pesoTotal: Math.round(qtd * comp * kgm * 100) / 100 };
+  }, [qtdBarras, compBarra, diametroPeso, grauPeso]);
+
+  const resultadoQtd = useMemo(() => {
+    const peso = parseFloat(pesoEntrada), d = parseFloat(diametroQtd);
+    if (!peso || !d) return null;
+    const diam = tabelaQtd.find(x => x.mm === d); const kgm = diam?.kgm ?? 0;
+    if (!kgm) return null;
+    const kgBarra = kgm * 12;
+    return { barras: Math.ceil(peso / kgBarra), metrosLineares: Math.ceil(peso / kgm), diametro: diam?.label ?? '', kgm, kgBarra: Math.round(kgBarra * 1000) / 1000 };
+  }, [pesoEntrada, diametroQtd, grauQtd]);
+
+  const resultadoTela = useMemo(() => {
+    const L = parseFloat(larguraTela), C = parseFloat(comprimentoTela);
+    if (!L || !C) return null;
+    const area = L * C, areaComTranspasse = area * 1.10, tipoIdx = indicacaoPorUso[tipoUso];
+    const tela = telasSoldadas[tipoIdx]; const paineis = Math.ceil(areaComTranspasse / tela.areaPainel);
+    return { area: Math.round(area * 100) / 100, areaComTranspasse: Math.round(areaComTranspasse * 100) / 100, tipoIdx, paineis, pesoTotal: Math.round(paineis * tela.pesoKgPainel * 10) / 10, L, C };
+  }, [larguraTela, comprimentoTela, tipoUso]);
+
+  // ── Analytics: dispara calculatorUse uma vez por calculadora ao gerar resultado válido ──
+  const firedPeso = useRef(false), firedQtd = useRef(false), firedTela = useRef(false);
+  useEffect(() => { if (resultadoPeso && !firedPeso.current) { firedPeso.current = true; analytics.calculatorUse('peso_vergalhao'); } }, [resultadoPeso]);
+  useEffect(() => { if (resultadoQtd && !firedQtd.current) { firedQtd.current = true; analytics.calculatorUse('quantidade_barras'); } }, [resultadoQtd]);
+  useEffect(() => { if (resultadoTela && !firedTela.current) { firedTela.current = true; analytics.calculatorUse('tela_soldada'); } }, [resultadoTela]);
+
+  const setGrau = (which: 'peso' | 'qtd', value: 'CA-50' | 'CA-60') => {
+    const firstMm = String((value === 'CA-50' ? diametros : diametrosCA60)[value === 'CA-50' ? 2 : 6].mm);
+    if (which === 'peso') { setGrauPeso(value); setDiametroPeso(firstMm); }
+    else { setGrauQtd(value); setDiametroQtd(firstMm); }
   };
 
-  const calcularPeso = () => {
-    const qtd = parseFloat(qtdBarras);
-    const comp = parseFloat(compBarra);
-    const d = parseFloat(diametroPeso);
-    if (!qtd || !comp || !d) return;
-
-    const diam = tabelaPeso.find(x => x.mm === d);
-    const kgm = diam?.kgm ?? 0;
-    const pesoTotal = qtd * comp * kgm;
-
-    setResultadoPeso({
-      quantidade: qtd,
-      comprimento: comp,
-      diametro: diam?.label ?? '',
-      kgm,
-      pesoTotal: Math.round(pesoTotal * 100) / 100,
-    });
-    analytics.calculatorUse('peso_vergalhao');
-  };
-
-  const calcularQtd = () => {
-    const peso = parseFloat(pesoEntrada);
-    const d = parseFloat(diametroQtd);
-    if (!peso || !d) return;
-
-    const diam = tabelaQtd.find(x => x.mm === d);
-    const kgm = diam?.kgm ?? 0;
-    if (!kgm) return;
-
-    const kgBarra = kgm * 12; // peso de 1 barra de 12 m
-    const barras = Math.ceil(peso / kgBarra);
-    const metrosLineares = Math.ceil(peso / kgm);
-
-    setResultadoQtd({ barras, metrosLineares, diametro: diam?.label ?? '', kgm, kgBarra: Math.round(kgBarra * 1000) / 1000 });
-    analytics.calculatorUse('quantidade_barras');
-  };
-
-  const whatsappMsgTela = resultadoTela
+  const telaSel = resultadoTela ? telasSoldadas[resultadoTela.tipoIdx] : null;
+  const whatsappMsgTela = resultadoTela && telaSel
     ? encodeURIComponent(
         `[src:calculadora] Olá! Calculei a necessidade de tela soldada para uma laje/piso de ${resultadoTela.area} m².\n` +
-        `Malha sugerida: ${telasSoldadas[resultadoTela.tipoIdx].tipo} (${telasSoldadas[resultadoTela.tipoIdx].malha} cm — ø${telasSoldadas[resultadoTela.tipoIdx].diametro} mm)\n` +
-        `Quantidade: ${resultadoTela.paineis} painéis — ${resultadoTela.pesoTotal} kg\n` +
-        `Gostaria de solicitar um orçamento.`
-      )
-    : encodeURIComponent(`[src:calculadora] Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.`);
+        `Malha sugerida: ${telaSel.tipo} (${telaSel.malha} cm — ø${telaSel.diametro} mm)\n` +
+        `Quantidade: ${resultadoTela.paineis} painéis — ${resultadoTela.pesoTotal} kg\nGostaria de solicitar um orçamento.`)
+    : encodeURIComponent('[src:calculadora] Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.');
+
+  // Espessura visual da barra ∝ diâmetro selecionado
+  const dPeso = parseFloat(diametroPeso) || 10;
+  const barH = Math.max(8, Math.min(46, dPeso * 1.15));
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="bg-brand-navy py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-gray-400 mb-6">
+      {/* ══ HERO ══ */}
+      <section className="relative bg-metal overflow-hidden">
+        <div className="absolute inset-0 bg-blueprint opacity-[0.10] pointer-events-none" aria-hidden="true" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+          <nav className="flex items-center gap-2 label-eyebrow text-white/40 mb-10" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Calculadora de Vergalhão</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+            <span className="text-white/70">Calculadora de Vergalhão</span>
           </nav>
-
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 rounded-xl bg-brand-orange/20 flex items-center justify-center">
-              <Calculator className="w-6 h-6 text-brand-orange" />
-            </div>
-            <span className="inline-block bg-brand-orange/20 text-brand-orange px-3 py-1 rounded-full text-sm font-medium">
-              Gratuito
-            </span>
-          </div>
-
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Calculadora de Vergalhão Online
+          <Eyebrow tone="light">Ferramenta grátis + guia</Eyebrow>
+          <h1 className="text-display-xl text-white mt-6 max-w-[18ch]">
+            Calcule o aço da sua obra — e <span className="text-primary">entenda cada número.</span>
           </h1>
-          <p className="text-gray-300 mt-4 text-lg max-w-2xl">
-            Calcule o peso e a quantidade de vergalhão CA-50 ou CA-60 para laje, pilar, viga ou qualquer elemento estrutural. Grátis, sem cadastro.
+          <p className="text-lg text-white/75 mt-6 max-w-2xl">
+            Cálculo ao vivo de peso, quantidade de barras e tela soldada — com a fórmula montada na sua frente,
+            passo a passo. Para CA-50 e CA-60, conforme a ABNT NBR 7480.
           </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {[['#calc-peso', 'Peso do aço'], ['#calc-qtd', 'Quantidade de barras'], ['#calc-tela', 'Tela / laje'], ['#tabela', 'Tabela de peso']].map(([href, txt]) => (
+              <a key={href} href={href} className="label-eyebrow text-white/70 border border-white/20 rounded-full px-4 py-2 hover:border-brand-orange hover:text-white transition-colors">
+                {txt}
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="py-12 bg-background">
-        <div className="max-w-4xl mx-auto px-4 space-y-10">
+      {/* ══ ENTENDA (modo professor) ══ */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Antes de calcular"
+            title="Três conceitos que todo cálculo de aço usa."
+            description="Domine isto e nenhum orçamento de vergalhão vai te surpreender de novo."
+          />
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline border border-hairline rounded-2xl overflow-hidden">
+            <ConceptCard icon={Ruler} term="Bitola (ø)">
+              É o diâmetro da barra, em milímetros. Quanto maior a bitola, mais resistente e mais pesada a barra.
+              A norma define bitolas padrão: 6,3 · 8,0 · 10,0 · 12,5 · 16,0 mm…
+            </ConceptCard>
+            <ConceptCard icon={Weight} term="Massa linear (kg/m)">
+              Cada bitola pesa um valor fixo por metro, definido pela <strong className="text-brand-navy">ABNT NBR 7480</strong>.
+              Ex.: uma barra de 10,0 mm pesa <strong className="text-brand-navy">0,617 kg</strong> a cada metro. É o coração de todo cálculo.
+            </ConceptCard>
+            <ConceptCard icon={Boxes} term="Barra de 12 m">
+              O vergalhão é vendido em barras padrão de <strong className="text-brand-navy">12 metros</strong>. Por isso, no fim,
+              convertemos metros e peso em "quantas barras de 12 m" você precisa comprar.
+            </ConceptCard>
+          </div>
+        </div>
+      </section>
 
-          {/* ══ CALCULADORA 1: TELA SOLDADA / MALHA POP ══ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
-              <h2 className="text-xl font-bold text-brand-navy">
-                📐 Calculadora de Tela Soldada para Laje e Piso
-              </h2>
-              <p className="text-sm text-brand-gray-medium mt-1">
-                Informe as dimensões e o uso — calculamos a malha ideal e a quantidade de painéis com 10% de transpasse
-              </p>
+      {/* ══ CALCULADORAS ══ */}
+      <section className="pb-16 sm:pb-20 bg-background">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+
+          {/* ── CALC 1: PESO ── */}
+          <div id="calc-peso" className="scroll-mt-24 rounded-2xl border border-hairline overflow-hidden">
+            <div className="bg-secondary border-b border-hairline px-6 sm:px-8 py-5">
+              <Eyebrow tone="orange">Cálculo 01</Eyebrow>
+              <h2 className="font-display text-2xl font-bold text-brand-navy mt-2">Peso do aço</h2>
+              <p className="text-sm text-brand-gray-medium mt-1">Quanto pesa um lote de barras? Informe quantidade, comprimento e bitola.</p>
             </div>
 
-            <div className="p-6 space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="p-6 sm:p-8">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Largura (m)
-                  </label>
-                  <input
-                    type="number"
-                    min="0.1"
-                    step="0.1"
-                    placeholder="Ex: 5"
-                    value={larguraTela}
-                    onChange={e => setLarguraTela(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  />
+                  <label className={labelCls}>Quantidade</label>
+                  <input type="number" min="1" step="1" value={qtdBarras} onChange={e => setQtdBarras(e.target.value)} className={inputCls} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Comprimento (m)
-                  </label>
-                  <input
-                    type="number"
-                    min="0.1"
-                    step="0.1"
-                    placeholder="Ex: 8"
-                    value={comprimentoTela}
-                    onChange={e => setComprimentoTela(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  />
+                  <label className={labelCls}>Comprimento (m)</label>
+                  <input type="number" min="0.1" step="0.1" value={compBarra} onChange={e => setCompBarra(e.target.value)} className={inputCls} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Tipo de uso
-                  </label>
-                  <select
-                    value={tipoUso}
-                    onChange={e => setTipoUso(e.target.value as TipoUso)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  >
-                    <option value="leve">Piso leve / garagem / calçada</option>
-                    <option value="residencial">Laje residencial</option>
-                    <option value="comercial">Laje comercial / semi-pesada</option>
-                    <option value="industrial">Laje industrial / pesada</option>
+                  <label className={labelCls}>Grau</label>
+                  <select value={grauPeso} onChange={e => setGrau('peso', e.target.value as 'CA-50' | 'CA-60')} className={inputCls}>
+                    <option value="CA-50">CA-50</option>
+                    <option value="CA-60">CA-60</option>
+                  </select>
+                </div>
+                <div>
+                  <label className={labelCls}>Bitola (ø)</label>
+                  <select value={diametroPeso} onChange={e => setDiametroPeso(e.target.value)} className={inputCls}>
+                    {tabelaPeso.map(d => <option key={d.mm} value={d.mm}>{d.label} — {d.kgm} kg/m</option>)}
                   </select>
                 </div>
               </div>
 
-              <Button
-                onClick={calcularTela}
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white rounded-lg"
-              >
-                <Calculator className="w-4 h-4 mr-2" />
-                Calcular Tela Soldada
-              </Button>
+              {/* Visual reativo: barra cuja espessura escala com a bitola */}
+              <div className="relative mt-6 rounded-xl bg-metal overflow-hidden h-28 flex items-center px-8">
+                <div className="absolute inset-0 bg-blueprint opacity-[0.12]" aria-hidden="true" />
+                <div className="relative w-full flex items-center gap-1">
+                  <div className="flex-1 rounded-full bg-brand-orange transition-all duration-300" style={{ height: `${barH}px` }} />
+                </div>
+                <span className="absolute left-8 top-3 label-eyebrow text-white/55">ø {nf(dPeso, 1)} mm · {resultadoPeso ? nf(resultadoPeso.kgm, 3) : '—'} kg/m</span>
+              </div>
 
-              {resultadoTela && (() => {
-                const telaSugerida = telasSoldadas[resultadoTela.tipoIdx];
-                return (
-                  <div className="mt-2 space-y-4">
-                    {/* Cabeçalho do resultado */}
-                    <div className="bg-brand-navy rounded-xl p-5 text-white">
-                      <p className="text-sm text-gray-300 mb-3">
-                        Área da laje: <strong>{resultadoTela.area} m²</strong>
-                        &nbsp;→ com 10% de transpasse: <strong>{resultadoTela.areaComTranspasse} m²</strong>
-                      </p>
-                      <div className="grid grid-cols-3 gap-3">
-                        <div className="bg-white/10 rounded-lg p-3 text-center">
-                          <p className="text-2xl font-bold text-brand-orange">{resultadoTela.paineis}</p>
-                          <p className="text-xs text-gray-300 mt-1">painéis</p>
-                        </div>
-                        <div className="bg-white/10 rounded-lg p-3 text-center">
-                          <p className="text-2xl font-bold text-brand-orange">{resultadoTela.pesoTotal}</p>
-                          <p className="text-xs text-gray-300 mt-1">kg total</p>
-                        </div>
-                        <div className="bg-white/10 rounded-lg p-3 text-center">
-                          <p className="text-2xl font-bold text-brand-orange">ø{telaSugerida.diametro}</p>
-                          <p className="text-xs text-gray-300 mt-1">mm</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Card da malha sugerida */}
-                    <div className={`rounded-xl border-2 p-4 ${telaSugerida.cor}`}>
-                      <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 mt-0.5 text-brand-orange flex-shrink-0" />
-                        <div>
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-bold text-brand-navy text-lg">{telaSugerida.tipo}</span>
-                            <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${telaSugerida.badge}`}>
-                              Sugerido para este uso
-                            </span>
-                          </div>
-                          <p className="text-sm text-brand-navy mt-1">
-                            Malha <strong>{telaSugerida.malha} cm</strong> · Diâmetro <strong>ø{telaSugerida.diametro} mm</strong> · Painel {telaSugerida.largura} × {telaSugerida.comprimento} m ({telaSugerida.areaPainel} m²) · {telaSugerida.pesoKgPainel} kg/painel
-                          </p>
-                          <p className="text-xs text-brand-gray-medium mt-1">{telaSugerida.indicacao}</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Comparativo de todas as opções */}
+              {/* Resultado ao vivo + fórmula montada (momento professor) */}
+              {resultadoPeso ? (
+                <div className="mt-6 rounded-xl bg-brand-navy p-6">
+                  <div className="flex flex-wrap items-end gap-x-8 gap-y-4">
                     <div>
-                      <p className="text-xs font-semibold text-brand-gray-medium uppercase tracking-wide mb-2">
-                        Comparativo — todas as opções para {resultadoTela.area} m²
-                      </p>
-                      <div className="overflow-x-auto rounded-xl border border-gray-100">
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="bg-brand-navy text-white">
-                              <th className="px-3 py-2 text-left font-semibold">Tipo</th>
-                              <th className="px-3 py-2 text-left font-semibold">Malha (cm)</th>
-                              <th className="px-3 py-2 text-left font-semibold">Ø (mm)</th>
-                              <th className="px-3 py-2 text-right font-semibold">Painéis</th>
-                              <th className="px-3 py-2 text-right font-semibold">Peso total (kg)</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {telasSoldadas.map((t, i) => {
-                              const p = Math.ceil(resultadoTela.areaComTranspasse / t.areaPainel);
-                              const kg = Math.round(p * t.pesoKgPainel * 10) / 10;
-                              const isSugerida = i === resultadoTela.tipoIdx;
-                              return (
-                                <tr
-                                  key={t.tipo}
-                                  className={isSugerida ? 'bg-brand-orange/10 font-semibold' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
-                                >
-                                  <td className="px-3 py-2 text-brand-navy">
-                                    {t.tipo}
-                                    {isSugerida && <span className="ml-2 text-xs text-brand-orange">✓</span>}
-                                  </td>
-                                  <td className="px-3 py-2 text-brand-gray-medium">{t.malha}</td>
-                                  <td className="px-3 py-2 text-brand-gray-medium">{t.diametro}</td>
-                                  <td className="px-3 py-2 text-right font-mono">{p}</td>
-                                  <td className="px-3 py-2 text-right font-mono">{kg}</td>
-                                </tr>
-                              );
-                            })}
-                          </tbody>
-                        </table>
+                      <p className="font-display text-5xl font-bold text-brand-orange tabular-nums leading-none">{nf(resultadoPeso.pesoTotal)}<span className="text-2xl ml-1">kg</span></p>
+                      <p className="label-eyebrow text-white/50 mt-2">Peso total</p>
+                    </div>
+                    <div className="flex-1 min-w-[260px]">
+                      <p className="label-eyebrow text-white/40 mb-3">A conta, passo a passo</p>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Term value={nf(resultadoPeso.quantidade, 0)} label="barras" />
+                        <Op>×</Op>
+                        <Term value={nf(resultadoPeso.comprimento, 1)} unit="m" label="compr." />
+                        <Op>×</Op>
+                        <Term value={nf(resultadoPeso.kgm, 3)} unit="kg/m" label="massa" />
+                        <Op>=</Op>
+                        <Term value={nf(resultadoPeso.pesoTotal)} unit="kg" label="total" accent />
                       </div>
                     </div>
+                  </div>
+                </div>
+              ) : (
+                <p className="mt-6 text-sm text-brand-gray-medium">Preencha os campos para ver o resultado ao vivo.</p>
+              )}
+            </div>
+          </div>
 
-                    {/* CTA WhatsApp */}
+          {/* ── CALC 2: QUANTIDADE ── */}
+          <div id="calc-qtd" className="scroll-mt-24 rounded-2xl border border-hairline overflow-hidden">
+            <div className="bg-secondary border-b border-hairline px-6 sm:px-8 py-5">
+              <Eyebrow tone="orange">Cálculo 02</Eyebrow>
+              <h2 className="font-display text-2xl font-bold text-brand-navy mt-2">Quantidade de barras</h2>
+              <p className="text-sm text-brand-gray-medium mt-1">Tem o peso total em kg? Descubra quantas barras de 12 m comprar.</p>
+            </div>
+
+            <div className="p-6 sm:p-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className={labelCls}>Peso total (kg)</label>
+                  <input type="number" min="0.1" step="1" value={pesoEntrada} onChange={e => setPesoEntrada(e.target.value)} className={inputCls} />
+                </div>
+                <div>
+                  <label className={labelCls}>Grau</label>
+                  <select value={grauQtd} onChange={e => setGrau('qtd', e.target.value as 'CA-50' | 'CA-60')} className={inputCls}>
+                    <option value="CA-50">CA-50</option>
+                    <option value="CA-60">CA-60</option>
+                  </select>
+                </div>
+                <div>
+                  <label className={labelCls}>Bitola (ø)</label>
+                  <select value={diametroQtd} onChange={e => setDiametroQtd(e.target.value)} className={inputCls}>
+                    {tabelaQtd.map(d => <option key={d.mm} value={d.mm}>{d.label} — {d.kgm} kg/m</option>)}
+                  </select>
+                </div>
+              </div>
+
+              {resultadoQtd ? (
+                <div className="mt-6 rounded-xl bg-brand-navy p-6">
+                  <div className="flex flex-wrap items-end gap-x-8 gap-y-4">
+                    <div className="flex gap-8">
+                      <div>
+                        <p className="font-display text-5xl font-bold text-brand-orange tabular-nums leading-none">{nf(resultadoQtd.barras, 0)}</p>
+                        <p className="label-eyebrow text-white/50 mt-2">barras de 12 m</p>
+                      </div>
+                      <div>
+                        <p className="font-display text-5xl font-bold text-white tabular-nums leading-none">{nf(resultadoQtd.metrosLineares, 0)}</p>
+                        <p className="label-eyebrow text-white/50 mt-2">metros lineares</p>
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-[260px]">
+                      <p className="label-eyebrow text-white/40 mb-3">A conta, passo a passo</p>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Term value={nf(parseFloat(pesoEntrada))} unit="kg" label="peso" />
+                        <Op>÷</Op>
+                        <Term value={nf(resultadoQtd.kgBarra)} unit="kg" label="por barra" />
+                        <Op>=</Op>
+                        <Term value={nf(resultadoQtd.barras, 0)} label="barras" accent />
+                      </div>
+                      <p className="label-eyebrow text-white/35 mt-3 text-[0.6rem]">arredondado para cima · 1 barra = 12 m × {nf(resultadoQtd.kgm, 3)} kg/m</p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <p className="mt-6 text-sm text-brand-gray-medium">Preencha os campos para ver o resultado ao vivo.</p>
+              )}
+            </div>
+          </div>
+
+          {/* ── CALC 3: TELA SOLDADA ── */}
+          <div id="calc-tela" className="scroll-mt-24 rounded-2xl border border-hairline overflow-hidden">
+            <div className="bg-secondary border-b border-hairline px-6 sm:px-8 py-5">
+              <Eyebrow tone="orange">Cálculo 03</Eyebrow>
+              <h2 className="font-display text-2xl font-bold text-brand-navy mt-2">Tela soldada para laje e piso</h2>
+              <p className="text-sm text-brand-gray-medium mt-1">Informe as dimensões e o uso — sugerimos a malha ideal e os painéis (com 10% de transpasse).</p>
+            </div>
+
+            <div className="p-6 sm:p-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className={labelCls}>Largura (m)</label>
+                  <input type="number" min="0.1" step="0.1" value={larguraTela} onChange={e => setLarguraTela(e.target.value)} className={inputCls} />
+                </div>
+                <div>
+                  <label className={labelCls}>Comprimento (m)</label>
+                  <input type="number" min="0.1" step="0.1" value={comprimentoTela} onChange={e => setComprimentoTela(e.target.value)} className={inputCls} />
+                </div>
+                <div>
+                  <label className={labelCls}>Tipo de uso</label>
+                  <select value={tipoUso} onChange={e => setTipoUso(e.target.value as TipoUso)} className={inputCls}>
+                    <option value="leve">Piso leve / garagem</option>
+                    <option value="residencial">Laje residencial</option>
+                    <option value="comercial">Laje comercial</option>
+                    <option value="industrial">Laje industrial</option>
+                  </select>
+                </div>
+              </div>
+
+              {resultadoTela && telaSel && (
+                <>
+                  {/* Visual reativo: retângulo da laje proporcional */}
+                  <div className="relative mt-6 rounded-xl bg-metal overflow-hidden p-6 flex items-center justify-center min-h-[180px]">
+                    <div className="absolute inset-0 bg-blueprint opacity-[0.12]" aria-hidden="true" />
+                    <div className="relative">
+                      <div
+                        className="border-2 border-brand-orange bg-brand-orange/10 transition-all duration-300"
+                        style={{
+                          width: `${Math.min(320, Math.max(60, resultadoTela.L * 26))}px`,
+                          height: `${Math.min(150, Math.max(40, resultadoTela.C * 26))}px`,
+                          backgroundImage: 'linear-gradient(to right, rgba(242,116,15,.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(242,116,15,.35) 1px, transparent 1px)',
+                          backgroundSize: '14px 14px',
+                        }}
+                      />
+                      <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 label-eyebrow text-white/55 whitespace-nowrap">{nf(resultadoTela.L, 1)} × {nf(resultadoTela.C, 1)} m = {nf(resultadoTela.area)} m²</span>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 rounded-xl bg-brand-navy p-6">
+                    <div className="flex flex-wrap items-end gap-x-8 gap-y-4">
+                      <div className="flex gap-8">
+                        <div>
+                          <p className="font-display text-5xl font-bold text-brand-orange tabular-nums leading-none">{resultadoTela.paineis}</p>
+                          <p className="label-eyebrow text-white/50 mt-2">painéis {telaSel.tipo}</p>
+                        </div>
+                        <div>
+                          <p className="font-display text-5xl font-bold text-white tabular-nums leading-none">{nf(resultadoTela.pesoTotal, 1)}<span className="text-2xl ml-1">kg</span></p>
+                          <p className="label-eyebrow text-white/50 mt-2">peso total</p>
+                        </div>
+                      </div>
+                      <div className="flex-1 min-w-[260px]">
+                        <p className="label-eyebrow text-white/40 mb-3">A conta, passo a passo</p>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <Term value={nf(resultadoTela.area)} unit="m²" label="área" />
+                          <Op>×</Op>
+                          <Term value="1,10" label="transpasse" />
+                          <Op>÷</Op>
+                          <Term value="6" unit="m²" label="painel" />
+                          <Op>=</Op>
+                          <Term value={resultadoTela.paineis} label="painéis" accent />
+                        </div>
+                        <p className="label-eyebrow text-white/35 mt-3 text-[0.6rem]">malha {telaSel.malha} cm · ø{telaSel.diametro} mm — {telaSel.indicacao}</p>
+                      </div>
+                    </div>
                     <a
                       href={`https://wa.me/556296472423?text=${whatsappMsgTela}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg px-4 py-3 transition-colors text-sm"
+                      target="_blank" rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsapp-hover text-white font-semibold rounded-lg px-6 py-3 text-sm transition-colors"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      Solicitar Orçamento — {resultadoTela.paineis} painéis {telaSugerida.tipo}
+                      Orçar {resultadoTela.paineis} painéis {telaSel.tipo}
                     </a>
                   </div>
-                );
-              })()}
-            </div>
-          </div>
-
-          {/* ══ CALCULADORA 2: PESO POR QUANTIDADE ══ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
-              <h2 className="text-xl font-bold text-brand-navy">
-                ⚖️ Calculadora de Peso — Quantidade × Comprimento
-              </h2>
-              <p className="text-sm text-brand-gray-medium mt-1">
-                Calcule o peso total de um lote de barras pelo diâmetro e comprimento
-              </p>
-            </div>
-
-            <div className="p-6 space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Quantidade de barras
-                  </label>
-                  <input
-                    type="number"
-                    min="1"
-                    step="1"
-                    placeholder="Ex: 50"
-                    value={qtdBarras}
-                    onChange={e => setQtdBarras(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Comprimento de cada barra (m)
-                  </label>
-                  <input
-                    type="number"
-                    min="0.1"
-                    step="0.1"
-                    placeholder="Ex: 12"
-                    value={compBarra}
-                    onChange={e => setCompBarra(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">Grau do aço</label>
-                  <select
-                    value={grauPeso}
-                    onChange={e => setGrauPeso(e.target.value as 'CA-50' | 'CA-60')}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  >
-                    <option value="CA-50">CA-50</option>
-                    <option value="CA-60">CA-60</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">Diâmetro</label>
-                  <select
-                    value={diametroPeso}
-                    onChange={e => setDiametroPeso(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  >
-                    {tabelaPeso.map(d => (
-                      <option key={d.mm} value={d.mm}>
-                        {d.label} — {d.kgm} kg/m
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <Button
-                onClick={calcularPeso}
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white rounded-lg"
-              >
-                <Calculator className="w-4 h-4 mr-2" />
-                Calcular Peso Total
-              </Button>
-
-              {resultadoPeso && (
-                <div className="mt-4 bg-brand-navy rounded-xl p-6 text-white">
-                  <h3 className="font-bold text-lg mb-4">Resultado</h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-3 text-center">
-                      <p className="text-2xl font-bold text-brand-orange">{resultadoPeso.pesoTotal}</p>
-                      <p className="text-xs text-gray-300 mt-1">kg total</p>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-3 text-center">
-                      <p className="text-2xl font-bold text-brand-orange">{resultadoPeso.kgm}</p>
-                      <p className="text-xs text-gray-300 mt-1">kg por metro</p>
-                    </div>
-                  </div>
-                  <p className="text-xs text-gray-400 mt-4">
-                    {resultadoPeso.quantidade} barras × {resultadoPeso.comprimento} m × {resultadoPeso.kgm} kg/m = {resultadoPeso.pesoTotal} kg
-                  </p>
-                </div>
+                </>
               )}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* ══ CALCULADORA 3: QUANTIDADE POR PESO ══ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
-              <h2 className="text-xl font-bold text-brand-navy">
-                🔢 Calculadora de Quantidade — Peso → Barras de 12 m
-              </h2>
-              <p className="text-sm text-brand-gray-medium mt-1">
-                Informe o peso total em kg e o diâmetro — calculamos quantas barras de 12 m você precisa
-              </p>
-            </div>
-
-            <div className="p-6 space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">
-                    Peso total (kg)
-                  </label>
-                  <input
-                    type="number"
-                    min="0.1"
-                    step="0.1"
-                    placeholder="Ex: 500"
-                    value={pesoEntrada}
-                    onChange={e => setPesoEntrada(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">Grau do aço</label>
-                  <select
-                    value={grauQtd}
-                    onChange={e => { setGrauQtd(e.target.value as 'CA-50' | 'CA-60'); setDiametroQtd(e.target.value === 'CA-50' ? '10.0' : '4.2'); }}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  >
-                    <option value="CA-50">CA-50</option>
-                    <option value="CA-60">CA-60</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-brand-navy mb-1">Diâmetro</label>
-                  <select
-                    value={diametroQtd}
-                    onChange={e => setDiametroQtd(e.target.value)}
-                    className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange/30"
-                  >
-                    {tabelaQtd.map(d => (
-                      <option key={d.mm} value={d.mm}>
-                        {d.label} — {d.kgm} kg/m
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <Button
-                onClick={calcularQtd}
-                className="w-full bg-brand-orange hover:bg-brand-orange-hover text-white rounded-lg"
-              >
-                <Calculator className="w-4 h-4 mr-2" />
-                Calcular Quantidade de Barras
-              </Button>
-
-              {resultadoQtd && (
-                <div className="mt-4 bg-brand-navy rounded-xl p-6 text-white">
-                  <h3 className="font-bold text-lg mb-4">Resultado — {pesoEntrada} kg de {resultadoQtd.diametro}</h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-4 text-center">
-                      <p className="text-3xl font-bold text-brand-orange">{resultadoQtd.barras}</p>
-                      <p className="text-sm text-gray-300 mt-1">barras de 12 m</p>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-4 text-center">
-                      <p className="text-3xl font-bold text-brand-orange">{resultadoQtd.metrosLineares}</p>
-                      <p className="text-sm text-gray-300 mt-1">metros lineares</p>
-                    </div>
-                  </div>
-                  <p className="text-xs text-gray-400 mt-4">
-                    {pesoEntrada} kg ÷ {resultadoQtd.kgBarra} kg/barra = {resultadoQtd.barras} barras (arredondado para cima)
-                    &nbsp;·&nbsp;{resultadoQtd.kgm} kg/m
-                  </p>
-                </div>
-              )}
+      {/* ══ TABELA ABNT (interativa) ══ */}
+      <section id="tabela" className="scroll-mt-24 py-16 sm:py-20 bg-secondary">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Referência · ABNT NBR 7480"
+            title="Tabela de peso do vergalhão CA-50."
+            description="Clique em qualquer bitola para jogá-la direto na calculadora de peso acima."
+          />
+          <div className="mt-10 rounded-2xl border border-hairline overflow-hidden bg-card">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-brand-navy">
+                    <th className="px-5 py-4 text-left label-eyebrow text-white/90">Bitola</th>
+                    <th className="px-5 py-4 text-left label-eyebrow text-white/60">Fração</th>
+                    <th className="px-5 py-4 text-right label-eyebrow text-white/60">kg/m</th>
+                    <th className="px-5 py-4 text-right label-eyebrow text-white/60">Barra 12 m</th>
+                    <th className="px-5 py-4 text-right label-eyebrow text-white/60">Barras/ton</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {diametros.map((d) => {
+                    const ativo = grauPeso === 'CA-50' && parseFloat(diametroPeso) === d.mm;
+                    return (
+                      <tr
+                        key={d.mm}
+                        onClick={() => { setGrau('peso', 'CA-50'); setDiametroPeso(String(d.mm)); document.getElementById('calc-peso')?.scrollIntoView({ behavior: 'smooth' }); }}
+                        className={`border-b border-hairline last:border-b-0 cursor-pointer transition-colors ${ativo ? 'bg-brand-orange/10' : 'hover:bg-secondary'}`}
+                      >
+                        <td className="px-5 py-3 font-display font-semibold text-brand-navy">{nf(d.mm, 1)} mm</td>
+                        <td className="px-5 py-3 text-brand-gray-medium text-spec">{d.fracao}</td>
+                        <td className="px-5 py-3 text-right text-spec text-brand-navy">{d.kgm.toFixed(3)}</td>
+                        <td className="px-5 py-3 text-right text-spec text-brand-navy">{(d.kgm * 12).toFixed(2)}</td>
+                        <td className="px-5 py-3 text-right text-spec text-brand-gray-medium">{Math.round(1000 / (d.kgm * 12))}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
           </div>
 
-          {/* ══ TABELA TELAS SOLDADAS ══ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
-              <h2 className="text-xl font-bold text-brand-navy">
-                📊 Tabela de Telas Soldadas — Especificações Gerdau
-              </h2>
-              <p className="text-sm text-brand-gray-medium mt-1">Painel padrão: 2,0 × 3,0 m (6 m²)</p>
+          {/* Tabela de telas */}
+          <div className="mt-8 rounded-2xl border border-hairline overflow-hidden bg-card">
+            <div className="px-5 py-4 border-b border-hairline">
+              <span className="label-eyebrow text-brand-gray-medium">Telas soldadas — painel padrão 2,0 × 3,0 m (6 m²)</span>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-brand-navy text-white">
-                    <th className="px-4 py-3 text-left font-semibold">Tipo</th>
-                    <th className="px-4 py-3 text-center font-semibold">Malha (cm)</th>
-                    <th className="px-4 py-3 text-center font-semibold">Diâm. (mm)</th>
-                    <th className="px-4 py-3 text-center font-semibold">Largura (m)</th>
-                    <th className="px-4 py-3 text-center font-semibold">Comp. (m)</th>
-                    <th className="px-4 py-3 text-right font-semibold">Peso (kg/painel)</th>
+                  <tr className="bg-brand-navy">
+                    <th className="px-5 py-4 text-left label-eyebrow text-white/90">Tipo</th>
+                    <th className="px-5 py-4 text-center label-eyebrow text-white/60">Malha (cm)</th>
+                    <th className="px-5 py-4 text-center label-eyebrow text-white/60">ø (mm)</th>
+                    <th className="px-5 py-4 text-right label-eyebrow text-white/60">kg/painel</th>
                   </tr>
                 </thead>
                 <tbody>
                   {telasSoldadas.map((t, i) => (
-                    <tr key={t.tipo} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-4 py-2.5 font-semibold text-brand-navy">{t.tipo}</td>
-                      <td className="px-4 py-2.5 text-center text-brand-gray-medium">{t.malha}</td>
-                      <td className="px-4 py-2.5 text-center font-mono">{t.diametro}</td>
-                      <td className="px-4 py-2.5 text-center font-mono">{t.largura}</td>
-                      <td className="px-4 py-2.5 text-center font-mono">{t.comprimento}</td>
-                      <td className="px-4 py-2.5 text-right font-mono font-semibold">{t.pesoKgPainel}</td>
+                    <tr key={t.tipo} className="border-b border-hairline last:border-b-0">
+                      <td className="px-5 py-3 font-display font-semibold text-brand-navy">{t.tipo}</td>
+                      <td className="px-5 py-3 text-center text-spec text-brand-gray-medium">{t.malha}</td>
+                      <td className="px-5 py-3 text-center text-spec text-brand-navy">{t.diametro}</td>
+                      <td className="px-5 py-3 text-right text-spec font-semibold text-brand-navy">{t.pesoKgPainel}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* ══ TABELA DE REFERÊNCIA ══ */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-            <div className="bg-brand-navy/5 border-b border-gray-100 px-6 py-4">
-              <h2 className="text-xl font-bold text-brand-navy">
-                📊 Tabela de Peso do Vergalhão — CA-50 (ABNT NBR 7480)
-              </h2>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-brand-navy text-white">
-                    <th className="px-4 py-3 text-left font-semibold">Bitola</th>
-                    <th className="px-4 py-3 text-left font-semibold">Fração</th>
-                    <th className="px-4 py-3 text-right font-semibold">Peso (kg/m)</th>
-                    <th className="px-4 py-3 text-right font-semibold">Barra 12 m (kg)</th>
-                    <th className="px-4 py-3 text-right font-semibold">Barras / tonelada</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {diametros.map((d, i) => (
-                    <tr key={d.mm} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-4 py-2.5 font-medium text-brand-navy">{d.mm} mm</td>
-                      <td className="px-4 py-2.5 text-brand-gray-medium">{d.fracao}</td>
-                      <td className="px-4 py-2.5 text-right font-mono">{d.kgm.toFixed(3)}</td>
-                      <td className="px-4 py-2.5 text-right font-mono">{(d.kgm * 12).toFixed(2)}</td>
-                      <td className="px-4 py-2.5 text-right font-mono">{Math.round(1000 / (d.kgm * 12))}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+      {/* ══ CTA ══ */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="relative overflow-hidden bg-brand-orange rounded-2xl p-10 md:p-14 text-center">
+            <div className="absolute inset-0 bg-blueprint opacity-[0.10] pointer-events-none" aria-hidden="true" />
+            <div className="relative">
+              <span className="inline-flex items-center gap-2.5 label-eyebrow text-white/80">
+                <span className="h-px w-6 bg-white/50" aria-hidden="true" />
+                Resposta em até 2h
+              </span>
+              <h2 className="text-display-md text-white mt-5">Já calculou? Peça seu orçamento.</h2>
+              <p className="text-white/85 mt-4 max-w-xl mx-auto">
+                Envie o resultado da calculadora ou o projeto estrutural e receba o orçamento certinho — a BR Aço faz o quantitativo completo de graça.
+              </p>
+              <a
+                href="https://wa.me/556296472423?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
+                target="_blank" rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center gap-2 bg-white text-brand-orange font-semibold rounded-lg px-8 py-4 hover:bg-white/90 transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Solicitar Orçamento no WhatsApp
+              </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* ══ CTA ══ */}
-          <div className="bg-brand-orange rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white">Já calculou? Peça seu orçamento.</h2>
-            <p className="text-white/90 mt-2">
-              Envie o resultado da calculadora ou o projeto estrutural e receba o orçamento em até 2 horas.
-            </p>
-            <a
-              href="https://wa.me/556296472423?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 bg-white text-brand-orange font-bold rounded-full px-8 py-4 hover:bg-gray-100 transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Solicitar Orçamento no WhatsApp
-            </a>
+      {/* ══ CONTEÚDO / PROFESSOR ══ */}
+      <section className="pb-20 bg-background">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center gap-3">
+            <GraduationCap className="w-6 h-6 text-brand-orange" strokeWidth={1.5} />
+            <h2 className="font-display text-2xl font-bold text-brand-navy tracking-tight">Como usar (e por que funciona)</h2>
           </div>
-
-          {/* ══ CONTEÚDO SEO ══ */}
-          <div className="prose prose-sm max-w-none text-brand-gray-medium">
-            <h2 className="text-xl font-bold text-brand-navy">Como Usar a Calculadora de Vergalhão</h2>
+          <div className="mt-6 space-y-5 text-brand-gray-medium leading-relaxed">
             <p>
-              Nossa calculadora de vergalhão gratuita foi desenvolvida para engenheiros, mestres de obras e construtores de Goiânia e Goiás que precisam estimar rapidamente o peso e a quantidade de aço para seus projetos.
+              Esta calculadora foi feita para engenheiros, mestres de obra e construtores de Goiânia e Goiás estimarem
+              rapidamente o aço de um projeto — e, de quebra, <strong className="text-brand-navy">entenderem a conta por trás</strong>.
+              Tudo é calculado ao vivo: mexa nos campos e veja a fórmula se montar.
             </p>
-            <h3 className="text-lg font-semibold text-brand-navy">Calculadora de Laje</h3>
             <p>
-              Insira as dimensões da laje (largura e comprimento em metros), o espaçamento entre barras (em centímetros) e o diâmetro do vergalhão. A calculadora retorna os metros lineares totais, o peso em kg e o número de barras de 12 m necessárias, já incluindo 5% de margem para perdas no corte.
+              <strong className="text-brand-navy">Peso do aço:</strong> multiplica a quantidade de barras pelo comprimento e pela
+              massa linear (kg/m) da bitola, conforme a ABNT NBR 7480. <strong className="text-brand-navy">Quantidade de barras:</strong> divide
+              o peso total pelo peso de uma barra de 12 m. <strong className="text-brand-navy">Tela soldada:</strong> usa a área da laje + 10%
+              de transpasse, dividida pela área do painel (6 m²).
             </p>
-            <h3 className="text-lg font-semibold text-brand-navy">Calculadora de Peso</h3>
             <p>
-              Ideal para conferir o peso de um pedido específico. Informe a quantidade de barras, o comprimento de cada uma e o diâmetro. O resultado é baseado nos pesos por metro da <strong>ABNT NBR 7480</strong>.
-            </p>
-            <h3 className="text-lg font-semibold text-brand-navy">Importante</h3>
-            <p>
-              Esta calculadora fornece uma estimativa para planejamento. O quantitativo definitivo para compra deve sempre ser extraído do projeto estrutural assinado por engenheiro responsável. A BR Aço faz o quantitativo completo gratuitamente a partir do projeto.
+              <strong className="text-brand-navy">Importante:</strong> é uma estimativa para planejamento. O quantitativo definitivo de compra
+              deve sair do projeto estrutural assinado pelo engenheiro responsável — e a BR Aço faz esse quantitativo completo gratuitamente.
             </p>
           </div>
         </div>
