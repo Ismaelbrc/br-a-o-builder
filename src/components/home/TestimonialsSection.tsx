@@ -1,5 +1,6 @@
 import { Star, ExternalLink } from 'lucide-react';
-import SectionTitle from '@/components/SectionTitle';
+import SectionIntro from '@/components/SectionIntro';
+import Reveal from '@/components/Reveal';
 
 /**
  * Depoimentos reais extraídos do Google Meu Negócio.
@@ -53,15 +54,16 @@ const GoogleIcon = () => (
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-brand-gray-light">
+    <section className="py-16 sm:py-20 md:py-28 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionTitle
-          title="O que nossos clientes dizem"
-          subtitle="Avaliações reais de quem constrói com a BR Aço"
+        <SectionIntro
+          eyebrow="Quem constrói confia"
+          title="O que nossos clientes dizem."
+          description="Avaliações reais de quem constrói com a BR Aço, direto do Google."
         />
 
         {/* Google Rating Badge */}
-        <div className="flex justify-center mt-6 mb-10">
+        <div className="flex mt-8 mb-10">
           <a
             href="https://www.google.com/maps/search/BR+Aço+Aparecida+de+Goiânia"
             target="_blank"
@@ -82,53 +84,45 @@ const TestimonialsSection = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-hairline border border-hairline rounded-2xl overflow-hidden">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
-            >
-              {/* Header: Google logo + Stars */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex gap-1">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
-                </div>
-                <div className="flex items-center gap-1 text-xs text-gray-400">
-                  <GoogleIcon />
-                  <span>Google</span>
-                </div>
-              </div>
+            <Reveal key={index} delay={(index % 3) * 80}>
+              <div className="flex h-full flex-col bg-card p-7 sm:p-8">
+                {/* Aspas display gigante */}
+                <span className="font-display text-6xl leading-none text-brand-orange/20 select-none" aria-hidden="true">&ldquo;</span>
 
-              {/* Quote */}
-              <div className="relative">
-                <span className="text-3xl sm:text-4xl text-brand-orange/20 font-serif absolute -top-2 -left-1">"</span>
-                <p className="text-brand-gray-medium text-sm leading-relaxed italic pl-4">
+                <p className="text-brand-gray-dark text-[15px] leading-relaxed -mt-4 flex-1">
                   {testimonial.text}
                 </p>
-              </div>
 
-              {/* Author */}
-              <div className="mt-5 sm:mt-6 flex items-center gap-3">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-brand-orange/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-brand-orange font-bold text-sm sm:text-base">
-                    {testimonial.author.charAt(0)}
-                  </span>
+                {/* Estrelas + Google */}
+                <div className="flex items-center justify-between mt-6 rule-tick pt-4">
+                  <div className="flex gap-0.5">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <GoogleIcon />
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-brand-navy">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-xs text-brand-gray-medium">
-                    {testimonial.role}{testimonial.location ? ` · ${testimonial.location}` : ''}
-                  </p>
+
+                {/* Autor */}
+                <div className="mt-5 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-brand-navy flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-display font-bold text-base">
+                      {testimonial.author.charAt(0)}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-brand-navy">
+                      {testimonial.author}
+                    </p>
+                    <p className="label-eyebrow text-brand-gray-medium mt-0.5">
+                      {testimonial.role}{testimonial.location ? ` · ${testimonial.location}` : ''}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 

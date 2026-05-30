@@ -1,5 +1,6 @@
-import { FileText, Calculator, PackageCheck, LucideIcon } from 'lucide-react';
-import SectionTitle from '@/components/SectionTitle';
+import { FileText, Calculator, PackageCheck, ArrowRight, LucideIcon } from 'lucide-react';
+import SectionIntro from '@/components/SectionIntro';
+import Reveal from '@/components/Reveal';
 
 interface Step {
   icon: LucideIcon;
@@ -30,62 +31,56 @@ const HowItWorksSection = () => {
     const orcamentoSection = document.getElementById('orcamento');
     if (orcamentoSection) {
       orcamentoSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/contato';
     }
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-brand-gray-light">
+    <section className="py-16 sm:py-20 md:py-28 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionTitle 
-          title="Simples, Rápido e Eficiente" 
-          subtitle="Veja como é fácil trabalhar com a BR Aço" 
+        <SectionIntro
+          eyebrow="Como funciona"
+          title="Do projeto ao canteiro em três passos."
+          description="Simples, rápido e sem retrabalho. Veja como é trabalhar com a BR Aço."
         />
-        
-        <div className="max-w-5xl mx-auto mt-10 sm:mt-16">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between relative gap-8 md:gap-4">
-            {steps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <div key={index} className="flex-1 text-center relative px-4 sm:px-6">
-                  {/* Step number - visible badge on mobile, watermark on desktop */}
-                  <div className="md:hidden flex items-center justify-center gap-3 mb-4">
-                    <span className="w-10 h-10 rounded-full bg-primary/10 text-primary font-bold text-xl flex items-center justify-center">
-                      {index + 1}
-                    </span>
+
+        <div className="mt-14 sm:mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            return (
+              <Reveal key={index} delay={index * 120}>
+                <div className="relative">
+                  {/* Linha de medição com tick — conecta os passos no desktop */}
+                  <div className="rule-tick pt-5">
+                    <div className="flex items-baseline justify-between">
+                      <span className="font-display text-5xl sm:text-6xl font-bold text-brand-navy tabular-nums leading-none">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
+                      <Icon className="w-7 h-7 text-brand-orange" strokeWidth={1.5} />
+                    </div>
                   </div>
-                  
-                  {/* Step number watermark - desktop only */}
-                  <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-4 text-7xl font-bold text-primary/10 select-none pointer-events-none">
-                    {index + 1}
-                  </div>
-                  
-                  {/* Icon container */}
-                  <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center mx-auto shadow-lg shadow-primary/20 relative z-10">
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  {/* Title and description */}
-                  <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-4 sm:mt-5">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm mt-2 max-w-xs mx-auto">{step.description}</p>
-                  
-                  {/* Connector line (hidden on mobile, visible on desktop) */}
-                  {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-12 left-[calc(50%+40px)] w-[calc(100%-80px)] border-t-2 border-dashed border-primary/20" />
-                  )}
+
+                  <h3 className="font-display text-xl font-semibold text-brand-navy mt-6 tracking-tight">
+                    {step.title}
+                  </h3>
+                  <p className="text-brand-gray-medium text-sm leading-relaxed mt-2 max-w-xs">
+                    {step.description}
+                  </p>
                 </div>
-              );
-            })}
-          </div>
-          
-          {/* CTA Button - full width on mobile */}
-          <div className="mt-10 sm:mt-12 text-center">
-            <button
-              onClick={scrollToOrcamento}
-              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
-            >
-              Solicitar Orçamento Agora
-            </button>
-          </div>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <div className="mt-14 sm:mt-16">
+          <button
+            onClick={scrollToOrcamento}
+            className="group inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-8 py-4 text-base sm:text-lg shadow-lg shadow-brand-orange/25 transition-all duration-300"
+          >
+            Solicitar Orçamento Agora
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          </button>
         </div>
       </div>
     </section>

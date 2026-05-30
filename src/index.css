@@ -6,45 +6,54 @@
 
 @layer base {
   :root {
-    /* BR Aço Brand Colors */
+    /* ── BR Aço — Engineering Precision palette ──────────────────────────── */
+    /* Laranja da marca (mantido) + ember para hover/detalhe de precisão */
     --brand-orange: 24 90% 54%;
     --brand-orange-hover: 24 79% 47%;
-    --brand-navy: 218 46% 20%;
-    --brand-navy-dark: 218 48% 14%;
-    --brand-gray-dark: 217 33% 17%;
-    --brand-gray-medium: 215 16% 47%;
-    --brand-gray-light: 210 40% 98%;
-    --brand-green: 142 76% 36%;
+    --brand-ember: 18 78% 42%;
+
+    /* Aço profundo — tinta e navy mais ricos e ligeiramente quentes */
+    --brand-navy: 218 42% 17%;
+    --brand-navy-dark: 220 44% 11%;
+
+    /* Neutros de concreto quentes (migrados do azul frio p/ hue ~30) */
+    --brand-gray-dark: 30 8% 18%;
+    --brand-gray-medium: 30 6% 42%;
+    --brand-gray-light: 36 24% 96%;
+    --brand-green: 142 70% 34%;
     --brand-whatsapp: 142 70% 49%;
     --brand-whatsapp-hover: 142 76% 36%;
 
-    /* Semantic tokens */
-    --background: 0 0% 100%;
-    --foreground: 217 33% 17%;
+    /* ── Semantic tokens ─────────────────────────────────────────────────── */
+    /* Fundo papel quente em vez de branco puro */
+    --background: 38 33% 98%;
+    --foreground: 220 24% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 217 33% 17%;
+    --card-foreground: 220 24% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 217 33% 17%;
+    --popover-foreground: 220 24% 12%;
 
     --primary: 24 90% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 218 46% 20%;
+    --secondary: 36 24% 96%;
+    --secondary-foreground: 218 42% 17%;
 
-    --muted: 210 40% 98%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 36 20% 95%;
+    --muted-foreground: 30 6% 42%;
 
-    --accent: 218 46% 20%;
+    --accent: 218 42% 17%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    /* Hairline: borda fina de baixo contraste (motivo de engenharia) */
+    --hairline: 30 12% 86%;
+    --border: 30 14% 89%;
+    --input: 30 14% 89%;
     --ring: 24 90% 54%;
 
     --radius: 0.5rem;
@@ -60,32 +69,33 @@
   }
 
   .dark {
-    --background: 218 48% 14%;
-    --foreground: 210 40% 98%;
+    --background: 220 44% 11%;
+    --foreground: 38 33% 98%;
 
-    --card: 218 46% 20%;
-    --card-foreground: 210 40% 98%;
+    --card: 218 42% 17%;
+    --card-foreground: 38 33% 98%;
 
-    --popover: 218 46% 20%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 218 42% 17%;
+    --popover-foreground: 38 33% 98%;
 
     --primary: 24 90% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 218 30% 20%;
+    --secondary-foreground: 38 33% 98%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65.1%;
+    --muted: 218 30% 20%;
+    --muted-foreground: 30 8% 70%;
 
-    --accent: 217 33% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 218 30% 20%;
+    --accent-foreground: 38 33% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
+    --hairline: 218 24% 26%;
+    --border: 218 24% 24%;
+    --input: 218 24% 24%;
     --ring: 24 90% 54%;
   }
 }
@@ -102,6 +112,16 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    /* Aço quase imperceptível: textura de papel via gradiente sutil */
+    background-image:
+      radial-gradient(hsl(30 14% 90% / 0.5) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* Títulos display usam Space Grotesk com tracking apertado por padrão */
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -109,64 +129,141 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Escala display fluida — gigante no desktop, contida no mobile */
+  .text-display-xl {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+  }
+  .text-display-lg {
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+  .text-display-md {
+    font-size: clamp(1.625rem, 3.5vw, 2.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+
+  /* Eyebrow / labels técnicas em monoespaçada */
+  .text-spec {
+    font-family: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  .label-eyebrow {
+    font-family: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.72rem;
+    font-weight: 500;
+  }
+
+  /* Grid de blueprint — hairlines via gradiente (zero peso de asset) */
+  .bg-blueprint {
+    background-image:
+      linear-gradient(to right, hsl(var(--hairline) / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--hairline) / 0.6) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-blueprint-fine {
+    background-image:
+      linear-gradient(to right, currentColor 1px, transparent 1px),
+      linear-gradient(to bottom, currentColor 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Régua de engenharia: linha com tick inicial */
+  .rule-tick {
+    position: relative;
+    border-top: 1px solid hsl(var(--hairline));
+  }
+  .rule-tick::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 2px;
+    height: 10px;
+    transform: translateY(-50%);
+    background: hsl(var(--brand-orange));
+  }
+
+  /* Brilho metálico sutil — uso pontual (stats/hero) */
+  .bg-metal {
+    background-image:
+      linear-gradient(135deg,
+        hsl(220 44% 13%) 0%,
+        hsl(218 42% 17%) 38%,
+        hsl(218 38% 22%) 50%,
+        hsl(218 42% 17%) 62%,
+        hsl(220 44% 13%) 100%);
+  }
 }
 
-/* Custom animations */
+/* ── Motion ────────────────────────────────────────────────────────────── */
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 @keyframes pulse-ring {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.3);
-    opacity: 0;
-  }
+  0%   { transform: scale(1);   opacity: 1; }
+  100% { transform: scale(1.3); opacity: 0; }
 }
-
 @keyframes bounce-subtle {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+  animation: fade-in-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
-
 .animate-pulse-ring {
   animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
 .animate-bounce-subtle {
   animation: bounce-subtle 2s ease-in-out infinite;
 }
 
-.animation-delay-100 {
-  animation-delay: 100ms;
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+
+/* Scroll-reveal (usado pelo componente Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.animation-delay-200 {
-  animation-delay: 200ms;
-}
-
-.animation-delay-300 {
-  animation-delay: 300ms;
-}
-
-.animation-delay-400 {
-  animation-delay: 400ms;
+/* Acessibilidade: desliga toda animação para quem prefere movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

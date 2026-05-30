@@ -5,6 +5,7 @@ import {
   LucideIcon
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SectionIntro from '@/components/SectionIntro';
 
 interface ComparisonRow {
   icon: LucideIcon;
@@ -59,68 +60,57 @@ const ComparisonSection = () => {
     <section id="comparativo" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background" ref={sectionRef}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center">
-          <span className="inline-block bg-brand-orange/10 text-brand-orange text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-            COMPARATIVO
-          </span>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mt-3 sm:mt-4">
-            Por que as maiores construtoras escolhem a BR Aço?
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg text-brand-gray-medium text-center mt-2 sm:mt-3 max-w-2xl mx-auto">
-            Veja lado a lado como nos comparamos com outros fornecedores do mercado
-          </p>
-          <div className="w-12 sm:w-16 h-1 bg-brand-orange mx-auto mt-4 sm:mt-5 rounded-full" />
-        </div>
+        <SectionIntro
+          eyebrow="Comparativo"
+          title="Por que as maiores construtoras escolhem a BR Aço?"
+          description="Veja lado a lado como nos comparamos com outros fornecedores do mercado."
+        />
 
         {/* Desktop Table */}
-        <div 
-          className={`hidden md:block mt-14 transition-all duration-700 ${
+        <div
+          className={`hidden md:block mt-12 transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <div className="bg-brand-gray-light rounded-2xl overflow-hidden border border-border shadow-sm">
+          <div className="rounded-2xl overflow-hidden border border-hairline">
             {/* Header Row */}
-            <div className="grid grid-cols-[2fr_1.5fr_1.5fr]">
-              <div className="bg-brand-navy text-white font-semibold text-sm uppercase tracking-wider py-4 px-6 rounded-tl-2xl">
+            <div className="grid grid-cols-[2fr_1.5fr_1.5fr] bg-brand-navy">
+              <div className="text-white/90 label-eyebrow py-5 px-6">
                 Critério
               </div>
-              <div className="bg-brand-gray-dark text-white/80 font-semibold text-sm uppercase tracking-wider py-4 px-6 text-center">
+              <div className="text-white/50 label-eyebrow py-5 px-6 text-center">
                 Outros Fornecedores
               </div>
-              <div className="bg-brand-orange text-white font-bold text-sm uppercase tracking-wider py-4 px-6 text-center rounded-tr-2xl">
-                BR Aço ✓
+              <div className="text-white label-eyebrow py-5 px-6 text-center bg-brand-orange">
+                BR Aço
               </div>
             </div>
 
             {/* Data Rows */}
             {comparisonData.map((row, index) => {
               const Icon = row.icon;
-              const isEven = index % 2 === 0;
               return (
-                <div 
+                <div
                   key={index}
-                  className={`grid grid-cols-[2fr_1.5fr_1.5fr] border-b border-border last:border-b-0 transition-all duration-500 ${
+                  className={`grid grid-cols-[2fr_1.5fr_1.5fr] border-b border-hairline last:border-b-0 bg-card transition-all duration-500 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                   }`}
-                  style={{ 
-                    transitionDelay: isVisible ? `${index * 50}ms` : '0ms',
-                    backgroundColor: isEven ? 'white' : 'hsl(var(--brand-gray-light))'
-                  }}
+                  style={{ transitionDelay: isVisible ? `${index * 50}ms` : '0ms' }}
                 >
                   <div className="py-4 md:py-5 px-6 flex items-center">
-                    <Icon className="w-5 h-5 text-brand-gray-medium mr-3 flex-shrink-0" />
+                    <Icon className="w-5 h-5 text-brand-gray-medium mr-3 flex-shrink-0" strokeWidth={1.5} />
                     <span className="text-brand-navy text-sm md:text-base font-medium">
                       {row.criterion}
                     </span>
                   </div>
                   <div className="py-4 md:py-5 px-6 flex items-center justify-center text-center">
-                    <X className="w-5 h-5 text-red-400 mr-2 flex-shrink-0" />
+                    <X className="w-4 h-4 text-brand-gray-medium/50 mr-2 flex-shrink-0" />
                     <span className="text-brand-gray-medium text-sm md:text-base">
                       {row.others}
                     </span>
                   </div>
-                  <div className="py-4 md:py-5 px-6 flex items-center justify-center text-center bg-brand-orange/[0.03]">
-                    <CheckCircle className="w-5 h-5 text-brand-green mr-2 flex-shrink-0" />
+                  <div className="py-4 md:py-5 px-6 flex items-center justify-center text-center bg-brand-orange/[0.04] border-l border-hairline">
+                    <CheckCircle className="w-4 h-4 text-brand-green mr-2 flex-shrink-0" />
                     <span className="text-brand-navy text-sm md:text-base font-semibold">
                       {row.braco}
                     </span>
@@ -128,17 +118,6 @@ const ComparisonSection = () => {
                 </div>
               );
             })}
-
-            {/* Footer Row */}
-            <div className="grid grid-cols-[2fr_1.5fr_1.5fr] bg-brand-navy rounded-b-2xl">
-              <div className="py-4 px-6" />
-              <div className="py-4 px-6" />
-              <div className="py-4 px-6 text-center">
-                <span className="inline-block bg-brand-orange text-white text-xs font-bold px-4 py-1.5 rounded-full">
-                  A ESCOLHA CERTA
-                </span>
-              </div>
-            </div>
           </div>
         </div>
 

@@ -14,22 +14,27 @@ const CtaBannerSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${ctaBackground})` }}
       />
-      {/* Orange Overlay */}
-      <div className="absolute inset-0 bg-brand-orange/85" />
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+      {/* Orange Overlay + grid blueprint sutil */}
+      <div className="absolute inset-0 bg-brand-orange/90" />
+      <div className="absolute inset-0 bg-blueprint opacity-[0.10] pointer-events-none" aria-hidden="true" />
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-12 text-center">
+        <span className="inline-flex items-center gap-2.5 label-eyebrow text-white/80">
+          <span className="h-px w-6 bg-white/50" aria-hidden="true" />
+          Orçamento em 24h
+        </span>
+        <h2 className="text-display-lg text-white mt-5 text-balance max-w-3xl mx-auto">
           Pronto para acelerar sua obra?
         </h2>
-        <p className="text-sm sm:text-base md:text-lg text-white/80 mt-2 sm:mt-3 max-w-xl mx-auto">
-          Fale com nossos especialistas e receba um orçamento personalizado em até 24 horas
+        <p className="text-base sm:text-lg text-white/85 mt-4 max-w-xl mx-auto">
+          Fale com nossos especialistas e receba um orçamento personalizado em até 24 horas.
         </p>
 
-        <div className="flex flex-col w-full sm:flex-row sm:w-auto gap-3 sm:gap-4 justify-center mt-6 sm:mt-8">
+        <div className="flex flex-col w-full sm:flex-row sm:w-auto gap-3 sm:gap-4 justify-center mt-8">
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-orange font-semibold rounded-full px-6 sm:px-8 py-4 hover:bg-gray-100 shadow-lg transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-orange font-semibold rounded-lg px-8 py-4 hover:bg-white/90 shadow-lg transition-colors"
             onClick={() => setTimeout(() => analytics.whatsappClick('cta-banner'), 0)}
           >
             <MessageCircle className="w-5 h-5" />

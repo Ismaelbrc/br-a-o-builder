@@ -15,6 +15,14 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
+      },
+      letterSpacing: {
+        tightest: '-0.04em',
+        tighter: '-0.03em',
+        tight: '-0.02em',
+        widest: '0.2em',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -63,6 +71,7 @@ export default {
         brand: {
           orange: "hsl(var(--brand-orange))",
           "orange-hover": "hsl(var(--brand-orange-hover))",
+          ember: "hsl(var(--brand-ember))",
           navy: "hsl(var(--brand-navy))",
           "navy-dark": "hsl(var(--brand-navy-dark))",
           "gray-dark": "hsl(var(--brand-gray-dark))",
@@ -72,6 +81,7 @@ export default {
           whatsapp: "hsl(var(--brand-whatsapp))",
           "whatsapp-hover": "hsl(var(--brand-whatsapp-hover))",
         },
+        hairline: "hsl(var(--hairline))",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -66,12 +66,12 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background shadow-lg'
-          : 'bg-background/95 backdrop-blur-md'
+          ? 'bg-background/95 backdrop-blur-md border-b border-hairline shadow-sm'
+          : 'bg-background/90 backdrop-blur-md'
       }`}
     >
       {/* Top bar with logo and CTA - Desktop */}
-      <div className="hidden lg:block border-b border-border">
+      <div className="hidden lg:block border-b border-hairline">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo - larger */}
@@ -101,7 +101,7 @@ export default function Header() {
                 href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-wide"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full px-8 py-3 transition-colors uppercase tracking-widest"
               >
                 Fale Conosco
               </a>
@@ -123,7 +123,7 @@ export default function Header() {
                     onMouseLeave={() => setIsProductsOpen(false)}
                   >
                     <button
-                      className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide ${
+                      className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors uppercase tracking-widest ${
                         location.pathname === link.href
                           ? 'text-primary'
                           : 'text-accent hover:text-primary'
@@ -172,14 +172,14 @@ export default function Header() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide text-accent hover:text-primary"
+                    className="px-4 py-2 text-sm font-medium transition-colors uppercase tracking-widest text-accent hover:text-primary"
                   >
                     {link.name}
                   </a>
                 ) : (
                   <Link
                     to={link.href}
-                    className={`px-4 py-2 text-sm font-medium transition-colors uppercase tracking-wide ${
+                    className={`px-4 py-2 text-sm font-medium transition-colors uppercase tracking-widest ${
                       link.highlight
                         ? 'text-primary font-semibold'
                         : location.pathname === link.href
@@ -245,7 +245,7 @@ export default function Header() {
                     <div>
                       <button
                         onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
-                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-accent border-b border-border uppercase tracking-wide font-medium"
+                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-accent border-b border-hairline uppercase tracking-widest font-medium"
                       >
                         {link.name}
                         <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
@@ -272,7 +272,7 @@ export default function Header() {
                   ) : (link as any).isCalculator ? (
                     <Link
                       to={link.href}
-                      className={`flex items-center gap-2 min-h-[48px] py-3 border-b border-border text-base font-semibold ${
+                      className={`flex items-center gap-2 min-h-[48px] py-3 border-b border-hairline text-base font-semibold ${
                         location.pathname === link.href
                           ? 'text-brand-orange'
                           : 'text-brand-orange'
@@ -286,14 +286,14 @@ export default function Header() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium text-accent"
+                      className="block min-h-[48px] py-3 text-base border-b border-hairline uppercase tracking-widest font-medium text-accent"
                     >
                       {link.name}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className={`block min-h-[48px] py-3 text-base border-b border-border uppercase tracking-wide font-medium ${
+                      className={`block min-h-[48px] py-3 text-base border-b border-hairline uppercase tracking-widest font-medium ${
                         link.highlight ? 'text-primary' : 'text-accent'
                       }`}
                     >
@@ -317,7 +317,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => { setTimeout(() => analytics.whatsappClick('header'), 0); setIsMobileMenuOpen(false); }}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-wide text-center block"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-h-[48px] py-4 transition-colors uppercase tracking-widest text-center block"
               >
                 Fale Conosco
               </a>

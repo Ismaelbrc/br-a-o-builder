@@ -76,22 +76,24 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      className="py-12 sm:py-16 md:py-20"
-      style={{ backgroundColor: 'hsl(var(--brand-navy))' }}
+      className="relative py-14 sm:py-20 md:py-24 bg-metal overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {/* Grid de blueprint sutil sobre o metal */}
+      <div className="absolute inset-0 bg-blueprint opacity-[0.06] pointer-events-none" aria-hidden="true" />
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 sm:gap-8">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
-              className={`text-center ${index < stats.length - 1 ? 'lg:border-r lg:border-white/10' : ''}`}
+            <div
+              key={index}
+              className={`text-center sm:text-left ${index < stats.length - 1 ? 'lg:border-r lg:border-white/10 lg:pr-8' : ''}`}
             >
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-orange">
+              <div className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-brand-orange tabular-nums tracking-tight">
                 <AnimatedCounter stat={stat} isVisible={isVisible} />
               </div>
-              <p className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wider mt-2 font-medium">
+              <p className="label-eyebrow text-white/55 mt-3">
                 {stat.label}
               </p>
             </div>

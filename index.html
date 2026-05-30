@@ -8,10 +8,18 @@
     <link rel="shortcut icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Fonts: Space Grotesk (display) — preconnect + swap para não bloquear LCP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
+
     <!-- www/http → canonical redirect (must run before any analytics) -->
     <script>
       (function() {
         var h = window.location.hostname;
+        // Nunca redirecionar em desenvolvimento local
+        if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return;
         if (h === 'www.grupobraco.com.br' || window.location.protocol === 'http:') {
           window.location.replace(
             'https://grupobraco.com.br' + window.location.pathname + window.location.search + window.location.hash

@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/SectionTitle';
+import SectionIntro from '@/components/SectionIntro';
 
 const partners = [
   'Opus',
@@ -21,28 +21,29 @@ const partners = [
 
 const PartnersSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-background">
+    <section className="py-16 sm:py-20 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <SectionTitle
-          title="Confiam em Nós"
-          subtitle="Construtoras e incorporadoras que escolhem a BR Aço como parceira"
+        <SectionIntro
+          eyebrow="Parceiros"
+          title="Construtoras que constroem com a BR Aço."
         />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8 sm:mt-12">
+        {/* Logo-wall em folha hairline */}
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-px bg-hairline border border-hairline rounded-2xl overflow-hidden">
           {partners.map((partner) => (
             <div
               key={partner}
-              className="bg-background border border-border rounded-xl px-4 py-6 flex items-center justify-center hover:border-primary/30 hover:shadow-md transition-all duration-300"
+              className="bg-card px-4 py-8 flex items-center justify-center transition-colors hover:bg-secondary"
             >
-              <span className="text-sm sm:text-base font-bold text-foreground text-center leading-tight">
+              <span className="font-display text-base sm:text-lg font-semibold text-brand-navy/70 text-center leading-tight">
                 {partner}
               </span>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground text-sm mt-8">
-          E muitos outros parceiros que confiam na qualidade BR Aço para suas obras.
+        <p className="label-eyebrow text-brand-gray-medium mt-8">
+          E muitos outros parceiros que confiam na qualidade BR Aço
         </p>
       </div>
     </section>

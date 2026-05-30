@@ -32,7 +32,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background pt-12 pb-8 sm:pt-16 border-t border-border">
+    <footer className="bg-background pt-12 pb-8 sm:pt-16 border-t border-hairline">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* Navigation Column */}
           <div>
-            <h3 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="label-eyebrow text-brand-navy mb-5">
               Navegação
             </h3>
             <ul className="space-y-1">
@@ -98,7 +98,7 @@ export default function Footer() {
 
           {/* Products Column */}
           <div>
-            <h3 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="label-eyebrow text-brand-navy mb-5">
               Produtos
             </h3>
             <ul className="space-y-1">
@@ -117,7 +117,7 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-4">
+            <h3 className="label-eyebrow text-brand-navy mb-5">
               Contato
             </h3>
             <ul className="space-y-3">
@@ -150,7 +150,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="border-t border-hairline mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs">
             © 2026 BR Aço — Grupo BR Aço. Todos os direitos reservados.
           </p>
