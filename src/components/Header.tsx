@@ -122,7 +122,8 @@ export default function Header() {
                     onMouseEnter={() => setIsProductsOpen(true)}
                     onMouseLeave={() => setIsProductsOpen(false)}
                   >
-                    <button
+                    <Link
+                      to={link.href}
                       className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors uppercase tracking-widest ${
                         location.pathname === link.href
                           ? 'text-primary'
@@ -131,7 +132,7 @@ export default function Header() {
                     >
                       {link.name}
                       <ChevronDown className={`w-4 h-4 transition-transform ${isProductsOpen ? 'rotate-180' : ''}`} />
-                    </button>
+                    </Link>
 
                     {/* Dropdown */}
                     {isProductsOpen && (
@@ -243,13 +244,21 @@ export default function Header() {
                 <div key={link.name}>
                   {link.hasDropdown ? (
                     <div>
-                      <button
-                        onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
-                        className="flex items-center justify-between w-full min-h-[48px] py-3 text-base text-accent border-b border-hairline uppercase tracking-widest font-medium"
-                      >
-                        {link.name}
-                        <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
-                      </button>
+                      <div className="flex items-center justify-between w-full border-b border-hairline">
+                        <Link
+                          to={link.href}
+                          className="flex-1 min-h-[48px] py-3 text-base text-accent uppercase tracking-widest font-medium flex items-center"
+                        >
+                          {link.name}
+                        </Link>
+                        <button
+                          onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
+                          className="min-w-[48px] min-h-[48px] flex items-center justify-center text-accent"
+                          aria-label="Expandir produtos"
+                        >
+                          <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                      </div>
                       {isMobileProductsOpen && (
                         <div className="pl-4 py-2 space-y-1 bg-secondary">
                           {productLinks.map((product) => (
