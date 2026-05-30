@@ -1,96 +1,38 @@
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
 import {
-  Flame,
-  Truck,
-  Cpu,
-  TrendingUp,
-  Award,
-  Home,
-  ShieldCheck,
-  Headphones,
-  PiggyBank,
-  Target,
-  CreditCard
+  Flame, Truck, Cpu, TrendingUp, Award, Home, ShieldCheck,
+  Headphones, PiggyBank, Target, CreditCard, ChevronRight, ArrowRight, LucideIcon
 } from 'lucide-react';
 import Layout from '@/components/Layout';
-import SectionTitle from '@/components/SectionTitle';
+import Eyebrow from '@/components/Eyebrow';
+import SectionIntro from '@/components/SectionIntro';
+import Reveal from '@/components/Reveal';
 import StatsSection from '@/components/home/StatsSection';
-import aboutHero from '@/assets/about-hero.png';
 import { useSEO } from '@/hooks/useSEO';
 
-// Timeline data
-const timelineItems = [
-  {
-    icon: Flame,
-    title: "Fundação na Pandemia",
-    description: "Em um dos momentos mais desafiadores da história, sócios jovens e inovadores fundaram a BR Aço com a missão de transformar a construção civil de Goiás."
-  },
-  {
-    icon: Truck,
-    title: "Primeiras Entregas",
-    description: "Os primeiros pedidos foram entregues, construindo uma reputação de agilidade e qualidade que se tornaria a marca registrada da empresa."
-  },
-  {
-    icon: Cpu,
-    title: "Automação Total da Produção",
-    description: "Investimento massivo em máquinas de última geração, tornando a produção 100% automatizada com precisão milimétrica."
-  },
-  {
-    icon: TrendingUp,
-    title: "Scale-UP 2022",
-    description: "Reconhecida como uma das empresas mais promissoras e inovadoras do estado de Goiás no programa Scale-UP."
-  },
-  {
-    icon: Award,
-    title: "Maior de Goiás",
-    description: "Consolidação como a maior e melhor indústria de aço para construção civil do estado, com centenas de colaboradores."
-  },
-  {
-    icon: Home,
-    title: "+10 Mil Casas Construídas",
-    description: "Marco histórico: mais de 10 mil casas em Goiás foram construídas com aço BR Aço, transformando o sonho da casa própria em realidade para milhares de famílias."
-  }
+interface TimelineItem { icon: LucideIcon; marco: string; title: string; description: string; }
+const timelineItems: TimelineItem[] = [
+  { icon: Flame, marco: '2020 · Origem', title: "Fundação na Pandemia", description: "Em um dos momentos mais desafiadores da história, sócios jovens e inovadores fundaram a BR Aço com a missão de transformar a construção civil de Goiás." },
+  { icon: Truck, marco: 'Primeiros pedidos', title: "Primeiras Entregas", description: "Os primeiros pedidos foram entregues, construindo uma reputação de agilidade e qualidade que se tornaria a marca registrada da empresa." },
+  { icon: Cpu, marco: 'Tecnologia', title: "Automação Total da Produção", description: "Investimento massivo em máquinas de última geração, tornando a produção 100% automatizada com precisão milimétrica." },
+  { icon: TrendingUp, marco: '2022 · Scale-UP', title: "Reconhecimento estadual", description: "Reconhecida como uma das empresas mais promissoras e inovadoras do estado de Goiás no programa Scale-UP." },
+  { icon: Award, marco: 'Liderança', title: "Maior de Goiás", description: "Consolidação como a maior e melhor indústria de aço para construção civil do estado, com centenas de colaboradores." },
+  { icon: Home, marco: 'Hoje', title: "+10 Mil Casas Construídas", description: "Mais de 10 mil casas em Goiás foram construídas com aço BR Aço, transformando o sonho da casa própria em realidade para milhares de famílias." },
 ];
 
-// Differentials data
-const differentials = [
-  {
-    icon: Truck,
-    title: "Entrega Garantida",
-    description: "Produtos prontos entregues em até 2 dias úteis. Para o serviço de Corte e Dobra, o prazo é de até 7 dias úteis. Pontualidade é compromisso."
-  },
-  {
-    icon: Cpu,
-    title: "Produção Automatizada",
-    description: "Máquinas de ponta operando com automação total, garantindo uniformidade, rastreabilidade e padrão de qualidade em cada peça produzida."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Certificação ABNT NBR 7480/2007",
-    description: "Todos os nossos produtos são fabricados em conformidade com as normas técnicas brasileiras, assegurando segurança estrutural."
-  },
-  {
-    icon: Headphones,
-    title: "Atendimento Técnico Personalizado",
-    description: "Engenheiros e técnicos especializados acompanham cada etapa da sua obra, desde o projeto até a entrega final."
-  },
-  {
-    icon: PiggyBank,
-    title: "Economia Real",
-    description: "O serviço de Corte e Dobra pode reduzir em até 50% os custos com mão de obra, além de eliminar desperdício de material."
-  },
-  {
-    icon: Target,
-    title: "Desperdício Zero",
-    description: "Cada peça é fabricada sob medida, conforme o projeto estrutural. Eliminação total de sobras e custos extras."
-  },
-  {
-    icon: CreditCard,
-    title: "Parcelamento Facilitado",
-    description: "Aceitamos pagamento em até 10x no cartão de crédito. Investir na sua obra com condições que cabem no seu planejamento."
-  }
+interface Diff { icon: LucideIcon; title: string; description: string; tag: string; }
+const differentials: Diff[] = [
+  { icon: Truck, title: "Entrega Garantida", description: "Produtos prontos em até 2 dias úteis. Para Corte e Dobra, até 7 dias úteis. Pontualidade é compromisso.", tag: "2 dias" },
+  { icon: Cpu, title: "Produção Automatizada", description: "Máquinas de ponta com automação total, garantindo uniformidade, rastreabilidade e padrão em cada peça.", tag: "100% auto" },
+  { icon: ShieldCheck, title: "Certificação ABNT", description: "Todos os produtos fabricados conforme a NBR 7480/2007, assegurando segurança estrutural.", tag: "NBR 7480" },
+  { icon: Headphones, title: "Atendimento Técnico", description: "Engenheiros e técnicos especializados acompanham cada etapa da obra, do projeto à entrega.", tag: "Consultivo" },
+  { icon: PiggyBank, title: "Economia Real", description: "O Corte e Dobra reduz em até 50% os custos com mão de obra e elimina desperdício de material.", tag: "−50%" },
+  { icon: Target, title: "Desperdício Zero", description: "Cada peça é fabricada sob medida, conforme o projeto. Eliminação total de sobras e custos extras.", tag: "0% perda" },
+  { icon: CreditCard, title: "Parcelamento Facilitado", description: "Pagamento em até 10x no cartão de crédito. Investir na obra com condições que cabem no planejamento.", tag: "Até 10×" },
 ];
+
+const WHATSAPP = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
 export default function Sobre() {
   useSEO({
@@ -102,192 +44,157 @@ export default function Sobre() {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section 
-        className="py-16 md:py-20"
-        style={{ backgroundColor: 'hsl(var(--brand-navy))' }}
-      >
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Breadcrumb */}
-          <nav className="text-sm text-gray-400 mb-6">
+      {/* ══ HERO ══ */}
+      <section className="relative bg-metal overflow-hidden">
+        <div className="absolute inset-0 bg-blueprint opacity-[0.10] pointer-events-none" aria-hidden="true" />
+        <span className="absolute top-24 right-6 z-10 hidden lg:flex items-center gap-2 text-white/40" aria-hidden="true">
+          <span className="label-eyebrow">EST. 2020 · GO</span>
+          <span className="h-3 w-3 border border-white/40 rounded-full relative">
+            <span className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 h-1 w-1 bg-brand-orange rounded-full" />
+          </span>
+        </span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+          <nav className="flex items-center gap-2 label-eyebrow text-white/40 mb-10" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <span className="mx-2">›</span>
-            <span className="text-white">Sobre</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+            <span className="text-white/70">Sobre</span>
           </nav>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Sobre a BR Aço
+          <Eyebrow tone="light">Sobre a BR Aço</Eyebrow>
+          <h1 className="text-display-xl text-white mt-6 max-w-[16ch]">
+            Nascemos do aço. Nos move o <span className="text-primary">progresso.</span>
           </h1>
-          <p className="text-xl text-gray-300 mt-4 max-w-2xl">
-            Construindo casas e vidas com simplicidade e energia
+          <p className="text-lg text-white/75 mt-6 max-w-2xl">
+            Construindo casas e vidas com simplicidade e energia — da crise de 2020 à maior indústria de
+            corte e dobra de vergalhão de Goiás.
           </p>
         </div>
       </section>
 
-      {/* Manifesto Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="flex justify-center">
-              <img 
-                src={aboutHero} 
-                alt="Logo BR Aço com vergalhões e faíscas" 
-                className="w-full max-w-sm rounded-2xl shadow-xl"
-              />
+      {/* ══ MANIFESTO ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <Eyebrow>Manifesto</Eyebrow>
+              <p className="text-display-md text-brand-navy mt-5 text-balance">
+                Não somos só uma indústria — somos uma força que transforma concreto em conquista.
+              </p>
+              <div className="mt-6 space-y-4 text-brand-gray-medium leading-relaxed">
+                <p>
+                  Fomos forjados na crise, lapidados na adversidade e hoje nos posicionamos como a maior
+                  indústria de aço para construção civil em Goiás. Porque não basta crescer — é preciso erguer juntos.
+                </p>
+                <p>
+                  Aceleramos obras. Eliminamos desperdícios. Otimizamos mão de obra. Democratizamos o acesso à alta
+                  performance na construção. E fazemos tudo isso com engenharia, automação, rastreabilidade e alma.
+                </p>
+              </div>
             </div>
 
-            {/* Text */}
-            <div className="text-center md:text-left">
-              <p className="text-xl md:text-2xl text-brand-gray-dark leading-relaxed font-light">
-                "Nós nascemos do aço — mas o que nos move é o progresso."
+            {/* Painel metal+blueprint com a frase-âncora (substitui imagem de 2,5MB) */}
+            <div className="relative rounded-2xl bg-metal overflow-hidden p-8 md:p-12 flex flex-col justify-center min-h-[320px] border border-hairline">
+              <div className="absolute inset-0 bg-blueprint opacity-[0.10]" aria-hidden="true" />
+              <span className="absolute top-5 left-5 h-3 w-3 border-l-2 border-t-2 border-white/30" aria-hidden="true" />
+              <span className="absolute bottom-5 right-5 h-3 w-3 border-r-2 border-b-2 border-white/30" aria-hidden="true" />
+              <p className="relative font-display text-3xl md:text-4xl font-bold text-white leading-tight tracking-tight">
+                Entregamos <span className="text-brand-orange">confiança, velocidade e inovação.</span>
               </p>
-
-              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-                Não somos apenas uma indústria: somos uma força que transforma o concreto 
-                em conquista, a estrutura em segurança, o projeto em realização.
-              </p>
-
-              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-                Fomos forjados na crise, lapidados na adversidade e hoje nos posicionamos 
-                como a maior indústria de aço para construção civil em Goiás. Porque não 
-                basta crescer — é preciso erguer juntos.
-              </p>
-
-              <p className="text-lg text-brand-gray-medium leading-relaxed mt-6">
-                Aceleramos obras. Eliminamos desperdícios. Otimizamos mão de obra. 
-                Democratizamos o acesso à alta performance na construção. E fazemos tudo 
-                isso com engenharia, automação, rastreabilidade e alma.
-              </p>
-
-              <p className="mt-10 text-3xl md:text-4xl font-bold text-brand-orange leading-tight">
-                "Entregamos confiança, velocidade e inovação."
-              </p>
-
-              <div className="w-20 h-1 bg-brand-orange mt-6 rounded-full md:mx-0 mx-auto" />
+              <span className="relative label-eyebrow text-white/45 mt-6">BR Aço · Goiás · desde 2020</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section (reutilizado da Home) */}
+      {/* ══ STATS (metal — reutilizado) ══ */}
       <StatsSection />
 
-      {/* Timeline Section */}
-      <section className="py-20 md:py-24 bg-brand-gray-light">
-        <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle
-            title="Nossa Trajetória"
-            subtitle="De uma ideia ousada à maior indústria de aço de Goiás"
+      {/* ══ TRAJETÓRIA (timeline editorial) ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-background">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Nossa trajetória"
+            title="De uma ideia ousada à maior indústria de aço de Goiás."
           />
-
-          <div className="max-w-4xl mx-auto mt-12 relative">
-            {/* Vertical Line - Desktop: center, Mobile: left */}
-            <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-brand-orange/20" />
-
-            {/* Timeline Items */}
-            <div className="space-y-8 md:space-y-12">
-              {timelineItems.map((item, index) => {
-                const isEven = index % 2 === 0;
-                const Icon = item.icon;
-
-                return (
-                  <div 
-                    key={index}
-                    className={`relative flex items-start md:items-center ${
-                      isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                    }`}
-                  >
-                    {/* Dot on line */}
-                    <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-orange border-4 border-brand-gray-light z-10" />
-
-                    {/* Spacer for mobile */}
-                    <div className="w-12 md:hidden" />
-
-                    {/* Card */}
-                    <div className={`flex-1 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                      <div className={`bg-white rounded-xl p-6 shadow-sm border border-gray-100 max-w-md ${
-                        isEven ? 'md:ml-auto' : ''
-                      }`}>
-                        <div className={`w-10 h-10 rounded-lg bg-brand-orange/10 flex items-center justify-center mb-3 ${
-                          isEven ? 'md:ml-auto' : ''
-                        }`}>
-                          <Icon className="w-5 h-5 text-brand-orange" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-brand-navy">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-brand-gray-medium mt-1 leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Spacer for desktop */}
-                    <div className="hidden md:block flex-1" />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Differentials Section */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <SectionTitle
-            title="Nossos Diferenciais"
-            subtitle="O que nos torna a escolha certa para a sua obra"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-5xl mx-auto">
-            {differentials.map((diff, index) => {
-              const Icon = diff.icon;
+          <div className="mt-12 sm:mt-16">
+            {timelineItems.map((item, index) => {
+              const Icon = item.icon;
               return (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-orange/20 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-brand-orange/10 flex items-center justify-center mb-5 group-hover:bg-brand-orange transition-colors">
-                    <Icon className="w-7 h-7 text-brand-orange group-hover:text-white transition-colors" />
+                <Reveal key={index} delay={(index % 2) * 80}>
+                  <div className="grid grid-cols-[auto_1fr] gap-5 sm:gap-10 border-t border-hairline first:border-t-0 py-7 sm:py-9 rule-tick group">
+                    <span className="font-display text-4xl sm:text-6xl font-bold text-brand-navy/12 tabular-nums leading-none w-[1.6em]">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <div>
+                      <div className="flex items-center gap-3">
+                        <Icon className="w-5 h-5 text-brand-orange" strokeWidth={1.5} />
+                        <span className="label-eyebrow text-brand-gray-medium">{item.marco}</span>
+                      </div>
+                      <h3 className="font-display text-xl sm:text-2xl font-semibold text-brand-navy mt-3 tracking-tight">{item.title}</h3>
+                      <p className="text-brand-gray-medium text-sm sm:text-base leading-relaxed mt-2 max-w-2xl">{item.description}</p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                    {diff.title}
-                  </h3>
-                  <p className="text-brand-gray-medium text-sm leading-relaxed">
-                    {diff.description}
-                  </p>
-                </div>
+                </Reveal>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-brand-orange">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white">
-            Conheça nossas soluções
-          </h2>
+      {/* ══ DIFERENCIAIS ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Diferenciais"
+            title="O que nos torna a escolha certa para a sua obra."
+          />
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {differentials.map((diff, index) => {
+              const Icon = diff.icon;
+              return (
+                <Reveal key={index} delay={(index % 3) * 70}>
+                  <div className="group relative h-full bg-card rounded-2xl border border-hairline p-7 hover:border-brand-orange/40 transition-colors">
+                    <span className="absolute top-5 right-6 font-display text-3xl font-bold text-brand-navy/10 tabular-nums">{String(index + 1).padStart(2, '0')}</span>
+                    <Icon className="w-7 h-7 text-brand-orange" strokeWidth={1.5} />
+                    <h3 className="font-display text-lg font-semibold text-brand-navy mt-5 tracking-tight">{diff.title}</h3>
+                    <p className="text-brand-gray-medium text-sm leading-relaxed mt-2">{diff.description}</p>
+                    <span className="label-eyebrow text-brand-gray-medium mt-5 inline-block rule-tick pt-3">{diff.tag}</span>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Link
-              to="/produtos"
-              className="bg-white text-brand-orange font-semibold rounded-full px-8 py-4 hover:bg-gray-100 transition-colors text-center"
-            >
-              Ver Produtos
-            </Link>
-            <a
-              href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setTimeout(() => analytics.whatsappClick('sobre'), 0)}
-              className="border-2 border-white text-white font-semibold rounded-full px-8 py-4 hover:bg-white hover:text-brand-orange transition-colors text-center"
-            >
-              Solicitar Orçamento
-            </a>
+      {/* ══ CTA ══ */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="relative overflow-hidden bg-brand-orange rounded-2xl p-10 md:p-14 text-center">
+            <div className="absolute inset-0 bg-blueprint opacity-[0.10] pointer-events-none" aria-hidden="true" />
+            <div className="relative">
+              <span className="inline-flex items-center gap-2.5 label-eyebrow text-white/80">
+                <span className="h-px w-6 bg-white/50" aria-hidden="true" />
+                Vamos construir juntos
+              </span>
+              <h2 className="text-display-md text-white mt-5">Conheça nossas soluções.</h2>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Link
+                  to="/produtos"
+                  className="group inline-flex items-center justify-center gap-2 bg-white text-brand-orange font-semibold rounded-lg px-8 py-4 hover:bg-white/90 transition-colors"
+                >
+                  Ver Produtos
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+                <a
+                  href={WHATSAPP}
+                  target="_blank" rel="noopener noreferrer"
+                  onClick={() => setTimeout(() => analytics.whatsappClick('sobre'), 0)}
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-semibold rounded-lg px-8 py-4 hover:bg-white hover:text-brand-orange transition-colors"
+                >
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
