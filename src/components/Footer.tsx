@@ -41,9 +41,9 @@ export default function Footer() {
               <img
                 src={logoImage}
                 alt="BR.AÇO - Seus projetos na velocidade máxima"
-                className="h-24 w-auto"
-                width="1024"
-                height="1536"
+                className="h-16 w-auto"
+                width="1920"
+                height="440"
                 loading="lazy"
               />
             </Link>

@@ -80,8 +80,8 @@ export default function Header() {
                 src={logoImage}
                 alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-16 w-auto"
-                width="981"
-                height="197"
+                width="1920"
+                height="440"
                 fetchPriority="high"
               />
             </Link>
@@ -206,8 +206,8 @@ export default function Header() {
                 src={logoImage}
                 alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-10 w-auto"
-                width="981"
-                height="197"
+                width="1920"
+                height="440"
                 fetchPriority="high"
               />
             </Link>
