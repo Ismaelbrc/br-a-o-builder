@@ -41,21 +41,21 @@ const socios: Socio[] = [
   {
     name: 'Ismael Cavalcante',
     role: 'CEO · Diretor Comercial',
-    bio: 'Lidera a estratégia comercial e o crescimento da BR Aço, aproximando a indústria de aço de cada obra — de grandes construtoras ao autoconstrutor — pela Grande Goiânia e todo o interior de Goiás.',
+    bio: 'Formado em Finanças pela FGV, foi analista sênior de Private Equity no Santander e Diretor de Operações na SOMOS Educação — P&L de US$ 42 milhões e times de +50 pessoas. Hoje, CEO e Diretor Comercial da BR Aço.',
     photo: '/socios/ismael.jpg',
     linkedin: 'https://www.linkedin.com/in/ismael-cavalcante-a2359211/',
   },
   {
     name: 'Daniel Mortoni',
     role: 'CFO · Diretor de Tecnologia',
-    bio: 'Responsável pela gestão financeira e pela transformação tecnológica da BR Aço, conduzindo a automação da produção e os sistemas que garantem rastreabilidade e precisão em cada peça.',
+    bio: 'Administração pela USP, com passagem por bancos de investimento (Haitong, BESI) e mercado de capitais no Nubank. Cofundou a Sua Oficina Online — maior marketplace automotivo do Brasil, adquirido pela Mobiauto. Na BR Aço, CFO e Diretor de Tecnologia.',
     photo: '/socios/daniel.jpg',
     linkedin: 'https://www.linkedin.com/in/danielmortoni/',
   },
   {
     name: 'Felipe Rodrigues Ferreira',
     role: 'COO · Diretor de Pessoas',
-    bio: 'Comanda as operações e a gestão de pessoas da BR Aço, garantindo que produção, logística e equipe trabalhem afinadas para entregar no prazo, com segurança e qualidade.',
+    bio: 'Formado em Administração pela FGV, passou por revenue management e inteligência de negócios na LATAM Airlines e pelo empreendedorismo antes de cofundar a BR Aço. Como COO, comanda operações, logística e a gestão de pessoas.',
     photo: '/socios/felipe.jpg',
     linkedin: 'https://www.linkedin.com/in/felipe-rodrigues-ferreira-71458120/',
   },
@@ -99,6 +99,34 @@ function SocioCard({ s, index }: { s: Socio; index: number }) {
         </a>
       </div>
     </Reveal>
+  );
+}
+
+// Animação sketch (SVG line-art): os três sócios chegando e dando as mãos.
+// Pura SVG + CSS — ~0 peso, anima ao entrar na viewport, respeita prefers-reduced-motion.
+function SociosSketch() {
+  const W = '#FFFFFF', O = '#F2740F';
+  const fig = (cls: string, cx: number, armTo: [number, number]) => {
+    const armStart = cx < 300 ? cx + 16 : cx > 300 ? cx - 16 : cx - 12;
+    return (
+      <g className={cls}>
+        <circle cx={cx} cy={78} r={15} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} />
+        <path d={`M${cx - 20} 110 Q${cx} 100 ${cx + 20} 110`} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} strokeLinecap="round" />
+        <line x1={cx} y1={104} x2={cx} y2={166} className="draw" pathLength={1} stroke={W} strokeWidth={2.4} strokeLinecap="round" />
+        <path d={`M${cx} 166 L${cx - 12} 196 M${cx} 166 L${cx + 12} 196`} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} strokeLinecap="round" />
+        <path d={`M${armStart} 118 L${armTo[0]} ${armTo[1]}`} className="draw" pathLength={1} fill="none" stroke={O} strokeWidth={2.6} strokeLinecap="round" />
+      </g>
+    );
+  };
+  return (
+    <svg viewBox="0 0 600 230" className="socios-sketch w-full h-full" role="img" aria-label="Os três sócios da BR Aço chegando e apertando as mãos">
+      <line x1={70} y1={205} x2={530} y2={205} className="draw" pathLength={1} stroke={W} strokeOpacity={0.18} strokeWidth={1.5} />
+      {fig('fig-l', 120, [288, 150])}
+      {fig('fig-r', 480, [312, 150])}
+      {fig('fig-c', 300, [300, 142])}
+      <circle cx={300} cy={150} r={12} className="pulse" fill="none" stroke={O} strokeWidth={2} />
+      <circle cx={300} cy={150} r={9} className="node" fill={O} />
+    </svg>
   );
 }
 
@@ -185,7 +213,20 @@ export default function Sobre() {
             title="Os sócios que tocam a BR Aço."
             description="Três sócios, uma obsessão: transformar a construção civil de Goiás com engenharia, tecnologia e gente."
           />
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+          {/* Animação sketch — os três chegando e dando as mãos */}
+          <Reveal className="mt-12">
+            <div className="relative rounded-2xl bg-metal overflow-hidden border border-hairline">
+              <div className="absolute inset-0 bg-blueprint opacity-[0.10]" aria-hidden="true" />
+              <span className="absolute top-4 left-5 label-eyebrow text-white/40">Sociedade · est. 2020</span>
+              <span className="absolute top-4 right-5 label-eyebrow text-white/40 hidden sm:block">Goiás · Brasil</span>
+              <div className="relative h-[220px] sm:h-[260px]">
+                <SociosSketch />
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5">
             {socios.map((s, i) => <SocioCard key={s.name} s={s} index={i} />)}
           </div>
         </div>
