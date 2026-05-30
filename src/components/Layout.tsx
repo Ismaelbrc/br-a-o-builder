@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import WhatsAppButton from './WhatsAppButton';
 import BackToTopButton from './BackToTopButton';
+import ExitIntentPopup from './ExitIntentPopup';
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,6 +19,7 @@ export default function Layout({ children }: LayoutProps) {
       <Footer />
       <WhatsAppButton />
       <BackToTopButton />
+      <ExitIntentPopup />
     </div>
   );
 }
