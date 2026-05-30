@@ -2,15 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import SectionIntro from '@/components/SectionIntro';
 import Reveal from '@/components/Reveal';
-import imgCorteDobra from '@/assets/products/corte-e-dobra.jpg';
-import imgVergalhoes from '@/assets/products/vergalhoes.jpg';
-import imgTrelicas from '@/assets/products/trelicas.jpg';
-import imgTelas from '@/assets/products/telas-malhas.jpg';
-import imgColunas from '@/assets/products/colunas.jpg';
-import imgPregos from '@/assets/products/pregos-arames.jpg';
+import ProductBlueprint, { BlueprintKey } from '@/components/ProductBlueprint';
 
 interface Product {
-  image: string;
+  blueprint: BlueprintKey;
   code: string;
   name: string;
   description: string;
@@ -20,7 +15,7 @@ interface Product {
 
 const products: Product[] = [
   {
-    image: imgCorteDobra,
+    blueprint: "corte-e-dobra",
     code: "01",
     name: "Corte e Dobra",
     description: "Aço sob medida. Reduza 50% da mão de obra e elimine desperdício.",
@@ -28,35 +23,35 @@ const products: Product[] = [
     isHighlighted: true
   },
   {
-    image: imgVergalhoes,
+    blueprint: "vergalhoes",
     code: "02",
     name: "Vergalhões",
     description: "CA-50 e CA-60 dentro da norma ABNT para estruturas seguras.",
     link: "/produtos#vergalhoes"
   },
   {
-    image: imgTrelicas,
+    blueprint: "trelicas",
     code: "03",
     name: "Treliças",
     description: "TR08 a TR30. Reduzem escoramento e agilizam a montagem de lajes.",
     link: "/produtos#trelicas"
   },
   {
-    image: imgTelas,
+    blueprint: "telas-e-malhas-pop",
     code: "04",
     name: "Telas e Malhas Pop",
     description: "Malhas soldadas para pisos, lajes e contenções com aplicação rápida.",
     link: "/produtos#telas-e-malhas-pop"
   },
   {
-    image: imgColunas,
+    blueprint: "colunas",
     code: "05",
     name: "Colunas Prontas",
     description: "Armação pronta para pilares. Zero amarração manual em obra.",
     link: "/produtos#colunas"
   },
   {
-    image: imgPregos,
+    blueprint: "pregos-e-arames",
     code: "06",
     name: "Pregos e Arames",
     description: "Arame recozido e pregos para formas e amarrações diversas.",
@@ -85,18 +80,12 @@ const ProductsSection = () => {
                     : 'border-hairline hover:border-brand-orange/40'
                 }`}
               >
-                {/* Imagem */}
+                {/* Blueprint técnico (sem foto estática) */}
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/60 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 label-eyebrow text-white/80 text-spec">{product.code}</span>
+                  <ProductBlueprint id={product.blueprint} />
+                  <span className="absolute top-4 left-4 label-eyebrow text-white/60 text-spec z-10">{product.code}</span>
                   {product.isHighlighted && (
-                    <span className="absolute top-4 right-4 bg-brand-orange text-white label-eyebrow px-3 py-1.5 rounded-full">
+                    <span className="absolute top-4 right-4 bg-brand-orange text-white label-eyebrow px-3 py-1.5 rounded-full z-10">
                       Carro-chefe
                     </span>
                   )}
