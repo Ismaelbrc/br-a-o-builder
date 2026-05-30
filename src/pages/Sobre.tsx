@@ -60,8 +60,9 @@ export default function Sobre() {
             <span className="text-white/70">Sobre</span>
           </nav>
           <Eyebrow tone="light">Sobre a BR Aço</Eyebrow>
-          <h1 className="text-display-xl text-white mt-6 max-w-[16ch]">
-            Nascemos do aço. Nos move o <span className="text-primary">progresso.</span>
+          <h1 className="text-display-xl text-white mt-6 max-w-[20ch]">
+            Nascemos do aço.<br />
+            <span className="text-primary">O progresso nos move.</span>
           </h1>
           <p className="text-lg text-white/75 mt-6 max-w-2xl">
             Construindo casas e vidas com simplicidade e energia — da crise de 2020 à maior indústria de
