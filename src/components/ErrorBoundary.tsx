@@ -16,7 +16,19 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('[ErrorBoundary]', error.message, info.componentStack);
+    const msg = error?.message || '';
+    // Backstop para chunk desatualizado após deploy: recarrega 1x (guarda de 10s anti-loop).
+    const isChunkError = /dynamically imported module|Loading chunk|Importing a module script failed|Loading CSS chunk|Failed to fetch/i.test(msg);
+    if (isChunkError) {
+      const now = Date.now();
+      const last = Number(sessionStorage.getItem('chunkReloadAt') || '0');
+      if (now - last > 10000) {
+        sessionStorage.setItem('chunkReloadAt', String(now));
+        window.location.reload();
+        return;
+      }
+    }
+    console.error('[ErrorBoundary]', msg, info.componentStack);
     // Ping Clarity so errored sessions get flagged for review
     if (typeof (window as unknown as Record<string, unknown>).clarity === 'function') {
       (window as unknown as Record<string, (...a: unknown[]) => void>).clarity('event', 'app_error');

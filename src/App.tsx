@@ -21,25 +21,46 @@ function ScrollToTop() {
   return null;
 }
 
+// Recupera automaticamente de "chunk desatualizado" após um novo deploy:
+// se um import dinâmico falhar (o arquivo antigo sumiu do servidor), recarrega
+// a página 1x para buscar o index.html novo + os chunks válidos.
+// Guarda de 10s evita loop infinito se o chunk realmente não existir.
+function lazyWithRetry<T extends React.ComponentType<unknown>>(importer: () => Promise<{ default: T }>) {
+  return lazy(async () => {
+    try {
+      return await importer();
+    } catch (err) {
+      const now = Date.now();
+      const last = Number(sessionStorage.getItem('chunkReloadAt') || '0');
+      if (now - last > 10000) {
+        sessionStorage.setItem('chunkReloadAt', String(now));
+        window.location.reload();
+        return await new Promise<{ default: T }>(() => {}); // segura até recarregar
+      }
+      throw err;
+    }
+  });
+}
+
 // ── Lazy-loaded pages — each route gets its own JS chunk ──────────────────────
-const Index               = lazy(() => import('./pages/Index'));
-const Sobre               = lazy(() => import('./pages/Sobre'));
-const Produtos            = lazy(() => import('./pages/Produtos'));
-const CorteEDobra         = lazy(() => import('./pages/CorteEDobra'));
-const Blog                = lazy(() => import('./pages/Blog'));
-const BlogPost            = lazy(() => import('./pages/BlogPost'));
-const Contato             = lazy(() => import('./pages/Contato'));
-const Cliente             = lazy(() => import('./pages/Cliente'));
-const Galeria             = lazy(() => import('./pages/Galeria'));
-const Faq                 = lazy(() => import('./pages/Faq'));
-const CalculadoraVergalhao = lazy(() => import('./pages/CalculadoraVergalhao'));
-const LandingPage         = lazy(() => import('./pages/LandingPage'));
-const Meta                = lazy(() => import('./pages/Meta'));
-const Orcamento           = lazy(() => import('./pages/Orcamento'));
-const NotFound            = lazy(() => import('./pages/NotFound'));
-const TebasLanding        = lazy(() => import('./pages/Tebas/index'));
-const TebasCalcular       = lazy(() => import('./pages/Tebas/Calcular'));
-const TebasResultado      = lazy(() => import('./pages/Tebas/Resultado'));
+const Index               = lazyWithRetry(() => import('./pages/Index'));
+const Sobre               = lazyWithRetry(() => import('./pages/Sobre'));
+const Produtos            = lazyWithRetry(() => import('./pages/Produtos'));
+const CorteEDobra         = lazyWithRetry(() => import('./pages/CorteEDobra'));
+const Blog                = lazyWithRetry(() => import('./pages/Blog'));
+const BlogPost            = lazyWithRetry(() => import('./pages/BlogPost'));
+const Contato             = lazyWithRetry(() => import('./pages/Contato'));
+const Cliente             = lazyWithRetry(() => import('./pages/Cliente'));
+const Galeria             = lazyWithRetry(() => import('./pages/Galeria'));
+const Faq                 = lazyWithRetry(() => import('./pages/Faq'));
+const CalculadoraVergalhao = lazyWithRetry(() => import('./pages/CalculadoraVergalhao'));
+const LandingPage         = lazyWithRetry(() => import('./pages/LandingPage'));
+const Meta                = lazyWithRetry(() => import('./pages/Meta'));
+const Orcamento           = lazyWithRetry(() => import('./pages/Orcamento'));
+const NotFound            = lazyWithRetry(() => import('./pages/NotFound'));
+const TebasLanding        = lazyWithRetry(() => import('./pages/Tebas/index'));
+const TebasCalcular       = lazyWithRetry(() => import('./pages/Tebas/Calcular'));
+const TebasResultado      = lazyWithRetry(() => import('./pages/Tebas/Resultado'));
 // ─────────────────────────────────────────────────────────────────────────────
 
 const queryClient = new QueryClient();
