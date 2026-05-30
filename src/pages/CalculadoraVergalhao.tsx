@@ -107,13 +107,13 @@ export default function CalculadoraVergalhao() {
   const [qtdBarras, setQtdBarras] = useState('50');
   const [compBarra, setCompBarra] = useState('12');
   const [grauPeso, setGrauPeso] = useState<'CA-50' | 'CA-60'>('CA-50');
-  const [diametroPeso, setDiametroPeso] = useState('10.0');
+  const [diametroPeso, setDiametroPeso] = useState('10');
   const tabelaPeso = grauPeso === 'CA-50' ? diametros : diametrosCA60;
 
   // ── Calc 2: Quantidade por peso ──
   const [pesoEntrada, setPesoEntrada] = useState('1000');
   const [grauQtd, setGrauQtd] = useState<'CA-50' | 'CA-60'>('CA-50');
-  const [diametroQtd, setDiametroQtd] = useState('10.0');
+  const [diametroQtd, setDiametroQtd] = useState('10');
   const tabelaQtd = grauQtd === 'CA-50' ? diametros : diametrosCA60;
 
   // ── Calc 3: Tela soldada ──
