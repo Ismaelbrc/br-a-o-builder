@@ -1,0 +1,23 @@
+FOTOS DOS SÓCIOS — Galeria da página /sobre
+============================================
+
+Coloque as 3 fotos AQUI nesta pasta (public/socios/), com estes nomes EXATOS:
+
+   ismael.jpg
+   daniel.jpg
+   felipe.jpg
+
+Ordem que você enviou no chat: 1ª = daniel, 2ª = felipe, 3ª = ismael.
+
+- Pode ser a foto original (o Claude otimiza e aplica o efeito sketch depois).
+- Ideal: rosto de frente, formato quadrado, ~600x600px.
+- Formato .jpg (ou .png — se usar png, avise para ajustar o código).
+
+Depois de salvar:
+   git add public/socios
+   git commit -m "fotos socios"
+   git push
+
+Ou só avise o Claude que os arquivos já estão na pasta.
+
+Este arquivo (LEIA-ME.txt) pode ser apagado depois.
