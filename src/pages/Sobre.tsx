@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
 import {
   Flame, Truck, Cpu, TrendingUp, Award, Home, ShieldCheck,
-  Headphones, PiggyBank, Target, CreditCard, ChevronRight, ArrowRight, LucideIcon
+  Headphones, PiggyBank, Target, CreditCard, ChevronRight, ArrowRight, Linkedin, LucideIcon
 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import Eyebrow from '@/components/Eyebrow';
@@ -33,6 +34,73 @@ const differentials: Diff[] = [
 ];
 
 const WHATSAPP = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+
+// ── Sócios / Liderança ───────────────────────────────────────────────────────
+interface Socio { name: string; role: string; bio: string; photo: string; linkedin: string; }
+const socios: Socio[] = [
+  {
+    name: 'Ismael Cavalcante',
+    role: 'CEO · Diretor Comercial',
+    bio: 'Lidera a estratégia comercial e o crescimento da BR Aço, aproximando a indústria de aço de cada obra — de grandes construtoras ao autoconstrutor — pela Grande Goiânia e todo o interior de Goiás.',
+    photo: '/socios/ismael.jpg',
+    linkedin: 'https://www.linkedin.com/in/ismael-cavalcante-a2359211/',
+  },
+  {
+    name: 'Daniel Mortoni',
+    role: 'CFO · Diretor de Tecnologia',
+    bio: 'Responsável pela gestão financeira e pela transformação tecnológica da BR Aço, conduzindo a automação da produção e os sistemas que garantem rastreabilidade e precisão em cada peça.',
+    photo: '/socios/daniel.jpg',
+    linkedin: 'https://www.linkedin.com/in/danielmortoni/',
+  },
+  {
+    name: 'Felipe Rodrigues Ferreira',
+    role: 'COO · Diretor de Pessoas',
+    bio: 'Comanda as operações e a gestão de pessoas da BR Aço, garantindo que produção, logística e equipe trabalhem afinadas para entregar no prazo, com segurança e qualidade.',
+    photo: '/socios/felipe.jpg',
+    linkedin: 'https://www.linkedin.com/in/felipe-rodrigues-ferreira-71458120/',
+  },
+];
+
+function SocioCard({ s, index }: { s: Socio; index: number }) {
+  const [imgOk, setImgOk] = useState(true);
+  const initials = s.name.split(' ').filter(Boolean).map(w => w[0]).slice(0, 2).join('');
+  return (
+    <Reveal delay={index * 80}>
+      <div className="group h-full bg-card rounded-2xl border border-hairline p-6 sm:p-7 hover:border-brand-orange/40 transition-colors">
+        <div className="relative w-24 h-24 rounded-2xl overflow-hidden bg-metal border border-hairline">
+          <div className="absolute inset-0 bg-blueprint opacity-[0.15]" aria-hidden="true" />
+          {imgOk ? (
+            <img
+              src={s.photo}
+              alt={s.name}
+              loading="lazy"
+              width="96"
+              height="96"
+              className="relative w-full h-full object-cover"
+              onError={() => setImgOk(false)}
+            />
+          ) : (
+            <div className="relative w-full h-full flex items-center justify-center font-display text-2xl font-bold text-brand-orange">
+              {initials}
+            </div>
+          )}
+        </div>
+        <span className="label-eyebrow text-brand-orange mt-5 block">{s.role}</span>
+        <h3 className="font-display text-xl font-semibold text-brand-navy mt-1.5 tracking-tight">{s.name}</h3>
+        <p className="text-brand-gray-medium text-sm leading-relaxed mt-3">{s.bio}</p>
+        <a
+          href={s.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-5 label-eyebrow text-brand-gray-medium hover:text-brand-orange transition-colors rule-tick pt-3"
+        >
+          <Linkedin className="w-4 h-4" />
+          Ver no LinkedIn
+        </a>
+      </div>
+    </Reveal>
+  );
+}
 
 export default function Sobre() {
   useSEO({
@@ -108,6 +176,20 @@ export default function Sobre() {
 
       {/* ══ STATS (metal — reutilizado) ══ */}
       <StatsSection />
+
+      {/* ══ LIDERANÇA / SÓCIOS ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Liderança"
+            title="Os sócios que tocam a BR Aço."
+            description="Três sócios, uma obsessão: transformar a construção civil de Goiás com engenharia, tecnologia e gente."
+          />
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {socios.map((s, i) => <SocioCard key={s.name} s={s} index={i} />)}
+          </div>
+        </div>
+      </section>
 
       {/* ══ TRAJETÓRIA (timeline editorial) ══ */}
       <section className="py-16 sm:py-20 md:py-28 bg-background">
