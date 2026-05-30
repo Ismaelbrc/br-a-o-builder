@@ -66,8 +66,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/95 backdrop-blur-md border-b border-hairline shadow-sm'
-          : 'bg-background/90 backdrop-blur-md'
+          ? 'bg-background border-b border-hairline shadow-sm'
+          : 'bg-background'
       }`}
     >
       {/* Top bar with logo and CTA - Desktop */}
