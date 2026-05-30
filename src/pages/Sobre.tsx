@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
 import {
@@ -36,97 +35,65 @@ const differentials: Diff[] = [
 const WHATSAPP = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
 // ── Sócios / Liderança ───────────────────────────────────────────────────────
-interface Socio { name: string; role: string; bio: string; photo: string; linkedin: string; }
+interface Socio { name: string; role: string; bio: string; id: string; linkedin: string; }
 const socios: Socio[] = [
   {
     name: 'Ismael Cavalcante',
     role: 'CEO · Diretor Comercial',
     bio: 'Formado em Finanças pela FGV, foi analista sênior de Private Equity no Santander e Diretor de Operações na SOMOS Educação — P&L de US$ 42 milhões e times de +50 pessoas. Hoje, CEO e Diretor Comercial da BR Aço.',
-    photo: '/socios/ismael.jpg',
+    id: 'ismael',
     linkedin: 'https://www.linkedin.com/in/ismael-cavalcante-a2359211/',
   },
   {
     name: 'Daniel Mortoni',
     role: 'CFO · Diretor de Tecnologia',
     bio: 'Administração pela USP, com passagem por bancos de investimento (Haitong, BESI) e mercado de capitais no Nubank. Cofundou a Sua Oficina Online — maior marketplace automotivo do Brasil, adquirido pela Mobiauto. Na BR Aço, CFO e Diretor de Tecnologia.',
-    photo: '/socios/daniel.jpg',
+    id: 'daniel',
     linkedin: 'https://www.linkedin.com/in/danielmortoni/',
   },
   {
     name: 'Felipe Rodrigues Ferreira',
     role: 'COO · Diretor de Pessoas',
     bio: 'Formado em Administração pela FGV, passou por revenue management e inteligência de negócios na LATAM Airlines e pelo empreendedorismo antes de cofundar a BR Aço. Como COO, comanda operações, logística e a gestão de pessoas.',
-    photo: '/socios/felipe.jpg',
+    id: 'felipe',
     linkedin: 'https://www.linkedin.com/in/felipe-rodrigues-ferreira-71458120/',
   },
 ];
 
 function SocioCard({ s, index }: { s: Socio; index: number }) {
-  const [imgOk, setImgOk] = useState(true);
-  const initials = s.name.split(' ').filter(Boolean).map(w => w[0]).slice(0, 2).join('');
+  const color = `/socios/${s.id}-color.jpg`;
+  const sketch = `/socios/${s.id}-sketch.jpg`;
   return (
     <Reveal delay={index * 80}>
-      <div className="group h-full bg-card rounded-2xl border border-hairline p-6 sm:p-7 hover:border-brand-orange/40 transition-colors">
-        <div className="relative w-24 h-24 rounded-2xl overflow-hidden bg-metal border border-hairline">
-          <div className="absolute inset-0 bg-blueprint opacity-[0.15]" aria-hidden="true" />
-          {imgOk ? (
-            <img
-              src={s.photo}
-              alt={s.name}
-              loading="lazy"
-              width="96"
-              height="96"
-              className="relative w-full h-full object-cover"
-              onError={() => setImgOk(false)}
-            />
-          ) : (
-            <div className="relative w-full h-full flex items-center justify-center font-display text-2xl font-bold text-brand-orange">
-              {initials}
-            </div>
-          )}
+      <div className="group h-full bg-card rounded-2xl border border-hairline overflow-hidden hover:border-brand-orange/40 hover:-translate-y-1 transition-all duration-300">
+        {/* Foto: sketch a lápis por padrão → ganha cor no hover */}
+        <div className="relative aspect-[4/5] overflow-hidden bg-[#f3efe9]">
+          <img src={color} alt={s.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+          <img
+            src={sketch}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-out group-hover:opacity-0"
+          />
+          <span className="absolute top-4 left-4 label-eyebrow text-spec text-brand-navy/40">{String(index + 1).padStart(2, '0')}</span>
         </div>
-        <span className="label-eyebrow text-brand-orange mt-5 block">{s.role}</span>
-        <h3 className="font-display text-xl font-semibold text-brand-navy mt-1.5 tracking-tight">{s.name}</h3>
-        <p className="text-brand-gray-medium text-sm leading-relaxed mt-3">{s.bio}</p>
-        <a
-          href={s.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 mt-5 label-eyebrow text-brand-gray-medium hover:text-brand-orange transition-colors rule-tick pt-3"
-        >
-          <Linkedin className="w-4 h-4" />
-          Ver no LinkedIn
-        </a>
+        <div className="p-6">
+          <span className="label-eyebrow text-brand-orange block">{s.role}</span>
+          <h3 className="font-display text-xl font-semibold text-brand-navy mt-1.5 tracking-tight">{s.name}</h3>
+          <p className="text-brand-gray-medium text-sm leading-relaxed mt-3">{s.bio}</p>
+          <a
+            href={s.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-5 label-eyebrow text-brand-gray-medium hover:text-brand-orange transition-colors rule-tick pt-3"
+          >
+            <Linkedin className="w-4 h-4" />
+            Ver no LinkedIn
+          </a>
+        </div>
       </div>
     </Reveal>
-  );
-}
-
-// Animação sketch (SVG line-art): os três sócios chegando e dando as mãos.
-// Pura SVG + CSS — ~0 peso, anima ao entrar na viewport, respeita prefers-reduced-motion.
-function SociosSketch() {
-  const W = '#FFFFFF', O = '#F2740F';
-  const fig = (cls: string, cx: number, armTo: [number, number]) => {
-    const armStart = cx < 300 ? cx + 16 : cx > 300 ? cx - 16 : cx - 12;
-    return (
-      <g className={cls}>
-        <circle cx={cx} cy={78} r={15} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} />
-        <path d={`M${cx - 20} 110 Q${cx} 100 ${cx + 20} 110`} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} strokeLinecap="round" />
-        <line x1={cx} y1={104} x2={cx} y2={166} className="draw" pathLength={1} stroke={W} strokeWidth={2.4} strokeLinecap="round" />
-        <path d={`M${cx} 166 L${cx - 12} 196 M${cx} 166 L${cx + 12} 196`} className="draw" pathLength={1} fill="none" stroke={W} strokeWidth={2.4} strokeLinecap="round" />
-        <path d={`M${armStart} 118 L${armTo[0]} ${armTo[1]}`} className="draw" pathLength={1} fill="none" stroke={O} strokeWidth={2.6} strokeLinecap="round" />
-      </g>
-    );
-  };
-  return (
-    <svg viewBox="0 0 600 230" className="socios-sketch w-full h-full" role="img" aria-label="Os três sócios da BR Aço chegando e apertando as mãos">
-      <line x1={70} y1={205} x2={530} y2={205} className="draw" pathLength={1} stroke={W} strokeOpacity={0.18} strokeWidth={1.5} />
-      {fig('fig-l', 120, [288, 150])}
-      {fig('fig-r', 480, [312, 150])}
-      {fig('fig-c', 300, [300, 142])}
-      <circle cx={300} cy={150} r={12} className="pulse" fill="none" stroke={O} strokeWidth={2} />
-      <circle cx={300} cy={150} r={9} className="node" fill={O} />
-    </svg>
   );
 }
 
