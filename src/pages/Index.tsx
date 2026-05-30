@@ -48,8 +48,13 @@ const Index = () => {
       <section
         className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden bg-metal"
       >
-        {/* Camada 0: base de engenharia (instantânea, aparece sem/antes do vídeo) */}
-        <div className="absolute inset-0 z-0 bg-blueprint opacity-[0.12]" aria-hidden="true" />
+        {/* Camada 0: foto de fundo (poster) — base no mobile e poster instantâneo no desktop
+            até o vídeo carregar. Leve (~166KB), cena real da fábrica. */}
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/og-social.jpg)' }}
+          aria-hidden="true"
+        />
 
         {/* Camada 1: Vídeo de Fundo — apenas desktop/conexão boa (economiza ~6MB no mobile) */}
         {showHeroVideo && (
