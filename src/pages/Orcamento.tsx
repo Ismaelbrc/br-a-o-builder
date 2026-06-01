@@ -7,7 +7,7 @@ export default function Orcamento() {
   useEffect(() => {
     // LP do Google Ads: marca o visitante como 'ads' (persiste no localStorage),
     // assim qualquer WhatsApp que ele clicar depois sai com [ads]. Depois redireciona.
-    setChannel('ads');
+    setChannel('ads|g'); // LP exclusiva de Google Ads → plataforma conhecida
     window.location.replace(REDIRECT_URL);
   }, []);
 

@@ -7,7 +7,7 @@ const WHATSAPP_URL =
 
 export default function Meta() {
   useEffect(() => {
-    setChannel('ads');
+    setChannel('ads|m'); // LP exclusiva de Meta Ads → plataforma conhecida
     // Redireciona após 1.4 s e dispara pixels DENTRO do timeout
     // Assim só conta como Lead quem realmente foi redirecionado para o WhatsApp
     const timer = setTimeout(() => {
