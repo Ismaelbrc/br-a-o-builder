@@ -30,7 +30,7 @@ export default function LandingPage() {
     description: isValid ? product!.metaDesc(displayCity, stateLabel)   : '',
     canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : undefined,
     keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
-    noindex:     true, // Thin programmatic LPs — conteúdo insuficiente para indexação
+    noindex:     !location.uniqueContent, // indexa apenas LPs com conteúdo único
   });
 
   // Schemas JSON-LD: FAQPage + BreadcrumbList + LocalBusiness
@@ -232,6 +232,94 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Contexto local (só para LPs com uniqueContent) ────────────── */}
+      {location.uniqueContent && (
+        <section className="py-14 bg-brand-navy/5 border-y border-brand-navy/10">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+              {/* Contexto de mercado */}
+              <div>
+                <span className="inline-flex items-center gap-2 text-brand-orange text-xs font-semibold tracking-widest uppercase mb-3">
+                  <span className="h-px w-5 bg-brand-orange" />
+                  Mercado local
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-4">
+                  Entrega de {product.name.toLowerCase()} em {cityName}
+                </h2>
+                <p className="text-brand-gray-medium leading-relaxed text-sm sm:text-base mb-4">
+                  {location.uniqueContent.marketContext}
+                </p>
+                <div className="flex items-start gap-2 bg-white rounded-xl border border-brand-navy/10 px-4 py-3 text-sm">
+                  <MapPin className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
+                  <span className="text-brand-gray-medium">
+                    <span className="font-medium text-brand-navy">Rota de entrega:</span>{' '}
+                    Fábrica em Aparecida de Goiânia → {cityName} {location.uniqueContent.route}.
+                  </span>
+                </div>
+                <div className="flex items-start gap-2 mt-2 bg-white rounded-xl border border-brand-navy/10 px-4 py-3 text-sm">
+                  <CheckCircle className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
+                  <span className="text-brand-gray-medium">
+                    <span className="font-medium text-brand-navy">Tipos de obra atendidos:</span>{' '}
+                    {location.uniqueContent.buildingTypes}.
+                  </span>
+                </div>
+              </div>
+
+              {/* Bairros atendidos */}
+              <div>
+                <span className="inline-flex items-center gap-2 text-brand-orange text-xs font-semibold tracking-widest uppercase mb-3">
+                  <span className="h-px w-5 bg-brand-orange" />
+                  Cobertura
+                </span>
+                <h3 className="text-lg font-bold text-brand-navy mb-4">
+                  Bairros e regiões atendidos em {cityName}
+                </h3>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {location.uniqueContent.neighborhoods.map(bairro => (
+                    <span
+                      key={bairro}
+                      className="bg-white border border-brand-navy/15 text-brand-navy text-xs font-medium px-3 py-1.5 rounded-full"
+                    >
+                      {bairro}
+                    </span>
+                  ))}
+                  <span className="bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-medium px-3 py-1.5 rounded-full">
+                    + toda {cityName}
+                  </span>
+                </div>
+
+                {/* Referência de consumo por tipo de obra */}
+                <div className="bg-white rounded-xl border border-brand-navy/10 overflow-hidden mt-4">
+                  <div className="px-4 py-2.5 bg-brand-navy/5 border-b border-brand-navy/10">
+                    <p className="text-xs font-semibold text-brand-navy uppercase tracking-wide">
+                      Referência de aço por tipo de obra
+                    </p>
+                  </div>
+                  <table className="w-full text-xs">
+                    <tbody>
+                      {[
+                        { obra: 'Casa térrea 150 m²',      aco: '~1,2 ton CA-50' },
+                        { obra: 'Sobrado 250 m²',           aco: '~2,8 ton CA-50' },
+                        { obra: 'Prédio 4 pavimentos',      aco: '~8 ton CA-50/CA-60' },
+                        { obra: 'Galpão 1.000 m²',          aco: '~4 ton malha/tela' },
+                        { obra: 'Fundação em radier',        aco: '~0,8 ton/100 m²' },
+                      ].map((row, i) => (
+                        <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                          <td className="px-4 py-2 text-brand-gray-medium">{row.obra}</td>
+                          <td className="px-4 py-2 text-brand-navy font-semibold text-right">{row.aco}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  <p className="text-[10px] text-gray-400 px-4 py-2">* Referência estimada. Quantitativo exato via projeto estrutural.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Como pedir ────────────────────────────────────────────────── */}
       <section className="py-14 bg-secondary">
