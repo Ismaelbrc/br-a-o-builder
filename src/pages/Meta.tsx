@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
+import { setChannel } from '@/lib/channel';
 
 const WHATSAPP_URL =
   'https://api.whatsapp.com/send?phone=556296472423&text=' +
-  encodeURIComponent('Olá, quero saber mais da BR Aço');
+  encodeURIComponent('[ads] Olá! Quero saber mais sobre o corte e dobra da BR Aço.');
 
 export default function Meta() {
   useEffect(() => {
+    setChannel('ads');
     // Redireciona após 1.4 s e dispara pixels DENTRO do timeout
     // Assim só conta como Lead quem realmente foi redirecionado para o WhatsApp
     const timer = setTimeout(() => {

@@ -8,6 +8,7 @@ import { usePageTracking } from "@/hooks/usePageTracking";
 import { useEffect } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLoader } from "@/components/PageLoader";
+import { initChannel, channelTag } from "@/lib/channel";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
 const ConteudoRedirect = () => {
@@ -67,6 +68,30 @@ const queryClient = new QueryClient();
 
 function AppRoutes() {
   usePageTracking();
+
+  // Atribuição de canal: injeta [ads]/[org] no início de TODA mensagem de WhatsApp,
+  // reescrevendo o href no momento do clique (cobre todos os links, atuais e futuros).
+  useEffect(() => {
+    initChannel();
+    const onClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement | null)?.closest?.('a') as HTMLAnchorElement | null;
+      if (!anchor) return;
+      const href = anchor.getAttribute('href') || '';
+      if (!/wa\.me\/|api\.whatsapp\.com\/send/i.test(href)) return;
+      try {
+        const url = new URL(href, window.location.origin);
+        const text = url.searchParams.get('text') || '';
+        if (/^\s*\[(ads|org)\]/.test(text)) return; // já marcado
+        url.searchParams.set('text', `${channelTag()} ${text}`.trim());
+        anchor.setAttribute('href', url.toString());
+      } catch {
+        /* href não parseável — ignora */
+      }
+    };
+    document.addEventListener('click', onClick, true); // capture: roda antes da navegação
+    return () => document.removeEventListener('click', onClick, true);
+  }, []);
+
   return (
     <>
       <ScrollToTop />

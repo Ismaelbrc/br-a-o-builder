@@ -15,11 +15,13 @@ export default function ExitIntentPopup() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem('exitShown')) return;
+    const seen = () => { try { return !!sessionStorage.getItem('exitShown'); } catch { return false; } };
+    const markSeen = () => { try { sessionStorage.setItem('exitShown', '1'); } catch { /* storage bloqueado */ } };
+    if (seen()) return;
     const mountedAt = Date.now();
     const onLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && Date.now() - mountedAt > 4000 && !sessionStorage.getItem('exitShown')) {
-        sessionStorage.setItem('exitShown', '1');
+      if (e.clientY <= 0 && Date.now() - mountedAt > 4000 && !seen()) {
+        markSeen();
         setOpen(true);
         analytics.clarityEvent('exit_intent_shown');
       }
