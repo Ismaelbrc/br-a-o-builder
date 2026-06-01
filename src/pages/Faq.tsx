@@ -1,11 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Layout from '@/components/Layout';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useSEO } from '@/hooks/useSEO';
+import { Search, MessageCircle, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { analytics } from '@/lib/analytics';
+
+const WHATSAPP = 'https://wa.me/556296472423?text=%5Bsrc%3Afaq%5D%20Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20produtos%20da%20BR%20A%C3%A7o.';
 
 const faqCategories = [
   {
+    id: 'corte-dobra',
     title: 'Corte e Dobra',
+    icon: '⚙️',
     faqs: [
       {
         question: 'Quais são as principais vantagens de utilizar Corte e Dobra na construção?',
@@ -30,7 +37,9 @@ const faqCategories = [
     ],
   },
   {
+    id: 'vergalhoes',
     title: 'Vergalhões',
+    icon: '🔩',
     faqs: [
       {
         question: 'Quais são os principais tipos de vergalhões e como são aplicados na construção civil?',
@@ -55,7 +64,9 @@ const faqCategories = [
     ],
   },
   {
+    id: 'trelicas',
     title: 'Treliças',
+    icon: '🏗️',
     faqs: [
       {
         question: 'O que são treliças e qual a sua importância nas construções?',
@@ -76,7 +87,9 @@ const faqCategories = [
     ],
   },
   {
+    id: 'telas-malhas',
     title: 'Telas e Malhas',
+    icon: '🪢',
     faqs: [
       {
         question: 'Quais são as principais dicas para garantir uma instalação eficiente de telas em obras?',
@@ -97,41 +110,9 @@ const faqCategories = [
     ],
   },
   {
-    title: 'Pregos e Arames',
-    faqs: [
-      {
-        question: 'O que são os pregos e arames utilizados na construção e qual a sua importância?',
-        answer: 'Os pregos e arames são elementos fundamentais na construção civil. Os pregos são usados para fixação rápida de materiais, como madeira e chapas. Já os arames, geralmente de aço, são utilizados para amarração, ligando estruturas e reforçando instalações. Ambos garantem a estabilidade e segurança das construções, facilitando o processo de montagem.',
-      },
-      {
-        question: 'Qual a diferença entre o arame recozido e o arame galvanizado?',
-        answer: 'O arame recozido é tratado para ser flexível, ideal para aplicações que exigem curvaturas, como construção e cercas. Já o galvanizado é revestido com zinco, proporcionando resistência à corrosão, tornando-o perfeito para ambientes expostos a umidade. Em resumo, escolha o recozido para flexibilidade e o galvanizado para durabilidade.',
-      },
-      {
-        question: 'Quais são algumas dicas eficazes para armazenar pregos e arames, evitando a oxidação?',
-        answer: 'Para armazenar pregos e arames sem oxidação, mantenha-os em local fresco e seco, longe da umidade. Utilize recipientes hermeticamente fechados, como caixas plásticas ou latas. Aplique uma leve camada de óleo protetivo nos metais. Se possível, adicione dessecantes, como sílica gel, para absorver a umidade do ambiente.',
-      },
-    ],
-  },
-  {
-    title: 'Fundações e Sapatas',
-    faqs: [
-      {
-        question: 'Qual a diferença entre sapatas e blocos de fundação?',
-        answer: 'As sapatas são elementos de fundação que distribuem as cargas das estruturas para o solo, podendo ser isoladas ou contínuas. São indicadas para edifícios de um ou dois andares. Já os blocos de fundação são estruturas de concreto que suportam cargas de lajes, distribuindo-as na base do alicerce. Ambos são essenciais, mas têm funções específicas no suporte da construção.',
-      },
-      {
-        question: 'Quais são as melhores dicas para evitar recalques em sapatas?',
-        answer: 'Para evitar recalques em sapatas, comece realizando um bom estudo do solo, garantindo que as fundações estejam adequadas às suas características. Utilize materiais de qualidade e faça uma drenagem eficiente para evitar acúmulo de água. Distribua as cargas de maneira uniforme para evitar tensões excessivas. Considere a compactação do solo e o dimensionamento correto das sapatas.',
-      },
-      {
-        question: 'Quais são os erros mais comuns na construção de sapatas de fundação?',
-        answer: 'Os erros comuns nas sapatas de fundação incluem subdimensionamento, falta de drenagem adequada, escolha errada de materiais e má execução da concretagem. Para evitar esses problemas, é fundamental realizar um estudo do solo, dimensionar corretamente as sapatas, garantir um sistema de drenagem eficiente e seguir as boas práticas de execução.',
-      },
-    ],
-  },
-  {
-    title: 'Normas Técnicas e Qualidade',
+    id: 'normas',
+    title: 'Normas e Qualidade',
+    icon: '📋',
     faqs: [
       {
         question: 'Quais são as principais normas técnicas que regem o uso de malhas estruturais?',
@@ -152,23 +133,21 @@ const faqCategories = [
     ],
   },
   {
-    title: 'Transporte e Armazenamento',
+    id: 'logistica',
+    title: 'Entrega e Logística',
+    icon: '🚚',
     faqs: [
       {
         question: 'Quais são as melhores práticas para transportar vergalhões com segurança?',
         answer: 'Transportar vergalhões com segurança exige atenção a vários fatores. Comece utilizando veículos adequados e com capacidade para o peso. Use cintas ou cordas para fixar os vergalhões, evitando movimentos indesejados. Além disso, verifique se há sinalização apropriada do carregamento, e sempre utilize Equipamentos de Proteção Individual (EPIs).',
       },
       {
-        question: 'Quais cuidados ao transportar telas e colunas de aço?',
-        answer: 'Ao transportar telas e colunas de aço, é fundamental utilizar suportes adequados que estabilizem as estruturas, evitando que se dobrem ou se danifiquem. Proteja os cantos e arestas com almofadas ou outros materiais macios. Mantenha as colunas na posição vertical e as telas planas, evitando sobrecargas que possam comprometer a integridade dos materiais.',
+        question: 'Como montar um cronograma eficiente para a entrega de aço em uma obra?',
+        answer: 'Para montar um cronograma de entrega de aço, comece listando as necessidades do projeto, com datas de início e término. Depois, conecte-se com fornecedores de aço para entender seus prazos de produção e logística. Por fim, alinhe a entrega ao avanço da obra, considerando folgas para imprevistos. Isso garantirá eficiência e evitará atrasos.',
       },
       {
         question: 'Qual é a melhor maneira de armazenar bobinas em uma obra?',
         answer: 'Para armazenar bobinas em uma obra, é fundamental mantê-las em local seco e bem ventilado, longe de umidade que pode causar corrosão. Utilize suportes adequados que evitem o contato direto com o solo e possibilitem fácil acesso. Sinalize a área para evitar danos e organize-as por tipo e tamanho.',
-      },
-      {
-        question: 'Como montar um cronograma eficiente para a entrega de aço em uma obra?',
-        answer: 'Para montar um cronograma de entrega de aço, comece listando as necessidades do projeto, com datas de início e término. Depois, conecte-se com fornecedores de aço para entender seus prazos de produção e logística. Por fim, alinhe a entrega ao avanço da obra, considerando folgas para imprevistos. Isso garantirá eficiência e evitará atrasos.',
       },
     ],
   },
@@ -182,8 +161,10 @@ export default function Faq() {
     keywords: 'dúvidas vergalhão, faq corte e dobra, perguntas aço construção, abnt vergalhão',
   });
 
+  const [search, setSearch] = useState('');
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
   useEffect(() => {
-    // Flat list of all FAQs for FAQPage schema
     const allFaqs = faqCategories.flatMap(cat => cat.faqs);
     const schema = {
       "@context": "https://schema.org",
@@ -202,43 +183,199 @@ export default function Faq() {
     return () => { document.getElementById('faq-page-schema')?.remove(); };
   }, []);
 
+  const filteredCategories = useMemo(() => {
+    const term = search.toLowerCase().trim();
+    return faqCategories
+      .filter(cat => !activeCategory || cat.id === activeCategory)
+      .map(cat => ({
+        ...cat,
+        faqs: cat.faqs.filter(faq =>
+          !term ||
+          faq.question.toLowerCase().includes(term) ||
+          faq.answer.toLowerCase().includes(term)
+        ),
+      }))
+      .filter(cat => cat.faqs.length > 0);
+  }, [search, activeCategory]);
+
+  const totalResults = filteredCategories.reduce((sum, cat) => sum + cat.faqs.length, 0);
+  const hasFilter = search.trim() !== '' || activeCategory !== null;
+
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-brand-navy pt-28 pb-16 sm:pt-36 sm:pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+      <section className="relative bg-brand-navy overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-24">
+        {/* Background grid pattern */}
+        <div className="absolute inset-0 opacity-[0.04]" aria-hidden="true"
+          style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        {/* Orange accent bar */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-brand-orange" aria-hidden="true" />
+
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <span className="inline-flex items-center gap-2 text-brand-orange text-xs font-semibold tracking-widest uppercase mb-4">
+            <span className="h-px w-6 bg-brand-orange" />
+            Central de Ajuda
+            <span className="h-px w-6 bg-brand-orange" />
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
             Perguntas Frequentes
           </h1>
-          <p className="text-brand-gray-light mt-4 text-base sm:text-lg max-w-2xl mx-auto">
-            Encontre respostas para as dúvidas mais comuns sobre nossos produtos e serviços
+          <p className="text-white/60 mt-4 text-base sm:text-lg max-w-xl mx-auto">
+            Encontre respostas rápidas sobre vergalhões, corte e dobra, normas ABNT e logística de aço.
           </p>
+
+          {/* Search */}
+          <div className="relative mt-8 max-w-xl mx-auto">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40 pointer-events-none" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Buscar pergunta..."
+              className="w-full bg-white/10 border border-white/15 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-brand-orange focus:bg-white/15 transition-all"
+              aria-label="Buscar perguntas frequentes"
+            />
+          </div>
         </div>
       </section>
 
-      {/* FAQ Content */}
-      <section className="py-12 sm:py-20">
+      {/* Category Chips */}
+      <div className="sticky top-16 lg:top-20 z-30 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="space-y-10">
-            {faqCategories.map((category) => (
-              <div key={category.title}>
-                <h2 className="text-xl sm:text-2xl font-bold text-brand-navy mb-4">
-                  {category.title}
-                </h2>
-                <Accordion type="single" collapsible className="w-full">
-                  {category.faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`${category.title}-${index}`}>
-                      <AccordionTrigger className="text-left text-sm sm:text-base">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
+          <div className="flex gap-2 overflow-x-auto py-3 scrollbar-hide">
+            <button
+              onClick={() => setActiveCategory(null)}
+              className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+                activeCategory === null
+                  ? 'bg-brand-navy text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              Todos
+            </button>
+            {faqCategories.map(cat => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(prev => prev === cat.id ? null : cat.id)}
+                className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  activeCategory === cat.id
+                    ? 'bg-brand-orange text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                <span aria-hidden="true">{cat.icon}</span>
+                {cat.title}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Content */}
+      <section className="py-12 sm:py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+          {/* Results count when filtering */}
+          {hasFilter && (
+            <p className="text-sm text-gray-500 mb-6">
+              {totalResults === 0
+                ? 'Nenhuma pergunta encontrada.'
+                : `${totalResults} pergunta${totalResults !== 1 ? 's' : ''} encontrada${totalResults !== 1 ? 's' : ''}`
+              }
+              {' '}
+              <button
+                onClick={() => { setSearch(''); setActiveCategory(null); }}
+                className="text-brand-orange hover:underline"
+              >
+                Limpar filtros
+              </button>
+            </p>
+          )}
+
+          {totalResults === 0 && (
+            <div className="text-center py-16">
+              <p className="text-gray-400 text-lg mb-2">Nenhuma pergunta encontrada para "{search}"</p>
+              <p className="text-gray-400 text-sm">
+                Tente outros termos ou{' '}
+                <a
+                  href={WHATSAPP}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-orange hover:underline"
+                  onClick={() => setTimeout(() => analytics.whatsappClick('faq-no-results'), 0)}
+                >
+                  fale com a gente pelo WhatsApp
+                </a>
+                .
+              </p>
+            </div>
+          )}
+
+          <div className="space-y-8">
+            {filteredCategories.map((category) => (
+              <div key={category.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                {/* Category header */}
+                <div className="flex items-center gap-3 px-6 py-4 border-b border-gray-100 bg-gray-50/50">
+                  <span className="text-xl" aria-hidden="true">{category.icon}</span>
+                  <h2 className="text-base sm:text-lg font-bold text-brand-navy">
+                    {category.title}
+                  </h2>
+                  <span className="ml-auto text-xs text-gray-400 font-medium">
+                    {category.faqs.length} pergunta{category.faqs.length !== 1 ? 's' : ''}
+                  </span>
+                </div>
+
+                <div className="px-6 py-2">
+                  <Accordion type="single" collapsible className="w-full">
+                    {category.faqs.map((faq, index) => (
+                      <AccordionItem
+                        key={index}
+                        value={`${category.id}-${index}`}
+                        className="border-b border-gray-100 last:border-0"
+                      >
+                        <AccordionTrigger className="text-left text-sm sm:text-base font-medium text-brand-navy hover:text-brand-orange py-4 [&[data-state=open]]:text-brand-orange">
+                          {faq.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-gray-600 text-sm sm:text-base leading-relaxed pb-4">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-brand-navy py-14 sm:py-16">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-white">
+            Não encontrou o que precisava?
+          </h2>
+          <p className="text-white/60 mt-3 text-sm sm:text-base">
+            Nossa equipe técnica responde em minutos pelo WhatsApp.
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setTimeout(() => analytics.whatsappClick('faq-cta'), 0)}
+              className="inline-flex items-center justify-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsapp-hover text-white font-semibold rounded-xl px-6 py-3.5 transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Perguntar pelo WhatsApp
+            </a>
+            <Link
+              to="/contato"
+              className="inline-flex items-center justify-center gap-2 border border-white/20 text-white/80 hover:text-white hover:border-white/40 font-medium rounded-xl px-6 py-3.5 transition-colors text-sm"
+            >
+              Ou enviar por formulário
+              <ChevronRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

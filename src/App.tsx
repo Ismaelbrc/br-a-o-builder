@@ -8,7 +8,7 @@ import { usePageTracking } from "@/hooks/usePageTracking";
 import { useEffect } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLoader } from "@/components/PageLoader";
-import { initChannel, channelTag } from "@/lib/channel";
+import { initChannel, channelTag, geoTag, fetchGeo } from "@/lib/channel";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
 const ConteudoRedirect = () => {

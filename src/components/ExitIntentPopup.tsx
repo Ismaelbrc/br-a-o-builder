@@ -18,16 +18,27 @@ export default function ExitIntentPopup() {
     const seen = () => { try { return !!sessionStorage.getItem('exitShown'); } catch { return false; } };
     const markSeen = () => { try { sessionStorage.setItem('exitShown', '1'); } catch { /* storage bloqueado */ } };
     if (seen()) return;
-    const mountedAt = Date.now();
-    const onLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && Date.now() - mountedAt > 4000 && !seen()) {
-        markSeen();
-        setOpen(true);
-        analytics.clarityEvent('exit_intent_shown');
-      }
-    };
-    document.addEventListener('mouseleave', onLeave);
-    return () => document.removeEventListener('mouseleave', onLeave);
+
+    const isMobile = () => window.innerWidth < 1024 || ('ontouchstart' in window);
+
+    if (isMobile()) {
+      // Mobile / Instagram App: 94% do tráfego.
+      // Timer de 35s — aparece quando o usuário está lendo mas ainda não converteu.
+      const timer = setTimeout(() => {
+        if (!seen()) { markSeen(); setOpen(true); analytics.clarityEvent('exit_intent_shown'); }
+      }, 35000);
+      return () => clearTimeout(timer);
+    } else {
+      // Desktop: cursor saindo pelo topo (exit-intent clássico), mín 4s na página.
+      const mountedAt = Date.now();
+      const onLeave = (e: MouseEvent) => {
+        if (e.clientY <= 0 && Date.now() - mountedAt > 4000 && !seen()) {
+          markSeen(); setOpen(true); analytics.clarityEvent('exit_intent_shown');
+        }
+      };
+      document.addEventListener('mouseleave', onLeave);
+      return () => document.removeEventListener('mouseleave', onLeave);
+    }
   }, []);
 
   useEffect(() => {

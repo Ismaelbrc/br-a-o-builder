@@ -15,6 +15,10 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
 
+    <!-- Polyfill: silencia erro "calculadora is not defined" em iOS WebKit/WKWebView
+         que tenta chamar funções globais que não existem no nosso SPA. -->
+    <script>window.calculadora = window.calculadora || function(){}; window.deliverylabel = window.deliverylabel || function(){};</script>
+
     <!-- www/http → canonical redirect (must run before any analytics) -->
     <script>
       (function() {

@@ -52,30 +52,44 @@
         'armadura-pronta': 'o-que-e-corte-e-dobra-de-aco'
       };
 
-      // Se a URL e do padrao antigo /conteudo/[slug] → redireciona para a homepage
+      var origin = window.location.protocol + '//' + window.location.host;
+
+      // Se a URL é do padrão antigo /conteudo/[slug]
       if (path.indexOf('/conteudo/') === 0) {
         var oldSlug = path.replace('/conteudo/', '').replace(/\/$/, '');
         var newSlug = slugMap[oldSlug];
-        // Se tem slug mapeado, vai para o post específico; senão, vai para a homepage
+        var canonicalPath, redirectTarget;
+
         if (newSlug === 'calculadora-vergalhao') {
-          window.location.replace(
-            window.location.protocol + '//' + window.location.host + '/?/calculadora-vergalhao'
-          );
+          canonicalPath = '/calculadora-vergalhao';
+          redirectTarget = origin + '/?/calculadora-vergalhao';
         } else if (newSlug) {
-          window.location.replace(
-            window.location.protocol + '//' + window.location.host + '/?/blog/' + newSlug
-          );
+          canonicalPath = '/blog/' + newSlug;
+          redirectTarget = origin + '/?/blog/' + newSlug;
         } else {
-          // Slug not mapped → send to blog listing (more relevant than homepage)
-          window.location.replace(
-            window.location.protocol + '//' + window.location.host + '/?/blog'
-          );
+          canonicalPath = '/blog';
+          redirectTarget = origin + '/?/blog';
         }
+
+        // Inject canonical so Googlebot understands the correct destination
+        // even before JS redirect completes
+        var link = document.createElement('link');
+        link.rel = 'canonical';
+        link.href = origin + canonicalPath;
+        document.head.appendChild(link);
+
+        // meta refresh as fallback for bots that execute limited JS
+        var meta = document.createElement('meta');
+        meta.httpEquiv = 'refresh';
+        meta.content = '0; url=' + redirectTarget;
+        document.head.appendChild(meta);
+
+        window.location.replace(redirectTarget);
         return;
       }
 
-      // SPA redirect trick padrao para GitHub Pages
-      // Converte /path/to/page em /?/path/to/page so index.html can restore it
+      // SPA redirect trick padrão para GitHub Pages:
+      // Converte /path/to/page em /?/path/to/page para index.html restaurar
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.host +
