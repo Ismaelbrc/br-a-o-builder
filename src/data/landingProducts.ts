@@ -118,31 +118,31 @@ export const landingProducts: Record<string, LandingProduct> = {
       `Coluna pronta em ${city} – ${state}. Pilar pré-montado com barras longitudinais CA-50 e estribos dobrados, entrega em até 48h. Solicite orçamento na BR Aço.`,
     h1: (city) => `Coluna Pronta em ${city} — Pilar Pré-Montado`,
     intro: (city, _state, deliveryLabel) =>
-      `A BR Aço fornece coluna pronta (gaiola de pilar pré-montada) para obras em ${city}, com ${deliveryLabel}. Cada coluna sai da fábrica com as barras longitudinais CA-50 e os estribos já dobrados e posicionados no espaçamento exato do projeto — reduzindo em até 70% o tempo de armação de pilares no canteiro. Peça pronta, chega na obra, você só posiciona e concreta.`,
+      `A BR Aço fornece coluna pronta — armadura de pilar pré-montada — para obras em ${city}, com ${deliveryLabel}. Cada peça sai da fábrica com as barras longitudinais CA-50 e os estribos já dobrados com ganchos de 135°, posicionados no espaçamento exato do projeto estrutural. No canteiro, a equipe só posiciona a armadura na forma, adiciona o concreto e concreta — reduzindo em até 70% o tempo de armação de pilares.`,
     features: [
-      { icon: '🏗️', title: 'Gaiolas prontas', desc: 'Barras longitudinais + estribos montados e amarrados conforme o projeto do engenheiro.' },
-      { icon: '📐', title: 'Espaçamento exato', desc: 'Estribos posicionados conforme NBR 6118 — espaçamento de emenda reduzido automaticamente.' },
-      { icon: '⚡', title: 'Montagem 70% mais rápida', desc: 'A equipe só posiciona e concreta — sem cortar, dobrar ou amarrar estribos no canteiro.' },
-      { icon: '📏', title: 'Qualquer seção', desc: 'Colunas para seções de 10×10 cm até 60×80 cm e maiores.' },
-      { icon: '📜', title: 'Conformidade NBR', desc: 'Produção conforme NBR 6118 e NBR 7480. Laudo disponível.' },
-      { icon: '🚚', title: 'Entrega programada', desc: 'Colunas entregues por etapa de obra para facilitar a logística no canteiro.' },
+      { icon: '🏗️', title: 'Armadura de pilar pronta', desc: 'Barras longitudinais CA-50 + estribos dobrados e amarrados conforme o detalhamento estrutural.' },
+      { icon: '📐', title: 'Espaçamento NBR 6118', desc: 'Estribos posicionados conforme a norma — espaçamento reduzido nas regiões de emenda calculado automaticamente.' },
+      { icon: '⚡', title: 'Armação 70% mais rápida', desc: 'A equipe só posiciona a armadura na forma e concreta — sem cortar, dobrar ou amarrar estribos no canteiro.' },
+      { icon: '📏', title: 'Qualquer seção transversal', desc: 'Produzimos armaduras de pilar para seções de 10×10 cm até 60×80 cm e maiores, conforme o projeto.' },
+      { icon: '📜', title: 'Laudo NBR 7480 incluso', desc: 'Aço CA-50 e CA-60 com certificado de qualidade em cada lote. Produção conforme NBR 6118.' },
+      { icon: '🚚', title: 'Entrega por etapa de obra', desc: 'Armaduras entregues por pavimento ou etapa, identificadas por pilar, para facilitar a logística no canteiro.' },
     ],
     faq: [
       {
-        q: (city) => `Vocês fazem colunas pré-montadas para obras em ${city}?`,
-        a: (city, dl) => `Sim. A BR Aço produz gaiolas de pilar (colunas pré-montadas) conforme o projeto estrutural e entrega em ${city} ${dl}.`,
+        q: (city) => `O que é coluna pronta e como funciona para obras em ${city}?`,
+        a: (city, dl) => `"Coluna pronta" é o nome comercial da armadura de pilar pré-montada: barras longitudinais CA-50 e estribos já dobrados e posicionados conforme o projeto estrutural. A BR Aço produz e entrega em ${city} ${dl}. No canteiro, você só posiciona a armadura na forma e concreta — sem armar no local.`,
       },
       {
-        q: () => 'O que inclui a coluna pré-montada?',
-        a: () => 'A coluna inclui as barras longitudinais CA-50, os estribos (CA-50 ou CA-60) já dobrados com ganchos de 135°, e a armação completa com espaçamento conforme o projeto. Não inclui o concreto nem as formas.',
+        q: () => 'O que inclui a coluna pronta (armadura de pilar)?',
+        a: () => 'Inclui as barras longitudinais CA-50, os estribos (CA-50 ou CA-60) já dobrados com ganchos de 135° e posicionados no espaçamento correto conforme NBR 6118. Não inclui o concreto nem as formas — apenas a armadura pronta para montar.',
       },
       {
-        q: () => 'Como enviar o projeto para orçamento de colunas?',
-        a: () => 'Envie o detalhamento estrutural dos pilares (seção, barras, número e espaçamento de estribos) por WhatsApp. Retornamos com quantitativo e orçamento em até 24h.',
+        q: () => 'Como enviar o projeto para orçamento de armadura de pilar?',
+        a: () => 'Envie o detalhamento estrutural dos pilares (seção transversal, barras longitudinais, bitola e espaçamento dos estribos) por WhatsApp. Nossa equipe técnica retorna com o quantitativo completo e o orçamento em até 24h.',
       },
     ],
     relatedSlugs: ['corte-e-dobra', 'vergalhao', 'barra', 'arame'],
-    whatsappMsg: (city) => `Olá! Preciso de orçamento para colunas (gaiolas de pilar) pré-montadas para obra em ${city}. Tenho o projeto dos pilares.`,
+    whatsappMsg: (city) => `Olá! Preciso de orçamento para armadura de pilar (coluna pronta) para obra em ${city}. Tenho o projeto estrutural dos pilares.`,
   },
 
   'barra': {
