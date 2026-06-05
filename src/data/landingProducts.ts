@@ -108,17 +108,17 @@ export const landingProducts: Record<string, LandingProduct> = {
 
   'coluna': {
     slug: 'coluna',
-    name: 'Coluna',
-    nameFull: 'Colunas Pré-Moldadas de Aço',
+    name: 'Coluna Pronta',
+    nameFull: 'Coluna Pronta — Pilar Pré-Montado em Aço',
     verb: 'Comprar',
     preposition: 'em',
-    shortDesc: 'Colunas pré-montadas para agilizar a estrutura',
-    pageTitle: (city) => `Colunas de Aço em ${city} | BR Aço`,
+    shortDesc: 'Coluna pronta para obra — pilar com armadura completa',
+    pageTitle: (city) => `Coluna Pronta em ${city} | BR Aço – Pilar Pré-Montado`,
     metaDesc: (city, state) =>
-      `Colunas pré-moldadas de aço em ${city} – ${state}. Armadura pronta com barras longitudinais e estribos, entrega rápida. Solicite orçamento na BR Aço.`,
-    h1: (city) => `Colunas de Aço Pré-Montadas em ${city}`,
+      `Coluna pronta em ${city} – ${state}. Pilar pré-montado com barras longitudinais CA-50 e estribos dobrados, entrega em até 48h. Solicite orçamento na BR Aço.`,
+    h1: (city) => `Coluna Pronta em ${city} — Pilar Pré-Montado`,
     intro: (city, _state, deliveryLabel) =>
-      `A BR Aço fornece colunas (gaiolas de pilar) pré-montadas para obras em ${city}, com ${deliveryLabel}. Cada coluna sai da fábrica com as barras longitudinais e os estribos já posicionados no espaçamento definido pelo projeto — reduzindo em até 70% o tempo de armação de pilares no canteiro.`,
+      `A BR Aço fornece coluna pronta (gaiola de pilar pré-montada) para obras em ${city}, com ${deliveryLabel}. Cada coluna sai da fábrica com as barras longitudinais CA-50 e os estribos já dobrados e posicionados no espaçamento exato do projeto — reduzindo em até 70% o tempo de armação de pilares no canteiro. Peça pronta, chega na obra, você só posiciona e concreta.`,
     features: [
       { icon: '🏗️', title: 'Gaiolas prontas', desc: 'Barras longitudinais + estribos montados e amarrados conforme o projeto do engenheiro.' },
       { icon: '📐', title: 'Espaçamento exato', desc: 'Estribos posicionados conforme NBR 6118 — espaçamento de emenda reduzido automaticamente.' },
