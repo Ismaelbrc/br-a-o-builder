@@ -377,6 +377,27 @@ function BlogPostContent({ slug }: { slug: string }) {
                 </a>
               </Button>
             </div>
+            {/* Links contextuais — calculadora + LP da categoria */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-5 pt-5 border-t border-gray-200">
+              <Link to="/calculadora-vergalhao" className="text-sm text-brand-orange hover:underline flex items-center gap-1.5">
+                🧮 Calculadora de Vergalhão
+              </Link>
+              {post.category === 'Corte e Dobra' && (
+                <Link to="/corte-e-dobra/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
+                  → Corte e Dobra em Goiânia
+                </Link>
+              )}
+              {post.category === 'Vergalhão' && (
+                <Link to="/vergalhao/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
+                  → Vergalhão em Goiânia
+                </Link>
+              )}
+              {post.category === 'Coluna Pronta' && (
+                <Link to="/coluna/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
+                  → Coluna Pronta em Goiânia
+                </Link>
+              )}
+            </div>
           </div>
 
           {/* Related Posts */}
