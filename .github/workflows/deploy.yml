@@ -35,6 +35,20 @@ jobs:
           VITE_GADS_LABEL: ${{ secrets.VITE_GADS_LABEL }}
           VITE_CLARITY_ID: ${{ secrets.VITE_CLARITY_ID }}
 
+      # Cache do Chromium do Puppeteer (evita rebaixar ~150MB a cada run)
+      - name: Cache Puppeteer browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Instala Chromium do Puppeteer
+        run: npx puppeteer browsers install chrome
+
+      # Gera sitemap (197 URLs indexáveis) e pré-renderiza cada rota em dist/<route>/index.html
+      - name: SEO — sitemap + pré-renderização
+        run: npm run seo
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

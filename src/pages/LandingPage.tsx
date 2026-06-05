@@ -10,6 +10,11 @@ import { analytics } from '@/lib/analytics';
 
 const WA_BASE = 'https://wa.me/556296472423?text=';
 
+// Produtos com conteúdo diferenciado por cidade (não-duplicado). Só estes,
+// nas cidades com uniqueContent, são index,follow + pré-renderizados + no sitemap.
+// Mantém alinhado: lógica do app == scripts/seo-routes.ts.
+const CORE_PRODUCTS = ['corte-e-dobra', 'vergalhao', 'coluna'];
+
 export default function LandingPage() {
   const { productSlug = '', locationSlug = '' } = useParams<{ productSlug: string; locationSlug: string }>();
 
@@ -30,7 +35,7 @@ export default function LandingPage() {
     description: isValid ? product!.metaDesc(displayCity, stateLabel)   : '',
     canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : undefined,
     keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
-    noindex:     !location.uniqueContent, // indexa apenas LPs com conteúdo único
+    noindex:     !(location?.uniqueContent && CORE_PRODUCTS.includes(productSlug)), // indexa só produto core em cidade com conteúdo único
   });
 
   // Schemas JSON-LD: FAQPage + BreadcrumbList + LocalBusiness
