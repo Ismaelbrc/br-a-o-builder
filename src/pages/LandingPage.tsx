@@ -212,6 +212,27 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Calculadora nudge (vergalhão e coluna) ───────────────────── */}
+      {(productSlug === 'vergalhao' || productSlug === 'coluna') && (
+        <section className="bg-white border-b border-border">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4">
+            <Link
+              to="/calculadora-vergalhao"
+              className="flex items-center gap-3 group"
+            >
+              <span className="text-2xl flex-shrink-0">🧮</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-brand-navy">Não sabe a quantidade de vergalhão?</p>
+                <p className="text-xs text-brand-gray-medium">A gente te ajuda na conta — veja a Calculadora BR Aço.</p>
+              </div>
+              <span className="flex items-center gap-1 text-brand-orange text-sm font-semibold whitespace-nowrap group-hover:gap-2 transition-all">
+                Ver calculadora <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* ── Diferenciais ──────────────────────────────────────────────── */}
       <section className="py-14 bg-background">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
