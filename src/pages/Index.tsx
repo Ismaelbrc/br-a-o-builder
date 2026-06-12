@@ -40,10 +40,15 @@ const Index = () => {
         className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden bg-metal"
       >
         {/* Camada 0: foto de fundo (poster) — base no mobile e poster instantâneo no desktop
-            até o vídeo carregar. Leve (~166KB), cena real da fábrica. */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/og-social.jpg)' }}
+            até o vídeo carregar. Leve (~166KB), cena real da fábrica.
+            <img> (não CSS background): no HTML pré-renderizado o preload scanner
+            do navegador baixa com prioridade alta — é o elemento LCP da home. */}
+        <img
+          src="/og-social.jpg"
+          alt=""
+          decoding="async"
+          {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
+          className="absolute inset-0 z-0 w-full h-full object-cover"
           aria-hidden="true"
         />
 

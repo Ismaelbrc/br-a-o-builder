@@ -81,7 +81,12 @@ export function usePageTracking() {
   const location = useLocation();
 
   useEffect(() => {
-    const path = location.pathname + location.search;
+    // Trailing slash normalizado: /corte-e-dobra/ e /corte-e-dobra são a MESMA
+    // página no GA4/Clarity (main.tsx já corrige a URL no load inicial; aqui
+    // cobrimos navegações SPA vindas de links com barra final).
+    const cleanPathname =
+      location.pathname.length > 1 ? location.pathname.replace(/\/+$/, '') : '/';
+    const path = cleanPathname + location.search;
 
     // ── 1. GA4 + Meta Pixel page view ──────────────────────────────────────
     analytics.pageView(path);
@@ -90,8 +95,8 @@ export function usePageTracking() {
     // Without this, Clarity treats the entire session as one page and
     // heatmaps for individual routes show no data.
     if (typeof window.clarity === 'function') {
-      window.clarity('set', 'page', location.pathname);
-      window.clarity('upgrade', location.pathname);
+      window.clarity('set', 'page', cleanPathname);
+      window.clarity('upgrade', cleanPathname);
     }
 
     // ── 3. UTM persistence ─────────────────────────────────────────────────

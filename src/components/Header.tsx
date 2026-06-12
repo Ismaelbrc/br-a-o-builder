@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, User, ChevronDown, Star, Calculator } from 'lucide-react';
 import logoImage from '@/assets/logo-braco.png';
@@ -6,8 +6,8 @@ import { analytics } from '@/lib/analytics';
 
 const productLinks = [
   { name: 'Corte e Dobra', href: '/corte-e-dobra', highlight: true },
-  { name: 'Vergalhões', href: '/produtos#vergalhoes' },
-  { name: 'Treliças', href: '/produtos#trelicas' },
+  { name: 'VergalhÃµes', href: '/produtos#vergalhoes' },
+  { name: 'TreliÃ§as', href: '/produtos#trelicas' },
   { name: 'Telas e Malhas Pop', href: '/produtos#telas-e-malhas-pop' },
   { name: 'Colunas', href: '/produtos#colunas' },
   { name: 'Pregos e Arames', href: '/produtos#pregos-e-arames' },
@@ -21,7 +21,7 @@ const navLinks = [
   { name: 'Galeria', href: '/galeria' },
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora', href: '/calculadora-vergalhao', isCalculator: true },
-  { name: 'Catálogo', href: '/catalogo-braco.pdf', isExternal: true },
+  { name: 'CatÃ¡logo', href: '/catalogo-braco.pdf', isExternal: true },
 ];
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
         setIsScrolled(window.scrollY > 50);
       });
     };
-    // passive: true → browser never waits for JS before scrolling (core INP fix)
+    // passive: true â†’ browser never waits for JS before scrolling (core INP fix)
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -78,11 +78,11 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÇO - Seus projetos na velocidade máxima"
+                alt="BR.AÃ‡O - Seus projetos na velocidade mÃ¡xima"
                 className="h-16 w-auto"
                 width="1920"
                 height="440"
-                fetchPriority="high"
+                {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
               />
             </Link>
 
@@ -91,10 +91,10 @@ export default function Header() {
               <Link
                 to="/cliente"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-accent transition-colors"
-                title="Área do Cliente"
+                title="Ãrea do Cliente"
               >
                 <User className="w-5 h-5" />
-                <span className="text-sm">Área do Cliente</span>
+                <span className="text-sm">Ãrea do Cliente</span>
               </Link>
               <a
                 onClick={() => setTimeout(() => analytics.whatsappClick('header'), 0)}
@@ -205,11 +205,11 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÇO - Seus projetos na velocidade máxima"
+                alt="BR.AÃ‡O - Seus projetos na velocidade mÃ¡xima"
                 className="h-10 w-auto"
                 width="1920"
                 height="440"
-                fetchPriority="high"
+                {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
               />
             </Link>
 
@@ -319,7 +319,7 @@ export default function Header() {
                 className="flex items-center gap-3 min-h-[48px] py-3 text-accent"
               >
                 <User className="w-5 h-5" />
-                Área do Cliente
+                Ãrea do Cliente
               </Link>
               <a
                 href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."

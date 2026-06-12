@@ -9,11 +9,14 @@
     <link rel="shortcut icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts: Space Grotesk (display) — preconnect + swap para não bloquear LCP -->
+    <!-- Fonts: Space Grotesk (display) — carregamento NÃO-bloqueante.
+         media="print" + onload: o CSS da fonte não bloqueia a renderização do H1
+         (LCP nas páginas de texto, ex. /corte-e-dobra). Fallback no noscript. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" /></noscript>
 
     <!-- Polyfill: silencia erro "calculadora is not defined" em iOS WebKit/WKWebView
          que tenta chamar funções globais que não existem no nosso SPA. -->
