@@ -91,10 +91,10 @@ export default function Header() {
               <Link
                 to="/cliente"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-accent transition-colors"
-                title="Ãrea do Cliente"
+                title="Área do Cliente"
               >
                 <User className="w-5 h-5" />
-                <span className="text-sm">Ãrea do Cliente</span>
+                <span className="text-sm">Área do Cliente</span>
               </Link>
               <a
                 onClick={() => setTimeout(() => analytics.whatsappClick('header'), 0)}
@@ -319,7 +319,7 @@ export default function Header() {
                 className="flex items-center gap-3 min-h-[48px] py-3 text-accent"
               >
                 <User className="w-5 h-5" />
-                Ãrea do Cliente
+                Área do Cliente
               </Link>
               <a
                 href="https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
