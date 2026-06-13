@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLoader } from "@/components/PageLoader";
 import { initChannel, channelTag, geoTag, fetchGeo } from "@/lib/channel";
+import { analytics } from "@/lib/analytics";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
 const ConteudoRedirect = () => {
@@ -68,6 +69,14 @@ const queryClient = new QueryClient();
 
 function AppRoutes() {
   usePageTracking();
+
+  // Clarity: tag Instagram in-app browser para segmentação no dashboard
+  useEffect(() => {
+    if (/Instagram|FBAN|FBAV|FB_IAB/.test(navigator.userAgent)) {
+      analytics.clarityTag('traffic_source', 'instagram_app');
+      analytics.clarityUpgrade('instagram_session'); // força gravação (não cai em sampling)
+    }
+  }, []);
 
   // Atribuição de canal: injeta [ads]/[org] no início de TODA mensagem de WhatsApp,
   // reescrevendo o href no momento do clique (cobre todos os links, atuais e futuros).

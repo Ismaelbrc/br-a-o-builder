@@ -53,7 +53,7 @@ const Index = () => {
           alt=""
           decoding="async"
           {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
-          className="absolute inset-0 z-0 w-full h-full object-cover"
+          className="absolute inset-0 z-0 w-full h-full object-cover pointer-events-none"
           aria-hidden="true"
         />
 
@@ -66,7 +66,7 @@ const Index = () => {
           playsInline
           preload="none"
           poster="/og-social.jpg"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
         >
           <source src="/hero-video.webm" type="video/webm" />
           <source src="/hero-video.mp4" type="video/mp4" />
@@ -74,7 +74,7 @@ const Index = () => {
 
         {/* Camada 2: Overlay Escuro com Gradiente */}
         <div
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-10 pointer-events-none"
           style={{
             background: 'linear-gradient(to bottom, rgba(10,14,22,0.72) 0%, rgba(10,14,22,0.52) 48%, rgba(10,14,22,0.82) 100%)'
           }}
@@ -100,12 +100,12 @@ const Index = () => {
           </div>
 
           {/* Título H1 — display editorial */}
-          <h1 className="text-display-xl text-white mt-6 max-w-[18ch] animate-fade-in-up animation-delay-100">
+          <h1 className="text-display-xl text-white mt-6 max-w-[18ch] animate-fade-in-up animation-delay-100 select-none">
             Aço <span className="text-primary">cortado e dobrado</span> na medida exata da sua obra.
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-base sm:text-lg md:text-xl text-white/85 max-w-2xl mt-7 leading-relaxed animate-fade-in-up animation-delay-200">
+          <p className="text-base sm:text-lg md:text-xl text-white/85 max-w-2xl mt-7 leading-relaxed animate-fade-in-up animation-delay-200 select-none">
             Corte e dobra sob medida, vergalhões, treliças e malhas. Produção 100%
             automatizada de aço para construção civil — entrega em até 48h com certificação ABNT.
           </p>
