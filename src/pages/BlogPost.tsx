@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
+import { blogPostsGeo } from '@/data/blogPostsGeo';
 import { useSEO } from '@/hooks/useSEO';
 import { useClarityContent } from '@/hooks/useClarityContent';
 import { analytics } from '@/lib/analytics';
@@ -218,7 +219,9 @@ function BlogPostContent({ slug }: { slug: string }) {
   // Clarity: scroll depth, time milestones, content tags
   useClarityContent({ slug: post.slug, category: post.category });
 
-  // Article + BreadcrumbList JSON-LD
+  const geo = blogPostsGeo[post.slug];
+
+  // Article + BreadcrumbList + FAQPage JSON-LD
   useEffect(() => {
     const articleSchema = {
       "@context": "https://schema.org",
@@ -287,11 +290,29 @@ function BlogPostContent({ slug }: { slug: string }) {
     breadcrumbScript.textContent = JSON.stringify(breadcrumbSchema);
     document.head.appendChild(breadcrumbScript);
 
+    if (geo?.faqItems?.length) {
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": geo.faqItems.map(({ q, a }) => ({
+          "@type": "Question",
+          "name": q,
+          "acceptedAnswer": { "@type": "Answer", "text": a },
+        })),
+      };
+      const faqScript = document.createElement('script');
+      faqScript.type = 'application/ld+json';
+      faqScript.id = 'faq-schema';
+      faqScript.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(faqScript);
+    }
+
     return () => {
       document.getElementById('article-schema')?.remove();
       document.getElementById('breadcrumb-schema')?.remove();
+      document.getElementById('faq-schema')?.remove();
     };
-  }, [post.slug]);
+  }, [post.slug, geo]);
 
   // Get related posts (same category, excluding current)
   const relatedPosts = blogPosts
@@ -342,6 +363,14 @@ function BlogPostContent({ slug }: { slug: string }) {
             <ArrowLeft className="w-4 h-4" />
             Voltar para o Blog
           </Link>
+
+          {/* GEO-1: Answer Capsule — resposta direta para IAs e leitores */}
+          {geo?.answerCapsule && (
+            <div className="bg-brand-orange/10 border-l-4 border-brand-orange rounded-r-xl px-5 py-4 mb-8">
+              <p className="text-sm font-semibold text-brand-orange uppercase tracking-wide mb-1">Resposta direta</p>
+              <p className="text-brand-navy font-medium leading-snug">{geo.answerCapsule}</p>
+            </div>
+          )}
 
           {/* Article Content */}
           <article className="max-w-none">

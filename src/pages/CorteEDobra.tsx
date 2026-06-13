@@ -636,6 +636,24 @@ export default function CorteEDobra() {
   useClarityLP({ pageName: 'corte-e-dobra' });
   useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
 
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqData.map(({ question, answer }) => ({
+        "@type": "Question",
+        "name": question,
+        "acceptedAnswer": { "@type": "Answer", "text": answer },
+      })),
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-cda-schema';
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => { document.getElementById('faq-cda-schema')?.remove(); };
+  }, []);
+
   return (
     <Layout>
       <HeroSection />
