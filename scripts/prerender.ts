@@ -96,6 +96,14 @@ async function main() {
         /<link rel="canonical"[^>]*>/,
         `<link rel="canonical" href="${correctCanonical}" />`,
       );
+
+      // O snapshot captura o DOM APÓS o onload do CSS da fonte ter trocado
+      // media="print" → "all". Restaura "print" para a fonte continuar
+      // não-bloqueante no HTML servido (o onload refaz a troca no cliente).
+      html = html.replace(
+        /(<link rel="stylesheet" href="https:\/\/fonts\.googleapis[^>]*media=")all("[^>]*onload=)/,
+        '$1print$2',
+      );
       const outDir = route.path === '/' ? distDir : join(distDir, route.path);
       mkdirSync(outDir, { recursive: true });
       writeFileSync(join(outDir, 'index.html'), html, 'utf8');
