@@ -1,17 +1,20 @@
 import { MessageCircle } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
+import { openWhatsApp } from '@/lib/whatsapp';
 
 export default function WhatsAppButton() {
-  const whatsappLink = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setTimeout(() => analytics.whatsappClick('floating'), 0);
+    openWhatsApp();
+  };
 
   return (
     <a
-      href={whatsappLink}
-      target="_blank"
-      rel="noopener noreferrer"
+      href="https://wa.me/556296472423"
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 group"
       aria-label="Fale conosco no WhatsApp"
-      onClick={() => setTimeout(() => analytics.whatsappClick('floating'), 0)}
+      onClick={handleClick}
     >
       {/* Pulse ring animation */}
       <span className="absolute inset-0 rounded-full bg-brand-whatsapp animate-pulse-ring" />

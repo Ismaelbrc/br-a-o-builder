@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
+import { openWhatsApp } from '@/lib/whatsapp';
 import { Home, Zap, CheckCircle, ArrowRight, Calculator, Weight, Scissors } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import Layout from '@/components/Layout';
@@ -15,7 +16,10 @@ import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 import PartnersSection from '@/components/home/PartnersSection';
 
 
-const WHATSAPP_URL = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+const handleWhatsApp = (source: string) => {
+  setTimeout(() => analytics.whatsappClick(source), 0);
+  openWhatsApp();
+};
 
 const Index = () => {
   useSEO({
@@ -37,7 +41,8 @@ const Index = () => {
     <Layout>
       {/* Hero Section with Video Background */}
       <section
-        className="relative min-h-[85vh] md:min-h-screen flex items-center overflow-hidden bg-metal"
+        className="relative min-h-[85svh] md:min-h-svh flex items-center overflow-hidden bg-metal"
+        style={{ minHeight: 'min(85svh, 85vh)' }}
       >
         {/* Camada 0: foto de fundo (poster) — base no mobile e poster instantâneo no desktop
             até o vídeo carregar. Leve (~166KB), cena real da fábrica.
@@ -107,15 +112,13 @@ const Index = () => {
 
           {/* Botões CTA */}
           <div className="flex flex-col sm:flex-row gap-4 mt-9 animate-fade-in-up animation-delay-300">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-8 py-4 text-lg shadow-lg shadow-brand-orange/30 transition-all duration-300 inline-flex items-center justify-center gap-2"
+            <button
+              onClick={() => handleWhatsApp('hero')}
+              className="group w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white font-semibold rounded-lg px-8 py-4 text-lg shadow-lg shadow-brand-orange/30 transition-all duration-300 inline-flex items-center justify-center gap-2 touch-manipulation"
             >
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
             <button
               onClick={scrollToProducts}
               className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg px-8 py-4 text-lg backdrop-blur-sm border border-white/20 transition-all duration-300 inline-flex items-center justify-center gap-2"
