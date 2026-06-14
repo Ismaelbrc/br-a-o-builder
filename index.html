@@ -66,6 +66,7 @@
     {
       "@context": "https://schema.org",
       "@type": ["LocalBusiness", "HardwareStore"],
+      "@id": "https://grupobraco.com.br/#localbusiness",
       "name": "BR Aço – Casa Brasileira de Aço",
       "alternateName": ["Grupo BR Aço", "Grupo Braco", "Casa Brasileira de Aço"],
       "description": "Maior indústria de corte e dobra de vergalhão de Goiás. Vergalhões CA-25, CA-50 e CA-60, treliças metálicas, telas soldadas e malhas para construção civil. Entrega em até 48h em Goiânia e região.",
@@ -94,7 +95,8 @@
         {"@type": "City", "name": "Anápolis"},
         {"@type": "City", "name": "Senador Canedo"},
         {"@type": "City", "name": "Trindade"},
-        {"@type": "State", "name": "Goiás"}
+        {"@type": "State", "name": "Goiás"},
+        {"@type": "State", "name": "Distrito Federal"}
       ],
       "openingHoursSpecification": [
         {
@@ -116,7 +118,69 @@
         "Treliças Metálicas para Laje",
         "Telas Soldadas e Malhas Pop",
         "Pregos e Arames"
-      ]
+      ],
+      "parentOrganization": {"@id": "https://grupobraco.com.br/#organization"},
+      "founder": {"@id": "https://grupobraco.com.br/#person-ismael"}
+    }
+    </script>
+
+    <!-- Schema.org Organization (entidade marca — conecta LocalBusiness + Person para LLMs) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://grupobraco.com.br/#organization",
+      "name": "Grupo BR Aço",
+      "alternateName": ["BR Aço", "Casa Brasileira de Aço", "Grupo Braco"],
+      "description": "Indústria goiana especializada em corte e dobra de vergalhão, vergalhões CA-25/CA-50/CA-60, treliças, telas soldadas e malhas para construção civil. Atende GO e DF com entrega em obra.",
+      "url": "https://grupobraco.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://grupobraco.com.br/logo-braco.png",
+        "width": 1920,
+        "height": 440
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Goiânia, Goiás, Brasil"
+      },
+      "areaServed": ["Goiás", "Distrito Federal"],
+      "sameAs": [
+        "https://www.instagram.com/grupobraco_",
+        "https://www.facebook.com/bracogoiania/"
+      ],
+      "founder": {"@id": "https://grupobraco.com.br/#person-ismael"},
+      "subOrganization": {"@id": "https://grupobraco.com.br/#localbusiness"}
+    }
+    </script>
+
+    <!-- Schema.org Person — Ismael (E-E-A-T: autoria + expertise para LLMs) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://grupobraco.com.br/#person-ismael",
+      "name": "Ismael",
+      "jobTitle": "Sócio-Fundador",
+      "worksFor": {"@id": "https://grupobraco.com.br/#organization"},
+      "affiliation": {"@id": "https://grupobraco.com.br/#organization"},
+      "url": "https://grupobraco.com.br/sobre",
+      "knowsAbout": [
+        "Corte e Dobra de Vergalhão",
+        "Aços para Construção Civil — CA-25, CA-50, CA-60",
+        "Norma ABNT NBR 7480",
+        "Armaduras Prontas para Obra",
+        "Treliças Metálicas para Laje",
+        "Telas Soldadas e Malhas Pop",
+        "Mercado de Aço em Goiás e Distrito Federal",
+        "Gestão de Indústria Siderúrgica"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Goiânia",
+        "addressRegion": "GO",
+        "addressCountry": "BR"
+      }
     }
     </script>
 
