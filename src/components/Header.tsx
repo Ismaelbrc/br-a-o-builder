@@ -19,6 +19,7 @@ const navLinks = [
   { name: 'Sobre', href: '/sobre' },
   { name: 'Produtos', href: '/produtos', hasDropdown: true },
   { name: 'Galeria', href: '/galeria' },
+  { name: 'Cases', href: '/cases' },
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora', href: '/calculadora-vergalhao', isCalculator: true },
   { name: 'CatÃ¡logo', href: '/catalogo-braco.pdf', isExternal: true },
