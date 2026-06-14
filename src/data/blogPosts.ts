@@ -20,7 +20,11 @@ export const blogPosts: BlogPost[] = [
     keyword: "corte e dobra de aço",
     date: "07 Fev 2026",
     summary: "Entenda o que é o serviço de corte e dobra de aço, como funciona, quais as vantagens e como ele pode reduzir em até 50% o custo de mão de obra na sua construção.",
-    content: `## O que é Corte e Dobra de Aço?
+    content: `**Em resumo:** Corte e dobra de aço é o serviço industrial que processa vergalhões conforme o projeto estrutural, entregando peças cortadas e dobradas na medida exata, prontas para armar no canteiro. Em Goiânia e Goiás, a BR Aço executa esse serviço com máquinas CNC automatizadas, reduzindo em até 50% o custo de mão de obra e eliminando o desperdício de material.
+
+---
+
+## O que é Corte e Dobra de Aço?
 
 O corte e dobra de aço é um serviço industrial que consiste em receber o projeto estrutural de uma obra e, a partir dele, cortar e dobrar vergalhões de aço nas medidas exatas especificadas pelo engenheiro calculista. O resultado são peças prontas para armar, identificadas por tipo e etapa da obra, entregues diretamente no canteiro.
 
@@ -63,7 +67,11 @@ A BR Aço realiza o serviço de corte e dobra com tecnologia 100% automatizada, 
     keyword: "corte e dobra vs corte manual",
     date: "05 Fev 2026",
     summary: "Compare os custos reais entre corte e dobra industrial e o corte manual no canteiro. Descubra qual método gera mais economia e produtividade.",
-    content: `## A Eterna Dúvida do Construtor
+    content: `**Em resumo:** O corte e dobra industrial elimina entre 3% e 8% de desperdício gerado pelo corte manual no canteiro e reduz em até 50% o custo de mão de obra de armação. No método manual, armadores utilizam policorte e chave de dobra — processo lento e impreciso; no industrial, máquinas CNC produzem peças com tolerância de ±2mm conforme o projeto, já identificadas e organizadas por etapa da obra para montagem direta.
+
+---
+
+## A Eterna Dúvida do Construtor
 
 Muitos construtores e engenheiros ainda se perguntam: vale mais a pena cortar e dobrar o aço no canteiro de obras ou contratar o serviço industrializado? A resposta, baseada em dados do mercado, é quase sempre favorável ao corte e dobra industrial — mas é importante entender por quê.
 
@@ -139,7 +147,11 @@ Se você já tem o projeto estrutural, envie para a equipe técnica da BR Aço. 
     keyword: "vergalhão CA-50 CA-60 diferenças",
     date: "01 Fev 2026",
     summary: "Descubra as diferenças entre vergalhão CA-50 e CA-60, onde usar cada tipo, resistência e como escolher o aço certo para sua obra.",
-    content: `## Entendendo a Classificação do Aço
+    content: `**Em resumo:** A principal diferença entre CA-50 e CA-60 é a resistência ao escoamento: fy ≥ 500 MPa no CA-50 e fy ≥ 600 MPa no CA-60, conforme a ABNT NBR 7480. Na prática, o CA-50 domina as armaduras estruturais (vigas, pilares, lajes, fundações) por sua maior ductilidade; já o CA-60 é fabricado exclusivamente em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas e telas soldadas.
+
+---
+
+## Entendendo a Classificação do Aço
 
 A sigla CA significa Concreto Armado. Os números 50 e 60 indicam a tensão de escoamento do aço em kgf/mm². Em termos simples, quanto maior o número, maior a resistência mecânica do vergalhão.
 
@@ -184,7 +196,11 @@ A BR Aço trabalha com ambos os tipos, sempre seguindo a norma ABNT NBR 7480/200
     keyword: "norma ABNT NBR 7480",
     date: "30 Jan 2026",
     summary: "Entenda a norma ABNT NBR 7480/2007 que regulamenta o aço para concreto armado no Brasil e por que ela é essencial para a segurança da sua obra.",
-    content: `## O que é a NBR 7480?
+    content: `**Em resumo:** A ABNT NBR 7480:2007 é a norma que regulamenta barras e fios de aço destinados a armaduras para concreto armado no Brasil. Ela define as classes CA-25, CA-50 e CA-60, estabelece os requisitos mínimos de resistência mecânica, composição química e ductilidade, e exige marcação de rastreabilidade em todas as barras. Todo vergalhão comercializado legalmente no Brasil deve ser certificado e ensaiado conforme essa norma.
+
+---
+
+## O que é a NBR 7480?
 
 A ABNT NBR 7480, intitulada "Aço destinado a armaduras para estruturas de concreto armado — Especificação", é a norma técnica brasileira que estabelece os requisitos mínimos de qualidade para vergalhões e fios de aço utilizados em concreto armado.
 
@@ -233,7 +249,11 @@ A economia aparente de comprar aço mais barato e sem certificação pode se tra
     keyword: "treliças de aço construção civil",
     date: "28 Jan 2026",
     summary: "Descubra o que são treliças de aço, como funcionam e como elas reduzem custos de escoramento e aceleram a construção de lajes.",
-    content: `## O que São Treliças?
+    content: `**Em resumo:** Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal soldado, usados como armadura principal de lajes treliçadas. Elas eliminam a necessidade de parte do escoramento, reduzem o tempo de armação e permitem lajes com vãos de até 6m sem exigir formas contínuas. Os tipos mais comuns no Brasil são TR-08, TR-10, TR-12 e TR-14, classificados pela altura h do elemento.
+
+---
+
+## O que São Treliças?
 
 Treliças de aço para construção civil são estruturas metálicas formadas por barras de aço soldadas em formato triangular. Elas funcionam como armadura de lajes, sendo embutidas nas vigotas ou nas pré-lajes, dispensando grande parte do escoramento necessário durante a concretagem.
 
@@ -276,7 +296,11 @@ A BR Aço fabrica treliças em diversas alturas e especificações, com aço cer
     keyword: "malha de aço construção",
     date: "26 Jan 2026",
     summary: "Conheça os tipos de malha de aço para construção civil, suas aplicações em pisos, lajes e por que elas aumentam a produtividade.",
-    content: `## O que é Malha de Aço?
+    content: `**Em resumo:** Malha de aço para construção civil — também chamada tela soldada ou malha pop — é uma armadura pré-fabricada de barras CA-60 soldadas em ângulo reto em todos os cruzamentos. É usada em pisos industriais, lajes planas, paredes de concreto armado e pré-moldados, substituindo a armação manual com até 40% de economia em mão de obra. No Brasil, as telas soldadas seguem a ABNT NBR 7481 e são identificadas pelo espaçamento e bitola (ex.: Q-92, Q-138, Q-188).
+
+---
+
+## O que é Malha de Aço?
 
 Malha de aço (ou tela soldada) é um produto formado por fios de aço CA-60 dispostos em duas direções perpendiculares (longitudinal e transversal) e soldados eletronicamente em todos os pontos de cruzamento. O resultado é uma estrutura plana, rígida e uniforme que distribui cargas de maneira homogênea.
 
@@ -365,7 +389,11 @@ A BR Aço fornece sapatas prontas, conforme o projeto estrutural, com entrega r�
     keyword: "entrega de aço rápida Goiás",
     date: "22 Jan 2026",
     summary: "Descubra como a BR Aço entrega produtos de aço prontos em até 48 horas em Goiás, com produção 100% automatizada.",
-    content: `## O Problema dos Atrasos na Construção
+    content: `**Em resumo:** A BR Aço realiza entrega de vergalhões, treliças e telas soldadas em até 48 horas em Goiânia, Aparecida de Goiânia, Senador Canedo, Trindade e toda a região metropolitana. Para o interior de Goiás (Anápolis, Rio Verde, Catalão, Jataí e outras cidades), o prazo é de 3 a 5 dias úteis. O serviço de corte e dobra tem prazo adicional de até 5 dias úteis para processamento das peças antes da entrega em obra.
+
+---
+
+## O Problema dos Atrasos na Construção
 
 Cada dia de atraso em uma obra gera custos adicionais: aluguel de equipamentos parados, equipes ociosas, multas contratuais e impacto no fluxo de caixa. Uma das causas mais comuns de atraso é a demora na entrega de materiais.
 
@@ -455,7 +483,11 @@ Se você tem dúvidas sobre como interpretar o seu projeto, a equipe técnica da
     keyword: "calcular quantidade de vergalhão para laje",
     date: "10 Jan 2026",
     summary: "Guia prático com passo a passo, fórmulas e taxas de consumo para calcular corretamente a quantidade de vergalhão necessária para executar lajes de qualquer tipo.",
-    content: `## Por Que o Cálculo Correto Faz Diferença?
+    content: `**Em resumo:** Para calcular o vergalhão de uma laje, multiplique a área (m²) pelo consumo típico por tipo: laje treliçada consome entre 8 e 12 kg/m²; laje maciça, entre 15 e 25 kg/m². Divida o peso total pelo peso por metro do diâmetro escolhido e depois por 12m (comprimento padrão da barra) para obter o número de barras. Sempre arredonde para cima e adicione 10% de perda por corte e emenda.
+
+---
+
+## Por Que o Cálculo Correto Faz Diferença?
 
 Subestimar ou superestimar a quantidade de vergalhão para uma laje são erros que custam caro. A falta de aço paralisa a obra, obriga compras emergenciais com preços mais altos e compromete o cronograma. O excesso gera capital imobilizado, espaço desperdiçado no canteiro e material que muitas vezes se perde por corrosão ou furto.
 
@@ -535,7 +567,11 @@ A **BR Aço** recebe seu projeto estrutural por WhatsApp, faz a quantificação 
     keyword: "CA-25 CA-50 CA-60 vergalhão",
     date: "17 Jan 2026",
     summary: "Comparação técnica completa entre os graus CA-25, CA-50 e CA-60: resistência ao escoamento, ductilidade, diâmetros disponíveis e as aplicações corretas para cada tipo de obra.",
-    content: `## A Sigla CA e o Que Ela Significa
+    content: `**Em resumo:** CA-25, CA-50 e CA-60 são as classes de aço para concreto armado definidas pela ABNT NBR 7480, diferenciadas pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente. O CA-50 é o mais usado em estruturas (pilares, vigas, lajes e fundações); o CA-60 é padrão para treliças metálicas e telas soldadas; e o CA-25, de superfície lisa, aparece apenas em obras antigas e praticamente não é mais produzido.
+
+---
+
+## A Sigla CA e o Que Ela Significa
 
 CA é a abreviação de **Concreto Armado**. O número que segue a sigla indica a tensão mínima de escoamento do aço, expressa em kgf/mm²:
 
@@ -614,7 +650,11 @@ A **BR Aço** trabalha com vergalhões CA-50 e CA-60 em todos os diâmetros, com
     keyword: "treliças metálicas para laje",
     date: "24 Jan 2026",
     summary: "Tudo sobre treliças metálicas para laje: funcionamento, tipos por altura, normas ABNT aplicáveis, vantagens construtivas e critérios de seleção para cada tipo de projeto.",
-    content: `## O Que É uma Treliça Metálica para Laje?
+    content: `**Em resumo:** Treliças metálicas para laje são classificadas pela altura h: TR-08 (h=8cm), TR-10 (h=10cm), TR-12 (h=12cm) e TR-14 (h=14cm). A altura determina a capacidade de vão da laje: treliças mais altas permitem vãos maiores e melhor desempenho estrutural. Todas devem atender à ABNT NBR 14859-1 e ser especificadas no projeto estrutural pelo engenheiro responsável. A BR Aço fornece treliças em todos os tipos com entrega em até 48h em Goiânia e GO.
+
+---
+
+## O Que É uma Treliça Metálica para Laje?
 
 A treliça metálica é um componente estrutural formado por barras de aço soldadas em configuração triangular contínua. Usada como armadura estrutural em lajes, ela é produzida industrialmente com aço CA-60, garantindo resistência, uniformidade dimensional e aderência ao concreto.
 
@@ -696,7 +736,11 @@ A **BR Aço** fornece treliças metálicas em todas as alturas comerciais, com c
     keyword: "tela soldada malha pop piso industrial",
     date: "31 Jan 2026",
     summary: "Análise técnica comparando tela soldada e malha pop para aplicação em pisos industriais: diferenças de resistência, espaçamento, custo e adequação conforme normas ABNT.",
-    content: `## Tela Soldada e Malha Pop: São a Mesma Coisa?
+    content: `**Em resumo:** Para pisos industriais, a tela soldada estrutural (Q-138, Q-188, Q-257 ou superior) é mais indicada que a malha pop, por oferecer maior rigidez e controle de fissuração sob cargas de empilhadeiras e estocagem pesada. A escolha da malha deve seguir o cálculo estrutural com base no CBR do subleito e na carga de operação. A malha pop (Q-92, Q-138 em rolo) é adequada apenas para pisos leves residenciais e garagens.
+
+---
+
+## Tela Soldada e Malha Pop: São a Mesma Coisa?
 
 No mercado da construção civil, os termos "tela soldada" e "malha pop" costumam ser usados como sinônimos — e em grande parte são. Ambos se referem a painéis planos de fios de aço CA-60 dispostos perpendicularmente e soldados eletronicamente nos pontos de cruzamento.
 
@@ -862,7 +906,11 @@ A **BR Aço** é o parceiro de obras que ajuda você a eliminar o desperdício: 
     keyword: "normas ABNT vergalhão",
     date: "14 Fev 2026",
     summary: "Panorama completo das normas ABNT que regulamentam vergalhões para concreto armado: requisitos de produto, de projeto e de execução que todo engenheiro civil deve conhecer.",
-    content: `## O Sistema Normativo do Aço para Concreto Armado
+    content: `**Em resumo:** As normas técnicas que todo engenheiro deve conhecer ao especificar aço para concreto armado são: ABNT NBR 7480 (barras e fios de aço), NBR 6118 (projeto de estruturas de concreto armado), NBR 6122 (fundações) e NBR 14859 (treliças metálicas). A NBR 7480 define as classes CA-25, CA-50 e CA-60, os ensaios de dobramento e tração obrigatórios, e a rastreabilidade exigida em cada lote de vergalhão.
+
+---
+
+## O Sistema Normativo do Aço para Concreto Armado
 
 A utilização de vergalhões na construção civil brasileira é regulamentada por um conjunto de normas técnicas da ABNT (Associação Brasileira de Normas Técnicas) que abrange desde a fabricação do aço até sua aplicação em projeto e execução. Conhecer esse sistema normativo é obrigação de todo engenheiro civil — tanto por responsabilidade técnica quanto por responsabilidade legal.
 
@@ -1150,7 +1198,11 @@ A **BR Aço** é parceira de obras de todos os portes em Goiânia e Goiás: entr
     keyword: "corte e dobra industrial Goiás custo",
     date: "07 Mar 2026",
     summary: "Análise de custo comparativa entre armação manual no canteiro e corte e dobra industrial em Goiânia e no estado de Goiás, com dados de mercado local e cálculo de retorno do investimento.",
-    content: `## A Comparação Que Todo Construtor Goiano Deveria Fazer
+    content: `**Em resumo:** Em Goiás, o corte e dobra industrial reduz o desperdício de aço de 5–8% (corte manual) para menos de 1%, e diminui o custo de mão de obra de armação em até 50%. Para uma obra residencial de 200 m² em Goiânia, a economia média ao optar pelo corte e dobra na BR Aço fica entre R$ 8.000 e R$ 15.000 em relação ao método manual no canteiro, dependendo do volume de aço e da complexidade estrutural.
+
+---
+
+## A Comparação Que Todo Construtor Goiano Deveria Fazer
 
 Em Goiânia e no interior de Goiás, ainda existe uma percepção generalizada de que contratar armadores e cortar o aço no canteiro é mais barato do que o serviço de corte e dobra industrial. Essa percepção é equivocada — e os números do mercado local provam isso.
 
@@ -1274,7 +1326,11 @@ Nossa equipe técnica faz essa análise gratuitamente. Entre em contato pelo Wha
     keyword: "quanto pesa vergalhão por metro",
     date: "17 Mai 2026",
     summary: "Tabela completa com peso linear (kg/m) e peso por barra de 12m para todos os diâmetros de vergalhão CA-50 e CA-60. Referência rápida para orçamento e cálculo de aço.",
-    content: `## Quanto Pesa Vergalhão por Metro?
+    content: `**Em resumo:** O peso do vergalhão por metro linear é calculado pela fórmula da ABNT NBR 7480: P (kg/m) = (π/4) × d² × 7.850, onde d é o diâmetro em metros. Como referência: ø8mm = 0,395 kg/m, ø10mm = 0,617 kg/m, ø12,5mm = 0,963 kg/m, ø16mm = 1,578 kg/m, ø20mm = 2,466 kg/m e ø25mm = 3,853 kg/m. Uma barra padrão de 12m de ø12,5mm pesa 11,56 kg.
+
+---
+
+## Quanto Pesa Vergalhão por Metro?
 
 O peso do vergalhão por metro (peso linear) é calculado pela fórmula: **peso (kg/m) = 0,00617 × diâmetro² (mm²)**. Os valores variam de 0,245 kg/m (diâmetro 6,3 mm) a 9,865 kg/m (diâmetro 40 mm).
 
@@ -1382,7 +1438,11 @@ O serviço de corte e dobra elimina o desperdício de pontas e reduz em até 50%
     keyword: "custo corte e dobra goiânia",
     date: "15 Mai 2026",
     summary: "Descubra os preços do corte e dobra de aço em Goiânia em 2026, os fatores que influenciam o custo e como calcular o valor total para sua obra.",
-    content: `## Quanto Custa o Corte e Dobra em Goiânia?
+    content: `**Em resumo:** O custo do serviço de corte e dobra em Goiânia em 2026 varia conforme o volume, o diâmetro e a complexidade das peças: para obras residenciais típicas, o valor de processamento fica entre R$ 0,40 e R$ 0,80 por kg de aço beneficiado, além do custo do material. A BR Aço — maior indústria de corte e dobra de Goiás — oferece orçamento gratuito para qualquer volume, com entrega em até 7 dias úteis em Goiânia, interior de GO e Brasília/DF.
+
+---
+
+## Quanto Custa o Corte e Dobra em Goiânia?
 
 O corte e dobra de aço é cobrado principalmente pelo **peso do aço processado (R$/kg)**. Em Goiânia e região metropolitana, o preço do serviço varia conforme o diâmetro do vergalhão, o volume do pedido e a complexidade das dobras.
 
@@ -1458,7 +1518,11 @@ Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e
     keyword: "laje treliçada como fazer",
     date: "12 Mai 2026",
     summary: "Guia completo sobre laje treliçada: tipos, materiais, dimensionamento e passo a passo de execução para construtores e engenheiros.",
-    content: `## O Que é Laje Treliçada?
+    content: `**Em resumo:** A laje treliçada é executada em cinco etapas: 1) posicionamento das treliças sobre a forma; 2) colocação das tavelas cerâmicas ou EPS entre as treliças; 3) instalação das armaduras complementares (negativos, bordas, maciços de apoio); 4) concretagem com vibrador; 5) cura úmida por mínimo 7 dias. A capa de concreto sobre as tavelas deve ter no mínimo 4cm de espessura, conforme a ABNT NBR 14859.
+
+---
+
+## O Que é Laje Treliçada?
 
 A laje treliçada (também chamada laje pré-fabricada ou laje com nervuras) é composta por **treliças metálicas**, **elementos de preenchimento** (tavelas ou EPS) e **concreto estrutural**. É o tipo de laje mais utilizado em construções residenciais no Brasil pela economia de material e facilidade de execução.
 
@@ -1780,7 +1844,11 @@ O aço fornecido com serviço de corte e dobra da BR Aço inclui orientação t�
     keyword: "quanto vergalhão por m2 laje",
     date: "17 Mai 2026",
     summary: "Tabela completa de consumo de vergalhão por m² para diferentes tipos de laje: treliçada, maciça e nervurada. Inclui fatores de variação e como calcular.",
-    content: `## Resposta Rápida
+    content: `**Em resumo:** O consumo de vergalhão por m² de laje varia conforme o tipo e o vão: laje treliçada de vão simples (até 4m) consome de 8 a 10 kg/m²; laje treliçada de vão maior (4 a 6m), de 10 a 14 kg/m²; laje maciça, de 15 a 25 kg/m². Esses valores incluem barras positivas, negativas, cintas de borda e distribuição, conforme o projeto estrutural.
+
+---
+
+## Resposta Rápida
 
 O consumo de vergalhão em lajes varia de **5 a 15 kg/m²**, dependendo do tipo de laje, do vão livre, das cargas e do projeto estrutural. A laje treliçada típica consome entre **5 e 8 kg/m²**; a laje maciça, entre **8 e 15 kg/m²**.
 
@@ -1968,7 +2036,11 @@ O corte e dobra industrial da BR Aço elimina ou reduz drasticamente todos os 7 
     keyword: "laje maciça vs laje treliçada",
     date: "17 Mai 2026",
     summary: "Comparativo completo entre laje maciça e laje treliçada: custo, resistência, peso, execução e quando usar cada tipo de laje.",
-    content: `## Resposta Rápida
+    content: `**Em resumo:** Laje maciça é moldada com concreto e armadura em toda a espessura (sem vazios), indicada para vãos até 4m e cargas concentradas elevadas. Laje treliçada usa treliças metálicas e tavelas para criar vazios, reduzindo o peso próprio em 20–30% e permitindo vãos de 3 a 6m com menor consumo de aço e concreto. Em Goiás, a laje treliçada é predominante em obras residenciais pela facilidade de execução, menor custo e dispensa de escoramento total.
+
+---
+
+## Resposta Rápida
 
 Para a maioria das obras residenciais com vãos de até 5 metros, a **laje treliçada é mais econômica** — usa menos concreto, pesa menos e é mais rápida de executar. A laje maciça é mais indicada para vãos curtos (até 3 m), cargas concentradas muito pesadas ou quando há restrição de altura total.
 
@@ -2269,7 +2341,11 @@ Envie o detalhamento estrutural pelo WhatsApp e receba o orçamento completo de 
     keyword: "ca-50 ca-60 diferença qual usar",
     date: "17 Mai 2026",
     summary: "Guia completo com todas as diferenças entre CA-50 e CA-60: resistência, aplicações, preço, diâmetros disponíveis e quando cada um é a escolha correta.",
-    content: `## Resposta Rápida
+    content: `**Em resumo:** CA-50 e CA-60 são as duas classes de vergalhão nervurado mais utilizadas na construção civil brasileira em 2026. O CA-50 tem resistência ao escoamento de 500 MPa e é indicado para elementos estruturais (pilares, vigas, lajes, fundações) em qualquer diâmetro disponível (ø6,3mm a ø32mm). O CA-60, com 600 MPa, é produzido apenas em diâmetros de ø4,2mm a ø10mm e é o material padrão de treliças e telas soldadas no mercado brasileiro.
+
+---
+
+## Resposta Rápida
 
 **CA-50** e **CA-60** são as duas classes de aço para concreto armado mais usadas no Brasil, definidas pela **ABNT NBR 7480**. A principal diferença é a **resistência ao escoamento**: o CA-50 resiste a **500 MPa** e o CA-60 a **600 MPa**. Na prática, o CA-50 é usado em peças estruturais (pilares, vigas, fundações) e o CA-60 em lajes treliçadas, telas soldadas e estribos de pequeno diâmetro.
 
@@ -2391,7 +2467,11 @@ Envie sua planta pelo WhatsApp e receba o orçamento completo em até 24h.`
     keyword: 'diferença CA-25 CA-50 CA-60',
     date: '10 Nov 2025',
     summary: 'CA-25, CA-50 e CA-60 são as principais classes de vergalhão usadas na construção civil. Cada uma tem resistência e aplicação ideais. Entenda qual usar em cada elemento estrutural.',
-    content: `## O Que Significa CA no Vergalhão?
+    content: `**Em resumo:** CA-25, CA-50 e CA-60 diferem pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente, conforme a ABNT NBR 7480. O CA-25 (liso) praticamente saiu do mercado brasileiro. O CA-50 (nervurado) é o aço estrutural padrão para vigas, pilares, lajes e fundações. O CA-60 (nervurado fino) é exclusivo de treliças metálicas, fios e malhas soldadas.
+
+---
+
+## O Que Significa CA no Vergalhão?
 
 CA significa **Carbono de Alta resistência** — a sigla usada pela norma **ABNT NBR 7480** para classificar o aço para concreto armado. O número que vem depois indica o limite de escoamento mínimo em MPa (megapascal), ou seja, a resistência que o aço suporta antes de se deformar permanentemente.
 

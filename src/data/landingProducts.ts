@@ -43,6 +43,10 @@ export const landingProducts: Record<string, LandingProduct> = {
     ],
     faq: [
       {
+        q: () => 'O que é corte e dobra de vergalhão?',
+        a: () => 'Corte e dobra de vergalhão é o serviço industrial que processa barras de aço conforme o projeto estrutural, entregando peças cortadas e dobradas na medida exata, identificadas por elemento (pilar, viga, estribo), prontas para montar no canteiro. Substitui o corte manual no canteiro, reduzindo desperdício de 8–15% para menos de 2% e diminuindo em até 50% o custo de mão de obra de armação.',
+      },
+      {
         q: (city) => `Como funciona o corte e dobra para obras em ${city}?`,
         a: (city, dl) => `Você envia a planta estrutural ou a planilha de armação por WhatsApp. Nossa equipe faz o quantitativo, confirma o orçamento e inicia a produção. O aço chega em ${city} ${dl}, identificado por elemento, pronto para montagem.`,
       },
@@ -86,12 +90,16 @@ export const landingProducts: Record<string, LandingProduct> = {
     ],
     faq: [
       {
+        q: () => 'O que é vergalhão e quais os tipos usados na construção civil?',
+        a: () => 'Vergalhão é uma barra de aço nervurada usada como armadura de concreto armado — o "esqueleto de ferro" de pilares, vigas, lajes e fundações. No Brasil, os tipos são definidos pela ABNT NBR 7480: CA-50 (resistência ao escoamento ≥ 500 MPa, barras de ø6,3mm a ø40mm) e CA-60 (≥ 600 MPa, somente ø4,2mm a ø10mm, padrão para treliças e telas soldadas). O CA-25 (liso, ≥ 250 MPa) praticamente não é mais produzido.',
+      },
+      {
         q: (city) => `Qual o preço do vergalhão em ${city}?`,
         a: (city) => `O preço do vergalhão em ${city} varia conforme o diâmetro, a classe (CA-50 ou CA-60) e o volume do pedido. Em 2026, a faixa de preço gira entre R$ 5,80 e R$ 7,50/kg para CA-50, e R$ 6,00 a R$ 7,50/kg para CA-60. Solicite orçamento atualizado diretamente pelo WhatsApp.`,
       },
       {
         q: () => 'Qual a diferença entre CA-50 e CA-60?',
-        a: () => 'O CA-50 tem limite de escoamento de 500 MPa e é usado em pilares, vigas e fundações. O CA-60 tem 600 MPa e é ideal para lajes treliçadas, telas soldadas e estribos de pequeno diâmetro. A escolha depende do projeto estrutural.',
+        a: () => 'O CA-50 tem limite de escoamento de 500 MPa e é usado em pilares, vigas, fundações e toda armadura estrutural principal. O CA-60, com 600 MPa, é produzido apenas em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas, telas soldadas e estribos de pequeno diâmetro. A escolha depende do projeto estrutural do engenheiro.',
       },
       {
         q: (city) => `Vocês entregam vergalhão em ${city}?`,

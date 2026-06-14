@@ -32,7 +32,7 @@ const differentials: Diff[] = [
   { icon: CreditCard, title: "Parcelamento Facilitado", description: "Pagamento em até 10x no cartão de crédito. Investir na obra com condições que cabem no planejamento.", tag: "Até 10×" },
 ];
 
-const WHATSAPP = "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+const WHATSAPP = "https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
 // ── Sócios / Liderança ───────────────────────────────────────────────────────
 interface Socio { name: string; role: string; bio: string; id: string; linkedin: string; }
@@ -40,8 +40,8 @@ const socios: Socio[] = [
   {
     name: 'Ismael Cavalcante',
     role: 'CEO · Diretor Comercial',
-    bio: 'Formado em Finanças pela FGV, foi analista sênior de Private Equity no Santander e Diretor de Operações na SOMOS Educação — P&L de US$ 42 milhões e times de +50 pessoas. Hoje, CEO e Diretor Comercial da BR Aço.',
-    id: 'ismael',
+    bio: 'Graduado em Finanças pela FGV, foi analista sênior de Private Equity no Santander e Diretor de Operações da SOMOS Educação (P&L de US$ 42M, times de +50 pessoas). Desde 2020, CEO e Diretor Comercial da BR Aço — maior indústria de corte e dobra de vergalhão de Goiás. Desenvolve expertise em mercado de aço para construção civil (normas ABNT NBR 7480 e NBR 6118), operações industriais de processamento de armaduras e expansão comercial B2B para construtoras e incorporadoras em GO e DF.',
+    id: 'ismael-cavalcante',
     linkedin: 'https://www.linkedin.com/in/ismael-cavalcante-a2359211/',
   },
   {
@@ -64,7 +64,7 @@ function SocioCard({ s, index }: { s: Socio; index: number }) {
   const initials = s.name.split(' ').filter(Boolean).map(w => w[0]).slice(0, 2).join('');
   return (
     <Reveal delay={index * 80}>
-      <div className="group h-full bg-card rounded-2xl border border-hairline p-6 sm:p-7 hover:border-brand-orange/40 transition-colors">
+      <div id={s.id} className="group h-full bg-card rounded-2xl border border-hairline p-6 sm:p-7 hover:border-brand-orange/40 transition-colors">
         <div className="relative w-16 h-16 rounded-2xl overflow-hidden bg-metal border border-hairline flex items-center justify-center">
           <div className="absolute inset-0 bg-blueprint opacity-[0.15]" aria-hidden="true" />
           <span className="relative font-display text-xl font-bold text-brand-orange">{initials}</span>
