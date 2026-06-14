@@ -90,7 +90,7 @@ function AppRoutes() {
       try {
         const url = new URL(href, window.location.origin);
         const text = url.searchParams.get('text') || '';
-        if (/^\s*\[(ads|org)\]/.test(text)) return; // já marcado
+        if (/^\s*\[(ads|org|soc)\]/.test(text)) return; // já marcado
         url.searchParams.set('text', `${channelTag()} ${text}`.trim());
         anchor.setAttribute('href', url.toString());
       } catch {

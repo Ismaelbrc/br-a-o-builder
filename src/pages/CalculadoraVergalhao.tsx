@@ -162,10 +162,10 @@ export default function CalculadoraVergalhao() {
   const telaSel = resultadoTela ? telasSoldadas[resultadoTela.tipoIdx] : null;
   const whatsappMsgTela = resultadoTela && telaSel
     ? encodeURIComponent(
-        `[src:calculadora] Olá! Calculei a necessidade de tela soldada para uma laje/piso de ${resultadoTela.area} m².\n` +
+        `Olá! Calculei a necessidade de tela soldada para uma laje/piso de ${resultadoTela.area} m².\n` +
         `Malha sugerida: ${telaSel.tipo} (${telaSel.malha} cm — ø${telaSel.diametro} mm)\n` +
         `Quantidade: ${resultadoTela.paineis} painéis — ${resultadoTela.pesoTotal} kg\nGostaria de solicitar um orçamento.`)
-    : encodeURIComponent('[src:calculadora] Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.');
+    : encodeURIComponent('Olá! Gostaria de solicitar um orçamento de tela soldada / malha pop.');
 
   // Espessura visual da barra ∝ diâmetro selecionado
   const dPeso = parseFloat(diametroPeso) || 10;
@@ -538,7 +538,7 @@ export default function CalculadoraVergalhao() {
                 Envie o resultado da calculadora ou o projeto estrutural e receba o orçamento certinho — a BR Aço faz o quantitativo completo de graça.
               </p>
               <a
-                href="https://wa.me/556296472423?text=%5Bsrc%3Acalculadora%5D%20Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
+                href="https://wa.me/556296472423?text=Ol%C3%A1!%20Usei%20a%20calculadora%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20vergalh%C3%A3o."
                 target="_blank" rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-2 bg-white text-brand-orange font-semibold rounded-lg px-8 py-4 hover:bg-white/90 transition-colors"
               >
