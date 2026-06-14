@@ -1,26 +1,30 @@
-const WHATSAPP_URL =
-  "https://wa.me/556296472423?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+import { channelTag } from '@/lib/channel';
+
+const PHONE = '556296472423';
+const DEFAULT_TEXT = 'Olá! Gostaria de solicitar um orçamento para minha obra.';
 
 function isInAppBrowser(): boolean {
   if (typeof navigator === "undefined") return false;
   const ua = navigator.userAgent;
-  // Instagram, Facebook, LinkedIn, Twitter in-app browsers all block wa.me target=_blank
   return /Instagram|FBAN|FBAV|LinkedIn|Twitter|Line\/|MicroMessenger/.test(ua);
 }
 
+function buildUrl(customText?: string): string {
+  const text = `${channelTag()} ${customText || DEFAULT_TEXT}`.trim();
+  return `https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`;
+}
+
 /**
- * Abre o WhatsApp de forma compatível com in-app browsers.
- *
- * Instagram/Facebook WebView bloqueia target="_blank" para links externos.
- * Navegar na mesma aba aciona o handler de deep link do sistema operacional
- * corretamente em todos os browsers.
+ * Abre o WhatsApp injetando o canal de atribuição ([soc|ig|bio], [ads|g], [org], etc.)
+ * no início da mensagem. Compatível com in-app browsers (Instagram/Facebook).
  */
-export function openWhatsApp(): void {
+export function openWhatsApp(customText?: string): void {
+  const url = buildUrl(customText);
   if (isInAppBrowser()) {
-    window.location.href = WHATSAPP_URL;
+    window.location.href = url;
   } else {
-    window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
+    window.open(url, "_blank", "noopener,noreferrer");
   }
 }
 
-export { WHATSAPP_URL };
+export const WHATSAPP_URL = `https://wa.me/${PHONE}`;
