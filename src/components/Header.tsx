@@ -6,8 +6,8 @@ import { analytics } from '@/lib/analytics';
 
 const productLinks = [
   { name: 'Corte e Dobra', href: '/corte-e-dobra', highlight: true },
-  { name: 'VergalhÃµes', href: '/produtos#vergalhoes' },
-  { name: 'TreliÃ§as', href: '/produtos#trelicas' },
+  { name: 'Vergalhões', href: '/produtos#vergalhoes' },
+  { name: 'Treliças', href: '/produtos#trelicas' },
   { name: 'Telas e Malhas Pop', href: '/produtos#telas-e-malhas-pop' },
   { name: 'Colunas', href: '/produtos#colunas' },
   { name: 'Pregos e Arames', href: '/produtos#pregos-e-arames' },
@@ -22,7 +22,7 @@ const navLinks = [
   { name: 'Cases', href: '/cases' },
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora', href: '/calculadora-vergalhao', isCalculator: true },
-  { name: 'CatÃ¡logo', href: '/catalogo-braco.pdf', isExternal: true },
+  { name: 'Catálogo', href: '/catalogo-braco.pdf', isExternal: true },
 ];
 
 export default function Header() {
@@ -79,7 +79,7 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÃ‡O - Seus projetos na velocidade mÃ¡xima"
+                alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-16 w-auto"
                 width="1920"
                 height="440"
@@ -206,7 +206,7 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÃ‡O - Seus projetos na velocidade mÃ¡xima"
+                alt="BR.AÇO - Seus projetos na velocidade máxima"
                 className="h-10 w-auto"
                 width="1920"
                 height="440"
