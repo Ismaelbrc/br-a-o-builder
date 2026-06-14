@@ -45,6 +45,7 @@ const STATIC_ROUTES: SeoRoute[] = [
   { path: '/blog',                  priority: '0.7', changefreq: 'weekly',  lastmod: TODAY },
   { path: '/tebas',                 priority: '0.7', changefreq: 'monthly', lastmod: TODAY },
   { path: '/sobre',                 priority: '0.6', changefreq: 'monthly', lastmod: TODAY },
+  { path: '/cases',                  priority: '0.8', changefreq: 'monthly', lastmod: TODAY },
   { path: '/galeria',               priority: '0.6', changefreq: 'monthly', lastmod: TODAY },
   { path: '/faq',                   priority: '0.6', changefreq: 'monthly', lastmod: TODAY },
   { path: '/contato',               priority: '0.6', changefreq: 'monthly', lastmod: TODAY },
