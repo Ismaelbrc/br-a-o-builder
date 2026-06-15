@@ -20,7 +20,7 @@
 // relançado quando a conexão morre.
 
 import { createServer } from 'http';
-import { mkdirSync, writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync, readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import sirv from 'sirv';
@@ -121,9 +121,24 @@ async function waitForContent(page: Page): Promise<void> {
 async function main() {
   const routes = getSeoRoutes();
 
-  // ── Servidor estático sobre dist/ com fallback SPA ──────────────────────
-  const assets = sirv(distDir, { single: true, dev: false, etag: true });
-  const server = createServer((req, res) => assets(req, res, () => { res.statusCode = 404; res.end(); }));
+  // ── Servidor: shell limpa CONGELADA para rotas + assets do disco ────────
+  // Lê a shell UMA vez, antes de qualquer rota sobrescrever dist/index.html.
+  // Serve essa shell para TODA rota de navegação (qualquer path sem extensão
+  // de asset), assim cada rota monta do zero — sem herdar o conteúdo de uma
+  // rota já pré-renderizada (a contaminação que o `single:true` causava ao
+  // servir os arquivos recém-gerados como fallback).
+  const shellHtml = readFileSync(join(distDir, 'index.html'), 'utf8');
+  const ASSET_RE = /\.(?:js|mjs|css|map|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|eot|json|xml|txt|webmanifest)$/i;
+  const assets = sirv(distDir, { dev: false, etag: true });
+  const server = createServer((req, res) => {
+    const path = (req.url || '/').split('?')[0];
+    if (ASSET_RE.test(path)) {
+      assets(req, res, () => { res.statusCode = 404; res.end(); });
+    } else {
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      res.end(shellHtml);
+    }
+  });
   await new Promise<void>((resolve) => server.listen(0, resolve));
   const addr = server.address();
   const port = typeof addr === 'object' && addr ? addr.port : 0;
