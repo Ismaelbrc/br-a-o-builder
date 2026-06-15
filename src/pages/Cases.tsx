@@ -8,7 +8,9 @@ import { CASES, CATEGORIES, driveImg, type Case, type CaseCategory } from '@/dat
 const STATS = [
   { number: '10.000+', label: 'Obras atendidas' },
   { number: '6+', label: 'Anos de mercado' },
-  { number: 'GO · DF · MT · TO', label: 'Estados atendidos' },
+  // nbsp dentro de cada par (GO·DF / MT·TO) + espaço quebrável só entre os pares:
+  // fica em 1 linha quando cabe, ou 2 linhas equilibradas — nunca "TO" sozinho.
+  { number: 'GO · DF MT · TO', label: 'Estados atendidos', compact: true },
   { number: '100%', label: 'Aço rastreável' },
 ];
 
@@ -104,7 +106,7 @@ export default function Cases() {
             {STATS.map((s, i) => (
               <Reveal key={s.label} delay={i * 80}>
                 <div>
-                  <div className="text-3xl md:text-4xl font-black text-primary mb-1">{s.number}</div>
+                  <div className={`font-black text-primary mb-1 ${(s as { compact?: boolean }).compact ? 'text-2xl md:text-3xl leading-tight text-balance' : 'text-3xl md:text-4xl'}`}>{s.number}</div>
                   <div className="text-xs text-muted-foreground uppercase tracking-widest">{s.label}</div>
                 </div>
               </Reveal>
@@ -158,10 +160,8 @@ export default function Cases() {
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-xs font-black text-primary backdrop-blur-sm">
                   {featured.id}
                 </div>
-                {/* Category tag */}
-                <div className="absolute top-4 left-4 text-[9px] font-bold tracking-[2px] uppercase text-primary bg-black/60 backdrop-blur-sm border border-primary/20 px-3 py-1.5 rounded-full">
-                  {featured.category}
-                </div>
+                {/* Sem badge de categoria: a imagem já traz categoria + título
+                    desenhados; o overlay HTML sobrepunha o título no mobile. */}
               </button>
             </Reveal>
           )}
@@ -192,10 +192,7 @@ export default function Cases() {
                     <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/60 border border-white/10 flex items-center justify-center text-[10px] font-black text-primary backdrop-blur-sm">
                       {c.id}
                     </div>
-                    {/* Category tag */}
-                    <div className="absolute top-3 left-3 text-[8px] font-bold tracking-[2px] uppercase text-primary bg-black/60 backdrop-blur-sm border border-primary/20 px-2.5 py-1 rounded-full">
-                      {c.category}
-                    </div>
+                    {/* Sem badge de categoria: imagem já traz categoria + título. */}
                   </button>
                 </Reveal>
               ))}
