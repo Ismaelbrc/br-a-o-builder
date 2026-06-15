@@ -42,8 +42,15 @@ const LAUNCH_ARGS = [
 
 // Recicla a aba a cada N rotas para limitar o crescimento de memória.
 const RECYCLE_EVERY = 8;
-// Tentativas por rota antes de desistir (relança browser entre tentativas fatais).
+// Tentativas por rota SÓ para erros fatais (crash do browser → relança).
+// Timeout de conteúdo NÃO é retentado: se não renderizou em CONTENT_TIMEOUT,
+// retentar custa o mesmo e só arrasta o build (era a causa do CI levar 20min+).
 const MAX_ATTEMPTS = 3;
+const CONTENT_TIMEOUT = 12000;
+const GOTO_TIMEOUT = 20000;
+// Acima desta taxa de falha o build falha (problema sistêmico). Abaixo dela o
+// deploy segue: rotas sem snapshot caem no shell SPA (que monta no cliente).
+const MAX_FAIL_RATE = 0.1;
 
 // Erros que indicam que a aba/browser morreu — exigem relançar o Chrome.
 function isFatal(err: unknown): boolean {
@@ -108,7 +115,7 @@ async function waitForContent(page: Page): Promise<void> {
       const text = (main.textContent || '').replace(/\s+/g, ' ').trim();
       return text.length > 200;
     },
-    { timeout: 20000, polling: 200 },
+    { timeout: CONTENT_TIMEOUT, polling: 200 },
   );
 }
 
@@ -153,7 +160,7 @@ async function main() {
           sinceRecycle = 0;
         }
 
-        await page.goto(url, { waitUntil: 'load', timeout: 30000 });
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: GOTO_TIMEOUT });
         await waitForContent(page);
         await sleep(400); // margem para useSEO + JSON-LD (useEffect) assentarem
         sinceRecycle++;
@@ -184,15 +191,20 @@ async function main() {
       } catch (err) {
         const msg = (err as Error).message?.slice(0, 80) ?? String(err);
         if (isFatal(err)) {
-          // Aba/browser morreram: relança antes da próxima tentativa.
+          // Aba/browser morreram: relança e retenta (até MAX_ATTEMPTS).
           try { await browser.close(); } catch { /* já morto */ }
           browser = await launchBrowser();
           page = await makePage(browser);
           sinceRecycle = 0;
-        }
-        if (attempt >= MAX_ATTEMPTS) {
+          if (attempt >= MAX_ATTEMPTS) {
+            fail++;
+            console.warn(`  ✗ falha em ${route.path} (crash, ${attempt} tentativas): ${msg}`);
+          }
+        } else {
+          // Não-fatal (timeout de conteúdo): retentar não ajuda — desiste já.
           fail++;
-          console.warn(`  ✗ falha em ${route.path} (após ${attempt} tentativas): ${msg}`);
+          console.warn(`  ✗ falha em ${route.path} (timeout): ${msg}`);
+          break;
         }
       }
     }
@@ -201,8 +213,14 @@ async function main() {
   await page.close().catch(() => {});
   await browser.close().catch(() => {});
   await new Promise<void>((resolve) => server.close(() => resolve()));
-  console.log(`✅ pré-renderização concluída: ${ok} ok, ${fail} falhas`);
-  if (fail > 0) process.exitCode = 1;
+  const failRate = routes.length ? fail / routes.length : 0;
+  console.log(`✅ pré-renderização concluída: ${ok} ok, ${fail} falhas (${(failRate * 100).toFixed(1)}%)`);
+  // Só falha o build se a taxa de falha indicar problema sistêmico. Poucas
+  // rotas lentas não bloqueiam o deploy — elas caem no shell SPA no cliente.
+  if (failRate > MAX_FAIL_RATE) {
+    console.error(`✗ taxa de falha ${(failRate * 100).toFixed(1)}% > ${(MAX_FAIL_RATE * 100)}% — build falhou`);
+    process.exitCode = 1;
+  }
 }
 
 main().catch((err) => {
