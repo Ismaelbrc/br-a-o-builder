@@ -212,7 +212,7 @@ function BlogPostContent({ slug }: { slug: string }) {
     canonical: canonicalUrl,
     ogType: 'article',
     publishedTime,
-    author: 'Equipe Técnica BR Aço',
+    author: 'Ismael Cavalcante',
     keywords: post.keyword,
   });
 
@@ -229,9 +229,11 @@ function BlogPostContent({ slug }: { slug: string }) {
       "headline": post.title,
       "description": post.metaDescription,
       "author": {
-        "@type": "Organization",
-        "name": "BR Aço – Casa Brasileira de Aço",
-        "url": "https://grupobraco.com.br"
+        "@type": "Person",
+        "@id": "https://grupobraco.com.br/#person-ismael",
+        "name": "Ismael Cavalcante",
+        "url": "https://grupobraco.com.br/sobre#ismael-cavalcante",
+        "jobTitle": "CEO e Diretor Comercial"
       },
       "publisher": {
         "@type": "Organization",
@@ -340,7 +342,13 @@ function BlogPostContent({ slug }: { slug: string }) {
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 mt-6 text-gray-300 text-sm">
+          <div className="flex flex-wrap items-center gap-4 mt-6 text-gray-300 text-sm">
+            <span className="flex items-center gap-2">
+              Por{' '}
+              <Link to="/sobre#ismael-cavalcante" className="text-brand-orange hover:underline font-medium">
+                Ismael Cavalcante
+              </Link>
+            </span>
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               <time dateTime={publishedTime}>{post.date}</time>
