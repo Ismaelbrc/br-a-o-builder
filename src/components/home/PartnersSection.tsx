@@ -2,7 +2,7 @@ import SectionIntro from '@/components/SectionIntro';
 
 const partners = [
   'Opus',
-  'FGR',
+  'MRV',
   'Direcional',
   'Terral',
   'Base',
