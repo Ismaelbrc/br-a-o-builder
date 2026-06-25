@@ -1,4 +1,4 @@
-import { channelTag } from '@/lib/channel';
+import { channelTag, clickIdTag } from '@/lib/channel';
 
 const PHONE = '556296472423';
 const DEFAULT_TEXT = 'Olá! Gostaria de solicitar um orçamento para minha obra.';
@@ -10,7 +10,7 @@ function isInAppBrowser(): boolean {
 }
 
 function buildUrl(customText?: string): string {
-  const text = `${channelTag()} ${customText || DEFAULT_TEXT}`.trim();
+  const text = `${channelTag()} ${clickIdTag()} ${customText || DEFAULT_TEXT}`.replace(/\s+/g, ' ').trim();
   return `https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`;
 }
 

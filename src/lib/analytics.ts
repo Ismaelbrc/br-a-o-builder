@@ -4,6 +4,8 @@
    IDs are injected at build time via Vite env variables (VITE_*).
    ────────────────────────────────────────────────────────────────────────── */
 
+import { channelClickId } from '@/lib/channel';
+
 declare global {
   interface Window {
     fbq?: (...args: unknown[]) => void;
@@ -59,11 +61,13 @@ export const analytics = {
    * @param source  Identifies which button was clicked (e.g. 'header', 'cta-banner', 'floating', 'footer')
    */
   whatsappClick(source: string) {
-    // Meta Pixel
-    fbq('track', 'Lead', {
+    // Meta Pixel — CONTACT (intenção/clique). O "Lead" real é disparado server-side
+    // (CAPI no webhook do Nexum) só quando a mensagem chega de fato. eventID = click_id
+    // permite dedupe/casamento 1:1. Antes era 'Lead' aqui → inflava (clique ≠ conversa).
+    fbq('track', 'Contact', {
       content_name: 'WhatsApp Click',
       content_category: source,
-    });
+    }, { eventID: channelClickId() });
 
     // GA4 — dedicated event (mark as Key Event in GA4 Admin)
     gtag('event', 'whatsapp_click', {

@@ -18,10 +18,19 @@
  *   partes[2] = slug da campanha     — se presente
  */
 
-const KEY = 'br_channel';
+const KEY = 'br_channel2';          // v2: tag agora inclui adset (utm_content)
+const KEY_CLICK = 'br_click_id2';   // id único por visita-de-anúncio (auditoria 1:1)
+
+/** Gera um id curto, url-safe, sem dependências. */
+function genClickId(): string {
+  const r = (typeof crypto !== 'undefined' && 'randomUUID' in crypto)
+    ? crypto.randomUUID().replace(/-/g, '')
+    : Math.random().toString(36).slice(2);
+  return (r + Date.now().toString(36)).slice(0, 16);
+}
 
 type ChannelResult =
-  | { type: 'ads'; platform: 'g' | 'm' | null; campaign: string | null }
+  | { type: 'ads'; platform: 'g' | 'm' | null; campaign: string | null; adset: string | null }
   | { type: 'soc'; platform: 'ig'; medium: string | null }
   | { type: 'org' };
 
@@ -33,18 +42,20 @@ function detect(): ChannelResult {
 
   const source   = get('utm_source').toLowerCase();
   const medium   = get('utm_medium').toLowerCase();
-  const campaign = get('utm_campaign')
-    ? get('utm_campaign').trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-_]/g, '')
+  const slug = (k: string) => get(k)
+    ? get(k).trim().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-_]/g, '')
     : null;
+  const campaign = slug('utm_campaign');
+  const adset    = slug('utm_content');   // conjunto/região do Meta (ex.: anapolis, aparecida)
 
   // ── Google Ads: click-ids de auto-tagging
   if (get('gclid') || get('gbraid') || get('wbraid')) {
-    return { type: 'ads', platform: 'g', campaign };
+    return { type: 'ads', platform: 'g', campaign, adset };
   }
 
   // ── Bing Ads
   if (get('msclkid')) {
-    return { type: 'ads', platform: 'g', campaign };
+    return { type: 'ads', platform: 'g', campaign, adset };
   }
 
   // ── Instagram / Facebook — distingue pago vs orgânico pelo utm_medium
@@ -57,24 +68,24 @@ function detect(): ChannelResult {
   const isPaid      = paidMediums.some(m => medium.includes(m));
 
   if (isInstagram) {
-    if (isPaid) return { type: 'ads', platform: 'm', campaign };
+    if (isPaid) return { type: 'ads', platform: 'm', campaign, adset };
     // Orgânico Instagram — preserva o medium para rastrear bio/stories/post
     const igMedium = medium || null;
     return { type: 'soc', platform: 'ig', medium: igMedium };
   }
 
   if (isMeta) {
-    return { type: 'ads', platform: 'm', campaign };
+    return { type: 'ads', platform: 'm', campaign, adset };
   }
 
   // ── Google via UTM manual
   if (source.includes('google')) {
-    return { type: 'ads', platform: 'g', campaign };
+    return { type: 'ads', platform: 'g', campaign, adset };
   }
 
   // ── Qualquer medium pago sem plataforma identificada
   if (isPaid) {
-    return { type: 'ads', platform: null, campaign };
+    return { type: 'ads', platform: null, campaign, adset };
   }
 
   return { type: 'org' };
@@ -85,7 +96,10 @@ function buildStoredValue(d: ChannelResult): string {
   if (d.type === 'soc') {
     return ['soc', d.platform, d.medium].filter(Boolean).join('|');
   }
-  return ['ads', d.platform, d.campaign].filter(Boolean).join('|');
+  // adset só entra quando há campanha (mantém posição: ads|plat|campanha|adset)
+  const parts = ['ads', d.platform, d.campaign];
+  if (d.campaign && d.adset) parts.push(d.adset);
+  return parts.filter(Boolean).join('|');
 }
 
 // ── API pública ───────────────────────────────────────────────────────────────
@@ -111,6 +125,25 @@ export function channelTag(): string {
   } catch {
     return '[org]';
   }
+}
+
+/**
+ * id único da visita-de-anúncio (gerado lazy só p/ canal 'ads').
+ * Vai no Pixel (eventID) e na mensagem ([cid:...]) → casamento 1:1 no Nexum.
+ */
+export function channelClickId(): string {
+  try {
+    if (!(localStorage.getItem(KEY) || 'org').startsWith('ads')) return '';
+    let id = localStorage.getItem(KEY_CLICK) || '';
+    if (!id) { id = genClickId(); localStorage.setItem(KEY_CLICK, id); }
+    return id;
+  } catch { return ''; }
+}
+
+/** Bracket separado com o click_id, p/ anexar à mensagem. Vazio fora de 'ads'. */
+export function clickIdTag(): string {
+  const id = channelClickId();
+  return id ? `[cid:${id}]` : '';
 }
 
 // Stubs — reservados para geolocalização futura (importados no App.tsx)

@@ -8,7 +8,7 @@ import { usePageTracking } from "@/hooks/usePageTracking";
 import { useEffect } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLoader } from "@/components/PageLoader";
-import { initChannel, channelTag, geoTag, fetchGeo } from "@/lib/channel";
+import { initChannel, channelTag, clickIdTag, geoTag, fetchGeo } from "@/lib/channel";
 import { analytics } from "@/lib/analytics";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
@@ -92,7 +92,7 @@ function AppRoutes() {
         const url = new URL(href, window.location.origin);
         const text = url.searchParams.get('text') || '';
         if (/^\s*\[(ads|org|soc)\]/.test(text)) return; // já marcado
-        url.searchParams.set('text', `${channelTag()} ${text}`.trim());
+        url.searchParams.set('text', `${channelTag()} ${clickIdTag()} ${text}`.replace(/\s+/g, ' ').trim());
         anchor.setAttribute('href', url.toString());
       } catch {
         /* href não parseável — ignora */

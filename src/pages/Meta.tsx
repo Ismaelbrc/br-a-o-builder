@@ -1,33 +1,34 @@
-import { useEffect } from 'react';
-import { setChannel } from '@/lib/channel';
+import { useEffect, useState } from 'react';
+import { setChannel, channelTag, clickIdTag, channelClickId } from '@/lib/channel';
 
-const WHATSAPP_URL =
-  'https://api.whatsapp.com/send?phone=556296472423&text=' +
-  encodeURIComponent('[ads] Olá! Quero saber mais sobre o corte e dobra da BR Aço.');
+const PHONE = '556296472423';
+const MSG = 'Olá! Quero saber mais sobre o corte e dobra da BR Aço.';
 
 export default function Meta() {
-  useEffect(() => {
-    setChannel('ads|m'); // LP exclusiva de Meta Ads → plataforma conhecida
-    // Redireciona após 1.4 s e dispara pixels DENTRO do timeout
-    // Assim só conta como Lead quem realmente foi redirecionado para o WhatsApp
-    const timer = setTimeout(() => {
-      // Meta Pixel — o init já ocorreu no index.html global
-      if (typeof window.fbq === 'function') {
-        window.fbq('track', 'Lead', {
-          content_name: 'WhatsApp Click',
-          content_category: 'meta-ads',
-        });
-      }
+  const [waUrl, setWaUrl] = useState(`https://api.whatsapp.com/send?phone=${PHONE}`);
 
-      // GA4 — cross-attribution
+  useEffect(() => {
+    setChannel('ads|m'); // fallback p/ /meta sem UTM (initChannel sobrescreve se houver UTM)
+    // monta a mensagem com a tag de canal + click_id ([cid:...]) → casamento 1:1 no Nexum
+    const text = `${channelTag()} ${clickIdTag()} ${MSG}`.replace(/\s+/g, ' ').trim();
+    const url = `https://api.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent(text)}`;
+    setWaUrl(url);
+
+    const timer = setTimeout(() => {
+      // CONTACT (intenção), NÃO Lead. O "Lead" real é disparado server-side (CAPI no
+      // webhook do Nexum) quando a mensagem chega de fato. eventID = click_id p/ dedupe.
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Contact',
+          { content_name: 'WhatsApp Click', content_category: 'meta-ads' },
+          { eventID: channelClickId() });
+      }
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'generate_lead', {
           event_category: 'meta-ads',
           event_label: 'whatsapp_meta',
         });
       }
-
-      window.location.href = WHATSAPP_URL;
+      window.location.href = url;
     }, 1400);
 
     return () => clearTimeout(timer);
@@ -71,7 +72,7 @@ export default function Meta() {
         <p style={{ color: '#888', fontSize: '0.875rem', lineHeight: 1.5 }}>
           Aguarde um momento.<br />
           Caso não seja redirecionado,{' '}
-          <a href={WHATSAPP_URL} style={{ color: '#25d366', fontWeight: 600 }}>
+          <a href={waUrl} style={{ color: '#25d366', fontWeight: 600 }}>
             clique aqui
           </a>.
         </p>
