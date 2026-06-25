@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { setChannel, channelTag, clickIdTag, channelClickId } from '@/lib/channel';
+import { setChannel, channelTag, clickIdTag, channelClickId, sendLeadBeacon } from '@/lib/channel';
 
 const PHONE = '556296472423';
 const MSG = 'Olá! Quero saber mais sobre o corte e dobra da BR Aço.';
@@ -28,6 +28,7 @@ export default function Meta() {
           event_label: 'whatsapp_meta',
         });
       }
+      sendLeadBeacon(); // fbc/fbp+click_id → Nexum (CAPI atribui o Lead)
       window.location.href = url;
     }, 1400);
 

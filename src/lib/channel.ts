@@ -146,6 +146,39 @@ export function clickIdTag(): string {
   return id ? `[cid:${id}]` : '';
 }
 
+const BEACON_URL = 'https://www.philosbr-teste.com.br/ismael/nexum/api/lead-beacon.php';
+
+function readCookie(name: string): string {
+  try {
+    const m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.$?*|{}()[\]\\/+^]/g, '\\$&') + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  } catch { return ''; }
+}
+
+/**
+ * Envia fbc/fbp + click_id ao Nexum no clique do WhatsApp (só p/ 'ads').
+ * O CAPI server-side usa isso no user_data → atribui o Lead ao anúncio certo.
+ * Fire-and-forget via sendBeacon (text/plain → sem preflight CORS).
+ */
+export function sendLeadBeacon(): void {
+  try {
+    const id = channelClickId();
+    if (!id) return;
+    const fbp = readCookie('_fbp');
+    let fbc = readCookie('_fbc');
+    if (!fbc) {
+      const fbclid = new URLSearchParams(window.location.search).get('fbclid');
+      if (fbclid) fbc = `fb.1.${Date.now()}.${fbclid}`;
+    }
+    const body = JSON.stringify({ click_id: id, fbc, fbp });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(BEACON_URL, new Blob([body], { type: 'text/plain;charset=UTF-8' }));
+    } else {
+      fetch(BEACON_URL, { method: 'POST', body, keepalive: true, mode: 'no-cors', headers: { 'Content-Type': 'text/plain' } });
+    }
+  } catch { /* fire-and-forget */ }
+}
+
 // Stubs — reservados para geolocalização futura (importados no App.tsx)
 export function geoTag(): string { return ''; }
 export async function fetchGeo(): Promise<void> { return; }

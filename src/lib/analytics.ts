@@ -4,7 +4,7 @@
    IDs are injected at build time via Vite env variables (VITE_*).
    ────────────────────────────────────────────────────────────────────────── */
 
-import { channelClickId } from '@/lib/channel';
+import { channelClickId, sendLeadBeacon } from '@/lib/channel';
 
 declare global {
   interface Window {
@@ -68,6 +68,9 @@ export const analytics = {
       content_name: 'WhatsApp Click',
       content_category: source,
     }, { eventID: channelClickId() });
+
+    // Beacon: manda fbc/fbp+click_id pro Nexum → CAPI atribui o Lead ao anúncio certo
+    sendLeadBeacon();
 
     // GA4 — dedicated event (mark as Key Event in GA4 Admin)
     gtag('event', 'whatsapp_click', {
