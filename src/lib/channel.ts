@@ -106,6 +106,14 @@ function buildStoredValue(d: ChannelResult): string {
 
 export function initChannel(): void {
   try {
+    // Migração v1→v2 (1×): preserva atribuição de visitante recorrente que tinha as chaves antigas.
+    const oldCh = localStorage.getItem('br_channel');
+    if (oldCh && !localStorage.getItem(KEY)) localStorage.setItem(KEY, oldCh);
+    const oldCid = localStorage.getItem('br_click_id');
+    if (oldCid && !localStorage.getItem(KEY_CLICK)) localStorage.setItem(KEY_CLICK, oldCid);
+    if (oldCh) localStorage.removeItem('br_channel');
+    if (oldCid) localStorage.removeItem('br_click_id');
+
     const d = detect();
     if (d.type !== 'org') {
       localStorage.setItem(KEY, buildStoredValue(d));
@@ -168,7 +176,7 @@ export function sendLeadBeacon(): void {
     let fbc = readCookie('_fbc');
     if (!fbc) {
       const fbclid = new URLSearchParams(window.location.search).get('fbclid');
-      if (fbclid) fbc = `fb.1.${Date.now()}.${fbclid}`;
+      if (fbclid) fbc = `fb.1.${Math.floor(Date.now() / 1000)}.${fbclid}`; // _fbc usa segundos, não ms
     }
     const body = JSON.stringify({ click_id: id, fbc, fbp });
     if (navigator.sendBeacon) {

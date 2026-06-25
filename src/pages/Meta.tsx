@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { setChannel, channelTag, clickIdTag, channelClickId, sendLeadBeacon } from '@/lib/channel';
+import { initChannel, setChannel, channelTag, clickIdTag, channelClickId, sendLeadBeacon } from '@/lib/channel';
 
 const PHONE = '556296472423';
 const MSG = 'Olá! Quero saber mais sobre o corte e dobra da BR Aço.';
@@ -8,7 +8,8 @@ export default function Meta() {
   const [waUrl, setWaUrl] = useState(`https://api.whatsapp.com/send?phone=${PHONE}`);
 
   useEffect(() => {
-    setChannel('ads|m'); // fallback p/ /meta sem UTM (initChannel sobrescreve se houver UTM)
+    initChannel();                                      // detecta UTMs primeiro (campanha/adset)
+    if (channelTag() === '[org]') setChannel('ads|m');  // fallback só se /meta veio sem UTM (não clobber)
     // monta a mensagem com a tag de canal + click_id ([cid:...]) → casamento 1:1 no Nexum
     const text = `${channelTag()} ${clickIdTag()} ${MSG}`.replace(/\s+/g, ' ').trim();
     const url = `https://api.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent(text)}`;
