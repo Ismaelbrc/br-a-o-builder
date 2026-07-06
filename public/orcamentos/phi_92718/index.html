@@ -15,320 +15,395 @@
 <link rel="icon" href="https://grupobraco.com.br/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style>
-/* ── Sistema: BR Aço Engineering Precision ─────────────────────────────
-   Tipos: Space Grotesk (display, -0.02em) / Inter (corpo)
-   Fundos: papel quente hsl(38 33% 98%) + navy-dark hsl(220 44% 11%)
-   Laranja hsl(24 90% 54%) com escassez: nº do orçamento, preços, CTA   */
+/* ═══ BR Aço — Proposta Editorial de Engenharia (dark premium) ═══════════
+   Tipos: Space Grotesk 700 display gigante / Inter 400-500 corpo pequeno
+   Canvas: navy profundo hsl(220 44% 8%) · linhas hsl(218 30% 17%)
+   Laranja hsl(24 90% 54%) com escassez máxima: nº, preços, réguas      */
 :root{
-  --orange: hsl(24 90% 54%);
-  --orange-hover: hsl(24 79% 47%);
-  --ember: hsl(18 78% 42%);
-  --navy: hsl(218 42% 17%);
-  --navy-dark: hsl(220 44% 11%);
-  --paper: hsl(38 33% 98%);
-  --ink: hsl(220 24% 12%);
-  --gray-med: hsl(30 6% 42%);
-  --gray-light: hsl(36 24% 96%);
-  --hairline: hsl(30 12% 86%);
-  --whatsapp: hsl(142 70% 42%);
-  --whatsapp-hover: hsl(142 76% 33%);
-  --card: #fff;
+  --orange:hsl(24 90% 54%);
+  --ember:hsl(18 78% 42%);
+  --bg:hsl(220 44% 8%);
+  --bg-raise:hsl(219 40% 11%);
+  --line:hsl(218 30% 17%);
+  --line-soft:hsl(218 30% 13%);
+  --white:hsl(38 33% 96%);
+  --muted:hsl(220 12% 62%);
+  --steel-hi:hsl(218 18% 52%);
+  --steel-lo:hsl(219 30% 22%);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Inter',system-ui,sans-serif;
-  background:var(--paper);
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  font-size:16px;line-height:1.55;
+  font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--white);
+  -webkit-font-smoothing:antialiased;font-size:15px;line-height:1.6;overflow-x:hidden;
 }
-h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-0.02em}
-.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+::selection{background:var(--orange);color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 .micro{
-  font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--gray-med);
+  font-size:10px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;
+  color:var(--muted);
+}
+.micro b{color:var(--orange);font-weight:600}
+
+/* ═══ Barra de progresso de leitura ═══ */
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--orange);z-index:99;transition:width .1s linear}
+
+/* ═══ Faixa industrial (assinatura) ═══ */
+.hazard{
+  height:6px;
+  background:repeating-linear-gradient(-45deg,var(--orange) 0 14px,transparent 14px 28px);
+  opacity:.9;
 }
 
-/* ── Barra superior ── */
-.brand-line{height:3px;background:linear-gradient(90deg,var(--orange),var(--ember))}
-.topbar{background:#fff;border-bottom:1px solid var(--hairline)}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
-.topbar img{height:34px;width:auto;display:block}
-.doc-chip{
-  font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;
-  color:var(--navy);border:1px solid var(--hairline);border-radius:6px;
-  padding:6px 12px;white-space:nowrap;
-}
-.doc-chip b{color:var(--orange)}
+/* ═══ Header mínimo ═══ */
+header{position:absolute;top:6px;left:0;right:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:22px}
+.brandmark{display:flex;align-items:center;gap:12px}
+.brandmark img{width:40px;height:40px;border-radius:9px}
+.brandmark span{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.06em}
 
-/* ── Hero navy com grid de engenharia ── */
+/* ═══ Hero (tela cheia, grid de prancheta) ═══ */
 .hero{
+  min-height:96vh;display:flex;flex-direction:column;justify-content:center;
+  position:relative;
   background:
-    repeating-linear-gradient(0deg, transparent 0 39px, hsl(218 36% 22% / .7) 39px 40px),
-    repeating-linear-gradient(90deg, transparent 0 39px, hsl(218 36% 22% / .7) 39px 40px),
-    var(--navy-dark);
-  color:#fff;
-  padding:56px 0 48px;
+    radial-gradient(1100px 500px at 78% -10%, hsl(24 90% 54% / .07), transparent 60%),
+    repeating-linear-gradient(0deg,transparent 0 55px,hsl(218 30% 15%) 55px 56px),
+    repeating-linear-gradient(90deg,transparent 0 55px,hsl(218 30% 15%) 55px 56px),
+    var(--bg);
+  border-bottom:1px solid var(--line);
 }
-.hero .micro{color:hsl(30 15% 72%)}
-.hero h1{font-size:clamp(30px,6vw,46px);font-weight:700;line-height:1.08;margin:10px 0 6px}
-.hero h1 b{color:var(--orange);font-weight:700}
-.hero .sub{color:hsl(30 15% 78%);font-size:16px;max-width:560px}
-.hero-meta{
-  display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:28px;
-  border-top:1px solid hsl(218 30% 24%);padding-top:20px;
+.hero .wrap{width:100%;padding-bottom:110px}
+.cross{position:absolute;color:hsl(218 20% 32%);font-family:'Space Grotesk',sans-serif;font-size:18px;user-select:none}
+.cross.c1{top:110px;left:4vw}.cross.c2{top:110px;right:4vw}
+.cross.c3{bottom:130px;left:4vw}.cross.c4{bottom:130px;right:4vw}
+.hero-kicker{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.hero-kicker .rule{width:56px;height:1px;background:var(--orange)}
+.display{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.04em;
+  font-size:clamp(52px,10.5vw,128px);line-height:.94;text-transform:uppercase;
 }
-.hero-meta div{min-width:140px}
-.hero-meta .micro{margin-bottom:2px}
-.hero-meta strong{font-size:15px;font-weight:600;color:#fff}
+.display .outline{
+  color:transparent;-webkit-text-stroke:1.5px hsl(220 14% 46%);
+  display:block;
+}
+.display .solid{display:block}
+.display .solid b{color:var(--orange);font-weight:700}
+.hero-client{margin-top:34px;max-width:520px;color:var(--muted);font-size:16px}
+.hero-client strong{color:var(--white);font-weight:600}
+.hero-strip{
+  position:absolute;left:0;right:0;bottom:0;border-top:1px solid var(--line);
+  background:hsl(220 44% 8% / .82);backdrop-filter:blur(6px);
+}
+.hero-strip .wrap{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding-bottom:0;
+}
+.hero-strip .cell{padding:20px 0;border-left:1px solid var(--line);padding-left:22px}
+.hero-strip .cell:first-child{border-left:none;padding-left:0}
+.hero-strip .micro{margin-bottom:5px}
+.hero-strip strong{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:500;letter-spacing:-0.01em}
 
-/* ── Seções ── */
-section{padding:36px 0 0}
-.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
-.sec-head h2{font-size:20px;font-weight:600;color:var(--navy);white-space:nowrap}
-.sec-head::after{content:"";flex:1;height:1px;background:var(--hairline)}
+/* ═══ Desenho técnico no hero (desktop) ═══ */
+.tech-draw{
+  position:absolute;right:6vw;top:50%;transform:translateY(-56%);
+  width:min(300px,24vw);opacity:.85;pointer-events:none;
+}
+.tech-draw text{font-family:'Space Grotesk',sans-serif}
 
-/* ── Cards cliente/entrega ── */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.card{
-  background:var(--card);border:1px solid var(--hairline);border-radius:10px;
-  padding:20px 22px;
+/* ═══ Seções numeradas ═══ */
+section{padding:clamp(64px,10vw,110px) 0 0}
+.idx-head{display:flex;align-items:baseline;gap:22px;margin-bottom:clamp(30px,5vw,52px)}
+.idx{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:var(--orange);
+  border:1px solid var(--line);border-radius:99px;padding:7px 15px;white-space:nowrap;
 }
-.card .micro{margin-bottom:8px}
-.card p{font-size:15px;margin-top:4px;color:var(--ink)}
-.card p span{color:var(--gray-med)}
+.idx-head h2{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.03em;
+  font-size:clamp(26px,4.4vw,40px);text-transform:uppercase;
+}
+.idx-head::after{content:"";flex:1;height:1px;background:var(--line);transform:translateY(-6px)}
 
-/* ── Tabela de preços ── */
-.table-card{background:var(--card);border:1px solid var(--hairline);border-radius:10px;overflow:hidden}
-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-thead th{
-  font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
-  color:var(--gray-med);text-align:left;padding:14px 18px 12px;
-  border-bottom:1px solid var(--hairline);background:var(--gray-light);
-}
-thead th:last-child, td.price{text-align:right}
-tbody td{padding:14px 18px;border-bottom:1px solid var(--hairline);font-size:15px}
-tbody tr:last-child td{border-bottom:none}
-tbody tr{transition:background .15s ease}
-tbody tr:hover{background:hsl(36 24% 97%)}
-td.code{font-family:'Space Grotesk',sans-serif;font-size:13px;color:var(--gray-med);width:70px}
-td.price{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:var(--navy);white-space:nowrap}
-td.price small{font-size:11px;font-weight:500;color:var(--gray-med)}
-.prod{font-weight:500}
-.prod .ca{font-size:12px;color:var(--gray-med);display:block}
-.gauge{display:flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums}
-.dot{
-  border-radius:50%;flex:none;
-  background:radial-gradient(circle at 35% 32%, hsl(218 20% 46%), var(--navy) 68%);
-  border:1.5px solid hsl(218 42% 24%);
-}
-.table-note{
-  padding:12px 18px;background:var(--gray-light);border-top:1px solid var(--hairline);
-  font-size:13px;color:var(--gray-med);
-}
+/* ═══ 01 Cliente ═══ */
+.client-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.client-grid>div{background:var(--bg-raise);padding:clamp(24px,4vw,40px)}
+.client-grid .micro{margin-bottom:14px}
+.client-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(20px,3vw,27px);letter-spacing:-0.02em;margin-bottom:14px}
+.client-grid p{color:var(--muted);font-size:14px;line-height:1.8}
+.client-grid p b{color:var(--white);font-weight:500}
 
-/* ── Condições ── */
-.terms{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.terms .card h3{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px}
-.terms ul{list-style:none}
-.terms li{
-  font-size:14px;color:var(--gray-med);padding:7px 0 7px 18px;position:relative;
-  border-bottom:1px solid hsl(30 12% 92%);
+/* ═══ 02 Itens — lista editorial ═══ */
+.items{border-top:1px solid var(--line)}
+.item{
+  display:grid;grid-template-columns:88px 1fr auto;align-items:center;gap:clamp(16px,3vw,36px);
+  padding:clamp(18px,3vw,26px) 0;border-bottom:1px solid var(--line);
+  transition:background .2s ease, padding-left .2s ease;
 }
-.terms li:last-child{border-bottom:none}
-.terms li::before{
-  content:"";position:absolute;left:0;top:14px;width:8px;height:2px;background:var(--orange);
+.item:hover{background:hsl(219 40% 10%);padding-left:10px}
+.sec-view{display:flex;align-items:center;justify-content:center;width:88px;height:76px}
+.rebar{
+  border-radius:50%;
+  background:radial-gradient(circle at 34% 30%, var(--steel-hi), var(--steel-lo) 62%, hsl(220 40% 14%) 100%);
+  box-shadow:0 0 0 1px hsl(218 24% 28%), 0 6px 18px hsl(220 44% 4% / .6);
+  position:relative;flex:none;
 }
-.pay-big{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;color:var(--ink)}
-
-/* ── CTA ── */
-.cta{
-  margin-top:40px;background:var(--navy);border-radius:14px;color:#fff;
-  padding:36px 32px;display:flex;align-items:center;justify-content:space-between;
-  gap:24px;flex-wrap:wrap;
+.rebar::after{
+  content:"";position:absolute;inset:22%;border-radius:50%;
+  border:1px dashed hsl(218 16% 44% / .5);
 }
-.cta h2{font-size:22px;font-weight:600;margin-bottom:4px}
-.cta p{color:hsl(30 15% 78%);font-size:14px}
-.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-  display:inline-flex;align-items:center;gap:10px;border-radius:8px;
-  font-family:'Inter',sans-serif;font-size:15px;font-weight:600;text-decoration:none;
-  padding:14px 22px;min-height:48px;transition:background .15s ease, transform .15s ease;
-  cursor:pointer;border:none;
+.item-info h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(18px,2.6vw,24px);letter-spacing:-0.02em}
+.item-info h3 span{color:var(--orange)}
+.item-info .meta{display:flex;gap:18px;margin-top:6px;flex-wrap:wrap}
+.item-info .meta span{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.item-price{text-align:right;white-space:nowrap}
+.item-price .val{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.02em;
+  font-size:clamp(24px,4vw,34px);font-variant-numeric:tabular-nums;
 }
-.btn:active{transform:scale(.98)}
-.btn-wa{background:var(--whatsapp);color:#fff}
-.btn-wa:hover{background:var(--whatsapp-hover)}
-.btn-ghost{background:transparent;color:#fff;border:1px solid hsl(218 24% 32%)}
-.btn-ghost:hover{border-color:hsl(218 24% 48%)}
-.btn svg{flex:none}
+.item-price .unit{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.items-note{padding:18px 0;color:var(--muted);font-size:13px;display:flex;gap:10px;align-items:baseline}
+.items-note::before{content:"";width:22px;height:2px;background:var(--orange);flex:none;transform:translateY(-3px)}
 
-/* ── Footer ── */
-footer{margin-top:48px;background:var(--navy-dark);color:hsl(30 15% 72%);padding:36px 0}
-footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
-footer strong{color:#fff;font-size:14px;display:block;margin-bottom:6px}
-footer p{font-size:13px;line-height:1.7}
-footer a{color:var(--orange);text-decoration:none}
-.foot-icon{height:44px;width:44px;border-radius:9px}
+/* ═══ Régua de bitolas ═══ */
+.ruler{
+  margin-top:clamp(36px,6vw,56px);border:1px solid var(--line);background:var(--bg-raise);
+  padding:clamp(24px,4vw,40px);
+}
+.ruler .micro{margin-bottom:26px}
+.ruler-row{display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
+.ruler-item{display:flex;flex-direction:column;align-items:center;gap:12px;flex:1}
+.ruler-item .mm{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.ruler-base{height:1px;background:var(--line);margin-top:14px;position:relative}
+.ruler-base::before,.ruler-base::after{
+  content:"";position:absolute;top:-4px;width:1px;height:9px;background:var(--line);
+}
+.ruler-base::before{left:0}.ruler-base::after{right:0}
 
-/* ── Reveal animation (stagger via --d) ── */
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;transition-delay:var(--d,0s)}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-
-/* ── Mobile ── */
-@media(max-width:640px){
-  .grid2,.terms{grid-template-columns:1fr}
-  thead th:nth-child(1), td.code{display:none}
-  thead th,tbody td{padding:12px 14px}
-  .cta{padding:28px 22px}
-  .cta-actions{width:100%;flex-direction:column}
-  .btn{width:100%;justify-content:center}
+/* ═══ 03 Condições ═══ */
+.terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.terms-grid>div{background:var(--bg-raise);padding:clamp(24px,4vw,40px)}
+.pay-display{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.03em;
+  font-size:clamp(30px,5vw,44px);line-height:1.05;margin:14px 0 10px;
+}
+.pay-display b{color:var(--orange);font-weight:700}
+.terms-grid .sub{color:var(--muted);font-size:13px}
+.obs-list{list-style:none;margin-top:14px;counter-reset:obs}
+.obs-list li{
+  padding:13px 0;border-bottom:1px solid var(--line-soft);color:var(--muted);
+  font-size:13.5px;line-height:1.7;display:flex;gap:14px;
+}
+.obs-list li:last-child{border-bottom:none}
+.obs-list li::before{
+  content:counter(obs,decimal-leading-zero);counter-increment:obs;
+  font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;color:var(--orange);
+  flex:none;padding-top:2px;
 }
 
-/* ── Impressão ── */
-@media print{
-  .cta,.no-print{display:none!important}
-  .hero{background:#fff;color:var(--ink);padding:20px 0}
-  .hero .sub,.hero-meta strong{color:var(--ink)}
-  .hero h1 b{color:var(--ember)}
-  footer{background:#fff;color:var(--ink);border-top:1px solid var(--hairline)}
-  footer strong{color:var(--ink)}
-  body{background:#fff}
-  .reveal{opacity:1;transform:none}
+/* ═══ Encerramento ═══ */
+.closing{
+  margin-top:clamp(70px,11vw,120px);border-top:1px solid var(--line);
+  padding:clamp(56px,9vw,96px) 0 clamp(40px,6vw,64px);text-align:center;
+  background:
+    radial-gradient(700px 320px at 50% 120%, hsl(24 90% 54% / .08), transparent 70%),
+    var(--bg);
+}
+.closing img{width:64px;height:64px;border-radius:14px;margin-bottom:26px}
+.closing .tagline{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.03em;
+  font-size:clamp(24px,4.6vw,40px);line-height:1.15;max-width:640px;margin:0 auto;
+}
+.closing .tagline b{color:var(--orange);font-weight:700}
+.closing .legal{margin-top:36px;color:hsl(220 12% 45%);font-size:11.5px;letter-spacing:0.08em}
+
+/* ═══ Reveal ═══ */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ═══ Mobile ═══ */
+@media(max-width:720px){
+  .hero{min-height:92vh}
+  .hero .wrap{padding-bottom:190px}
+  .tech-draw{display:none}
+  .hero-strip .wrap{grid-template-columns:1fr 1fr}
+  .hero-strip .cell{padding:14px 0 14px 16px}
+  .hero-strip .cell:nth-child(odd){border-left:none;padding-left:0}
+  .client-grid,.terms-grid{grid-template-columns:1fr}
+  .item{grid-template-columns:56px 1fr auto;gap:14px}
+  .sec-view{width:56px;height:52px}
+  .cross{display:none}
+  .ruler-row{flex-wrap:wrap;row-gap:22px}
+  .ruler-item{flex:0 0 22%}
 }
 </style>
 </head>
 <body>
 
-<div class="brand-line"></div>
-<div class="topbar">
+<div id="progress"></div>
+<div class="hazard"></div>
+
+<header>
   <div class="wrap">
-    <img src="logo-braco.png" alt="BR Aço — Seus projetos na velocidade máxima">
-    <div class="doc-chip">ORÇAMENTO <b>Nº phi_92718</b></div>
+    <div class="brandmark">
+      <img src="icone-braco.png" alt="BR Aço">
+      <span>BR.AÇO</span>
+    </div>
+    <div class="micro">Proposta comercial · <b>2026</b></div>
   </div>
-</div>
+</header>
 
 <div class="hero">
+  <span class="cross c1">+</span><span class="cross c2">+</span>
+  <span class="cross c3">+</span><span class="cross c4">+</span>
+  <svg class="tech-draw rv" style="--d:.5s" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- seção de vergalhão Ø20 em estilo de prancheta -->
+    <circle cx="150" cy="150" r="110" stroke="hsl(218 20% 34%)" stroke-width="1.5"/>
+    <circle cx="150" cy="150" r="86" stroke="hsl(218 20% 26%)" stroke-width="1" stroke-dasharray="5 7"/>
+    <circle cx="150" cy="150" r="3.5" fill="hsl(24 90% 54%)"/>
+    <line x1="150" y1="18" x2="150" y2="282" stroke="hsl(218 20% 26%)" stroke-width="1" stroke-dasharray="12 6 2 6"/>
+    <line x1="18" y1="150" x2="282" y2="150" stroke="hsl(218 20% 26%)" stroke-width="1" stroke-dasharray="12 6 2 6"/>
+    <!-- linha de cota -->
+    <line x1="40" y1="150" x2="260" y2="150" stroke="hsl(24 90% 54%)" stroke-width="1.5" transform="rotate(-45 150 150)"/>
+    <path d="M46 144 L40 150 L46 156" stroke="hsl(24 90% 54%)" stroke-width="1.5" fill="none" transform="rotate(-45 150 150)"/>
+    <path d="M254 144 L260 150 L254 156" stroke="hsl(24 90% 54%)" stroke-width="1.5" fill="none" transform="rotate(-45 150 150)"/>
+    <text x="228" y="62" fill="hsl(38 33% 96%)" font-size="17" font-weight="700" letter-spacing="-0.5">Ø 20</text>
+    <text x="30" y="320" fill="hsl(220 12% 52%)" font-size="10" letter-spacing="2.4">SEÇÃO NOMINAL · CA-50</text>
+  </svg>
   <div class="wrap">
-    <div class="micro reveal">Proposta comercial · Vergalhões CA-50 / CA-60</div>
-    <h1 class="reveal" style="--d:.08s">Orçamento <b>Nº phi_92718</b></h1>
-    <p class="sub reveal" style="--d:.16s">Preparado para <strong>Toro Engenharia Ltda</strong> — preços por quilograma com entrega no Setor Marista, Goiânia.</p>
-    <div class="hero-meta reveal" style="--d:.24s">
-      <div><div class="micro">Data da cotação</div><strong>18/06/2026</strong></div>
-      <div><div class="micro">Vendedor</div><strong>Ismael B.</strong></div>
-      <div><div class="micro">Condição</div><strong>Boleto 21 dias</strong></div>
-      <div><div class="micro">Validade</div><strong>Data da cotação</strong></div>
+    <div class="hero-kicker rv"><span class="rule"></span><span class="micro">Casa Brasileira de Aço · Aparecida de Goiânia — GO</span></div>
+    <h1 class="display">
+      <span class="outline rv" style="--d:.05s">Orçamento</span>
+      <span class="solid rv" style="--d:.15s"><b>phi_92718</b></span>
+    </h1>
+    <p class="hero-client rv" style="--d:.28s">Proposta de fornecimento de vergalhões CA-50 e CA-60 preparada com exclusividade para <strong>Toro Engenharia Ltda</strong>.</p>
+  </div>
+  <div class="hero-strip">
+    <div class="wrap">
+      <div class="cell rv" style="--d:.4s"><div class="micro">Cotação</div><strong>18 · 06 · 2026</strong></div>
+      <div class="cell rv" style="--d:.48s"><div class="micro">Vendedor</div><strong>Ismael B.</strong></div>
+      <div class="cell rv" style="--d:.56s"><div class="micro">Pagamento</div><strong>Boleto 21 dias</strong></div>
+      <div class="cell rv" style="--d:.64s"><div class="micro">Entrega</div><strong>Goiânia — GO</strong></div>
     </div>
   </div>
 </div>
 
 <main class="wrap">
 
-  <section class="reveal">
-    <div class="sec-head"><h2>Informações do cliente</h2></div>
-    <div class="grid2">
-      <div class="card">
-        <div class="micro">Cliente</div>
-        <p><strong>TORO ENGENHARIA LTDA</strong></p>
-        <p><span>CNPJ:</span> 45.024.357/0001-48</p>
-        <p><span>Contato:</span> (51) 9337-7000</p>
-        <p><span>Endereço:</span> Av. São Paulo, 250 — São Geraldo, Porto Alegre/RS — CEP 90230-160</p>
+  <section>
+    <div class="idx-head rv"><span class="idx">01</span><h2>Cliente</h2></div>
+    <div class="client-grid rv" style="--d:.1s">
+      <div>
+        <div class="micro">Razão social</div>
+        <div class="client-name">Toro Engenharia Ltda</div>
+        <p><b>CNPJ</b> 45.024.357/0001-48<br>
+        Av. São Paulo, 250 — São Geraldo<br>
+        Porto Alegre/RS · CEP 90230-160</p>
       </div>
-      <div class="card">
-        <div class="micro">Endereço de entrega</div>
-        <p><strong>Rua 42, nº 95 — Setor Marista</strong></p>
-        <p>Goiânia/GO — CEP 74150-270</p>
-        <p><span>Faturamento:</span> para Marista</p>
+      <div>
+        <div class="micro">Ponto de entrega</div>
+        <div class="client-name">Setor Marista</div>
+        <p>Rua 42, nº 95 — Goiânia/GO<br>
+        CEP 74150-270<br>
+        <b>Faturamento</b> para Marista</p>
       </div>
     </div>
   </section>
 
-  <section class="reveal">
-    <div class="sec-head"><h2>Tabela de preços</h2></div>
-    <div class="table-card">
-      <table>
-        <thead>
-          <tr><th>Código</th><th>Produto</th><th>Bitola</th><th>Preço por kg</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="code">81002</td><td class="prod">Vergalhão CA-60<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:12px;height:12px"></span>5.0 mm</div></td><td class="price">R$ 10,28 <small>/kg</small></td></tr>
-          <tr><td class="code">81003</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:14px;height:14px"></span>6.3 mm</div></td><td class="price">R$ 9,14 <small>/kg</small></td></tr>
-          <tr><td class="code">81004</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:17px;height:17px"></span>8.0 mm</div></td><td class="price">R$ 9,14 <small>/kg</small></td></tr>
-          <tr><td class="code">81005</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:20px;height:20px"></span>10 mm</div></td><td class="price">R$ 8,83 <small>/kg</small></td></tr>
-          <tr><td class="code">81006</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:25px;height:25px"></span>12.5 mm</div></td><td class="price">R$ 8,68 <small>/kg</small></td></tr>
-          <tr><td class="code">81007</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:32px;height:32px"></span>16 mm</div></td><td class="price">R$ 8,68 <small>/kg</small></td></tr>
-          <tr><td class="code">81008</td><td class="prod">Vergalhão CA-50<span class="ca">Corte e dobra</span></td><td><div class="gauge"><span class="dot" style="width:40px;height:40px"></span>20 mm</div></td><td class="price">R$ 8,68 <small>/kg</small></td></tr>
-        </tbody>
-      </table>
-      <div class="table-note">Valores cotados por quilograma (kg). O valor total do pedido é calculado conforme as quantidades solicitadas.</div>
+  <section>
+    <div class="idx-head rv"><span class="idx">02</span><h2>Aço cotado</h2></div>
+
+    <div class="items">
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:15px;height:15px"></span></div><div class="item-info"><h3>CA-60 <span>Ø 5.0 mm</span></h3><div class="meta"><span>Cód. 81002</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 10,28</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:19px;height:19px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 6.3 mm</span></h3><div class="meta"><span>Cód. 81003</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 9,14</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:24px;height:24px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 8.0 mm</span></h3><div class="meta"><span>Cód. 81004</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 9,14</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:30px;height:30px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 10 mm</span></h3><div class="meta"><span>Cód. 81005</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,83</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:38px;height:38px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 12.5 mm</span></h3><div class="meta"><span>Cód. 81006</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:48px;height:48px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 16 mm</span></h3><div class="meta"><span>Cód. 81007</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
+      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:60px;height:60px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 20 mm</span></h3><div class="meta"><span>Cód. 81008</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
+    </div>
+    <div class="items-note rv">Valores cotados por quilograma. O total do pedido é calculado conforme as quantidades do projeto.</div>
+
+    <div class="ruler rv">
+      <div class="micro">Seções em escala relativa · Ø em milímetros</div>
+      <div class="ruler-row">
+        <div class="ruler-item"><span class="rebar" style="width:15px;height:15px"></span><span class="mm">5.0</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:19px;height:19px"></span><span class="mm">6.3</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:24px;height:24px"></span><span class="mm">8.0</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:30px;height:30px"></span><span class="mm">10</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:38px;height:38px"></span><span class="mm">12.5</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:48px;height:48px"></span><span class="mm">16</span></div>
+        <div class="ruler-item"><span class="rebar" style="width:60px;height:60px"></span><span class="mm">20</span></div>
+      </div>
+      <div class="ruler-base"></div>
     </div>
   </section>
 
-  <section class="reveal">
-    <div class="sec-head"><h2>Condições comerciais</h2></div>
-    <div class="terms">
-      <div class="card">
-        <div class="micro">Condição de pagamento</div>
-        <p class="pay-big">Boleto para 21 dias</p>
-        <p style="color:var(--gray-med);font-size:14px;margin-top:6px">Orçamento válido para a data da cotação (18/06/2026).</p>
+  <section>
+    <div class="idx-head rv"><span class="idx">03</span><h2>Condições</h2></div>
+    <div class="terms-grid rv" style="--d:.1s">
+      <div>
+        <div class="micro">Pagamento</div>
+        <div class="pay-display">Boleto<br><b>21 dias</b></div>
+        <p class="sub">Orçamento válido para a data da cotação — 18/06/2026.</p>
       </div>
-      <div class="card">
-        <h3>Observações</h3>
-        <ul>
+      <div>
+        <div class="micro">Observações</div>
+        <ul class="obs-list">
           <li>A descarga e a conferência do material são de responsabilidade do cliente.</li>
           <li>O prazo de reclamação do pedido é de até 48 horas após a entrega.</li>
-          <li>Caso a entrega não possa acontecer na data acordada, por eventualidade do cliente, será cobrado um novo frete adicional e a entrega será reprogramada em até 7 dias.</li>
+          <li>Entrega não realizada por eventualidade do cliente: novo frete adicional e reprogramação em até 7 dias.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <div class="cta reveal">
-    <div>
-      <h2>Vamos fechar seu pedido?</h2>
-      <p>Fale direto com o Ismael pelo WhatsApp — resposta rápida em horário comercial.</p>
-    </div>
-    <div class="cta-actions">
-      <a class="btn btn-wa" href="https://wa.me/5562996200704?text=Ol%C3%A1%20Ismael!%20Recebi%20o%20or%C3%A7amento%20N%C2%BA%20phi_92718%20e%20quero%20confirmar%20o%20pedido." target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Confirmar pelo WhatsApp
-      </a>
-      <button class="btn btn-ghost" onclick="window.print()">Salvar em PDF</button>
-    </div>
-  </div>
-
 </main>
 
-<footer>
+<div class="closing">
   <div class="wrap">
-    <div style="display:flex;gap:14px;align-items:flex-start">
-      <img class="foot-icon" src="icone-braco.png" alt="BR Aço">
-      <div>
-        <strong>Casa Brasileira de Aço Ltda</strong>
-        <p>CNPJ 35.882.221/0001-15 · IE 10.783.795-1<br>
-        R. 11, Quadra 05, Lote 07 — Polo Industrial<br>
-        Aparecida de Goiânia/GO · CEP 74985-235</p>
-      </div>
-    </div>
-    <div>
-      <strong>Contato</strong>
-      <p>(62) 3142-2633<br>
-      WhatsApp (62) 9 9620-0704<br>
-      ismael@grupobraco.com.br<br>
-      <a href="https://grupobraco.com.br" target="_blank" rel="noopener">grupobraco.com.br</a></p>
-    </div>
+    <img class="rv" src="icone-braco.png" alt="BR Aço">
+    <div class="tagline rv" style="--d:.12s">Seus projetos na <b>velocidade máxima.</b></div>
+    <div class="legal rv" style="--d:.24s">CASA BRASILEIRA DE AÇO LTDA · CNPJ 35.882.221/0001-15 · APARECIDA DE GOIÂNIA — GO</div>
   </div>
-</footer>
+</div>
+
+<div class="hazard"></div>
 
 <script>
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-}, { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    io.unobserve(e.target);
+    const val = e.target.querySelector('.item-price .val');
+    if (val && !reduceMotion) countUp(val);
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// Count-up dos preços (R$ 0,00 → valor) — números tabulares, sem shift de layout
+function countUp(el) {
+  const target = parseFloat(el.textContent.replace('R$', '').replace(',', '.'));
+  const t0 = performance.now(), dur = 850;
+  function frame(t) {
+    const p = Math.min((t - t0) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = 'R$ ' + (target * eased).toFixed(2).replace('.', ',');
+    if (p < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+// Barra de progresso de leitura
+const bar = document.getElementById('progress');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+}, { passive: true });
 </script>
 
 </body>
