@@ -1,16 +1,205 @@
-<!DOCTYPE html>
+# -*- coding: utf-8 -*-
+"""
+Gerador de páginas de orçamento BR Aço — grupobraco.com.br/orcamentos/<id>/
+
+Uso:
+    python scripts/gen-orcamento.py            # gera todos
+    python scripts/gen-orcamento.py phi_92904  # gera um
+
+Para um novo orçamento: adicionar entrada em ORCAMENTOS (dados extraídos do
+PDF do ERP Philos) e rodar. Depois: git add public/orcamentos/ && commit && push.
+
+Modos de item:
+  - modo='kg'    → cotação de preço por kg (sem coluna de total)
+  - modo='total' → quantidade × preço unitário = valor total + painel de total
+Glifos: vergalhao (círculo escala 3px/mm) · coluna (seção retangular) · arame (bobina)
+"""
+import os, sys
+
+BASE = os.path.join(os.path.dirname(__file__), '..', 'public', 'orcamentos')
+
+OBS_PADRAO = [
+    'A descarga e a conferência do material são de responsabilidade do cliente.',
+    'O prazo de reclamação do pedido é de até 48 horas após a entrega.',
+    'Entrega não realizada por eventualidade do cliente: novo frete adicional e reprogramação em até 7 dias.',
+]
+
+CLAUSULAS = """
+<h4>Cláusula 1 — Da natureza personalizada dos produtos e irreversibilidade da produção</h4>
+<p><b>Caput.</b> O(A) CONTRATANTE declara ciência expressa de que os produtos objeto desta Ordem de Compra (Aço Corte e Dobra) possuem natureza estritamente personalizada, sendo fabricados sob encomenda e sob medida, seguindo exclusivamente as especificações técnicas e os projetos estruturais fornecidos ou aprovados pelo(a) CONTRATANTE, não se tratando de produtos de prateleira ou de revenda padronizada.</p>
+<p><b>§ 1º — Do Início da Produção e Irreversibilidade:</b> Considera-se formalmente autorizada e iniciada a execução da produção a partir da assinatura desta Ordem de Compra ou do "De Acordo" formal (físico ou eletrônico) no projeto/planilhamento final. O(A) CONTRATANTE reconhece que, a partir deste marco, a matéria-prima (aço) é submetida a processos físicos de corte e dobra que são irreversíveis, impossibilitando o reaproveitamento do material para outros clientes ou projetos.</p>
+<p><b>§ 2º — Da Desistência ou Alteração de Projeto:</b> Em virtude da exclusividade das peças e da irreversibilidade do processo produtivo, caso haja desistência unilateral, cancelamento ou solicitação de alteração do projeto por parte do(a) CONTRATANTE após o marco definido no § 1º, o(a) CONTRATANTE assumirá a responsabilidade integral pelo pagamento dos itens que já tenham sido produzidos, bem como dos custos relativos à matéria-prima já cortada/dobrada e à mão de obra despendida até o momento da comunicação formal da desistência ou alteração.</p>
+<p><b>§ 3º — Da Retenção e Cobrança de Custos:</b> Na hipótese prevista no § 2º, fica a CONTRATADA autorizada a reter dos valores eventualmente pagos de forma antecipada a quantia exata e proporcional necessária para cobrir os custos dos materiais inutilizados e serviços já executados. Caso os custos da produção irreversível superem o valor adiantado, a CONTRATADA emitirá cobrança complementar do saldo devedor, acompanhada do respectivo demonstrativo de custos. Eventual saldo credor em favor do(a) CONTRATANTE será prontamente restituído.</p>
+<p><b>§ 4º — Das Novas Peças:</b> Quaisquer alterações no projeto estrutural solicitadas após o início da produção que exijam a fabricação de novas peças ou o descarte de peças já produzidas serão tratadas como um aditivo ou novo pedido, sujeitas a novos orçamentos e prazos, não isentando o(a) CONTRATANTE das obrigações financeiras referentes às peças do projeto original já executadas.</p>
+<h4>Cláusula 2 — Da garantia e solidariedade (fiança)</h4>
+<p>O(A) signatário(a) desta Ordem de Compra, que assina na qualidade de interveniente garantidor(a), declara-se <b>FIADOR(A)</b> e principal pagador(a), com renúncia expressa aos benefícios de ordem previstos nos Artigos 827 e 838 do Código Civil Brasileiro.</p>
+<p><b>§ 1º — Abrangência:</b> O(A) FIADOR(A) obriga-se solidariamente ao cumprimento de todas as obrigações pecuniárias assumidas pela CONTRATANTE, incluindo, mas não se limitando ao valor principal do aço, multas por desistência, encargos moratórios, despesas de armazenamento e eventuais custos de cobrança judicial ou extrajudicial.</p>
+<p><b>§ 2º — Autonomia da Garantia:</b> A garantia ora prestada manter-se-á íntegra e em vigor até a liquidação total das obrigações decorrentes deste pedido, mesmo em caso de prorrogação de prazos de pagamento ou alterações no cronograma de entrega acordados entre CONTRATADA e CONTRATANTE.</p>
+<p><b>§ 3º — Da Outorga Uxória e Estado Civil:</b> O Fiador declara, sob as penas da lei, o seu estado civil atual. Sendo casado sob regime diverso da separação absoluta de bens, este instrumento deverá obrigatoriamente conter a assinatura de seu cônjuge, que comparece na qualidade de anuente para fins de outorga uxória, sob pena de ineficácia da garantia prestada. O Fiador compromete-se a fornecer a documentação comprobatória de seu estado civil e regime de bens sempre que solicitado pela Contratada.</p>
+"""
+
+ORCAMENTOS = {
+    'phi_92718': {
+        'modo': 'kg',
+        'cliente_curto': 'Toro Engenharia',
+        'sub_hero': 'Proposta de fornecimento de vergalhões CA-50 e CA-60 preparada com exclusividade para <strong>Toro Engenharia Ltda</strong>.',
+        'strip': [('Cotação', '18 · 06 · 2026'), ('Vendedor', 'Ismael B.'), ('Pagamento', 'Boleto 21 dias'), ('Entrega', 'Goiânia — GO')],
+        'cliente': {'nome': 'Toro Engenharia Ltda', 'linhas': '<b>CNPJ</b> 45.024.357/0001-48<br>Av. São Paulo, 250 — São Geraldo<br>Porto Alegre/RS · CEP 90230-160'},
+        'entrega': {'titulo': 'Setor Marista', 'linhas': 'Rua 42, nº 95 — Goiânia/GO<br>CEP 74150-270<br><b>Faturamento</b> para Marista'},
+        'itens': [
+            {'glifo': 'vergalhao', 'mm': 5.0,  'nome': 'CA-60', 'spec': 'Ø 5.0 mm',  'cod': '81002', 'tag': 'Corte e dobra', 'preco': 'R$ 10,28'},
+            {'glifo': 'vergalhao', 'mm': 6.3,  'nome': 'CA-50', 'spec': 'Ø 6.3 mm',  'cod': '81003', 'tag': 'Corte e dobra', 'preco': 'R$ 9,14'},
+            {'glifo': 'vergalhao', 'mm': 8.0,  'nome': 'CA-50', 'spec': 'Ø 8.0 mm',  'cod': '81004', 'tag': 'Corte e dobra', 'preco': 'R$ 9,14'},
+            {'glifo': 'vergalhao', 'mm': 10.0, 'nome': 'CA-50', 'spec': 'Ø 10 mm',   'cod': '81005', 'tag': 'Corte e dobra', 'preco': 'R$ 8,83'},
+            {'glifo': 'vergalhao', 'mm': 12.5, 'nome': 'CA-50', 'spec': 'Ø 12.5 mm', 'cod': '81006', 'tag': 'Corte e dobra', 'preco': 'R$ 8,68'},
+            {'glifo': 'vergalhao', 'mm': 16.0, 'nome': 'CA-50', 'spec': 'Ø 16 mm',   'cod': '81007', 'tag': 'Corte e dobra', 'preco': 'R$ 8,68'},
+            {'glifo': 'vergalhao', 'mm': 20.0, 'nome': 'CA-50', 'spec': 'Ø 20 mm',   'cod': '81008', 'tag': 'Corte e dobra', 'preco': 'R$ 8,68'},
+        ],
+        'nota_itens': 'Valores cotados por quilograma. O total do pedido é calculado conforme as quantidades do projeto.',
+        'pagamento': {'linha1': 'Boleto', 'destaque': '21 dias', 'sub': 'Orçamento válido para a data da cotação — 18/06/2026.'},
+        'obs': OBS_PADRAO,
+        'clausulas': False,
+    },
+
+    'phi_89321': {
+        'modo': 'total',
+        'cliente_curto': 'Construtora/Revenda',
+        'sub_hero': 'Proposta de fornecimento de colunas prontas e arame recozido preparada para <strong>retirada em Aparecida de Goiânia</strong>.',
+        'strip': [('Cotação', '27 · 04 · 2026'), ('Vendedor', 'Ismael B.'), ('Pagamento', 'Na entrega'), ('Modalidade', 'Retira')],
+        'cliente': {'nome': 'Orçamento Construtora/Revenda', 'linhas': '<b>CNPJ</b> 11.827.373/0001-57<br>Rua 1, nº 1 — Bairro 1<br>Goiânia/GO · CEP 74403-060'},
+        'entrega': {'titulo': 'Retira', 'linhas': 'Polo Industrial — R. 11, Quadra 05, Lote 07<br>Aparecida de Goiânia/GO<br><b>Previsão</b> 28/04/2026'},
+        'itens': [
+            {'glifo': 'coluna', 'nome': 'Coluna 7×14', 'spec': 'Ø 8.0 mm',  'cod': '20004', 'tag': 'Estribo 3.8 mm · 28 est', 'total': 'R$ 1.160,53', 'calc': '18 un × R$ 64,47'},
+            {'glifo': 'coluna', 'nome': 'Coluna 7×14', 'spec': 'Ø 10 mm',   'cod': '20006', 'tag': 'Estribo 4.2 mm · 28 est', 'total': 'R$ 1.056,58', 'calc': '11 un × R$ 96,05'},
+            {'glifo': 'arame',  'nome': 'Arame recozido', 'spec': 'nº 18',  'cod': '24103', 'tag': 'Kilado', 'total': 'R$ 51,28',  'calc': '5 kg × R$ 10,26'},
+            {'glifo': 'arame',  'nome': 'Arame recozido', 'spec': 'nº 14',  'cod': '24102', 'tag': 'Kilado', 'total': 'R$ 102,56', 'calc': '10 kg × R$ 10,26'},
+        ],
+        'nota_itens': 'Valores unitários conforme cotação. Retirada mediante agendamento prévio.',
+        'total': {'valor': 'R$ 2.370,95', 'celulas': [('384,67 kg', 'Peso total'), ('44', 'Volumes')]},
+        'pagamento': {'linha1': 'Na entrega', 'destaque': 'QR Code', 'sub': 'Orçamento válido para a data da cotação — 27/04/2026. Previsão de entrega: 28/04/2026.'},
+        'obs': [
+            'O horário de retira é das 13h30 às 16h.',
+            'As retiradas devem ser agendadas previamente.',
+            'As retiradas serão realizadas por ordem de chegada.',
+            'É necessário apresentar o pedido de venda no momento da retira.',
+            'O motorista deve trazer suas próprias ripas de madeira para a estabilização da carga (obrigatório).',
+        ],
+        'clausulas': False,
+    },
+
+    'phi_91901': {
+        'modo': 'total',
+        'cliente_curto': 'Urban Engenharia',
+        'sub_hero': 'Proposta de fornecimento de vergalhões corte e dobra e arame recozido preparada com exclusividade para <strong>Urban Engenharia</strong>.',
+        'strip': [('Cotação', '05 · 06 · 2026'), ('Vendedor', 'Maycon L.'), ('Pagamento', 'Antecipado'), ('Modalidade', 'Retira')],
+        'cliente': {'nome': 'Urban Engenharia', 'linhas': '<b>CNPJ</b> 30.156.424/0001-00<br>R. VCD, S/N — Vila Florença<br>Santo Antônio de Goiás/GO · CEP 75375-000'},
+        'entrega': {'titulo': 'Retira', 'linhas': 'Polo Industrial — R. 11, Quadra 05, Lote 07<br>Aparecida de Goiânia/GO<br><b>Modalidade</b> retirada pelo cliente'},
+        'itens': [
+            {'glifo': 'arame', 'nome': 'Arame recozido', 'spec': 'nº 18', 'cod': '12004', 'tag': 'Torcido', 'total': 'R$ 223,08', 'calc': '20,00 kg × R$ 11,15'},
+            {'glifo': 'vergalhao', 'mm': 5.0,  'nome': 'CA-60', 'spec': 'Ø 5.0 mm', 'cod': '80002', 'tag': 'Corte e dobra', 'total': 'R$ 1.747,02', 'calc': '194,48 kg × R$ 8,98'},
+            {'glifo': 'vergalhao', 'mm': 10.0, 'nome': 'CA-50', 'spec': 'Ø 10 mm',  'cod': '80005', 'tag': 'Corte e dobra', 'total': 'R$ 3.447,00', 'calc': '472,96 kg × R$ 7,29'},
+        ],
+        'nota_itens': 'Aço corte e dobra fabricado sob medida conforme projeto estrutural aprovado.',
+        'total': {'valor': 'R$ 5.417,10', 'celulas': [('667,44 kg', 'Peso total'), ('3', 'Itens')]},
+        'pagamento': {'linha1': 'Pagamento', 'destaque': 'antecipado', 'sub': 'Orçamento válido para a data da cotação — 05/06/2026.'},
+        'obs': OBS_PADRAO,
+        'clausulas': True,
+    },
+
+    'phi_92904': {
+        'modo': 'total',
+        'cliente_curto': 'TCN 18',
+        'sub_hero': 'Proposta de vergalhões corte e dobra — armação positiva das lajes do 3º pavimento — preparada com exclusividade para <strong>TCN 18</strong>.',
+        'strip': [('Cotação', '19 · 06 · 2026'), ('Vendedor', 'Moisés Gabriel'), ('Pagamento', 'Boleto 21 dias'), ('Entrega', 'Brasília — DF')],
+        'cliente': {'nome': 'TCN 18', 'linhas': '<b>CNPJ</b> 49.559.901/0001-07<br>Quadra SHIS QI 7, Bloco E, Sala 106<br>Habitações Individuais Sul — Brasília/DF · CEP 71615-750'},
+        'entrega': {'titulo': 'Zona Industrial (Guará)', 'linhas': 'Quadra SQPS 107, Quadra 18, Conjunto A — Lotes 5/7<br>Brasília/DF · CEP 71215-291<br><b>Entrega</b> dia 25 — arm. positiva lajes 3º pav.'},
+        'itens': [
+            {'glifo': 'vergalhao', 'mm': 5.0,  'nome': 'CA-60', 'spec': 'Ø 5.0 mm',  'cod': '80002', 'tag': 'Corte e dobra', 'total': 'R$ 267,71',    'calc': '39,72 kg × R$ 6,74'},
+            {'glifo': 'vergalhao', 'mm': 6.3,  'nome': 'CA-50', 'spec': 'Ø 6.3 mm',  'cod': '80003', 'tag': 'Corte e dobra', 'total': 'R$ 1.088,81',  'calc': '166,74 kg × R$ 6,53'},
+            {'glifo': 'vergalhao', 'mm': 8.0,  'nome': 'CA-50', 'spec': 'Ø 8.0 mm',  'cod': '80004', 'tag': 'Corte e dobra', 'total': 'R$ 12.722,80', 'calc': '2.048,76 kg × R$ 6,21'},
+            {'glifo': 'vergalhao', 'mm': 10.0, 'nome': 'CA-50', 'spec': 'Ø 10 mm',   'cod': '80005', 'tag': 'Corte e dobra', 'total': 'R$ 6.513,76',  'calc': '1.067,83 kg × R$ 6,10'},
+            {'glifo': 'vergalhao', 'mm': 12.5, 'nome': 'CA-50', 'spec': 'Ø 12.5 mm', 'cod': '80006', 'tag': 'Corte e dobra', 'total': 'R$ 716,28',    'calc': '119,58 kg × R$ 5,99'},
+        ],
+        'nota_itens': 'Aço corte e dobra fabricado sob medida conforme projeto estrutural aprovado. Entrega dia 25 — armação positiva das lajes do 3º pavimento.',
+        'total': {'valor': 'R$ 21.309,36', 'celulas': [('3.442,63 kg', 'Peso total'), ('5', 'Itens')]},
+        'pagamento': {'linha1': 'Boleto', 'destaque': '21 dias', 'sub': 'Orçamento válido para a data da cotação — 19/06/2026.'},
+        'obs': OBS_PADRAO,
+        'clausulas': True,
+    },
+}
+
+
+def glifo_html(item):
+    g = item['glifo']
+    if g == 'vergalhao':
+        px = round(item['mm'] * 3)
+        return f'<span class="rebar" style="width:{px}px;height:{px}px"></span>'
+    if g == 'coluna':
+        return ('<svg width="30" height="58" viewBox="0 0 30 58" fill="none" aria-hidden="true">'
+                '<rect x="1.5" y="1.5" width="27" height="55" rx="3" stroke="hsl(218 18% 46%)" stroke-width="1.5"/>'
+                '<rect x="6" y="6" width="18" height="46" rx="2" stroke="hsl(218 16% 34%)" stroke-width="1" stroke-dasharray="3 4"/>'
+                '<circle cx="9" cy="10" r="2.4" fill="hsl(218 18% 52%)"/><circle cx="21" cy="10" r="2.4" fill="hsl(218 18% 52%)"/>'
+                '<circle cx="9" cy="48" r="2.4" fill="hsl(218 18% 52%)"/><circle cx="21" cy="48" r="2.4" fill="hsl(218 18% 52%)"/></svg>')
+    if g == 'arame':
+        return ('<svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">'
+                '<circle cx="22" cy="22" r="17" stroke="hsl(218 18% 46%)" stroke-width="1.5"/>'
+                '<circle cx="22" cy="22" r="11" stroke="hsl(218 16% 38%)" stroke-width="1.2"/>'
+                '<circle cx="22" cy="22" r="5.5" stroke="hsl(218 16% 32%)" stroke-width="1"/></svg>')
+    return ''
+
+
+def item_html(item, modo):
+    if modo == 'kg':
+        preco = f'<div class="val">{item["preco"]}</div><div class="unit">por kg</div>'
+    else:
+        preco = f'<div class="val">{item["total"]}</div><div class="unit">{item["calc"]}</div>'
+    return (f'<div class="item rv"><div class="sec-view">{glifo_html(item)}</div>'
+            f'<div class="item-info"><h3>{item["nome"]} <span>{item["spec"]}</span></h3>'
+            f'<div class="meta"><span>Cód. {item["cod"]}</span><span>{item["tag"]}</span></div></div>'
+            f'<div class="item-price">{preco}</div></div>')
+
+
+def ruler_html(itens):
+    vergs = [i for i in itens if i['glifo'] == 'vergalhao']
+    if len(vergs) < 3:
+        return ''
+    cells = ''.join(
+        f'<div class="ruler-item"><span class="rebar" style="width:{round(v["mm"]*3)}px;height:{round(v["mm"]*3)}px"></span>'
+        f'<span class="mm">{v["spec"].replace("Ø ", "").replace(" mm", "")}</span></div>'
+        for v in vergs)
+    return (f'<div class="ruler rv"><div class="micro">Seções em escala relativa · Ø em milímetros</div>'
+            f'<div class="ruler-row">{cells}</div><div class="ruler-base"></div></div>')
+
+
+def total_html(o):
+    if o['modo'] != 'total':
+        return ''
+    cells = ''.join(f'<div><div class="num">{v}</div><div class="lbl">{l}</div></div>' for v, l in o['total']['celulas'])
+    return (f'<div class="grand rv"><div class="grand-main"><div class="micro">Investimento total</div>'
+            f'<div class="grand-val">{o["total"]["valor"]}</div></div>'
+            f'<div class="grand-cells">{cells}</div></div>')
+
+
+def clausulas_html(o):
+    if not o.get('clausulas'):
+        return ''
+    return (f'<details class="clauses rv"><summary><span class="micro">Cláusulas contratuais da ordem de compra · '
+            f'<b>ler íntegra</b></span></summary><div class="clauses-body">{CLAUSULAS}</div></details>')
+
+
+TEMPLATE = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Orçamento Nº phi_92718 — BR Aço | Toro Engenharia</title>
-<meta name="description" content="Proposta comercial BR Aço para Toro Engenharia.">
+<title>Orçamento Nº @@ID@@ — BR Aço | @@CLIENTE_CURTO@@</title>
+<meta name="description" content="Proposta comercial BR Aço para @@CLIENTE_CURTO@@.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BR Aço">
-<meta property="og:title" content="Orçamento Nº phi_92718 — BR Aço">
+<meta property="og:title" content="Orçamento Nº @@ID@@ — BR Aço">
 <meta property="og:description" content="Sua proposta comercial BR Aço está pronta. Toque para visualizar.">
-<meta property="og:url" content="https://grupobraco.com.br/orcamentos/phi_92718/">
+<meta property="og:url" content="https://grupobraco.com.br/orcamentos/@@ID@@/">
 <meta property="og:image" content="https://grupobraco.com.br/og-social.jpg">
 <link rel="icon" href="https://grupobraco.com.br/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -337,16 +526,13 @@ section{padding:clamp(64px,10vw,110px) 0 0}
     <div class="hero-kicker rv"><span class="rule"></span><span class="micro">Casa Brasileira de Aço · Aparecida de Goiânia — GO</span></div>
     <h1 class="display">
       <span class="outline rv" style="--d:.05s">Orçamento</span>
-      <span class="solid rv" style="--d:.15s"><b>phi_92718</b></span>
+      <span class="solid rv" style="--d:.15s"><b>@@ID@@</b></span>
     </h1>
-    <p class="hero-client rv" style="--d:.28s">Proposta de fornecimento de vergalhões CA-50 e CA-60 preparada com exclusividade para <strong>Toro Engenharia Ltda</strong>.</p>
+    <p class="hero-client rv" style="--d:.28s">@@SUB_HERO@@</p>
   </div>
   <div class="hero-strip">
     <div class="wrap">
-      <div class="cell rv" style="--d:0.40s"><div class="micro">Cotação</div><strong>18 · 06 · 2026</strong></div>
-      <div class="cell rv" style="--d:0.48s"><div class="micro">Vendedor</div><strong>Ismael B.</strong></div>
-      <div class="cell rv" style="--d:0.56s"><div class="micro">Pagamento</div><strong>Boleto 21 dias</strong></div>
-      <div class="cell rv" style="--d:0.64s"><div class="micro">Entrega</div><strong>Goiânia — GO</strong></div>
+@@STRIP@@
     </div>
   </div>
 </div>
@@ -358,13 +544,13 @@ section{padding:clamp(64px,10vw,110px) 0 0}
     <div class="client-grid rv" style="--d:.1s">
       <div>
         <div class="micro">Razão social</div>
-        <div class="client-name">Toro Engenharia Ltda</div>
-        <p><b>CNPJ</b> 45.024.357/0001-48<br>Av. São Paulo, 250 — São Geraldo<br>Porto Alegre/RS · CEP 90230-160</p>
+        <div class="client-name">@@CLIENTE_NOME@@</div>
+        <p>@@CLIENTE_LINHAS@@</p>
       </div>
       <div>
-        <div class="micro">Ponto de entrega</div>
-        <div class="client-name">Setor Marista</div>
-        <p>Rua 42, nº 95 — Goiânia/GO<br>CEP 74150-270<br><b>Faturamento</b> para Marista</p>
+        <div class="micro">@@ENTREGA_LABEL@@</div>
+        <div class="client-name">@@ENTREGA_TITULO@@</div>
+        <p>@@ENTREGA_LINHAS@@</p>
       </div>
     </div>
   </section>
@@ -373,17 +559,11 @@ section{padding:clamp(64px,10vw,110px) 0 0}
     <div class="idx-head rv"><span class="idx">02</span><h2>Aço cotado</h2></div>
 
     <div class="items">
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:15px;height:15px"></span></div><div class="item-info"><h3>CA-60 <span>Ø 5.0 mm</span></h3><div class="meta"><span>Cód. 81002</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 10,28</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:19px;height:19px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 6.3 mm</span></h3><div class="meta"><span>Cód. 81003</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 9,14</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:24px;height:24px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 8.0 mm</span></h3><div class="meta"><span>Cód. 81004</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 9,14</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:30px;height:30px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 10 mm</span></h3><div class="meta"><span>Cód. 81005</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,83</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:38px;height:38px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 12.5 mm</span></h3><div class="meta"><span>Cód. 81006</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:48px;height:48px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 16 mm</span></h3><div class="meta"><span>Cód. 81007</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
-      <div class="item rv"><div class="sec-view"><span class="rebar" style="width:60px;height:60px"></span></div><div class="item-info"><h3>CA-50 <span>Ø 20 mm</span></h3><div class="meta"><span>Cód. 81008</span><span>Corte e dobra</span></div></div><div class="item-price"><div class="val">R$ 8,68</div><div class="unit">por kg</div></div></div>
+@@ITENS@@
     </div>
-    <div class="items-note rv">Valores cotados por quilograma. O total do pedido é calculado conforme as quantidades do projeto.</div>
-
-<div class="ruler rv"><div class="micro">Seções em escala relativa · Ø em milímetros</div><div class="ruler-row"><div class="ruler-item"><span class="rebar" style="width:15px;height:15px"></span><span class="mm">5.0</span></div><div class="ruler-item"><span class="rebar" style="width:19px;height:19px"></span><span class="mm">6.3</span></div><div class="ruler-item"><span class="rebar" style="width:24px;height:24px"></span><span class="mm">8.0</span></div><div class="ruler-item"><span class="rebar" style="width:30px;height:30px"></span><span class="mm">10</span></div><div class="ruler-item"><span class="rebar" style="width:38px;height:38px"></span><span class="mm">12.5</span></div><div class="ruler-item"><span class="rebar" style="width:48px;height:48px"></span><span class="mm">16</span></div><div class="ruler-item"><span class="rebar" style="width:60px;height:60px"></span><span class="mm">20</span></div></div><div class="ruler-base"></div></div>
+    <div class="items-note rv">@@NOTA_ITENS@@</div>
+@@TOTAL@@
+@@RULER@@
   </section>
 
   <section>
@@ -391,19 +571,17 @@ section{padding:clamp(64px,10vw,110px) 0 0}
     <div class="terms-grid rv" style="--d:.1s">
       <div>
         <div class="micro">Pagamento</div>
-        <div class="pay-display">Boleto<br><b>21 dias</b></div>
-        <p class="sub">Orçamento válido para a data da cotação — 18/06/2026.</p>
+        <div class="pay-display">@@PAG_L1@@<br><b>@@PAG_L2@@</b></div>
+        <p class="sub">@@PAG_SUB@@</p>
       </div>
       <div>
         <div class="micro">Observações</div>
         <ul class="obs-list">
-          <li>A descarga e a conferência do material são de responsabilidade do cliente.</li>
-          <li>O prazo de reclamação do pedido é de até 48 horas após a entrega.</li>
-          <li>Entrega não realizada por eventualidade do cliente: novo frete adicional e reprogramação em até 7 dias.</li>
+@@OBS@@
         </ul>
       </div>
     </div>
-
+@@CLAUSULAS@@
   </section>
 
   <section>
@@ -478,7 +656,7 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
 // Count-up (R$ 0,00 → valor) — suporta milhares pt-BR, sem shift de layout
 function countUp(el) {
-  const target = parseFloat(el.textContent.replace('R$', '').trim().replace(/\./g, '').replace(',', '.'));
+  const target = parseFloat(el.textContent.replace('R$', '').trim().replace(/\\./g, '').replace(',', '.'));
   if (!isFinite(target)) return;
   const t0 = performance.now(), dur = 900;
   function frame(t) {
@@ -499,3 +677,46 @@ addEventListener('scroll', () => {
 
 </body>
 </html>
+"""
+
+
+def render(oid, o):
+    strip = '\n'.join(
+        f'      <div class="cell rv" style="--d:{.4 + i * .08:.2f}s"><div class="micro">{k}</div><strong>{v}</strong></div>'
+        for i, (k, v) in enumerate(o['strip']))
+    itens = '\n'.join('      ' + item_html(i, o['modo']) for i in o['itens'])
+    obs = '\n'.join(f'          <li>{x}</li>' for x in o['obs'])
+    entrega_label = 'Retirada' if o['entrega']['titulo'] == 'Retira' else 'Ponto de entrega'
+
+    html = (TEMPLATE
+            .replace('@@ID@@', oid)
+            .replace('@@CLIENTE_CURTO@@', o['cliente_curto'])
+            .replace('@@SUB_HERO@@', o['sub_hero'])
+            .replace('@@STRIP@@', strip)
+            .replace('@@CLIENTE_NOME@@', o['cliente']['nome'])
+            .replace('@@CLIENTE_LINHAS@@', o['cliente']['linhas'])
+            .replace('@@ENTREGA_LABEL@@', entrega_label)
+            .replace('@@ENTREGA_TITULO@@', o['entrega']['titulo'])
+            .replace('@@ENTREGA_LINHAS@@', o['entrega']['linhas'])
+            .replace('@@ITENS@@', itens)
+            .replace('@@NOTA_ITENS@@', o['nota_itens'])
+            .replace('@@TOTAL@@', total_html(o))
+            .replace('@@RULER@@', ruler_html(o['itens']))
+            .replace('@@PAG_L1@@', o['pagamento']['linha1'])
+            .replace('@@PAG_L2@@', o['pagamento']['destaque'])
+            .replace('@@PAG_SUB@@', o['pagamento']['sub'])
+            .replace('@@OBS@@', obs)
+            .replace('@@CLAUSULAS@@', clausulas_html(o)))
+
+    out_dir = os.path.join(BASE, oid)
+    os.makedirs(out_dir, exist_ok=True)
+    out = os.path.join(out_dir, 'index.html')
+    with open(out, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(html)
+    print(f'OK {oid}')
+
+
+if __name__ == '__main__':
+    alvo = sys.argv[1:] or list(ORCAMENTOS)
+    for oid in alvo:
+        render(oid, ORCAMENTOS[oid])
