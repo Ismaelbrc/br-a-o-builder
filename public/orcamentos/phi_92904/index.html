@@ -551,7 +551,7 @@ section{padding:clamp(64px,10vw,110px) 0 0}
       </div>
 
       <div class="accept-photo">
-        <label class="micro">Selfie (opcional)</label><br>
+        <label class="micro">Selfie</label><br>
         <input id="ac-photo-input" type="file" accept="image/*" capture="user" style="display:none">
         <button type="button" id="ac-photo-btn" class="ac-btn-outline">Tirar / anexar foto</button>
         <button type="button" id="ac-photo-remove" class="ac-btn-outline" style="display:none;margin-left:8px">Remover</button>
@@ -743,7 +743,7 @@ addEventListener('scroll', () => {
       return true;
     }
 
-    // Selfie opcional — getUserMedia pede permissão de câmera de verdade (celular ou webcam
+    // Selfie obrigatória — getUserMedia pede permissão de câmera de verdade (celular ou webcam
     // do notebook) e mostra prévia ao vivo antes de capturar. Sem suporte/permissão negada
     // cai para o seletor de arquivo (capture=user ainda abre a câmera no celular nesse caso).
     const photoInput      = document.getElementById('ac-photo-input');
@@ -830,6 +830,7 @@ addEventListener('scroll', () => {
       const accept = document.getElementById('ac-accept').checked;
       if (name.length < 3) return showErr('Informe seu nome completo.');
       if (!validCpf(cpf)) return showErr('CPF inválido.');
+      if (!photoDataUrl) return showErr('Tire ou anexe uma selfie.');
       if (!accept) return showErr('É necessário aceitar as condições da proposta.');
       let signature_png = '';
       if (mode === 'draw') {
