@@ -264,6 +264,63 @@ section{padding:clamp(64px,10vw,110px) 0 0}
   color:var(--orange);flex:none;transition:transform .25s ease;
 }
 .blog-link:hover .arrow{transform:translateX(8px)}
+.accept-box{
+  margin-top:clamp(28px,4vw,40px);border:1px solid var(--line);background:var(--bg-raise);
+  padding:clamp(24px,4vw,40px);
+}
+.accept-lead{color:var(--muted);font-size:14px;margin-bottom:22px;max-width:620px}
+.accept-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px}
+.ac-field label{display:block;margin-bottom:6px}
+.ac-input{
+  width:100%;background:var(--bg);border:1px solid var(--line);color:var(--white);
+  padding:11px 13px;border-radius:6px;font-family:'Inter',sans-serif;font-size:14px;
+}
+.ac-input:focus{outline:none;border-color:var(--orange)}
+.accept-sign-tabs{display:flex;gap:8px;margin-bottom:12px}
+.ac-tab{
+  background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 16px;
+  border-radius:99px;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s ease;
+}
+.ac-tab.active{background:var(--orange);border-color:var(--orange);color:#fff}
+#ac-canvas{
+  width:100%;max-width:520px;height:150px;background:#fff;border-radius:8px;cursor:crosshair;
+  touch-action:none;display:block;
+}
+.ac-canvas-actions{margin-top:10px}
+.ac-canvas-actions button, .ac-btn-outline{
+  background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 16px;
+  border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;
+}
+.ac-canvas-actions button:hover, .ac-btn-outline:hover{border-color:var(--orange);color:var(--white)}
+.ac-typed-preview{
+  max-width:520px;min-height:70px;background:#fff;color:#111;border-radius:8px;
+  display:flex;align-items:center;padding:0 20px;font-family:'Segoe Script','Brush Script MT',cursive;
+  font-size:26px;
+}
+.accept-photo{margin:22px 0}
+#ac-photo-preview{
+  display:block;margin-top:10px;max-width:120px;border-radius:8px;border:1px solid var(--line);
+}
+.ac-check{display:flex;align-items:flex-start;gap:10px;margin:22px 0;cursor:pointer;color:var(--muted);font-size:13.5px;line-height:1.6}
+.ac-check input{margin-top:3px;flex:none}
+.ac-submit{
+  background:var(--orange);color:#fff;border:none;padding:12px 28px;border-radius:6px;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;cursor:pointer;
+  transition:opacity .2s ease;
+}
+.ac-submit:disabled{opacity:.6;cursor:default}
+.ac-submit:hover:not(:disabled){opacity:.9}
+.ac-error{margin-top:14px;color:#ff6b6b;font-size:13px}
+.ac-legal{margin-top:18px;color:hsl(220 12% 45%);font-size:11px;letter-spacing:.04em}
+.accept-done-icon{
+  width:52px;height:52px;border-radius:50%;background:rgba(40,180,100,.16);color:#28b464;
+  display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:16px;
+}
+.accept-done-title{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;letter-spacing:-0.02em;margin-bottom:8px;
+}
+#accept-done-text{color:var(--muted);font-size:14px}
+@media(max-width:720px){.accept-grid{grid-template-columns:1fr}}
 .closing{
   margin-top:clamp(70px,11vw,120px);border-top:1px solid var(--line);
   padding:clamp(56px,9vw,96px) 0 clamp(40px,6vw,64px);text-align:center;
@@ -455,6 +512,61 @@ section{padding:clamp(64px,10vw,110px) 0 0}
     </a>
   </section>
 
+  <section id="sec-accept" style="display:none">
+    <div class="idx-head rv"><span class="idx">05</span><h2>Aceite da proposta</h2></div>
+
+    <div id="accept-form-wrap" class="accept-box rv" style="display:none">
+      <p class="accept-lead">Revise a proposta acima. Para formalizar o aceite, assine abaixo com seu nome completo e CPF.</p>
+
+      <div class="accept-grid">
+        <div class="ac-field">
+          <label class="micro">Nome completo</label>
+          <input id="ac-name" type="text" class="ac-input" placeholder="Seu nome completo" autocomplete="name">
+        </div>
+        <div class="ac-field">
+          <label class="micro">CPF</label>
+          <input id="ac-cpf" type="text" class="ac-input" placeholder="000.000.000-00" inputmode="numeric" maxlength="14">
+        </div>
+      </div>
+
+      <div class="micro" style="margin-bottom:10px">Assinatura</div>
+      <div class="accept-sign-tabs">
+        <button type="button" class="ac-tab active" data-tab="draw">Desenhar</button>
+        <button type="button" class="ac-tab" data-tab="typed">Digitar nome</button>
+      </div>
+      <div id="ac-pane-draw">
+        <canvas id="ac-canvas" width="600" height="180"></canvas>
+        <div class="ac-canvas-actions"><button type="button" id="ac-clear">Limpar</button></div>
+      </div>
+      <div id="ac-pane-typed" style="display:none">
+        <div id="ac-typed-preview" class="ac-typed-preview">&nbsp;</div>
+      </div>
+
+      <div class="accept-photo">
+        <label class="micro">Selfie (opcional)</label><br>
+        <input id="ac-photo-input" type="file" accept="image/*" capture="user" style="display:none">
+        <button type="button" id="ac-photo-btn" class="ac-btn-outline">Tirar / anexar foto</button>
+        <button type="button" id="ac-photo-remove" class="ac-btn-outline" style="display:none;margin-left:8px">Remover</button>
+        <img id="ac-photo-preview" style="display:none">
+      </div>
+
+      <label class="ac-check">
+        <input type="checkbox" id="ac-accept">
+        <span>Li e concordo com as condições e cláusulas desta proposta.</span>
+      </label>
+
+      <button type="button" id="ac-submit" class="ac-submit">Assinar e aceitar</button>
+      <div id="ac-error" class="ac-error" style="display:none"></div>
+      <p class="ac-legal">Aceite eletrônico registrado com data, IP e assinatura, nos termos da Lei nº 14.063/2020.</p>
+    </div>
+
+    <div id="accept-done" class="accept-box rv" style="display:none">
+      <div class="accept-done-icon">✓</div>
+      <div class="accept-done-title">Proposta aceita</div>
+      <p id="accept-done-text"></p>
+    </div>
+  </section>
+
 </main>
 
 <div class="closing">
@@ -503,6 +615,190 @@ addEventListener('scroll', () => {
   const h = document.documentElement;
   bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
 }, { passive: true });
+
+// Beacon de abertura — avisa o Nexum quando o cliente abre o link rastreável (?t=).
+// Fire-and-forget (sendBeacon), nunca bloqueia o render da página.
+(function () {
+  try {
+    const t = new URLSearchParams(location.search).get('t');
+    if (!t || !/^[a-f0-9]{32}$/i.test(t)) return;
+    const body = JSON.stringify({ t });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('https://www.philosbr-teste.com.br/ismael/nexum/api/doc-open.php', new Blob([body], { type: 'text/plain;charset=UTF-8' }));
+    } else {
+      fetch('https://www.philosbr-teste.com.br/ismael/nexum/api/doc-open.php', { method: 'POST', body, keepalive: true, mode: 'no-cors', headers: { 'Content-Type': 'text/plain' } });
+    }
+  } catch (e) { /* fire-and-forget */ }
+})();
+
+// Aceite/assinatura embutido na proposta — cross-domain para o Nexum via CORS por allowlist.
+// text/plain evita preflight (mesmo padrão do beacon); o servidor faz json_decode do corpo.
+(function () {
+  const t = new URLSearchParams(location.search).get('t');
+  if (!t || !/^[a-f0-9]{32}$/i.test(t)) return;
+
+  const STATUS_URL = 'https://www.philosbr-teste.com.br/ismael/nexum/api/doc-status.php';
+  const SIGN_URL   = 'https://www.philosbr-teste.com.br/ismael/nexum/api/doc-sign.php';
+  const sec        = document.getElementById('sec-accept');
+  const formWrap   = document.getElementById('accept-form-wrap');
+  const doneWrap   = document.getElementById('accept-done');
+
+  function fmtDate(s) {
+    if (!s) return '';
+    const d = new Date(s.replace(' ', 'T'));
+    return d.toLocaleDateString('pt-BR') + ' às ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  fetch(STATUS_URL + '?t=' + encodeURIComponent(t))
+    .then(r => r.json())
+    .then(j => {
+      if (!j.ok || !j.data.signable) return;
+      sec.style.display = '';
+      if (j.data.signed) {
+        doneWrap.style.display = '';
+        document.getElementById('accept-done-text').textContent = 'Aceite registrado em ' + fmtDate(j.data.signed_at) + '.';
+      } else {
+        formWrap.style.display = '';
+        initAcceptForm();
+      }
+    })
+    .catch(() => { /* Nexum indisponível — proposta segue normal, sem seção de aceite */ });
+
+  function initAcceptForm() {
+    const tabs      = document.querySelectorAll('.ac-tab');
+    const paneDraw  = document.getElementById('ac-pane-draw');
+    const paneTyped = document.getElementById('ac-pane-typed');
+    const nameInput = document.getElementById('ac-name');
+    let mode = 'draw';
+
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      mode = btn.dataset.tab;
+      paneDraw.style.display  = mode === 'draw'  ? '' : 'none';
+      paneTyped.style.display = mode === 'typed' ? '' : 'none';
+      if (mode === 'typed') updateTypedPreview();
+    }));
+
+    function updateTypedPreview() {
+      document.getElementById('ac-typed-preview').textContent = nameInput.value.trim() || ' ';
+    }
+    nameInput.addEventListener('input', () => { if (mode === 'typed') updateTypedPreview(); });
+
+    // Canvas de assinatura — Pointer Events, sem lib externa.
+    const canvas = document.getElementById('ac-canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = '#111'; ctx.lineWidth = 2.4; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    let drawing = false, hasDrawn = false;
+    function pos(e) {
+      const r = canvas.getBoundingClientRect();
+      return [(e.clientX - r.left) * canvas.width / r.width, (e.clientY - r.top) * canvas.height / r.height];
+    }
+    canvas.addEventListener('pointerdown', e => {
+      drawing = true; hasDrawn = true;
+      const [x, y] = pos(e); ctx.beginPath(); ctx.moveTo(x, y);
+      canvas.setPointerCapture(e.pointerId); e.preventDefault();
+    });
+    canvas.addEventListener('pointermove', e => {
+      if (!drawing) return;
+      const [x, y] = pos(e); ctx.lineTo(x, y); ctx.stroke(); e.preventDefault();
+    });
+    canvas.addEventListener('pointerup', () => { drawing = false; });
+    canvas.addEventListener('pointercancel', () => { drawing = false; });
+    document.getElementById('ac-clear').addEventListener('click', () => {
+      ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height); hasDrawn = false;
+    });
+
+    // Máscara + validação de CPF (espelha a validação do servidor).
+    const cpfInput = document.getElementById('ac-cpf');
+    cpfInput.addEventListener('input', () => {
+      let v = cpfInput.value.replace(/\D/g, '').slice(0, 11);
+      v = v.replace(/(\d{3})(\d)/, '$1.$2').replace(/(\d{3})(\d)/, '$1.$2').replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+      cpfInput.value = v;
+    });
+    function validCpf(raw) {
+      const cpf = raw.replace(/\D/g, '');
+      if (cpf.length !== 11 || /^(\d){10}$/.test(cpf)) return false;
+      for (let t2 = 9; t2 < 11; t2++) {
+        let sum = 0;
+        for (let i = 0; i < t2; i++) sum += parseInt(cpf[i], 10) * ((t2 + 1) - i);
+        if (parseInt(cpf[t2], 10) !== ((10 * sum) % 11) % 10) return false;
+      }
+      return true;
+    }
+
+    // Selfie opcional — câmera frontal no celular (capture=user), reduzida no browser.
+    const photoInput   = document.getElementById('ac-photo-input');
+    const photoBtn     = document.getElementById('ac-photo-btn');
+    const photoPreview = document.getElementById('ac-photo-preview');
+    const photoRemove  = document.getElementById('ac-photo-remove');
+    let photoDataUrl = '';
+    photoBtn.addEventListener('click', () => photoInput.click());
+    photoInput.addEventListener('change', () => {
+      const file = photoInput.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = e => {
+        const img = new Image();
+        img.onload = () => {
+          const scale = Math.min(1, 1280 / img.width);
+          const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+          const c = document.createElement('canvas');
+          c.width = w; c.height = h;
+          c.getContext('2d').drawImage(img, 0, 0, w, h);
+          photoDataUrl = c.toDataURL('image/jpeg', 0.7);
+          photoPreview.src = photoDataUrl;
+          photoPreview.style.display = '';
+          photoRemove.style.display = '';
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+    photoRemove.addEventListener('click', () => {
+      photoDataUrl = ''; photoInput.value = '';
+      photoPreview.style.display = 'none'; photoRemove.style.display = 'none';
+    });
+
+    const errBox = document.getElementById('ac-error');
+    function showErr(msg) { errBox.textContent = msg; errBox.style.display = ''; }
+
+    document.getElementById('ac-submit').addEventListener('click', async () => {
+      errBox.style.display = 'none';
+      const name   = nameInput.value.trim();
+      const cpf    = cpfInput.value.replace(/\D/g, '');
+      const accept = document.getElementById('ac-accept').checked;
+      if (name.length < 3) return showErr('Informe seu nome completo.');
+      if (!validCpf(cpf)) return showErr('CPF inválido.');
+      if (!accept) return showErr('É necessário aceitar as condições da proposta.');
+      let signature_png = '';
+      if (mode === 'draw') {
+        if (!hasDrawn) return showErr('Desenhe sua assinatura no campo acima.');
+        signature_png = canvas.toDataURL('image/png');
+      }
+
+      const btn = document.getElementById('ac-submit');
+      btn.disabled = true; btn.textContent = 'Enviando…';
+      try {
+        const r = await fetch(SIGN_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({ t, name, cpf, method: mode, signature_png, photo: photoDataUrl, accept: true }),
+        });
+        const j = await r.json();
+        if (!j.ok) { showErr(j.error || 'Não foi possível registrar o aceite.'); btn.disabled = false; btn.textContent = 'Assinar e aceitar'; return; }
+        formWrap.style.display = 'none';
+        doneWrap.style.display = '';
+        document.getElementById('accept-done-text').textContent =
+          'Aceite registrado em ' + fmtDate(j.data.signed_at) + ' · Protocolo ' + j.data.protocolo + '.';
+      } catch (e) {
+        showErr('Falha de conexão. Tente novamente.');
+        btn.disabled = false; btn.textContent = 'Assinar e aceitar';
+      }
+    });
+  }
+})();
 </script>
 
 </body>
