@@ -908,7 +908,7 @@ addEventListener('scroll', () => {
     });
     function validCpf(raw) {
       const cpf = raw.replace(/\D/g, '');
-      if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+      if (cpf.length !== 11 || /^(\d)\\1{10}$/.test(cpf)) return false;
       for (let t2 = 9; t2 < 11; t2++) {
         let sum = 0;
         for (let i = 0; i < t2; i++) sum += parseInt(cpf[i], 10) * ((t2 + 1) - i);
