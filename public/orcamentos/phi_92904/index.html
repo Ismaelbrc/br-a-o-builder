@@ -301,6 +301,12 @@ section{padding:clamp(64px,10vw,110px) 0 0}
 #ac-photo-preview{
   display:block;margin-top:10px;max-width:120px;border-radius:8px;border:1px solid var(--line);
 }
+#ac-camera-wrap{margin-top:12px}
+#ac-camera-video{
+  width:100%;max-width:320px;border-radius:8px;background:#000;display:block;
+  transform:scaleX(-1);
+}
+.ac-camera-actions{display:flex;gap:8px;margin-top:10px}
 .ac-check{display:flex;align-items:flex-start;gap:10px;margin:22px 0;cursor:pointer;color:var(--muted);font-size:13.5px;line-height:1.6}
 .ac-check input{margin-top:3px;flex:none}
 .ac-submit{
@@ -550,6 +556,13 @@ section{padding:clamp(64px,10vw,110px) 0 0}
         <button type="button" id="ac-photo-btn" class="ac-btn-outline">Tirar / anexar foto</button>
         <button type="button" id="ac-photo-remove" class="ac-btn-outline" style="display:none;margin-left:8px">Remover</button>
         <img id="ac-photo-preview" style="display:none">
+        <div id="ac-camera-wrap" style="display:none">
+          <video id="ac-camera-video" autoplay playsinline muted></video>
+          <div class="ac-camera-actions">
+            <button type="button" id="ac-camera-capture" class="ac-submit" style="padding:8px 20px;font-size:12px">Capturar</button>
+            <button type="button" id="ac-camera-cancel" class="ac-btn-outline">Cancelar</button>
+          </div>
+        </div>
       </div>
 
       <label class="ac-check">
@@ -730,13 +743,60 @@ addEventListener('scroll', () => {
       return true;
     }
 
-    // Selfie opcional — câmera frontal no celular (capture=user), reduzida no browser.
-    const photoInput   = document.getElementById('ac-photo-input');
-    const photoBtn     = document.getElementById('ac-photo-btn');
-    const photoPreview = document.getElementById('ac-photo-preview');
-    const photoRemove  = document.getElementById('ac-photo-remove');
+    // Selfie opcional — getUserMedia pede permissão de câmera de verdade (celular ou webcam
+    // do notebook) e mostra prévia ao vivo antes de capturar. Sem suporte/permissão negada
+    // cai para o seletor de arquivo (capture=user ainda abre a câmera no celular nesse caso).
+    const photoInput      = document.getElementById('ac-photo-input');
+    const photoBtn        = document.getElementById('ac-photo-btn');
+    const photoPreview    = document.getElementById('ac-photo-preview');
+    const photoRemove     = document.getElementById('ac-photo-remove');
+    const cameraWrap      = document.getElementById('ac-camera-wrap');
+    const cameraVideo     = document.getElementById('ac-camera-video');
+    const cameraCaptureBtn = document.getElementById('ac-camera-capture');
+    const cameraCancelBtn  = document.getElementById('ac-camera-cancel');
     let photoDataUrl = '';
-    photoBtn.addEventListener('click', () => photoInput.click());
+    let cameraStream = null;
+
+    function setPhotoPreview(dataUrl) {
+      photoDataUrl = dataUrl;
+      photoPreview.src = dataUrl;
+      photoPreview.style.display = '';
+      photoRemove.style.display = '';
+    }
+
+    function closeCamera() {
+      if (cameraStream) { cameraStream.getTracks().forEach(tr => tr.stop()); cameraStream = null; }
+      cameraWrap.style.display = 'none';
+    }
+
+    async function openCamera() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { photoInput.click(); return; }
+      try {
+        cameraStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' }, audio: false });
+        cameraVideo.srcObject = cameraStream;
+        cameraWrap.style.display = '';
+      } catch (e) {
+        // permissão negada / sem câmera disponível — fallback ao seletor de arquivo
+        photoInput.click();
+      }
+    }
+
+    photoBtn.addEventListener('click', openCamera);
+    cameraCancelBtn.addEventListener('click', closeCamera);
+    cameraCaptureBtn.addEventListener('click', () => {
+      const vw = cameraVideo.videoWidth, vh = cameraVideo.videoHeight;
+      if (!vw || !vh) return;
+      const scale = Math.min(1, 1280 / vw);
+      const w = Math.round(vw * scale), h = Math.round(vh * scale);
+      const c = document.createElement('canvas');
+      c.width = w; c.height = h;
+      const cctx = c.getContext('2d');
+      cctx.translate(w, 0); cctx.scale(-1, 1); // espelha — selfie fica natural, não invertida
+      cctx.drawImage(cameraVideo, 0, 0, w, h);
+      setPhotoPreview(c.toDataURL('image/jpeg', 0.7));
+      closeCamera();
+    });
+
     photoInput.addEventListener('change', () => {
       const file = photoInput.files[0];
       if (!file) return;
@@ -749,10 +809,7 @@ addEventListener('scroll', () => {
           const c = document.createElement('canvas');
           c.width = w; c.height = h;
           c.getContext('2d').drawImage(img, 0, 0, w, h);
-          photoDataUrl = c.toDataURL('image/jpeg', 0.7);
-          photoPreview.src = photoDataUrl;
-          photoPreview.style.display = '';
-          photoRemove.style.display = '';
+          setPhotoPreview(c.toDataURL('image/jpeg', 0.7));
         };
         img.src = e.target.result;
       };
