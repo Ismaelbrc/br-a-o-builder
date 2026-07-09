@@ -775,14 +775,14 @@ addEventListener('scroll', () => {
     cameraCaptureBtn.addEventListener('click', () => {
       const vw = cameraVideo.videoWidth, vh = cameraVideo.videoHeight;
       if (!vw || !vh) return;
-      const scale = Math.min(1, 1280 / vw);
+      const scale = Math.min(1, 640 / vw); // selfie de prova: 640px basta e ocupa pouco espaço
       const w = Math.round(vw * scale), h = Math.round(vh * scale);
       const c = document.createElement('canvas');
       c.width = w; c.height = h;
       const cctx = c.getContext('2d');
       cctx.translate(w, 0); cctx.scale(-1, 1); // espelha — selfie fica natural, não invertida
       cctx.drawImage(cameraVideo, 0, 0, w, h);
-      setPhotoPreview(c.toDataURL('image/jpeg', 0.7));
+      setPhotoPreview(c.toDataURL('image/jpeg', 0.6));
       closeCamera();
     });
 
@@ -793,12 +793,12 @@ addEventListener('scroll', () => {
       reader.onload = e => {
         const img = new Image();
         img.onload = () => {
-          const scale = Math.min(1, 1280 / img.width);
+          const scale = Math.min(1, 640 / img.width); // selfie de prova: 640px basta e ocupa pouco espaço
           const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
           const c = document.createElement('canvas');
           c.width = w; c.height = h;
           c.getContext('2d').drawImage(img, 0, 0, w, h);
-          setPhotoPreview(c.toDataURL('image/jpeg', 0.7));
+          setPhotoPreview(c.toDataURL('image/jpeg', 0.6));
         };
         img.src = e.target.result;
       };
@@ -824,7 +824,7 @@ addEventListener('scroll', () => {
       let signature_png = '';
       if (mode === 'draw') {
         if (!hasDrawn) return showErr('Desenhe sua assinatura no campo acima.');
-        signature_png = canvas.toDataURL('image/png');
+        signature_png = canvas.toDataURL('image/jpeg', 0.92);  // JPEG: o certificado PDF (sem GD) embute JPEG nativamente
       }
 
       const btn = document.getElementById('ac-submit');
