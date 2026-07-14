@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+      href="https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 group"
       aria-label="Fale conosco no WhatsApp"
       onClick={handleClick}

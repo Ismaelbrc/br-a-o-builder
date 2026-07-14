@@ -4,7 +4,7 @@ import { X, MessageCircle, Calculator } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 
 const WHATSAPP =
-  'https://wa.me/556296472423?text=%5Bsrc%3Aexit%5D%20Ol%C3%A1!%20Vi%20o%20site%20da%20BR%20A%C3%A7o%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20a%20minha%20obra.';
+  'https://wa.me/556291489786?text=%5Bsrc%3Aexit%5D%20Ol%C3%A1!%20Vi%20o%20site%20da%20BR%20A%C3%A7o%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20a%20minha%20obra.';
 
 /**
  * Exit-intent popup — detecta o cursor saindo pelo topo (indo fechar a aba)

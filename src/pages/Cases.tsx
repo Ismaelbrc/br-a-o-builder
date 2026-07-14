@@ -49,7 +49,7 @@ function CaseModal({ c, onClose }: { c: Case; onClose: () => void }) {
             </h3>
           </div>
           <a
-            href={`https://wa.me/556296472423?text=Ol%C3%A1!%20Vi%20o%20case%20${encodeURIComponent(c.title)}%20e%20quero%20um%20resultado%20igual%20na%20minha%20obra.`}
+            href={`https://wa.me/556291489786?text=Ol%C3%A1!%20Vi%20o%20case%20${encodeURIComponent(c.title)}%20e%20quero%20um%20resultado%20igual%20na%20minha%20obra.`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
@@ -218,7 +218,7 @@ export default function Cases() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a
-                href="https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+                href="https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm rounded-full px-8 py-4 transition-colors uppercase tracking-widest"

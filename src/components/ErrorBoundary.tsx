@@ -53,7 +53,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 Recarregar página
               </button>
               <a
-                href="https://wa.me/556296472423"
+                href="https://wa.me/556291489786"
                 className="border border-white/30 text-white px-6 py-2 rounded-lg font-medium hover:bg-white/10 transition-colors"
               >
                 Falar no WhatsApp

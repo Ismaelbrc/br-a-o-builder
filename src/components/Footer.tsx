@@ -11,7 +11,7 @@ const navigationLinks = [
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora de Vergalhão', href: '/calculadora-vergalhao' },
   { name: 'FAQ', href: '/faq' },
-  { name: 'Contato', href: 'https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.' },
+  { name: 'Contato', href: 'https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.' },
   { name: 'Área do Cliente', href: '/cliente' },
 ];
 
@@ -123,14 +123,14 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
+                  href="https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-muted-foreground text-sm hover:text-foreground transition-colors"
                   onClick={() => setTimeout(() => analytics.whatsappClick('footer'), 0)}
                 >
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>WhatsApp: (62) 99647-2423</span>
+                  <span>WhatsApp: (62) 9148-9786</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">

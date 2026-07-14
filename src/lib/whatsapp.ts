@@ -1,6 +1,6 @@
 import { channelTag, clickIdTag } from '@/lib/channel';
 
-const PHONE = '556296472423';
+const PHONE = '556291489786';
 const DEFAULT_TEXT = 'Olá! Gostaria de solicitar um orçamento para minha obra.';
 
 function isInAppBrowser(): boolean {

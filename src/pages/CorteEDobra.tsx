@@ -18,7 +18,7 @@ import { useClarityLP } from '@/hooks/useClarityLP';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
-  const whatsappUrl = "https://wa.me/556296472423?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
+  const whatsappUrl = "https://wa.me/556291489786?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%20e%20Dobra.%20Poderia%20me%20enviar%20um%20orçamento?";
 
   const scrollToForm = () => {
     document.getElementById('orcamento-cd')?.scrollIntoView({ behavior: 'smooth' });
@@ -219,7 +219,7 @@ const AdvantagesSection = () => {
 
 // ═══ CDA SECTION ═══
 const CdaSection = () => {
-  const whatsappCda = "https://wa.me/556296472423?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%2C%20Dobra%20e%20Armação%20(CDA).%20Poderia%20me%20enviar%20um%20orçamento?";
+  const whatsappCda = "https://wa.me/556291489786?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Corte%2C%20Dobra%20e%20Armação%20(CDA).%20Poderia%20me%20enviar%20um%20orçamento?";
 
   return (
     <section className="py-16 sm:py-20 md:py-28 bg-secondary">
@@ -586,7 +586,7 @@ const FaqSection = () => {
 
 // ═══ FINAL CTA WHATSAPP ═══
 const FinalCtaSection = () => {
-  const whatsappUrl = "https://wa.me/556296472423?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
+  const whatsappUrl = "https://wa.me/556291489786?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
 
   return (
     <section id="orcamento-cd" className="relative py-20 md:py-28 bg-metal overflow-hidden">

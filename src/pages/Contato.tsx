@@ -17,7 +17,7 @@ import {
   Send, Instagram, Linkedin, Phone, ArrowRight
 } from 'lucide-react';
 
-const WHATSAPP_BASE = 'https://wa.me/556296472423';
+const WHATSAPP_BASE = 'https://wa.me/556291489786';
 
 const contactCards = [
   {
@@ -26,7 +26,7 @@ const contactCards = [
     iconColor: 'text-brand-whatsapp',
     borderColor: 'hover:border-brand-whatsapp/50',
     title: 'WhatsApp',
-    text: '(62) 99647-2423',
+    text: '(62) 9148-9786',
     subtext: 'Resposta em minutos',
     href: `${WHATSAPP_BASE}?text=%5Bsrc%3Asite%5D%20Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BR%20A%C3%A7o.`,
     trackFn: () => analytics.whatsappClick('contato'),

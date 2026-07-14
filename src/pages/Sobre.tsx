@@ -32,7 +32,7 @@ const differentials: Diff[] = [
   { icon: CreditCard, title: "Parcelamento Facilitado", description: "Pagamento em até 10x no cartão de crédito. Investir na obra com condições que cabem no planejamento.", tag: "Até 10×" },
 ];
 
-const WHATSAPP = "https://wa.me/556296472423?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+const WHATSAPP = "https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
 // ── Sócios / Liderança ───────────────────────────────────────────────────────
 interface Socio { name: string; role: string; bio: string; id: string; linkedin: string; }
