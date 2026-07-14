@@ -828,6 +828,20 @@ addEventListener('scroll', () => {
 
   const STATUS_URL = '@@NEXUM_STATUS_URL@@';
   const SIGN_URL   = '@@NEXUM_SIGN_URL@@';
+
+  // IP público do cliente por um terceiro neutro (ipify), no ato do aceite. À prova de falha:
+  // se não responder a tempo, fica vazio e o aceite segue normalmente. Rotulado no certificado
+  // como "informado pelo dispositivo" (o IP observado-pelo-servidor é mascarado pelo proxy).
+  window.__clientIp = '';
+  (function () {
+    try {
+      fetch('https://api.ipify.org?format=json', { signal: AbortSignal.timeout(4000) })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (j) { if (j && j.ip) window.__clientIp = String(j.ip).slice(0, 45); })
+        .catch(function () {});
+    } catch (e) { /* AbortSignal.timeout ausente em browser antigo — segue sem IP */ }
+  })();
+
   const sec        = document.getElementById('sec-accept');
   const formWrap   = document.getElementById('accept-form-wrap');
   const doneWrap   = document.getElementById('accept-done');
@@ -1018,7 +1032,7 @@ addEventListener('scroll', () => {
         const r = await fetch(SIGN_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify({ t, name, cpf, method: mode, signature_png, photo: photoDataUrl, accept: true }),
+          body: JSON.stringify({ t, name, cpf, method: mode, signature_png, photo: photoDataUrl, accept: true, client_ip: window.__clientIp || '' }),
         });
         const j = await r.json();
         if (!j.ok) { showErr(j.error || 'Não foi possível registrar o aceite.'); btn.disabled = false; btn.textContent = 'Assinar e aceitar'; return; }
