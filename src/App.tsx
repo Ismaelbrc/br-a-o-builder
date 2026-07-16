@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PageLoader } from "@/components/PageLoader";
 import { initChannel, channelTag, clickIdTag, geoTag, fetchGeo } from "@/lib/channel";
+import { pickSeller } from "@/lib/whatsapp";
 import { analytics } from "@/lib/analytics";
 
 // Redirect /conteudo/:slug → /blog/:slug (legacy WordPress URLs)
@@ -90,9 +91,15 @@ function AppRoutes() {
       if (!/wa\.me\/|api\.whatsapp\.com\/send/i.test(href)) return;
       try {
         const url = new URL(href, window.location.origin);
+        // Round-robin STICKY: aponta pro vendedor sorteado deste visitante.
+        const seller = pickSeller();
+        if (/(^|\.)wa\.me$/i.test(url.hostname)) url.pathname = '/' + seller;
+        else if (url.searchParams.has('phone')) url.searchParams.set('phone', seller);
+        // Atribuição de canal: injeta a tag no início do texto (se ainda não tiver).
         const text = url.searchParams.get('text') || '';
-        if (/^\s*\[(ads|org|soc)\]/.test(text)) return; // já marcado
-        url.searchParams.set('text', `${channelTag()} ${clickIdTag()} ${text}`.replace(/\s+/g, ' ').trim());
+        if (!/^\s*\[(ads|org|soc)\]/.test(text)) {
+          url.searchParams.set('text', `${channelTag()} ${clickIdTag()} ${text}`.replace(/\s+/g, ' ').trim());
+        }
         anchor.setAttribute('href', url.toString());
       } catch {
         /* href não parseável — ignora */
