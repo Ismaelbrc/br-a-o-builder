@@ -185,4 +185,400 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "como-calcular-quantidade-vergalhao-laje": {
+    answerCapsule: "Para calcular vergalhão de laje: área (m²) × consumo por tipo (8–10 kg/m² treliçada, 15–25 kg/m² maciça) ÷ peso por metro da bitola = número de barras.",
+    faqItems: [
+      { q: "Quantos kg de vergalhão por m² de laje?", a: "O consumo médio de vergalhão por m² de laje depende do tipo: laje treliçada de vão até 4m usa 8–10 kg/m²; treliçada de vão 4–6m, 10–14 kg/m²; laje maciça, 15–25 kg/m². Esses valores incluem armadura principal, distribuição, negativos e cintas de borda." },
+      { q: "Como calcular o vergalhão de uma laje de 60 m²?", a: "Para laje treliçada de 60 m² com vão médio: 60 × 12 kg/m² = 720 kg. Em barras de ø10 mm (0,617 kg/m × 12 m = 7,40 kg/barra): 720 ÷ 7,40 ≈ 97 barras. Adicione 10% de folga: ~107 barras. O quantitativo exato depende do projeto estrutural." },
+      { q: "A BR Aço auxilia no cálculo de vergalhão para laje?", a: "Sim. Enviando a planta estrutural pelo WhatsApp, a equipe técnica da BR Aço faz o levantamento de quantitativos gratuitamente e retorna com a lista de materiais e orçamento completo em até 24 horas." },
+    ],
+  },
+
+  "malha-pop-o-que-e-quando-usar": {
+    answerCapsule: "Malha pop é a tela soldada CA-60 em painéis pré-fabricados, usada como armadura de distribuição em lajes, contrapisos e pisos leves, com menos desperdício e armação mais rápida.",
+    faqItems: [
+      { q: "O que é malha pop?", a: "Malha pop é o nome popular para tela soldada em painéis: armadura pré-fabricada de fios de aço CA-60 soldados em grade quadrada, em painéis de aproximadamente 2 × 3 m. É usada como armadura de distribuição em lajes treliçadas, contrapisos e pisos leves residenciais." },
+      { q: "Malha pop substitui o vergalhão convencional em lajes?", a: "Não diretamente. A malha pop (tela soldada) funciona como armadura de distribuição e controle de temperatura e retração. As barras longitudinais e transversais principais da laje que resistem à flexão ainda devem ser especificadas e calculadas conforme a ABNT NBR 6118." },
+      { q: "Qual malha pop usar em laje treliçada residencial?", a: "Para lajes treliçadas residenciais, a tela soldada mais usada é a Q-92 (fios ø4,2 mm, espaçamento 10 × 10 cm) ou Q-138 (fios ø5 mm, espaçamento 10 × 10 cm) como armadura de distribuição. A especificação correta depende da espessura da capa e das cargas previstas no projeto estrutural." },
+    ],
+  },
+
+  "norma-abnt-nbr-7480-aco-concreto-armado": {
+    answerCapsule: "A ABNT NBR 7480:2007 define as classes CA-25, CA-50 e CA-60 para vergalhões de concreto armado, estabelecendo resistência mínima, ductilidade, marcação e rastreabilidade obrigatória.",
+    faqItems: [
+      { q: "O que é a ABNT NBR 7480 e para que serve?", a: "A ABNT NBR 7480:2007 é a norma brasileira que regulamenta barras e fios de aço destinados a armaduras para concreto armado. Ela define as classes CA-25, CA-50 e CA-60, os requisitos mínimos de resistência mecânica, composição química, ductilidade, marcação obrigatória nas barras e rastreabilidade por corrida de produção. É de observância compulsória em todo o Brasil." },
+      { q: "Como verificar se um vergalhão é certificado pela NBR 7480?", a: "Todo vergalhão certificado deve ter marcações em relevo nas nervuras indicando a usina fabricante, o diâmetro nominal e a classe (CA-50 = 2 fileiras de nervuras; CA-60 = 3 fileiras). O lote deve vir acompanhado de laudo técnico com número de corrida e resultados dos ensaios de tração e dobramento." },
+      { q: "O que acontece se usar vergalhão sem certificação ABNT?", a: "Usar vergalhão sem certificação em estruturas de concreto armado é ilegal e perigoso: a resistência real pode ser inferior à especificada no projeto, comprometendo a segurança. Em obras com financiamento pela Caixa Econômica Federal (MCMV), o laudo ABNT é obrigatório para liberação de vistoria e desembolso das parcelas." },
+    ],
+  },
+
+  "laje-macica-vs-laje-trelicada-qual-escolher-2026": {
+    answerCapsule: "Laje maciça é mais rígida e indicada para vãos curtos com cargas concentradas. Laje treliçada é mais leve, econômica e padrão em residências com vãos de 3 a 6 metros.",
+    faqItems: [
+      { q: "O que é laje maciça e o que é laje treliçada?", a: "Laje maciça é moldada com concreto e armadura em toda a espessura, sem vazios internos — estrutura pesada e rígida, indicada para vãos até 4 m. Laje treliçada combina treliças de aço e elementos de preenchimento (EPS ou cerâmica), criando vazios que reduzem o peso próprio em 20–30% e permitem vãos de até 6 m com menor consumo de aço e concreto." },
+      { q: "Qual laje usa menos vergalhão?", a: "A laje treliçada usa menos vergalhão convencional que a maciça de mesma área, pois parte da armadura principal é substituída pelas treliças metálicas. Para uma laje de 60 m² com vão de 4 m, a treliçada pode usar 20 a 30% menos vergalhão total que a maciça equivalente." },
+      { q: "Qual tipo de laje é mais barata em Goiás em 2026?", a: "Para a maioria das residências em Goiás, a laje treliçada é mais econômica: menos concreto, menos vergalhão e menos escoramento. A laje maciça é indicada quando o projeto estrutural exige rigidez maior, cargas concentradas elevadas ou aberturas irregulares." },
+    ],
+  },
+
+  "trelicas-de-aco-para-que-servem": {
+    answerCapsule: "Treliças de aço são elementos pré-fabricados (banzo + alma diagonal soldados) usados como armadura principal de lajes treliçadas, permitindo vãos de até 6 m com menos escoramento.",
+    faqItems: [
+      { q: "O que são treliças de aço e para que servem?", a: "Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal (alma) soldados em fábrica. Servem como armadura principal de lajes treliçadas, substituindo parte do escoramento e permitindo lajes com vãos de até 6 m." },
+      { q: "Qual treliça usar para uma laje com vão de 4 metros?", a: "Para vão livre de 4 m, a treliça mais usada é a TR-10 (altura h = 10 cm), resultando em laje com espessura total de 16 a 18 cm. A TR-08 (h = 8 cm) atende vãos de até 3,5 m. Para vãos maiores (5–6 m), use TR-12 ou TR-14. A especificação exata deve seguir o projeto estrutural." },
+      { q: "Qual a diferença entre TR-08, TR-10, TR-12 e TR-14?", a: "A classificação TR indica a altura h do elemento: TR-08 (h = 8 cm), TR-10 (h = 10 cm), TR-12 (h = 12 cm), TR-14 (h = 14 cm). Quanto maior a altura, maior a capacidade de vão e o momento fletor resistido. Todas devem atender à ABNT NBR 14859-1 e ser especificadas pelo engenheiro responsável." },
+    ],
+  },
+
+  // ─── Rodada GEO-1/GEO-5 (17/07/2026) — 35 posts, meta 60 (26 → 61) ────────
+
+  "fundacao-goiania-tipos-solo": {
+    answerCapsule: "Em Goiânia, o solo predominante é o latossolo vermelho-amarelo; a fundação ideal (sapata, radier ou estaca) depende do SPT medido em sondagem, que varia de N=5 a N=30 na região.",
+    faqItems: [
+      { q: "Qual fundação usar em Goiânia?", a: "Depende do SPT: N < 5 indica radier ou estacas; 5 a 10, radier com reforço ou sapata rasa; 10 a 20, sapata isolada ou corrida; N ≥ 20, sapata, tubulão ou bloco conforme a carga." },
+      { q: "É obrigatório fazer sondagem SPT em Goiânia?", a: "Sim. A região tem variação de SPT de N=5 a N=30 nos primeiros metros e solos que podem ser colapsíveis quando saturados — a sondagem é obrigatória antes de projetar a fundação." },
+      { q: "Quanto de aço uma sapata usa?", a: "Entre 15 e 30 kg de vergalhão CA-50 por sapata isolada, variando conforme a carga e as dimensões definidas pelo engenheiro." },
+      { q: "A BR Aço fornece aço para fundação em Goiânia?", a: "Sim, vergalhão CA-50 em todas as bitolas usadas em fundações, além de telas Q-138 e Q-196 para radier, com entrega em até 48h." },
+    ],
+  },
+
+  "ferragista-goiania-como-escolher": {
+    answerCapsule: "Uma ferragista em Goiânia é o fornecedor especializado em aços estruturais (vergalhão, treliça, malha); a escolha certa exige certificação NBR 7480, corte e dobra CNC e estoque de todos os diâmetros.",
+    faqItems: [
+      { q: "O que é uma ferragista?", a: "É o fornecedor especializado nos aços estruturais da obra — vergalhões, treliças, malhas soldadas e arames — diferente de uma ferragem de acabamento (fechaduras, dobradiças, puxadores)." },
+      { q: "Quais critérios avaliar antes de escolher uma ferragista?", a: "Certificado ABNT NBR 7480 por lote, corte e dobra industrial CNC próprio, estoque de todos os diâmetros do projeto, prazo de entrega por escrito com frota própria, suporte técnico e transparência de preço." },
+      { q: "Por que exigir o certificado de qualidade do lote?", a: "Sem o certificado, não há garantia de conformidade com a NBR 7480 — isso representa risco estrutural e problema para a ART do responsável técnico." },
+      { q: "A BR Aço é ferragista em Goiânia?", a: "Sim, com o maior parque de corte e dobra de Goiás, estoque permanente de CA-25, CA-50 e CA-60 em todos os diâmetros e entrega em até 48h." },
+    ],
+  },
+
+  "distribuidoras-ferro-aco-goiania": {
+    answerCapsule: "Distribuidora de ferro e aço em Goiânia é o fornecedor de vergalhão, treliça e malha para obra; o diferencial real está no que o preço por kg inclui — frete, corte e dobra e laudo de qualidade.",
+    faqItems: [
+      { q: "O preço por kg da distribuidora inclui tudo?", a: "Nem sempre: frete pode custar de R$0,30 a R$0,80/kg e corte e dobra de R$0,50 a R$1,00/kg a mais — confirme o que está incluso antes de comparar propostas." },
+      { q: "Qual a diferença entre distribuidor puro e distribuidor com serviço center?", a: "O distribuidor puro vende só o material, e você ainda precisa cortar (com 8% a 15% de perda); o distribuidor com serviço center já entrega cortado e dobrado, com custo total geralmente menor." },
+      { q: "Distribuidora com estoque em Goiânia entrega em quanto tempo?", a: "De 24 a 48h. Quem depende de pedido direto à usina leva de 5 a 15 dias úteis — inviável para obras com cronograma apertado." },
+      { q: "A BR Aço é distribuidora e serviço center em Goiânia?", a: "Sim, reúne as duas coisas em Aparecida de Goiânia: vergalhão CA-25, CA-50 e CA-60, corte e dobra CNC com tolerância ±5mm, treliças e telas, com laudo NBR 7480 em cada lote." },
+    ],
+  },
+
+  "vergalhao-preco-kg-goias-2026": {
+    answerCapsule: "Em 2026, o vergalhão CA-50 em Goiás custa entre R$5,80 e R$7,80 por kg dependendo do diâmetro (6,3 a 25 mm) e do volume da compra, com o preço final variando por minério de ferro, câmbio e frete.",
+    faqItems: [
+      { q: "Quanto custa o vergalhão CA-50 em Goiás em 2026?", a: "Entre R$5,80/kg (φ6,3mm) e R$7,80/kg (φ25mm) na barra de 12m, variando por volume e prazo de pagamento." },
+      { q: "O que é ferro 3/8 e 5/16 em milímetros?", a: "5/16 pol equivale a φ8,0mm; 3/8 pol equivale a φ10,0mm (equivalente comercial); 1/2 pol equivale a φ12,5mm; 5/8 pol equivale a φ16,0mm." },
+      { q: "O que faz o preço do vergalhão variar?", a: "Cotação do minério de ferro, câmbio (R$/USD), demanda da construção civil e frete das usinas (principalmente de Minas Gerais) até Goiás." },
+      { q: "A BR Aço entrega vergalhão no DF?", a: "Sim, em Brasília e no Entorno (Taguatinga, Ceilândia, Valparaíso, Luziânia, Águas Lindas, Formosa etc.) em 48 a 72h." },
+    ],
+  },
+
+  "preco-vergalhao-2025-goias": {
+    answerCapsule: "O preço do vergalhão em Goiás oscila conforme minério de ferro, energia elétrica, câmbio (R$/USD) e demanda da construção civil — fatores que mudam semanalmente por ser um commodity.",
+    faqItems: [
+      { q: "O que mais influencia o preço do vergalhão?", a: "Cotação internacional do minério de ferro, tarifa de energia elétrica das usinas, câmbio R$/USD e demanda da construção civil." },
+      { q: "Como comprar vergalhão de forma mais estratégica?", a: "Planejar com antecedência, comprar por etapa (fundação, pilares, laje) em vez de tudo de uma vez, e sempre pedir cotação formal por escrito com prazo de validade." },
+      { q: "Por que não comparar só o preço por kg?", a: "Porque um fornecedor mais barato sem laudo de qualidade, sem entrega garantida ou com mais perda no corte pode custar mais no total da obra." },
+      { q: "A BR Aço fornece cotação por escrito?", a: "Sim, com preço por bitola, prazo de validade, especificação técnica NBR 7480 e condições de entrega — sem surpresas no faturamento." },
+    ],
+  },
+
+  "vantagens-corte-dobra-goiania": {
+    answerCapsule: "Contratar corte e dobra em Goiânia reduz o desperdício de aço de 8-15% para menos de 3%, corta o tempo de armação em até 40% e garante entrega em 48h com suporte técnico local.",
+    faqItems: [
+      { q: "Quanto se economiza em desperdício com corte e dobra em Goiânia?", a: "De 500 kg a 1.200 kg de vergalhão em obras de 10 toneladas, caindo de 8-15% de perda no corte manual para menos de 3% no processo industrial." },
+      { q: "O corte e dobra reduz o tempo de armação?", a: "Sim, em até 40%, pois o armador só monta e amarra as peças — não precisa operar tesoura nem dobradeira no canteiro." },
+      { q: "Qual o prazo de entrega em Goiânia?", a: "Até 48 horas após a aprovação do orçamento, garantido contratualmente pela BR Aço." },
+      { q: "Quem mais usa corte e dobra em Goiás?", a: "Construtoras de médio e grande porte, empreiteiras especializadas em estrutura, autoconstrutores com projeto aprovado e engenheiros que querem controle total do material." },
+    ],
+  },
+
+  "corte-dobra-para-casa-residencia": {
+    answerCapsule: "Corte e dobra industrial compensa em casas de 80 a 300 m² com projeto estrutural: reduz a perda de material de 10% para menos de 3%, com lote mínimo de 500 kg de aço processado.",
+    faqItems: [
+      { q: "Corte e dobra vale a pena para obra residencial pequena?", a: "Sim, a partir de 80 m² com projeto estrutural — o mito de que o serviço só serve para grandes obras não se sustenta." },
+      { q: "Quanto de aço uma casa residencial usa?", a: "Entre 800 kg e 3.000 kg de vergalhão, dependendo do tamanho e do sistema estrutural adotado." },
+      { q: "Qual o lote mínimo da BR Aço?", a: "500 kg de aço processado; obras menores que isso podem ser atendidas pontualmente sob consulta." },
+      { q: "Preciso ter o projeto estrutural pronto para contratar?", a: "Sim, é indispensável — sem a planilha de ferro do engenheiro calculista não é possível cortar e dobrar com precisão." },
+    ],
+  },
+
+  "fornecedor-aco-distrito-federal-obras-2026": {
+    answerCapsule: "Escolher fornecedor de aço no DF exige verificar certificação NBR 7480, prazo de entrega confirmado por escrito, serviço de corte e dobra integrado e documentação para financiamento bancário.",
+    faqItems: [
+      { q: "Que documentos o fornecedor de aço deve entregar no DF?", a: "Nota fiscal discriminada sempre; certificado de qualidade por lote e relatório de produção para obras com financiamento bancário (CEF, BB) ou controle rigoroso." },
+      { q: "Por que exigir corte e dobra no mesmo fornecedor?", a: "Reduz o número de fornecedores a coordenar, elimina intermediários e garante rastreabilidade do aço desde a siderúrgica até a peça final." },
+      { q: "A BR Aço atende o Distrito Federal?", a: "Sim, com entrega em 2 a 3 dias úteis a partir de Aparecida de Goiânia, certificado de qualidade e relatório de produção em todos os lotes." },
+    ],
+  },
+
+  "obra-brasilia-entrega-aco-df-prazo": {
+    answerCapsule: "Para obras em Brasília, o aço cortado e dobrado vindo de Goiás leva de 3 a 4 dias úteis do pedido à entrega — por isso o pedido deve ser feito com pelo menos 4 dias de antecedência da etapa.",
+    faqItems: [
+      { q: "Com quanta antecedência pedir aço para obra em Brasília?", a: "No mínimo 4 dias úteis; fundação exige 5 dias e escadas ou elementos especiais, 6 a 7 dias, por terem geometria mais complexa." },
+      { q: "Qual o ciclo completo do pedido até o DF?", a: "Envio da planilha (dia 0) → orçamento em até 2h → produção em 1 a 2 dias úteis → transporte Goiânia-Brasília em 1 dia útil → entrega no dia 3 a 4 útil." },
+      { q: "O que fazer se o aço atrasar?", a: "Adiantar outras tarefas do cronograma, pedir o material por etapas (pilares antes da laje) ou recorrer a um distribuidor local do DF para urgências abaixo de 500 kg." },
+      { q: "A BR Aço confirma prazo por escrito?", a: "Sim, com número do pedido de produção e contato do transportador no dia anterior à entrega." },
+    ],
+  },
+
+  "aco-estrutural-brasilia-goiania-logistica-custos": {
+    answerCapsule: "Aço estrutural custa de R$7,80 a R$9,00/kg em Goiânia e de R$9,00 a R$10,50/kg em Brasília (φ10, corte e dobra incluso) — a diferença reflete o frete de cerca de R$1 a R$1,50 por kg.",
+    faqItems: [
+      { q: "Por que o aço é mais caro em Brasília do que em Goiânia?", a: "O DF não tem usinas nem grandes centros de corte e dobra; o aço vem de Goiás ou MG, e o frete soma R$1,00 a R$1,50/kg ao preço." },
+      { q: "Qual o prazo de entrega em cada cidade?", a: "Goiânia e Grande Goiânia: 24 a 48h. Brasília/DF: 2 a 4 dias úteis." },
+      { q: "Vale a pena comprar de fornecedor de Goiás mesmo com frete?", a: "Sim, para obras acima de 3 toneladas o frete se dilui e fornecedores goianos ainda oferecem mais diâmetros e corte e dobra completo com relatório de produção." },
+      { q: "A BR Aço atende as duas regiões com o mesmo processo?", a: "Sim: planilha de ferro → orçamento em 2h → produção → entrega com documentação completa, tanto em Goiânia (24-48h) quanto no DF (2-3 dias úteis)." },
+    ],
+  },
+
+  "tabela-bitolas-vergalhao-diametros": {
+    answerCapsule: "A tabela de bitolas de vergalhão CA-50 vai de φ6,3 mm (0,245 kg/m) a φ32 mm (6,313 kg/m), conforme a ABNT NBR 7480, com peso calculado pela densidade do aço de 7.850 kg/m³.",
+    faqItems: [
+      { q: "Quanto pesa 1 metro de vergalhão φ12,5mm CA-50?", a: "0,963 kg/m (área da seção de 1,227 cm²), conforme a tabela de bitolas da ABNT NBR 7480." },
+      { q: "Como calcular o peso total de vergalhão?", a: "Peso (kg) = comprimento total (m) × peso por metro (kg/m). Exemplo: 120 m de φ12,5mm × 0,963 kg/m = 115,6 kg." },
+      { q: "Qual bitola usar em estribos?", a: "CA-25 em φ5,0mm, φ6,3mm ou φ8,0mm, conforme a solicitação do pilar ou viga definida pelo projeto." },
+      { q: "A BR Aço fornece todas as bitolas da tabela?", a: "Sim, mantém estoque de CA-50 e CA-25 em todos os diâmetros e corta na bitola e no comprimento exato do projeto." },
+    ],
+  },
+
+  "tabela-de-peso-do-ferro-pronto": {
+    answerCapsule: "A tabela de peso do ferro pronto traz o peso por metro do vergalhão CA-25, CA-50 e CA-60 por diâmetro — do φ6,3mm (0,245 kg/m) ao φ40mm (9,865 kg/m), conforme ABNT NBR 7480.",
+    faqItems: [
+      { q: "Qual a fórmula para calcular o peso do vergalhão?", a: "Peso (kg/m) = 0,00617 × diâmetro² (mm²). Para φ16mm: 0,00617 × 256 = 1,578 kg/m." },
+      { q: "CA-25 e CA-50 têm o mesmo peso por diâmetro?", a: "Sim, o peso por diâmetro é igual; a diferença está na resistência ao escoamento (250 MPa no CA-25 contra 500 MPa no CA-50)." },
+      { q: "Quanto pesa uma barra de 12m de φ20mm CA-50?", a: "29,59 kg (peso linear de 2,466 kg/m × 12m de barra)." },
+      { q: "Qual a tolerância de peso aceita pela norma?", a: "±3% por peça, conforme ABNT NBR 7480/2007." },
+    ],
+  },
+
+  "taxa-armadura-laje-viga-pilar": {
+    answerCapsule: "A taxa de armadura (ρ = área de aço / área de concreto) tem limites pela NBR 6118: mínimo de 0,15% em lajes e vigas e 0,4% em pilares; máximo de 4% em vigas e 8% em pilares CA-50.",
+    faqItems: [
+      { q: "O que é taxa de armadura?", a: "A relação entre a área de aço (As) e a área da seção transversal de concreto (Ac): ρ = As / Ac." },
+      { q: "Qual a taxa mínima de armadura em pilar?", a: "0,4% da área do pilar, com máximo de 8% para CA-50, conforme a NBR 6118." },
+      { q: "Por que existe um limite máximo de armadura?", a: "Acima do limite, o concreto não envolve bem as barras e o elemento rompe de forma frágil e repentina, sem ganho estrutural proporcional ao aço extra." },
+      { q: "O que acontece se a taxa ficar abaixo do mínimo?", a: "Risco de fissuração excessiva por retração e ruptura frágil e sem aviso após a fissuração do concreto." },
+    ],
+  },
+
+  "espacamento-estribos-pilar-viga-tabela-nbr-6118": {
+    answerCapsule: "O espaçamento máximo de estribos pela NBR 6118 é o menor valor entre d/2, 20×diâmetro da barra e 20 cm em pilares; em vigas varia de 10 a 30 cm conforme o esforço cortante.",
+    faqItems: [
+      { q: "Qual a fórmula do espaçamento máximo de estribos em pilar?", a: "s_máx = menor valor entre (dimensão mínima da seção)/2, 20×diâmetro da barra longitudinal e 20 cm." },
+      { q: "Qual espaçamento típico num pilar residencial de 14×14 cm?", a: "7 cm, para barras longitudinais φ12,5mm — valor obtido pela fórmula da NBR 6118 (d_mín/2 = 7 cm é o menor dos três limites)." },
+      { q: "O espaçamento muda perto da emenda das barras?", a: "Sim, a NBR 6118 exige reduzir para a metade do valor calculado ao longo de um comprimento mínimo de 1,5× o comprimento de emenda." },
+      { q: "Qual o diâmetro mínimo do estribo?", a: "5 mm pela NBR 6118; na prática, φ6,3mm em pilares e vigas residenciais e φ8 a φ10mm em estruturas de grande porte." },
+    ],
+  },
+
+  "cobrimento-minimo-armadura-tabela-nbr-6118": {
+    answerCapsule: "O cobrimento mínimo de armadura pela NBR 6118:2026 vai de 20 a 50 mm conforme o elemento e a classe de agressividade; em Goiânia (Classe II, urbana), é 25 mm para laje e 30 mm para viga e pilar.",
+    faqItems: [
+      { q: "Qual o cobrimento mínimo de armadura em Goiânia?", a: "Classe II (urbana): 25 mm em lajes, 30 mm em vigas e pilares, 40 mm em elementos de fundação em contato com o solo." },
+      { q: "O que é cobrimento nominal?", a: "É o cobrimento mínimo somado a 10 mm de tolerância de execução. Para laje em Goiânia: 25 mm + 10 mm = 35 mm nominal." },
+      { q: "Qual o erro mais comum de cobrimento em lajes?", a: "Usar apenas a treliça como espaçador, sem pastilhas nas posições sem treliça — o que resulta em cobrimento de 10 a 15 mm, abaixo do mínimo de 25 mm." },
+      { q: "Como garantir o cobrimento correto na obra?", a: "Com espaçadores certificados posicionados a cada 50 cm, nunca substituídos por pedras, e verificação por trena antes da concretagem." },
+    ],
+  },
+
+  "taxa-armadura-minima-maxima-nbr-6118": {
+    answerCapsule: "A NBR 6118 (Tabelas 17.1 e 17.3) define taxa mínima de armadura por ρ_mín = 0,26×(fctm/fyk) ≥ 0,13% em vigas, 0,4% em pilares e 0,15% em lajes, para evitar ruptura frágil após fissuração.",
+    faqItems: [
+      { q: "Qual a fórmula da taxa mínima de armadura em vigas?", a: "ρ_mín = 0,26 × (fctm/fyk) ≥ 0,13%. Para uma viga em concreto C30 com aço CA-50, isso resulta em ρ_mín = 0,151%." },
+      { q: "Qual a taxa máxima de armadura em pilar?", a: "8% em condição normal, podendo chegar a 10% em regiões de emenda por traspasse simultâneas." },
+      { q: "O que acontece numa peça sub-armada?", a: "Fissuração excessiva em serviço e possibilidade de colapso frágil logo após a fissuração do concreto — sem aviso prévio." },
+      { q: "A precisão do corte afeta a taxa de armadura real?", a: "Sim — no corte manual, erros de ±15 a 25 mm obrigam o armador a compensar com barra extra, alterando a taxa calculada; no corte CNC industrial a tolerância é de ±3 mm." },
+    ],
+  },
+
+  "raio-minimo-dobra-vergalhao-nbr-6118": {
+    answerCapsule: "O raio mínimo de dobra do vergalhão pela NBR 6118 é 3,5×φ (CA-50) ou 5,0×φ (CA-60) para barras até 20 mm — para φ16mm CA-50, isso exige mandril de 112 mm.",
+    faqItems: [
+      { q: "Qual o raio mínimo de dobra para vergalhão CA-50 φ16mm?", a: "56 mm de raio, com mandril mínimo de 112 mm, conforme a Tabela 9.1 da NBR 6118." },
+      { q: "Por que o raio de dobra importa?", a: "Um raio insuficiente causa fissuração do aço no ponto de dobra, esmagamento do concreto interno à curva e ancoragem ineficiente." },
+      { q: "Qual o erro mais comum nos canteiros?", a: "Dobrar com mandril de 30 a 40 mm quando o mínimo exigido é bem maior (ex.: 112 mm para φ16mm CA-50) — menos de 40% do valor normativo." },
+      { q: "O corte e dobra industrial garante o raio correto?", a: "Sim, a máquina CNC é configurada por diâmetro antes de cada lote, garantindo conformidade com a NBR 6118 em toda a produção." },
+    ],
+  },
+
+  "cobrimento-armadura-nbr-6118-tabela-valores": {
+    answerCapsule: "O cobrimento mínimo pela Tabela 7.2 da NBR 6118 varia de 20 mm (laje, Classe I) a 65 mm (fundação, Classe IV); em Goiânia e Brasília, ambiente urbano Classe II, o cobrimento de viga e pilar é 30 mm.",
+    faqItems: [
+      { q: "Qual a classe de agressividade de Goiânia e Brasília?", a: "Classe II (urbana), salvo setores industriais (Classe III) ou estruturas em contato direto com solo agressivo." },
+      { q: "O que acontece com cobrimento insuficiente a longo prazo?", a: "Corrosão progressiva com redução de até 30% da seção de aço e, após mais de 20 anos, risco de colapso localizado por ruptura de estribo oxidado." },
+      { q: "Qual a vida útil esperada com cobrimento correto?", a: "Cerca de 50 anos com cobrimento nominal de 40 mm (Classe II); com cobrimento médio abaixo de 15 mm, a primeira corrosão aparece em 5 a 8 anos, segundo dado do IBRACON." },
+      { q: "Como controlar o cobrimento em campo?", a: "Com espaçadores certificados (resistência ≥ 0,25×fck, mínimo de 4 unidades/m² em laje conforme NBR 14931) e verificação por pachômetro." },
+    ],
+  },
+
+  "tabela-referencia-nbr-6118-completa": {
+    answerCapsule: "A tabela de referência da NBR 6118 reúne, numa página, cobrimento nominal por classe de agressividade, comprimento de ancoragem por fck, transpasse de emenda e raios mínimos de dobra.",
+    faqItems: [
+      { q: "Qual o comprimento de ancoragem de uma barra CA-50 φ12,5mm em concreto C25?", a: "Barra reta em tração: 68 cm; com gancho de 90°, 42 cm (posição boa de concretagem)." },
+      { q: "Como calcular o comprimento de transpasse de uma emenda?", a: "lt = α1 × lb,ef, com α1 variando de 1,0 (até 25% das barras emendadas na seção) a 2,0 (mais de 50%)." },
+      { q: "Qual o cobrimento nominal em ambiente urbano (Classe II)?", a: "25 mm para lajes e paredes, 35 mm para vigas e pilares." },
+      { q: "Qual o gancho padrão de um estribo a 135°?", a: "Dobragem de 135° com extensão reta mínima de 5×φ, conforme o item 9.4.7.2 da NBR 6118." },
+    ],
+  },
+
+  "corte-dobra-vs-barra-inteira-vantagens": {
+    answerCapsule: "Comparar corte e dobra com barra inteira só pelo preço por kg ignora custos ocultos: a barra inteira perde 8% a 15% do material em pontas, contra menos de 3% no processo industrial.",
+    faqItems: [
+      { q: "Quanto de aço se perde comprando em barra inteira?", a: "De 8% a 15% do total em pontas e aparas — em uma obra com 5 toneladas, de 400 kg a 750 kg de aço pago e não usado." },
+      { q: "Quando a barra inteira ainda compensa?", a: "Em peças muito longas e retas sem dobramento, obras muito pequenas abaixo do lote mínimo do corte e dobra, ou projeto ainda não finalizado." },
+      { q: "O que está incluso no preço do corte e dobra?", a: "Material e processo: corte, dobra, identificação por elemento e entrega — sem custo adicional de mão de obra de armação bruta." },
+      { q: "Como a BR Aço processa o pedido?", a: "Recebe o projeto estrutural ou a planilha de ferro e entrega cada peça identificada, cortada e dobrada na medida exata, com orçamento em até 2 horas." },
+    ],
+  },
+
+  "desperdicio-vergalhao-obra-como-reduzir": {
+    answerCapsule: "Obras residenciais sem gestão de armação desperdiçam de 8% a 15% do vergalhão comprado — numa casa de 150 m², isso equivale a 500 kg a 900 kg de aço jogado fora.",
+    faqItems: [
+      { q: "Quais as principais causas de desperdício de vergalhão?", a: "Corte manual sem otimização, erros de medição, falta de projeto de armação detalhado, retrabalho por alteração de projeto e oxidação por armazenamento inadequado." },
+      { q: "Como reduzir o desperdício do corte manual?", a: "Usando corte e dobra industrial com software de otimização, que reduz a perda de 8-15% para menos de 3%." },
+      { q: "Como armazenar vergalhão para evitar perda por oxidação?", a: "Em local coberto, sobre cavaletes, longe de umidade e produtos químicos." },
+      { q: "A BR Aço otimiza o encaixe das peças?", a: "Sim, a planilha de ferro é processada por software que otimiza automaticamente o corte nas barras de 12m, minimizando as sobras." },
+    ],
+  },
+
+  "como-funciona-corte-dobra-industrial": {
+    answerCapsule: "O corte e dobra industrial transforma a planilha de ferro em peças prontas em 6 etapas: recebimento do projeto, programação do software, corte CNC (±5mm), dobra, identificação e entrega em até 48h.",
+    faqItems: [
+      { q: "Quais as etapas do corte e dobra industrial?", a: "Recebimento da planilha de ferro, programação do software de otimização, corte por tesoura CNC, dobramento CNC nos ângulos do projeto, identificação por elemento e entrega." },
+      { q: "Qual a tolerância de corte da máquina CNC?", a: "±5 mm, conforme a ABNT NBR 7480, para bitolas até 32 mm." },
+      { q: "Como as peças chegam identificadas na obra?", a: "Marcadas por elemento (P1, V3, L2...), bitola e quantidade, amarradas em feixes por etapa estrutural." },
+      { q: "Qual o prazo da BR Aço em Goiás?", a: "Até 48h em Goiânia e região, com orçamento em até 2 horas após o envio da planilha de ferro." },
+    ],
+  },
+
+  "como-enviar-projeto-corte-dobra": {
+    answerCapsule: "Para contratar corte e dobra, basta enviar a planilha de ferro (referência da peça, diâmetro, comprimento e dobras) em PDF, Excel, DWG/DXF ou até foto legível, pelo WhatsApp.",
+    faqItems: [
+      { q: "Quais dados a planilha de ferro precisa ter?", a: "Referência da peça, diâmetro, comprimento total, número de dobras e quantidade — o elemento estrutural é recomendado, mas não obrigatório." },
+      { q: "Quais formatos de arquivo são aceitos?", a: "PDF, Excel, DWG/DXF, foto legível da prancha impressa ou envio direto pelo WhatsApp." },
+      { q: "E se eu não tiver a planilha pronta, só o projeto estrutural?", a: "A equipe técnica pode extrair as peças a partir das pranchas de armação; para obras simples, croquis com medidas do mestre de obras também são aceitos." },
+      { q: "Quanto tempo leva do envio ao orçamento?", a: "Até 2 horas em dias úteis; a entrega ocorre em até 48h em Goiânia e região metropolitana." },
+    ],
+  },
+
+  "precisao-corte-dobra-industrial-tolerancias": {
+    answerCapsule: "A NBR 7480 exige tolerância de ±5 mm no corte de barras até 3 m (até ±15 mm acima de 6 m) — no corte manual em obra, erros de 2 a 5 cm são comuns e comprometem a ancoragem.",
+    faqItems: [
+      { q: "Qual a tolerância de corte exigida pela norma?", a: "±5 mm até 3 m de comprimento, ±10 mm de 3 a 6 m, e ±15 mm acima de 6 m, conforme a ABNT NBR 7480." },
+      { q: "Um erro de 5 cm no corte é grave?", a: "Pode ser — numa barra φ16mm CA-50 com ancoragem mínima de 64 cm, um erro de 5 cm reduz a ancoragem em 7,8%, o que pode torná-la insuficiente." },
+      { q: "Qual a tolerância de ângulo nas dobras?", a: "±2° em relação ao ângulo especificado, e ±5 mm na posição da dobra ao longo da barra." },
+      { q: "O que fazer se a peça chegar fora da tolerância?", a: "Medir com trena, registrar a diferença, não montar sem autorização do engenheiro e solicitar substituição ao fornecedor." },
+    ],
+  },
+
+  "como-especificar-corte-e-dobra-projeto": {
+    answerCapsule: "Para especificar corte e dobra no projeto, o engenheiro define elemento, posição, material (CA-50/CA-60), diâmetro, comprimento desenvolvido, quantidade e forma de dobramento na planilha de ferro.",
+    faqItems: [
+      { q: "Quais campos a planilha de ferro deve ter?", a: "Elemento, posição, material (CA-50 ou CA-60), diâmetro, comprimento total, quantidade e forma e raio de dobramento." },
+      { q: "Como calcular o comprimento desenvolvido de um gancho de 90°?", a: "Somar 8×φ ao comprimento reto da barra; para gancho de 180°, somar 4,5×φ." },
+      { q: "Uma planilha de ferro incompleta gera que problema?", a: "Peças erradas, retrabalho, atraso na entrega e custo adicional — a qualidade do corte e dobra depende diretamente da informação fornecida." },
+      { q: "Quem deve preparar a planilha de ferro?", a: "O engenheiro calculista ou o responsável pela obra, extraindo cada barra dos detalhes de armação do projeto estrutural." },
+    ],
+  },
+
+  "terceirizar-armacao-de-ferro-como-funciona": {
+    answerCapsule: "Terceirizar a armação de ferro não significa perder controle: você envia a planilha de ferro ou o projeto estrutural e recebe peças cortadas com tolerância de ±2mm, identificadas por etapa e com relatório de produção.",
+    faqItems: [
+      { q: "Posso terceirizar só parte da armação?", a: "Sim, é comum terceirizar os estribos (mais repetitivos) e cortar peças simples no canteiro — a BR Aço atende qualquer volume, sem mínimo de pedido." },
+      { q: "Como conferir a entrega do corte e dobra?", a: "Conferência rápida (5 min): checar os feixes identificados e pesar 3 peças aleatórias comparando com o relatório; conferência completa: contar peças, medir com trena (±5mm) e checar ângulos de dobramento." },
+      { q: "E se a peça vier errada?", a: "Fotografar, registrar na nota de entrega e acionar o fornecedor — não-conformidades confirmadas são refeitas sem custo." },
+      { q: "Posso pedir entrega parcelada?", a: "Sim, é comum em obras em andamento, conforme o cronograma, reduzindo o estoque no canteiro e o risco de roubo de material." },
+    ],
+  },
+
+  "atraso-obra-falta-armador-como-resolver": {
+    answerCapsule: "Obra parada por falta de armador pode custar de R$3.500 a R$7.000 por semana em mão de obra parada e equipamentos; o corte e dobra industrial resolve o gargalo em 1 a 2 dias úteis, sem precisar de armador especializado.",
+    faqItems: [
+      { q: "Quanto custa uma semana de obra parada esperando armador?", a: "De R$3.500 a R$7.000 em mão de obra parada, aluguel de equipamentos e custo de oportunidade do atraso." },
+      { q: "Quanto tempo leva para desbloquear a obra com corte e dobra?", a: "1 a 2 dias úteis para volumes até 5 toneladas, após aprovação do orçamento — entregue em até 2 horas." },
+      { q: "Preciso de armador especializado para montar as peças prontas?", a: "Não necessariamente — um ajudante orientado, um encarregado de obra ou o próprio pedreiro consegue montar, já que o corte e a interpretação do projeto já foram feitos na fábrica." },
+      { q: "Há casos reais de obras desbloqueadas rápido?", a: "Sim: residência de 180 m² em Goiânia entregue em 36h, laje de 82 m² em Aparecida de Goiânia entregue no dia seguinte, e fundação de 600 m² em Anápolis em 2 dias úteis." },
+    ],
+  },
+
+  "construcao-civil-sem-armador-alternativas-2026": {
+    answerCapsule: "Em 2026, 5 alternativas permitem construir sem depender de armador especializado: corte e dobra industrial, armadura pré-fabricada, pré-moldados, forma com armadura integrada (laje treliçada) e capacitação rápida do peão.",
+    faqItems: [
+      { q: "Qual a alternativa mais eficiente para substituir o armador?", a: "O corte e dobra industrial: entrega peças cortadas, dobradas e identificadas em 1 a 2 dias úteis para até 10 toneladas, com montagem por qualquer trabalhador orientado." },
+      { q: "A laje treliçada dispensa armador?", a: "Sim, para a armação inferior — o aço já vem embutido na vigota; só a capa recebe malha soldada, sem necessidade de armador especializado." },
+      { q: "Pré-moldados são mais rápidos que corte e dobra?", a: "Sim, mas com menos flexibilidade para projetos não-padronizados e custo inicial e logística de transporte maiores." },
+      { q: "Quanto tempo de treinamento um pedreiro precisa para montar peças pré-cortadas?", a: "Menos de um dia, desde que as peças estejam identificadas por elemento e com supervisão do engenheiro nos primeiros elementos." },
+    ],
+  },
+
+  "vergalhao-barra-reta-desperdicio-custo-real": {
+    answerCapsule: "Vergalhão em barra reta parece mais barato por kg, mas 5 custos ocultos — desperdício de 5-8%, mão de obra de corte, ferramentas, retrabalho e atraso — quase igualam o custo total ao do corte e dobra industrial.",
+    faqItems: [
+      { q: "Quais são os 5 custos ocultos da barra reta?", a: "Desperdício de material (5-8%), mão de obra de corte (R$720 a R$1.500 para 5t), ferramentas e consumíveis (R$550 a R$1.200), risco de retrabalho (1-3% do custo do aço) e atraso de cronograma." },
+      { q: "Qual a conta real para 5.000 kg de vergalhão?", a: "Barra reta + corte no canteiro: R$36.650 no total. Corte e dobra BR Aço: R$36.250 no total, já incluindo o serviço." },
+      { q: "Quando a barra reta ainda compensa?", a: "Em peças com grandes comprimentos lineares sem corte, como pilares de altura padrão sem variação ou vergalhões em barra inteira para fundações longas." },
+      { q: "Por que não comparar só o preço por kg?", a: "Porque o preço por kg da barra reta não inclui desperdício, mão de obra de corte, ferramentas e risco de erro — custos que só aparecem no fechamento da obra." },
+    ],
+  },
+
+  "desperdicio-aco-corte-manual-canteiro": {
+    answerCapsule: "O corte manual de vergalhão no canteiro desperdiça de 6% a 9% do material, contra 0,5% a 1,5% no corte CNC industrial — numa obra de 5.000 kg, isso equivale a R$1.950 jogados fora.",
+    faqItems: [
+      { q: "De onde vem o desperdício do corte manual?", a: "Sobras de barras de 12m que não se encaixam em outra peça, erros de medida e dobras fora do padrão que obrigam a refazer a peça." },
+      { q: "Quanto se perde numa obra de 150 m²?", a: "Entre R$780 e R$1.560 de desperdício evitável, considerando um consumo típico de 2.000 a 4.000 kg de aço estrutural." },
+      { q: "O que acontece com as sobras de vergalhão?", a: "Geralmente são vendidas como ferro-velho a R$0,50-1,20/kg — uma perda líquida de R$5 a R$6 por kg comprado a R$6,50/kg." },
+      { q: "Como o corte e dobra industrial elimina esse desperdício?", a: "Com otimização de layout de corte por software, reduzindo a perda para menos de 1%, contra 6% do corte manual." },
+    ],
+  },
+
+  "corte-manual-vs-corte-dobra-industrial-comparativo-custos": {
+    answerCapsule: "Numa laje de 100 m² (1.200 kg de aço), o corte manual custa R$103,68/m² em 5 a 7 dias, contra R$97,00/m² em 2 a 3 dias no corte e dobra industrial — 7% mais barato e até 60% mais rápido.",
+    faqItems: [
+      { q: "Qual a diferença de custo por m² entre corte manual e industrial?", a: "R$103,68/m² no corte manual contra R$97,00/m² no corte e dobra industrial — economia de R$6,68/m², cerca de 7%." },
+      { q: "Qual a diferença de prazo?", a: "5 a 7 dias no corte manual contra 2 a 3 dias no corte e dobra industrial — de 50% a 60% mais rápido." },
+      { q: "Quando o corte manual pode ser mais barato?", a: "Em obras muito pequenas (menos de 300 kg de aço), peças todas do mesmo comprimento, ou com armador já disponível sem custo adicional." },
+      { q: "Qual a precisão dimensional de cada método?", a: "±5 a 10mm no corte manual contra ±1 a 2mm no corte e dobra industrial — cerca de 5 vezes mais preciso." },
+    ],
+  },
+
+  "erro-medida-corte-vergalhao-impacto-obra": {
+    answerCapsule: "Um erro de 1 cm no corte do vergalhão pode deixar a peça em não-conformidade com a NBR 6118 — o comprimento mínimo de ancoragem varia de 24 cm (φ8mm) a 60 cm (φ20mm), e faltar esse valor inutiliza a peça.",
+    faqItems: [
+      { q: "Qual o comprimento mínimo de ancoragem por diâmetro?", a: "24 cm para φ8mm, 30 cm para φ10mm, 37,5 cm para φ12,5mm, 48 cm para φ16mm e 60 cm para φ20mm, conforme referência da NBR 6118." },
+      { q: "Com que frequência o corte manual erra a medida?", a: "De 15% a 20% das peças cortadas manualmente têm desvio maior que 5mm, e de 3% a 5% têm desvio maior que 20mm — o suficiente para inutilizar a peça." },
+      { q: "O que acontece com um estribo cortado curto?", a: "O gancho não fecha corretamente, a peça fica sem efetividade estrutural e precisa ser refeita." },
+      { q: "Qual a tolerância do corte CNC industrial?", a: "±1 mm, eliminando o erro de medida que custaria material e retrabalho de mão de obra no corte manual." },
+    ],
+  },
+
+  "tela-soldada-vs-vergalhao-laje": {
+    answerCapsule: "Tela soldada e vergalhão têm custo por kg parecido para armar lajes, mas a tela soldada economiza tempo de mão de obra na montagem por já vir pronta em painéis.",
+    faqItems: [
+      { q: "Tela soldada é mais barata que vergalhão?", a: "O custo por kg é parecido; a diferença real está na mão de obra — a tela soldada monta mais rápido por já vir em painéis prontos." },
+      { q: "Quando vale mais a pena usar vergalhão solto em vez de tela?", a: "Em armações com geometria irregular ou que exigem dobras e emendas específicas do projeto, onde o vergalhão cortado sob medida se ajusta melhor." },
+      { q: "Posso combinar tela soldada e vergalhão na mesma laje?", a: "Sim, é comum usar tela para a armadura de distribuição e vergalhão cortado e dobrado para a armadura principal calculada pelo projeto." },
+      { q: "A BR Aço fornece os dois produtos?", a: "Sim, telas soldadas e vergalhão CA-50/CA-60 cortado e dobrado sob medida, com entrega em Goiânia e região." },
+    ],
+  },
+
+  "vergalhao-nervurado-caracteristicas-vantagens": {
+    answerCapsule: "As nervuras do vergalhão CA-50/CA-60 aumentam a aderência ao concreto, permitindo dispensar ganchos em barras retas — a NBR 7480 exige índice de conformação superficial mínimo de 0,056 a 0,075.",
+    faqItems: [
+      { q: "Por que o vergalhão nervurado é melhor que o liso?", a: "As nervuras aumentam a aderência mecânica ao concreto, permitindo menor comprimento de ancoragem e dispensando ganchos em barras retas." },
+      { q: "Todo vergalhão CA-50 e CA-60 é nervurado?", a: "Sim, a NBR 7480 exige superfície nervurada para essas classes, com índice de conformação mínimo de 0,056 (φ ≤ 6,3mm) a 0,075 (φ > 10mm)." },
+      { q: "O vergalhão liso ainda é usado?", a: "Sim, principalmente em estribos e esperas (CA-25), onde a aderência exigida é menor e o gancho é obrigatório." },
+      { q: "A BR Aço vende vergalhão nervurado certificado?", a: "Sim, exclusivamente CA-50 e CA-60 nervurados com laudo NBR 7480, entrega em até 48h em Goiânia e região." },
+    ],
+  },
+
+  "aco-ca50-vs-ca60-diferencas-tecnicas": {
+    answerCapsule: "CA-50 (fyk 500 MPa, φ6,3-40mm, soldável) é usado em barras longitudinais de vigas e pilares; CA-60 (fyk 600 MPa, φ1,6-10mm, pouco soldável) é usado em estribos finos e telas soldadas.",
+    faqItems: [
+      { q: "Qual a principal diferença entre CA-50 e CA-60?", a: "A resistência de escoamento: 500 MPa no CA-50 contra 600 MPa no CA-60, além do CA-60 ter menor ductilidade e diâmetros menores (até 10mm)." },
+      { q: "CA-60 pode ser soldado em obra?", a: "Em geral não — fios CA-60 não são soldáveis em campo; a soldagem de telas soldadas é feita em fábrica." },
+      { q: "Qual usar em barras longitudinais de vigas e pilares?", a: "CA-50, para diâmetros a partir de φ10mm; CA-60 é reservado a estribos finos (φ5,0 e φ6,3mm) e armadura de distribuição." },
+      { q: "CA-60 é mais barato que CA-50?", a: "Ligeiramente, por kg, mas a diferença de custo total é marginal já que o CA-60 é usado em peças de menor peso total na obra." },
+    ],
+  },
+
 };
