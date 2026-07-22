@@ -161,6 +161,133 @@ export default function VisaoComputacionalFabrica() {
         </div>
       </section>
 
+      {/* ══ EXEMPLO ILUSTRATIVO ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Exemplo ilustrativo"
+            title="Assim o sistema enxergaria o chão de fábrica."
+            description="Imagens reais das câmeras da fábrica, com uma simulação de como as detecções apareceriam. Este é um exemplo ilustrativo de funcionamento — não uma captura ao vivo do sistema em operação."
+          />
+          <div className="mt-12 sm:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-5">
+            {/* Card 1 — Produção / vergalhão */}
+            <Reveal>
+              <figure>
+                <div className="relative rounded-2xl overflow-hidden border border-hairline h-64 sm:h-72">
+                  <img
+                    src="/images/visao-fabrica/producao-vergalhao.jpg"
+                    alt="Câmera da linha de produção de vergalhão, com simulação de detecção de colaboradores"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 pointer-events-none">
+                    <span className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded">
+                      Exemplo ilustrativo
+                    </span>
+
+                    {/* Pessoa 1 */}
+                    <div
+                      className="absolute border-2 border-brand-orange bg-brand-orange/10 rounded"
+                      style={{ left: '16%', top: '14%', width: '6%', height: '22%' }}
+                    >
+                      <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap bg-brand-orange text-white text-[10px] px-1.5 py-0.5 rounded">
+                        Colaborador · EPI ok
+                      </span>
+                    </div>
+
+                    {/* Pessoa 2 */}
+                    <div
+                      className="absolute border-2 border-brand-orange bg-brand-orange/10 rounded"
+                      style={{ left: '88%', top: '24%', width: '5%', height: '20%' }}
+                    >
+                      <span className="absolute right-0 top-full mt-0.5 whitespace-nowrap bg-brand-orange text-white text-[10px] px-1.5 py-0.5 rounded">
+                        Colaborador · EPI ok
+                      </span>
+                    </div>
+
+                    <span className="absolute left-3 bottom-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded">
+                      Zona: Produção
+                    </span>
+                  </div>
+                </div>
+                <figcaption className="text-sm text-brand-gray-medium mt-3">
+                  Linha de produção — vergalhão
+                </figcaption>
+              </figure>
+            </Reveal>
+
+            {/* Card 2 — Pátio de materiais */}
+            <Reveal delay={70}>
+              <figure>
+                <div className="relative rounded-2xl overflow-hidden border border-hairline h-64 sm:h-72">
+                  <img
+                    src="/images/visao-fabrica/patio-materiais.jpg"
+                    alt="Câmera do pátio de materiais, sem movimentação de pessoas no momento"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 pointer-events-none">
+                    <span className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded">
+                      Exemplo ilustrativo
+                    </span>
+
+                    <span className="absolute left-3 bottom-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded">
+                      Zona: Pátio · sem movimentação
+                    </span>
+                  </div>
+                </div>
+                <figcaption className="text-sm text-brand-gray-medium mt-3">
+                  Pátio de materiais — acesso
+                </figcaption>
+              </figure>
+            </Reveal>
+
+            {/* Card 3 — Armazém / perfis */}
+            <Reveal delay={140}>
+              <figure>
+                <div className="relative rounded-2xl overflow-hidden border border-hairline h-64 sm:h-72">
+                  <img
+                    src="/images/visao-fabrica/armazem-perfis.jpg"
+                    alt="Câmera do armazém de perfis e treliças, com simulação de detecção de colaboradores"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 pointer-events-none">
+                    <span className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold uppercase tracking-wide px-2 py-1 rounded">
+                      Exemplo ilustrativo
+                    </span>
+
+                    {/* Pessoa 1 */}
+                    <div
+                      className="absolute border-2 border-brand-orange bg-brand-orange/10 rounded"
+                      style={{ left: '15%', top: '10%', width: '6%', height: '16%' }}
+                    >
+                      <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap bg-brand-orange text-white text-[10px] px-1.5 py-0.5 rounded">
+                        Colaborador · EPI ok
+                      </span>
+                    </div>
+
+                    {/* Pessoa 2 */}
+                    <div
+                      className="absolute border-2 border-brand-orange bg-brand-orange/10 rounded"
+                      style={{ left: '56%', top: '48%', width: '8%', height: '20%' }}
+                    >
+                      <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap bg-brand-orange text-white text-[10px] px-1.5 py-0.5 rounded">
+                        Colaborador · EPI ok
+                      </span>
+                    </div>
+
+                    <span className="absolute left-3 bottom-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded">
+                      Zona: Armazém
+                    </span>
+                  </div>
+                </div>
+                <figcaption className="text-sm text-brand-gray-medium mt-3">
+                  Armazém — perfis e treliças
+                </figcaption>
+              </figure>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ══ RESPONSABILIDADE / LGPD ══ */}
       <section className="py-16 sm:py-20 md:py-28 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
