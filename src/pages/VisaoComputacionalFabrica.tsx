@@ -3,6 +3,7 @@ import { analytics } from '@/lib/analytics';
 import {
   Camera, ShieldCheck, Radio, HardHat, ChevronRight, ArrowRight,
   MessageCircle, Lock, FileCheck, Clock, LucideIcon,
+  Cpu, Fingerprint, Workflow, Wifi, Database, KeyRound,
 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import Eyebrow from '@/components/Eyebrow';
@@ -53,6 +54,45 @@ const compromissos: Compromisso[] = [
     icon: ShieldCheck,
     title: 'Consentimento e prazos definidos',
     description: 'Cada pessoa cadastrada — funcionário ou visitante — tem consentimento registrado, com prazo de retenção definido e processo de exclusão, dentro do mesmo padrão de compliance que rege os demais processos da empresa.',
+  },
+];
+
+interface StackItem { icon: LucideIcon; title: string; description: string; }
+const stackTecnica: StackItem[] = [
+  {
+    icon: Camera,
+    title: 'Captura',
+    description: 'Câmeras IP RTSP (H.264/H.265, PoE) na entrada e nas áreas de cobertura, num switch PoE+ com VLAN dedicada e isolada do restante da rede.',
+  },
+  {
+    icon: Cpu,
+    title: 'Processamento de visão',
+    description: 'NVIDIA DeepStream faz o batch de todas as câmeras numa única GPU; YOLOv11 detecta pessoas, EPI e empilhadeiras; ByteTrack mantém o rastreamento entre frames.',
+  },
+  {
+    icon: Fingerprint,
+    title: 'Identidade',
+    description: 'SCRFD localiza o rosto e ArcFace gera o identificador (InsightFace, rodando em GPU); a galeria de funcionários e visitantes fica em banco próprio, com consentimento e prazo de validade registrados.',
+  },
+  {
+    icon: Workflow,
+    title: 'Regras de negócio',
+    description: 'Um motor próprio consome os eventos e decide: tempo de permanência por zona, parada de linha, conformidade de EPI — sempre vinculado à identidade certa.',
+  },
+  {
+    icon: Wifi,
+    title: 'IoT e alertas',
+    description: 'Um barramento de mensagens conecta todos os serviços; os alertas chegam no WhatsApp e num painel, com histórico mantido à parte.',
+  },
+  {
+    icon: Database,
+    title: 'Infraestrutura',
+    description: 'Tudo roda em containers sobre uma GPU dedicada, com um armazenamento próprio reservado só para a gravação de vídeo dos últimos 30 dias.',
+  },
+  {
+    icon: KeyRound,
+    title: 'Conformidade',
+    description: 'Dado biométrico é tratado como sensível: só um identificador criptografado circula entre os sistemas — nunca o nome ou o vídeo bruto de ninguém.',
   },
 ];
 
@@ -131,6 +171,35 @@ export default function VisaoComputacionalFabrica() {
           />
           <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
             {compromissos.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Reveal key={index} delay={(index % 3) * 70}>
+                  <div className="group relative h-full bg-card rounded-2xl border border-hairline p-7 hover:border-brand-orange/40 transition-colors">
+                    <Icon className="w-7 h-7 text-brand-orange" strokeWidth={1.5} />
+                    <h3 className="font-display text-lg font-semibold text-brand-navy mt-5 tracking-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-brand-gray-medium text-sm leading-relaxed mt-2">
+                      {item.description}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ STACK TÉCNICA ══ */}
+      <section className="py-16 sm:py-20 md:py-28 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <SectionIntro
+            eyebrow="Para quem quer entender tecnicamente"
+            title="A stack por trás dessa camada de visão."
+            description="Sete domínios, cada um com uma responsabilidade clara — do sensor até o alerta."
+          />
+          <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {stackTecnica.map((item, index) => {
               const Icon = item.icon;
               return (
                 <Reveal key={index} delay={(index % 3) * 70}>
