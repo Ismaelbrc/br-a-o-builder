@@ -62,6 +62,7 @@ const Meta                = lazyWithRetry(() => import('./pages/Meta'));
 const Orcamento           = lazyWithRetry(() => import('./pages/Orcamento'));
 const Cases               = lazyWithRetry(() => import('./pages/Cases'));
 const PropostaRedeConstrucao = lazyWithRetry(() => import('./pages/PropostaRedeConstrucao'));
+const VisaoComputacionalFabrica = lazyWithRetry(() => import('./pages/VisaoComputacionalFabrica'));
 const NotFound            = lazyWithRetry(() => import('./pages/NotFound'));
 const TebasLanding        = lazyWithRetry(() => import('./pages/Tebas/index'));
 const TebasCalcular       = lazyWithRetry(() => import('./pages/Tebas/Calcular'));
@@ -126,6 +127,7 @@ function AppRoutes() {
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/cases" element={<Cases />} />
           <Route path="/proposta-rede-construcao" element={<PropostaRedeConstrucao />} />
+          <Route path="/visao-computacional-fabrica" element={<VisaoComputacionalFabrica />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
           {/* Tracking / redirect pages */}
