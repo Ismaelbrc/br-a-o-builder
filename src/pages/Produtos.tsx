@@ -82,8 +82,8 @@ const products: Product[] = [
 
 const ProductSection = ({ product, index }: { product: Product; index: number }) => {
   const isEven = index % 2 === 0;
-  const whatsappUrl = `https://wa.me/556291489786?text=${encodeURIComponent(product.whatsappMsg)}`;
-  const genericWhatsappUrl = "https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista.";
+  const whatsappUrl = `https://wa.me/556299032023?text=${encodeURIComponent(product.whatsappMsg)}`;
+  const genericWhatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista.";
 
   const bpKey: BlueprintKey = product.id === 'corte-e-dobra-section' ? 'corte-e-dobra' : (product.id as BlueprintKey);
   const blueprint = (
@@ -201,7 +201,7 @@ export default function Produtos() {
 
   useEffect(() => { analytics.viewContent('Produtos'); }, []);
 
-  const whatsappUrl = "https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20A%C3%A7o.";
+  const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20BR%20A%C3%A7o.";
 
   return (
     <Layout>

@@ -28,7 +28,7 @@ import {
 
 const WHATSAPP_MSG =
   'Olá! Recebi a proposta da BR Aço para a Rede da Construção e gostaria de conversar sobre os próximos passos.';
-const whatsappUrl = `https://wa.me/556291489786?text=${encodeURIComponent(WHATSAPP_MSG)}`;
+const whatsappUrl = `https://wa.me/556299032023?text=${encodeURIComponent(WHATSAPP_MSG)}`;
 
 // ── Tabela de preços — Até 250km / Acima 250km ──────────────────────────────
 interface PriceRow {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { initChannel, setChannel, channelTag, clickIdTag, channelClickId, sendLeadBeacon } from '@/lib/channel';
 
-const PHONE = '556291489786';
+const PHONE = '556299032023';
 const MSG = 'Olá! Quero saber mais sobre o corte e dobra da BR Aço.';
 
 export default function Meta() {

@@ -12,7 +12,7 @@ export default function Cliente() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ nome: '', email: '' });
   const [sending, setSending] = useState(false);
-  const whatsappUrl = "https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BR%20A%C3%A7o.";
+  const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BR%20A%C3%A7o.";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

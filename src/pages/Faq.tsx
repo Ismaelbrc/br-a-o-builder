@@ -6,7 +6,7 @@ import { Search, MessageCircle, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
 
-const WHATSAPP = 'https://wa.me/556291489786?text=%5Bsrc%3Afaq%5D%20Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20produtos%20da%20BR%20A%C3%A7o.';
+const WHATSAPP = 'https://wa.me/556299032023?text=%5Bsrc%3Afaq%5D%20Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20produtos%20da%20BR%20A%C3%A7o.';
 
 const faqCategories = [
   {

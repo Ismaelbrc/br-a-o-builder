@@ -54,7 +54,7 @@ const ComparisonSection = () => {
     }
   };
 
-  const whatsappUrl = "https://wa.me/556291489786?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
+  const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20obra.";
 
   return (
     <section id="comparativo" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background" ref={sectionRef}>

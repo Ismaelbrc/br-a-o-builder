@@ -138,7 +138,7 @@ export default function TebasResultado() {
   const waMsg = encodeURIComponent(
     `Olá! Usei o Tebas (grupobraco.com.br/tebas) para pré-dimensionar uma estrutura residencial e gostaria de conversar sobre o projeto com um engenheiro.`
   );
-  const waUrl = `https://wa.me/556299247285?text=${waMsg}`;
+  const waUrl = `https://wa.me/556299032023?text=${waMsg}`;
 
   return (
     <TebasLayout>

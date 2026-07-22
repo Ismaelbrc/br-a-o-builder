@@ -1,16 +1,13 @@
 import { channelTag, clickIdTag } from '@/lib/channel';
 
-// Rodízio de vendedores (round-robin STICKY): o visitante é sorteado 1x para um
-// vendedor do pool e fica grudado nele (localStorage) — a conversa não se parte.
-// Divisão par entre os números. Pool = instância WhatsApp viva de cada vendedor
-// do teste de efetividade (medido no funil pelo instance_id que recebe o contato).
+// Contato único do site: número oficial WhatsApp Cloud API (instância "Kennedy").
+// Todo lead do site cai no inbox central do Nexum. A estrutura de pool/pickSeller
+// é mantida por compatibilidade (com 1 elemento sempre retorna o Kennedy), caso
+// se queira voltar a um rodízio no futuro.
 const WA_POOL = [
-  '556291489786', // Aline
-  '556299247285', // Henrique
-  '556298667249', // Tati
-  '556296472423', // Geordio
+  '556299032023', // Kennedy (número oficial Cloud API)
 ];
-const PHONE = WA_POOL[0]; // fallback estático (WHATSAPP_URL)
+const PHONE = '556299032023';
 
 /** Número do vendedor sorteado para este visitante (persistido; sempre o mesmo). */
 export function pickSeller(): string {
