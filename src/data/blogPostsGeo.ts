@@ -581,4 +581,15 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "arame-recozido-vs-galvanizado-qual-usar": {
+    answerCapsule: "Arame recozido serve para amarração de ferragem embutida em concreto (maleável, sem proteção); arame galvanizado tem camada de zinco (NBR 6323) e resiste à corrosão para uso externo permanente.",
+    faqItems: [
+      { q: "Qual a diferença entre arame recozido e galvanizado?", a: "O recozido passa por aquecimento controlado para ficar maleável e sem revestimento, usado para amarrar ferragem embutida no concreto. O galvanizado tem uma camada de zinco (NBR 6323) que resiste à corrosão, indicado para uso externo exposto ao tempo." },
+      { q: "Arame galvanizado é mais forte que o recozido?", a: "Mecanicamente é mais rígido porque normalmente não passa pelo recozimento intenso do arame recozido — mas isso reflete o objetivo de cada um, não uma versão 'fraca' e 'forte' do mesmo produto: o recozido é feito para ser maleável, o galvanizado para resistir à corrosão." },
+      { q: "Arame galvanizado enferruja?", a: "Enferruja muito mais devagar que um arame sem proteção, porque a camada de zinco protege o aço por barreira física e por proteção catódica — mas não é uma proteção eterna, depende da espessura do revestimento e da exposição ambiental." },
+      { q: "Posso usar arame recozido do lado de fora?", a: "Não é recomendado para uso permanente exposto ao tempo, pois sem revestimento ele oxida com a umidade e perde resistência mecânica ao longo do tempo." },
+      { q: "Qual bitola de arame recozido é mais usada para amarrar ferragem?", a: "As bitolas 18 (1,25 mm) e 16 (1,65 mm) são as mais comuns em obra, vendidas em rolo ou por quilo conforme o volume de amarração necessário." },
+    ],
+  },
+
 };
