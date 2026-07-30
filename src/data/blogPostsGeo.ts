@@ -592,4 +592,44 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "vergalhao-luziania-go-preco-entrega": {
+    answerCapsule: "A BR Aço entrega vergalhão CA-50 em Luziânia GO via BR-040 com frota própria, atendendo desde residências populares até pequenos condomínios, com a mesma norma NBR 7480 de Goiânia.",
+    faqItems: [
+      { q: "A BR Aço entrega vergalhão em Luziânia?", a: "Sim. A BR Aço entrega vergalhão CA-50 em Luziânia GO com frota própria, saindo da fábrica em Aparecida de Goiânia pela BR-040, atendendo desde autoconstrução até pequenas construtoras." },
+      { q: "Qual o prazo de entrega de vergalhão em Luziânia?", a: "O prazo varia conforme o pedido: vergalhão em estoque costuma ser entregue em poucos dias, enquanto o corte e dobra sob medida leva até 7 dias úteis de fabricação antes da entrega. O tempo de rota exato deve ser confirmado no momento do pedido." },
+      { q: "O vergalhão vendido em Luziânia tem a mesma qualidade do de Goiânia?", a: "Sim. Todo o vergalhão CA-50 da BR Aço segue a ABNT NBR 7480, independentemente da distância da obra até a fábrica — não há variação de qualidade por localização." },
+      { q: "Quais bitolas de vergalhão estão disponíveis para Luziânia?", a: "As bitolas mais usadas em obras residenciais e pequenos condomínios em Luziânia vão de 6.3 mm a 20 mm, todas em CA-50 certificado." },
+    ],
+  },
+
+  "vergalhao-aguas-lindas-de-goias-ca-50-autoconstrucao": {
+    answerCapsule: "Vergalhão CA-50 para laje e fundação em Águas Lindas de Goiás, entregue via BR-070 com certificação ABNT NBR 7480 — voltado ao construtor autônomo que domina a cidade.",
+    faqItems: [
+      { q: "Como comprar vergalhão em Águas Lindas de Goiás sem engenheiro na obra?", a: "É possível comprar seguindo tabelas de referência de bitola por tipo de estrutura, mas o ideal é exigir sempre a nota fiscal com a especificação CA-50 e a bitola, documento que pode ser exigido depois em financiamento ou regularização." },
+      { q: "Qual vergalhão usar em fundação de casa em Águas Lindas de Goiás?", a: "Fundações residenciais costumam usar bitolas de 10 mm a 16 mm em CA-50, mas a especificação exata depende do projeto estrutural ou de orientação técnica, já que varia com o tipo de solo e a carga da edificação." },
+      { q: "A BR Aço entrega em Águas Lindas de Goiás?", a: "Sim, a partir da fábrica em Aparecida de Goiânia, com rota pela BR-070. O prazo exato de entrega deve ser confirmado no momento do pedido." },
+      { q: "Preciso de projeto estrutural para comprar vergalhão?", a: "Não é obrigatório para a compra, mas é altamente recomendado — mesmo em autoconstrução, o dimensionamento correto da bitola evita risco estrutural e retrabalho." },
+    ],
+  },
+
+  "corte-e-dobra-valparaiso-de-goias-condominio": {
+    answerCapsule: "Corte e dobra industrial de vergalhão CA-50 para condomínios verticais e horizontais em Valparaíso de Goiás, com peças identificadas por posição e entrega programada por etapa.",
+    faqItems: [
+      { q: "O corte e dobra vale a pena para condomínio em Valparaíso de Goiás?", a: "Sim, principalmente por causa da repetição de pavimentos e unidades — o corte e dobra reaproveita a mesma especificação de corte por posição, reduzindo tempo de armação e desperdício de material." },
+      { q: "Como funciona a entrega de corte e dobra por etapa de condomínio?", a: "O material é fabricado e entregue conforme o avanço da obra — bloco por bloco no vertical, fase por fase no horizontal — evitando acúmulo de material parado no canteiro." },
+      { q: "Qual o prazo do corte e dobra para condomínio?", a: "O prazo de fabricação costuma ser de até 7 dias úteis após a aprovação do projeto estrutural, com entrega programada conforme o cronograma da obra." },
+      { q: "A BR Aço atende condomínios na fronteira com o DF?", a: "Sim, a BR Aço atende Valparaíso de Goiás e a região de fronteira com o Distrito Federal a partir da fábrica em Aparecida de Goiânia." },
+    ],
+  },
+
+  "vergalhao-trindade-go-entrega-rapida": {
+    answerCapsule: "Trindade fica a cerca de 25 km da fábrica da BR Aço via BR-060, com entrega em torno de 30-35 minutos — a mesma janela de Goiânia — para condomínios horizontais e residências.",
+    faqItems: [
+      { q: "Quanto tempo leva para entregar vergalhão em Trindade?", a: "Em condição normal de tráfego, o trecho entre a fábrica em Aparecida de Goiânia e Trindade costuma levar cerca de 30 a 35 minutos pela BR-060, mas o tempo exato porta a porta pode variar conforme o bairro de destino." },
+      { q: "Trindade tem o mesmo prazo de entrega de Goiânia?", a: "Sim, por estar a apenas 25 km da fábrica, Trindade está praticamente na mesma janela de entrega rápida que Goiânia, diferente de cidades mais distantes da Região Metropolitana." },
+      { q: "Vale a pena comprar aço em pedidos menores em Trindade?", a: "Sim. Como o prazo de entrega é curto, dá para trabalhar com pedidos menores e mais frequentes (quase just-in-time), reduzindo a necessidade de estocar grande volume de material no canteiro." },
+      { q: "Quais bitolas de vergalhão a BR Aço tem em estoque para Trindade?", a: "As bitolas mais comuns em estoque são 6.3 mm, 8.0 mm, 10.0 mm, 12.5 mm e 16.0 mm, todas em CA-50 certificado pela ABNT NBR 7480." },
+    ],
+  },
+
 };

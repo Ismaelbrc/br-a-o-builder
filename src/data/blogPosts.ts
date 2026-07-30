@@ -11837,7 +11837,193 @@ Em resistência mecânica à tração pura, os dois partem do mesmo aço-base de
 **Qual a bitola mais comum de arame recozido para amarração de ferragem?** As bitolas mais usadas em obra são 18 (1,25 mm) e 16 (1,65 mm), vendidas em rolos ou por quilo, conforme o volume de amarração necessário na obra.
 
 A BR Aço fornece arame recozido e galvanizado para obras em Goiânia, Aparecida de Goiânia e região — consulte disponibilidade e quantidade pelo WhatsApp.`
-  }
+  },
+  {
+    id: 163,
+    slug: "vergalhao-luziania-go-preco-entrega",
+    category: "Cidades",
+    title: "Vergalhão em Luziânia GO: Preço, Bitolas e Prazo de Entrega",
+    metaDescription: "Vergalhão CA-50 entregue em Luziânia GO com frota própria via BR-040. Veja bitolas disponíveis, prazos reais e como funciona a compra para autoconstrução e pequenas obras.",
+    keyword: "vergalhão Luziânia GO",
+    date: "30 Jul 2026",
+    summary: "Como funciona a entrega de vergalhão CA-50 em Luziânia GO: rota, prazo, bitolas disponíveis e o que muda para quem constrói sozinho ou com pequena construtora.",
+    content: `**Em resumo:** A BR Aço entrega vergalhão CA-50 em Luziânia via BR-040 com frota própria, atendendo desde residências populares até pequenos condomínios — a mesma norma ABNT NBR 7480 usada nas obras de Goiânia, sem variação de qualidade pela distância. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem no trecho, que varia conforme tráfego na saída de Goiânia e no acesso a Luziânia.
+
+---
+
+## Por Que Luziânia Ainda Compra Aço de Fora
+
+Luziânia está no Entorno do Distrito Federal, num eixo de crescimento puxado por gente que trabalha em Brasília mas constrói mais barato do lado goiano da fronteira. O problema é que a cidade não tem um polo siderúrgico próprio: quem constrói em Luziânia historicamente compra de revendas locais que, por sua vez, compram de distribuidoras maiores em Goiânia ou no próprio DF — encarecendo o material em pelo menos uma margem de intermediação.
+
+A BR Aço vende direto de fábrica para Luziânia, sem esse intermediário, usando a BR-040 como rota principal de escoamento a partir de Aparecida de Goiânia.
+
+## Quem Compra Vergalhão em Luziânia
+
+O perfil dominante em Luziânia não é a grande construtora — é o construtor autônomo, o pedreiro que assume a obra inteira, e pequenas construtoras locais tocando de 1 a 3 obras por vez. São, na maioria, residências térreas, sobrados e pequenos condomínios horizontais, com pedidos que raramente passam de 2 a 5 toneladas de aço por etapa de obra.
+
+Esse perfil de comprador tem duas exigências que pesam mais do que preço: confiança de que o material tem o laudo técnico certo (porque muitos não têm engenheiro acompanhando a compra) e previsibilidade de prazo (porque atraso em obra pequena para tudo, sem frente alternativa de serviço).
+
+## Bitolas de Vergalhão CA-50 Disponíveis
+
+| Bitola (mm) | Uso típico em Luziânia |
+|---|---|
+| 6.3 | Estribos, armaduras secundárias |
+| 8.0 | Lajes, estribos de vigas |
+| 10.0 | Vigas e pilares de residências |
+| 12.5 | Pilares e vigas de maior carga |
+| 16.0 | Fundações e pilares de sobrado |
+| 20.0 | Estruturas de maior porte, condomínios |
+
+Todas as bitolas seguem a **ABNT NBR 7480**, que define os requisitos de resistência mecânica, características geométricas e tolerâncias dimensionais do vergalhão CA-50 — a mesma norma exigida em obras financiadas por banco, o que importa para quem em algum momento precisa comprovar procedência do material em vistoria.
+
+## Rota e Prazo de Entrega
+
+A fábrica da BR Aço fica em Aparecida de Goiânia, e o escoamento para Luziânia é feito via BR-040. Em condição normal de tráfego, o trecho costuma levar em torno de 2 horas — mas esse número varia conforme horário de saída de Goiânia e movimento na aproximação de Luziânia, então trate como referência, não como promessa fechada de horário.
+
+Para pedidos maiores ou que envolvem corte e dobra (peças já cortadas e dobradas na medida do projeto), o prazo de processamento se soma ao prazo de rota — o ideal é fechar o pedido com folga em relação à data que a armação precisa estar no canteiro.
+
+## O Que Muda para Quem Constrói Sozinho
+
+Se você é o próprio construtor da sua casa em Luziânia, sem engenheiro contratado, vale pedir a nota fiscal com a especificação da bitola e do tipo de aço (CA-50) — isso te protege caso precise comprovar a qualidade do material depois, seja para financiamento, seja para revenda do imóvel.
+
+## Fale com a BR Aço
+
+A BR Aço atende Luziânia com vergalhão CA-50 certificado e frota própria de entrega. Peça seu orçamento pelo WhatsApp e confirme bitola, quantidade e prazo antes de fechar a compra.`
+  },
+  {
+    id: 164,
+    slug: "vergalhao-aguas-lindas-de-goias-ca-50-autoconstrucao",
+    category: "Cidades",
+    title: "Vergalhão CA-50 em Águas Lindas de Goiás: Guia para Autoconstrução",
+    metaDescription: "Vergalhão CA-50 para laje e fundação em Águas Lindas de Goiás, entregue via BR-070 com certificação ABNT NBR 7480. Veja bitolas, cuidados na compra e prazos.",
+    keyword: "vergalhão Águas Lindas de Goiás",
+    date: "30 Jul 2026",
+    summary: "Guia de compra de vergalhão CA-50 para quem constrói por conta própria em Águas Lindas de Goiás: bitolas, norma técnica, prazo de entrega via BR-070 e erros comuns a evitar.",
+    content: `**Em resumo:** Em Águas Lindas de Goiás, onde a maior parte das obras é conduzida por construtores autônomos, o vergalhão CA-50 para laje e fundação chega via BR-070 com a mesma certificação ABNT NBR 7480 exigida em obras financiadas. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem no trecho, sujeito a variação de tráfego na saída da Região Metropolitana de Goiânia.
+
+---
+
+## Uma das Cidades que Mais Constroem no Entorno do DF
+
+Águas Lindas de Goiás tem uma das maiores densidades populacionais do Entorno do Distrito Federal, e boa parte do seu crescimento urbano acontece fora do radar das grandes construtoras — é obra por obra, terreno por terreno, quase sempre tocada pelo próprio morador ou por um pequeno empreiteiro de confiança da família.
+
+Esse padrão de autoconstrução muda o que importa na hora de comprar aço: não é volume, é confiabilidade. Quem constrói sozinho não tem margem para retrabalho por erro de bitola ou atraso que trava a concretagem marcada.
+
+## Por Que a Norma Técnica Importa Mesmo Sem Engenheiro na Obra
+
+Mesmo em obras sem projeto estrutural formal, o vergalhão usado precisa atender a **ABNT NBR 7480**, que estabelece a resistência ao escoamento mínima do CA-50 (500 MPa) e as tolerâncias de diâmetro e massa por metro. Isso não é burocracia: é o que garante que a ferragem aguenta a carga que a laje ou a fundação vai receber, com ou sem cálculo estrutural no papel.
+
+Se a obra em algum momento precisar de financiamento habitacional (Minha Casa Minha Vida ou similar) ou regularização, a nota fiscal com a especificação CA-50 e a bitola comprada costuma ser exigida — guardar esse documento desde a primeira compra evita dor de cabeça depois.
+
+## Bitolas Mais Usadas em Águas Lindas de Goiás
+
+| Bitola (mm) | Aplicação comum |
+|---|---|
+| 6.3 | Estribos e armadura de distribuição |
+| 8.0 | Lajes residenciais |
+| 10.0 | Vigas de sobrado |
+| 12.5 | Pilares |
+| 16.0 | Fundação (sapatas e baldrames) |
+
+## Prazo e Rota de Entrega
+
+A BR Aço entrega em Águas Lindas de Goiás a partir da fábrica em Aparecida de Goiânia, com rota principal pela **BR-070**. O trecho costuma levar cerca de 2 horas em condição normal de tráfego — número que serve como referência de planejamento, não como horário fechado, já que varia com o fluxo na saída da Região Metropolitana de Goiânia e no acesso final à cidade.
+
+Para quem está tocando a obra sozinho, o recomendado é fazer o pedido com folga de pelo menos 2 a 3 dias antes da data em que a ferragem precisa estar no canteiro — principalmente se a compra incluir corte e dobra, que tem prazo de processamento próprio antes de sair para entrega.
+
+## Erros Comuns de Quem Compra Vergalhão Sem Assessoria Técnica
+
+- Comprar bitola errada por confiar só na indicação do vendedor da loja de material, sem checar o projeto (quando existe) ou uma tabela de referência.
+- Não guardar a nota fiscal com a especificação do aço — vira problema na hora de vender o imóvel ou financiar depois.
+- Deixar a compra para a véspera da concretagem, sem margem para imprevisto de entrega.
+
+## Peça Seu Orçamento
+
+A BR Aço atende Águas Lindas de Goiás com vergalhão CA-50 certificado, bitolas variadas em estoque e entrega programada. Fale pelo WhatsApp e tire suas dúvidas antes de comprar.`
+  },
+  {
+    id: 165,
+    slug: "corte-e-dobra-valparaiso-de-goias-condominio",
+    category: "Cidades",
+    title: "Corte e Dobra de Vergalhão para Condomínios em Valparaíso de Goiás",
+    metaDescription: "Corte e dobra industrial de vergalhão CA-50 para condomínios verticais e horizontais em Valparaíso de Goiás. Peças identificadas por posição, entrega programada por etapa.",
+    keyword: "corte e dobra vergalhão Valparaíso de Goiás",
+    date: "30 Jul 2026",
+    summary: "Como o corte e dobra industrial reduz o tempo de armação em condomínios de Valparaíso de Goiás, na fronteira com o DF — da Etapa 1 vertical ao Residencial das Américas horizontal.",
+    content: `**Em resumo:** Valparaíso de Goiás, na fronteira com o DF, concentra condomínios verticais na Etapa 1 e horizontais no Residencial das Américas — a BR Aço atende com corte e dobra industrial (peças identificadas por posição), reduzindo o tempo de armação em obras de médio porte. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem no trecho entre a fábrica e a cidade.
+
+---
+
+## Uma Cidade de Condomínio, Não de Casa Isolada
+
+Valparaíso de Goiás cresceu colada na fronteira com o Distrito Federal, e boa parte da sua verticalização e dos loteamentos fechados aconteceu num ritmo mais parecido com incorporação do que com autoconstrução dispersa. É comum encontrar tanto torres residenciais na região da Etapa 1 quanto condomínios horizontais fechados, como os do entorno do Residencial das Américas — dois perfis de obra bem diferentes dentro do mesmo município.
+
+Esse padrão muda a conta do corte e dobra: em vez de pedidos pequenos e recorrentes, o que domina é o pedido por etapa de obra — uma torre, um bloco, uma fase do horizontal — com volume que já compensa a fabricação sob medida.
+
+## Por Que Corte e Dobra Faz Mais Sentido em Condomínio do Que em Casa Isolada
+
+Em condomínios verticais, cada pavimento repete praticamente a mesma armação de pilar e viga — o que é ideal para o corte e dobra industrial, porque a mesma "receita" de corte se replica pavimento a pavimento sem precisar reprocessar do zero. Isso reduz o tempo de armação no canteiro, já que a equipe recebe a peça pronta, identificada por posição (a mesma nomenclatura N1, N2... do projeto estrutural), sem precisar cortar e dobrar manualmente cada barra.
+
+Em condomínio horizontal, o ganho é outro: como as unidades se repetem, o corte e dobra permite padronizar a armação de fundação e baldrame por tipologia de casa, o que acelera a industrialização do canteiro mesmo em obra de menor porte.
+
+## Comparativo: Corte Manual x Corte e Dobra em Condomínio
+
+| Critério | Corte manual no canteiro | Corte e dobra industrial |
+|---|---|---|
+| Repetição de pavimento/unidade | Refaz o processo a cada bloco | Reaproveita o mesmo corte por posição |
+| Desperdício de material | 3% a 8% | Próximo de zero |
+| Mão de obra de armação | Equipe grande e permanente | Equipe menor, só para montagem |
+| Identificação da peça | Depende do armador | Etiquetada por posição do projeto |
+| Ideal para | Obras pequenas, sem repetição | Condomínios (vertical e horizontal) |
+
+## Rota e Prazo de Entrega
+
+A BR Aço fabrica o corte e dobra na unidade de Aparecida de Goiânia e entrega em Valparaíso de Goiás com frota própria, atendendo a fronteira com o Distrito Federal. O prazo de fabricação do corte e dobra costuma levar até 7 dias úteis após aprovação do projeto, e a entrega em obra é programada por etapa — bloco por bloco, ou fase por fase do horizontal — para não empilhar material no canteiro antes da hora.
+
+## Fale com a BR Aço
+
+Construtoras e incorporadoras que tocam condomínios em Valparaíso de Goiás podem solicitar orçamento de corte e dobra por etapa de obra, com peças identificadas por posição. Entre em contato pelo WhatsApp e envie o projeto estrutural para cotação.`
+  },
+  {
+    id: 166,
+    slug: "vergalhao-trindade-go-entrega-rapida",
+    category: "Cidades",
+    title: "Vergalhão em Trindade GO: Entrega em até 35 Minutos da Fábrica",
+    metaDescription: "Vergalhão CA-50 entregue em Trindade GO em cerca de 30 a 35 minutos, direto da fábrica em Aparecida de Goiânia via BR-060. Veja bitolas, prazos e como pedir.",
+    keyword: "vergalhão Trindade GO",
+    date: "30 Jul 2026",
+    summary: "Trindade fica a poucos minutos da fábrica da BR Aço via BR-060 — entenda como isso vira entrega rápida para condomínios horizontais e residências que crescem na cidade.",
+    content: `**Em resumo:** Trindade fica a cerca de 25 km da fábrica da BR Aço via BR-060, com entrega em torno de 30 a 35 minutos — janela próxima à de Goiânia — para os condomínios horizontais e residências unifamiliares que dominam o crescimento da cidade. ⚠️ Dado a confirmar com o cliente: tempo exato porta a porta, que pode variar conforme o bairro de destino dentro de Trindade.
+
+---
+
+## Trindade Está na Zona de Entrega Rápida
+
+Trindade, conhecida nacionalmente pela Romaria do Divino Pai Eterno, também é uma das cidades da Região Metropolitana de Goiânia que mais recebeu novos loteamentos e condomínios horizontais nos últimos anos. E, por estar a poucos quilômetros de Aparecida de Goiânia — onde fica a fábrica da BR Aço —, a cidade entra na mesma janela de entrega rápida que Goiânia, algo que municípios mais distantes do Entorno do DF não conseguem replicar.
+
+Isso muda o comportamento de compra: em vez de estocar grande volume de aço no canteiro por medo de atraso, construtoras e autônomos em Trindade conseguem trabalhar com pedidos menores e mais frequentes, sem travar o cronograma.
+
+## Rota: BR-060 Direto da Fábrica
+
+A distância entre a fábrica da BR Aço, em Aparecida de Goiânia, e Trindade é de aproximadamente 25 km pela **BR-060**, um dos principais eixos rodoviários da Região Metropolitana de Goiânia. Em condição normal de tráfego, esse trecho costuma ser percorrido em 30 a 35 minutos — praticamente a mesma janela de entrega que a fábrica pratica dentro da própria Goiânia.
+
+## O Que Isso Muda no Canteiro
+
+| Cenário | Estoque necessário no canteiro | Risco de parada por falta de material |
+|---|---|---|
+| Cidade distante (2h+ de rota) | Alto — compra antecipada de várias etapas | Maior, se houver imprevisto de rota |
+| Trindade (30-35 min) | Baixo — compra por etapa, quase just-in-time | Menor, reposição rápida |
+
+Para condomínios horizontais, isso é especialmente relevante: como as unidades se repetem, dá para comprar a ferragem de fundação de um bloco, aguardar a concretagem e já programar a entrega do próximo bloco sem grande intervalo — reduzindo capital parado em material estocado.
+
+## Bitolas Disponíveis
+
+A BR Aço mantém em estoque as bitolas de CA-50 mais usadas em residências e condomínios horizontais: 6.3 mm, 8.0 mm, 10.0 mm, 12.5 mm e 16.0 mm, todas certificadas conforme **ABNT NBR 7480**.
+
+## Peça Seu Orçamento
+
+Construtoras, empreiteiros e autônomos em Trindade podem solicitar vergalhão e corte e dobra com entrega rápida, direto da fábrica em Aparecida de Goiânia. Fale pelo WhatsApp e confirme prazo por bairro de destino.`
+  },
 ];
 
-export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural'];
+export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades'];
