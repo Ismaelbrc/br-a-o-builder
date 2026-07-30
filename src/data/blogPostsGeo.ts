@@ -632,4 +632,84 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "aco-aparecida-de-goiania-direto-da-fabrica": {
+    answerCapsule: "A fábrica da BR Aço fica no Polo Industrial de Aparecida de Goiânia — obras na própria cidade recebem vergalhão e corte e dobra no menor prazo de entrega da região, sem intermediário.",
+    faqItems: [
+      { q: "Onde fica a fábrica da BR Aço?", a: "A fábrica da BR Aço fica no Polo Industrial de Aparecida de Goiânia, o que garante o menor prazo de entrega para obras dentro da própria cidade em toda a Região Metropolitana de Goiânia." },
+      { q: "Comprar direto da fábrica é mais barato que em revenda?", a: "Comprar direto da fábrica elimina a margem de intermediação de distribuidores locais, já que o material sai do mesmo lugar onde foi fabricado direto para a obra." },
+      { q: "Qual o prazo de entrega dentro de Aparecida de Goiânia?", a: "Vergalhão em estoque (bitolas padrão) costuma ser entregue no mesmo dia ou no dia seguinte; o corte e dobra sob medida leva até 7 dias úteis após aprovação do projeto." },
+      { q: "Preciso de nota fiscal com especificação do aço mesmo comprando na cidade da fábrica?", a: "Sim, é recomendável em qualquer localidade — a nota fiscal com a especificação CA-50 e a bitola pode ser exigida em financiamento, vistoria ou revenda do imóvel." },
+    ],
+  },
+
+  "vergalhao-corte-dobra-senador-canedo-polo-jk": {
+    answerCapsule: "O Polo JK e os novos loteamentos fazem de Senador Canedo um dos municípios que mais crescem na Região Metropolitana de Goiânia, com demanda por vergalhão CA-50 e corte e dobra.",
+    faqItems: [
+      { q: "A BR Aço atende o Polo JK em Senador Canedo?", a: "Sim, a BR Aço atende tanto galpões industriais do Polo JK quanto loteamentos residenciais em Senador Canedo, a partir da fábrica vizinha em Aparecida de Goiânia." },
+      { q: "Qual bitola de vergalhão usar em galpão industrial?", a: "Galpões costumam usar bitolas de 12.5 mm a 20 mm, dependendo do vão e da carga do projeto — a especificação exata deve seguir o projeto estrutural." },
+      { q: "Corte e dobra vale a pena para loteamento residencial novo?", a: "Sim, principalmente quando as casas do loteamento se repetem — o corte e dobra padroniza a armação por tipologia, reduzindo mão de obra e desperdício em cada unidade." },
+      { q: "Senador Canedo tem prazo de entrega rápido?", a: "Sim, por fazer divisa direta com Aparecida de Goiânia (onde fica a fábrica), Senador Canedo está entre os municípios de menor prazo de entrega da Região Metropolitana." },
+    ],
+  },
+
+  "corte-e-dobra-vergalhao-anapolis-daia": {
+    answerCapsule: "Anápolis concentra o maior polo industrial de Goiás no DAIA e no Polo Farmacêutico — galpões de grande porte que exigem vergalhão CA-50 em volume, com corte e dobra programado por etapa.",
+    faqItems: [
+      { q: "A BR Aço atende galpões no DAIA?", a: "Sim, a BR Aço atende obras industriais no Distrito Agroindustrial de Anápolis (DAIA) e no Polo Farmacêutico, com vergalhão CA-50 em volume e corte e dobra sob medida." },
+      { q: "Por que corte e dobra é importante em galpão industrial?", a: "Galpões usam bitolas grossas (16 mm a 25 mm) em grande volume — dobrar isso manualmente no canteiro é lento e arriscado; o corte e dobra industrial entrega as peças já prontas e identificadas por posição." },
+      { q: "Como funciona a entrega para obras no DAIA?", a: "A entrega costuma ser programada por etapa da obra (fundação, pilares, estrutura complementar), alinhada ao cronograma da construtora, evitando acúmulo de material no canteiro." },
+      { q: "Quais bitolas são mais usadas em galpão industrial?", a: "As bitolas mais comuns em galpões vão de 10 mm a 25 mm, dependendo da função da peça (armadura secundária, viga de amarração, pilar ou fundação)." },
+    ],
+  },
+
+  "vergalhao-galpao-agroindustrial-rio-verde": {
+    answerCapsule: "Silos e galpões agroindustriais em Rio Verde exigem vergalhão CA-50 em bitolas maiores e grandes volumes, com o mesmo laudo ABNT NBR 7480 usado nas obras urbanas de Goiânia.",
+    faqItems: [
+      { q: "A BR Aço entrega vergalhão em Rio Verde?", a: "Sim, a BR Aço entrega vergalhão CA-50 em Rio Verde para obras agroindustriais como silos, frigoríficos e galpões, a partir da fábrica em Aparecida de Goiânia." },
+      { q: "Por que obras agroindustriais usam bitolas maiores?", a: "Silos e galpões agroindustriais têm cargas concentradas muito superiores às de obras residenciais — o peso armazenado e os vãos livres exigem pilares e fundações dimensionados com bitolas de 16 mm a 25 mm com mais frequência." },
+      { q: "Qual o prazo de entrega para Rio Verde?", a: "Por ser uma distância maior, recomenda-se fechar o pedido com antecedência mínima de 48 horas antes da data necessária no canteiro, para a fábrica programar produção e transporte." },
+      { q: "O vergalhão para obra agroindustrial tem laudo técnico?", a: "Sim, todo vergalhão CA-50 fornecido segue a ABNT NBR 7480 com laudo técnico, item comum em contratos de obra agroindustrial financiada por cooperativa ou banco de fomento." },
+    ],
+  },
+
+  "vergalhao-aguas-claras-df-condominios-verticais": {
+    answerCapsule: "Águas Claras concentra o maior volume de construção vertical do DF — torres que consomem grande volume de vergalhão CA-50 e coluna pronta por pavimento, com entrega programada por etapa.",
+    faqItems: [
+      { q: "O que é coluna pronta por pavimento?", a: "É a armadura do pilar fabricada e entregue já montada, no comprimento de um pé-direito, pronta para ser posicionada e concretada — reduzindo o tempo de armação manual em obras verticais." },
+      { q: "A BR Aço atende torres residenciais em Águas Claras?", a: "Sim, a BR Aço atende construtoras e incorporadoras com obras verticais em Águas Claras, fornecendo vergalhão CA-50 e coluna pronta por pavimento com entrega programada conforme o cronograma da torre." },
+      { q: "Como é feita a entrega de aço para uma torre em construção?", a: "Diferente de uma obra horizontal, a entrega costuma ser programada por pavimento, alinhada ao avanço da concretagem, evitando acúmulo de material no canteiro limitado da obra vertical." },
+      { q: "Quais bitolas são usadas em prédios altos?", a: "Os pavimentos superiores costumam usar bitolas menores (10 mm a 16 mm) e os pavimentos inferiores, que acumulam mais carga, usam bitolas maiores (20 mm a 25 mm)." },
+    ],
+  },
+
+  "corte-e-dobra-vergalhao-taguatinga-df": {
+    answerCapsule: "Taguatinga concentra um dos maiores volumes de obras residenciais e comerciais do DF — a BR Aço atende com corte e dobra industrial, entregando peças identificadas por posição no canteiro.",
+    faqItems: [
+      { q: "A BR Aço atende obras comerciais em Taguatinga?", a: "Sim, a BR Aço atende tanto obras residenciais quanto comerciais em Taguatinga com corte e dobra de vergalhão CA-50, entregando peças já cortadas, dobradas e identificadas por posição." },
+      { q: "O que significa peça identificada por posição?", a: "É a barra de aço já cortada e dobrada conforme o detalhamento do projeto estrutural, etiquetada com a mesma nomenclatura do projeto (N1, N2, N3...), para a equipe de armação só posicionar sem precisar cortar." },
+      { q: "Corte e dobra reduz o desperdício de material?", a: "Sim, o corte manual no canteiro costuma gerar de 3% a 8% de desperdício de aço, enquanto o corte e dobra industrial com máquinas CNC reduz esse desperdício a praticamente zero." },
+      { q: "Quais bitolas a BR Aço trabalha para corte e dobra?", a: "A BR Aço trabalha com bitolas de 6.3 mm a 25 mm em CA-50, cobrindo desde reforma residencial até obra comercial de maior porte." },
+    ],
+  },
+
+  "vergalhao-ceilandia-df-entrega": {
+    answerCapsule: "Ceilândia é a Região Administrativa mais populosa do DF, com demanda constante de vergalhão CA-50 para residências e pequenos condomínios, entregue com a certificação ABNT usada em Goiânia.",
+    faqItems: [
+      { q: "A BR Aço entrega vergalhão em Ceilândia?", a: "Sim, a BR Aço entrega vergalhão CA-50 certificado em Ceilândia a partir da fábrica em Aparecida de Goiânia, para obras residenciais, reformas, ampliações e pequenos condomínios." },
+      { q: "Que bitola usar para construir um segundo pavimento (puxadinho)?", a: "Depende do dimensionamento do projeto, mas ampliações costumam usar bitolas de 8 mm a 12.5 mm — é recomendável ter orientação técnica, já que o peso adicional recai sobre uma estrutura já existente." },
+      { q: "Por que a norma técnica importa em obra de reforma?", a: "Porque o vergalhão CA-50 certificado pela ABNT NBR 7480 garante a resistência ao escoamento mínima necessária para suportar o peso adicional de uma ampliação sobre uma estrutura já construída." },
+      { q: "Qual o prazo de entrega em Ceilândia?", a: "O prazo varia conforme disponibilidade de frota para o Distrito Federal — recomenda-se fazer o pedido assim que a bitola e a quantidade estiverem definidas pelo projeto." },
+    ],
+  },
+
+  "vergalhao-samambaia-df-residencial": {
+    answerCapsule: "Samambaia é uma das Regiões Administrativas de maior crescimento residencial do DF — a BR Aço fornece vergalhão CA-50 e corte e dobra com entrega programada para obras de pequeno e médio porte.",
+    faqItems: [
+      { q: "A BR Aço atende Samambaia?", a: "Sim, a BR Aço fornece vergalhão CA-50 e serviço de corte e dobra para obras residenciais, ampliações e pequenos condomínios em Samambaia, a partir da fábrica em Aparecida de Goiânia." },
+      { q: "Devo comprar vergalhão avulso ou corte e dobra em Samambaia?", a: "Vergalhão avulso é melhor para obra pequena com armador próprio; corte e dobra é mais indicado para obras de médio porte com prazo apertado, já que reduz mão de obra e desperdício de material." },
+      { q: "Quais bitolas estão disponíveis para Samambaia?", a: "A BR Aço fornece bitolas de 6.3 mm a 20 mm em CA-50 para obras residenciais e de pequeno/médio porte na região." },
+      { q: "Como funciona a entrega para condomínios em Samambaia?", a: "Para obras de médio porte, como condomínios, a entrega costuma ser programada por etapa (fundação, estrutura, fechamento), evitando estoque de material parado no canteiro." },
+    ],
+  },
+
 };

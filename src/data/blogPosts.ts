@@ -12024,6 +12024,350 @@ A BR Aço mantém em estoque as bitolas de CA-50 mais usadas em residências e c
 
 Construtoras, empreiteiros e autônomos em Trindade podem solicitar vergalhão e corte e dobra com entrega rápida, direto da fábrica em Aparecida de Goiânia. Fale pelo WhatsApp e confirme prazo por bairro de destino.`
   },
+  {
+    id: 167,
+    slug: "aco-aparecida-de-goiania-direto-da-fabrica",
+    category: "Cidades",
+    title: "Vergalhão em Aparecida de Goiânia Direto da Fábrica, Sem Intermediário",
+    metaDescription: "A fábrica da BR Aço fica em Aparecida de Goiânia. Veja como isso reduz o prazo de entrega de vergalhão e corte e dobra para obras na própria cidade, sem intermediário.",
+    keyword: "vergalhão Aparecida de Goiânia fábrica",
+    date: "30 Jul 2026",
+    summary: "Obras em Aparecida de Goiânia recebem vergalhão e corte e dobra direto da fábrica, no menor prazo de entrega da região metropolitana — entenda o que isso significa na prática.",
+    content: `**Em resumo:** A fábrica da BR Aço fica no Polo Industrial de Aparecida de Goiânia — por isso, obras na própria cidade recebem vergalhão e corte e dobra em prazo bem menor que o resto da região metropolitana, sem passar por distribuidor intermediário.
+
+---
+
+## Construir na Mesma Cidade da Fábrica Muda a Conta
+
+Quando a obra está na mesma cidade onde o aço é fabricado, dois custos que pesam em qualquer outra localidade praticamente desaparecem: o frete de longa distância e a margem do distribuidor intermediário. É esse o caso de quem constrói em Aparecida de Goiânia — a fábrica da BR Aço está no Polo Industrial do próprio município, o que coloca a cidade no menor prazo de entrega de toda a Região Metropolitana de Goiânia.
+
+Isso não é só conveniência: para obras com cronograma apertado — canteiro pequeno, sem espaço para estocar grande volume de ferragem — receber o material rápido e em etapas menores é o que permite tocar a obra sem parar equipe esperando material.
+
+## Por Que "Direto da Fábrica" É Diferente de Comprar em Revenda
+
+Comprar de uma revenda local, mesmo dentro de Aparecida de Goiânia, normalmente significa que o material passou por pelo menos um distribuidor antes de chegar à loja — cada etapa dessa soma margem e, às vezes, tempo de reposição de estoque. Comprar direto da fábrica elimina essa cadeia: o vergalhão sai do mesmo lugar onde foi laminado e vai direto para a obra.
+
+## Prazo de Entrega Dentro de Aparecida de Goiânia
+
+| Tipo de pedido | Prazo típico dentro da cidade |
+|---|---|
+| Vergalhão em estoque (bitolas padrão) | Mesmo dia ou dia seguinte |
+| Corte e dobra (sob medida) | Até 7 dias úteis após aprovação do projeto |
+| Pedido volumoso (condomínio, galpão) | Programado por etapa, conforme cronograma da obra |
+
+## Bitolas de Vergalhão CA-50 Disponíveis em Estoque
+
+| Bitola (mm) | Uso típico |
+|---|---|
+| 6.3 | Estribos |
+| 8.0 | Lajes |
+| 10.0 | Vigas e pilares residenciais |
+| 12.5 | Pilares de maior carga |
+| 16.0 | Fundações |
+| 20.0 | Estruturas de maior porte |
+
+Todo o vergalhão segue a **ABNT NBR 7480**, independente do volume do pedido.
+
+## Quem Constrói em Aparecida de Goiânia Ainda Precisa de Nota Fiscal Correta
+
+Mesmo com a fábrica na própria cidade, vale o mesmo cuidado de qualquer obra: exigir nota fiscal com a especificação do tipo de aço (CA-50) e da bitola comprada, documento que pode ser exigido em financiamento, vistoria ou revenda do imóvel no futuro.
+
+## Fale com a BR Aço
+
+Se sua obra é em Aparecida de Goiânia, fale direto com a fábrica pelo WhatsApp e receba orçamento sem intermediário, com o menor prazo de entrega da região.`
+  },
+  {
+    id: 168,
+    slug: "vergalhao-corte-dobra-senador-canedo-polo-jk",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em Senador Canedo: Polo JK e Novos Loteamentos",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para o Polo JK e os novos loteamentos de Senador Canedo, entregues via GO-403/BR-153. Veja bitolas, prazos e o que muda com o crescimento da cidade.",
+    keyword: "vergalhão corte e dobra Senador Canedo",
+    date: "30 Jul 2026",
+    summary: "Senador Canedo é um dos municípios que mais crescem na Região Metropolitana de Goiânia — veja como o Polo JK e os novos loteamentos mudam a demanda por vergalhão e corte e dobra na cidade.",
+    content: `**Em resumo:** O Polo JK e os novos loteamentos fazem de Senador Canedo um dos municípios que mais crescem na Região Metropolitana de Goiânia — a demanda por vergalhão CA-50 e corte e dobra acompanha esse ritmo, com entrega próxima à fábrica em Aparecida de Goiânia. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem, que varia conforme o ponto de destino dentro do município.
+
+---
+
+## Um Município que Cresce em Duas Frentes
+
+Senador Canedo vive um crescimento incomum mesmo para os padrões acelerados da Região Metropolitana de Goiânia: de um lado, o **Polo JK** consolidou a cidade como polo logístico e industrial, atraindo galpões e centros de distribuição; de outro, novos loteamentos residenciais seguem abrindo para atender a demanda de quem trabalha na própria cidade ou na vizinha Goiânia.
+
+Essa dualidade — obra industrial de grande porte e loteamento residencial de médio porte crescendo lado a lado — faz de Senador Canedo um dos municípios da região com maior diversidade de demanda por aço: desde vergalhão para galpão logístico até corte e dobra para casas populares em loteamento novo.
+
+## Vergalhão para Galpão Industrial x Vergalhão para Loteamento Residencial
+
+| Critério | Galpão (Polo JK) | Loteamento residencial |
+|---|---|---|
+| Bitola predominante | 12.5 mm a 20.0 mm | 6.3 mm a 12.5 mm |
+| Volume por pedido | Alto, concentrado por etapa de obra | Menor, mais recorrente |
+| Uso de corte e dobra | Recomendado — reduz mão de obra em vãos grandes | Recomendado — padroniza casas repetidas |
+| Urgência de prazo | Alta, obra com cronograma logístico apertado | Moderada, depende do ritmo de venda das unidades |
+
+## Rota e Proximidade com a Fábrica
+
+Senador Canedo faz divisa direta com Aparecida de Goiânia, onde fica a fábrica da BR Aço, com acesso principal pela **GO-403** e pela **BR-153**. Por essa proximidade, a cidade está entre as de menor prazo de entrega da região metropolitana — o que favorece tanto obras industriais com cronograma apertado quanto loteamentos que precisam de reposição rápida de material conforme a venda das unidades avança.
+
+## Corte e Dobra para Galpões: Por Que Faz Diferença
+
+Em galpões do Polo JK, com vãos grandes e pilares de carga elevada, o corte e dobra industrial evita o retrabalho de dobrar bitolas grossas manualmente no canteiro — processo lento e com maior risco de erro de medida em barras de diâmetro maior. A peça chega já identificada por posição do projeto estrutural, reduzindo o tempo de armação em obras com prazo logístico apertado.
+
+## Fale com a BR Aço
+
+Seja para o Polo JK ou para um novo loteamento em Senador Canedo, a BR Aço atende com vergalhão CA-50 certificado e corte e dobra sob medida. Envie seu projeto pelo WhatsApp e receba orçamento.`
+  },
+  {
+    id: 169,
+    slug: "corte-e-dobra-vergalhao-anapolis-daia",
+    category: "Cidades",
+    title: "Corte e Dobra de Vergalhão para Galpões Industriais em Anápolis (DAIA)",
+    metaDescription: "Vergalhão CA-50 em volume e corte e dobra programado por etapa para galpões do DAIA e Polo Farmacêutico de Anápolis. Veja bitolas, rota e como funciona o atendimento industrial.",
+    keyword: "corte e dobra vergalhão Anápolis DAIA",
+    date: "30 Jul 2026",
+    summary: "Anápolis concentra o maior polo industrial de Goiás. Veja como o corte e dobra de vergalhão atende galpões de grande porte no DAIA e no Polo Farmacêutico, com entrega programada por etapa.",
+    content: `**Em resumo:** Anápolis concentra o maior polo industrial de Goiás no DAIA e no Polo Farmacêutico — galpões de grande porte que exigem vergalhão CA-50 em volume; a BR Aço atende via BR-153/GO-060 com corte e dobra programado por etapa de obra. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem no trecho.
+
+---
+
+## Anápolis Não é uma Obra Residencial Típica
+
+Diferente da maioria das cidades do interior de Goiás, a demanda de aço em Anápolis não vem principalmente de casas e pequenos condomínios — vem do **Distrito Agroindustrial de Anápolis (DAIA)** e do **Polo Farmacêutico**, dois dos maiores polos industriais do estado. Isso muda completamente o perfil de compra: em vez de pedidos fracionados e recorrentes, o que domina são grandes volumes de vergalhão concentrados por etapa de obra de galpão — fundação, pilares, mezanino, e assim por diante.
+
+Um galpão industrial de grande porte no DAIA pode consumir, sozinho, o volume de aço equivalente a dezenas de residências — e qualquer atraso na entrega desse material tem impacto direto no cronograma de entrega da nave industrial para o cliente final.
+
+## Por Que Corte e Dobra é Praticamente Obrigatório em Galpão de Grande Porte
+
+Galpões industriais usam vãos largos e pilares de carga elevada, o que na prática significa bitolas grossas (16 mm a 25 mm ou mais) em grande quantidade. Dobrar esse tipo de barra manualmente no canteiro é lento, exige equipamento específico e aumenta o risco de erro dimensional numa peça estrutural crítica.
+
+O corte e dobra industrial resolve isso na origem: as peças chegam já cortadas e dobradas na medida exata do projeto, identificadas por posição, prontas para a equipe de armação montar — sem precisar de bancada de corte manual dentro do canteiro.
+
+## Bitolas Típicas de Galpão Industrial
+
+| Bitola (mm) | Aplicação em galpão |
+|---|---|
+| 10.0 | Armadura secundária, contrapiso |
+| 12.5 | Vigas de amarração |
+| 16.0 | Pilares de médio porte |
+| 20.0 | Pilares de grande carga |
+| 25.0 | Fundações profundas, blocos de grande porte |
+
+Todas seguem a **ABNT NBR 7480**, com laudo de rastreabilidade importante para obras industriais que costumam ter exigência contratual de procedência do aço.
+
+## Rota e Entrega Programada por Etapa
+
+A BR Aço atende Anápolis a partir da fábrica em Aparecida de Goiânia, com acesso via **BR-153** e **GO-060**. Para obras industriais no DAIA e no Polo Farmacêutico, a entrega costuma ser programada por etapa da obra — fundação primeiro, depois pilares, depois estrutura complementar — evitando acúmulo de material no canteiro antes da necessidade real e alinhando o ritmo de fabricação do corte e dobra ao cronograma da construtora.
+
+## Fale com a BR Aço
+
+Empreiteiras e construtoras que tocam obras no DAIA ou no Polo Farmacêutico de Anápolis podem enviar o projeto estrutural para cotação de corte e dobra em volume, com entrega programada por etapa. Fale pelo WhatsApp.`
+  },
+  {
+    id: 170,
+    slug: "vergalhao-galpao-agroindustrial-rio-verde",
+    category: "Cidades",
+    title: "Vergalhão para Galpão Agroindustrial em Rio Verde: Bitolas e Prazo",
+    metaDescription: "Vergalhão CA-50 em bitolas maiores para silos, frigoríficos e galpões agroindustriais em Rio Verde, com laudo ABNT NBR 7480 e entrega via BR-060/GO-184.",
+    keyword: "vergalhão galpão agroindustrial Rio Verde",
+    date: "30 Jul 2026",
+    summary: "Rio Verde é a capital do agronegócio goiano — entenda por que silos e galpões agroindustriais na cidade demandam vergalhão em bitolas maiores e como funciona a entrega de longa distância.",
+    content: `**Em resumo:** Silos e galpões agroindustriais em Rio Verde exigem vergalhão CA-50 em bitolas maiores e grandes volumes — a BR Aço entrega via BR-060/GO-184, com o mesmo laudo ABNT NBR 7480 usado nas obras urbanas de Goiânia. ⚠️ Dado a confirmar com o cliente: prazo exato de entrega para o trecho, que a BR Aço deve confirmar em até 48h por pedido conforme disponibilidade de frota para longa distância.
+
+---
+
+## Rio Verde Constrói Diferente do Resto de Goiás
+
+Rio Verde é conhecida como uma das capitais do agronegócio no Centro-Oeste, e isso se reflete diretamente no tipo de obra que domina a cidade: silos de armazenagem de grãos, frigoríficos, galpões agroindustriais e unidades de processamento — estruturas que exigem fundações profundas, pilares de grande carga e, consequentemente, vergalhão em bitolas maiores e em volume bem superior ao de uma obra residencial ou comercial comum.
+
+Diferente de Goiânia ou da Região Metropolitana, onde o mix de obra é dominado por residência e condomínio, em Rio Verde o comprador típico de aço é a construtora ou empreiteira especializada em obra agroindustrial, com exigência técnica mais rígida e volume de compra concentrado por projeto.
+
+## Por Que Bitolas Maiores Dominam a Demanda Local
+
+Silos e galpões agroindustriais trabalham com cargas concentradas muito superiores às de uma edificação residencial — o peso dos grãos armazenados, o vão livre necessário para movimentação de máquinas e caminhões, e a exigência de durabilidade de décadas fazem com que o projeto estrutural puxe para bitolas de 16 mm a 25 mm com maior frequência do que em obra urbana comum.
+
+## Bitolas e Aplicações Típicas em Rio Verde
+
+| Bitola (mm) | Aplicação agroindustrial |
+|---|---|
+| 12.5 | Armadura de laje de piso industrial |
+| 16.0 | Pilares de galpão |
+| 20.0 | Pilares de silo, fundações |
+| 25.0 | Fundações profundas de grande carga |
+
+Todo o vergalhão fornecido segue a **ABNT NBR 7480**, com laudo técnico — item frequentemente exigido em contrato de obra agroindustrial financiada por cooperativa ou banco de fomento ao agro.
+
+## Logística de Longa Distância
+
+Rio Verde fica a uma distância considerável da fábrica da BR Aço em Aparecida de Goiânia, com acesso via **BR-060** e **GO-184**. Para obras agroindustriais de grande volume, a prática recomendada é fechar o pedido com antecedência mínima de 48 horas antes da data necessária no canteiro, permitindo que a fábrica programe tanto a produção quanto o transporte de longa distância com folga.
+
+## Fale com a BR Aço
+
+Construtoras e cooperativas que tocam obras agroindustriais em Rio Verde podem solicitar cotação de vergalhão em volume, com bitolas maiores e laudo técnico completo. Fale pelo WhatsApp e informe o cronograma da obra para programar a entrega.`
+  },
+  {
+    id: 171,
+    slug: "vergalhao-aguas-claras-df-condominios-verticais",
+    category: "Cidades",
+    title: "Vergalhão CA-50 para Condomínios Verticais em Águas Claras (DF)",
+    metaDescription: "Vergalhão CA-50 e coluna pronta por pavimento para as torres residenciais de Águas Claras, DF. Veja bitolas, entrega programada por etapa e o que muda na obra vertical.",
+    keyword: "vergalhão Águas Claras DF",
+    date: "30 Jul 2026",
+    summary: "Águas Claras concentra o maior volume de construção vertical do DF. Veja como o vergalhão CA-50 e a coluna pronta por pavimento atendem esse tipo de obra e como funciona a entrega até lá.",
+    content: `**Em resumo:** Águas Claras concentra o maior volume de construção vertical do Distrito Federal — torres que consomem grande volume de vergalhão CA-50 e coluna pronta por pavimento; a BR Aço atende a região com entrega programada por etapa de obra. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem entre a fábrica em Aparecida de Goiânia e Águas Claras, e eventual custo logístico adicional de frete interestadual.
+
+---
+
+## A Região Mais Vertical do Distrito Federal
+
+Águas Claras é, hoje, a região administrativa com a maior densidade de torres residenciais do Distrito Federal — um modelo de crescimento planejado quase inteiramente em prédios altos, diferente do padrão horizontal que domina a maior parte do DF. Isso faz da região um mercado consumidor de aço estruturalmente diferente de qualquer cidade do interior de Goiás: aqui, cada empreendimento é uma torre de dezenas de pavimentos, repetindo a mesma planta de armação de andar em andar.
+
+## O Que uma Torre Consome de Vergalhão
+
+Uma torre residencial de médio a alto padrão, com 20 a 30 pavimentos, consome um volume de vergalhão CA-50 muito superior ao de qualquer obra horizontal — e, mais importante, consome de forma repetitiva: os pilares e vigas de um pavimento tendem a repetir (ou variar muito pouco) do pavimento seguinte, especialmente na parte intermediária da torre.
+
+Essa repetição é o cenário ideal para o que o mercado chama de coluna pronta por pavimento: a armadura do pilar é fabricada e entregue já montada, no comprimento de um pé-direito, pronta para ser posicionada e concretada — reduzindo drasticamente o tempo de armação manual no topo da obra, onde cada dia de atraso custa mais caro por conta do avanço vertical do cronograma.
+
+## Bitolas Predominantes em Obra Vertical
+
+| Bitola (mm) | Aplicação em torre |
+|---|---|
+| 10.0 | Lajes |
+| 12.5 | Vigas |
+| 16.0 | Pilares dos pavimentos superiores |
+| 20.0 e 25.0 | Pilares dos pavimentos inferiores (maior carga acumulada) |
+
+Todo o material segue a **ABNT NBR 7480**, com laudo técnico — exigência praticamente universal em obra vertical financiada e fiscalizada por incorporadora de porte.
+
+## Entrega Programada por Pavimento
+
+Diferente de uma obra horizontal, onde o material pode ser entregue de uma vez para toda a obra, uma torre em Águas Claras normalmente recebe o vergalhão e a coluna pronta por etapa — alinhado ao avanço da concretagem, pavimento a pavimento. Isso evita acúmulo de material no canteiro (onde o espaço já é limitado pela verticalização) e reduz o risco de sobra ou falta em cada etapa.
+
+## Fale com a BR Aço
+
+Construtoras e incorporadoras que tocam obras verticais em Águas Claras podem enviar o projeto estrutural para cotação de vergalhão e coluna pronta por pavimento, com entrega programada conforme o cronograma da torre. Fale pelo WhatsApp.`
+  },
+  {
+    id: 172,
+    slug: "corte-e-dobra-vergalhao-taguatinga-df",
+    category: "Cidades",
+    title: "Corte e Dobra de Vergalhão em Taguatinga (DF): Peças Prontas no Canteiro",
+    metaDescription: "Corte e dobra industrial de vergalhão CA-50 para obras residenciais e comerciais em Taguatinga, DF. Peças identificadas por posição, entregues direto no canteiro.",
+    keyword: "corte e dobra vergalhão Taguatinga",
+    date: "30 Jul 2026",
+    summary: "Taguatinga concentra um dos maiores volumes de obras residenciais e comerciais do DF. Veja como o corte e dobra industrial de vergalhão reduz o tempo de armação nesse tipo de obra.",
+    content: `**Em resumo:** Taguatinga concentra um dos maiores volumes de obras residenciais e comerciais do Distrito Federal — a BR Aço atende a região com corte e dobra industrial, entregando peças identificadas por posição direto no canteiro. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem até Taguatinga e eventual custo de frete interestadual.
+
+---
+
+## Uma das Regiões Administrativas Mais Movimentadas do DF
+
+Taguatinga é uma das Regiões Administrativas mais populosas e comercialmente ativas do Distrito Federal, com um mix de obra que mistura reforma e ampliação de imóveis residenciais antigos, construção nova em lotes remanescentes e obras comerciais — lojas, galpões de pequeno e médio porte, prédios de uso misto. Esse mix diverso é justamente onde o corte e dobra industrial mostra mais vantagem sobre o corte manual: cada obra tem uma planta diferente, e refazer o corte manualmente a cada projeto novo consome tempo e mão de obra que uma equipe de reforma ou obra comercial de médio porte nem sempre tem disponível.
+
+## Por Que Peça Identificada por Posição Facilita a Vida do Mestre de Obras
+
+No corte e dobra industrial, cada barra chega já cortada e dobrada na medida exata do projeto estrutural, com identificação da posição (a mesma nomenclatura do detalhamento de armadura — N1, N2, N3...). Isso significa que a equipe de armação no canteiro não precisa interpretar cálculo nem cortar barra na obra: só posicionar a peça certa no lugar certo, reduzindo erro de montagem e tempo de mão de obra.
+
+Em obras comerciais e residenciais de médio porte — o perfil mais comum em Taguatinga —, esse ganho de tempo é proporcionalmente maior do que em obras muito grandes, porque a equipe de armação costuma ser pequena e sem folga para retrabalho.
+
+## Comparativo de Prazo
+
+| Etapa | Corte manual no canteiro | Corte e dobra industrial |
+|---|---|---|
+| Interpretação do projeto | Feita pelo armador na obra | Feita na fábrica, antes da entrega |
+| Corte e dobra da barra | No canteiro, com ferramentas manuais | Industrial, com máquinas CNC |
+| Montagem no canteiro | Corte + montagem juntos | Só montagem — peça já pronta |
+| Desperdício de material | 3% a 8% | Próximo de zero |
+
+## Bitolas Disponíveis para Corte e Dobra
+
+A BR Aço trabalha com bitolas de 6.3 mm a 25 mm em CA-50, conforme **ABNT NBR 7480**, cobrindo desde reforma residencial até obra comercial de maior porte em Taguatinga.
+
+## Fale com a BR Aço
+
+Construtoras, empreiteiros e mestres de obra em Taguatinga podem enviar o projeto estrutural (ou a planilha de ferro, se já tiver) para cotação de corte e dobra com entrega direto no canteiro. Fale pelo WhatsApp.`
+  },
+  {
+    id: 173,
+    slug: "vergalhao-ceilandia-df-entrega",
+    category: "Cidades",
+    title: "Vergalhão CA-50 em Ceilândia (DF): Entrega para Obra Residencial",
+    metaDescription: "Vergalhão CA-50 certificado ABNT NBR 7480 para residências e pequenos condomínios em Ceilândia, DF — a Região Administrativa mais populosa do Distrito Federal.",
+    keyword: "vergalhão Ceilândia DF",
+    date: "30 Jul 2026",
+    summary: "Ceilândia é a Região Administrativa mais populosa do DF, com demanda constante de vergalhão para residências. Veja bitolas disponíveis e como funciona a entrega até lá.",
+    content: `**Em resumo:** Ceilândia é a Região Administrativa mais populosa do Distrito Federal, com demanda constante de vergalhão CA-50 para residências e pequenos condomínios — a BR Aço entrega com a mesma certificação ABNT usada nas obras de Goiânia. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem até Ceilândia e eventual custo de frete interestadual.
+
+---
+
+## A Maior Região Administrativa do DF em População
+
+Ceilândia é, disparado, a Região Administrativa mais populosa do Distrito Federal — e essa densidade populacional se traduz em um fluxo constante de obra residencial: reformas, ampliações de puxadinho para segundo pavimento, construção nova em lotes vagos e pequenos condomínios que vão preenchendo os espaços remanescentes da malha urbana já consolidada.
+
+Diferente de uma cidade em expansão para bordas novas, Ceilândia já tem sua malha urbana majoritariamente ocupada — o que significa que grande parte da demanda de aço vem de reforma e ampliação, não de loteamento novo. Isso muda o perfil de compra: pedidos menores, mais frequentes, e com urgência maior, porque reforma residencial costuma ter prazo mais apertado que obra nova planejada com antecedência.
+
+## Bitolas Mais Usadas em Obra Residencial e Reforma
+
+| Bitola (mm) | Aplicação comum |
+|---|---|
+| 6.3 | Estribos, telas de reforço |
+| 8.0 | Lajes de ampliação (segundo pavimento) |
+| 10.0 | Vigas de reforço estrutural |
+| 12.5 | Pilares novos em ampliação |
+| 16.0 | Fundação de pequenos condomínios |
+
+## Por Que a Norma Técnica Importa Ainda Mais em Ampliação
+
+Construir um segundo pavimento sobre uma estrutura já existente exige atenção redobrada ao dimensionamento da nova armadura, porque o peso adicional recai sobre pilares e fundações que foram projetados (ou construídos empiricamente) para suportar só o térreo. Usar vergalhão CA-50 certificado conforme **ABNT NBR 7480**, com resistência ao escoamento garantida, é uma das poucas variáveis que o dono da obra consegue controlar diretamente — o resto depende do projeto e da execução.
+
+## Entrega em Ceilândia
+
+A BR Aço atende Ceilândia a partir da fábrica em Aparecida de Goiânia, com pedidos processados conforme disponibilidade de frota para entrega no Distrito Federal. Para reformas com prazo apertado, recomenda-se fazer o pedido assim que a bitola e a quantidade estiverem definidas pelo projeto ou pelo profissional responsável pela ampliação.
+
+## Fale com a BR Aço
+
+Quem está construindo, reformando ou ampliando em Ceilândia pode solicitar vergalhão CA-50 certificado pelo WhatsApp, com orientação sobre bitola conforme o tipo de obra.`
+  },
+  {
+    id: 174,
+    slug: "vergalhao-samambaia-df-residencial",
+    category: "Cidades",
+    title: "Vergalhão CA-50 e Corte e Dobra em Samambaia (DF)",
+    metaDescription: "Vergalhão CA-50 e serviço de corte e dobra para obras residenciais de pequeno e médio porte em Samambaia, DF, com entrega programada e certificação ABNT NBR 7480.",
+    keyword: "vergalhão Samambaia DF",
+    date: "30 Jul 2026",
+    summary: "Samambaia é uma das Regiões Administrativas de maior crescimento residencial do DF. Veja como o vergalhão CA-50 e o corte e dobra atendem obras de pequeno e médio porte na região.",
+    content: `**Em resumo:** Samambaia é uma das Regiões Administrativas de maior crescimento residencial do DF — a BR Aço fornece vergalhão CA-50 e serviço de corte e dobra com entrega programada para obras de pequeno e médio porte na região. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem até Samambaia e eventual custo de frete interestadual.
+
+---
+
+## Crescimento Residencial Constante
+
+Samambaia é uma das Regiões Administrativas do Distrito Federal que mais mantém ritmo de crescimento residencial nos últimos anos, com obra nova, ampliação e pequenos condomínios acompanhando o adensamento da região. Esse crescimento sustentado gera uma demanda de aço mais previsível do que em cidades com pico e vale de expansão — é um fluxo constante de obras de pequeno e médio porte, sem grandes picos de galpão industrial ou torre vertical.
+
+## Perfil de Obra Predominante
+
+O mix de obra em Samambaia é dominado por: residências unifamiliares novas, ampliação de imóveis existentes (segundo pavimento, puxadinho) e pequenos condomínios horizontais e verticais de baixa altura. Esse perfil pede tanto vergalhão avulso — para quem toca a obra com equipe própria de armação — quanto corte e dobra, para quem quer reduzir mão de obra e ganhar tempo de cronograma.
+
+## Vergalhão Avulso x Corte e Dobra: Qual Escolher
+
+| Critério | Vergalhão avulso | Corte e dobra |
+|---|---|---|
+| Ideal para | Obra pequena, com armador próprio | Obra de médio porte, com prazo apertado |
+| Mão de obra necessária | Equipe de armação completa | Equipe menor, só para montagem |
+| Desperdício de material | 3% a 8% (corte manual) | Próximo de zero |
+| Prazo de fabricação | Imediato, conforme estoque | Até 7 dias úteis após aprovação do projeto |
+
+## Bitolas Disponíveis
+
+A BR Aço fornece vergalhão CA-50 em bitolas de 6.3 mm a 20 mm para obras residenciais e de pequeno/médio porte em Samambaia, todas certificadas conforme **ABNT NBR 7480**.
+
+## Entrega Programada
+
+Para obras de médio porte, como condomínios em Samambaia, a entrega costuma ser programada por etapa — fundação, depois estrutura, depois fechamento — evitando estoque parado no canteiro. Para pedidos menores de reforma ou ampliação, a entrega é avaliada conforme disponibilidade de frota para o Distrito Federal.
+
+## Fale com a BR Aço
+
+Quem constrói, amplia ou reforma em Samambaia pode solicitar vergalhão CA-50 e corte e dobra pelo WhatsApp, com orientação sobre bitola e prazo conforme o porte da obra.`
+  }
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades'];
