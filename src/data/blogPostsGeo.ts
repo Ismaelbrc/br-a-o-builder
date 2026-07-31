@@ -702,6 +702,18 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "o-que-e-coluna-pronta-armadura-pilar": {
+    answerCapsule: "Coluna pronta é a armadura de pilar montada em fábrica — barras longitudinais e estribos já dobrados e posicionados no projeto — pronta para receber a fôrma e o concreto na obra.",
+    faqItems: [
+      { q: "O que é coluna pronta de vergalhão?", a: "É a armadura de um pilar de concreto armado — barras longitudinais e estribos — montada em fábrica na posição exata definida pelo projeto estrutural, entregue pronta para receber a fôrma e a concretagem, sem necessidade de corte e amarração no canteiro." },
+      { q: "Coluna pronta serve para qualquer tipo de pilar?", a: "Serve bem para pilares de seção constante e armadura pré-dimensionada em projeto, que é a maioria dos pilares residenciais e comerciais. Pilares com geometria muito irregular ou reforços especiais geralmente ainda exigem ajuste manual complementar." },
+      { q: "Coluna pronta atende à NBR 6118?", a: "Sim — a fabricação segue os parâmetros de cobrimento nominal (Tabela 7.2) e comprimento de ancoragem (seção 9.4) da NBR 6118:2014, aplicados já na montagem industrial em vez de depender de checagem manual em obra." },
+      { q: "Qual a diferença entre coluna pronta e armadura convencional?", a: "A armadura convencional é cortada, dobrada e amarrada no canteiro por um armador. A coluna pronta chega já montada nessa configuração, faltando apenas posicionar na fôrma — o trabalho de corte, dobra e amarração já foi feito industrialmente." },
+      { q: "Coluna pronta funciona para obra pequena?", a: "Sim, desde que o volume de pilares justifique o transporte da peça montada; para poucos pilares isolados, o corte e dobra avulso das barras pode ser mais indicado que a peça inteira pré-montada." },
+      { q: "Como pedir coluna pronta?", a: "É necessário enviar o projeto estrutural com a armadura de pilares detalhada (posição, diâmetro, comprimento e espaçamento de estribo) para a fábrica montar a peça na especificação exata." },
+    ],
+  },
+
   "vergalhao-samambaia-df-residencial": {
     answerCapsule: "Samambaia é uma das Regiões Administrativas de maior crescimento residencial do DF — a BR Aço fornece vergalhão CA-50 e corte e dobra com entrega programada para obras de pequeno e médio porte.",
     faqItems: [

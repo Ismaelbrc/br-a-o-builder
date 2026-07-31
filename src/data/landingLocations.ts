@@ -153,16 +153,13 @@ const locations: LandingLocation[] = [
   // ── Regiões Administrativas do DF (33) ────────────────────────────────
   region('brasilia',          'Brasília',            210),
   region('gama',              'Gama',                190),
-  region('taguatinga',        'Taguatinga',          200),
   region('brazlandia',        'Brazlândia',          230),
   region('sobradinho',        'Sobradinho',          215),
   region('planaltina-df',     'Planaltina (DF)',     240),
   region('paranoa',           'Paranoá',             225),
   region('nucleo-bandeirante','Núcleo Bandeirante',  205),
-  region('ceilandia',         'Ceilândia',           195),
   region('guara',             'Guará',               205),
   region('cruzeiro',          'Cruzeiro',            210),
-  region('samambaia',         'Samambaia',           200),
   region('santa-maria',       'Santa Maria',         195),
   region('sao-sebastiao',     'São Sebastião',       225),
   region('recanto-das-emas',  'Recanto das Emas',    195),
@@ -170,7 +167,6 @@ const locations: LandingLocation[] = [
   region('riacho-fundo',      'Riacho Fundo',        200),
   region('lago-norte',        'Lago Norte',          215),
   region('candangolandia',    'Candangolândia',      205),
-  region('aguas-claras',      'Águas Claras',        200),
   region('riacho-fundo-ii',   'Riacho Fundo II',     200),
   region('sudoeste-octogonal','Sudoeste/Octogonal',  210),
   region('varjao',            'Varjão',              215),
@@ -184,6 +180,46 @@ const locations: LandingLocation[] = [
   region('fercal',            'Fercal',              225),
   region('sol-nascente',      'Sol Nascente',        195),
   region('arniqueira',        'Arniqueira',          200),
+  {
+    ...region('aguas-claras', 'Águas Claras', 200),
+    uniqueContent: {
+      marketContext: 'Águas Claras concentra o maior volume de construção vertical do Distrito Federal, com torres residenciais e comerciais de grande porte ao longo de toda a região. Esse padrão de obra consome grandes volumes de vergalhão CA-50 e coluna pronta por pavimento, com entrega programada por etapa da concretagem para não sobrecarregar o canteiro limitado das torres. A BR Aço atende construtoras e incorporadoras de Águas Claras a partir da fábrica em Aparecida de Goiânia.',
+      neighborhoods: ['Águas Claras Centro', 'Rua das Pitangueiras', 'Areal', 'Norte', 'Sul', 'Burle Marx'],
+      route: 'via DF-003 (EPTG) e DF-095, tempo médio de 2h40min',
+      buildingTypes: 'torres residenciais e comerciais verticais, condomínios de alto padrão e obras de grande porte',
+      population: 150_000,
+    },
+  },
+  {
+    ...region('taguatinga', 'Taguatinga', 200),
+    uniqueContent: {
+      marketContext: 'Taguatinga é uma das Regiões Administrativas mais populosas e comercialmente ativas do DF, com forte demanda tanto de obras residenciais quanto comerciais — do centro comercial da Taguatinga Centro às expansões residenciais na Taguatinga Norte e Sul. A BR Aço atende essa diversidade com corte e dobra industrial, entregando peças identificadas por posição no canteiro para acelerar a armação em obras de qualquer porte.',
+      neighborhoods: ['Taguatinga Centro', 'Taguatinga Norte', 'Taguatinga Sul', 'QNL', 'Setor Industrial', 'Pistão Sul'],
+      route: 'via DF-003 (EPTG) e BR-070, tempo médio de 2h30min',
+      buildingTypes: 'obras comerciais, residências unifamiliares, edifícios multifamiliares e reformas',
+      population: 220_000,
+    },
+  },
+  {
+    ...region('ceilandia', 'Ceilândia', 195),
+    uniqueContent: {
+      marketContext: 'Ceilândia é a Região Administrativa mais populosa do Distrito Federal, com demanda constante de vergalhão CA-50 para residências, reformas, ampliações (puxadinhos) e pequenos condomínios. O ritmo intenso de autoconstrução e pequenas construtoras locais exige entrega confiável e aço com a mesma certificação ABNT usada nas obras de Goiânia. A BR Aço entrega em Ceilândia a partir da fábrica em Aparecida de Goiânia.',
+      neighborhoods: ['Ceilândia Centro', 'QNM', 'Setor O', 'Setor P Norte', 'Setor P Sul', 'Expansão do Setor O'],
+      route: 'via BR-070 e DF-180, tempo médio de 2h15min',
+      buildingTypes: 'residências populares, ampliações e reformas, e pequenos condomínios',
+      population: 490_000,
+    },
+  },
+  {
+    ...region('samambaia', 'Samambaia', 200),
+    uniqueContent: {
+      marketContext: 'Samambaia é uma das Regiões Administrativas de maior crescimento residencial do Distrito Federal, com expansão contínua de loteamentos e pequenos condomínios. A demanda predominante é por obras de pequeno e médio porte, onde vergalhão avulso e corte e dobra convivem conforme o porte da construtora ou autoconstrutor. A BR Aço fornece vergalhão CA-50 e serviço de corte e dobra com entrega programada por etapa da obra.',
+      neighborhoods: ['Samambaia Norte', 'Samambaia Sul', 'QR 100', 'QN 400', 'Setor de Chácaras'],
+      route: 'via BR-070 e DF-180, tempo médio de 2h20min',
+      buildingTypes: 'residências populares, sobrados, ampliações e pequenos condomínios',
+      population: 260_000,
+    },
+  },
 
   // ── Bairros de Goiânia (~80) ──────────────────────────────────────────
   hood('goiania-setor-sul',         'Setor Sul',              'Goiânia', 'goiania', 'GO', 18, 'Goiás'),

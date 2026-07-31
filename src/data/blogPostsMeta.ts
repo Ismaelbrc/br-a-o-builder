@@ -1917,6 +1917,17 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Samambaia é uma das Regiões Administrativas de maior crescimento residencial do DF. Veja como o vergalhão CA-50 e o corte e dobra atendem obras de pequeno e médio porte na região.",
     readingTime: 3,
   },
+  {
+    id: 175,
+    slug: "o-que-e-coluna-pronta-armadura-pilar",
+    category: "Coluna Pronta",
+    title: "O que É Coluna Pronta? Armadura de Pilar Pré-Montada Explicada",
+    metaDescription: "Coluna pronta é a armadura de pilar montada em fábrica, pronta para receber a fôrma e o concreto. Entenda como funciona, quando se aplica e a diferença para a armação manual no canteiro.",
+    keyword: "o que é coluna pronta",
+    date: "31 Jul 2026",
+    summary: "Coluna pronta é a armadura de pilar pré-montada industrialmente — estribos, ganchos e espaçadores já fixados na posição do projeto. Entenda a definição, como é fabricada e quando substitui a armação manual no canteiro.",
+    readingTime: 4,
+  },
 ];
 
-export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades'];
+export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];
