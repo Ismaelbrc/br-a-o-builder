@@ -16,6 +16,7 @@ import frotaImage from '@/assets/frota-propria.jpg';
 import { analytics } from '@/lib/analytics';
 import { useClarityLP } from '@/hooks/useClarityLP';
 import { useJsonLd } from '@/hooks/useJsonLd';
+import { useSEO } from '@/hooks/useSEO';
 import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode } from '@/lib/schema';
 
 const CDA_CANONICAL = 'https://grupobraco.com.br/corte-e-dobra';
@@ -637,6 +638,12 @@ const FinalCtaSection = () => {
 
 // ═══ MAIN PAGE ═══
 export default function CorteEDobra() {
+  useSEO({
+    title: 'Corte e Dobra de Vergalhão em Goiás e DF | BR Aço',
+    description: 'Corte e dobra industrial de vergalhão: reduza 50% da mão de obra, zero desperdício, entrega em até 7 dias úteis. Certificação ABNT NBR 7480.',
+    canonical: CDA_CANONICAL,
+    keywords: 'corte e dobra de vergalhão, corte e dobra Goiânia, corte e dobra Goiás, corte e dobra Distrito Federal',
+  });
   useClarityLP({ pageName: 'corte-e-dobra' });
   useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
 

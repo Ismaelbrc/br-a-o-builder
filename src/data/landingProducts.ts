@@ -63,7 +63,7 @@ export const landingProducts: Record<string, LandingProduct> = {
       },
       {
         q: () => 'Qual a diferença entre corte e dobra e comprar a barra inteira?',
-        a: () => 'Na compra de barra inteira, o armador corta e dobra no canteiro — gerando perda de 8% a 15% de aço e consumindo tempo de mão de obra qualificada. No corte e dobra industrial, a perda cai para menos de 2% e a equipe de armação só faz a montagem.',
+        a: () => 'Na compra de barra inteira, o armador corta e dobra no canteiro — gerando perda de 8% a 15% de aço e consumindo tempo de mão de obra qualificada. No corte e dobra de vergalhão, a perda cai para menos de 2% e a equipe de armação só faz a montagem.',
       },
       {
         q: (city) => `A BR Aço atende projetos grandes em ${city}?`,
@@ -425,13 +425,13 @@ export const landingProducts: Record<string, LandingProduct> = {
     schemaCategory: 'Ferragista',
     pageTitle: (city) => `Ferragista em ${city} | BR Aço – Vergalhão e Ferragens`,
     metaDesc: (city, state) =>
-      `Ferragista em ${city} – ${state}. BR Aço: vergalhão CA-50 e CA-60, treliças, malhas e corte e dobra industrial. Entrega rápida, certificação ABNT. Solicite orçamento.`,
+      `Ferragista em ${city} – ${state}. BR Aço: vergalhão CA-50 e CA-60, treliças, malhas e corte e dobra de vergalhão. Entrega rápida, certificação ABNT. Solicite orçamento.`,
     h1: (city) => `Ferragista em ${city} – BR Aço`,
     intro: (city, state, deliveryLabel) =>
-      `A BR Aço é a ferragista especializada em aço para construção civil em ${city} – ${state}. Fornecemos vergalhões CA-50 e CA-60, treliças metálicas, telas soldadas e malhas, com ${deliveryLabel} diretamente no canteiro de obras. Nosso diferencial é o serviço de corte e dobra industrial: peças cortadas e dobradas nas medidas exatas do projeto, sem desperdício.`,
+      `A BR Aço é a ferragista especializada em aço para construção civil em ${city} – ${state}. Fornecemos vergalhões CA-50 e CA-60, treliças metálicas, telas soldadas e malhas, com ${deliveryLabel} diretamente no canteiro de obras. Nosso diferencial é o serviço de corte e dobra de vergalhão: peças cortadas e dobradas nas medidas exatas do projeto, sem desperdício.`,
     features: [
       { icon: '🏗️', title: 'Vergalhão CA-50 e CA-60', desc: 'Todos os diâmetros de 6,3 mm a 32 mm com certificação ABNT NBR 7480.' },
-      { icon: '✂️', title: 'Corte e dobra industrial', desc: 'Peças cortadas e dobradas conforme o projeto — eliminando desperdício e mão de obra de armação.' },
+      { icon: '✂️', title: 'Corte e dobra de vergalhão', desc: 'Peças cortadas e dobradas conforme o projeto — eliminando desperdício e mão de obra de armação.' },
       { icon: '🔲', title: 'Treliças e malhas', desc: 'Treliças T8, T10 e T12 e malhas soldadas CA-60 para lajes de qualquer vão.' },
       { icon: '📜', title: 'Laudo de qualidade', desc: 'Certificado ABNT NBR 7480 em cada lote com rastreabilidade de origem.' },
       { icon: '🚚', title: 'Entrega rápida', desc: 'Frota própria com entrega programada diretamente no canteiro de obras.' },
@@ -515,7 +515,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     schemaCategory: 'Ferro e Aço',
     pageTitle: (city) => `Ferro e Aço em ${city} | BR Aço – Distribuidora`,
     metaDesc: (city, state) =>
-      `Ferro e aço para construção civil em ${city} – ${state}. Distribuidora BR Aço: vergalhão CA-50 e CA-60, treliças, malhas. Corte e dobra industrial. Entrega rápida.`,
+      `Ferro e aço para construção civil em ${city} – ${state}. Distribuidora BR Aço: vergalhão CA-50 e CA-60, treliças, malhas. Corte e dobra de vergalhão. Entrega rápida.`,
     h1: (city) => `Ferro e Aço em ${city} – BR Aço`,
     intro: (city, state, deliveryLabel) =>
       `A BR Aço é a principal distribuidora de ferro e aço para construção civil em ${city} – ${state}. Com parque industrial próprio de corte e dobra, fornecemos vergalhões CA-50 e CA-60, treliças metálicas, telas soldadas e todos os aços estruturais com ${deliveryLabel} e certificação ABNT NBR 7480.`,
@@ -563,12 +563,12 @@ export const landingProducts: Record<string, LandingProduct> = {
       `Material de construção (aço) em ${city} – ${state}. BR Aço: vergalhão CA-50, treliças, malhas, arames e pregos com entrega rápida. Especialistas em aço estrutural para obras.`,
     h1: (city) => `Material de Construção em ${city} – Aço Estrutural BR Aço`,
     intro: (city, state, deliveryLabel) =>
-      `A BR Aço é a especialista em materiais de construção de aço em ${city} – ${state}. Fornecemos vergalhões CA-50 e CA-60, treliças metálicas, malhas soldadas, arames e pregos para obras residenciais e comerciais, com ${deliveryLabel}. Nosso diferencial: serviço de corte e dobra industrial com peças etiquetadas por elemento estrutural.`,
+      `A BR Aço é a especialista em materiais de construção de aço em ${city} – ${state}. Fornecemos vergalhões CA-50 e CA-60, treliças metálicas, malhas soldadas, arames e pregos para obras residenciais e comerciais, com ${deliveryLabel}. Nosso diferencial: serviço de corte e dobra de vergalhão com peças etiquetadas por elemento estrutural.`,
     features: [
       { icon: '🏗️', title: 'Vergalhão certificado', desc: 'CA-25, CA-50 e CA-60 com laudo ABNT para todas as etapas da estrutura.' },
       { icon: '🔲', title: 'Treliças e malhas', desc: 'Treliças T8/T10/T12 e telas soldadas para lajes — entrega no comprimento exato.' },
       { icon: '🔗', title: 'Arame e pregos', desc: 'Arame recozido para amarração e pregos de obra em todos os tamanhos.' },
-      { icon: '✂️', title: 'Corte e dobra industrial', desc: 'Receba o aço cortado e dobrado conforme o projeto — sem trabalho no canteiro.' },
+      { icon: '✂️', title: 'Corte e dobra de vergalhão', desc: 'Receba o aço cortado e dobrado conforme o projeto — sem trabalho no canteiro.' },
       { icon: '📋', title: 'Quantitativo gratuito', desc: 'Envie a planta e receba a quantidade de material estimada sem custo.' },
       { icon: '🚚', title: 'Entrega direta na obra', desc: 'Frota própria com agendamento de entrega direto no canteiro.' },
     ],
@@ -605,7 +605,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     schemaCategory: 'Distribuidora de Ferro',
     pageTitle: (city) => `Distribuidora de Ferro em ${city} | BR Aço`,
     metaDesc: (city, state) =>
-      `Distribuidora de ferro e aço em ${city} – ${state}. BR Aço: vergalhão CA-50, treliças, malhas e corte e dobra industrial. Entrega rápida com laudo de qualidade.`,
+      `Distribuidora de ferro e aço em ${city} – ${state}. BR Aço: vergalhão CA-50, treliças, malhas e corte e dobra de vergalhão. Entrega rápida com laudo de qualidade.`,
     h1: (city) => `Distribuidora de Ferro e Aço em ${city} – BR Aço`,
     intro: (city, state, deliveryLabel) =>
       `A BR Aço é a principal distribuidora de ferro e aço para construção civil em ${city} – ${state}. Com integração vertical entre distribuição e indústria de corte e dobra, entregamos vergalhões CA-50 e CA-60, treliças metálicas, malhas soldadas e arames com ${deliveryLabel} — direto da fábrica para o canteiro de obras.`,
@@ -620,7 +620,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     faq: [
       {
         q: (city) => `Qual a principal distribuidora de ferro e aço em ${city}?`,
-        a: (city, dl) => `A BR Aço é a maior distribuidora de ferro e aço de Goiás, com atendimento em ${city} ${dl}. Vergalhões certificados, treliças, malhas e serviço de corte e dobra industrial em um só lugar.`,
+        a: (city, dl) => `A BR Aço é a maior distribuidora de ferro e aço de Goiás, com atendimento em ${city} ${dl}. Vergalhões certificados, treliças, malhas e serviço de corte e dobra de vergalhão em um só lugar.`,
       },
       {
         q: () => 'A distribuidora faz entrega de ferro e aço em obra?',
@@ -628,7 +628,7 @@ export const landingProducts: Record<string, LandingProduct> = {
       },
       {
         q: (city) => `Como fazer pedido na distribuidora de ferro em ${city}?`,
-        a: (city) => `Envie a planilha de ferro ou a lista de materiais pelo WhatsApp. Nossa equipe técnica em ${city} faz o orçamento em até 2 horas, com valores por bitola, prazo de entrega e opção de corte e dobra industrial.`,
+        a: (city) => `Envie a planilha de ferro ou a lista de materiais pelo WhatsApp. Nossa equipe técnica em ${city} faz o orçamento em até 2 horas, com valores por bitola, prazo de entrega e opção de corte e dobra de vergalhão.`,
       },
       {
         q: () => 'A distribuidora vende para pessoa física?',

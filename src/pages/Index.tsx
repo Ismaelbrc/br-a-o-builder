@@ -25,8 +25,8 @@ const handleWhatsApp = (source: string) => {
 
 const Index = () => {
   useSEO({
-    title: 'BR Aço | Corte e Dobra Industrial em Goiânia e Goiás',
-    description: 'O melhor corte e dobra industrial de Goiás. Vergalhões CA-25, CA-50, CA-60, treliças, telas e malhas. Entrega em até 48h com certificação ABNT NBR 7480. Solicite orçamento.',
+    title: 'BR Aço | Corte e Dobra de Vergalhão em Goiânia e Goiás',
+    description: 'O melhor corte e dobra de vergalhão de Goiás. Vergalhões CA-25, CA-50, CA-60, treliças, telas e malhas. Entrega em até 48h com certificação ABNT NBR 7480. Solicite orçamento.',
     canonical: 'https://grupobraco.com.br/',
     keywords: 'corte e dobra goiânia, vergalhão goiás, aço construção civil goiânia, ca-50 goiânia, treliça metálica goiás',
   });
@@ -36,8 +36,8 @@ const Index = () => {
   useJsonLd('home-schema', [
     webPageNode({
       canonical: 'https://grupobraco.com.br/',
-      name: 'BR Aço | Corte e Dobra Industrial em Goiânia e Goiás',
-      description: 'O melhor corte e dobra industrial de Goiás. Vergalhões CA-25, CA-50, CA-60, treliças, telas e malhas. Entrega em até 48h com certificação ABNT NBR 7480.',
+      name: 'BR Aço | Corte e Dobra de Vergalhão em Goiânia e Goiás',
+      description: 'O melhor corte e dobra de vergalhão de Goiás. Vergalhões CA-25, CA-50, CA-60, treliças, telas e malhas. Entrega em até 48h com certificação ABNT NBR 7480.',
       mainEntity: ID.service('corte-e-dobra'),
     }),
   ]);

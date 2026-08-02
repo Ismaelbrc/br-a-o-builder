@@ -70,7 +70,7 @@ export default function Cases() {
       'Projetos reais de engenharia que marcam cidades — do complexo multiuso ao terminal urbano, a BR Aço está na fundação de quem constrói para durar.',
     canonical: 'https://grupobraco.com.br/cases',
     keywords:
-      'cases de sucesso, obras com BR Aço, corte e dobra industrial, engenharia Goiás, projetos construção civil',
+      'cases de sucesso, obras com BR Aço, corte e dobra de vergalhão, engenharia Goiás, projetos construção civil',
   });
 
   const [activeCategory, setActiveCategory] = useState<CaseCategory>('Todos');
