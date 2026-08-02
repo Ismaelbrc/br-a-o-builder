@@ -8,6 +8,15 @@ import Reveal from '@/components/Reveal';
 import ProductBlueprint, { BlueprintKey } from '@/components/ProductBlueprint';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, ArrowRight, ChevronRight } from 'lucide-react';
+import { blogPostsMeta } from '@/data/blogPostsMeta';
+
+// Página-pilar de produtos: liga para os posts técnicos das categorias de
+// produto (site tinha zero link de Produtos.tsx para o blog antes disso).
+const PRODUCT_ARTICLE_CATEGORIES = ['Vergalhões', 'Treliças', 'Malhas', 'Coluna Pronta', 'Produtos'];
+const productArticles = blogPostsMeta
+  .filter((p) => PRODUCT_ARTICLE_CATEGORIES.includes(p.category))
+  .sort((a, b) => b.id - a.id)
+  .slice(0, 4);
 
 interface Product {
   id: string;
@@ -233,6 +242,34 @@ export default function Produtos() {
           ))}
         </div>
       </section>
+
+      {/* Artigos técnicos — liga a página de produtos ao blog */}
+      {productArticles.length > 0 && (
+        <section className="py-12 md:py-16 bg-secondary/40">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 className="text-display-sm text-brand-navy mb-6">Guias Técnicos sobre Nossos Produtos</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {productArticles.map((article) => (
+                <Link
+                  key={article.slug}
+                  to={`/blog/${article.slug}`}
+                  className="bg-background rounded-xl border border-border p-5 hover:shadow-lg transition-all group"
+                >
+                  <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">
+                    {article.category}
+                  </span>
+                  <h3 className="text-base font-semibold text-brand-navy mt-2 line-clamp-2 group-hover:text-brand-orange transition-colors">
+                    {article.title}
+                  </h3>
+                </Link>
+              ))}
+            </div>
+            <Link to="/blog" className="inline-flex items-center gap-1.5 text-sm text-brand-orange hover:underline mt-6">
+              Ver todos os artigos <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* CTA Final */}
       <section className="relative py-16 md:py-24 bg-secondary">

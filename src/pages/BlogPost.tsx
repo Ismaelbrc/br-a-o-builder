@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
+import { blogPostsMeta } from '@/data/blogPostsMeta';
 import { blogPostsGeo } from '@/data/blogPostsGeo';
 import { useSEO } from '@/hooks/useSEO';
 import { useClarityContent } from '@/hooks/useClarityContent';
@@ -10,6 +11,18 @@ import { useJsonLd } from '@/hooks/useJsonLd';
 import { articleNode, breadcrumbNode, faqPageNode, webPageNode } from '@/lib/schema';
 import { aboutFor } from '@/lib/schemaTopics';
 import { analytics } from '@/lib/analytics';
+import { getRelatedPosts } from '@/lib/postSimilarity';
+
+// Categorias com LP de produto correspondente (link de "quero contratar" a
+// partir de um post técnico). Categorias sem produto único (Cidades, Normas,
+// Projeto Estrutural etc.) ficam de fora — link errado é pior que nenhum.
+const CATEGORY_TO_LP: Record<string, { slug: string; label: string }> = {
+  'Corte e Dobra':  { slug: 'corte-e-dobra', label: 'Corte e Dobra em Goiânia' },
+  'Vergalhões':     { slug: 'vergalhao',     label: 'Vergalhão em Goiânia' },
+  'Coluna Pronta':  { slug: 'coluna',        label: 'Coluna Pronta em Goiânia' },
+  'Treliças':       { slug: 'trelica',       label: 'Treliças em Goiânia' },
+  'Malhas':         { slug: 'malha',         label: 'Malhas em Goiânia' },
+};
 
 // ─── Markdown content renderer ────────────────────────────────────────────────
 
@@ -262,10 +275,14 @@ function BlogPostContent({ slug }: { slug: string }) {
 
   useJsonLd('blogpost-schema', jsonLdNodes);
 
-  // Get related posts (same category, excluding current)
-  const relatedPosts = blogPosts
-    .filter(p => p.category === post.category && p.id !== post.id)
-    .slice(0, 3);
+  // Posts relacionados por similaridade de tópico (categoria + keyword/título),
+  // com fallback garantido — nunca fica vazio, nem para categorias de 1-2 posts.
+  const currentMeta = blogPostsMeta.find(p => p.slug === post.slug);
+  const relatedPosts = currentMeta
+    ? getRelatedPosts(currentMeta, blogPostsMeta, 4)
+    : [];
+
+  const lpLink = CATEGORY_TO_LP[post.category];
 
   return (
     <Layout>
@@ -365,19 +382,9 @@ function BlogPostContent({ slug }: { slug: string }) {
               <Link to="/calculadora-vergalhao" className="text-sm text-brand-orange hover:underline flex items-center gap-1.5">
                 🧮 Calculadora de Vergalhão
               </Link>
-              {post.category === 'Corte e Dobra' && (
-                <Link to="/corte-e-dobra/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
-                  → Corte e Dobra em Goiânia
-                </Link>
-              )}
-              {post.category === 'Vergalhão' && (
-                <Link to="/vergalhao/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
-                  → Vergalhão em Goiânia
-                </Link>
-              )}
-              {post.category === 'Coluna Pronta' && (
-                <Link to="/coluna/goiania" className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
-                  → Coluna Pronta em Goiânia
+              {lpLink && (
+                <Link to={`/${lpLink.slug}/goiania`} className="text-sm text-brand-navy hover:text-brand-orange hover:underline">
+                  → {lpLink.label}
                 </Link>
               )}
             </div>
@@ -387,7 +394,7 @@ function BlogPostContent({ slug }: { slug: string }) {
           {relatedPosts.length > 0 && (
             <div className="mt-16">
               <h3 className="text-2xl font-bold text-brand-navy mb-6">Artigos Relacionados</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {relatedPosts.map((relatedPost) => (
                   <Link
                     key={relatedPost.id}

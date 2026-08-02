@@ -18,6 +18,7 @@ import { useClarityLP } from '@/hooks/useClarityLP';
 import { useJsonLd } from '@/hooks/useJsonLd';
 import { useSEO } from '@/hooks/useSEO';
 import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode } from '@/lib/schema';
+import { blogPostsMeta } from '@/data/blogPostsMeta';
 
 const CDA_CANONICAL = 'https://grupobraco.com.br/corte-e-dobra';
 
@@ -589,6 +590,40 @@ const FaqSection = () => {
   );
 };
 
+// ═══ ARTIGOS TÉCNICOS — liga a LP principal ao blog (não existia antes) ═══
+const cdaArticles = blogPostsMeta
+  .filter((p) => p.category === 'Corte e Dobra')
+  .sort((a, b) => b.id - a.id)
+  .slice(0, 4);
+
+const ArticlesSection = () => {
+  if (cdaArticles.length === 0) return null;
+  return (
+    <section className="py-16 md:py-20 bg-brand-gray-light">
+      <div className="max-w-6xl mx-auto px-4">
+        <SectionIntro
+          eyebrow="Conteúdo técnico"
+          title="Guias sobre Corte e Dobra"
+          description="Tire dúvidas antes de fechar o pedido"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          {cdaArticles.map((article) => (
+            <Link
+              key={article.slug}
+              to={`/blog/${article.slug}`}
+              className="bg-background rounded-xl border border-border p-5 hover:shadow-lg transition-all group"
+            >
+              <h3 className="text-base font-semibold text-brand-navy line-clamp-2 group-hover:text-brand-orange transition-colors">
+                {article.title}
+              </h3>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // ═══ FINAL CTA WHATSAPP ═══
 const FinalCtaSection = () => {
   const whatsappUrl = "https://wa.me/556299032023?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20Corte%20e%20Dobra.";
@@ -694,6 +729,7 @@ export default function CorteEDobra() {
       <FrotaSection />
       <StatsCD />
       <FaqSection />
+      <ArticlesSection />
       <FinalCtaSection />
     </Layout>
   );

@@ -9,6 +9,18 @@ import { landingLocations, getDeliveryLabel } from '@/data/landingLocations';
 import { useJsonLd } from '@/hooks/useJsonLd';
 import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode, placeNode } from '@/lib/schema';
 import { analytics } from '@/lib/analytics';
+import { blogPostsMeta } from '@/data/blogPostsMeta';
+
+// LP → categoria de blog correspondente (as 39 LPs indexáveis nunca linkavam
+// para nenhum artigo — silo separado do blog).
+const LP_PRODUCT_TO_CATEGORY: Record<string, string> = {
+  'corte-e-dobra': 'Corte e Dobra',
+  'vergalhao':      'Vergalhões',
+  'coluna':         'Coluna Pronta',
+  'trelica':        'Treliças',
+  'malha':          'Malhas',
+  'tela':           'Malhas',
+};
 
 const WA_BASE = 'https://wa.me/556299032023?text=';
 
@@ -23,6 +35,11 @@ export default function LandingPage() {
   const product = landingProducts[productSlug];
   const location = landingLocations[locationSlug];
   const isValid = !!product && !!location;
+
+  const relatedCategory = LP_PRODUCT_TO_CATEGORY[productSlug];
+  const relatedArticles = relatedCategory
+    ? blogPostsMeta.filter(p => p.category === relatedCategory).sort((a, b) => b.id - a.id).slice(0, 3)
+    : [];
 
   // Deriva dados para o SEO — valores vazios são usados quando a combinação é inválida
   const cityName     = isValid ? location!.name  : '';
@@ -463,6 +480,30 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Artigos relacionados — a LP não linkava pro blog antes disso */}
+      {relatedArticles.length > 0 && (
+        <section className="py-12 md:py-16 bg-background border-t border-border">
+          <div className="max-w-5xl mx-auto px-4">
+            <h3 className="font-bold text-brand-navy mb-6 text-sm uppercase tracking-wide">
+              Artigos sobre {product!.name}
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {relatedArticles.map(article => (
+                <Link
+                  key={article.slug}
+                  to={`/blog/${article.slug}`}
+                  className="bg-secondary/30 rounded-xl border border-border p-4 hover:border-brand-orange/50 hover:shadow-md transition-all group"
+                >
+                  <h4 className="text-sm font-semibold text-brand-navy line-clamp-2 group-hover:text-brand-orange transition-colors">
+                    {article.title}
+                  </h4>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </Layout>
   );
 }
