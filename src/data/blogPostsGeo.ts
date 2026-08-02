@@ -754,4 +754,14 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "preco-medio-vergalhao-ca-50-ca-60-por-kg-goias": {
+    answerCapsule: "O preço médio praticado de vergalhão CA-50 cortado sob medida em Goiás variou entre R$ 5,57/kg e R$ 6,49/kg por bitola nos últimos meses; o CA-60 ficou em torno de R$ 6,70/kg. São valores históricos de referência, não uma cotação fixa.",
+    faqItems: [
+      { q: "Qual o preço médio do vergalhão CA-50 por kg?", a: "O preço médio praticado varia entre R$ 5,57/kg e R$ 6,49/kg dependendo da bitola, com base em vendas reais da BR Aço nos últimos meses. Bitolas médias (12,5mm a 25mm) tendem à faixa mais baixa; bitolas finas (6,3mm) à faixa mais alta." },
+      { q: "O preço do vergalhão CA-60 é diferente do CA-50?", a: "Sim, o CA-60 (bitolas finas, usado em treliças e estribos) teve preço médio em torno de R$ 6,70/kg, ligeiramente acima da faixa média do CA-50 cortado." },
+      { q: "Corte, Dobra e Armação (CDA) custa mais que corte e dobra simples?", a: "Sim — o CDA inclui a mão de obra de amarração ou solda da peça, o que eleva o preço por kg em relação ao corte e dobra simples. A diferença costuma compensar frente ao custo de contratar um armador na obra." },
+      { q: "Esses valores são uma cotação válida?", a: "Não — são médias históricas de vendas reais, usadas como referência inicial. O preço final depende do volume do pedido, da forma de pagamento e da condição de mercado do aço no momento da compra." },
+    ],
+  },
+
 };

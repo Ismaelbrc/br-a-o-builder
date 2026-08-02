@@ -2027,6 +2027,17 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
     readingTime: 3,
   },
+  {
+    id: 185,
+    slug: "preco-medio-vergalhao-ca-50-ca-60-por-kg-goias",
+    category: "Vergalhões",
+    title: "Preço Médio do Vergalhão CA-50 e CA-60 por Kg em Goiás: Tabela por Bitola",
+    metaDescription: "Preço médio praticado de vergalhão CA-50 e CA-60 por kg, por bitola, com base em vendas reais da BR Aço em Goiás nos últimos meses. Referência para orçamento, não cotação fixa.",
+    keyword: "preço vergalhão CA-50 por kg",
+    date: "02 Ago 2026",
+    summary: "Tabela de preço médio praticado de vergalhão CA-50 e CA-60 por kg, por bitola, com base em dados reais de vendas da BR Aço em Goiás — referência para orçamento inicial, sujeita a variação de mercado.",
+    readingTime: 3,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];
