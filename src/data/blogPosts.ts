@@ -12637,6 +12637,147 @@ Recanto das Emas fica a cerca de 195 km da fábrica da BR Aço em Aparecida de G
 ## Fale com a BR Aço
 
 Autoconstrução, ampliação ou obra em novo loteamento no Recanto das Emas: a BR Aço fornece vergalhão CA-50 certificado conforme a NBR 7480 e serviço de corte e dobra sob medida. Envie a planta ou a lista de materiais pelo WhatsApp e receba orçamento em até 24h.`
+  },
+  {
+    id: 182,
+    slug: "prazo-de-entrega-vergalhao-corte-dobra-goias-df",
+    category: "BR Aço",
+    title: "Prazo de Entrega de Vergalhão e Corte e Dobra em Goiás e DF: Tabela por Região",
+    metaDescription: "Prazo de entrega da BR Aço por tipo de produto e distância da fábrica: vergalhão pronto em até 48h, corte e dobra a partir de 7 dias úteis. Veja a tabela completa por cidade.",
+    keyword: "prazo de entrega vergalhão corte e dobra",
+    date: "02 Ago 2026",
+    summary: "Tabela de prazo de entrega da BR Aço por tipo de produto e distância da fábrica em Aparecida de Goiânia — vergalhão pronto, treliças e telas em até 48h; corte e dobra sob medida a partir de 7 dias úteis.",
+    content: `**Em resumo:** A BR Aço entrega vergalhão, treliças e telas prontas (estoque de fábrica) em **até 48 horas** nas regiões atendidas de Goiás e DF. Corte e dobra sob medida (produção conforme projeto) tem prazo **a partir de 7 dias úteis**, contado da aprovação do orçamento. O prazo real varia com a distância da fábrica em Aparecida de Goiânia e o volume do pedido — a tabela abaixo mostra a faixa por tipo de produto e região.
+
+---
+
+## Por Que o Prazo Muda Entre Produto Pronto e Corte e Dobra
+
+São dois processos diferentes, e por isso os prazos não são iguais:
+
+- **Produto pronto** (vergalhão avulso, treliça, tela soldada, malha pop): já está no estoque da fábrica, produzido em série pelas bitolas padrão. A entrega depende só de logística — carregamento e transporte até a obra.
+- **Corte e dobra sob medida:** a produção começa depois da aprovação do orçamento, com cada peça cortada e dobrada conforme a planta estrutural do cliente. O prazo inclui produção + identificação de peças + transporte.
+
+## Tabela de Prazo por Tipo de Produto e Distância
+
+| Tipo de produto | Prazo típico | O que determina o prazo |
+|---|---|---|
+| Vergalhão avulso, treliça, tela, malha (estoque) | Até 48h | Distância da fábrica e disponibilidade de frota própria na rota |
+| Corte e dobra (sob medida) | A partir de 7 dias úteis | Complexidade do projeto, volume de peças, fila de produção |
+| Corte, Dobra e Armação (CDA) | Conforme cronograma acordado | Elemento estrutural completo — prazo negociado por etapa da obra |
+
+## Prazo por Região (a partir da fábrica em Aparecida de Goiânia)
+
+| Região | Distância aproximada | Faixa de prazo (produto pronto) |
+|---|---|---|
+| Aparecida de Goiânia | 5 km | Mesmo dia a 24h |
+| Goiânia | 15 km | Até 24h |
+| Senador Canedo | 20 km | Até 24h |
+| Trindade | 25 km | Até 48h |
+| Anápolis | 52 km | Até 48h |
+| Regiões do Distrito Federal | 190 a 240 km | Até 48h, conforme rota e volume |
+
+> Esses prazos valem para produto pronto de estoque. Pedidos de corte e dobra seguem a fila de produção (a partir de 7 dias úteis), independente da distância.
+
+## Como a BR Aço Cumpre o Prazo
+
+A BR Aço opera com **frota própria** para entrega, o que reduz a dependência de transportadora terceirizada e dá mais previsibilidade de data — importante para quem programa a concretagem por etapa.
+
+## Fale com a BR Aço
+
+Quer saber o prazo exato para sua obra? Envie a cidade, o produto e a quantidade pelo WhatsApp e receba a confirmação de prazo junto com o orçamento.`
+  },
+  {
+    id: 183,
+    slug: "corte-e-dobra-compensa-vs-comprar-vergalhao-dobrado",
+    category: "Corte e Dobra",
+    title: "Corte e Dobra Compensa? Comparativo Direto com Comprar Vergalhão e Dobrar na Obra",
+    metaDescription: "Corte e dobra industrial compensa para sua obra? Compare custo de mão de obra, desperdício de material e prazo entre corte e dobra sob medida e vergalhão dobrado manualmente no canteiro.",
+    keyword: "corte e dobra compensa",
+    date: "02 Ago 2026",
+    summary: "Comparativo direto: quando o corte e dobra industrial compensa em relação a comprar vergalhão reto e dobrar manualmente na obra, e quando a conta pode não fechar.",
+    content: `**Em resumo:** Corte e dobra industrial compensa na maioria das obras de médio e grande porte porque elimina o custo do armador especializado, reduz o desperdício de material (de 3% a 8% para praticamente zero) e acelera o cronograma. A conta pode não fechar em obras muito pequenas ou pontuais, onde o volume de aço não justifica o mínimo de produção — nesse caso, vergalhão avulso segue sendo a opção mais simples.
+
+---
+
+## As Duas Opções, Lado a Lado
+
+| Critério | Corte e dobra industrial | Comprar reto + dobrar na obra |
+|---|---|---|
+| Mão de obra | Não precisa de armador especializado no canteiro | Precisa de equipe de armação (armador + ajudante) |
+| Desperdício de material | Próximo de zero — peça cortada na medida exata | 3% a 8% de perda em sobras e pontas |
+| Precisão | Milimétrica, por máquina | Depende da experiência da equipe |
+| Prazo de canteiro | Peça chega pronta para montar | Corte e dobra consomem dias de mão de obra própria |
+| Organização do canteiro | Sem bancada de corte, sem entulho de aço | Ocupa espaço físico e gera resíduo |
+| Investimento inicial | Zero equipamento — serviço contratado | Ferramentas de corte/dobra ou aluguel |
+| Melhor para | Obras de médio/grande porte, volume recorrente | Obras muito pequenas ou reparos pontuais |
+
+## Quando o Corte e Dobra Compensa Mais
+
+- **Obras com volume de aço recorrente** (condomínios, loteamentos, edifícios): o ganho de escala compensa o frete e o prazo de produção.
+- **Obras com prazo apertado:** eliminar a etapa de corte e dobra manual no canteiro tira dias do cronograma.
+- **Falta de armador qualificado na região:** cada vez mais comum — o corte e dobra elimina essa dependência.
+
+## Quando Vale Comparar com Cautela
+
+- **Obras pequenas e pontuais**, com poucas peças e sem repetição de projeto, onde o prazo de produção sob medida (a partir de 7 dias úteis) pode não valer a pena frente à urgência.
+- **Reparos e ajustes de última hora**, quando não há tempo para aguardar produção — nesse caso, vergalhão avulso resolve mais rápido.
+
+## Como Calcular se Compensa na Sua Obra
+
+1. Some o custo da mão de obra de armação que você deixaria de contratar.
+2. Estime o desperdício de material do método manual (normalmente 3% a 8% do volume total de aço).
+3. Compare com o prazo de produção do corte e dobra (a partir de 7 dias úteis) frente ao cronograma da obra.
+
+Na maioria dos casos de obra com volume relevante, a soma da economia de mão de obra com a redução de desperdício supera o custo do serviço.
+
+## Fale com a BR Aço
+
+Envie sua planta ou lista de materiais pelo WhatsApp e receba uma comparação de custo personalizada entre corte e dobra e vergalhão avulso para o seu projeto.`
+  },
+  {
+    id: 184,
+    slug: "quanto-custa-coluna-pronta-fatores-que-definem-o-preco",
+    category: "Coluna Pronta",
+    title: "Quanto Custa uma Coluna Pronta de Aço? Os Fatores que Definem o Preço",
+    metaDescription: "Entenda os fatores que definem o preço de uma coluna pronta de aço: seção, altura, taxa de armadura e amarração. Guia para orçar antes de pedir cotação.",
+    keyword: "quanto custa coluna pronta",
+    date: "02 Ago 2026",
+    summary: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
+    content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação, não buscar um "preço por unidade" genérico.
+
+---
+
+## Por Que Não Existe um "Preço Fixo" de Coluna Pronta
+
+Diferente de um vergalhão avulso, vendido por peça ou por kg numa bitola padrão, uma coluna pronta é um **elemento estrutural montado sob medida**: vergalhões cortados, dobrados e amarrados (ou soldados) conforme o projeto de cada pilar. O peso de aço de uma coluna varia muito conforme o cálculo estrutural — por isso qualquer "preço médio" citado sem o projeto em mãos é só uma referência grosseira, não uma cotação real.
+
+## Os Fatores que Realmente Definem o Custo
+
+| Fator | Como impacta o preço |
+|---|---|
+| Seção transversal do pilar | Pilares maiores (ex: 20×40 cm) usam mais vergalhão que pilares pequenos (ex: 20×20 cm) |
+| Bitola das barras principais | Bitolas maiores (16mm, 20mm) pesam mais por metro que bitolas menores |
+| Altura do pilar (pé-direito) | Pé-direito maior = mais metro linear de aço por peça |
+| Taxa de armadura (definida em projeto) | Pilares com maior exigência estrutural levam mais ferro por m³ de concreto |
+| Tipo de amarração | Amarração manual (corte e dobra simples) custa menos que armação soldada (CDA) |
+| Quantidade de colunas do mesmo tipo | Pedidos com peças repetidas em série tendem a ter melhor custo unitário |
+
+## Como Estimar Antes de Pedir Cotação
+
+1. **Levante a seção e a altura de cada tipo de pilar** no projeto estrutural.
+2. **Confira a taxa de armadura** especificada pelo engenheiro (normalmente em kg de aço por m³ de concreto).
+3. **Multiplique** para chegar no peso total de aço estimado da coluna.
+4. **Envie o projeto completo** para a fábrica — só assim o orçamento reflete o peso real, não uma média genérica.
+
+## Corte e Dobra ou CDA (Corte, Dobra e Armação)?
+
+- **Corte e dobra simples:** peças cortadas e dobradas na medida, a amarração final é feita pela equipe da obra.
+- **CDA — Corte, Dobra e Armação:** a coluna chega **pronta para concretar**, já montada e amarrada ou soldada na fábrica — elimina a mão de obra de armação no canteiro.
+
+## Fale com a BR Aço
+
+Envie o projeto estrutural das colunas pelo WhatsApp e receba o orçamento com o peso real de aço calculado — sem estimativa genérica.`
   }
 ];
 

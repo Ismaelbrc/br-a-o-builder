@@ -724,4 +724,34 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "prazo-de-entrega-vergalhao-corte-dobra-goias-df": {
+    answerCapsule: "A BR Aço entrega vergalhão, treliça e tela prontos em até 48h nas regiões atendidas de Goiás e DF; corte e dobra sob medida tem prazo a partir de 7 dias úteis, contado da aprovação do orçamento.",
+    faqItems: [
+      { q: "Qual o prazo de entrega de vergalhão avulso?", a: "Vergalhão, treliça, tela e malha de estoque são entregues em até 48 horas nas regiões atendidas de Goiás e Distrito Federal, a partir da fábrica em Aparecida de Goiânia." },
+      { q: "Qual o prazo do serviço de corte e dobra?", a: "Corte e dobra sob medida tem prazo a partir de 7 dias úteis, contado da aprovação do orçamento — o prazo exato depende da complexidade do projeto e do volume de peças." },
+      { q: "O prazo muda conforme a distância da obra?", a: "Para produto pronto, sim — a distância da fábrica e a rota de entrega influenciam o prazo dentro da faixa de até 48h. Para corte e dobra, o prazo é definido principalmente pela fila de produção, não pela distância." },
+      { q: "A BR Aço atende o Distrito Federal no mesmo prazo?", a: "Sim, as regiões atendidas do DF recebem produto pronto em até 48h, dentro da mesma faixa aplicada às cidades goianas mais distantes da fábrica." },
+    ],
+  },
+
+  "corte-e-dobra-compensa-vs-comprar-vergalhao-dobrado": {
+    answerCapsule: "Corte e dobra industrial compensa na maioria das obras de médio/grande porte: elimina o armador especializado, reduz o desperdício de 3-8% para quase zero e acelera o cronograma. Em obras pequenas e pontuais, vergalhão avulso pode ser mais simples.",
+    faqItems: [
+      { q: "Corte e dobra compensa para qualquer tamanho de obra?", a: "Compensa mais em obras de médio e grande porte com volume de aço recorrente. Em obras muito pequenas e pontuais, o prazo de produção sob medida pode não valer a pena frente à urgência, e vergalhão avulso resolve mais rápido." },
+      { q: "Quanto de desperdício o corte e dobra evita?", a: "O corte manual no canteiro costuma gerar de 3% a 8% de perda de material em sobras e pontas. O corte e dobra industrial corta cada peça na medida exata, reduzindo esse desperdício a praticamente zero." },
+      { q: "Corte e dobra elimina a necessidade de armador na obra?", a: "Elimina a necessidade de um armador especializado fazer o corte e a dobra manual — a peça chega pronta para montar. A amarração final na fôrma ainda é feita pela equipe da obra, a menos que se contrate o serviço de CDA (Corte, Dobra e Armação)." },
+      { q: "Como saber se compensa na minha obra?", a: "Compare o custo da mão de obra de armação que você deixaria de contratar e o desperdício típico do método manual com o prazo de produção do corte e dobra (a partir de 7 dias úteis) frente ao cronograma da sua obra." },
+    ],
+  },
+
+  "quanto-custa-coluna-pronta-fatores-que-definem-o-preco": {
+    answerCapsule: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção transversal, altura do pilar, taxa de armadura do projeto e tipo de amarração. A forma correta de orçar é enviar o projeto estrutural, não buscar um preço médio genérico.",
+    faqItems: [
+      { q: "Quanto custa uma coluna pronta de aço?", a: "Não existe um preço fixo por unidade — o custo depende da seção transversal do pilar, da bitola das barras, da altura, da taxa de armadura definida em projeto e do tipo de amarração. É preciso enviar o projeto estrutural para cotação real." },
+      { q: "Por que colunas de mesma altura têm preços diferentes?", a: "Porque o peso de aço não depende só da altura — a seção transversal do pilar e a taxa de armadura definida pelo engenheiro (kg de aço por m³ de concreto) variam conforme a exigência estrutural de cada projeto." },
+      { q: "Como estimar o custo antes de pedir orçamento?", a: "Levante a seção e a altura de cada tipo de pilar, confira a taxa de armadura do projeto estrutural e multiplique para chegar a uma estimativa de peso de aço — depois envie o projeto completo para a cotação real." },
+      { q: "Qual a diferença entre coluna com corte e dobra simples e CDA?", a: "No corte e dobra simples, as peças chegam cortadas e dobradas e a amarração final é feita pela equipe da obra. No CDA (Corte, Dobra e Armação), a coluna chega pronta para concretar, já amarrada ou soldada na fábrica." },
+    ],
+  },
+
 };
