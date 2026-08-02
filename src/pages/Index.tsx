@@ -3,6 +3,8 @@ import { analytics } from '@/lib/analytics';
 import { openWhatsApp } from '@/lib/whatsapp';
 import { Home, Zap, CheckCircle, ArrowRight, Calculator, Weight, Scissors } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { ID, webPageNode } from '@/lib/schema';
 import Layout from '@/components/Layout';
 import Eyebrow from '@/components/Eyebrow';
 import DifferentialsSection from '@/components/home/DifferentialsSection';
@@ -28,6 +30,17 @@ const Index = () => {
     canonical: 'https://grupobraco.com.br/',
     keywords: 'corte e dobra goiânia, vergalhão goiás, aço construção civil goiânia, ca-50 goiânia, treliça metálica goiás',
   });
+
+  // Home é a URL mais forte do site — antes não fazia nenhuma afirmação de
+  // entidade além do bloco global (ver schemaCatalog.ts / index.html).
+  useJsonLd('home-schema', [
+    webPageNode({
+      canonical: 'https://grupobraco.com.br/',
+      name: 'BR Aço | Corte e Dobra Industrial em Goiânia e Goiás',
+      description: 'O melhor corte e dobra industrial de Goiás. Vergalhões CA-25, CA-50, CA-60, treliças, telas e malhas. Entrega em até 48h com certificação ABNT NBR 7480.',
+      mainEntity: ID.service('corte-e-dobra'),
+    }),
+  ]);
 
   const scrollToProducts = () => {
     const productsSection = document.getElementById('produtos');

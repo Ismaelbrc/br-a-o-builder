@@ -139,7 +139,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>R. 11, Quadra 05 - Lote 07 - Polo Industrial, Aparecida de Goiânia - GO, 74985-235</span>
+                <span>Rua 11, Qd. 05, L7. 07 - Polo Industrial, Aparecida de Goiânia - GO, 74985-235</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />

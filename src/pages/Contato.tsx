@@ -47,7 +47,7 @@ const contactCards = [
     iconColor: 'text-brand-orange',
     borderColor: 'hover:border-brand-orange/50',
     title: 'Endereço',
-    text: 'R. 11, Q. 05, Lote 07 — Polo Industrial',
+    text: 'Rua 11, Qd. 05, L7. 07 - Polo Industrial',
     subtext: 'Aparecida de Goiânia - GO',
     href: 'https://www.google.com/maps/search/BR+Aço+Aparecida+de+Goiânia',
   },
@@ -467,7 +467,7 @@ export default function Contato() {
             />
           </div>
           <p className="text-center text-sm text-gray-500 mt-3">
-            R. 11, Quadra 05 - Lote 07 - Polo Industrial — Aparecida de Goiânia - GO, 74985-235
+            Rua 11, Qd. 05, L7. 07 - Polo Industrial — Aparecida de Goiânia - GO, 74985-235
           </p>
         </div>
       </section>

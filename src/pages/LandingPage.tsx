@@ -6,6 +6,8 @@ import { useSEO } from '@/hooks/useSEO';
 import { useClarityLP } from '@/hooks/useClarityLP';
 import { landingProducts } from '@/data/landingProducts';
 import { landingLocations, getDeliveryLabel } from '@/data/landingLocations';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode, placeNode } from '@/lib/schema';
 import { analytics } from '@/lib/analytics';
 
 const WA_BASE = 'https://wa.me/556299032023?text=';
@@ -38,85 +40,63 @@ export default function LandingPage() {
     noindex:     !(location?.uniqueContent && CORE_PRODUCTS.includes(productSlug)), // indexa só produto core em cidade com conteúdo único
   });
 
-  // Schemas JSON-LD: FAQPage + BreadcrumbList + LocalBusiness
+  // JSON-LD: WebPage + BreadcrumbList + FAQPage + Place, mais "remendos" (patch)
+  // que ligam o Service/Product canônico (grafo raiz, ver schemaCatalog.ts) e o
+  // #localbusiness a este local via areaServed — sem criar um novo LocalBusiness
+  // por LP (era a causa da inconsistência de NAP em 193 URLs — ver CLAUDE.md
+  // deste repo / plano de grafo de entidades).
+  const canonicalUrl = isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : '';
+  const productNodeId = isValid
+    ? (product!.schemaKind === 'Service' ? ID.service(productSlug) : ID.product(productSlug))
+    : '';
+
+  const jsonLdNodes: object[] = isValid
+    ? [
+        webPageNode({
+          canonical: canonicalUrl,
+          name: product!.pageTitle(displayCity),
+          description: product!.metaDesc(displayCity, stateLabel),
+          about: productNodeId,
+          breadcrumbId: `${canonicalUrl}#breadcrumb`,
+        }),
+        breadcrumbNode(canonicalUrl, [
+          { name: 'Home', item: 'https://grupobraco.com.br/' },
+          { name: product!.name, item: `https://grupobraco.com.br/${productSlug}/goiania` },
+          { name: displayCity, item: canonicalUrl },
+        ]),
+        faqPageNode(
+          canonicalUrl,
+          product!.faq.map(item => ({ q: item.q(cityName), a: item.a(cityName, deliveryLabel) })),
+          productNodeId
+        ),
+        placeNode({ slug: locationSlug, name: displayCity, city: location!.city, state: stateLabel }),
+        // Remendos: não criam nó novo, só ligam o Service/Product e o
+        // #localbusiness canônicos a este Place via @id.
+        patch(productNodeId, { areaServed: ref(ID.place(locationSlug)) }),
+        patch(ID.localBusiness, { areaServed: ref(ID.place(locationSlug)) }),
+        ...(product!.schemaKind === 'Product'
+          ? [
+              patch(productNodeId, {
+                offers: {
+                  '@type': 'Offer',
+                  seller: ref(ID.organization),
+                  areaServed: ref(ID.place(locationSlug)),
+                  availability: 'https://schema.org/InStock',
+                  priceCurrency: 'BRL',
+                },
+              }),
+            ]
+          : []),
+      ]
+    : [];
+
+  useJsonLd('lp-schema', jsonLdNodes);
+
   useEffect(() => {
     if (!isValid) return;
-
-    const canonicalUrl = `https://grupobraco.com.br/${productSlug}/${locationSlug}`;
-
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": product!.faq.map(item => ({
-        "@type": "Question",
-        "name": item.q(cityName),
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.a(cityName, deliveryLabel)
-        }
-      }))
-    };
-
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home",           "item": "https://grupobraco.com.br/" },
-        { "@type": "ListItem", "position": 2, "name": product!.name,    "item": `https://grupobraco.com.br/${productSlug}/goiania` },
-        { "@type": "ListItem", "position": 3, "name": displayCity,      "item": canonicalUrl }
-      ]
-    };
-
-    const localBusinessSchema = {
-      "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "HardwareStore"],
-      "name": "BR Aço – Casa Brasileira de Aço",
-      "description": product!.metaDesc(displayCity, stateLabel),
-      "url": canonicalUrl,
-      "telephone": "+55-62-9903-2023",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua 11, Qd. 05, L7. 07 - Polo Industrial",
-        "addressLocality": "Aparecida de Goiânia",
-        "addressRegion": "GO",
-        "postalCode": "74985-235",
-        "addressCountry": "BR"
-      },
-      "areaServed": [
-        { "@type": "City", "name": cityName },
-        { "@type": "State", "name": "Goiás" }
-      ],
-      "sameAs": [
-        "https://www.instagram.com/grupobraco_",
-        "https://www.facebook.com/bracogoiania/"
-      ]
-    };
-
-    const inject = (id: string, data: object) => {
-      let el = document.getElementById(id);
-      if (!el) {
-        el = document.createElement('script');
-        el.id = id;
-        (el as HTMLScriptElement).type = 'application/ld+json';
-        document.head.appendChild(el);
-      }
-      el.textContent = JSON.stringify(data);
-    };
-
-    inject('lp-faq-schema', faqSchema);
-    inject('lp-breadcrumb-schema', breadcrumbSchema);
-    inject('lp-localbusiness-schema', localBusinessSchema);
-
     // Analytics — ViewContent para Meta Pixel e GA4
     analytics.viewContent(`${product!.name} - ${displayCity}`);
-
-    return () => {
-      document.getElementById('lp-faq-schema')?.remove();
-      document.getElementById('lp-breadcrumb-schema')?.remove();
-      document.getElementById('lp-localbusiness-schema')?.remove();
-    };
-  }, [isValid, productSlug, locationSlug, cityName, displayCity, stateLabel, deliveryLabel]);
+  }, [isValid, productSlug, locationSlug, displayCity]);
 
   // Clarity LP tracking — must be called unconditionally (hook rules)
   useClarityLP({ pageName: `lp-${productSlug || 'unknown'}` });

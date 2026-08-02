@@ -5,7 +5,11 @@ import Eyebrow from '@/components/Eyebrow';
 import SectionIntro from '@/components/SectionIntro';
 import { useSEO } from '@/hooks/useSEO';
 import { Calculator, MessageCircle, ChevronRight, Ruler, Weight, Boxes, GraduationCap } from 'lucide-react';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { ID, ref } from '@/lib/schema';
 import { analytics } from '@/lib/analytics';
+
+const CALC_CANONICAL = 'https://grupobraco.com.br/calculadora-vergalhao';
 
 // Tabela de pesos CA-50 por diâmetro (kg/m) — ABNT NBR 7480
 const diametros = [
@@ -83,25 +87,22 @@ export default function CalculadoraVergalhao() {
     keywords: 'tabela de peso do vergalhão, calculadora vergalhão, peso vergalhão CA-50, calcular vergalhão laje, vergalhão kg por metro, ABNT NBR 7480',
   });
 
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Calculadora de Vergalhão BR Aço",
-      "url": "https://grupobraco.com.br/calculadora-vergalhao",
-      "description": "Calcule a quantidade e o peso de vergalhão para laje, pilar ou viga. Calculadora gratuita para CA-50 e CA-60.",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "Web",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
-      "provider": { "@type": "Organization", "name": "BR Aço – Casa Brasileira de Aço", "url": "https://grupobraco.com.br" }
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'calc-schema';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => { document.getElementById('calc-schema')?.remove(); };
-  }, []);
+  useJsonLd('calc-schema', [
+    {
+      '@type': 'WebApplication',
+      '@id': `${CALC_CANONICAL}#app`,
+      name: 'Calculadora de Vergalhão BR Aço',
+      url: CALC_CANONICAL,
+      description: 'Calcule a quantidade e o peso de vergalhão para laje, pilar ou viga. Calculadora gratuita para CA-50 e CA-60.',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+      provider: ref(ID.organization),
+      creator: ref(ID.person),
+      isPartOf: ref(ID.website),
+      about: ref(ID.product('vergalhao')),
+    },
+  ]);
 
   // ── Calc 1: Peso por quantidade ──
   const [qtdBarras, setQtdBarras] = useState('50');

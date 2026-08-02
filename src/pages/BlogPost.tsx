@@ -1,5 +1,4 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
@@ -7,6 +6,9 @@ import { blogPosts } from '@/data/blogPosts';
 import { blogPostsGeo } from '@/data/blogPostsGeo';
 import { useSEO } from '@/hooks/useSEO';
 import { useClarityContent } from '@/hooks/useClarityContent';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { articleNode, breadcrumbNode, faqPageNode, webPageNode } from '@/lib/schema';
+import { aboutFor } from '@/lib/schemaTopics';
 import { analytics } from '@/lib/analytics';
 
 // ─── Markdown content renderer ────────────────────────────────────────────────
@@ -220,101 +222,45 @@ function BlogPostContent({ slug }: { slug: string }) {
   useClarityContent({ slug: post.slug, category: post.category });
 
   const geo = blogPostsGeo[post.slug];
+  const aboutId = aboutFor(post.slug, post.category);
 
-  // Article + BreadcrumbList + FAQPage JSON-LD
-  useEffect(() => {
-    const articleSchema = {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": post.title,
-      "description": post.metaDescription,
-      "author": {
-        "@type": "Person",
-        "@id": "https://grupobraco.com.br/#person-ismael",
-        "name": "Ismael Cavalcante",
-        "url": "https://grupobraco.com.br/sobre#ismael-cavalcante",
-        "jobTitle": "CEO e Diretor Comercial"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "BR Aço – Casa Brasileira de Aço",
-        "url": "https://grupobraco.com.br",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://grupobraco.com.br/favicon.png"
-        }
-      },
-      "datePublished": publishedTime,
-      "dateModified": publishedTime,
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": canonicalUrl
-      },
-      "keywords": post.keyword,
-      "articleSection": post.category,
-      "inLanguage": "pt-BR"
-    };
+  // WebPage + Article + BreadcrumbList + FAQPage — um único @graph, nós
+  // referenciando #organization/#person-ismael/#blog por @id (ver schema.ts).
+  const jsonLdNodes: object[] = [
+    webPageNode({
+      canonical: canonicalUrl,
+      name: post.title,
+      description: post.metaDescription,
+      about: aboutId,
+      breadcrumbId: `${canonicalUrl}#breadcrumb`,
+    }),
+    articleNode({
+      canonical: canonicalUrl,
+      headline: post.title,
+      description: post.metaDescription,
+      datePublished: publishedTime,
+      keywords: post.keyword,
+      articleSection: post.category,
+      aboutId,
+    }),
+    breadcrumbNode(canonicalUrl, [
+      { name: 'Home', item: 'https://grupobraco.com.br/' },
+      { name: 'Blog', item: 'https://grupobraco.com.br/blog' },
+      { name: post.title, item: canonicalUrl },
+    ]),
+  ];
 
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://grupobraco.com.br/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://grupobraco.com.br/blog"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": post.title,
-          "item": canonicalUrl
-        }
-      ]
-    };
+  if (geo?.faqItems?.length) {
+    jsonLdNodes.push(
+      faqPageNode(
+        canonicalUrl,
+        geo.faqItems.map(({ q, a }) => ({ q, a })),
+        aboutId
+      )
+    );
+  }
 
-    const articleScript = document.createElement('script');
-    articleScript.type = 'application/ld+json';
-    articleScript.id = 'article-schema';
-    articleScript.textContent = JSON.stringify(articleSchema);
-    document.head.appendChild(articleScript);
-
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.id = 'breadcrumb-schema';
-    breadcrumbScript.textContent = JSON.stringify(breadcrumbSchema);
-    document.head.appendChild(breadcrumbScript);
-
-    if (geo?.faqItems?.length) {
-      const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": geo.faqItems.map(({ q, a }) => ({
-          "@type": "Question",
-          "name": q,
-          "acceptedAnswer": { "@type": "Answer", "text": a },
-        })),
-      };
-      const faqScript = document.createElement('script');
-      faqScript.type = 'application/ld+json';
-      faqScript.id = 'faq-schema';
-      faqScript.textContent = JSON.stringify(faqSchema);
-      document.head.appendChild(faqScript);
-    }
-
-    return () => {
-      document.getElementById('article-schema')?.remove();
-      document.getElementById('breadcrumb-schema')?.remove();
-      document.getElementById('faq-schema')?.remove();
-    };
-  }, [post.slug, geo]);
+  useJsonLd('blogpost-schema', jsonLdNodes);
 
   // Get related posts (same category, excluding current)
   const relatedPosts = blogPosts

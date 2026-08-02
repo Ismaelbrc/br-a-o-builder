@@ -1,7 +1,25 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import { rootGraphHtml } from "./src/lib/schemaCatalog";
+
+/** Injeta o grafo raiz de schema.org (Organization/LocalBusiness/Person +
+ *  catálogo Service/Product) no lugar do sentinela <!--@schema-root--> em
+ *  index.html. Roda em dev e build — dist/index.html é o shell congelado
+ *  que scripts/prerender.ts serve pra toda navegação (ver CLAUDE.md deste
+ *  repo), então isto garante que todo snapshot carrega o grafo completo. */
+function schemaGraphPlugin(): Plugin {
+  return {
+    name: "br-aco-schema-graph",
+    transformIndexHtml(html) {
+      // Replacer como função (não string): evita que padrões especiais de
+      // String.replace (ex. "$$" → "$" literal) corrompam o JSON injetado —
+      // foi assim que "priceRange":"$$" virou "$" na primeira versão disto.
+      return html.replace("<!--@schema-root-->", () => rootGraphHtml());
+    },
+  };
+}
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -12,7 +30,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react(), schemaGraphPlugin(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

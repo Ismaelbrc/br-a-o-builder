@@ -1,10 +1,14 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import Layout from '@/components/Layout';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useSEO } from '@/hooks/useSEO';
 import { Search, MessageCircle, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { ID, webPageNode, breadcrumbNode, faqPageNode } from '@/lib/schema';
 import { analytics } from '@/lib/analytics';
+
+const FAQ_CANONICAL = 'https://grupobraco.com.br/faq';
 
 const WHATSAPP = 'https://wa.me/556299032023?text=%5Bsrc%3Afaq%5D%20Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20produtos%20da%20BR%20A%C3%A7o.';
 
@@ -164,24 +168,24 @@ export default function Faq() {
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
-  useEffect(() => {
-    const allFaqs = faqCategories.flatMap(cat => cat.faqs);
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": allFaqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-      }))
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-page-schema';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => { document.getElementById('faq-page-schema')?.remove(); };
-  }, []);
+  const allFaqs = faqCategories.flatMap(cat => cat.faqs);
+  useJsonLd('faq-page-schema', [
+    webPageNode({
+      canonical: FAQ_CANONICAL,
+      name: 'FAQ | Perguntas Frequentes sobre Aço para Construção | BR Aço',
+      about: ID.organization,
+      breadcrumbId: `${FAQ_CANONICAL}#breadcrumb`,
+    }),
+    breadcrumbNode(FAQ_CANONICAL, [
+      { name: 'Home', item: 'https://grupobraco.com.br/' },
+      { name: 'FAQ', item: FAQ_CANONICAL },
+    ]),
+    faqPageNode(
+      FAQ_CANONICAL,
+      allFaqs.map(f => ({ q: f.question, a: f.answer })),
+      ID.organization
+    ),
+  ]);
 
   const filteredCategories = useMemo(() => {
     const term = search.toLowerCase().trim();

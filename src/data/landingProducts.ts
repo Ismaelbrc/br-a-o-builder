@@ -1,6 +1,13 @@
 // Dados dos produtos para landing pages programáticas
 // Template usa {city} = nome da cidade/bairro, {state} = UF
 
+/** Como o item entra no grafo schema.org (ver src/lib/schemaCatalog.ts).
+ *  'Service'  → beneficiamento sobre spec do cliente, sem SKU (corte-e-dobra)
+ *  'Product'  → bem físico entregue (vergalhão, coluna, treliça...)
+ *  'BusinessFacet' → página de formato de busca/varejo (ferragista, ferragens...),
+ *                    não é algo que a BR Aço "vende" como item — não gera nó de catálogo */
+export type SchemaKind = 'Service' | 'Product' | 'BusinessFacet';
+
 export type LandingProduct = {
   slug: string;
   name: string;         // "Vergalhão"
@@ -8,6 +15,8 @@ export type LandingProduct = {
   verb: string;         // "Comprar" | "Solicitar" | "Pedir"
   preposition: string;  // "em" | "para"
   shortDesc: string;    // 1 linha para pills/badges
+  schemaKind: SchemaKind;
+  schemaCategory: string; // nome canônico do serviceType/category, independe da cidade
   metaDesc: (city: string, state: string) => string;
   h1: (city: string) => string;
   intro: (city: string, state: string, deliveryLabel: string) => string;
@@ -27,6 +36,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Solicitar',
     preposition: 'em',
     shortDesc: 'Aço cortado e dobrado conforme seu projeto',
+    schemaKind: 'Service',
+    schemaCategory: 'Corte e Dobra de Vergalhão',
     pageTitle: (city) => `Corte e Dobra de Vergalhão em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Corte e dobra de vergalhão em ${city} – ${state}. Produção industrial automatizada, entrega em até 48h, peças etiquetadas por elemento. Solicite orçamento grátis.`,
@@ -74,6 +85,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'CA-25, CA-50 e CA-60 com certificação ABNT',
+    schemaKind: 'Product',
+    schemaCategory: 'Vergalhão',
     pageTitle: (city) => `Vergalhão em ${city} | BR Aço – CA-50 e CA-60`,
     metaDesc: (city, state) =>
       `Vergalhão CA-50 e CA-60 em ${city} – ${state}. Todos os diâmetros de 6,3 mm a 40 mm, certificação ABNT NBR 7480, entrega em até 48h. Solicite orçamento.`,
@@ -121,6 +134,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Coluna pronta para obra — pilar com armadura completa',
+    schemaKind: 'Product',
+    schemaCategory: 'Coluna Pronta',
     pageTitle: (city) => `Coluna Pronta em ${city} | BR Aço – Pilar Pré-Montado`,
     metaDesc: (city, state) =>
       `Coluna pronta em ${city} – ${state}. Pilar pré-montado com barras longitudinais CA-50 e estribos dobrados, entrega em até 48h. Solicite orçamento na BR Aço.`,
@@ -160,6 +175,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Barras CA-50 e CA-60 em todos os diâmetros',
+    schemaKind: 'Product',
+    schemaCategory: 'Barra de Aço',
     pageTitle: (city) => `Barra de Aço em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Barras de aço CA-50 e CA-60 em ${city} – ${state}. Diâmetros de 6,3 mm a 40 mm, barras de 12 m, certificação ABNT. Entrega rápida. Orçamento grátis.`,
@@ -199,6 +216,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Malha pop para lajes e contrapisos',
+    schemaKind: 'Product',
+    schemaCategory: 'Malha de Aço',
     pageTitle: (city) => `Malha de Aço em ${city} | BR Aço – Malha Pop`,
     metaDesc: (city, state) =>
       `Malha de aço (malha pop) em ${city} – ${state}. Ideal para lajes, contrapisos e pisos industriais. Entrega rápida com certificação ABNT. Solicite orçamento.`,
@@ -238,6 +257,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Telas soldadas CA-60 para lajes e pisos',
+    schemaKind: 'Product',
+    schemaCategory: 'Tela Soldada',
     pageTitle: (city) => `Tela Soldada em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Tela soldada CA-60 em ${city} – ${state}. Para lajes, pisos industriais e contrapisos. Painéis 2×3 m e 2×6 m. Certificação ABNT. Entrega rápida.`,
@@ -277,6 +298,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Treliças T6, T8, T10 e T12 para laje treliçada',
+    schemaKind: 'Product',
+    schemaCategory: 'Treliça Metálica',
     pageTitle: (city) => `Treliça Metálica em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Treliças metálicas T6, T8, T10 e T12 em ${city} – ${state}. Para lajes treliçadas conforme ABNT NBR 14859. Entrega rápida. Solicite orçamento na BR Aço.`,
@@ -316,6 +339,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Pregos para obra em todos os tamanhos',
+    schemaKind: 'Product',
+    schemaCategory: 'Prego',
     pageTitle: (city) => `Prego para Construção em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Pregos para construção civil em ${city} – ${state}. Todos os tamanhos para formas, madeiramento, acabamento. Venda por kg. Entrega rápida. Solicite orçamento.`,
@@ -355,6 +380,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Arame recozido e farpado para obra',
+    schemaKind: 'Product',
+    schemaCategory: 'Arame',
     pageTitle: (city) => `Arame para Construção em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Arame recozido e farpado para construção civil em ${city} – ${state}. Para amarração de armadura, telas e cercas. Venda por kg. Entrega rápida.`,
@@ -394,6 +421,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Encontrar',
     preposition: 'em',
     shortDesc: 'Vergalhão, treliças e malhas com entrega rápida',
+    schemaKind: 'BusinessFacet',
+    schemaCategory: 'Ferragista',
     pageTitle: (city) => `Ferragista em ${city} | BR Aço – Vergalhão e Ferragens`,
     metaDesc: (city, state) =>
       `Ferragista em ${city} – ${state}. BR Aço: vergalhão CA-50 e CA-60, treliças, malhas e corte e dobra industrial. Entrega rápida, certificação ABNT. Solicite orçamento.`,
@@ -437,6 +466,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Vergalhão, treliças, malhas e pregos para obra',
+    schemaKind: 'BusinessFacet',
+    schemaCategory: 'Ferragens',
     pageTitle: (city) => `Ferragens em ${city} | BR Aço – Aço para Construção`,
     metaDesc: (city, state) =>
       `Ferragens para construção civil em ${city} – ${state}. Vergalhão CA-50, treliças, malhas, arames e pregos. Entrega rápida com certificação ABNT. Solicite orçamento BR Aço.`,
@@ -480,6 +511,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Distribuição de ferro e aço para obras em Goiás',
+    schemaKind: 'BusinessFacet',
+    schemaCategory: 'Ferro e Aço',
     pageTitle: (city) => `Ferro e Aço em ${city} | BR Aço – Distribuidora`,
     metaDesc: (city, state) =>
       `Ferro e aço para construção civil em ${city} – ${state}. Distribuidora BR Aço: vergalhão CA-50 e CA-60, treliças, malhas. Corte e dobra industrial. Entrega rápida.`,
@@ -523,6 +556,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'O aço da sua obra: vergalhão, treliças e malhas',
+    schemaKind: 'BusinessFacet',
+    schemaCategory: 'Material de Construção',
     pageTitle: (city) => `Material de Construção em ${city} | BR Aço – Aço Estrutural`,
     metaDesc: (city, state) =>
       `Material de construção (aço) em ${city} – ${state}. BR Aço: vergalhão CA-50, treliças, malhas, arames e pregos com entrega rápida. Especialistas em aço estrutural para obras.`,
@@ -566,6 +601,8 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Solicitar',
     preposition: 'em',
     shortDesc: 'Distribuição direta de ferro e aço para obras',
+    schemaKind: 'BusinessFacet',
+    schemaCategory: 'Distribuidora de Ferro',
     pageTitle: (city) => `Distribuidora de Ferro em ${city} | BR Aço`,
     metaDesc: (city, state) =>
       `Distribuidora de ferro e aço em ${city} – ${state}. BR Aço: vergalhão CA-50, treliças, malhas e corte e dobra industrial. Entrega rápida com laudo de qualidade.`,

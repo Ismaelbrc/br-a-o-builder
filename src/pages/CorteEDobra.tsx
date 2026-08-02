@@ -15,6 +15,10 @@ import {
 import frotaImage from '@/assets/frota-propria.jpg';
 import { analytics } from '@/lib/analytics';
 import { useClarityLP } from '@/hooks/useClarityLP';
+import { useJsonLd } from '@/hooks/useJsonLd';
+import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode } from '@/lib/schema';
+
+const CDA_CANONICAL = 'https://grupobraco.com.br/corte-e-dobra';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {
@@ -636,23 +640,41 @@ export default function CorteEDobra() {
   useClarityLP({ pageName: 'corte-e-dobra' });
   useEffect(() => { analytics.viewContent('Corte e Dobra'); }, []);
 
-  useEffect(() => {
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqData.map(({ question, answer }) => ({
-        "@type": "Question",
-        "name": question,
-        "acceptedAnswer": { "@type": "Answer", "text": answer },
-      })),
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-cda-schema';
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-    return () => { document.getElementById('faq-cda-schema')?.remove(); };
-  }, []);
+  // Esta página é a dona do #service-corte-e-dobra (grafo raiz, ver
+  // schemaCatalog.ts) — o patch abaixo enriquece o nó canônico com o
+  // detalhamento que é pesado demais pro bloco global (features, audience).
+  useJsonLd('cda-schema', [
+    webPageNode({
+      canonical: CDA_CANONICAL,
+      name: 'Corte e Dobra de Vergalhão | BR Aço',
+      description: 'Corte e dobra industrial de vergalhão em Goiás e Distrito Federal — reduza 50% da mão de obra na sua obra.',
+      mainEntity: ID.service('corte-e-dobra'),
+      breadcrumbId: `${CDA_CANONICAL}#breadcrumb`,
+    }),
+    breadcrumbNode(CDA_CANONICAL, [
+      { name: 'Home', item: 'https://grupobraco.com.br/' },
+      { name: 'Produtos', item: 'https://grupobraco.com.br/produtos' },
+      { name: 'Corte e Dobra', item: CDA_CANONICAL },
+    ]),
+    faqPageNode(
+      CDA_CANONICAL,
+      faqData.map(({ question, answer }) => ({ q: question, a: answer })),
+      ID.service('corte-e-dobra')
+    ),
+    patch(ID.service('corte-e-dobra'), {
+      description: 'Corte e dobra industrial de vergalhão: peças cortadas e dobradas conforme o projeto estrutural, identificadas por elemento, com redução de até 50% na mão de obra de armação e zero desperdício de pontas.',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Vantagens do Corte e Dobra BR Aço',
+        itemListElement: advantages.map(a => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: a.title, description: a.description },
+        })),
+      },
+      audience: { '@type': 'Audience', audienceType: 'Construtoras, incorporadoras, engenheiros civis e autoconstrutores' },
+      provider: ref(ID.organization),
+    }),
+  ]);
 
   return (
     <Layout>
