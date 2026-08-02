@@ -12427,6 +12427,80 @@ A fabricação da coluna pronta segue os parâmetros da **NBR 6118:2014**, em es
 ## Fale com a BR Aço
 
 Se sua obra tem pilares de seção constante e projeto estrutural pronto, a BR Aço fabrica a armadura já montada — barras longitudinais CA-50, estribos dobrados a 135° e espaçamento conforme a NBR 6118. Envie o projeto de pilares pelo WhatsApp e receba orçamento de coluna pronta.`
+  },
+  {
+    id: 176,
+    slug: "vergalhao-corte-dobra-plano-piloto-brasilia",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra no Plano Piloto de Brasília: Reformas em Superquadra",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para reformas estruturais e retrofit no Plano Piloto de Brasília. Entenda como o tombamento do IPHAN muda o tipo de obra e o que isso significa para o aço.",
+    keyword: "vergalhão corte e dobra Plano Piloto Brasília",
+    date: "01 Ago 2026",
+    summary: "O Plano Piloto de Brasília tem um mercado de construção diferente do resto do DF: tombamento do IPHAN limita obra nova e concentra a demanda em reforma estrutural e retrofit — veja como isso muda a compra de vergalhão e corte e dobra.",
+    content: `**Em resumo:** Como Patrimônio Mundial da Unesco, o Plano Piloto é tombado pelo IPHAN e as superquadras têm regras rígidas de altura e fachada — isso limita construção nova e concentra a demanda por aço em reformas estruturais, retrofit de fachada e obras nos setores comerciais e institucionais. A BR Aço atende esse perfil com vergalhão CA-50/CA-60 e corte e dobra sob medida. ⚠️ Dado a confirmar com o cliente: viabilidade de reforma estrutural depende de aprovação prévia junto ao IPHAN/Terracap conforme o caso.
+
+---
+
+## Um Mercado de Construção Diferente do Resto do DF
+
+Enquanto Regiões Administrativas como Ceilândia, Samambaia e Águas Claras crescem com obra nova — residencial, condomínio, torre vertical —, o Plano Piloto segue uma lógica oposta. O conjunto urbanístico projetado por Lucio Costa foi inscrito no Livro de Tombo Histórico pelo IPHAN em 1990 e reconhecido pela Unesco como Patrimônio Mundial em 1987. As superquadras (SQN e SQS) têm regras específicas: prédios de no máximo seis pavimentos, pilotis livres na base e fachada padronizada — o que restringe fortemente a construção de edifícios novos dentro da área tombada.
+
+Na prática, isso significa que a maior parte da demanda por aço no Plano Piloto não vem de fundação de prédio novo, mas de **reforma estrutural** em edifícios das superquadras, **retrofit de fachada**, e obras nos setores onde a restrição é menor — Setor Comercial Sul e Norte, Setor de Autarquias e Setor Hoteleiro.
+
+## O Que Muda na Compra de Vergalhão para Reforma
+
+Reforma estrutural em edifício ocupado tem particularidades que uma obra nova não tem:
+
+| Critério | Obra nova | Reforma estrutural em superquadra |
+|---|---|---|
+| Volume por pedido | Alto, concentrado nas etapas de fundação e estrutura | Menor, fracionado por trecho da obra |
+| Urgência de prazo | Segue o cronograma da obra | Alta — edifício ocupado, janela de intervenção curta |
+| Corte e dobra | Recomendado para padronizar produção em série | Essencial — pouco espaço no canteiro para cortar/dobrar manualmente |
+| Logística de entrega | Caminhão grande, acesso amplo | Acesso restrito de superquadra, entrega fracionada |
+
+O corte e dobra industrial se torna praticamente obrigatório nesse cenário: sem espaço para bancada de corte dentro de uma superquadra ocupada, a peça precisa chegar já na medida exata, identificada por posição, pronta para a equipe posicionar e concretar.
+
+## Rota e Prazo de Entrega
+
+O Plano Piloto fica a cerca de 210 km da fábrica da BR Aço em Aparecida de Goiânia, com acesso via BR-060 e DF-003 (EPTG), tempo médio de viagem de 2h50min. Isso coloca o Plano Piloto na faixa de entrega de até 48h — mesmo prazo aplicado às demais obras do Distrito Federal atendidas pela BR Aço.
+
+## Fale com a BR Aço
+
+Reforma estrutural, retrofit de fachada ou obra em setor comercial no Plano Piloto: a BR Aço fornece vergalhão CA-50 e CA-60 certificado conforme a NBR 7480 e corte e dobra sob medida, com peças identificadas por posição para reduzir o tempo de intervenção. Envie o projeto pelo WhatsApp e receba orçamento.`
+  },
+  {
+    id: 177,
+    slug: "vergalhao-corte-dobra-planaltina-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em Planaltina (DF): Loteamentos em Expansão",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para loteamentos e condomínios horizontais em Planaltina (DF), entregues via BR-020/DF-128. Veja bitolas, prazo de entrega e perfil de obra da região.",
+    keyword: "vergalhão corte e dobra Planaltina DF",
+    date: "01 Ago 2026",
+    summary: "Planaltina é uma das principais frentes de expansão urbana do Distrito Federal — veja como o crescimento de loteamentos e condomínios horizontais na região muda a demanda por vergalhão e corte e dobra.",
+    content: `**Em resumo:** Planaltina é uma das Regiões Administrativas que mais crescem no Distrito Federal, com expansão constante de loteamentos e condomínios horizontais no Setor Tradicional, Vila Buritis e Jardim Roriz. A BR Aço entrega vergalhão CA-50 e corte e dobra na região a partir da fábrica em Aparecida de Goiânia. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem, que varia conforme o ponto de destino dentro da RA.
+
+---
+
+## Uma das Frentes de Expansão do DF
+
+Planaltina é hoje, com Ceilândia e Samambaia, uma das Regiões Administrativas que puxam o crescimento urbano do Distrito Federal. A abertura contínua de novos loteamentos residenciais no Setor Tradicional, na Vila Buritis, no Jardim Roriz (Setor Norte) e na Vila Nossa Senhora de Fátima segue um padrão de obra parecido com o das cidades do entorno goiano que a BR Aço já atende: autoconstrução residencial convivendo lado a lado com pequenas construtoras locais.
+
+O perfil de obra predominante é o de casas populares, sobrados e condomínios horizontais — diferente da construção vertical concentrada em regiões como Águas Claras. Isso muda a curva de bitola: a demanda em Planaltina se concentra em vergalhões de menor diâmetro (6,3 mm a 12,5 mm), com uso mais pontual de bitolas grossas para fundações maiores.
+
+## Vergalhão Avulso ou Corte e Dobra em Planaltina?
+
+Para quem constrói em loteamento novo, a escolha entre comprar a barra inteira e fazer corte e dobra industrial depende do porte da obra:
+
+- **Autoconstrução e obras pequenas:** o corte e dobra reduz a dependência de mão de obra especializada de armação, que costuma ser mais escassa fora do centro do DF. A peça chega já na medida certa, sem exigir um armador experiente no canteiro.
+- **Pequenas construtoras com obras repetidas:** padronizar via corte e dobra acelera a montagem em casas com projeto repetido — o mesmo ganho de tempo que já se aplica aos loteamentos das cidades goianas do entorno.
+
+## Rota e Prazo de Entrega
+
+Planaltina fica a cerca de 240 km da fábrica da BR Aço em Aparecida de Goiânia, com acesso via BR-020 e DF-128, tempo médio de viagem de 3h10min. Mesmo nessa distância, a região está dentro da faixa de entrega de até 48h da BR Aço.
+
+## Fale com a BR Aço
+
+Loteamento novo, condomínio horizontal ou autoconstrução em Planaltina: a BR Aço fornece vergalhão CA-50 certificado conforme a NBR 7480 e serviço de corte e dobra sob medida. Envie a planta ou a lista de materiais pelo WhatsApp e receba orçamento em até 24h.`
   }
 ];
 

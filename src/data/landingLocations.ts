@@ -151,11 +151,29 @@ const locations: LandingLocation[] = [
   city('ceres',                 'Ceres',                  'GO', 170,  'Goiás'),
 
   // ── Regiões Administrativas do DF (33) ────────────────────────────────
-  region('brasilia',          'Brasília',            210),
+  {
+    ...region('brasilia', 'Brasília', 210),
+    uniqueContent: {
+      marketContext: 'O Plano Piloto tem um mercado de construção diferente do resto do Distrito Federal: como Patrimônio Mundial da Unesco, o conjunto urbanístico é tombado pelo IPHAN e as superquadras têm regras rígidas — prédios de no máximo 6 pavimentos, pilotis livres e fachada padronizada. Isso limita construção nova e concentra a demanda em reformas estruturais, retrofit de fachada e obras nos setores comerciais, hoteleiros e de autarquias, onde as restrições são menores. A BR Aço atende essas obras com vergalhão CA-50/CA-60 certificado e corte e dobra sob medida, a partir da fábrica em Aparecida de Goiânia.',
+      neighborhoods: ['Asa Sul', 'Asa Norte', 'Setor Comercial Sul', 'Setor Comercial Norte', 'Setor de Autarquias', 'Setor Hoteleiro'],
+      route: 'via BR-060 e DF-003 (EPTG), tempo médio de 2h50min',
+      buildingTypes: 'reformas estruturais e retrofit de fachada em superquadras, obras comerciais e institucionais',
+      population: 199_000,
+    },
+  },
   region('gama',              'Gama',                190),
   region('brazlandia',        'Brazlândia',          230),
   region('sobradinho',        'Sobradinho',          215),
-  region('planaltina-df',     'Planaltina (DF)',     240),
+  {
+    ...region('planaltina-df', 'Planaltina (DF)', 240),
+    uniqueContent: {
+      marketContext: 'Planaltina é uma das frentes de expansão urbana do Distrito Federal, com crescimento constante de loteamentos e condomínios horizontais nas regiões do Setor Tradicional, Vila Buritis e Jardim Roriz. O ritmo de obra combina autoconstrução residencial com pequenas construtoras locais atendendo o avanço dos novos loteamentos — perfil parecido com o das cidades do entorno goiano que a BR Aço já atende. Entregamos vergalhão CA-50 e corte e dobra a partir da fábrica em Aparecida de Goiânia.',
+      neighborhoods: ['Setor Tradicional', 'Vila Buritis', 'Jardim Roriz', 'Vila Nossa Senhora de Fátima', 'Estâncias Mestre D\'Armas', 'Vale do Amanhecer'],
+      route: 'via BR-020 e DF-128, tempo médio de 3h10min',
+      buildingTypes: 'loteamentos residenciais, condomínios horizontais, autoconstrução e ampliações',
+      population: 180_000,
+    },
+  },
   region('paranoa',           'Paranoá',             225),
   region('nucleo-bandeirante','Núcleo Bandeirante',  205),
   region('guara',             'Guará',               205),

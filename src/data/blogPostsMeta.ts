@@ -1928,6 +1928,28 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Coluna pronta é a armadura de pilar pré-montada industrialmente — estribos, ganchos e espaçadores já fixados na posição do projeto. Entenda a definição, como é fabricada e quando substitui a armação manual no canteiro.",
     readingTime: 4,
   },
+  {
+    id: 176,
+    slug: "vergalhao-corte-dobra-plano-piloto-brasilia",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra no Plano Piloto de Brasília: Reformas em Superquadra",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para reformas estruturais e retrofit no Plano Piloto de Brasília. Entenda como o tombamento do IPHAN muda o tipo de obra e o que isso significa para o aço.",
+    keyword: "vergalhão corte e dobra Plano Piloto Brasília",
+    date: "01 Ago 2026",
+    summary: "O Plano Piloto de Brasília tem um mercado de construção diferente do resto do DF: tombamento do IPHAN limita obra nova e concentra a demanda em reforma estrutural e retrofit — veja como isso muda a compra de vergalhão e corte e dobra.",
+    readingTime: 3,
+  },
+  {
+    id: 177,
+    slug: "vergalhao-corte-dobra-planaltina-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em Planaltina (DF): Loteamentos em Expansão",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para loteamentos e condomínios horizontais em Planaltina (DF), entregues via BR-020/DF-128. Veja bitolas, prazo de entrega e perfil de obra da região.",
+    keyword: "vergalhão corte e dobra Planaltina DF",
+    date: "01 Ago 2026",
+    summary: "Planaltina é uma das principais frentes de expansão urbana do Distrito Federal — veja como o crescimento de loteamentos e condomínios horizontais na região muda a demanda por vergalhão e corte e dobra.",
+    readingTime: 3,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];
