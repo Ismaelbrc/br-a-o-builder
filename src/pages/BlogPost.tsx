@@ -13,6 +13,7 @@ import { useJsonLd } from '@/hooks/useJsonLd';
 import { articleNode, breadcrumbNode, faqPageNode, webPageNode } from '@/lib/schema';
 import { aboutFor } from '@/lib/schemaTopics';
 import { analytics } from '@/lib/analytics';
+import { getCategoryImage } from '@/lib/categoryImages';
 import { getRelatedPosts } from '@/lib/postSimilarity';
 
 // Categorias com LP de produto correspondente (link de "quero contratar" a
@@ -221,12 +222,14 @@ function BlogPostContent({ post }: { post: BlogPostType }) {
   const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
   const publishedTime = parseDateISO(post.date);
   const canonicalUrl = `https://grupobraco.com.br/blog/${post.slug}`;
+  const categoryImage = getCategoryImage(post.category);
 
   useSEO({
     title: `${post.title} | BR Aço`,
     description: post.metaDescription,
     canonical: canonicalUrl,
     ogType: 'article',
+    ogImage: `https://grupobraco.com.br${categoryImage}`,
     publishedTime,
     author: 'Ismael Cavalcante',
     keywords: post.keyword,
@@ -324,6 +327,16 @@ function BlogPostContent({ post }: { post: BlogPostType }) {
           </div>
         </div>
       </section>
+
+      {/* Imagem representativa da categoria — og:image + visual do artigo */}
+      <div className="max-w-4xl mx-auto px-4 -mt-8 relative z-10">
+        <img
+          src={categoryImage}
+          alt={`${post.category} — BR Aço`}
+          className="w-full h-56 sm:h-72 object-cover rounded-2xl shadow-lg"
+          loading="eager"
+        />
+      </div>
 
       {/* Content */}
       <section className="py-16 bg-background">

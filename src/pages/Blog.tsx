@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight, ChevronLeft, MessageCircle, Clock, ArrowRight, Search, X } from 'lucide-react';
 import { blogPostsMeta, categories } from '@/data/blogPostsMeta';
 import { useSEO } from '@/hooks/useSEO';
+import { getCategoryImage } from '@/lib/categoryImages';
 
 const POSTS_PER_PAGE = 12;
 
@@ -208,6 +209,14 @@ export default function Blog() {
                 className="group block bg-background rounded-2xl border border-border hover:shadow-xl transition-all duration-300 mb-10 overflow-hidden"
               >
                 <div className="flex flex-col md:flex-row">
+                  <div className="w-full h-48 md:h-auto md:w-64 flex-shrink-0 overflow-hidden">
+                    <img
+                      src={getCategoryImage(featured.category)}
+                      alt={`${featured.category} — BR Aço`}
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                    />
+                  </div>
                   <div className="w-full h-1.5 md:h-auto md:w-2 flex-shrink-0" style={{ backgroundColor: accent(featured.category) }} />
                   <div className="p-8 flex-1">
                     <div className="flex items-center gap-3 mb-4">
@@ -311,6 +320,14 @@ function PostCard({ post }: { post: typeof blogPostsMeta[0] }) {
       to={`/blog/${post.slug}`}
       className="group bg-background rounded-2xl border border-border hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
     >
+      <div className="h-36 w-full flex-shrink-0 overflow-hidden">
+        <img
+          src={getCategoryImage(post.category)}
+          alt={`${post.category} — BR Aço`}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
+      </div>
       <div className="h-1 w-full flex-shrink-0" style={{ backgroundColor: col }} />
       <div className="p-6 flex flex-col flex-1">
         <span className="text-xs font-bold uppercase tracking-wider" style={{ color: col }}>

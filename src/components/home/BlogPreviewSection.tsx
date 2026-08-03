@@ -4,6 +4,7 @@ import SectionIntro from '@/components/SectionIntro';
 import Reveal from '@/components/Reveal';
 // ⚠  Importa só metadados (sem content) — mantem a home page leve
 import { blogPostsMeta } from '@/data/blogPostsMeta';
+import { getCategoryImage } from '@/lib/categoryImages';
 
 // 3 posts mais recentes para exibir na home
 const latestPosts = [...blogPostsMeta].sort((a, b) => b.id - a.id).slice(0, 3);
@@ -52,8 +53,17 @@ const BlogPreviewSection = () => {
             <Reveal key={post.id} delay={index * 80}>
               <Link
                 to={`/blog/${post.slug}`}
-                className="group flex h-full flex-col bg-card p-7 transition-colors hover:bg-secondary"
+                className="group flex h-full flex-col bg-card transition-colors hover:bg-secondary"
               >
+                <div className="h-32 w-full overflow-hidden">
+                  <img
+                    src={getCategoryImage(post.category)}
+                    alt={`${post.category} — BR Aço`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="flex h-full flex-col p-7">
                 <span
                   className="label-eyebrow"
                   style={{ color: accent(post.category) }}
@@ -75,6 +85,7 @@ const BlogPreviewSection = () => {
                     </span>
                   </div>
                   <ArrowUpRight className="w-4 h-4 text-brand-gray-medium transition-all group-hover:text-brand-orange group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
                 </div>
               </Link>
             </Reveal>
