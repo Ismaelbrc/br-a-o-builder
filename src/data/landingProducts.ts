@@ -85,7 +85,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'CA-25, CA-50 e CA-60 com certificação ABNT',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Vergalhão',
     pageTitle: (city) => `Vergalhão em ${city} | BR Aço – CA-50 e CA-60`,
     metaDesc: (city, state) =>
@@ -134,7 +134,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Coluna pronta para obra — pilar com armadura completa',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Coluna Pronta',
     pageTitle: (city) => `Coluna Pronta em ${city} | BR Aço – Pilar Pré-Montado`,
     metaDesc: (city, state) =>
@@ -175,7 +175,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Barras CA-50 e CA-60 em todos os diâmetros',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Barra de Aço',
     pageTitle: (city) => `Barra de Aço em ${city} | BR Aço`,
     metaDesc: (city, state) =>
@@ -216,7 +216,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Malha pop para lajes e contrapisos',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Malha de Aço',
     pageTitle: (city) => `Malha de Aço em ${city} | BR Aço – Malha Pop`,
     metaDesc: (city, state) =>
@@ -257,7 +257,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Telas soldadas CA-60 para lajes e pisos',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Tela Soldada',
     pageTitle: (city) => `Tela Soldada em ${city} | BR Aço`,
     metaDesc: (city, state) =>
@@ -298,7 +298,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Treliças T6, T8, T10 e T12 para laje treliçada',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Treliça Metálica',
     pageTitle: (city) => `Treliça Metálica em ${city} | BR Aço`,
     metaDesc: (city, state) =>
@@ -339,7 +339,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Pregos para obra em todos os tamanhos',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Prego',
     pageTitle: (city) => `Prego para Construção em ${city} | BR Aço`,
     metaDesc: (city, state) =>
@@ -380,7 +380,7 @@ export const landingProducts: Record<string, LandingProduct> = {
     verb: 'Comprar',
     preposition: 'em',
     shortDesc: 'Arame recozido e farpado para obra',
-    schemaKind: 'Product',
+    schemaKind: 'Service',
     schemaCategory: 'Arame',
     pageTitle: (city) => `Arame para Construção em ${city} | BR Aço`,
     metaDesc: (city, state) =>

@@ -91,19 +91,6 @@ export default function LandingPage() {
         // #localbusiness canônicos a este Place via @id.
         patch(productNodeId, { areaServed: ref(ID.place(locationSlug)) }),
         patch(ID.localBusiness, { areaServed: ref(ID.place(locationSlug)) }),
-        ...(product!.schemaKind === 'Product'
-          ? [
-              patch(productNodeId, {
-                offers: {
-                  '@type': 'Offer',
-                  seller: ref(ID.organization),
-                  areaServed: ref(ID.place(locationSlug)),
-                  availability: 'https://schema.org/InStock',
-                  priceCurrency: 'BRL',
-                },
-              }),
-            ]
-          : []),
       ]
     : [];
 
