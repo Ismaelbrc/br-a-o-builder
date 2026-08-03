@@ -1,8 +1,10 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, MessageCircle, ArrowLeft, Calendar, Tag } from 'lucide-react';
-import { blogPosts } from '@/data/blogPosts';
+import type { BlogPost as BlogPostType } from '@/data/blogPosts';
+import { loadPostBySlug } from '@/data/postsRegistry';
 import { blogPostsMeta } from '@/data/blogPostsMeta';
 import { blogPostsGeo } from '@/data/blogPostsGeo';
 import { useSEO } from '@/hooks/useSEO';
@@ -215,8 +217,7 @@ function parseDateISO(dateStr: string): string {
   return new Date().toISOString().split('T')[0];
 }
 
-function BlogPostContent({ slug }: { slug: string }) {
-  const post = blogPosts.find(p => p.slug === slug)!;
+function BlogPostContent({ post }: { post: BlogPostType }) {
   const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
   const publishedTime = parseDateISO(post.date);
   const canonicalUrl = `https://grupobraco.com.br/blog/${post.slug}`;
@@ -419,9 +420,46 @@ function BlogPostContent({ slug }: { slug: string }) {
   );
 }
 
+function BlogPostSkeleton() {
+  return (
+    <Layout>
+      <section className="bg-brand-navy py-16">
+        <div className="max-w-4xl mx-auto px-4 animate-pulse">
+          <div className="h-4 w-40 bg-white/10 rounded mb-6" />
+          <div className="h-9 w-full bg-white/10 rounded mb-3" />
+          <div className="h-9 w-2/3 bg-white/10 rounded" />
+        </div>
+      </section>
+      <section className="py-16 bg-background">
+        <div className="max-w-4xl mx-auto px-4 animate-pulse space-y-4">
+          <div className="h-4 w-full bg-muted rounded" />
+          <div className="h-4 w-full bg-muted rounded" />
+          <div className="h-4 w-3/4 bg-muted rounded" />
+        </div>
+      </section>
+    </Layout>
+  );
+}
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const post = blogPosts.find(p => p.slug === slug);
-  if (!post) return <Navigate to="/blog" replace />;
-  return <BlogPostContent slug={slug!} />;
+  // Checagem leve de existência via blogPostsMeta (sem carregar o content
+  // completo de nenhum post) — permite redirecionar cedo pra /blog.
+  const exists = blogPostsMeta.some(p => p.slug === slug);
+
+  const [post, setPost] = useState<BlogPostType | null>(null);
+
+  useEffect(() => {
+    if (!slug || !exists) return;
+    let cancelled = false;
+    setPost(null);
+    loadPostBySlug(slug).then(loaded => {
+      if (!cancelled) setPost(loaded);
+    });
+    return () => { cancelled = true; };
+  }, [slug, exists]);
+
+  if (!exists) return <Navigate to="/blog" replace />;
+  if (!post) return <BlogPostSkeleton />;
+  return <BlogPostContent post={post} />;
 }

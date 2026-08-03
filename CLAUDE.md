@@ -16,39 +16,42 @@ Site institucional da BR Aço hospedado no GitHub Pages.
 
 ## ⚠ REGRA OBRIGATÓRIA — Ao adicionar posts no blog
 
-Sempre que adicionar novos posts em `src/data/blogPosts.ts`, **obrigatoriamente** rodar:
+`src/data/blogPosts.ts` é a **única fonte de autoria** — sempre edite ali. Depois de adicionar/editar posts, rode **os dois scripts, nesta ordem**:
 
 ```bash
-python scripts/gen-blog-meta.py
+python scripts/gen-blog-meta.py         # 1. metadados (blogPostsMeta.ts)
+python scripts/gen-blog-posts-split.py  # 2. content por post (src/data/posts/*.ts)
 ```
 
-Isso regenera `src/data/blogPostsMeta.ts` com os metadados + `readingTime` pré-calculado de todos os posts.
-
-**Por que é crítico:**
-- A home page e a listagem do blog importam `blogPostsMeta` (sem content) para manter o bundle leve
-- Se o script não rodar, posts novos não aparecem na home e na busca do blog
-- O BlogPost individual ainda usa `blogPosts.ts` (com content completo), esse não precisa do script
+**Por que os dois são críticos:**
+- `gen-blog-meta.py` regenera `blogPostsMeta.ts` (metadados + `readingTime`, sem content) — a home e a listagem do blog usam só isso
+- `gen-blog-posts-split.py` regenera `src/data/posts/<slug>.ts` (um arquivo por post, com content completo) — `BlogPost.tsx` carrega **sob demanda** (`import.meta.glob` via `postsRegistry.ts`), não importa `blogPosts.ts` inteiro
+- Pular qualquer um dos dois deixa post novo invisível na home/busca (sem o 1º) ou com 404 ao abrir o artigo (sem o 2º)
+- **Nunca edite `src/data/posts/*.ts` diretamente** — são gerados, sobrescritos a cada rodada do script
 
 **Fluxo completo ao adicionar posts:**
 1. Adicionar entradas em `src/data/blogPosts.ts` (via Python ou Edit)
-2. `python scripts/gen-blog-meta.py` ← NUNCA pular esse passo
-3. Atualizar `public/sitemap.xml` com as novas URLs
-4. `git add . && git commit -m "feat(blog): ..."` + `git push`
+2. `python scripts/gen-blog-meta.py` ← NUNCA pular
+3. `python scripts/gen-blog-posts-split.py` ← NUNCA pular
+4. Sitemap: `npm run sitemap` (gera automaticamente a partir de `blogPostsMeta`, não editar `public/sitemap.xml` à mão)
+5. `git add . && git commit -m "feat(blog): ..."` + `git push`
 
 ---
 
 ## Arquitetura de Performance (Core Web Vitals)
 
-| Arquivo | Propósito | Tamanho gzip |
+| Arquivo | Propósito | Tamanho |
 |---------|-----------|-------------|
-| `src/data/blogPostsMeta.ts` | Metadados de 134+ posts SEM content | ~19 KB |
-| `src/data/blogPosts.ts` | Posts completos COM content | ~163 KB (lazy) |
-| Bundle inicial (`index.js`) | React + vendor + App shell | ~102 KB |
+| `src/data/blogPostsMeta.ts` | Metadados de 184 posts SEM content | ~26 KB gzip |
+| `src/data/blogPosts.ts` | Posts completos COM content — só a autoria lê isso direto | ~163 KB (nunca importado inteiro em runtime) |
+| `src/data/posts/<slug>.ts` | Um arquivo por post (gerado), ~2-10 KB cada | carregado sob demanda |
+| `dist/assets/BlogPost-*.js` | Chunk da página de artigo, sem content embutido | ~118 KB (era ~770 KB antes do split, 02/08/2026) |
+| Bundle inicial (`index.js`) | React + vendor + App shell | ~104 KB |
 
 - **React.lazy()** em todas as rotas — cada página é um chunk separado
 - `BlogPreviewSection` e `Blog.tsx` usam apenas `blogPostsMeta` (sem content)
-- `BlogPost.tsx` usa `blogPosts` com content completo (carrega só ao abrir um artigo)
-- Blog lista **12 posts por página** (paginação) — nunca renderizar todos os 134+ de uma vez
+- `BlogPost.tsx` carrega o content de UM post via `loadPostBySlug()` (`postsRegistry.ts`, `import.meta.glob` lazy) — não importa `blogPosts.ts`. Mostra skeleton (`BlogPostSkeleton`) enquanto carrega; `scripts/prerender.ts` já espera o `<main>` ter >200 chars de texto antes de capturar, então isso funciona sem mudança no pipeline de prerender
+- Blog lista **12 posts por página** (paginação) — nunca renderizar todos os 184 de uma vez
 
 ---
 
