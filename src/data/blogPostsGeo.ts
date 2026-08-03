@@ -764,4 +764,24 @@ export const blogPostsGeo: Record<string, GeoPost> = {
     ],
   },
 
+  "barra-de-transferencia-o-que-e-diferenca-vergalhao": {
+    answerCapsule: "Barra de transferência é uma barra de aço lisa (sem nervuras), usada em juntas de piso industrial para transferir carga entre placas de concreto sem impedir a dilatação — diferente do vergalhão nervurado, feito para aderir ao concreto.",
+    faqItems: [
+      { q: "O que é barra de transferência?", a: "É uma barra de aço lisa usada em juntas de piso industrial e pavimento de concreto, para transferir carga vertical entre placas adjacentes sem impedir o movimento de dilatação e retração." },
+      { q: "Qual a diferença entre barra de transferência e vergalhão?", a: "O vergalhão é nervurado, feito para aderir ao concreto na armadura estrutural. A barra de transferência é lisa e parcialmente untada, feita para deslizar dentro do concreto na junta de piso." },
+      { q: "Onde a barra de transferência é usada?", a: "Em juntas de piso industrial (galpões, indústrias, armazéns) e pavimentos de concreto que recebem tráfego de empilhadeiras ou cargas pesadas sobre a junta." },
+      { q: "A BR Aço fornece barra de transferência?", a: "A BR Aço fornece barras de aço cortadas nas medidas do projeto, incluindo diâmetros usados em juntas de transferência de piso industrial. Envie a especificação pelo WhatsApp." },
+    ],
+  },
+
+  "checklist-recebimento-aco-obra-nbr-7480-6118": {
+    answerCapsule: "Ao receber vergalhão na obra, confira 7 pontos: certificado de qualidade do lote, marcação na barra, bitola, quantidade/peso, integridade física, classe do aço (CA-50/CA-60) e conformidade com o projeto — antes de assinar o canhoto.",
+    faqItems: [
+      { q: "O que conferir ao receber vergalhão na obra?", a: "Certificado de qualidade do lote, marcação de identificação na barra, bitola conforme pedido, peso total, integridade física, classe do aço (CA-50 ou CA-60) e conformidade com a planilha de ferro do projeto." },
+      { q: "O vergalhão precisa vir com certificado de qualidade?", a: "Sim — todo lote deve ter um certificado com a composição química e os ensaios de tração exigidos pela NBR 7480. Sem esse documento não há como comprovar a conformidade depois." },
+      { q: "Como identificar a classe do aço na barra?", a: "A NBR 7480 exige marcação em relevo na própria barra, identificando fabricante e classe (CA-50 ou CA-60). Confira se está legível e bate com o que foi pedido." },
+      { q: "O que fazer se o vergalhão chegar fora do especificado?", a: "Não assine o canhoto de entrega sem registrar a divergência. Fotografe a marcação da barra, o certificado (ou a falta dele) e qualquer dano visível antes de liberar a descarga." },
+    ],
+  },
+
 };

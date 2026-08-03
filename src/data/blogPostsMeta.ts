@@ -2038,6 +2038,28 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Tabela de preço médio praticado de vergalhão CA-50 e CA-60 por kg, por bitola, com base em dados reais de vendas da BR Aço em Goiás — referência para orçamento inicial, sujeita a variação de mercado.",
     readingTime: 3,
   },
+  {
+    id: 186,
+    slug: "barra-de-transferencia-o-que-e-diferenca-vergalhao",
+    category: "Produtos",
+    title: "Barra de Transferência: O Que É e Como Difere do Vergalhão Comum",
+    metaDescription: "Barra de transferência é aço liso usado em juntas de piso industrial para transferir carga entre placas. Veja a diferença para o vergalhão nervurado.",
+    keyword: "barra de transferência",
+    date: "03 Ago 2026",
+    summary: "Barra de transferência não é vergalhão comum: é uma barra de aço lisa, usada especificamente em juntas de piso industrial e pavimento de concreto, para transferir carga entre placas sem impedir a dilatação.",
+    readingTime: 2,
+  },
+  {
+    id: 187,
+    slug: "checklist-recebimento-aco-obra-nbr-7480-6118",
+    category: "Normas ABNT",
+    title: "Checklist de Recebimento de Aço na Obra: NBR 7480 e NBR 6118",
+    metaDescription: "Checklist prático para conferir vergalhão na entrega da obra: certificado de qualidade, marcação, bitola, quantidade e integridade conforme NBR 7480 e NBR 6118.",
+    keyword: "checklist recebimento de aço",
+    date: "03 Ago 2026",
+    summary: "Um checklist prático de 7 pontos para conferir o vergalhão no momento da entrega na obra, cobrindo certificado, marcação, bitola, quantidade e conformidade com a NBR 7480 e a NBR 6118.",
+    readingTime: 3,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];

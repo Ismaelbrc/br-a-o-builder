@@ -12840,6 +12840,92 @@ A diferença por kg entre corte e dobra e CDA costuma ser a mão de obra de arma
 ## Fale com a BR Aço
 
 Os valores acima são uma referência histórica, não uma cotação — para saber o preço atual para o volume e a bitola da sua obra, envie o projeto ou a lista de materiais pelo WhatsApp e receba um orçamento real.`
+  },
+  {
+    id: 186,
+    slug: "barra-de-transferencia-o-que-e-diferenca-vergalhao",
+    category: "Produtos",
+    title: "Barra de Transferência: O Que É e Como Difere do Vergalhão Comum",
+    metaDescription: "Barra de transferência é aço liso usado em juntas de piso industrial para transferir carga entre placas. Veja a diferença para o vergalhão nervurado.",
+    keyword: "barra de transferência",
+    date: "03 Ago 2026",
+    summary: "Barra de transferência não é vergalhão comum: é uma barra de aço lisa, usada especificamente em juntas de piso industrial e pavimento de concreto, para transferir carga entre placas sem impedir a dilatação.",
+    content: `**Em resumo:** Barra de transferência (dowel bar) é uma barra de aço **lisa** (sem nervuras), usada em juntas de piso industrial e pavimento de concreto para transferir carga entre placas adjacentes sem impedir o movimento de dilatação/retração. É diferente do vergalhão CA-50/CA-60, que é nervurado e serve para aderir ao concreto na armadura estrutural — a barra de transferência precisa do oposto: baixa aderência, para deslizar livremente na junta.
+
+---
+
+## Por Que a Barra de Transferência é Lisa, Não Nervurada
+
+O vergalhão nervurado (CA-50, CA-60) é projetado para **aderir** ao concreto — as nervuras aumentam o atrito entre o aço e a massa, garantindo que a armadura trabalhe junto com a estrutura sob tração. Isso é essencial em vigas, pilares e lajes.
+
+A barra de transferência tem a função oposta numa junta de piso: ela precisa **transferir carga vertical** entre duas placas de concreto (por exemplo, quando uma empilhadeira passa sobre a junta) **sem impedir** que as placas se movam horizontalmente com a dilatação térmica. Para isso, metade do comprimento da barra é untada com desmoldante ou revestida, permitindo que deslize dentro do concreto — nervuras atrapalhariam esse deslizamento e poderiam fissurar a junta.
+
+## Onde a Barra de Transferência é Usada
+
+- **Pisos industriais** de concreto (galpões logísticos, indústrias, armazéns) com tráfego de empilhadeiras e cargas pesadas
+- **Pavimentos de concreto** (pátios de manobra, vias de concreto simples)
+- Qualquer junta serrada ou moldada de piso que precise transferir carga entre placas sem virar um ponto de trinca
+
+## Vergalhão vs. Barra de Transferência
+
+| Critério | Vergalhão CA-50/CA-60 | Barra de Transferência |
+|---|---|---|
+| Superfície | Nervurada | Lisa |
+| Função | Aderir ao concreto, resistir à tração | Transferir carga, permitir deslizamento |
+| Onde é usada | Armadura estrutural (viga, pilar, laje, fundação) | Juntas de piso e pavimento industrial |
+| Tratamento | Nenhum tratamento de superfície | Metade untada/revestida para deslizar na junta |
+
+## Fale com a BR Aço
+
+A BR Aço fornece barras de aço cortadas nas medidas do projeto, incluindo diâmetros e comprimentos usados em juntas de transferência de piso industrial. Envie a especificação do projeto pelo WhatsApp e receba orçamento.`
+  },
+  {
+    id: 187,
+    slug: "checklist-recebimento-aco-obra-nbr-7480-6118",
+    category: "Normas ABNT",
+    title: "Checklist de Recebimento de Aço na Obra: NBR 7480 e NBR 6118",
+    metaDescription: "Checklist prático para conferir vergalhão na entrega da obra: certificado de qualidade, marcação, bitola, quantidade e integridade conforme NBR 7480 e NBR 6118.",
+    keyword: "checklist recebimento de aço",
+    date: "03 Ago 2026",
+    summary: "Um checklist prático de 7 pontos para conferir o vergalhão no momento da entrega na obra, cobrindo certificado, marcação, bitola, quantidade e conformidade com a NBR 7480 e a NBR 6118.",
+    content: `**Em resumo:** Ao receber vergalhão na obra, confira 7 pontos antes de assinar o canhoto: certificado de qualidade do lote, marcação de identificação na barra, bitola conforme pedido, quantidade/peso, integridade física (sem dobra, ferrugem excessiva ou dano), classe do aço (CA-50/CA-60) e se o material corresponde ao especificado em projeto. Um recebimento malfeito só aparece como problema na hora da concretagem — quando já é tarde para trocar.
+
+---
+
+## Por Que Conferir o Recebimento, Não Só o Pedido
+
+O orçamento e a nota fiscal garantem o que foi **comprado**. O checklist de recebimento garante o que foi **entregue** — e são coisas diferentes. Trocas de bitola, lotes sem certificado ou peças com dano de transporte só viram problema visível quando o armador já está montando a estrutura, ou pior, depois da concretagem.
+
+## Checklist de 7 Pontos
+
+### 1. Certificado de qualidade do lote
+Todo fornecedor sério entrega um certificado (laudo) por lote, com a composição química e os ensaios de tração exigidos pela NBR 7480. Sem esse documento, não há como comprovar a conformidade do aço depois.
+
+### 2. Marcação de identificação na barra
+A NBR 7480 exige marcação em relevo na própria barra, identificando o fabricante e a classe do aço (CA-50 ou CA-60). Confira se a marcação está legível e bate com o que foi pedido.
+
+### 3. Bitola conforme o pedido
+Meça o diâmetro de uma amostra de cada lote com paquímetro. Erro de bitola é um dos problemas mais comuns — e o mais caro de descobrir tarde, porque muda o cálculo estrutural.
+
+### 4. Quantidade e peso
+Confira o peso total entregue contra a nota fiscal e o pedido — use a tabela de peso por metro (kg/m) da bitola para calcular o esperado e comparar.
+
+### 5. Integridade física
+Verifique se as barras não chegaram dobradas, amassadas ou com corrosão além da oxidação superficial leve (que é normal e aceitável). Ferrugem profunda ou pites de corrosão comprometem a seção resistente.
+
+### 6. Classe do aço (CA-50 vs CA-60)
+Confirme que a classe entregue é a especificada em projeto — CA-50 e CA-60 têm resistência e aplicação diferentes, e a marcação na barra é a forma de confirmar.
+
+### 7. Conformidade com o projeto estrutural
+Cruze o que chegou com a planilha de ferro do projeto: bitolas, quantidades e comprimentos precisam bater antes de liberar a descarga.
+
+## O Que Fazer se Algo Não Bater
+
+Não assine o canhoto de entrega sem registrar a divergência. Fotografe a marcação da barra, o certificado (ou a falta dele) e qualquer dano visível — isso é o que protege a obra numa eventual troca ou reclamação ao fornecedor.
+
+## Fale com a BR Aço
+
+A BR Aço entrega vergalhão certificado conforme a NBR 7480, com laudo por lote e marcação de identificação em todas as barras. Envie sua lista de materiais pelo WhatsApp e receba o orçamento com a documentação incluída.`
   }
 ];
 
