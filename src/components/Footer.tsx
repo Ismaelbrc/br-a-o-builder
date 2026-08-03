@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram, Linkedin, Youtube } from 'lucide-react';
 import logoImage from '@/assets/logo-footer.png';
 import { analytics } from '@/lib/analytics';
 
@@ -27,6 +27,7 @@ const productLinks = [
 const socialLinks = [
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/grupobraco_/' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://br.linkedin.com/company/grupobraco' },
+  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@grupobraco' },
   { name: 'Google', icon: MapPin, href: 'https://share.google/zAqVF572NlwODojXo' },
 ];
 

@@ -49,6 +49,7 @@ function localBusinessNode() {
       'https://www.instagram.com/grupobraco_',
       'https://www.facebook.com/bracogoiania/',
       'https://br.linkedin.com/company/grupobraco',
+      'https://www.youtube.com/@grupobraco',
     ],
     hasMap: 'https://www.google.com/maps/search/BR+Aço+Aparecida+de+Goiânia',
     knowsAbout: [
@@ -86,6 +87,7 @@ function organizationNode() {
       'https://www.instagram.com/grupobraco_',
       'https://www.facebook.com/bracogoiania/',
       'https://br.linkedin.com/company/grupobraco',
+      'https://www.youtube.com/@grupobraco',
     ],
     founder: { '@id': ID.person },
     subOrganization: { '@id': ID.localBusiness },

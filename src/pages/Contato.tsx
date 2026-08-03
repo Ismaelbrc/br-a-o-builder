@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/select';
 import {
   ChevronRight, MessageCircle, Mail, MapPin, Clock,
-  Send, Instagram, Linkedin, Phone, ArrowRight
+  Send, Instagram, Linkedin, Youtube, Phone, ArrowRight
 } from 'lucide-react';
 
 const WHATSAPP_BASE = 'https://wa.me/556299032023';
@@ -421,6 +421,15 @@ export default function Contato() {
                     className="flex items-center gap-2.5 bg-white border border-gray-200 rounded-xl px-3 py-3 text-gray-700 hover:border-blue-500 hover:text-blue-500 transition-colors"
                   >
                     <Linkedin className="w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@grupobraco"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube Grupo BR Aço"
+                    className="flex items-center gap-2.5 bg-white border border-gray-200 rounded-xl px-3 py-3 text-gray-700 hover:border-red-500 hover:text-red-500 transition-colors"
+                  >
+                    <Youtube className="w-4 h-4" />
                   </a>
                 </div>
               </div>
