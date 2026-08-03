@@ -12,5 +12,23 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Crawlers de motores de resposta por IA — explícito, mesmo já cobertos
+# pelo wildcard abaixo, para não depender de fallback em nenhuma camada
+# de proxy/WAF que trate user-agent separado do robots.txt.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 User-agent: *
 Allow: /
