@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Diferença entre armadura de montagem e armadura principal em vigas, pilares e lajes — função estrutural, dimensionamento mínimo e aplicação prática.",
   content: `## Armadura Principal (de Cálculo)
 
-A armadura principal é a armadura dimensionada para resistir aos esforços internos da estrutura: momento fletor, força normal e esforço cortante. Ela é calculada pelo engenheiro estrutural com base nas solicitações do modelo de cálculo.
+A armadura principal é a armadura dimensionada para resistir aos esforços internos da estrutura: momento fletor, força normal e esforço cortante. Ela é calculada pelo engenheiro estrutural com base nas solicitações do modelo de cálculo. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 Em vigas, a armadura principal de flexão fica na face tracionada (inferior no meio do vão, superior nos apoios). Em pilares, as barras longitudinais resistem à compressão e ao momento fletor.
 

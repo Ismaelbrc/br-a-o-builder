@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Laje alveolar pré-moldada: princípio estrutural, dimensões, capacidade de carga, vantagens e quando usar.",
   content: `## O que é Laje Alveolar?
 
-Laje alveolar (também chamada painel alveolar ou hollow-core slab) é um elemento pré-moldado de concreto protendido com seção transversal perfurada por alvéolos (furos longitudinais). Os alvéolos reduzem o peso próprio sem comprometer significativamente a resistência à flexão.
+Laje alveolar (também chamada painel alveolar ou hollow-core slab) é um elemento pré-moldado de concreto protendido com seção transversal perfurada por alvéolos (furos longitudinais). Os alvéolos reduzem o peso próprio sem comprometer significativamente a resistência à flexão. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 É produzida em fábrica por extrusão ou pré-tensão em pistas longas (30 a 150 m), depois cortada nos comprimentos de projeto.
 

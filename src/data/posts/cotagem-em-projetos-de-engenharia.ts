@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Aprenda a ler cotas em projetos estruturais, hidráulicos e elétricos — linhas de cota, cotas acumuladas, cotas de nível e tolerâncias dimensionais.",
   content: `## O que é Cotagem?
 
-Cotagem é o conjunto de linhas, símbolos e valores numéricos que informam as dimensões de um elemento no projeto. Sem cotas, a escala não é suficiente para garantir precisão na execução — e qualquer erro de impressão se transforma em erro construtivo.
+Cotagem é o conjunto de linhas, símbolos e valores numéricos que informam as dimensões de um elemento no projeto. Sem cotas, a escala não é suficiente para garantir precisão na execução — e qualquer erro de impressão se transforma em erro construtivo. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ## Elementos de uma Cota
 

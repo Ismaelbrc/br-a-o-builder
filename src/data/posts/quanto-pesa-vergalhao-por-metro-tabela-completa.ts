@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "peso linear aço ca 50",
   date: "17 Mai 2026",
   summary: "Tabela completa com peso linear (kg/m) e peso por barra de 12m para todos os diâmetros de vergalhão CA-50 e CA-60. Referência rápida para orçamento e cálculo de aço.",
-  content: `**Em resumo:** O peso do vergalhão por metro linear é calculado pela fórmula da ABNT NBR 7480: P (kg/m) = (π/4) × d² × 7.850, onde d é o diâmetro em metros. Como referência: ø8mm = 0,395 kg/m, ø10mm = 0,617 kg/m, ø12,5mm = 0,963 kg/m, ø16mm = 1,578 kg/m, ø20mm = 2,466 kg/m e ø25mm = 3,853 kg/m. Uma barra padrão de 12m de ø12,5mm pesa 11,56 kg.
+  content: `**Em resumo:** O peso do vergalhão por metro linear é calculado pela fórmula da ABNT NBR 7480: P (kg/m) = (π/4) × d² × 7.850, onde d é o diâmetro em metros. Como referência: ø8mm = 0,395 kg/m, ø10mm = 0,617 kg/m, ø12,5mm = 0,963 kg/m, ø16mm = 1,578 kg/m, ø20mm = 2,466 kg/m e ø25mm = 3,853 kg/m. Uma barra padrão de 12m de ø12,5mm pesa 11,56 kg. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 ---
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O cobrimento insuficiente de concreto é a causa mais comum de corrosão de armadura em obras brasileiras. Saiba o que exige a NBR 6118 e como garantir o cobrimento correto com espaçadores.",
   content: `## O Que é o Cobrimento de Concreto?
 
-O cobrimento é a distância entre a face externa do concreto e a face da barra de armadura mais próxima. Ele forma uma **barreira protetora** que impede a entrada de água, gás carbônico e cloretos até o aço.
+O cobrimento é a distância entre a face externa do concreto e a face da barra de armadura mais próxima. Ele forma uma **barreira protetora** que impede a entrada de água, gás carbônico e cloretos até o aço. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Sem cobrimento adequado, a armadura corrói, expande, fissura o concreto e pode levar ao colapso estrutural — às vezes décadas depois da construção.
 

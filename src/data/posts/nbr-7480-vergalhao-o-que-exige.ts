@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A ABNT NBR 7480 define os requisitos mínimos de qualidade para vergalhões CA-25, CA-50 e CA-60. Todo aço usado em obra deve ter rastreabilidade para essa norma.",
   content: `## O Que é a NBR 7480?
 
-A **ABNT NBR 7480:2007** — "Aço destinado a armaduras para estruturas de concreto armado" — é a norma que define os requisitos técnicos mínimos que todo vergalhão vendido no Brasil deve atender.
+A **ABNT NBR 7480:2007** — "Aço destinado a armaduras para estruturas de concreto armado" — é a norma que define os requisitos técnicos mínimos que todo vergalhão vendido no Brasil deve atender. Esse critério orienta o fornecimento de aço da BR Aço para construtoras de Goiânia e Goiás.
 
 Se o vergalhão que você compra não está em conformidade com a NBR 7480, você está colocando sua obra e sua responsabilidade em risco.
 

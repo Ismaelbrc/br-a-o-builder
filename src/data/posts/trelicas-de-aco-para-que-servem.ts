@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "treliças de aço construção civil",
   date: "28 Jan 2026",
   summary: "Descubra o que são treliças de aço, como funcionam e como elas reduzem custos de escoramento e aceleram a construção de lajes.",
-  content: `**Em resumo:** Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal soldado, usados como armadura principal de lajes treliçadas. Elas eliminam a necessidade de parte do escoramento, reduzem o tempo de armação e permitem lajes com vãos de até 6m sem exigir formas contínuas. Os tipos mais comuns no Brasil são TR-08, TR-10, TR-12 e TR-14, classificados pela altura h do elemento.
+  content: `**Em resumo:** Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal soldado, usados como armadura principal de lajes treliçadas. Elas eliminam a necessidade de parte do escoramento, reduzem o tempo de armação e permitem lajes com vãos de até 6m sem exigir formas contínuas. Os tipos mais comuns no Brasil são TR-08, TR-10, TR-12 e TR-14, classificados pela altura h do elemento. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 ---
 

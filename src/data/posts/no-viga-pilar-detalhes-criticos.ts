@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comportamento do nó viga-pilar, tipos de nó externo/interno/de topo, esforços envolvidos e detalhes de armação conforme NBR 6118.",
   content: `## O que é o Nó Viga-Pilar?
 
-O nó viga-pilar (ou ligação viga-pilar, ou região nodal) é a zona do pilar onde uma ou mais vigas se conectam. É uma região de alta concentração de esforços, com tensões de compressão, tração e cisalhamento atuando simultaneamente.
+O nó viga-pilar (ou ligação viga-pilar, ou região nodal) é a zona do pilar onde uma ou mais vigas se conectam. É uma região de alta concentração de esforços, com tensões de compressão, tração e cisalhamento atuando simultaneamente. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 Uma detalhamento inadequado do nó pode levar à falha prematura da estrutura — mesmo que as vigas e pilares individualmente estejam bem dimensionados.
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A ABNT NBR 6118 define os critérios de projeto para toda estrutura de concreto armado no Brasil. Engenheiros, construtores e mestres de obra precisam conhecer seus princípios básicos.",
   content: `## O Que é a NBR 6118?
 
-A **ABNT NBR 6118** — "Projeto de estruturas de concreto — Procedimento" — é a principal norma técnica brasileira para dimensionamento de estruturas de concreto armado e protendido.
+A **ABNT NBR 6118** — "Projeto de estruturas de concreto — Procedimento" — é a principal norma técnica brasileira para dimensionamento de estruturas de concreto armado e protendido. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 Toda obra com estrutura de concreto armado no Brasil deve ser projetada conforme a NBR 6118. É o documento que o engenheiro calculista usa como referência absoluta.
 

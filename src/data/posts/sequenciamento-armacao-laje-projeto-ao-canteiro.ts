@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia prático completo de sequenciamento de armação de laje: etapas da preparação ao fechamento da armadura, verificações normativas em cada fase e vantagens do aço pré-cortado.",
   content: `## A Armação de Laje em 7 Etapas — e Onde Cada uma Pode Falhar
 
-A armação de laje é frequentemente vista como uma tarefa simples. Na prática, é uma operação com 7 etapas distintas, cada uma com pontos de falha que podem comprometer a integridade estrutural ou criar retrabalho caro.
+A armação de laje é frequentemente vista como uma tarefa simples. Na prática, é uma operação com 7 etapas distintas, cada uma com pontos de falha que podem comprometer a integridade estrutural ou criar retrabalho caro. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 ## Etapa 1: Preparação da Área e Verificação do Projeto
 

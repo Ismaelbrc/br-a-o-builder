@@ -15,7 +15,7 @@ const post: BlogPost = {
 
 O espaçamento máximo de estribos conforme a **NBR 6118** é:
 - **Pilares:** menor valor entre *d/2*, *20 × φ* (diâmetro da barra longitudinal) e **20 cm**
-- **Vigas:** depende da solicitação de cisalhamento — em geral entre **10 cm e 30 cm** para a região crítica próxima ao apoio
+- **Vigas:** depende da solicitação de cisalhamento — em geral entre **10 cm e 30 cm** para a região crítica próxima ao apoio. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Em obras residenciais comuns (casas e sobrados), o espaçamento típico de estribos em pilares é de **10 a 15 cm** na região de emenda e **15 a 20 cm** no vão central.
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Corte manual ou corte e dobra industrial? Este comparativo usa dados reais de obras em Goiás para mostrar a diferença em custo total por m², tempo de execução, desperdício e qualidade final.",
   content: `## A Comparação que Todo Construtor Deveria Fazer Antes de Comprar Vergalhão
 
-A escolha entre cortar o aço no canteiro ou usar o serviço de corte e dobra industrial é feita, na maioria das obras, sem uma análise objetiva de custo. O construtor compra barra reta por hábito, ou contrata o corte e dobra sem entender exatamente quanto está pagando a mais ou a menos.
+A escolha entre cortar o aço no canteiro ou usar o serviço de corte e dobra industrial é feita, na maioria das obras, sem uma análise objetiva de custo. O construtor compra barra reta por hábito, ou contrata o corte e dobra sem entender exatamente quanto está pagando a mais ou a menos. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Este comparativo usa dados reais de obras residenciais e comerciais em Goiás para tornar essa decisão objetiva.
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A perda de aço no corte manual do canteiro é um custo invisível que a maioria dos construtores não contabiliza. Em uma obra com 5 toneladas de vergalhão, o desperdício pode chegar a R$2.000 ou mais. Veja como calcular e como eliminar esse custo.",
   content: `## O Custo Invisível do Corte Manual
 
-No canteiro de obras, o desperdício de aço é normalizado. Todo mundo sabe que sobra pontinha de vergalhão depois do corte — e que essas pontas vão para o ferro-velho. É encarado como custo natural da construção.
+No canteiro de obras, o desperdício de aço é normalizado. Todo mundo sabe que sobra pontinha de vergalhão depois do corte — e que essas pontas vão para o ferro-velho. É encarado como custo natural da construção. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Só que não é. É um custo **evitável**, que para grandes obras representa milhares de reais jogados fora.
 

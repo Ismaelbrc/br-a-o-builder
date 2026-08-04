@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "laje treliçada como fazer",
   date: "12 Mai 2026",
   summary: "Guia completo sobre laje treliçada: tipos, materiais, dimensionamento e passo a passo de execução para construtores e engenheiros.",
-  content: `**Em resumo:** A laje treliçada é executada em cinco etapas: 1) posicionamento das treliças sobre a forma; 2) colocação das tavelas cerâmicas ou EPS entre as treliças; 3) instalação das armaduras complementares (negativos, bordas, maciços de apoio); 4) concretagem com vibrador; 5) cura úmida por mínimo 7 dias. A capa de concreto sobre as tavelas deve ter no mínimo 4cm de espessura, conforme a ABNT NBR 14859.
+  content: `**Em resumo:** A laje treliçada é executada em cinco etapas: 1) posicionamento das treliças sobre a forma; 2) colocação das tavelas cerâmicas ou EPS entre as treliças; 3) instalação das armaduras complementares (negativos, bordas, maciços de apoio); 4) concretagem com vibrador; 5) cura úmida por mínimo 7 dias. A capa de concreto sobre as tavelas deve ter no mínimo 4cm de espessura, conforme a ABNT NBR 14859. Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 ---
 

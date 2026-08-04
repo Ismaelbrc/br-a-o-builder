@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia completo sobre forma incorporada para laje: funcionamento técnico, vantagens sobre fôrma de madeira, normas aplicáveis e disponibilidade exclusiva no Centro-Oeste pela BR Aço.",
   content: `## O Problema da Fôrma de Madeira que Todo Engenheiro Conhece
 
-Todo profissional de construção civil já vivenciou o ciclo frustrante da fôrma de madeira para laje: montagem, concretagem, descimbramento, desmontagem, transporte, reaproveitamento e descarte final. A carpintaria responde por 15% a 25% do prazo de execução de estruturas convencionais e exige mão de obra especializada cada vez mais escassa.
+Todo profissional de construção civil já vivenciou o ciclo frustrante da fôrma de madeira para laje: montagem, concretagem, descimbramento, desmontagem, transporte, reaproveitamento e descarte final. A carpintaria responde por 15% a 25% do prazo de execução de estruturas convencionais e exige mão de obra especializada cada vez mais escassa. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 A forma incorporada surgiu como resposta industrial a esse problema — e, no Centro-Oeste, a BR Aço é a única empresa que a fornece.
 

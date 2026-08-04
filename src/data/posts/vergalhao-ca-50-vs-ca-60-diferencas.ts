@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "vergalhão CA-50 CA-60 diferenças",
   date: "01 Fev 2026",
   summary: "Descubra as diferenças entre vergalhão CA-50 e CA-60, onde usar cada tipo, resistência e como escolher o aço certo para sua obra.",
-  content: `**Em resumo:** A principal diferença entre CA-50 e CA-60 é a resistência ao escoamento: fy ≥ 500 MPa no CA-50 e fy ≥ 600 MPa no CA-60, conforme a ABNT NBR 7480. Na prática, o CA-50 domina as armaduras estruturais (vigas, pilares, lajes, fundações) por sua maior ductilidade; já o CA-60 é fabricado exclusivamente em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas e telas soldadas.
+  content: `**Em resumo:** A principal diferença entre CA-50 e CA-60 é a resistência ao escoamento: fy ≥ 500 MPa no CA-50 e fy ≥ 600 MPa no CA-60, conforme a ABNT NBR 7480. Na prática, o CA-50 domina as armaduras estruturais (vigas, pilares, lajes, fundações) por sua maior ductilidade; já o CA-60 é fabricado exclusivamente em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas e telas soldadas — os dois tipos que a BR Aço mantém em estoque para entrega rápida em Goiânia e região.
 
 ---
 

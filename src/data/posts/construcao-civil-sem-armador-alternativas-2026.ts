@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A escassez de armadores está obrigando o setor a se reinventar. Conheça 5 alternativas práticas para construir sem depender de armador especializado em 2026 — da mais simples à mais tecnológica.",
   content: `## Por Que Construir Sem Armador Virou Pauta em 2026
 
-A construção civil brasileira perdeu centenas de milhares de trabalhadores especializados na última década — entre aposentadorias, migração para outros setores e baixa renovação da mão de obra jovem. O armador, profissional essencial para qualquer estrutura de concreto armado, está entre os mais escassos.
+A construção civil brasileira perdeu centenas de milhares de trabalhadores especializados na última década — entre aposentadorias, migração para outros setores e baixa renovação da mão de obra jovem. O armador, profissional essencial para qualquer estrutura de concreto armado, está entre os mais escassos. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Resultado: **obra tem, engenheiro tem, material tem — mas a armação não avança**.
 

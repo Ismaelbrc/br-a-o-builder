@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia técnico completo sobre laje nervurada: tipos (unidirecional e bidirecional), vigotas, nervos, armação, cobrimento e comparativo com outros sistemas.",
   content: `## O que é Laje Nervurada?
 
-Laje nervurada é o sistema estrutural composto por nervuras (nervos) espaçadas regularmente, preenchidas com elementos de enchimento — blocos cerâmicos, EPS ou lajotas de concreto — que não contribuem estruturalmente. A zona de compressão é garantida pela mesa (capa) de concreto sobre os enchimentos.
+Laje nervurada é o sistema estrutural composto por nervuras (nervos) espaçadas regularmente, preenchidas com elementos de enchimento — blocos cerâmicos, EPS ou lajotas de concreto — que não contribuem estruturalmente. A zona de compressão é garantida pela mesa (capa) de concreto sobre os enchimentos. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 A NBR 6118:2014, item 13.2.4, define laje nervurada como aquela com espaçamento entre eixos de nervuras não superior a 65 cm e altura total inferior a 30 cm.
 

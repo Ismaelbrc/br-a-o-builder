@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Pilares e vigas concentram a maior parte do aço estrutural de uma edificação. Veja como calcular a armadura longitudinal e os estribos com fórmulas práticas e exemplos numéricos.",
   content: `## Pilares: Armadura Longitudinal
 
-A armadura longitudinal de pilar resiste à compressão e à flambagem. O dimensionamento segue a NBR 6118, mas para estimativa inicial você pode usar:
+A armadura longitudinal de pilar resiste à compressão e à flambagem — esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal. O dimensionamento segue a NBR 6118, mas para estimativa inicial você pode usar:
 
 ### Fórmula de Estimativa
 

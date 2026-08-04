@@ -20,7 +20,7 @@ No canteiro de obras, um erro de medida de 1cm no corte do vergalhão parece ins
 - Comprometer a conformidade com o projeto estrutural
 - Em casos extremos, criar um ponto de fraqueza que a inspeção técnica vai reprovar
 
-Isso não é exagero — é física estrutural e norma técnica.
+É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal. Isso não é exagero — é física estrutural e norma técnica.
 
 ## Por Que a Medida Importa Tanto
 

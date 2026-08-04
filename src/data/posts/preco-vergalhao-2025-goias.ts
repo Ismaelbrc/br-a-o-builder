@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O preço do vergalhão em 2025 é influenciado por minério de ferro, câmbio, energia e demanda da construção civil. Saiba como esses fatores funcionam e como fazer uma compra mais estratégica.",
   content: `## Por Que o Preço do Vergalhão Oscila Tanto?
 
-O vergalhão é um commodity — seu preço acompanha variáveis nacionais e internacionais que mudam semanalmente. Entender essa dinâmica ajuda a tomar decisões de compra mais estratégicas.
+O vergalhão é um commodity — seu preço acompanha variáveis nacionais e internacionais que mudam semanalmente. Entender essa dinâmica ajuda a tomar decisões de compra mais estratégicas. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ## Fatores que Influenciam o Preço do Vergalhão
 

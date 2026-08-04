@@ -20,7 +20,7 @@ Para solicitar o serviço de corte e dobra, você precisa de um documento com as
 - Quadro de ferragens
 - Lista de corte
 
-O nome varia, mas o conteúdo é o mesmo: **cada peça identificada com bitola, comprimento e dobras**.
+O nome varia, mas o conteúdo é o mesmo: **cada peça identificada com bitola, comprimento e dobras** — é um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ## Formato Mínimo da Planilha
 

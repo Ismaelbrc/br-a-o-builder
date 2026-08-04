@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A barra reta de vergalhão de 12 metros é o padrão do mercado — mas cria 5 problemas práticos no canteiro. Conheça cada um e veja como o serviço de corte e dobra industrial resolve de forma definitiva.",
   content: `## A Barra de 12m: Padrão do Mercado, Problema no Canteiro
 
-A barra reta de 12 metros é o formato padrão de comercialização do vergalhão no Brasil. É o que a siderúrgica fabrica, o que a distribuidora estoca e o que o caminhão entrega. Mas no canteiro de obras, ela cria uma série de problemas práticos que encarecem e atrasam a obra.
+A barra reta de 12 metros é o formato padrão de comercialização do vergalhão no Brasil. É o que a siderúrgica fabrica, o que a distribuidora estoca e o que o caminhão entrega. Mas no canteiro de obras, ela cria uma série de problemas práticos que encarecem e atrasam a obra. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 ## Problema 1 — Logística de Descarga e Armazenamento
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Entenda por que a cura do concreto é decisiva para resistência e durabilidade — métodos úmido, químico e protegido, e prazos mínimos segundo NBR 14931.",
   content: `## O que é Cura do Concreto?
 
-Cura é o processo de controlar a temperatura e a umidade do concreto após o lançamento, garantindo que as reações de hidratação do cimento ocorram adequadamente. Sem cura, o concreto perde resistência, trinca e reduz drasticamente sua durabilidade.
+Cura é o processo de controlar a temperatura e a umidade do concreto após o lançamento, garantindo que as reações de hidratação do cimento ocorram adequadamente. Sem cura, o concreto perde resistência, trinca e reduz drasticamente sua durabilidade. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 A hidratação do cimento é uma reação exotérmica que consome água. Se a água evapora antes que a reação se complete, a estrutura cristalina do concreto fica incompleta — como se você cozinhasse um bolo e retirasse antes do tempo.
 

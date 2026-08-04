@@ -16,7 +16,7 @@ const post: BlogPost = {
 Cobrimento é a distância entre a face externa do concreto e a superfície da armadura (barra). Ele protege o aço contra:
 - **Carbonatação** (neutralização do pH do concreto, que destrói a camada passivadora do aço)
 - **Cloretos** (penetração de íons de cloreto que causam corrosão ativa)
-- **Fogo** (o concreto funciona como isolamento térmico da armadura)
+- **Fogo** (o concreto funciona como isolamento térmico da armadura). É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Cobrimento insuficiente é a principal causa de patologia estrutural no Brasil.
 

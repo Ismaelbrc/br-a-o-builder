@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "60 termos técnicos definidos com precisão: concreto armado, estruturas, armação, normas NBR, fundações e patologias.",
   content: `## Por que um Glossário Técnico?
 
-A terminologia técnica precisa é fundamental para evitar erros em projeto e obra. Termos usados de forma incorreta causam desde retrabalho até falhas estruturais. Este glossário reúne os 60 termos mais importantes do domínio de estruturas de concreto armado, com definições baseadas na NBR 6118:2014 e na prática de projeto.
+A terminologia técnica precisa é fundamental para evitar erros em projeto e obra. Termos usados de forma incorreta causam desde retrabalho até falhas estruturais. Este glossário reúne os 60 termos mais importantes do domínio de estruturas de concreto armado, com definições baseadas na NBR 6118:2014 e na prática de projeto. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## A
 

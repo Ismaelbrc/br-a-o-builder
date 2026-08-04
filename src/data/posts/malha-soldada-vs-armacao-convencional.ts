@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Malha soldada versus armação convencional em lajes — custo, produtividade, aplicações e limitações de cada sistema.",
   content: `## O que é Malha Soldada?
 
-Malha soldada (ou tela soldada eletrosoldada) é a armação composta por fios de aço CA-60 dispostos em grelha ortogonal e soldados nos cruzamentos em fábrica. As malhas vêm em rolos ou chapas padronizadas.
+Malha soldada (ou tela soldada eletrosoldada) é a armação composta por fios de aço CA-60 dispostos em grelha ortogonal e soldados nos cruzamentos em fábrica. As malhas vêm em rolos ou chapas padronizadas. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Principais especificações comerciais no Brasil:
 

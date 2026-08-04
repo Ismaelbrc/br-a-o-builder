@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia prático para engenheiros e mestres de obra sobre como ler a planilha de ferro, verificar os campos obrigatórios e preparar a lista de corte para o serviço de corte e dobra.",
   content: `## A Planilha de Ferro é o "DNA" do Projeto Estrutural
 
-A planilha de ferro é o documento que traduz o projeto estrutural em quantidades e dimensões de barras. É o documento que você envia para o serviço de corte e dobra — e a qualidade desse documento determina diretamente a qualidade do que vai chegar na obra.
+A planilha de ferro é o documento que traduz o projeto estrutural em quantidades e dimensões de barras. É o documento que você envia para o serviço de corte e dobra — e a qualidade desse documento determina diretamente a qualidade do que vai chegar na obra. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Estrutura da Planilha de Ferro — Campos Obrigatórios
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "TR-08, TR-10 e TR-12 são os modelos mais comuns de treliça para laje. A diferença está na altura e na capacidade de vão. Saiba qual escolher para cada projeto.",
   content: `## O Que Define o Modelo da Treliça?
 
-O código **TR-XX** indica a **altura nominal da treliça em centímetros**. Uma TR-08 tem 8 cm de altura; uma TR-12, 12 cm. Essa altura determina a rigidez da treliça e, consequentemente, o **vão máximo que ela pode vencer** com segurança.
+O código **TR-XX** indica a **altura nominal da treliça em centímetros**. Uma TR-08 tem 8 cm de altura; uma TR-12, 12 cm. Essa altura determina a rigidez da treliça e, consequentemente, o **vão máximo que ela pode vencer** com segurança. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Composição da Treliça Metálica
 

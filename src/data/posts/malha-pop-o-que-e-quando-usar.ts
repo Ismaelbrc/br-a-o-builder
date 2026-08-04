@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Malha pop é uma tela soldada CA-60 com fios de 4,2 mm, usada em contrapisos, calçadas e reforço de argamassa. Entenda quando ela é suficiente e quando o projeto exige tela estrutural.",
   content: `## O Que é a Malha Pop?
 
-A **malha pop** (ou tela pop) é uma tela soldada de aço CA-60 com fios de **diâmetro 4,2 mm** e malha **15 × 15 cm**. É o produto de menor calibre na família das telas soldadas.
+A **malha pop** (ou tela pop) é uma tela soldada de aço CA-60 com fios de **diâmetro 4,2 mm** e malha **15 × 15 cm**. É o produto de menor calibre na família das telas soldadas. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Apesar do nome informal, o produto atende a **ABNT NBR 7480** e tem rastreabilidade de produção.
 

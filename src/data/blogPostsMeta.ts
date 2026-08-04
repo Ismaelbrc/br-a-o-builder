@@ -430,7 +430,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "corte e dobra vs barra inteira",
     date: "22 Nov 2025",
     summary: "Muitos compradores comparam apenas o preço por kg. Mas o custo real inclui perda de material, mão de obra, tempo e qualidade. Veja onde corte e dobra industrial vence na prática.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 40,
@@ -452,7 +452,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "como funciona corte e dobra industrial",
     date: "26 Nov 2025",
     summary: "O corte e dobra industrial usa máquinas CNC programadas com a planilha de ferro do projeto. O resultado são peças com tolerância de ±5 mm, prontas para montagem direto na obra.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 42,
@@ -551,7 +551,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "espaçamento vergalhão laje NBR 6118",
     date: "14 Dez 2025",
     summary: "A NBR 6118 limita o espaçamento máximo entre barras na laje a 2h ou 20 cm. Entender essas regras evita reprova na fiscalização e garante que a armadura funcione como calculada.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 51,
@@ -661,7 +661,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "tela soldada vs vergalhão laje",
     date: "03 Jan 2026",
     summary: "Tela soldada e vergalhão têm custos parecidos por kg, mas a tela economiza mão de obra de montagem. Entenda quando usar cada solução e como combiná-las corretamente.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 61,
@@ -683,7 +683,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "fck concreto C20 C25 diferença",
     date: "07 Jan 2026",
     summary: "C20, C25 e C30 são as classes de resistência do concreto mais usadas em obras residenciais. Entenda o que o fck significa, as diferenças práticas e qual usar em cada elemento estrutural.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 63,
@@ -749,7 +749,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "economizar aço obra",
     date: "19 Jan 2026",
     summary: "É possível economizar significativamente no aço da obra sem comprometer a segurança estrutural. As estratégias passam por projeto otimizado, corte industrial e gestão de estoque.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 69,
@@ -1002,7 +1002,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "interferências entre projetos obra",
     date: "27 Mar 2026",
     summary: "Como identificar e resolver interferências entre projetos estrutural, elétrico, hidrossanitário e arquitetônico — compatibilização antes da execução.",
-    readingTime: 2,
+    readingTime: 3,
   },
   {
     id: 92,
@@ -1772,7 +1772,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "sequenciamento armação laje",
     date: "28 Mai 2026",
     summary: "Guia prático completo de sequenciamento de armação de laje: etapas da preparação ao fechamento da armadura, verificações normativas em cada fase e vantagens do aço pré-cortado.",
-    readingTime: 3,
+    readingTime: 4,
   },
   {
     id: 162,

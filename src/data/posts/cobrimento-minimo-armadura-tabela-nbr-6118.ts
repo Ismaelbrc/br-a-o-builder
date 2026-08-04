@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tabela completa de cobrimento mínimo de armadura por elemento estrutural e classe de agressividade ambiental, conforme a NBR 6118:2026.",
   content: `## Resposta Rápida
 
-O cobrimento mínimo de armadura conforme a NBR 6118:2026 varia de **20 mm a 50 mm**, dependendo do tipo de elemento estrutural (laje, viga, pilar, fundação) e da classe de agressividade ambiental do local da obra. Em Goiânia (ambiente urbano moderado, Classe II), o mínimo é **25 mm para lajes** e **30 mm para vigas e pilares**.
+O cobrimento mínimo de armadura conforme a NBR 6118:2026 varia de **20 mm a 50 mm**, dependendo do tipo de elemento estrutural (laje, viga, pilar, fundação) e da classe de agressividade ambiental do local da obra. Em Goiânia (ambiente urbano moderado, Classe II), o mínimo é **25 mm para lajes** e **30 mm para vigas e pilares**. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## O que é Cobrimento de Armadura?
 

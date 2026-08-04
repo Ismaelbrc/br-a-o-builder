@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Controle tecnológico do concreto — coleta e moldagem de corpos de prova, cura, ensaio de compressão e critérios de aceitação conforme NBR 12655 e NBR 5738.",
   content: `## Por que Controlar o Concreto?
 
-O controle tecnológico do concreto é a única forma de confirmar que o fck especificado no projeto foi efetivamente entregue pela concreteira e materializado na estrutura. Sem esse controle, você está aceitando uma estrutura sem saber se ela atende ao projeto.
+O controle tecnológico do concreto é a única forma de confirmar que o fck especificado no projeto foi efetivamente entregue pela concreteira e materializado na estrutura. Sem esse controle, você está aceitando uma estrutura sem saber se ela atende ao projeto. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 Além disso, a **NBR 12655** (preparo e controle) e a **NBR 14931** (execução) tornam o controle obrigatório para estruturas em classes de agressividade II ou superior.
 

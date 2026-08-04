@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é o slump test, o que ele mede, como realizar corretamente conforme NBR NM 67 e o que fazer quando o concreto está fora do especificado.",
   content: `## O que é o Slump Test?
 
-O slump test (ensaio de abatimento do tronco de cone) é o método mais simples e rápido para avaliar a consistência (trabalhabilidade) do concreto fresco. Ele indica a fluidez do concreto — ou seja, quão fácil é de lançar, adulterar e vibrar.
+O slump test (ensaio de abatimento do tronco de cone) é o método mais simples e rápido para avaliar a consistência (trabalhabilidade) do concreto fresco. Ele indica a fluidez do concreto — ou seja, quão fácil é de lançar, adulterar e vibrar. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 O ensaio é regulamentado pela **NBR NM 67:1998** (método de ensaio) e pela **ASTM C143** (norma americana equivalente).
 

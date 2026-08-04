@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Principais patologias do concreto — fissuras por retração e sobrecarga, carbonatação, corrosão de armaduras, ninhos — causas, diagnóstico e tratamento.",
   content: `## O que é Patologia em Estruturas?
 
-Patologia estrutural é o estudo das origens, mecanismos de desenvolvimento, manifestações e consequências das anomalias em estruturas de concreto. O termo "patologia" é emprestado da medicina — assim como doenças no corpo humano, as patologias do concreto têm causas, sintomas e tratamentos.
+Patologia estrutural é o estudo das origens, mecanismos de desenvolvimento, manifestações e consequências das anomalias em estruturas de concreto. O termo "patologia" é emprestado da medicina — assim como doenças no corpo humano, as patologias do concreto têm causas, sintomas e tratamentos. A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 ## 1. Fissuração
 

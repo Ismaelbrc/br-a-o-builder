@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tabela de referência com o peso do ferro pronto (vergalhão CA-25, CA-50 e CA-60) por metro e por barra de 12m, para todos os diâmetros disponíveis no mercado. Referência indispensável para orçamento e compra de aço.",
   content: `## Tabela de Peso do Ferro Pronto por Diâmetro
 
-O "ferro pronto" é o nome popular do vergalhão de aço cortado e dobrado (ou em barra) usado na construção civil. O peso varia conforme o diâmetro e o grau (CA-25, CA-50 ou CA-60). Use as tabelas abaixo como referência rápida para orçamentos e quantitativos.
+O "ferro pronto" é o nome popular do vergalhão de aço cortado e dobrado (ou em barra) usado na construção civil. O peso varia conforme o diâmetro e o grau (CA-25, CA-50 ou CA-60). Use as tabelas abaixo como referência rápida para orçamentos e quantitativos. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 A fórmula para calcular o peso linear é: **peso (kg/m) = 0,00617 × diâmetro² (mm²)**
 

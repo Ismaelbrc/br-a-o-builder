@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "normas ABNT vergalhão",
   date: "14 Fev 2026",
   summary: "Panorama completo das normas ABNT que regulamentam vergalhões para concreto armado: requisitos de produto, de projeto e de execução que todo engenheiro civil deve conhecer.",
-  content: `**Em resumo:** As normas técnicas que todo engenheiro deve conhecer ao especificar aço para concreto armado são: ABNT NBR 7480 (barras e fios de aço), NBR 6118 (projeto de estruturas de concreto armado), NBR 6122 (fundações) e NBR 14859 (treliças metálicas). A NBR 7480 define as classes CA-25, CA-50 e CA-60, os ensaios de dobramento e tração obrigatórios, e a rastreabilidade exigida em cada lote de vergalhão.
+  content: `**Em resumo:** As normas técnicas que todo engenheiro deve conhecer ao especificar aço para concreto armado são: ABNT NBR 7480 (barras e fios de aço), NBR 6118 (projeto de estruturas de concreto armado), NBR 6122 (fundações) e NBR 14859 (treliças metálicas). A NBR 7480 define as classes CA-25, CA-50 e CA-60, os ensaios de dobramento e tração obrigatórios, e a rastreabilidade exigida em cada lote de vergalhão. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ---
 

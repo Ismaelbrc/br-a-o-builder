@@ -15,7 +15,7 @@ const post: BlogPost = {
 
 A armadura de uma laje pode ser feita com:
 1. **Barras de vergalhão** cortadas, dobradas e amarradas na obra
-2. **Tela soldada** (malha eletrossoldada) — painel industrializado pronto para uso
+2. **Tela soldada** (malha eletrossoldada) — painel industrializado pronto para uso. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Ambas atendem a NBR 6118, mas têm características operacionais muito diferentes.
 

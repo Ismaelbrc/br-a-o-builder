@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comparativo técnico e financeiro completo entre forma incorporada e fôrma de madeira para lajes: custo de material, mão de obra, prazo e ponto de break-even por m² de laje.",
   content: `## A Decisão que Poucos Fazem com Dados
 
-A maioria dos construtores escolhe entre forma incorporada e fôrma de madeira com base em hábito, não em análise. "Sempre usei madeira" ou "nunca trabalhei com metálica" são os critérios mais comuns. Este artigo muda isso — com números.
+A maioria dos construtores escolhe entre forma incorporada e fôrma de madeira com base em hábito, não em análise. "Sempre usei madeira" ou "nunca trabalhei com metálica" são os critérios mais comuns. Este artigo muda isso — com números. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Custo de Mão de Obra (100 m² de laje)
 

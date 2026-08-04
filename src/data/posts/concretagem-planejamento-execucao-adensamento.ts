@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Como planejar e executar a concretagem — lançamento, adensamento, sequência, controle de temperatura e coleta de corpos de prova para estruturas de qualidade.",
   content: `## Por que o Planejamento da Concretagem É Crítico?
 
-Uma vez que o caminhão betoneira chega ao canteiro, o processo é irreversível. O concreto tem janela de trabalhabilidade (usualmente 1,5 a 2 horas após a mistura) — se houver atraso, fila de caminhões, equipamento com defeito ou falta de equipe, o concreto endurece prematuramente e o elemento precisa ser demolido.
+Uma vez que o caminhão betoneira chega ao canteiro, o processo é irreversível. O concreto tem janela de trabalhabilidade (usualmente 1,5 a 2 horas após a mistura) — se houver atraso, fila de caminhões, equipamento com defeito ou falta de equipe, o concreto endurece prematuramente e o elemento precisa ser demolido. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Planejar é proteger a estrutura.
 

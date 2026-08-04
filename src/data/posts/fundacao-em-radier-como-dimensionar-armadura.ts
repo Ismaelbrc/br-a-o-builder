@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia técnico completo sobre fundação em radier: conceito, quando é indicado, dimensionamento da armadura conforme ABNT NBR 6118 e NBR 6122, e boas práticas de execução.",
   content: `## O Que É uma Fundação em Radier?
 
-O radier (ou radier geral) é um tipo de fundação superficial que consiste em uma laje de concreto armado que cobre toda a área da edificação — ou de parte dela — e distribui as cargas de todos os pilares e paredes para o solo de forma contínua.
+O radier (ou radier geral) é um tipo de fundação superficial que consiste em uma laje de concreto armado que cobre toda a área da edificação — ou de parte dela — e distribui as cargas de todos os pilares e paredes para o solo de forma contínua. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Diferentemente das fundações pontuais (sapatas isoladas) ou lineares (vigas de baldrame), o radier funciona como um elemento único que age em conjunto. Essa característica o torna especialmente eficiente quando a capacidade de suporte do solo é baixa e uniforme, ou quando as cargas da edificação são distribuídas de forma relativamente uniforme.
 

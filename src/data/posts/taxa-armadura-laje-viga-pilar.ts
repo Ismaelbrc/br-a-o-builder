@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A NBR 6118 define taxas mínimas e máximas de armadura para cada elemento estrutural. Entender esses limites ajuda a verificar se o projeto está correto e evitar sub ou superarmação.",
   content: `## O Que É Taxa de Armadura?
 
-A taxa de armadura (ρ) é a relação entre a **área de aço** e a **área da seção transversal de concreto**:
+A taxa de armadura (ρ) é a relação entre a **área de aço** e a **área da seção transversal de concreto**: A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 **ρ = As / Ac**
 

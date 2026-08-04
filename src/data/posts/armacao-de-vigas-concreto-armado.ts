@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia técnico para armação de vigas: armadura positiva, negativa, estribos, ancoragem e comprimentos de transpasse conforme NBR 6118.",
   content: `## Comportamento Estrutural da Viga
 
-Uma viga em concreto armado trabalha à flexão. Na região de vão, a fibra inferior fica em tração e a superior em compressão. Nos apoios, o diagrama de momentos se inverte: a face superior fica em tração.
+Uma viga em concreto armado trabalha à flexão. Na região de vão, a fibra inferior fica em tração e a superior em compressão. Nos apoios, o diagrama de momentos se inverte: a face superior fica em tração. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 **Regra fundamental:** o aço resiste à tração; o concreto resiste à compressão. A armadura vai sempre onde a tração ocorre.
 

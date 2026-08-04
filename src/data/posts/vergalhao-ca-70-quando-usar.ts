@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "CA-70 e CA-80 são vergalhões de altíssima resistência usados em pré-moldados, protendidos e estruturas especiais. Saiba quando o projeto os exige e por quê são raros na construção residencial.",
   content: `## Além do CA-60: Existem Classes Ainda Mais Resistentes?
 
-Sim. A **ABNT NBR 7480** também contempla as classes **CA-70** (700 MPa) e **CA-80** (800 MPa), mas elas têm um nicho bem definido e raramente aparecem em obras residenciais comuns.
+Sim. A **ABNT NBR 7480** também contempla as classes **CA-70** (700 MPa) e **CA-80** (800 MPa), mas elas têm um nicho bem definido e raramente aparecem em obras residenciais comuns. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 ## CA-70 — Características
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Critérios para escolha do sistema estrutural: pórticos, paredes, laje plana e sistemas mistos — vantagens, limitações e quando usar cada um.",
   content: `## O que Determina a Escolha do Sistema Estrutural?
 
-O sistema estrutural define como as cargas são transferidas da laje até as fundações. A escolha influencia o custo, o prazo de execução, a flexibilidade de uso e a durabilidade da edificação.
+O sistema estrutural define como as cargas são transferidas da laje até as fundações. A escolha influencia o custo, o prazo de execução, a flexibilidade de uso e a durabilidade da edificação. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 Os principais fatores a considerar são:
 - Altura e número de pavimentos

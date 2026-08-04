@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Viga T: colaboração da laje como mesa de compressão, largura efetiva pela NBR 6118 e implicações para dimensionamento da armação.",
   content: `## O que é uma Viga T?
 
-Em edifícios de concreto armado, as vigas raramente funcionam isoladas. Quando a laje é concretada solidariamente com a viga, parte da laje passa a colaborar com a resistência à compressão da viga. O conjunto viga + aba de laje forma uma **seção T** (ou seção em forma de T).
+Em edifícios de concreto armado, as vigas raramente funcionam isoladas. Quando a laje é concretada solidariamente com a viga, parte da laje passa a colaborar com a resistência à compressão da viga. O conjunto viga + aba de laje forma uma **seção T** (ou seção em forma de T). Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 A colaboração da mesa de laje é vantajosa: aumenta a área de compressão e reduz a quantidade de aço necessária na viga.
 

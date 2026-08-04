@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Terceirizar a armação de ferro para uma empresa de corte e dobra é mais simples do que parece — e não significa perder o controle. Veja o que enviar, o que conferir na entrega e como garantir que tudo está conforme o projeto.",
   content: `## Terceirizar a Armação de Ferro: Medo ou Oportunidade?
 
-Muitos engenheiros e mestres de obra resistem à ideia de terceirizar a armação de ferro. O medo é sempre o mesmo: "vou perder o controle, vai chegar diferente do projeto". É um medo compreensível — mas baseado em experiências com fornecedores sem processo.
+Muitos engenheiros e mestres de obra resistem à ideia de terceirizar a armação de ferro. O medo é sempre o mesmo: "vou perder o controle, vai chegar diferente do projeto". É um medo compreensível — mas baseado em experiências com fornecedores sem processo. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Com o corte e dobra industrial feito corretamente, acontece o oposto: **você ganha mais controle**, porque tudo fica documentado antes de sair da fábrica.
 

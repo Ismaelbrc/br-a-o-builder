@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Concreto protendido: conceito, tipos (pré e pós-tensão), vantagens, quando especificar e comparativo com concreto armado convencional.",
   content: `## O que é Concreto Protendido?
 
-Concreto protendido é o concreto armado no qual as armaduras ativas (cabos de aço de alta resistência) são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento estrutural. Essa compressão prévia compensa (parcial ou totalmente) as trações causadas pelas cargas de serviço.
+Concreto protendido é o concreto armado no qual as armaduras ativas (cabos de aço de alta resistência) são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento estrutural. Essa compressão prévia compensa (parcial ou totalmente) as trações causadas pelas cargas de serviço. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 **Princípio:** o concreto é um material que resiste bem à compressão mas mal à tração. Ao pré-comprimir o elemento, compensa-se a tração que as cargas irão gerar, permitindo vãos maiores e seções menores.
 

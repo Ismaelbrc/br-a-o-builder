@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Entenda a diferença entre juntas de concretagem, dilatação e retração — quando são necessárias e como executar corretamente segundo NBR 6118.",
   content: `## Por que Existem Juntas em Estruturas de Concreto?
 
-O concreto é susceptível a variações volumétricas por temperatura, retração e fluência. Em estruturas longas ou com mudanças de rigidez, essas variações causam fissuras indesejadas se não forem controladas. As juntas são o mecanismo que permite à estrutura "se mover" sem fissuras.
+O concreto é susceptível a variações volumétricas por temperatura, retração e fluência. Em estruturas longas ou com mudanças de rigidez, essas variações causam fissuras indesejadas se não forem controladas. As juntas são o mecanismo que permite à estrutura "se mover" sem fissuras. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Tipos de Juntas
 

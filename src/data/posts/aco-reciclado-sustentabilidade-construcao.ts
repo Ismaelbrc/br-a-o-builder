@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O aço para construção civil é produzido em grande parte com sucata reciclada, sem perda de propriedades mecânicas. Entenda o ciclo do aço e como isso contribui para construções mais sustentáveis.",
   content: `## O Aço Como Símbolo de Sustentabilidade
 
-O **aço é o material mais reciclado do mundo** — e isso não é coincidência. Suas propriedades mecânicas são completamente preservadas após o processo de reciclagem, ao contrário de plástico ou papel, que perdem qualidade a cada ciclo.
+O **aço é o material mais reciclado do mundo** — e isso não é coincidência. Suas propriedades mecânicas são completamente preservadas após o processo de reciclagem, ao contrário de plástico ou papel, que perdem qualidade a cada ciclo. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## Como o Aço é Reciclado?
 

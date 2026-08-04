@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Cargas em estruturas: permanentes (peso próprio, revestimento), variáveis (uso), acidentais (vento) — valores da NBR 6120 e combinações de projeto.",
   content: `## Por que Calcular Cargas Corretamente?
 
-O cálculo de cargas é a entrada de todo projeto estrutural. Subestimar cargas leva a estruturas inseguras; superestimar aumenta custo desnecessariamente. As cargas são classificadas conforme a ABNT NBR 6118:2014 e quantificadas pela NBR 6120:2019.
+O cálculo de cargas é a entrada de todo projeto estrutural. Subestimar cargas leva a estruturas inseguras; superestimar aumenta custo desnecessariamente. As cargas são classificadas conforme a ABNT NBR 6118:2014 e quantificadas pela NBR 6120:2019. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ## Classificação das Cargas
 

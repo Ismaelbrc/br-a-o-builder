@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Estribos são a armadura transversal que impede o colapso por cisalhamento em pilares e vigas. A NBR 6118 define espaçamentos máximos rigorosos que devem ser respeitados na execução.",
   content: `## O Que São Estribos?
 
-Estribos (também chamados cintas, aros ou grampos) são barras de aço dobradas em forma fechada (retangular, quadrada, circular ou poligonal) que envolvem as barras longitudinais de pilares e vigas.
+Estribos (também chamados cintas, aros ou grampos) são barras de aço dobradas em forma fechada (retangular, quadrada, circular ou poligonal) que envolvem as barras longitudinais de pilares e vigas. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Eles são uma das armaduras mais críticas da estrutura — e frequentemente mal executadas em obras sem supervisão técnica adequada.
 

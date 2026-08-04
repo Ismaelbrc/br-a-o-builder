@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Como montar ou ler uma planilha de ferro (quadro de armação) — diâmetros, quantidades, comprimentos de corte e cálculo de peso total para orçar com precisão.",
   content: `## O que é a Planilha de Ferro?
 
-A planilha de ferro (também chamada de quadro de armação ou lista de corte) é o documento que quantifica cada barra de aço da estrutura: tipo, diâmetro, comprimento de corte, quantidade e peso. É o documento que o responsável pela obra entrega ao fornecedor para cotar o corte e dobra ou comprar o vergalhão em barras.
+A planilha de ferro (também chamada de quadro de armação ou lista de corte) é o documento que quantifica cada barra de aço da estrutura: tipo, diâmetro, comprimento de corte, quantidade e peso. É o documento que o responsável pela obra entrega ao fornecedor para cotar o corte e dobra ou comprar o vergalhão em barras. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Sem planilha, você compra "a olho" — e invariavelmente sobra ou falta material.
 

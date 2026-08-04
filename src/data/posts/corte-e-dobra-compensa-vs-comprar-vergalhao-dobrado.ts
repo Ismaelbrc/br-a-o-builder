@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "corte e dobra compensa",
   date: "02 Ago 2026",
   summary: "Comparativo direto: quando o corte e dobra industrial compensa em relação a comprar vergalhão reto e dobrar manualmente na obra, e quando a conta pode não fechar.",
-  content: `**Em resumo:** Corte e dobra industrial compensa na maioria das obras de médio e grande porte porque elimina o custo do armador especializado, reduz o desperdício de material (de 3% a 8% para praticamente zero) e acelera o cronograma. A conta pode não fechar em obras muito pequenas ou pontuais, onde o volume de aço não justifica o mínimo de produção — nesse caso, vergalhão avulso segue sendo a opção mais simples.
+  content: `**Em resumo:** Corte e dobra industrial compensa na maioria das obras de médio e grande porte porque elimina o custo do armador especializado, reduz o desperdício de material (de 3% a 8% para praticamente zero) e acelera o cronograma — a experiência da BR Aço em obras de Goiânia e do DF confirma esse padrão. A conta pode não fechar em obras muito pequenas ou pontuais, onde o volume de aço não justifica o mínimo de produção — nesse caso, vergalhão avulso segue sendo a opção mais simples.
 
 ---
 

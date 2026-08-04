@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Laje maciça e treliçada têm custos, pesos e aplicações diferentes. Entenda quando cada sistema é mais vantajoso e como o tipo de laje afeta a quantidade de aço necessária.",
   content: `## Dois Sistemas, Mesma Função
 
-Tanto a laje maciça quanto a treliçada servem para criar o piso/teto entre pavimentos. A diferença está na **forma de resistir às cargas** e nos **materiais utilizados** — o que impacta diretamente o custo e a quantidade de aço.
+Tanto a laje maciça quanto a treliçada servem para criar o piso/teto entre pavimentos. A diferença está na **forma de resistir às cargas** e nos **materiais utilizados** — o que impacta diretamente o custo e a quantidade de aço. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Laje Maciça
 

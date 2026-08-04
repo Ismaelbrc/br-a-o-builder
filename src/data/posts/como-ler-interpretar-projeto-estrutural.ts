@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Aprenda a ler e interpretar um projeto estrutural de concreto armado. Entenda plantas, cortes, detalhamentos e a planilha de ferro.",
   content: `## O que é um Projeto Estrutural?
 
-O projeto estrutural é o conjunto de desenhos técnicos que detalha toda a estrutura de uma edificação: fundações, pilares, vigas, lajes, escadas, muros de arrimo e demais elementos de concreto armado.
+O projeto estrutural é o conjunto de desenhos técnicos que detalha toda a estrutura de uma edificação: fundações, pilares, vigas, lajes, escadas, muros de arrimo e demais elementos de concreto armado. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Saber interpretar esse projeto é fundamental para construtores, mestres de obra, encarregados e até para quem vai contratar um serviço de corte e dobra.
 

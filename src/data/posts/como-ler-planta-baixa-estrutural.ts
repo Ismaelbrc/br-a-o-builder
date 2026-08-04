@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia prático para interpretar plantas baixas estruturais — como identificar pilares, vigas, lajes e convenções de representação no projeto de estrutura.",
   content: `## O que é a Planta Baixa Estrutural?
 
-A planta baixa estrutural (também chamada planta de forma ou planta de fôrma) é o desenho que mostra, visto de cima, a disposição dos elementos estruturais de um pavimento: pilares, vigas, lajes e aberturas. É o desenho mais consultado durante a execução da estrutura.
+A planta baixa estrutural (também chamada planta de forma ou planta de fôrma) é o desenho que mostra, visto de cima, a disposição dos elementos estruturais de um pavimento: pilares, vigas, lajes e aberturas. É o desenho mais consultado durante a execução da estrutura. É a partir dessa leitura que a BR Aço planeja o fornecimento de aço para construtoras de Goiânia e Goiás.
 
 ## Como Identificar os Elementos
 

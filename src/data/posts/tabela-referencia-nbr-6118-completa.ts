@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Referência rápida da NBR 6118:2014: cobrimento nominal, ancoragem, transpasse e ganchos — todos os valores em uma única página.",
   content: `## Cobrimento Nominal por Classe de Agressividade (NBR 6118, Tabela 7.2)
 
-O cobrimento nominal (c_nom) é a distância entre a face da armadura mais externa (estribo) e a superfície do concreto.
+O cobrimento nominal (c_nom) é a distância entre a face da armadura mais externa (estribo) e a superfície do concreto. Esse é o parâmetro que a BR Aço segue rigorosamente em todo fornecimento de armadura em Goiânia e no restante de Goiás.
 
 **c_nom = c_min + Δc** (onde Δc = 10 mm — tolerância de execução para estruturas convencionais)
 

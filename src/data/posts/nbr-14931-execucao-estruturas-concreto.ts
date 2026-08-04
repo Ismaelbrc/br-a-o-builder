@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Entenda o que exige a NBR 14931 para execução de estruturas de concreto — fôrmas, armação, concretagem, cura e controle de qualidade em obras.",
   content: `## O que é a NBR 14931?
 
-A **ABNT NBR 14931:2003** — "Execução de estruturas de concreto — Procedimento" — é a norma que regulamenta como executar estruturas de concreto armado ou protendido no Brasil. Ela é complementar à NBR 6118 (projeto) e define os requisitos mínimos que o construtor deve atender.
+A **ABNT NBR 14931:2003** — "Execução de estruturas de concreto — Procedimento" — é a norma que regulamenta como executar estruturas de concreto armado ou protendido no Brasil. Ela é complementar à NBR 6118 (projeto) e define os requisitos mínimos que o construtor deve atender. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 A norma se aplica a estruturas de edifícios, pontes, obras de arte e estruturas industriais.
 

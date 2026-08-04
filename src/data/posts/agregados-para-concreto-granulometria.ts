@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Como areia e brita afetam resistência e trabalhabilidade do concreto — granulometria, dimensão máxima do agregado, módulo de finura e qualidade.",
   content: `## Por que os Agregados São Importantes?
 
-Os agregados (areia e brita) constituem 70 a 80% do volume do concreto. Sua qualidade afeta diretamente a trabalhabilidade, a resistência, a durabilidade e o consumo de cimento.
+Os agregados (areia e brita) constituem 70 a 80% do volume do concreto. Sua qualidade afeta diretamente a trabalhabilidade, a resistência, a durabilidade e o consumo de cimento. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Ao contrário do que muitos imaginam, **comprar cimento caro e usar areia ruim** compromete o resultado. Areia com excesso de finos, areia orgânica ou brita com muitas faces lisas podem reduzir a resistência do concreto em 20 a 40%.
 

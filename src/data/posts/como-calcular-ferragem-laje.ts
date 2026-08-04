@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Calcular a ferragem da laje corretamente evita falta de material ou desperdício. Veja as fórmulas para laje maciça e treliçada com exemplos práticos em metros quadrados.",
   content: `## Por Que Calcular a Ferragem Antes de Comprar?
 
-Comprar aço sem cálculo preciso leva a dois problemas:
+Comprar aço sem cálculo preciso leva a dois problemas — e é justamente por isso que a equipe da BR Aço, em Goiânia, sempre confere a estimativa antes de fechar o pedido:
 1. **Falta de material:** para a obra, atraso no cronograma
 2. **Excesso:** capital imobilizado em material parado no canteiro
 

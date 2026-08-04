@@ -20,7 +20,7 @@ No DF, onde muitas obras passam por financiamento bancário e fiscalização té
 - Retrabalho por aço fora de especificação
 - Problemas legais com o responsável técnico da obra
 
-A escolha do fornecedor de aço para estrutura não deveria ser feita só pelo menor preço. Existem critérios que importam mais.
+É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal. A escolha do fornecedor de aço para estrutura não deveria ser feita só pelo menor preço. Existem critérios que importam mais.
 
 ## Critério 1 — Certificação e Rastreabilidade
 

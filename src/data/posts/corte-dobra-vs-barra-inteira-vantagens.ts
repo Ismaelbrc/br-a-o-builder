@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Muitos compradores comparam apenas o preço por kg. Mas o custo real inclui perda de material, mão de obra, tempo e qualidade. Veja onde corte e dobra industrial vence na prática.",
   content: `## A Comparação Mais Comum (e Incompleta)
 
-Quando um comprador pergunta "o vergalhão em barra fica mais barato?", ele geralmente compara apenas o **preço por kg** da barra com o da peça cortada e dobrada. Essa comparação ignora os custos ocultos.
+Quando um comprador pergunta "o vergalhão em barra fica mais barato?", ele geralmente compara apenas o **preço por kg** da barra com o da peça cortada e dobrada. Essa comparação ignora os custos ocultos. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 ## Custos da Barra Inteira (12 metros)
 

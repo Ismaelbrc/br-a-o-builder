@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Quando usar cada classe de concreto: fck mínimo por classe de agressividade, propriedades e aplicações do C20 ao C50.",
   content: `## O que Significa a Classe do Concreto?
 
-A classe do concreto é definida pelo seu fck (resistência característica à compressão simples) determinado a 28 dias de cura. A designação "C25" significa fck = 25 MPa — abaixo desse valor, pode-se encontrar no máximo 5% dos resultados de compressão.
+A classe do concreto é definida pelo seu fck (resistência característica à compressão simples) determinado a 28 dias de cura. A designação "C25" significa fck = 25 MPa — abaixo desse valor, pode-se encontrar no máximo 5% dos resultados de compressão. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 A NBR 6118:2014 define os requisitos mínimos por classe de agressividade ambiental, mas o engenheiro pode especificar uma classe superior quando as solicitações estruturais assim exigem.
 

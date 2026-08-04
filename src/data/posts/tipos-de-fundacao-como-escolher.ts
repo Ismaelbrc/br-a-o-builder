@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia completo dos tipos de fundação — sapata, bloco, radier, estacas e tubulão — como escolher conforme solo, carga e custo.",
   content: `## Por que a Escolha da Fundação É Decisiva?
 
-A fundação transfere as cargas da estrutura para o solo. Se a fundação for subdimensionada ou inadequada para o solo, ocorre recalque (afundamento) — diferencial ou uniforme — que causa fissuras, inclinações e, nos casos graves, colapso estrutural.
+A fundação transfere as cargas da estrutura para o solo. Se a fundação for subdimensionada ou inadequada para o solo, ocorre recalque (afundamento) — diferencial ou uniforme — que causa fissuras, inclinações e, nos casos graves, colapso estrutural. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 Trocar o tipo de fundação após a obra iniciada é extremamente caro. A escolha deve ser feita com base no **laudo de sondagem SPT** antes do início do projeto.
 

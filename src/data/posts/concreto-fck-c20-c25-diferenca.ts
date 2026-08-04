@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "C20, C25 e C30 são as classes de resistência do concreto mais usadas em obras residenciais. Entenda o que o fck significa, as diferenças práticas e qual usar em cada elemento estrutural.",
   content: `## O Que é o fck do Concreto?
 
-O **fck** (resistência característica à compressão) é o valor abaixo do qual apenas 5% dos resultados de ensaio se situam, em corpos de prova cilíndricos com 28 dias de cura. É a propriedade mais importante para dimensionamento estrutural.
+O **fck** (resistência característica à compressão) é o valor abaixo do qual apenas 5% dos resultados de ensaio se situam, em corpos de prova cilíndricos com 28 dias de cura. É a propriedade mais importante para dimensionamento estrutural. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 A classificação usa a letra **C** seguida do valor em MPa: **C20** = fck de 20 MPa.
 

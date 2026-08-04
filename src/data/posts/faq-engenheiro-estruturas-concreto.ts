@@ -14,7 +14,7 @@ const post: BlogPost = {
   content: `## Sobre Normas e Fundamentos
 
 **1. Qual a diferença entre fck e fcj?**
-fck é a resistência característica à compressão do concreto determinada a 28 dias de cura. fcj é a resistência na idade j dias — pode ser qualquer idade. Para liberação de fôrma ou aplicação de protensão, usa-se fcj.
+fck é a resistência característica à compressão do concreto determinada a 28 dias de cura. fcj é a resistência na idade j dias — pode ser qualquer idade. Para liberação de fôrma ou aplicação de protensão, usa-se fcj. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 **2. O que é classe de agressividade ambiental (CAA)?**
 Classificação da NBR 6118 (tabela 6.1) que define o nível de agressividade do ambiente onde a estrutura está inserida: Classe I (fraca), II (moderada), III (forte), IV (muito forte). Determina o cobrimento mínimo e o fck mínimo.

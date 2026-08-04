@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A nova NBR 6118:2026 entrou em vigor em março de 2026. Entenda o que mudou na norma de concreto armado e como isso impacta a especificação de armaduras na sua obra.",
   content: `## Resposta Rápida
 
-A NBR 6118:2026 entrou em vigor em 11 de março de 2026, substituindo a versão anterior (que havia sido cancelada). A principal novidade é a **obrigatoriedade da Avaliação Técnica de Projeto (ATP)** para estruturas de concreto armado, além de atualizações nos requisitos de cobrimento e durabilidade.
+A NBR 6118:2026 entrou em vigor em 11 de março de 2026, substituindo a versão anterior (que havia sido cancelada). A principal novidade é a **obrigatoriedade da Avaliação Técnica de Projeto (ATP)** para estruturas de concreto armado, além de atualizações nos requisitos de cobrimento e durabilidade. Esse é o padrão que a BR Aço já aplica em suas obras em Goiânia e no restante de Goiás.
 
 ## O que é a NBR 6118?
 

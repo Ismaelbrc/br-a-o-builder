@@ -14,7 +14,7 @@ const post: BlogPost = {
   content: `## Tipos Estruturais de Escadas
 
 ### 1. Escada em Lance Simples (Laje Inclinada)
-Lance como laje inclinada apoiada nos dois extremos — na viga do piso inferior e na viga do patamar ou piso superior. Tipo mais comum em edifícios residenciais.
+Lance como laje inclinada apoiada nos dois extremos — na viga do piso inferior e na viga do patamar ou piso superior. Tipo mais comum em edifícios residenciais. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 **Comportamento:** laje inclinada como laje simplesmente apoiada ou com continuidade. Tração principal na face inferior.
 

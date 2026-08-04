@@ -17,7 +17,7 @@ Em 1919, Duff Abrams estabeleceu empiricamente que **a resistência do concreto 
 
 > fck ∝ 1 / (a/c)
 
-Quanto mais água em relação ao cimento, mais poroso e fraco o concreto. Esta é a lei mais importante da tecnologia do concreto e é válida para qualquer concreto convencional (sem aditivos especiais).
+Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF. Quanto mais água em relação ao cimento, mais poroso e fraco o concreto. Esta é a lei mais importante da tecnologia do concreto e é válida para qualquer concreto convencional (sem aditivos especiais).
 
 ## O que é a Relação a/c?
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é radier, quando é indicado como solução de fundação, como calcular a espessura mínima e como armar corretamente.",
   content: `## O que é Radier?
 
-Radier (do francês *radier*) é uma laje de fundação que cobre toda a área da edificação. Ele distribui as cargas de todos os pilares e paredes para o solo uniformemente, funcionando como uma "plataforma flutuante" sobre o terreno.
+Radier (do francês *radier*) é uma laje de fundação que cobre toda a área da edificação. Ele distribui as cargas de todos os pilares e paredes para o solo uniformemente, funcionando como uma "plataforma flutuante" sobre o terreno. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 Ao contrário das sapatas isoladas que pontualmente distribuem a carga, o radier transforma toda a edificação numa única fundação contínua.
 

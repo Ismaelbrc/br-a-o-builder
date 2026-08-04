@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "ca-50 ca-60 diferença qual usar",
   date: "17 Mai 2026",
   summary: "Guia completo com todas as diferenças entre CA-50 e CA-60: resistência, aplicações, preço, diâmetros disponíveis e quando cada um é a escolha correta.",
-  content: `**Em resumo:** CA-50 e CA-60 são as duas classes de vergalhão nervurado mais utilizadas na construção civil brasileira em 2026. O CA-50 tem resistência ao escoamento de 500 MPa e é indicado para elementos estruturais (pilares, vigas, lajes, fundações) em qualquer diâmetro disponível (ø6,3mm a ø32mm). O CA-60, com 600 MPa, é produzido apenas em diâmetros de ø4,2mm a ø10mm e é o material padrão de treliças e telas soldadas no mercado brasileiro.
+  content: `**Em resumo:** CA-50 e CA-60 são as duas classes de vergalhão nervurado mais utilizadas na construção civil brasileira em 2026. O CA-50 tem resistência ao escoamento de 500 MPa e é indicado para elementos estruturais (pilares, vigas, lajes, fundações) em qualquer diâmetro disponível (ø6,3mm a ø32mm). O CA-60, com 600 MPa, é produzido apenas em diâmetros de ø4,2mm a ø10mm e é o material padrão de treliças e telas soldadas no mercado brasileiro. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ---
 

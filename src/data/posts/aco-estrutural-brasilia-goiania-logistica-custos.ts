@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comparativo de fornecimento de aço estrutural entre Brasília/DF e Goiânia/GO: diferenças de preço, prazo, disponibilidade de diâmetros e como um fornecedor de Goiás pode atender as duas regiões com qualidade.",
   content: `## Dois Mercados, Uma Cadeia de Suprimentos
 
-Brasília e Goiânia são as maiores economias do Centro-Oeste e ambas têm construção civil ativa. Embora geograficamente próximas (200 km), os mercados de aço estrutural nas duas cidades têm características distintas que afetam o custo e o prazo de fornecimento.
+Brasília e Goiânia são as maiores economias do Centro-Oeste e ambas têm construção civil ativa. Embora geograficamente próximas (200 km), os mercados de aço estrutural nas duas cidades têm características distintas que afetam o custo e o prazo de fornecimento. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Goiânia: Polo Industrial de Aço do Centro-Oeste
 

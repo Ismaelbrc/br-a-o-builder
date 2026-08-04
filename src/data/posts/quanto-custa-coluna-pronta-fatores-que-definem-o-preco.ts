@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "quanto custa coluna pronta",
   date: "02 Ago 2026",
   summary: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
-  content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação, não buscar um "preço por unidade" genérico.
+  content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação na BR Aço, em Goiânia, não buscar um "preço por unidade" genérico.
 
 ---
 

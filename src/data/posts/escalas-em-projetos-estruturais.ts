@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Entenda como funcionam as escalas em projetos de engenharia, como converter medidas no papel para a realidade e quais escalas são usadas em cada tipo de desenho técnico.",
   content: `## O que é Escala em Projetos de Engenharia?
 
-Escala é a relação entre a dimensão representada no desenho e a dimensão real do elemento construído. Uma escala 1:50 significa que 1 cm no papel equivale a 50 cm na obra — ou seja, a planta é 50 vezes menor que a realidade.
+Escala é a relação entre a dimensão representada no desenho e a dimensão real do elemento construído. Uma escala 1:50 significa que 1 cm no papel equivale a 50 cm na obra — ou seja, a planta é 50 vezes menor que a realidade. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 A escala não é um detalhe: ela define o nível de detalhe que o projeto precisa mostrar e é a base para qualquer conferência de medida em campo.
 

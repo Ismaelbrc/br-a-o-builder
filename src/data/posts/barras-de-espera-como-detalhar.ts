@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que são barras de espera, para que servem, comprimento de transpasse e como detalhar na ligação pilar-fundação e pilar-pilar.",
   content: `## O que são Barras de Espera?
 
-Barras de espera (ou "ferros de espera") são as armaduras longitudinais que saem de um elemento de concreto concretado anteriormente — como uma fundação ou um pilar inferior — para dentro do próximo elemento — pilar superior, laje ou viga. Elas garantem a continuidade estrutural e a transferência de esforços entre os elementos.
+Barras de espera (ou "ferros de espera") são as armaduras longitudinais que saem de um elemento de concreto concretado anteriormente — como uma fundação ou um pilar inferior — para dentro do próximo elemento — pilar superior, laje ou viga. Elas garantem a continuidade estrutural e a transferência de esforços entre os elementos. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Sem barras de espera corretas, a ligação entre fundação e pilar, ou entre pavimentos de um pilar, fica comprometida mecanicamente.
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Para obras em Goiânia e Goiás, o corte e dobra local oferece entrega rápida, suporte técnico presencial e economia real no orçamento. Entenda por que a maioria das construtoras terceiriza essa etapa.",
   content: `## Por Que Contratar Corte e Dobra em Vez de Cortar na Obra?
 
-A decisão entre cortar na obra ou contratar corte e dobra industrial impacta diretamente o **custo, o prazo e a qualidade** da estrutura. Para obras em Goiânia e região, as vantagens do serviço industrializado são ainda maiores pela proximidade da fábrica.
+A decisão entre cortar na obra ou contratar corte e dobra industrial impacta diretamente o **custo, o prazo e a qualidade** da estrutura. Para obras em Goiânia e região, as vantagens do serviço industrializado são ainda maiores pela proximidade da fábrica. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 ## 1. Redução de Desperdício
 

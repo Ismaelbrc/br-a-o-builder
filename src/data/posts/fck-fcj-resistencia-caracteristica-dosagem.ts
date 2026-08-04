@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Diferença entre fck e fcj do concreto, como são calculados, para que servem e o que são os concretos C20, C25, C30 e C40.",
   content: `## O que é fck?
 
-O **fck** (f = force, c = compression, k = characteristic) é a **resistência característica à compressão** do concreto, em MPa (ou kN/cm²). É o valor abaixo do qual somente 5% dos resultados dos ensaios devem cair — ou seja, é o valor que o concreto atinge em 95% dos casos.
+O **fck** (f = force, c = compression, k = characteristic) é a **resistência característica à compressão** do concreto, em MPa (ou kN/cm²). É o valor abaixo do qual somente 5% dos resultados dos ensaios devem cair — ou seja, é o valor que o concreto atinge em 95% dos casos. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 A **NBR 6118:2014** usa o fck como parâmetro de resistência em todas as fórmulas de dimensionamento estrutural.
 

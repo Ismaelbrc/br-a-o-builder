@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A escassez de armadores qualificados é um dos maiores gargalos da construção civil em 2026. O corte e dobra industrial é a saída prática: o aço chega cortado, dobrado e identificado, pronto para montar — sem precisar de especialista no canteiro.",
   content: `## A Crise de Mão de Obra que Ninguém Fala
 
-A construção civil brasileira enfrenta um paradoxo: obra tem, verba tem, material tem — mas falta quem execute. Segundo a CBIC (Câmara Brasileira da Indústria da Construção), o setor acumula um déficit de mais de 1,5 milhão de trabalhadores especializados. Entre os mais escassos: **o armador de obras**.
+A construção civil brasileira enfrenta um paradoxo — e em Goiânia e no DF ele aparece todo mês nos canteiros: obra tem, verba tem, material tem — mas falta quem execute. Segundo a CBIC (Câmara Brasileira da Indústria da Construção), o setor acumula um déficit de mais de 1,5 milhão de trabalhadores especializados. Entre os mais escassos: **o armador de obras**.
 
 O armador é o profissional que corta, dobra e monta a armação de aço das estruturas. Não é qualquer peão que faz isso — exige leitura de projeto, domínio de tabelas, precisão milimétrica e anos de prática. Em Goiás e no Distrito Federal, encontrar um armador disponível e acessível está cada vez mais difícil.
 

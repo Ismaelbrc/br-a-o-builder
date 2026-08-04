@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é viga baldrame, para que serve, quando é necessária, como é armada e diferença para viga de fundação.",
   content: `## O que é Viga Baldrame?
 
-Viga baldrame (ou viga de equilíbrio, em alguns contextos) é a viga de concreto armado que liga as fundações entre si ao nível do solo, formando um grelha de amarração. Ela não transmite carga para o solo diretamente — sua função é estrutural e de ligação.
+Viga baldrame (ou viga de equilíbrio, em alguns contextos) é a viga de concreto armado que liga as fundações entre si ao nível do solo, formando um grelha de amarração. Ela não transmite carga para o solo diretamente — sua função é estrutural e de ligação. A BR Aço fabrica esse tipo de armação sob medida para construtoras de Goiânia e Goiás.
 
 O nome "baldrame" vem do latim *baldramum*, designando o elemento de base de uma estrutura.
 

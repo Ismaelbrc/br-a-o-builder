@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Diferenças entre CP I, CP II, CP III, CP IV e CP V-ARI — composição, resistência e quando usar cada tipo de cimento Portland.",
   content: `## O que é Cimento Portland?
 
-Cimento Portland é um aglomerante hidráulico produzido pela calcinação de calcário e argila a ~1450 °C (clinquer), seguida de moagem com adições reguladoras. O nome "Portland" vem de uma rocha da ilha de Portland (Inglaterra) que o produto original lembrava em cor e resistência.
+Cimento Portland é um aglomerante hidráulico produzido pela calcinação de calcário e argila a ~1450 °C (clinquer), seguida de moagem com adições reguladoras. O nome "Portland" vem de uma rocha da ilha de Portland (Inglaterra) que o produto original lembrava em cor e resistência. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 No Brasil, todos os tipos de cimento Portland são regulamentados pela **ABNT NBR 16697:2018**.
 

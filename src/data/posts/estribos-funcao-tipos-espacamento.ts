@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Função dos estribos, tipos simples/duplo/múltiplo, cálculo de espaçamento e detalhamento conforme NBR 6118 para vigas e pilares.",
   content: `## O que São Estribos?
 
-Estribos são barras de aço dobradas em forma de laço (retangular, circular ou poligonal) que envolvem as barras longitudinais dos elementos estruturais. Eles são a armadura transversal dos pilares e vigas.
+Estribos são barras de aço dobradas em forma de laço (retangular, circular ou poligonal) que envolvem as barras longitudinais dos elementos estruturais. Eles são a armadura transversal dos pilares e vigas. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Funções dos Estribos
 

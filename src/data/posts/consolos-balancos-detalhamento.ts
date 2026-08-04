@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Consolos e lajes em balanço: comportamento estrutural, armação principal, armadura de suspensão, cisalhamento e ancoragem.",
   content: `## O que é um Consolo?
 
-Consolo (ou console) é um elemento em balanço engastado em um pilar ou parede, com comprimento pequeno em relação à altura. Recebe cargas verticais (geralmente de vigas pré-moldadas, guarda-corpos ou coberturas metálicas).
+Consolo (ou console) é um elemento em balanço engastado em um pilar ou parede, com comprimento pequeno em relação à altura. Recebe cargas verticais (geralmente de vigas pré-moldadas, guarda-corpos ou coberturas metálicas). Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 **Classificação pela relação a/d:**
 - **Consolo curto:** a/d ≤ 1,0 (comportamento de treliça — biela-tirante)

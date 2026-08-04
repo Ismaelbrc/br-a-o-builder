@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Os 7 erros mais comuns que encarecem o aço em obras de construção civil — com dados de desperdício e como cada um pode ser evitado.",
   content: `## Você Sabe Quanto Aço Está Desperdiçando na Sua Obra?
 
-Segundo dados do setor, obras que cortam o aço manualmente no canteiro desperdiçam entre **5% e 8% do material comprado** em pontas, erros de medida e rejeitos de dobra. Em uma obra com 3 toneladas de aço (valor de R$ 30.000), isso representa de **R$ 1.500 a R$ 2.400 jogados fora** — antes mesmo de começar a construir.
+Segundo dados do setor, obras que cortam o aço manualmente no canteiro desperdiçam entre **5% e 8% do material comprado** em pontas, erros de medida e rejeitos de dobra. Em uma obra com 3 toneladas de aço (valor de R$ 30.000), isso representa de **R$ 1.500 a R$ 2.400 jogados fora** — antes mesmo de começar a construir. É esse tipo de desperdício que a BR Aço ajuda a eliminar no fornecimento de aço para construtoras de Goiânia e Goiás.
 
 Mas o desperdício de material é apenas um dos erros. Veja os 7 mais comuns:
 

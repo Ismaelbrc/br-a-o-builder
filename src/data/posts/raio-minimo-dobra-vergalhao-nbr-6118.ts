@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tabela de raios mínimos de dobra para CA-50 e CA-60, comprimento de desenvolvimento e ancoragem conforme NBR 6118, com impacto prático na qualidade das armaduras.",
   content: `## Dobrar Vergalhão Não é Só Dobrar: A NBR 6118 Regula Cada Detalhe
 
-A dobra de vergalhões é uma das operações mais executadas em obra e, ao mesmo tempo, uma das mais sujeitas a erros que comprometem o comportamento estrutural. A NBR 6118:2023 dedica a seção 9.4 ao tema, estabelecendo raios mínimos de dobramento que garantem a integridade do aço e a eficiência da ancoragem.
+A dobra de vergalhões é uma das operações mais executadas em obra e, ao mesmo tempo, uma das mais sujeitas a erros que comprometem o comportamento estrutural. A NBR 6118:2023 dedica a seção 9.4 ao tema, estabelecendo raios mínimos de dobramento que garantem a integridade do aço e a eficiência da ancoragem. É esse padrão normativo que a BR Aço segue em toda dobra industrializada entregue a construtoras de Goiânia e Goiás.
 
 ## Por Que o Raio de Dobra Importa
 

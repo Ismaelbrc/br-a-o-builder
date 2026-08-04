@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia completo sobre controle de qualidade do aço para concreto armado: ensaios normativos, interpretação de laudos, rastreabilidade por corrida e responsabilidade técnica.",
   content: `## O Engenheiro é Responsável pelo Aço Que Entra na Obra
 
-A NBR 6118:2023 é clara no item 11.2: o responsável técnico deve garantir que os materiais utilizados atendam às especificações de projeto e às normas técnicas aplicáveis. Na prática, a maioria das obras aceita o aço verificando apenas se "parece certo" — diâmetro estimado a olho, ausência de ferrugem grosseira, rótulo no fardo. Isso não constitui controle tecnológico.
+A NBR 6118:2023 é clara no item 11.2: o responsável técnico deve garantir que os materiais utilizados atendam às especificações de projeto e às normas técnicas aplicáveis. Na prática, a maioria das obras aceita o aço verificando apenas se "parece certo" — diâmetro estimado a olho, ausência de ferrugem grosseira, rótulo no fardo. Isso não constitui controle tecnológico. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 ## O Que a NBR 7480 Exige do Fabricante
 

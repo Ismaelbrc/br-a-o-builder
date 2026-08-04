@@ -17,7 +17,7 @@ Uma edificação de concreto armado funciona como uma cadeia de transmissão de 
 
 **Laje → Vigas → Pilares → Fundação → Solo**
 
-Para que essa cadeia funcione, a armadura deve ser **contínua e bem ancorada** em cada ligação. Uma falha em qualquer ponto compromete todo o sistema.
+Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás. Para que essa cadeia funcione, a armadura deve ser **contínua e bem ancorada** em cada ligação. Uma falha em qualquer ponto compromete todo o sistema.
 
 ## Fundação: Onde Tudo Começa
 

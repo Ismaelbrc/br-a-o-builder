@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O green steel é produzido com hidrogênio verde ou energia renovável, reduzindo as emissões de CO₂ do processo siderúrgico a quase zero. Entenda a revolução que está chegando ao setor.",
   content: `## O Que é Green Steel?
 
-**Green steel** (aço verde) é o aço produzido com processos que eliminam ou reduzem drasticamente as emissões de CO₂. A siderurgia convencional é responsável por cerca de **8% das emissões globais de CO₂** — mais do que o setor de aviação.
+**Green steel** (aço verde) é o aço produzido com processos que eliminam ou reduzem drasticamente as emissões de CO₂. A siderurgia convencional é responsável por cerca de **8% das emissões globais de CO₂** — mais do que o setor de aviação. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 O green steel representa a resposta da indústria ao desafio climático.
 

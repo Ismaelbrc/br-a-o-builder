@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Sistemas de impermeabilização para estruturas de concreto: mantas, argamassas, cristalização e pinturas — aplicação, vantagens e limitações.",
   content: `## Por que Impermeabilizar Estruturas de Concreto?
 
-O concreto é poroso e permeável a líquidos e gases. A penetração de água e cloretos é a principal causa de corrosão das armaduras — o processo que mais deteriora estruturas de concreto no Brasil.
+O concreto é poroso e permeável a líquidos e gases. A penetração de água e cloretos é a principal causa de corrosão das armaduras — o processo que mais deteriora estruturas de concreto no Brasil. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 A impermeabilização protege a estrutura em duas frentes:
 1. **Evita a penetração de água** que causa corrosão das armaduras, eflorescência e infiltrações

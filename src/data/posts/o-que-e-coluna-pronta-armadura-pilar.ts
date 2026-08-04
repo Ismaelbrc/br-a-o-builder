@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "o que é coluna pronta",
   date: "31 Jul 2026",
   summary: "Coluna pronta é a armadura de pilar pré-montada industrialmente — estribos, ganchos e espaçadores já fixados na posição do projeto. Entenda a definição, como é fabricada e quando substitui a armação manual no canteiro.",
-  content: `**Em resumo:** Coluna pronta é a armadura de pilar montada em fábrica — barras longitudinais CA-50 e estribos já dobrados a 135° e posicionados no espaçamento exato do projeto estrutural — entregue pronta para receber a fôrma e o concreto na obra. Substitui a montagem manual do ferro no canteiro, elimina erro de posicionamento de estribo e reduz em até 70% o tempo de armação por pilar.
+  content: `**Em resumo:** Coluna pronta é a armadura de pilar montada em fábrica — barras longitudinais CA-50 e estribos já dobrados a 135° e posicionados no espaçamento exato do projeto estrutural — entregue pronta para receber a fôrma e o concreto na obra. Substitui a montagem manual do ferro no canteiro, elimina erro de posicionamento de estribo e reduz em até 70% o tempo de armação por pilar, o que a BR Aço já entrega para obras em Goiânia e região.
 
 ---
 

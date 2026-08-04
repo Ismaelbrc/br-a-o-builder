@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comprar vergalhão em barra reta parece a opção mais barata — até você calcular o custo real. Desperdício, mão de obra de corte, ferramentas, retrabalho e atraso formam uma conta que quase sempre supera o custo do corte e dobra industrial.",
   content: `## A Ilusão do Preço por Quilo da Barra Reta
 
-Quando um construtor compara o custo do vergalhão em barra reta com o custo do corte e dobra industrial, a primeira impressão é sempre a mesma: a barra reta parece mais barata. E o vergalhão em barra reta, de fato, custa menos por quilo do que o aço cortado e dobrado.
+Quando um construtor compara o custo do vergalhão em barra reta com o custo do corte e dobra industrial, a primeira impressão é sempre a mesma: a barra reta parece mais barata. E o vergalhão em barra reta, de fato, custa menos por quilo do que o aço cortado e dobrado. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 O problema é que o **preço por quilo não é o custo total da obra**.
 

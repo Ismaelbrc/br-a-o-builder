@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Obra parada esperando armador é um dos maiores vilões do cronograma na construção civil. Veja como usar o corte e dobra industrial para desbloquear a obra em 48 horas, sem depender de encontrar profissional disponível.",
   content: `## Obra Parada por Falta de Armador: Uma Situação Mais Comum do Que Parece
 
-Se você está lendo este artigo, provavelmente está vivendo isso agora: concreto liberado, forma pronta, material no canteiro — e sem armador disponível para fazer a armação. O cronograma começa a desmoronar.
+Se você está lendo este artigo, provavelmente está vivendo isso agora: concreto liberado, forma pronta, material no canteiro — e sem armador disponível para fazer a armação. O cronograma começa a desmoronar. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 Isso acontece porque o mercado de armadores especializados em Goiás, Brasília e região está extremamente aquecido. Os bons profissionais têm agenda lotada semanas à frente. Os que estão disponíveis às vezes cobram o dobro por urgência — ou aparecem no canteiro sem a qualificação necessária.
 

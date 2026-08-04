@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tudo sobre laje nervurada: classificação, requisitos da NBR 6118, cálculo de armadura para nervuras e mesa, e boas práticas de execução com corte e dobra industrial.",
   content: `## Por Que a Laje Nervurada Domina a Construção Brasileira
 
-A laje nervurada responde por mais de 60% das lajes executadas no Brasil em edificações residenciais acima de 4 pavimentos. Menor peso próprio, maior vão livre e possibilidade de integrar instalações hidráulicas e elétricas nas cavidades entre nervuras.
+A laje nervurada responde por mais de 60% das lajes executadas no Brasil em edificações residenciais acima de 4 pavimentos. Menor peso próprio, maior vão livre e possibilidade de integrar instalações hidráulicas e elétricas nas cavidades entre nervuras. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## Requisitos Geométricos (NBR 6118 — item 13.2.4)
 

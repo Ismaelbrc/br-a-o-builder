@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "É possível economizar significativamente no aço da obra sem comprometer a segurança estrutural. As estratégias passam por projeto otimizado, corte industrial e gestão de estoque.",
   content: `## Economizar no Aço: Sim, É Possível — Se Feito Corretamente
 
-A ferragem representa até 15% do custo total de uma obra. Qualquer economia aqui tem impacto real no orçamento. Mas economizar "errado" — usando aço de qualidade duvidosa ou reduzindo armaduras sem autorização do engenheiro — compromete a segurança estrutural.
+A ferragem representa até 15% do custo total de uma obra. Qualquer economia aqui tem impacto real no orçamento. Mas economizar "errado" — usando aço de qualidade duvidosa ou reduzindo armaduras sem autorização do engenheiro — compromete a segurança estrutural. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Aqui estão as **estratégias corretas** para economizar.
 

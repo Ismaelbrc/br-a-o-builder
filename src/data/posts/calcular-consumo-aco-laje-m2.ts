@@ -18,7 +18,7 @@ O consumo de vergalhão em laje depende de:
 - **Vão entre apoios:** quanto maior o vão, mais aço
 - **Carga de utilização:** residencial (1,5 kN/m²) vs. comercial (3 kN/m²) vs. industrial
 - **Espessura da laje:** determinada pelo engenheiro
-- **fck do concreto:** concreto mais resistente permite reduzir a armadura
+- **fck do concreto:** concreto mais resistente permite reduzir a armadura. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 ## Tabela: Consumo de Aço por m² de Laje (Estimativa)
 

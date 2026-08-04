@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Ler um projeto de armação é essencial para que o mestre de obras execute a estrutura corretamente. Veja os principais símbolos, notações e como interpretar o detalhamento de pilares, vigas e lajes.",
   content: `## O Que é o Projeto de Armação?
 
-O projeto de armação (ou detalhamento estrutural) é o documento técnico que especifica cada barra de vergalhão a ser colocada em cada elemento da estrutura. Ele é elaborado pelo engenheiro calculista com base nos cálculos estruturais.
+O projeto de armação (ou detalhamento estrutural) é o documento técnico que especifica cada barra de vergalhão a ser colocada em cada elemento da estrutura. Ele é elaborado pelo engenheiro calculista com base nos cálculos estruturais. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 Sem entender esse documento, o mestre de obras não consegue executar a armação corretamente — mesmo com o melhor aço do mercado.
 

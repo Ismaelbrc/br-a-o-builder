@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comparativo dos tipos de estacas — hélice contínua, Franki, raiz, pré-moldada e metálica — critérios de escolha e faixa de custo.",
   content: `## Quando Usar Fundação Profunda?
 
-Fundação profunda (estacas ou tubulões) é necessária quando o solo resistente está abaixo de 3 m de profundidade ou quando as cargas são grandes demais para fundações rasas. A principal referência é o laudo de sondagem SPT.
+Fundação profunda (estacas ou tubulões) é necessária quando o solo resistente está abaixo de 3 m de profundidade ou quando as cargas são grandes demais para fundações rasas. A principal referência é o laudo de sondagem SPT. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## Tipos de Estaca
 

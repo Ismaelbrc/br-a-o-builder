@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Diferenças entre sapata isolada, corrida e associada — quando usar cada tipo e como dimensionar a área de base da fundação.",
   content: `## O que é uma Sapata?
 
-Sapata é um elemento de fundação rasa que amplia a área de contato da estrutura com o solo, reduzindo a pressão transmitida ao terreno a um valor que o solo suporta sem recalque excessivo.
+Sapata é um elemento de fundação rasa que amplia a área de contato da estrutura com o solo, reduzindo a pressão transmitida ao terreno a um valor que o solo suporta sem recalque excessivo. Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 É feita em concreto armado e trabalha predominantemente à flexão — ao contrário do bloco de fundação, que trabalha à compressão.
 

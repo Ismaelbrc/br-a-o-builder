@@ -18,6 +18,8 @@ Fundações rasas (ou diretas) são aquelas executadas a pouca profundidade (ger
 - **Sapata isolada:** bloco de concreto armado sob cada pilar
 - **Radier:** laje de concreto armado cobrindo toda a área
 
+Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
+
 ## Sapata Isolada: Quando Usar?
 
 ### Condições ideais

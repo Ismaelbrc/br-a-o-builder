@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é a sondagem SPT, como é realizada, o que significa o NSPT e como interpretar o laudo para projetar fundações.",
   content: `## O que é a Sondagem SPT?
 
-SPT (Standard Penetration Test — Ensaio de Penetração Padrão) é o ensaio geotécnico mais utilizado no Brasil para investigar o subsolo. Ele determina a resistência do solo em diferentes profundidades e permite classificar o tipo de solo encontrado.
+SPT (Standard Penetration Test — Ensaio de Penetração Padrão) é o ensaio geotécnico mais utilizado no Brasil para investigar o subsolo. Ele determina a resistência do solo em diferentes profundidades e permite classificar o tipo de solo encontrado. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 A sondagem SPT é regulamentada pela **NBR 6484:2001** e deve ser realizada por empresa especializada antes de qualquer projeto de fundação.
 

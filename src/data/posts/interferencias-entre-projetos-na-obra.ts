@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Como identificar e resolver interferências entre projetos estrutural, elétrico, hidrossanitário e arquitetônico — compatibilização antes da execução.",
   content: `## O Problema das Interferências
 
-Imagine descobrir na hora de concretar que um pilar passa no meio da janela projetada pelo arquiteto — ou que a caixa de passagem elétrica conflita com uma viga. Essas são interferências: situações em que dois projetos de especialidade diferentes se sobrepõem no mesmo espaço físico.
+Imagine descobrir na hora de concretar que um pilar passa no meio da janela projetada pelo arquiteto — ou que a caixa de passagem elétrica conflita com uma viga. Essas são interferências: situações em que dois projetos de especialidade diferentes se sobrepõem no mesmo espaço físico. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 As interferências descobertas em campo são caras: exigem retrabalho, modificações de projeto de emergência, quebra de elementos já executados ou, no pior caso, comprometimento estrutural.
 

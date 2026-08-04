@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O consumo médio de vergalhão em obras residenciais fica entre 20 e 40 kg/m². Entenda o que influencia essa variação e como fazer uma estimativa confiável para o orçamento.",
   content: `## Por Que o Consumo por m² Varia Tanto?
 
-"Quanto de vergalhão preciso por m² de obra?" é a pergunta mais frequente nos orçamentos iniciais. A resposta depende de múltiplos fatores — por isso as referências de mercado têm faixas amplas.
+"Quanto de vergalhão preciso por m² de obra?" é a pergunta mais frequente nos orçamentos iniciais. A resposta depende de múltiplos fatores — por isso as referências de mercado têm faixas amplas. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## Fatores que Influenciam o Consumo
 

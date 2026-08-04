@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "arame recozido x galvanizado",
   date: "30 Jul 2026",
   summary: "Comparativo direto entre arame recozido e arame galvanizado: processo de fabricação, resistência à corrosão, aplicações típicas na construção civil e como escolher o certo para cada uso.",
-  content: `**Em resumo:** Arame recozido é fio de aço de baixo carbono que passou por recozimento (aquecimento controlado) para ficar maleável — usado para amarrar ferragem e travamentos temporários, sem revestimento e sem resistência à corrosão. Arame galvanizado é o mesmo tipo de fio revestido com uma camada de zinco (imersão a quente, conforme ABNT NBR 6323), o que lhe dá resistência à oxidação e o torna indicado para uso externo, cercas, telas e amarrações permanentes expostas ao tempo.
+  content: `**Em resumo:** Arame recozido é fio de aço de baixo carbono que passou por recozimento (aquecimento controlado) para ficar maleável — usado para amarrar ferragem e travamentos temporários, sem revestimento e sem resistência à corrosão. Arame galvanizado é o mesmo tipo de fio revestido com uma camada de zinco (imersão a quente, conforme ABNT NBR 6323), o que lhe dá resistência à oxidação e o torna indicado para uso externo, cercas, telas e amarrações permanentes expostas ao tempo. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 ---
 

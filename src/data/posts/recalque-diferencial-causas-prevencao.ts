@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é recalque diferencial, por que ocorre, como identificar fissuras e desníveis e como prevenir com projeto e execução adequados.",
   content: `## O que é Recalque?
 
-Recalque é o afundamento (assentamento vertical) de uma fundação quando o solo se deforma sob a carga aplicada. Até certo ponto, o recalque é normal e previsto no projeto — o problema ocorre quando diferentes fundações da mesma edificação recalcam de forma desigual.
+Recalque é o afundamento (assentamento vertical) de uma fundação quando o solo se deforma sob a carga aplicada. Até certo ponto, o recalque é normal e previsto no projeto — o problema ocorre quando diferentes fundações da mesma edificação recalcam de forma desigual. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 **Recalque uniforme:** todas as fundações afundam igualmente → a estrutura desce, mas não fissura (raridade na prática).
 

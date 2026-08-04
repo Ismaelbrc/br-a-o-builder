@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "calcular quantidade de vergalhão para laje",
   date: "10 Jan 2026",
   summary: "Guia prático com passo a passo, fórmulas e taxas de consumo para calcular corretamente a quantidade de vergalhão necessária para executar lajes de qualquer tipo.",
-  content: `**Em resumo:** Para calcular o vergalhão de uma laje, multiplique a área (m²) pelo consumo típico por tipo: laje treliçada consome entre 8 e 12 kg/m²; laje maciça, entre 15 e 25 kg/m². Divida o peso total pelo peso por metro do diâmetro escolhido e depois por 12m (comprimento padrão da barra) para obter o número de barras. Sempre arredonde para cima e adicione 10% de perda por corte e emenda.
+  content: `**Em resumo:** Para calcular o vergalhão de uma laje, multiplique a área (m²) pelo consumo típico por tipo: laje treliçada consome entre 8 e 12 kg/m²; laje maciça, entre 15 e 25 kg/m². Divida o peso total pelo peso por metro do diâmetro escolhido e depois por 12m (comprimento padrão da barra) para obter o número de barras. Sempre arredonde para cima e adicione 10% de perda por corte e emenda — a equipe técnica da BR Aço, em Goiânia, confere esse cálculo sem custo antes do pedido.
 
 ---
 

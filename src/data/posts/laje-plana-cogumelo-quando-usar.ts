@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Laje plana vs laje cogumelo: definições, comportamento, verificação de punção, armação por faixas e indicações de uso.",
   content: `## O que é Laje Plana?
 
-Laje plana é o sistema em que a laje é apoiada diretamente nos pilares, sem vigas. A transferência de carga da laje para os pilares ocorre por cisalhamento — fenômeno chamado de **punção**.
+Laje plana é o sistema em que a laje é apoiada diretamente nos pilares, sem vigas. A transferência de carga da laje para os pilares ocorre por cisalhamento — fenômeno chamado de **punção**. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 A NBR 6118:2014 trata da laje plana no item 14.7 e exige verificação rigorosa da punção.
 

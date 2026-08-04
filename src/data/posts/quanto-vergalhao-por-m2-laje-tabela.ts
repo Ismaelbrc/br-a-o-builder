@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "quanto vergalhão por m2 laje",
   date: "17 Mai 2026",
   summary: "Tabela completa de consumo de vergalhão por m² para diferentes tipos de laje: treliçada, maciça e nervurada. Inclui fatores de variação e como calcular.",
-  content: `**Em resumo:** O consumo de vergalhão por m² de laje varia conforme o tipo e o vão: laje treliçada de vão simples (até 4m) consome de 8 a 10 kg/m²; laje treliçada de vão maior (4 a 6m), de 10 a 14 kg/m²; laje maciça, de 15 a 25 kg/m². Esses valores incluem barras positivas, negativas, cintas de borda e distribuição, conforme o projeto estrutural.
+  content: `**Em resumo:** O consumo de vergalhão por m² de laje varia conforme o tipo e o vão: laje treliçada de vão simples (até 4m) consome de 8 a 10 kg/m²; laje treliçada de vão maior (4 a 6m), de 10 a 14 kg/m²; laje maciça, de 15 a 25 kg/m². Esses valores incluem barras positivas, negativas, cintas de borda e distribuição, conforme o projeto estrutural. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ---
 

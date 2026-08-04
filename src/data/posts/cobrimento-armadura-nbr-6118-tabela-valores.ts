@@ -19,6 +19,8 @@ O cobrimento nominal de concreto é a camada entre a face externa da estrutura e
 
 2. **Transmissão de esforços (aderência)**: menor cobrimento significa menos confinamento, menor aderência efetiva e comprimentos de ancoragem necessários maiores.
 
+Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
+
 ## Tabela de Cobrimento Mínimo — NBR 6118 Tabela 7.2
 
 ### Classes de Agressividade Ambiental

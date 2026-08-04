@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tipos de pilares de concreto armado, dimensionamento básico por taxa de armação e detalhamento de barras e estribos conforme NBR 6118.",
   content: `## O que é um Pilar em Concreto Armado?
 
-Pilar é um elemento estrutural predominantemente comprimido, com comprimento muito maior que as dimensões da seção transversal. Ele recebe as cargas das vigas e lajes e as transmite para as fundações.
+Pilar é um elemento estrutural predominantemente comprimido, com comprimento muito maior que as dimensões da seção transversal. Ele recebe as cargas das vigas e lajes e as transmite para as fundações. É esse tipo de detalhamento que a BR Aço executa em todo fornecimento de armadura para pilares em Goiânia e no restante de Goiás.
 
 Em concreto armado, o pilar é formado por:
 - **Concreto** (resistência à compressão)

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Aprenda a calcular a quantidade de vergalhões, treliças e malhas para sua obra. Guia prático com dicas para evitar desperdício e economizar.",
   content: `## Por Que o Cálculo Correto é Tão Importante?
 
-Comprar aço a mais significa dinheiro desperdiçado. Comprar a menos significa atraso na obra, novas compras emergenciais (geralmente mais caras) e perda de produtividade. O cálculo preciso da quantidade de aço é uma das etapas mais importantes do planejamento de qualquer construção.
+Comprar aço a mais significa dinheiro desperdiçado. Comprar a menos significa atraso na obra, novas compras emergenciais (geralmente mais caras) e perda de produtividade. O cálculo preciso da quantidade de aço é uma das etapas mais importantes do planejamento de qualquer construção — e é o primeiro ponto que a equipe da BR Aço revisa em obras de Goiânia e região antes de fechar um orçamento.
 
 ## O Papel do Projeto Estrutural
 

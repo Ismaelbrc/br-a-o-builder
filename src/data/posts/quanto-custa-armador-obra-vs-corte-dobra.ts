@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Armador de obras custa entre R$700 e R$1.400 por semana em Goiás, sem contar encargos, ferramentas, desperdício de material e risco de erro. Compare com o custo real do corte e dobra industrial e veja qual sai mais barato por tonelada de aço armado.",
   content: `## Quanto Custa um Armador de Obras em 2026?
 
-Antes de comparar, é preciso saber o custo real de ter um armador no canteiro. Muito construtor oleia só o diário (diária ou semanal) — mas o custo total é muito maior.
+Antes de comparar, é preciso saber o custo real de ter um armador no canteiro, seja em Goiânia ou no interior de Goiás. Muito construtor oleia só o diário (diária ou semanal) — mas o custo total é muito maior.
 
 ### Custo direto do armador
 

@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "tela soldada malha pop piso industrial",
   date: "31 Jan 2026",
   summary: "Análise técnica comparando tela soldada e malha pop para aplicação em pisos industriais: diferenças de resistência, espaçamento, custo e adequação conforme normas ABNT.",
-  content: `**Em resumo:** Para pisos industriais, a tela soldada estrutural (Q-138, Q-188, Q-257 ou superior) é mais indicada que a malha pop, por oferecer maior rigidez e controle de fissuração sob cargas de empilhadeiras e estocagem pesada. A escolha da malha deve seguir o cálculo estrutural com base no CBR do subleito e na carga de operação. A malha pop (Q-92, Q-138 em rolo) é adequada apenas para pisos leves residenciais e garagens.
+  content: `**Em resumo:** Para pisos industriais, a tela soldada estrutural (Q-138, Q-188, Q-257 ou superior) é mais indicada que a malha pop, por oferecer maior rigidez e controle de fissuração sob cargas de empilhadeiras e estocagem pesada. A escolha da malha deve seguir o cálculo estrutural com base no CBR do subleito e na carga de operação. A malha pop (Q-92, Q-138 em rolo) é adequada apenas para pisos leves residenciais e garagens. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 ---
 

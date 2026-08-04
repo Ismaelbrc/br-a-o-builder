@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "norma ABNT NBR 7480",
   date: "30 Jan 2026",
   summary: "Entenda a norma ABNT NBR 7480/2007 que regulamenta o aço para concreto armado no Brasil e por que ela é essencial para a segurança da sua obra.",
-  content: `**Em resumo:** A ABNT NBR 7480:2007 é a norma que regulamenta barras e fios de aço destinados a armaduras para concreto armado no Brasil. Ela define as classes CA-25, CA-50 e CA-60, estabelece os requisitos mínimos de resistência mecânica, composição química e ductilidade, e exige marcação de rastreabilidade em todas as barras. Todo vergalhão comercializado legalmente no Brasil deve ser certificado e ensaiado conforme essa norma.
+  content: `**Em resumo:** A ABNT NBR 7480:2007 é a norma que regulamenta barras e fios de aço destinados a armaduras para concreto armado no Brasil. Ela define as classes CA-25, CA-50 e CA-60, estabelece os requisitos mínimos de resistência mecânica, composição química e ductilidade, e exige marcação de rastreabilidade em todas as barras. Todo vergalhão comercializado legalmente no Brasil deve ser certificado e ensaiado conforme essa norma. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ---
 

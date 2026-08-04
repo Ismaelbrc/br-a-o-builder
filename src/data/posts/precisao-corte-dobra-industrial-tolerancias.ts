@@ -20,6 +20,8 @@ Um erro de 5 cm no comprimento de uma barra pode parecer pequeno. Mas dependendo
 - Deixar a **cobertura mínima de concreto** abaixo do exigido pela NBR 6118
 - Causar interferência entre barras de elementos diferentes
 
+Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
+
 ## O Que a NBR 7480 Define
 
 A **ABNT NBR 7480** — norma que regulamenta barras e fios de aço para concreto armado — estabelece as tolerâncias dimensionais para corte:

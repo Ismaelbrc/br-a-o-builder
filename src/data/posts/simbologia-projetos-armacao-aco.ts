@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tabela completa dos símbolos usados em projetos de armação — diâmetros, dobramentos, estribos, espaçamentos e notações segundo NBR 7480 e NBR 6118.",
   content: `## Por que Dominar a Simbologia?
 
-Um projeto de armação contém dezenas de símbolos e abreviações. Interpretá-los errado gera barras com comprimento, diâmetro ou posição incorretos — e retrabalho custoso após a concretagem. Este guia reúne as notações mais usadas no Brasil.
+Um projeto de armação contém dezenas de símbolos e abreviações. Interpretá-los errado gera barras com comprimento, diâmetro ou posição incorretos — e retrabalho custoso após a concretagem. Este guia reúne as notações mais usadas no Brasil. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## Notação de Barras
 

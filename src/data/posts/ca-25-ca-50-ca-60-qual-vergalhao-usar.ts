@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "CA-25 CA-50 CA-60 vergalhão",
   date: "17 Jan 2026",
   summary: "Comparação técnica completa entre os graus CA-25, CA-50 e CA-60: resistência ao escoamento, ductilidade, diâmetros disponíveis e as aplicações corretas para cada tipo de obra.",
-  content: `**Em resumo:** CA-25, CA-50 e CA-60 são as classes de aço para concreto armado definidas pela ABNT NBR 7480, diferenciadas pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente. O CA-50 é o mais usado em estruturas (pilares, vigas, lajes e fundações); o CA-60 é padrão para treliças metálicas e telas soldadas; e o CA-25, de superfície lisa, aparece apenas em obras antigas e praticamente não é mais produzido.
+  content: `**Em resumo:** CA-25, CA-50 e CA-60 são as classes de aço para concreto armado definidas pela ABNT NBR 7480, diferenciadas pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente. O CA-50 é o mais usado em estruturas (pilares, vigas, lajes e fundações); o CA-60 é padrão para treliças metálicas e telas soldadas; e o CA-25, de superfície lisa, aparece apenas em obras antigas e praticamente não é mais produzido — a BR Aço trabalha hoje só com CA-50 e CA-60 para obras em Goiânia e região.
 
 ---
 

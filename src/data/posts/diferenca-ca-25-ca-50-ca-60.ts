@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "diferença CA-25 CA-50 CA-60",
   date: "10 Nov 2025",
   summary: "CA-25, CA-50 e CA-60 são as principais classes de vergalhão usadas na construção civil. Cada uma tem resistência e aplicação ideais. Entenda qual usar em cada elemento estrutural.",
-  content: `**Em resumo:** CA-25, CA-50 e CA-60 diferem pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente, conforme a ABNT NBR 7480. O CA-25 (liso) praticamente saiu do mercado brasileiro. O CA-50 (nervurado) é o aço estrutural padrão para vigas, pilares, lajes e fundações. O CA-60 (nervurado fino) é exclusivo de treliças metálicas, fios e malhas soldadas.
+  content: `**Em resumo:** CA-25, CA-50 e CA-60 diferem pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente, conforme a ABNT NBR 7480. O CA-25 (liso) praticamente saiu do mercado brasileiro. O CA-50 (nervurado) é o aço estrutural padrão para vigas, pilares, lajes e fundações. O CA-60 (nervurado fino) é exclusivo de treliças metálicas, fios e malhas soldadas — ambos disponíveis em estoque na BR Aço, em Goiânia.
 
 ---
 

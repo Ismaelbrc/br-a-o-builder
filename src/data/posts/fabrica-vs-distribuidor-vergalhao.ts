@@ -17,7 +17,7 @@ O vergalhão percorre o seguinte caminho até sua obra:
 
 **Usina Siderúrgica → Distribuidor/Serviço Center → Obra**
 
-Cada elo da cadeia agrega valor (ou custo) diferente. Entender essa cadeia ajuda a decidir onde comprar.
+A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido. Cada elo da cadeia agrega valor (ou custo) diferente. Entender essa cadeia ajuda a decidir onde comprar.
 
 ## Comprando Diretamente da Usina
 

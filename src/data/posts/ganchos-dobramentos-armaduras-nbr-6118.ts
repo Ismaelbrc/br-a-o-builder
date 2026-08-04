@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tipos de ganchos em barras de aço, comprimentos mínimos, diâmetros de dobramento e o que exige a NBR 6118 para estribos e barras longitudinais.",
   content: `## Por que Ganchos São Necessários?
 
-Ganchos são dobras nas extremidades das barras de aço que aumentam o comprimento de ancoragem dentro do concreto sem aumentar o comprimento físico da barra. Eles são necessários quando o comprimento disponível de ancoragem reta é insuficiente — situação comum em apoios extremos de vigas, extremidades de pilares e estribos.
+Ganchos são dobras nas extremidades das barras de aço que aumentam o comprimento de ancoragem dentro do concreto sem aumentar o comprimento físico da barra. Eles são necessários quando o comprimento disponível de ancoragem reta é insuficiente — situação comum em apoios extremos de vigas, extremidades de pilares e estribos. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 ## Tipos de Gancho (NBR 6118)
 

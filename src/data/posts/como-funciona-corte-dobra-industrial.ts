@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O corte e dobra industrial usa máquinas CNC programadas com a planilha de ferro do projeto. O resultado são peças com tolerância de ±5 mm, prontas para montagem direto na obra.",
   content: `## Da Planilha de Ferro à Peça Pronta: O Processo Completo
 
-O serviço de corte e dobra industrial transforma o projeto estrutural em peças de vergalhão prontas para montagem. Veja cada etapa do processo que usamos na BR Aço.
+O serviço de corte e dobra industrial transforma o projeto estrutural em peças de vergalhão prontas para montagem. Veja cada etapa do processo que usamos na BR Aço. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 ## Etapa 1: Recebimento do Projeto
 

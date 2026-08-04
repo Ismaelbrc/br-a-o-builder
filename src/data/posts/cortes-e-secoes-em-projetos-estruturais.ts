@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Aprenda a ler cortes e seções transversais em projetos estruturais — como interpretar vigas, pilares, lajes e fundações em vista de corte.",
   content: `## O que são Cortes e Seções em Projetos?
 
-Um corte é um plano imaginário que "fatia" a edificação, permitindo visualizar elementos que não aparecem na planta baixa. Seção é o resultado dessa fatia — a figura que aparece no desenho técnico mostrando o interior do elemento.
+Um corte é um plano imaginário que "fatia" a edificação, permitindo visualizar elementos que não aparecem na planta baixa. Seção é o resultado dessa fatia — a figura que aparece no desenho técnico mostrando o interior do elemento. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 ### Corte x Seção
 - **Corte**: vista que mostra o que há além do plano de corte (fundo visível)

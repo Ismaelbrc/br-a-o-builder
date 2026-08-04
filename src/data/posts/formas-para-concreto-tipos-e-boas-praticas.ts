@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Conheça os tipos de fôrmas para concreto — madeira, metálica, plástica e alumínio — e as melhores práticas de montagem, desmoldante, escoramento e desforma.",
   content: `## O que é Fôrma em Construção Civil?
 
-Fôrma (ou forma) é o conjunto de painéis e suportes que moldam o concreto fresco até que ele adquira resistência suficiente para se sustentar. É um componente temporário, mas que define a geometria definitiva da estrutura.
+Fôrma (ou forma) é o conjunto de painéis e suportes que moldam o concreto fresco até que ele adquira resistência suficiente para se sustentar. É um componente temporário, mas que define a geometria definitiva da estrutura. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 Um sistema de fôrmas mal projetado pode causar acidentes graves — o colapso de fôrmas é uma das principais causas de acidentes fatais em obras.
 

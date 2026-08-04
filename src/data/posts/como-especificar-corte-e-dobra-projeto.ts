@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que o engenheiro precisa especificar para contratar corte e dobra: planilha de ferro, memorial descritivo, tolerâncias e dados para orçamento.",
   content: `## Por que a Especificação Correta de Corte e Dobra Importa?
 
-A qualidade do serviço de corte e dobra depende diretamente das informações fornecidas pelo engenheiro calculista ou pelo responsável pela obra. Uma planilha de ferro incompleta resulta em peças erradas, retrabalho, atraso na entrega e custo adicional.
+A qualidade do serviço de corte e dobra depende diretamente das informações fornecidas pelo engenheiro calculista ou pelo responsável pela obra. Uma planilha de ferro incompleta resulta em peças erradas, retrabalho, atraso na entrega e custo adicional. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Este guia é direcionado a engenheiros calculistas, arquitetos com projeto estrutural e gestores de obra que querem garantir que a indústria de corte e dobra produza exatamente o que o projeto especifica.
 

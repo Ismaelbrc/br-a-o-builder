@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "As nervuras do vergalhão aumentam a aderência ao concreto em até 40%, tornando a estrutura mais segura e eficiente. Entenda a diferença técnica e quando usar cada tipo.",
   content: `## O Que São as Nervuras do Vergalhão?
 
-As **nervuras** são as saliências helicoidais ou transversais na superfície do vergalhão. Elas não são apenas estéticas — são um elemento técnico fundamental que muda completamente o comportamento da armadura dentro do concreto.
+As **nervuras** são as saliências helicoidais ou transversais na superfície do vergalhão. Elas não são apenas estéticas — são um elemento técnico fundamental que muda completamente o comportamento da armadura dentro do concreto. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Por Que a Aderência Importa Tanto?
 

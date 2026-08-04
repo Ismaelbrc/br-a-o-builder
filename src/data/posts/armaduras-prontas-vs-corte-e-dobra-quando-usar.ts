@@ -19,6 +19,8 @@ Quando um construtor ou engenheiro precisa de aço para a obra, tem duas opçõe
 
 2. **Armaduras Prontas (Ferragem Armada):** kits de armadura já montados — sapatas, estribos, gaiolas de pilar — prontos para instalação imediata.
 
+É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
+
 A diferença está no **nível de processamento**: no corte e dobra, o armador ainda monta as peças no canteiro; nas armaduras prontas, ele apenas instala.
 
 ## Comparativo Direto

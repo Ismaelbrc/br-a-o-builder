@@ -18,6 +18,8 @@ Não. A **ABNT NBR 7480** e o **ACI 318** distinguem dois tipos de oxidação no
 1. **Ferrugem superficial (oxidação leve):** Fina camada avermelhada que não compromete a aderência nem as propriedades mecânicas
 2. **Corrosão agressiva (pite ou laminação):** Ataca a seção transversal, reduz a área de aço e compromete a resistência
 
+Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
+
 ## Como Identificar Ferrugem Superficial (Aceitável)
 
 - Coloração avermelhada uniforme, sem descamação

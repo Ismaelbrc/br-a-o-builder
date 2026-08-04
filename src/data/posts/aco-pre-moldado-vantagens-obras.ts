@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Elementos pré-moldados (pilares, vigas, lajes) são fabricados em fábrica com controle total de qualidade. Entenda quando essa solução economiza tempo e custo em relação ao concreto moldado in loco.",
   content: `## O Que São Estruturas Pré-Moldadas?
 
-Estruturas pré-moldadas (ou pré-fabricadas) são elementos estruturais produzidos em fábrica — pilares, vigas, lajes alveolares, painéis de fachada — e transportados prontos para o canteiro de obras, onde são montados como um sistema.
+Estruturas pré-moldadas (ou pré-fabricadas) são elementos estruturais produzidos em fábrica — pilares, vigas, lajes alveolares, painéis de fachada — e transportados prontos para o canteiro de obras, onde são montados como um sistema. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 O aço usado em pré-moldados tem características específicas diferentes do vergalhão convencional moldado in loco.
 

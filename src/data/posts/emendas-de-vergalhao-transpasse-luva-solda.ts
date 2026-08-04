@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Transpasse, luva mecânica e solda — comprimentos mínimos, posicionamento de emendas e o que exige a NBR 6118 para barras de aço em concreto armado.",
   content: `## Por que Precisamos de Emendas?
 
-Barras de aço são fornecidas em comprimentos padrão de 12 metros. Elementos estruturais como pilares de edifícios altos, vigas longas e muros precisam de comprimentos maiores — ou é necessário empaimar barras em locais estratégicos para viabilizar a construção (como barras de espera de pilar que se iniciam na fundação e sobem por vários pavimentos).
+Barras de aço são fornecidas em comprimentos padrão de 12 metros. Elementos estruturais como pilares de edifícios altos, vigas longas e muros precisam de comprimentos maiores — ou é necessário empaimar barras em locais estratégicos para viabilizar a construção (como barras de espera de pilar que se iniciam na fundação e sobem por vários pavimentos). A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 ## Tipo 1: Emenda por Transpasse (Sobreposição)
 

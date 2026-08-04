@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A NBR 6118 limita o espaçamento máximo entre barras na laje a 2h ou 20 cm. Entender essas regras evita reprova na fiscalização e garante que a armadura funcione como calculada.",
   content: `## Por Que o Espaçamento das Barras Importa?
 
-O espaçamento entre as barras de armadura na laje não é uma decisão estética — é calculado para garantir:
+O espaçamento entre as barras de armadura na laje não é uma decisão estética — é calculado para garantir: Esse é o padrão que a BR Aço segue em todo fornecimento de aço em Goiânia e no restante de Goiás.
 
 1. **Distribuição uniforme das tensões** no concreto
 2. **Controle de fissuração** por retração e cargas

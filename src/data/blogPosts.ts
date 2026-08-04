@@ -67,7 +67,7 @@ A BR Aço realiza o serviço de corte e dobra com tecnologia 100% automatizada, 
     keyword: "corte e dobra vs corte manual",
     date: "05 Fev 2026",
     summary: "Compare os custos reais entre corte e dobra industrial e o corte manual no canteiro. Descubra qual método gera mais economia e produtividade.",
-    content: `**Em resumo:** O corte e dobra industrial elimina entre 3% e 8% de desperdício gerado pelo corte manual no canteiro e reduz em até 50% o custo de mão de obra de armação. No método manual, armadores utilizam policorte e chave de dobra — processo lento e impreciso; no industrial, máquinas CNC produzem peças com tolerância de ±2mm conforme o projeto, já identificadas e organizadas por etapa da obra para montagem direta.
+    content: `**Em resumo:** O corte e dobra industrial elimina entre 3% e 8% de desperdício gerado pelo corte manual no canteiro e reduz em até 50% o custo de mão de obra de armação. No método manual, armadores utilizam policorte e chave de dobra — processo lento e impreciso; no industrial, máquinas CNC produzem peças com tolerância de ±2mm conforme o projeto, já identificadas e organizadas por etapa da obra para montagem direta. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ---
 
@@ -108,7 +108,7 @@ Se você busca economia real, produtividade e qualidade na sua obra, o corte e d
     summary: "Aprenda a calcular a quantidade de vergalhões, treliças e malhas para sua obra. Guia prático com dicas para evitar desperdício e economizar.",
     content: `## Por Que o Cálculo Correto é Tão Importante?
 
-Comprar aço a mais significa dinheiro desperdiçado. Comprar a menos significa atraso na obra, novas compras emergenciais (geralmente mais caras) e perda de produtividade. O cálculo preciso da quantidade de aço é uma das etapas mais importantes do planejamento de qualquer construção.
+Comprar aço a mais significa dinheiro desperdiçado. Comprar a menos significa atraso na obra, novas compras emergenciais (geralmente mais caras) e perda de produtividade. O cálculo preciso da quantidade de aço é uma das etapas mais importantes do planejamento de qualquer construção — e é o primeiro ponto que a equipe da BR Aço revisa em obras de Goiânia e região antes de fechar um orçamento.
 
 ## O Papel do Projeto Estrutural
 
@@ -147,7 +147,7 @@ Se você já tem o projeto estrutural, envie para a equipe técnica da BR Aço. 
     keyword: "vergalhão CA-50 CA-60 diferenças",
     date: "01 Fev 2026",
     summary: "Descubra as diferenças entre vergalhão CA-50 e CA-60, onde usar cada tipo, resistência e como escolher o aço certo para sua obra.",
-    content: `**Em resumo:** A principal diferença entre CA-50 e CA-60 é a resistência ao escoamento: fy ≥ 500 MPa no CA-50 e fy ≥ 600 MPa no CA-60, conforme a ABNT NBR 7480. Na prática, o CA-50 domina as armaduras estruturais (vigas, pilares, lajes, fundações) por sua maior ductilidade; já o CA-60 é fabricado exclusivamente em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas e telas soldadas.
+    content: `**Em resumo:** A principal diferença entre CA-50 e CA-60 é a resistência ao escoamento: fy ≥ 500 MPa no CA-50 e fy ≥ 600 MPa no CA-60, conforme a ABNT NBR 7480. Na prática, o CA-50 domina as armaduras estruturais (vigas, pilares, lajes, fundações) por sua maior ductilidade; já o CA-60 é fabricado exclusivamente em diâmetros pequenos (ø4,2mm a ø10mm) e é o padrão para treliças metálicas e telas soldadas — os dois tipos que a BR Aço mantém em estoque para entrega rápida em Goiânia e região.
 
 ---
 
@@ -196,7 +196,7 @@ A BR Aço trabalha com ambos os tipos, sempre seguindo a norma ABNT NBR 7480/200
     keyword: "norma ABNT NBR 7480",
     date: "30 Jan 2026",
     summary: "Entenda a norma ABNT NBR 7480/2007 que regulamenta o aço para concreto armado no Brasil e por que ela é essencial para a segurança da sua obra.",
-    content: `**Em resumo:** A ABNT NBR 7480:2007 é a norma que regulamenta barras e fios de aço destinados a armaduras para concreto armado no Brasil. Ela define as classes CA-25, CA-50 e CA-60, estabelece os requisitos mínimos de resistência mecânica, composição química e ductilidade, e exige marcação de rastreabilidade em todas as barras. Todo vergalhão comercializado legalmente no Brasil deve ser certificado e ensaiado conforme essa norma.
+    content: `**Em resumo:** A ABNT NBR 7480:2007 é a norma que regulamenta barras e fios de aço destinados a armaduras para concreto armado no Brasil. Ela define as classes CA-25, CA-50 e CA-60, estabelece os requisitos mínimos de resistência mecânica, composição química e ductilidade, e exige marcação de rastreabilidade em todas as barras. Todo vergalhão comercializado legalmente no Brasil deve ser certificado e ensaiado conforme essa norma. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ---
 
@@ -249,7 +249,7 @@ A economia aparente de comprar aço mais barato e sem certificação pode se tra
     keyword: "treliças de aço construção civil",
     date: "28 Jan 2026",
     summary: "Descubra o que são treliças de aço, como funcionam e como elas reduzem custos de escoramento e aceleram a construção de lajes.",
-    content: `**Em resumo:** Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal soldado, usados como armadura principal de lajes treliçadas. Elas eliminam a necessidade de parte do escoramento, reduzem o tempo de armação e permitem lajes com vãos de até 6m sem exigir formas contínuas. Os tipos mais comuns no Brasil são TR-08, TR-10, TR-12 e TR-14, classificados pela altura h do elemento.
+    content: `**Em resumo:** Treliças de aço são elementos pré-fabricados compostos por dois arames longitudinais (banzo superior e inferior) e um arame diagonal soldado, usados como armadura principal de lajes treliçadas. Elas eliminam a necessidade de parte do escoramento, reduzem o tempo de armação e permitem lajes com vãos de até 6m sem exigir formas contínuas. Os tipos mais comuns no Brasil são TR-08, TR-10, TR-12 e TR-14, classificados pela altura h do elemento. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 ---
 
@@ -296,7 +296,7 @@ A BR Aço fabrica treliças em diversas alturas e especificações, com aço cer
     keyword: "malha de aço construção",
     date: "26 Jan 2026",
     summary: "Conheça os tipos de malha de aço para construção civil, suas aplicações em pisos, lajes e por que elas aumentam a produtividade.",
-    content: `**Em resumo:** Malha de aço para construção civil — também chamada tela soldada ou malha pop — é uma armadura pré-fabricada de barras CA-60 soldadas em ângulo reto em todos os cruzamentos. É usada em pisos industriais, lajes planas, paredes de concreto armado e pré-moldados, substituindo a armação manual com até 40% de economia em mão de obra. No Brasil, as telas soldadas seguem a ABNT NBR 7481 e são identificadas pelo espaçamento e bitola (ex.: Q-92, Q-138, Q-188).
+    content: `**Em resumo:** Malha de aço para construção civil — também chamada tela soldada ou malha pop — é uma armadura pré-fabricada de barras CA-60 soldadas em ângulo reto em todos os cruzamentos. É usada em pisos industriais, lajes planas, paredes de concreto armado e pré-moldados, substituindo a armação manual com até 40% de economia em mão de obra. No Brasil, as telas soldadas seguem a ABNT NBR 7481 e são identificadas pelo espaçamento e bitola (ex.: Q-92, Q-138, Q-188); a BR Aço fornece as principais bitolas com entrega em Goiânia e Goiás.
 
 ---
 
@@ -344,7 +344,7 @@ A BR Aço oferece malhas soldadas em diversas especificações, com certificaç�
     summary: "Saiba o que são sapatas de fundação, quais os tipos (isolada, corrida, associada) e quando usar cada uma na sua obra.",
     content: `## O que São Sapatas?
 
-Sapatas são elementos de fundação superficial (ou rasa) que transferem as cargas da estrutura para o solo. Elas são posicionadas na base de pilares ou paredes e funcionam como uma "base alargada" que distribui o peso em uma área maior do terreno.
+Sapatas são elementos de fundação superficial (ou rasa) que transferem as cargas da estrutura para o solo. Elas são posicionadas na base de pilares ou paredes e funcionam como uma "base alargada" que distribui o peso em uma área maior do terreno. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 As sapatas são feitas de concreto armado e representam um dos tipos de fundação mais utilizados na construção civil brasileira.
 
@@ -435,7 +435,7 @@ Solicite seu orçamento na BR Aço e receba seus produtos com a agilidade que su
     summary: "Aprenda a ler e interpretar um projeto estrutural de concreto armado. Entenda plantas, cortes, detalhamentos e a planilha de ferro.",
     content: `## O que é um Projeto Estrutural?
 
-O projeto estrutural é o conjunto de desenhos técnicos que detalha toda a estrutura de uma edificação: fundações, pilares, vigas, lajes, escadas, muros de arrimo e demais elementos de concreto armado.
+O projeto estrutural é o conjunto de desenhos técnicos que detalha toda a estrutura de uma edificação: fundações, pilares, vigas, lajes, escadas, muros de arrimo e demais elementos de concreto armado. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Saber interpretar esse projeto é fundamental para construtores, mestres de obra, encarregados e até para quem vai contratar um serviço de corte e dobra.
 
@@ -483,7 +483,7 @@ Se você tem dúvidas sobre como interpretar o seu projeto, a equipe técnica da
     keyword: "calcular quantidade de vergalhão para laje",
     date: "10 Jan 2026",
     summary: "Guia prático com passo a passo, fórmulas e taxas de consumo para calcular corretamente a quantidade de vergalhão necessária para executar lajes de qualquer tipo.",
-    content: `**Em resumo:** Para calcular o vergalhão de uma laje, multiplique a área (m²) pelo consumo típico por tipo: laje treliçada consome entre 8 e 12 kg/m²; laje maciça, entre 15 e 25 kg/m². Divida o peso total pelo peso por metro do diâmetro escolhido e depois por 12m (comprimento padrão da barra) para obter o número de barras. Sempre arredonde para cima e adicione 10% de perda por corte e emenda.
+    content: `**Em resumo:** Para calcular o vergalhão de uma laje, multiplique a área (m²) pelo consumo típico por tipo: laje treliçada consome entre 8 e 12 kg/m²; laje maciça, entre 15 e 25 kg/m². Divida o peso total pelo peso por metro do diâmetro escolhido e depois por 12m (comprimento padrão da barra) para obter o número de barras. Sempre arredonde para cima e adicione 10% de perda por corte e emenda — a equipe técnica da BR Aço, em Goiânia, confere esse cálculo sem custo antes do pedido.
 
 ---
 
@@ -567,7 +567,7 @@ A **BR Aço** recebe seu projeto estrutural por WhatsApp, faz a quantificação 
     keyword: "CA-25 CA-50 CA-60 vergalhão",
     date: "17 Jan 2026",
     summary: "Comparação técnica completa entre os graus CA-25, CA-50 e CA-60: resistência ao escoamento, ductilidade, diâmetros disponíveis e as aplicações corretas para cada tipo de obra.",
-    content: `**Em resumo:** CA-25, CA-50 e CA-60 são as classes de aço para concreto armado definidas pela ABNT NBR 7480, diferenciadas pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente. O CA-50 é o mais usado em estruturas (pilares, vigas, lajes e fundações); o CA-60 é padrão para treliças metálicas e telas soldadas; e o CA-25, de superfície lisa, aparece apenas em obras antigas e praticamente não é mais produzido.
+    content: `**Em resumo:** CA-25, CA-50 e CA-60 são as classes de aço para concreto armado definidas pela ABNT NBR 7480, diferenciadas pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente. O CA-50 é o mais usado em estruturas (pilares, vigas, lajes e fundações); o CA-60 é padrão para treliças metálicas e telas soldadas; e o CA-25, de superfície lisa, aparece apenas em obras antigas e praticamente não é mais produzido — a BR Aço trabalha hoje só com CA-50 e CA-60 para obras em Goiânia e região.
 
 ---
 
@@ -736,7 +736,7 @@ A **BR Aço** fornece treliças metálicas em todas as alturas comerciais, com c
     keyword: "tela soldada malha pop piso industrial",
     date: "31 Jan 2026",
     summary: "Análise técnica comparando tela soldada e malha pop para aplicação em pisos industriais: diferenças de resistência, espaçamento, custo e adequação conforme normas ABNT.",
-    content: `**Em resumo:** Para pisos industriais, a tela soldada estrutural (Q-138, Q-188, Q-257 ou superior) é mais indicada que a malha pop, por oferecer maior rigidez e controle de fissuração sob cargas de empilhadeiras e estocagem pesada. A escolha da malha deve seguir o cálculo estrutural com base no CBR do subleito e na carga de operação. A malha pop (Q-92, Q-138 em rolo) é adequada apenas para pisos leves residenciais e garagens.
+    content: `**Em resumo:** Para pisos industriais, a tela soldada estrutural (Q-138, Q-188, Q-257 ou superior) é mais indicada que a malha pop, por oferecer maior rigidez e controle de fissuração sob cargas de empilhadeiras e estocagem pesada. A escolha da malha deve seguir o cálculo estrutural com base no CBR do subleito e na carga de operação. A malha pop (Q-92, Q-138 em rolo) é adequada apenas para pisos leves residenciais e garagens. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 ---
 
@@ -831,7 +831,7 @@ A **BR Aço** fornece telas soldadas e malhas pop em todas as especificações, 
     summary: "Cinco estratégias práticas e comprovadas para reduzir o desperdício de vergalhão e aço na construção civil, com impacto direto na margem e no prazo da obra.",
     content: `## O Tamanho do Problema
 
-Dados levantados por pesquisadores da construção civil brasileira mostram que o desperdício de aço em obras que utilizam armação manual no canteiro varia entre 5% e 15% do total comprado. Em um projeto com 50 toneladas de aço, isso representa de 2,5 a 7,5 toneladas de material perdido — o equivalente a dezenas de milhares de reais literalmente jogados fora.
+Dados levantados por pesquisadores da construção civil brasileira mostram que o desperdício de aço em obras que utilizam armação manual no canteiro varia entre 5% e 15% do total comprado. Em um projeto com 50 toneladas de aço, isso representa de 2,5 a 7,5 toneladas de material perdido — o equivalente a dezenas de milhares de reais literalmente jogados fora. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Essas perdas ocorrem por diferentes causas: pontas de corte, erros de medida, dobras incorretas, danos por armazenamento inadequado e até furtos. A boa notícia é que cada uma dessas causas tem solução.
 
@@ -906,7 +906,7 @@ A **BR Aço** é o parceiro de obras que ajuda você a eliminar o desperdício: 
     keyword: "normas ABNT vergalhão",
     date: "14 Fev 2026",
     summary: "Panorama completo das normas ABNT que regulamentam vergalhões para concreto armado: requisitos de produto, de projeto e de execução que todo engenheiro civil deve conhecer.",
-    content: `**Em resumo:** As normas técnicas que todo engenheiro deve conhecer ao especificar aço para concreto armado são: ABNT NBR 7480 (barras e fios de aço), NBR 6118 (projeto de estruturas de concreto armado), NBR 6122 (fundações) e NBR 14859 (treliças metálicas). A NBR 7480 define as classes CA-25, CA-50 e CA-60, os ensaios de dobramento e tração obrigatórios, e a rastreabilidade exigida em cada lote de vergalhão.
+    content: `**Em resumo:** As normas técnicas que todo engenheiro deve conhecer ao especificar aço para concreto armado são: ABNT NBR 7480 (barras e fios de aço), NBR 6118 (projeto de estruturas de concreto armado), NBR 6122 (fundações) e NBR 14859 (treliças metálicas). A NBR 7480 define as classes CA-25, CA-50 e CA-60, os ensaios de dobramento e tração obrigatórios, e a rastreabilidade exigida em cada lote de vergalhão. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ---
 
@@ -1000,7 +1000,7 @@ A **BR Aço** fornece certificado ABNT NBR 7480 de cada lote, com rastreabilidad
     summary: "Guia técnico completo sobre fundação em radier: conceito, quando é indicado, dimensionamento da armadura conforme ABNT NBR 6118 e NBR 6122, e boas práticas de execução.",
     content: `## O Que É uma Fundação em Radier?
 
-O radier (ou radier geral) é um tipo de fundação superficial que consiste em uma laje de concreto armado que cobre toda a área da edificação — ou de parte dela — e distribui as cargas de todos os pilares e paredes para o solo de forma contínua.
+O radier (ou radier geral) é um tipo de fundação superficial que consiste em uma laje de concreto armado que cobre toda a área da edificação — ou de parte dela — e distribui as cargas de todos os pilares e paredes para o solo de forma contínua. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Diferentemente das fundações pontuais (sapatas isoladas) ou lineares (vigas de baldrame), o radier funciona como um elemento único que age em conjunto. Essa característica o torna especialmente eficiente quando a capacidade de suporte do solo é baixa e uniforme, ou quando as cargas da edificação são distribuídas de forma relativamente uniforme.
 
@@ -1088,7 +1088,7 @@ A **BR Aço** fornece vergalhões CA-50 em todos os diâmetros necessários para
     summary: "Guia prático de gestão de materiais na construção civil: processos de compra, recebimento, armazenamento, controle de estoque e estratégias para reduzir perdas e custos.",
     content: `## Por Que a Gestão de Materiais É Crítica?
 
-Em obras de construção civil, materiais representam entre **55% e 65% do custo total** do projeto. A mão de obra, embora visível e fácil de medir, ocupa um percentual menor. Isso significa que ganhos em eficiência na gestão de materiais têm impacto financeiro muito maior do que a maioria dos construtores imagina.
+Em obras de construção civil, materiais representam entre **55% e 65% do custo total** do projeto. A mão de obra, embora visível e fácil de medir, ocupa um percentual menor. Isso significa que ganhos em eficiência na gestão de materiais têm impacto financeiro muito maior do que a maioria dos construtores imagina. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Estudos do IPT (Instituto de Pesquisas Tecnológicas) e da Escola Politécnica da USP estimam que as perdas de materiais na construção civil brasileira variam entre **10% e 30%** do total consumido, dependendo do tipo de material e da maturidade do canteiro.
 
@@ -1326,7 +1326,7 @@ Nossa equipe técnica faz essa análise gratuitamente. Entre em contato pelo Wha
     keyword: "peso linear aço ca 50",
     date: "17 Mai 2026",
     summary: "Tabela completa com peso linear (kg/m) e peso por barra de 12m para todos os diâmetros de vergalhão CA-50 e CA-60. Referência rápida para orçamento e cálculo de aço.",
-    content: `**Em resumo:** O peso do vergalhão por metro linear é calculado pela fórmula da ABNT NBR 7480: P (kg/m) = (π/4) × d² × 7.850, onde d é o diâmetro em metros. Como referência: ø8mm = 0,395 kg/m, ø10mm = 0,617 kg/m, ø12,5mm = 0,963 kg/m, ø16mm = 1,578 kg/m, ø20mm = 2,466 kg/m e ø25mm = 3,853 kg/m. Uma barra padrão de 12m de ø12,5mm pesa 11,56 kg.
+    content: `**Em resumo:** O peso do vergalhão por metro linear é calculado pela fórmula da ABNT NBR 7480: P (kg/m) = (π/4) × d² × 7.850, onde d é o diâmetro em metros. Como referência: ø8mm = 0,395 kg/m, ø10mm = 0,617 kg/m, ø12,5mm = 0,963 kg/m, ø16mm = 1,578 kg/m, ø20mm = 2,466 kg/m e ø25mm = 3,853 kg/m. Uma barra padrão de 12m de ø12,5mm pesa 11,56 kg. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 ---
 
@@ -1518,7 +1518,7 @@ Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e
     keyword: "laje treliçada como fazer",
     date: "12 Mai 2026",
     summary: "Guia completo sobre laje treliçada: tipos, materiais, dimensionamento e passo a passo de execução para construtores e engenheiros.",
-    content: `**Em resumo:** A laje treliçada é executada em cinco etapas: 1) posicionamento das treliças sobre a forma; 2) colocação das tavelas cerâmicas ou EPS entre as treliças; 3) instalação das armaduras complementares (negativos, bordas, maciços de apoio); 4) concretagem com vibrador; 5) cura úmida por mínimo 7 dias. A capa de concreto sobre as tavelas deve ter no mínimo 4cm de espessura, conforme a ABNT NBR 14859.
+    content: `**Em resumo:** A laje treliçada é executada em cinco etapas: 1) posicionamento das treliças sobre a forma; 2) colocação das tavelas cerâmicas ou EPS entre as treliças; 3) instalação das armaduras complementares (negativos, bordas, maciços de apoio); 4) concretagem com vibrador; 5) cura úmida por mínimo 7 dias. A capa de concreto sobre as tavelas deve ter no mínimo 4cm de espessura, conforme a ABNT NBR 14859. Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 ---
 
@@ -1608,6 +1608,8 @@ Quando um construtor ou engenheiro precisa de aço para a obra, tem duas opçõe
 
 2. **Armaduras Prontas (Ferragem Armada):** kits de armadura já montados — sapatas, estribos, gaiolas de pilar — prontos para instalação imediata.
 
+É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
+
 A diferença está no **nível de processamento**: no corte e dobra, o armador ainda monta as peças no canteiro; nas armaduras prontas, ele apenas instala.
 
 ## Comparativo Direto
@@ -1659,7 +1661,7 @@ Envie o projeto pelo WhatsApp. Nossa equipe técnica analisa e recomenda o melho
     summary: "A nova NBR 6118:2026 entrou em vigor em março de 2026. Entenda o que mudou na norma de concreto armado e como isso impacta a especificação de armaduras na sua obra.",
     content: `## Resposta Rápida
 
-A NBR 6118:2026 entrou em vigor em 11 de março de 2026, substituindo a versão anterior (que havia sido cancelada). A principal novidade é a **obrigatoriedade da Avaliação Técnica de Projeto (ATP)** para estruturas de concreto armado, além de atualizações nos requisitos de cobrimento e durabilidade.
+A NBR 6118:2026 entrou em vigor em 11 de março de 2026, substituindo a versão anterior (que havia sido cancelada). A principal novidade é a **obrigatoriedade da Avaliação Técnica de Projeto (ATP)** para estruturas de concreto armado, além de atualizações nos requisitos de cobrimento e durabilidade. Esse é o padrão que a BR Aço já aplica em suas obras em Goiânia e no restante de Goiás.
 
 ## O que é a NBR 6118?
 
@@ -1748,7 +1750,7 @@ Solicite orçamento informando o projeto estrutural. Atendemos engenheiros e con
     summary: "Tabela completa de cobrimento mínimo de armadura por elemento estrutural e classe de agressividade ambiental, conforme a NBR 6118:2026.",
     content: `## Resposta Rápida
 
-O cobrimento mínimo de armadura conforme a NBR 6118:2026 varia de **20 mm a 50 mm**, dependendo do tipo de elemento estrutural (laje, viga, pilar, fundação) e da classe de agressividade ambiental do local da obra. Em Goiânia (ambiente urbano moderado, Classe II), o mínimo é **25 mm para lajes** e **30 mm para vigas e pilares**.
+O cobrimento mínimo de armadura conforme a NBR 6118:2026 varia de **20 mm a 50 mm**, dependendo do tipo de elemento estrutural (laje, viga, pilar, fundação) e da classe de agressividade ambiental do local da obra. Em Goiânia (ambiente urbano moderado, Classe II), o mínimo é **25 mm para lajes** e **30 mm para vigas e pilares**. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## O que é Cobrimento de Armadura?
 
@@ -1844,7 +1846,7 @@ O aço fornecido com serviço de corte e dobra da BR Aço inclui orientação t�
     keyword: "quanto vergalhão por m2 laje",
     date: "17 Mai 2026",
     summary: "Tabela completa de consumo de vergalhão por m² para diferentes tipos de laje: treliçada, maciça e nervurada. Inclui fatores de variação e como calcular.",
-    content: `**Em resumo:** O consumo de vergalhão por m² de laje varia conforme o tipo e o vão: laje treliçada de vão simples (até 4m) consome de 8 a 10 kg/m²; laje treliçada de vão maior (4 a 6m), de 10 a 14 kg/m²; laje maciça, de 15 a 25 kg/m². Esses valores incluem barras positivas, negativas, cintas de borda e distribuição, conforme o projeto estrutural.
+    content: `**Em resumo:** O consumo de vergalhão por m² de laje varia conforme o tipo e o vão: laje treliçada de vão simples (até 4m) consome de 8 a 10 kg/m²; laje treliçada de vão maior (4 a 6m), de 10 a 14 kg/m²; laje maciça, de 15 a 25 kg/m². Esses valores incluem barras positivas, negativas, cintas de borda e distribuição, conforme o projeto estrutural. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ---
 
@@ -1938,7 +1940,7 @@ Atendemos obras em Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, T
     summary: "Os 7 erros mais comuns que encarecem o aço em obras de construção civil — com dados de desperdício e como cada um pode ser evitado.",
     content: `## Você Sabe Quanto Aço Está Desperdiçando na Sua Obra?
 
-Segundo dados do setor, obras que cortam o aço manualmente no canteiro desperdiçam entre **5% e 8% do material comprado** em pontas, erros de medida e rejeitos de dobra. Em uma obra com 3 toneladas de aço (valor de R$ 30.000), isso representa de **R$ 1.500 a R$ 2.400 jogados fora** — antes mesmo de começar a construir.
+Segundo dados do setor, obras que cortam o aço manualmente no canteiro desperdiçam entre **5% e 8% do material comprado** em pontas, erros de medida e rejeitos de dobra. Em uma obra com 3 toneladas de aço (valor de R$ 30.000), isso representa de **R$ 1.500 a R$ 2.400 jogados fora** — antes mesmo de começar a construir. É esse tipo de desperdício que a BR Aço ajuda a eliminar no fornecimento de aço para construtoras de Goiânia e Goiás.
 
 Mas o desperdício de material é apenas um dos erros. Veja os 7 mais comuns:
 
@@ -2138,7 +2140,7 @@ Envie o projeto e receba o orçamento da laje completa — treliças + vergalhã
     summary: "Saiba como calcular o aço para obras do MCMV em Goiás, os tipos de vergalhão recomendados, consumo médio por m² e como o corte e dobra reduz custo em até 30%.",
     content: `## Resposta Rápida
 
-Para uma casa do Minha Casa Minha Vida (MCMV) de **60 m² em Goiás**, o consumo típico de aço é de **40 a 60 kg por m² de área construída**, totalizando entre **2.400 e 3.600 kg** de vergalhão. O vergalhão mais usado é o **CA-50 (10 mm e 12,5 mm)** para vigas e pilares, e o **CA-60 (6,3 mm e 8 mm)** para lajes treliçadas e telas soldadas.
+Para uma casa do Minha Casa Minha Vida (MCMV) de **60 m² em Goiás**, o consumo típico de aço é de **40 a 60 kg por m² de área construída**, totalizando entre **2.400 e 3.600 kg** de vergalhão. O vergalhão mais usado é o **CA-50 (10 mm e 12,5 mm)** para vigas e pilares, e o **CA-60 (6,3 mm e 8 mm)** para lajes treliçadas e telas soldadas. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## O que é o MCMV e por que o Aço Importa Tanto
 
@@ -2221,7 +2223,7 @@ A BR Aço já forneceu aço para mais de **800 obras** em Goiás, incluindo proj
 
 O espaçamento máximo de estribos conforme a **NBR 6118** é:
 - **Pilares:** menor valor entre *d/2*, *20 × φ* (diâmetro da barra longitudinal) e **20 cm**
-- **Vigas:** depende da solicitação de cisalhamento — em geral entre **10 cm e 30 cm** para a região crítica próxima ao apoio
+- **Vigas:** depende da solicitação de cisalhamento — em geral entre **10 cm e 30 cm** para a região crítica próxima ao apoio. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Em obras residenciais comuns (casas e sobrados), o espaçamento típico de estribos em pilares é de **10 a 15 cm** na região de emenda e **15 a 20 cm** no vão central.
 
@@ -2341,7 +2343,7 @@ Envie o detalhamento estrutural pelo WhatsApp e receba o orçamento completo de 
     keyword: "ca-50 ca-60 diferença qual usar",
     date: "17 Mai 2026",
     summary: "Guia completo com todas as diferenças entre CA-50 e CA-60: resistência, aplicações, preço, diâmetros disponíveis e quando cada um é a escolha correta.",
-    content: `**Em resumo:** CA-50 e CA-60 são as duas classes de vergalhão nervurado mais utilizadas na construção civil brasileira em 2026. O CA-50 tem resistência ao escoamento de 500 MPa e é indicado para elementos estruturais (pilares, vigas, lajes, fundações) em qualquer diâmetro disponível (ø6,3mm a ø32mm). O CA-60, com 600 MPa, é produzido apenas em diâmetros de ø4,2mm a ø10mm e é o material padrão de treliças e telas soldadas no mercado brasileiro.
+    content: `**Em resumo:** CA-50 e CA-60 são as duas classes de vergalhão nervurado mais utilizadas na construção civil brasileira em 2026. O CA-50 tem resistência ao escoamento de 500 MPa e é indicado para elementos estruturais (pilares, vigas, lajes, fundações) em qualquer diâmetro disponível (ø6,3mm a ø32mm). O CA-60, com 600 MPa, é produzido apenas em diâmetros de ø4,2mm a ø10mm e é o material padrão de treliças e telas soldadas no mercado brasileiro. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ---
 
@@ -2467,7 +2469,7 @@ Envie sua planta pelo WhatsApp e receba o orçamento completo em até 24h.`
     keyword: 'diferença CA-25 CA-50 CA-60',
     date: '10 Nov 2025',
     summary: 'CA-25, CA-50 e CA-60 são as principais classes de vergalhão usadas na construção civil. Cada uma tem resistência e aplicação ideais. Entenda qual usar em cada elemento estrutural.',
-    content: `**Em resumo:** CA-25, CA-50 e CA-60 diferem pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente, conforme a ABNT NBR 7480. O CA-25 (liso) praticamente saiu do mercado brasileiro. O CA-50 (nervurado) é o aço estrutural padrão para vigas, pilares, lajes e fundações. O CA-60 (nervurado fino) é exclusivo de treliças metálicas, fios e malhas soldadas.
+    content: `**Em resumo:** CA-25, CA-50 e CA-60 diferem pela resistência ao escoamento: 250 MPa, 500 MPa e 600 MPa respectivamente, conforme a ABNT NBR 7480. O CA-25 (liso) praticamente saiu do mercado brasileiro. O CA-50 (nervurado) é o aço estrutural padrão para vigas, pilares, lajes e fundações. O CA-60 (nervurado fino) é exclusivo de treliças metálicas, fios e malhas soldadas — ambos disponíveis em estoque na BR Aço, em Goiânia.
 
 ---
 
@@ -2544,7 +2546,7 @@ Envie o projeto estrutural pelo WhatsApp e receba orçamento com a classe e diâ
     summary: 'As nervuras do vergalhão aumentam a aderência ao concreto em até 40%, tornando a estrutura mais segura e eficiente. Entenda a diferença técnica e quando usar cada tipo.',
     content: `## O Que São as Nervuras do Vergalhão?
 
-As **nervuras** são as saliências helicoidais ou transversais na superfície do vergalhão. Elas não são apenas estéticas — são um elemento técnico fundamental que muda completamente o comportamento da armadura dentro do concreto.
+As **nervuras** são as saliências helicoidais ou transversais na superfície do vergalhão. Elas não são apenas estéticas — são um elemento técnico fundamental que muda completamente o comportamento da armadura dentro do concreto. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Por Que a Aderência Importa Tanto?
 
@@ -2602,6 +2604,8 @@ Solicite seu orçamento via WhatsApp — entregamos em até **48h em Goiânia e 
 
 > Dados conforme ABNT NBR 7480. Peso calculado com densidade do aço = 7.850 kg/m³.
 
+Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
+
 ## Bitolas de Vergalhão CA-25 (Estribos)
 
 | Diâmetro (mm) | Peso (kg/m) | Uso Típico |
@@ -2637,7 +2641,7 @@ Envie a planilha de ferro ou o projeto estrutural e receba orçamento detalhado 
     summary: 'CA-70 e CA-80 são vergalhões de altíssima resistência usados em pré-moldados, protendidos e estruturas especiais. Saiba quando o projeto os exige e por quê são raros na construção residencial.',
     content: `## Além do CA-60: Existem Classes Ainda Mais Resistentes?
 
-Sim. A **ABNT NBR 7480** também contempla as classes **CA-70** (700 MPa) e **CA-80** (800 MPa), mas elas têm um nicho bem definido e raramente aparecem em obras residenciais comuns.
+Sim. A **ABNT NBR 7480** também contempla as classes **CA-70** (700 MPa) e **CA-80** (800 MPa), mas elas têm um nicho bem definido e raramente aparecem em obras residenciais comuns. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 ## CA-70 — Características
 
@@ -2695,6 +2699,8 @@ Não. A **ABNT NBR 7480** e o **ACI 318** distinguem dois tipos de oxidação no
 1. **Ferrugem superficial (oxidação leve):** Fina camada avermelhada que não compromete a aderência nem as propriedades mecânicas
 2. **Corrosão agressiva (pite ou laminação):** Ataca a seção transversal, reduz a área de aço e compromete a resistência
 
+Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
+
 ## Como Identificar Ferrugem Superficial (Aceitável)
 
 - Coloração avermelhada uniforme, sem descamação
@@ -2744,7 +2750,7 @@ Solicite orçamento via WhatsApp e receba em até **48h com laudo técnico**.`
     summary: 'A NBR 6118 define taxas mínimas e máximas de armadura para cada elemento estrutural. Entender esses limites ajuda a verificar se o projeto está correto e evitar sub ou superarmação.',
     content: `## O Que É Taxa de Armadura?
 
-A taxa de armadura (ρ) é a relação entre a **área de aço** e a **área da seção transversal de concreto**:
+A taxa de armadura (ρ) é a relação entre a **área de aço** e a **área da seção transversal de concreto**: A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 **ρ = As / Ac**
 
@@ -2811,7 +2817,7 @@ A BR Aço processa o aço exatamente como especificado no projeto estrutural —
     summary: 'Muitos compradores comparam apenas o preço por kg. Mas o custo real inclui perda de material, mão de obra, tempo e qualidade. Veja onde corte e dobra industrial vence na prática.',
     content: `## A Comparação Mais Comum (e Incompleta)
 
-Quando um comprador pergunta "o vergalhão em barra fica mais barato?", ele geralmente compara apenas o **preço por kg** da barra com o da peça cortada e dobrada. Essa comparação ignora os custos ocultos.
+Quando um comprador pergunta "o vergalhão em barra fica mais barato?", ele geralmente compara apenas o **preço por kg** da barra com o da peça cortada e dobrada. Essa comparação ignora os custos ocultos. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 ## Custos da Barra Inteira (12 metros)
 
@@ -2866,7 +2872,7 @@ Solicite orçamento via WhatsApp — respondemos em até 2 horas.`
     summary: 'Obras sem planejamento de armação perdem até 15% do aço comprado. Veja as principais causas de desperdício e como eliminá-las com projeto detalhado e corte e dobra industrial.',
     content: `## Quanto Aço é Desperdiçado nas Obras Brasileiras?
 
-Estudos de controle tecnológico indicam que obras residenciais sem gestão de armação desperdiçam entre **8% e 15%** do vergalhão comprado. Em uma casa de 150 m², isso pode representar **500 kg a 900 kg de aço** — valor considerável no orçamento.
+Estudos de controle tecnológico indicam que obras residenciais sem gestão de armação desperdiçam entre **8% e 15%** do vergalhão comprado. Em uma casa de 150 m², isso pode representar **500 kg a 900 kg de aço** — valor considerável no orçamento. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 ## Principais Causas de Desperdício
 
@@ -2923,7 +2929,7 @@ Envie seu projeto via WhatsApp e veja quanto você pode economizar comparado ao 
     summary: 'O corte e dobra industrial usa máquinas CNC programadas com a planilha de ferro do projeto. O resultado são peças com tolerância de ±5 mm, prontas para montagem direto na obra.',
     content: `## Da Planilha de Ferro à Peça Pronta: O Processo Completo
 
-O serviço de corte e dobra industrial transforma o projeto estrutural em peças de vergalhão prontas para montagem. Veja cada etapa do processo que usamos na BR Aço.
+O serviço de corte e dobra industrial transforma o projeto estrutural em peças de vergalhão prontas para montagem. Veja cada etapa do processo que usamos na BR Aço. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 ## Etapa 1: Recebimento do Projeto
 
@@ -2997,7 +3003,7 @@ Para solicitar o serviço de corte e dobra, você precisa de um documento com as
 - Quadro de ferragens
 - Lista de corte
 
-O nome varia, mas o conteúdo é o mesmo: **cada peça identificada com bitola, comprimento e dobras**.
+O nome varia, mas o conteúdo é o mesmo: **cada peça identificada com bitola, comprimento e dobras** — é um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ## Formato Mínimo da Planilha
 
@@ -3054,6 +3060,8 @@ Um erro de 5 cm no comprimento de uma barra pode parecer pequeno. Mas dependendo
 - Forçar o armador a fazer **emendas não previstas** no projeto
 - Deixar a **cobertura mínima de concreto** abaixo do exigido pela NBR 6118
 - Causar interferência entre barras de elementos diferentes
+
+Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 ## O Que a NBR 7480 Define
 
@@ -3114,7 +3122,7 @@ A BR Aço tem controle de qualidade em linha — peças fora de especificação 
     summary: 'Para obras em Goiânia e Goiás, o corte e dobra local oferece entrega rápida, suporte técnico presencial e economia real no orçamento. Entenda por que a maioria das construtoras terceiriza essa etapa.',
     content: `## Por Que Contratar Corte e Dobra em Vez de Cortar na Obra?
 
-A decisão entre cortar na obra ou contratar corte e dobra industrial impacta diretamente o **custo, o prazo e a qualidade** da estrutura. Para obras em Goiânia e região, as vantagens do serviço industrializado são ainda maiores pela proximidade da fábrica.
+A decisão entre cortar na obra ou contratar corte e dobra industrial impacta diretamente o **custo, o prazo e a qualidade** da estrutura. Para obras em Goiânia e região, as vantagens do serviço industrializado são ainda maiores pela proximidade da fábrica. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 ## 1. Redução de Desperdício
 
@@ -3163,7 +3171,7 @@ A BR Aço atende desde a residência unifamiliar até grandes empreendimentos. E
     summary: 'Corte e dobra industrial não é só para grandes construtoras. Para casas a partir de 80 m² com projeto estrutural, o serviço reduz desperdício e acelera a obra. Veja como funciona.',
     content: `## Corte e Dobra Serve para Obras Pequenas?
 
-Sim — e com vantagens claras. O mito de que corte e dobra industrial é "só para grandes obras" não se sustenta. Uma casa de **80 m² a 300 m²** com projeto estrutural pode se beneficiar muito do serviço.
+Sim — e com vantagens claras. O mito de que corte e dobra industrial é "só para grandes obras" não se sustenta. Uma casa de **80 m² a 300 m²** com projeto estrutural pode se beneficiar muito do serviço. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## A Lógica Econômica para Residências
 
@@ -3215,7 +3223,7 @@ Fale com a nossa equipe pelo WhatsApp e receba o orçamento para sua residência
     summary: 'Calcular a ferragem da laje corretamente evita falta de material ou desperdício. Veja as fórmulas para laje maciça e treliçada com exemplos práticos em metros quadrados.',
     content: `## Por Que Calcular a Ferragem Antes de Comprar?
 
-Comprar aço sem cálculo preciso leva a dois problemas:
+Comprar aço sem cálculo preciso leva a dois problemas — e é justamente por isso que a equipe da BR Aço, em Goiânia, sempre confere a estimativa antes de fechar o pedido:
 1. **Falta de material:** para a obra, atraso no cronograma
 2. **Excesso:** capital imobilizado em material parado no canteiro
 
@@ -3285,7 +3293,7 @@ O consumo de vergalhão em laje depende de:
 - **Vão entre apoios:** quanto maior o vão, mais aço
 - **Carga de utilização:** residencial (1,5 kN/m²) vs. comercial (3 kN/m²) vs. industrial
 - **Espessura da laje:** determinada pelo engenheiro
-- **fck do concreto:** concreto mais resistente permite reduzir a armadura
+- **fck do concreto:** concreto mais resistente permite reduzir a armadura. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 ## Tabela: Consumo de Aço por m² de Laje (Estimativa)
 
@@ -3342,7 +3350,7 @@ Com a planilha em mãos, envie para a BR Aço e receba o orçamento de corte e d
     summary: 'Pilares e vigas concentram a maior parte do aço estrutural de uma edificação. Veja como calcular a armadura longitudinal e os estribos com fórmulas práticas e exemplos numéricos.',
     content: `## Pilares: Armadura Longitudinal
 
-A armadura longitudinal de pilar resiste à compressão e à flambagem. O dimensionamento segue a NBR 6118, mas para estimativa inicial você pode usar:
+A armadura longitudinal de pilar resiste à compressão e à flambagem — esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal. O dimensionamento segue a NBR 6118, mas para estimativa inicial você pode usar:
 
 ### Fórmula de Estimativa
 
@@ -3415,7 +3423,7 @@ Com o projeto em mãos, envie para o corte e dobra da BR Aço e receba as peças
     summary: 'O consumo médio de vergalhão em obras residenciais fica entre 20 e 40 kg/m². Entenda o que influencia essa variação e como fazer uma estimativa confiável para o orçamento.',
     content: `## Por Que o Consumo por m² Varia Tanto?
 
-"Quanto de vergalhão preciso por m² de obra?" é a pergunta mais frequente nos orçamentos iniciais. A resposta depende de múltiplos fatores — por isso as referências de mercado têm faixas amplas.
+"Quanto de vergalhão preciso por m² de obra?" é a pergunta mais frequente nos orçamentos iniciais. A resposta depende de múltiplos fatores — por isso as referências de mercado têm faixas amplas. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## Fatores que Influenciam o Consumo
 
@@ -3472,7 +3480,7 @@ Com a planilha de ferro do projeto, a BR Aço fornece orçamento detalhado por b
     summary: 'A NBR 6118 limita o espaçamento máximo entre barras na laje a 2h ou 20 cm. Entender essas regras evita reprova na fiscalização e garante que a armadura funcione como calculada.',
     content: `## Por Que o Espaçamento das Barras Importa?
 
-O espaçamento entre as barras de armadura na laje não é uma decisão estética — é calculado para garantir:
+O espaçamento entre as barras de armadura na laje não é uma decisão estética — é calculado para garantir: Esse é o padrão que a BR Aço segue em todo fornecimento de aço em Goiânia e no restante de Goiás.
 
 1. **Distribuição uniforme das tensões** no concreto
 2. **Controle de fissuração** por retração e cargas
@@ -3537,7 +3545,7 @@ A BR Aço fornece treliças metálicas nos espaçamentos exigidos pelo projeto. 
     summary: 'A ferragem responde por 5% a 15% do custo total da construção, dependendo do sistema estrutural. Entenda como otimizar esse custo sem comprometer a segurança estrutural.',
     content: `## O Peso do Aço no Orçamento da Construção
 
-O custo da ferragem (vergalhão, telas, treliças) varia conforme o tipo de estrutura, mas geralmente representa uma fatia relevante do orçamento total. Entender essa proporção ajuda no planejamento financeiro da obra.
+O custo da ferragem (vergalhão, telas, treliças) varia conforme o tipo de estrutura, mas geralmente representa uma fatia relevante do orçamento total. Entender essa proporção ajuda no planejamento financeiro da obra. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Participação da Ferragem por Tipo de Obra
 
@@ -3589,7 +3597,7 @@ Solicite sua cotação via WhatsApp e receba em até 2 horas.`
     summary: 'Ler um projeto de armação é essencial para que o mestre de obras execute a estrutura corretamente. Veja os principais símbolos, notações e como interpretar o detalhamento de pilares, vigas e lajes.',
     content: `## O Que é o Projeto de Armação?
 
-O projeto de armação (ou detalhamento estrutural) é o documento técnico que especifica cada barra de vergalhão a ser colocada em cada elemento da estrutura. Ele é elaborado pelo engenheiro calculista com base nos cálculos estruturais.
+O projeto de armação (ou detalhamento estrutural) é o documento técnico que especifica cada barra de vergalhão a ser colocada em cada elemento da estrutura. Ele é elaborado pelo engenheiro calculista com base nos cálculos estruturais. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 Sem entender esse documento, o mestre de obras não consegue executar a armação corretamente — mesmo com o melhor aço do mercado.
 
@@ -3662,7 +3670,7 @@ A BR Aço também oferece suporte técnico para clientes: enviamos as peças ide
     summary: 'A ABNT NBR 7480 define os requisitos mínimos de qualidade para vergalhões CA-25, CA-50 e CA-60. Todo aço usado em obra deve ter rastreabilidade para essa norma.',
     content: `## O Que é a NBR 7480?
 
-A **ABNT NBR 7480:2007** — "Aço destinado a armaduras para estruturas de concreto armado" — é a norma que define os requisitos técnicos mínimos que todo vergalhão vendido no Brasil deve atender.
+A **ABNT NBR 7480:2007** — "Aço destinado a armaduras para estruturas de concreto armado" — é a norma que define os requisitos técnicos mínimos que todo vergalhão vendido no Brasil deve atender. Esse critério orienta o fornecimento de aço da BR Aço para construtoras de Goiânia e Goiás.
 
 Se o vergalhão que você compra não está em conformidade com a NBR 7480, você está colocando sua obra e sua responsabilidade em risco.
 
@@ -3724,7 +3732,7 @@ Todo aço fornecido pela BR Aço vem acompanhado de **laudo técnico** com núme
     summary: 'A ABNT NBR 6118 define os critérios de projeto para toda estrutura de concreto armado no Brasil. Engenheiros, construtores e mestres de obra precisam conhecer seus princípios básicos.',
     content: `## O Que é a NBR 6118?
 
-A **ABNT NBR 6118** — "Projeto de estruturas de concreto — Procedimento" — é a principal norma técnica brasileira para dimensionamento de estruturas de concreto armado e protendido.
+A **ABNT NBR 6118** — "Projeto de estruturas de concreto — Procedimento" — é a principal norma técnica brasileira para dimensionamento de estruturas de concreto armado e protendido. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 Toda obra com estrutura de concreto armado no Brasil deve ser projetada conforme a NBR 6118. É o documento que o engenheiro calculista usa como referência absoluta.
 
@@ -3785,7 +3793,7 @@ O serviço de corte e dobra da BR Aço é executado respeitando as tolerâncias 
     summary: 'Conhecer as principais normas ABNT de construção civil evita reprova em vistoria, garante a segurança estrutural e protege o responsável técnico. Veja as 5 normas essenciais para obras de concreto.',
     content: `## Por Que Conhecer as Normas ABNT?
 
-Normas ABNT não são "sugestões" — são documentos técnicos de observância obrigatória para obras com ART (Anotação de Responsabilidade Técnica) assinada. O engenheiro que projeta e o construtor que executa são solidariamente responsáveis pela conformidade.
+Normas ABNT não são "sugestões" — são documentos técnicos de observância obrigatória para obras com ART (Anotação de Responsabilidade Técnica) assinada. O engenheiro que projeta e o construtor que executa são solidariamente responsáveis pela conformidade. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## 1. NBR 6118 — Projeto de Estruturas de Concreto
 
@@ -3856,7 +3864,7 @@ Todos os nossos vergalhões atendem a NBR 7480, e o serviço de corte e dobra se
     summary: 'O cobrimento insuficiente de concreto é a causa mais comum de corrosão de armadura em obras brasileiras. Saiba o que exige a NBR 6118 e como garantir o cobrimento correto com espaçadores.',
     content: `## O Que é o Cobrimento de Concreto?
 
-O cobrimento é a distância entre a face externa do concreto e a face da barra de armadura mais próxima. Ele forma uma **barreira protetora** que impede a entrada de água, gás carbônico e cloretos até o aço.
+O cobrimento é a distância entre a face externa do concreto e a face da barra de armadura mais próxima. Ele forma uma **barreira protetora** que impede a entrada de água, gás carbônico e cloretos até o aço. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Sem cobrimento adequado, a armadura corrói, expande, fissura o concreto e pode levar ao colapso estrutural — às vezes décadas depois da construção.
 
@@ -3923,7 +3931,7 @@ O aço com certificado NBR 7480 e o cobrimento correto são os dois pilares da d
     summary: 'Laje maciça e treliçada têm custos, pesos e aplicações diferentes. Entenda quando cada sistema é mais vantajoso e como o tipo de laje afeta a quantidade de aço necessária.',
     content: `## Dois Sistemas, Mesma Função
 
-Tanto a laje maciça quanto a treliçada servem para criar o piso/teto entre pavimentos. A diferença está na **forma de resistir às cargas** e nos **materiais utilizados** — o que impacta diretamente o custo e a quantidade de aço.
+Tanto a laje maciça quanto a treliçada servem para criar o piso/teto entre pavimentos. A diferença está na **forma de resistir às cargas** e nos **materiais utilizados** — o que impacta diretamente o custo e a quantidade de aço. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Laje Maciça
 
@@ -4001,6 +4009,8 @@ Uma laje treliçada com lajotas cerâmicas ou EPS é composta por:
 4. **Concreto de capeamento** — camada superior (5 a 7 cm)
 5. **Escoramento** — apoio temporário durante a cura
 
+A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
+
 ## Passo 1: Escolha o Tipo de Treliça
 
 A escolha depende do vão e da carga. Tabela simplificada:
@@ -4066,7 +4076,7 @@ A BR Aço fornece treliças TR-08, TR-10 e TR-12 no comprimento exato da sua laj
     summary: 'TR-08, TR-10 e TR-12 são os modelos mais comuns de treliça para laje. A diferença está na altura e na capacidade de vão. Saiba qual escolher para cada projeto.',
     content: `## O Que Define o Modelo da Treliça?
 
-O código **TR-XX** indica a **altura nominal da treliça em centímetros**. Uma TR-08 tem 8 cm de altura; uma TR-12, 12 cm. Essa altura determina a rigidez da treliça e, consequentemente, o **vão máximo que ela pode vencer** com segurança.
+O código **TR-XX** indica a **altura nominal da treliça em centímetros**. Uma TR-08 tem 8 cm de altura; uma TR-12, 12 cm. Essa altura determina a rigidez da treliça e, consequentemente, o **vão máximo que ela pode vencer** com segurança. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Composição da Treliça Metálica
 
@@ -4146,7 +4156,7 @@ Fornecemos treliças metálicas nos comprimentos exatos do projeto, com certific
 
 A armadura de uma laje pode ser feita com:
 1. **Barras de vergalhão** cortadas, dobradas e amarradas na obra
-2. **Tela soldada** (malha eletrossoldada) — painel industrializado pronto para uso
+2. **Tela soldada** (malha eletrossoldada) — painel industrializado pronto para uso. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Ambas atendem a NBR 6118, mas têm características operacionais muito diferentes.
 
@@ -4210,7 +4220,7 @@ A BR Aço fornece telas soldadas e malhas pop em todos os modelos padronizados (
     summary: 'Malha pop é uma tela soldada CA-60 com fios de 4,2 mm, usada em contrapisos, calçadas e reforço de argamassa. Entenda quando ela é suficiente e quando o projeto exige tela estrutural.',
     content: `## O Que é a Malha Pop?
 
-A **malha pop** (ou tela pop) é uma tela soldada de aço CA-60 com fios de **diâmetro 4,2 mm** e malha **15 × 15 cm**. É o produto de menor calibre na família das telas soldadas.
+A **malha pop** (ou tela pop) é uma tela soldada de aço CA-60 com fios de **diâmetro 4,2 mm** e malha **15 × 15 cm**. É o produto de menor calibre na família das telas soldadas. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Apesar do nome informal, o produto atende a **ABNT NBR 7480** e tem rastreabilidade de produção.
 
@@ -4263,7 +4273,7 @@ Fornecemos malha pop em painéis prontos, com entrega em Goiânia e região. Par
     summary: 'C20, C25 e C30 são as classes de resistência do concreto mais usadas em obras residenciais. Entenda o que o fck significa, as diferenças práticas e qual usar em cada elemento estrutural.',
     content: `## O Que é o fck do Concreto?
 
-O **fck** (resistência característica à compressão) é o valor abaixo do qual apenas 5% dos resultados de ensaio se situam, em corpos de prova cilíndricos com 28 dias de cura. É a propriedade mais importante para dimensionamento estrutural.
+O **fck** (resistência característica à compressão) é o valor abaixo do qual apenas 5% dos resultados de ensaio se situam, em corpos de prova cilíndricos com 28 dias de cura. É a propriedade mais importante para dimensionamento estrutural. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 A classificação usa a letra **C** seguida do valor em MPa: **C20** = fck de 20 MPa.
 
@@ -4382,6 +4392,8 @@ Fundações rasas (ou diretas) são aquelas executadas a pouca profundidade (ger
 - **Sapata isolada:** bloco de concreto armado sob cada pilar
 - **Radier:** laje de concreto armado cobrindo toda a área
 
+Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
+
 ## Sapata Isolada: Quando Usar?
 
 ### Condições ideais
@@ -4462,7 +4474,7 @@ Uma edificação de concreto armado funciona como uma cadeia de transmissão de 
 
 **Laje → Vigas → Pilares → Fundação → Solo**
 
-Para que essa cadeia funcione, a armadura deve ser **contínua e bem ancorada** em cada ligação. Uma falha em qualquer ponto compromete todo o sistema.
+Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás. Para que essa cadeia funcione, a armadura deve ser **contínua e bem ancorada** em cada ligação. Uma falha em qualquer ponto compromete todo o sistema.
 
 ## Fundação: Onde Tudo Começa
 
@@ -4518,7 +4530,7 @@ Fornecemos o aço para cada elemento estrutural, cortado e identificado por etap
     summary: 'Estribos são a armadura transversal que impede o colapso por cisalhamento em pilares e vigas. A NBR 6118 define espaçamentos máximos rigorosos que devem ser respeitados na execução.',
     content: `## O Que São Estribos?
 
-Estribos (também chamados cintas, aros ou grampos) são barras de aço dobradas em forma fechada (retangular, quadrada, circular ou poligonal) que envolvem as barras longitudinais de pilares e vigas.
+Estribos (também chamados cintas, aros ou grampos) são barras de aço dobradas em forma fechada (retangular, quadrada, circular ou poligonal) que envolvem as barras longitudinais de pilares e vigas. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Eles são uma das armaduras mais críticas da estrutura — e frequentemente mal executadas em obras sem supervisão técnica adequada.
 
@@ -4585,7 +4597,7 @@ A BR Aço produz estribos em qualquer bitola e formato — retos, quadrados, ret
     summary: 'O preço do vergalhão em 2025 é influenciado por minério de ferro, câmbio, energia e demanda da construção civil. Saiba como esses fatores funcionam e como fazer uma compra mais estratégica.',
     content: `## Por Que o Preço do Vergalhão Oscila Tanto?
 
-O vergalhão é um commodity — seu preço acompanha variáveis nacionais e internacionais que mudam semanalmente. Entender essa dinâmica ajuda a tomar decisões de compra mais estratégicas.
+O vergalhão é um commodity — seu preço acompanha variáveis nacionais e internacionais que mudam semanalmente. Entender essa dinâmica ajuda a tomar decisões de compra mais estratégicas. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 ## Fatores que Influenciam o Preço do Vergalhão
 
@@ -4633,7 +4645,7 @@ Fornecemos proposta detalhada com preço por bitola, prazo de validade, especifi
     summary: 'É possível economizar significativamente no aço da obra sem comprometer a segurança estrutural. As estratégias passam por projeto otimizado, corte industrial e gestão de estoque.',
     content: `## Economizar no Aço: Sim, É Possível — Se Feito Corretamente
 
-A ferragem representa até 15% do custo total de uma obra. Qualquer economia aqui tem impacto real no orçamento. Mas economizar "errado" — usando aço de qualidade duvidosa ou reduzindo armaduras sem autorização do engenheiro — compromete a segurança estrutural.
+A ferragem representa até 15% do custo total de uma obra. Qualquer economia aqui tem impacto real no orçamento. Mas economizar "errado" — usando aço de qualidade duvidosa ou reduzindo armaduras sem autorização do engenheiro — compromete a segurança estrutural. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Aqui estão as **estratégias corretas** para economizar.
 
@@ -4697,7 +4709,7 @@ O vergalhão percorre o seguinte caminho até sua obra:
 
 **Usina Siderúrgica → Distribuidor/Serviço Center → Obra**
 
-Cada elo da cadeia agrega valor (ou custo) diferente. Entender essa cadeia ajuda a decidir onde comprar.
+A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido. Cada elo da cadeia agrega valor (ou custo) diferente. Entender essa cadeia ajuda a decidir onde comprar.
 
 ## Comprando Diretamente da Usina
 
@@ -4762,7 +4774,7 @@ Solicite cotação via WhatsApp e compare o custo total — não apenas o preço
     summary: 'O aço para construção civil é produzido em grande parte com sucata reciclada, sem perda de propriedades mecânicas. Entenda o ciclo do aço e como isso contribui para construções mais sustentáveis.',
     content: `## O Aço Como Símbolo de Sustentabilidade
 
-O **aço é o material mais reciclado do mundo** — e isso não é coincidência. Suas propriedades mecânicas são completamente preservadas após o processo de reciclagem, ao contrário de plástico ou papel, que perdem qualidade a cada ciclo.
+O **aço é o material mais reciclado do mundo** — e isso não é coincidência. Suas propriedades mecânicas são completamente preservadas após o processo de reciclagem, ao contrário de plástico ou papel, que perdem qualidade a cada ciclo. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## Como o Aço é Reciclado?
 
@@ -4818,7 +4830,7 @@ A BR Aço fornece vergalhões com rastreabilidade de origem, permitindo identifi
     summary: 'O green steel é produzido com hidrogênio verde ou energia renovável, reduzindo as emissões de CO₂ do processo siderúrgico a quase zero. Entenda a revolução que está chegando ao setor.',
     content: `## O Que é Green Steel?
 
-**Green steel** (aço verde) é o aço produzido com processos que eliminam ou reduzem drasticamente as emissões de CO₂. A siderurgia convencional é responsável por cerca de **8% das emissões globais de CO₂** — mais do que o setor de aviação.
+**Green steel** (aço verde) é o aço produzido com processos que eliminam ou reduzem drasticamente as emissões de CO₂. A siderurgia convencional é responsável por cerca de **8% das emissões globais de CO₂** — mais do que o setor de aviação. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 O green steel representa a resposta da indústria ao desafio climático.
 
@@ -4878,7 +4890,7 @@ A BR Aço acompanha as tendências do setor e já fornece vergalhões rastreáve
     summary: 'Elementos pré-moldados (pilares, vigas, lajes) são fabricados em fábrica com controle total de qualidade. Entenda quando essa solução economiza tempo e custo em relação ao concreto moldado in loco.',
     content: `## O Que São Estruturas Pré-Moldadas?
 
-Estruturas pré-moldadas (ou pré-fabricadas) são elementos estruturais produzidos em fábrica — pilares, vigas, lajes alveolares, painéis de fachada — e transportados prontos para o canteiro de obras, onde são montados como um sistema.
+Estruturas pré-moldadas (ou pré-fabricadas) são elementos estruturais produzidos em fábrica — pilares, vigas, lajes alveolares, painéis de fachada — e transportados prontos para o canteiro de obras, onde são montados como um sistema. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 O aço usado em pré-moldados tem características específicas diferentes do vergalhão convencional moldado in loco.
 
@@ -4941,7 +4953,7 @@ Consulte nossa equipe técnica para necessidades específicas de armação de pr
     summary: 'Com várias opções de ferragistas em Goiânia e região, escolher o fornecedor errado pode custar caro na obra. Veja os critérios essenciais para avaliar antes de comprar o aço.',
     content: `## O Que é Uma Ferragista de Construção?
 
-No contexto da construção civil, "ferragista" é o fornecedor especializado nos aços estruturais da obra: vergalhões, treliças, malhas soldadas, arames e pregos. É diferente de uma ferragem de acabamento (que vende fechaduras, dobradiças e puxadores).
+No contexto da construção civil, "ferragista" é o fornecedor especializado nos aços estruturais da obra: vergalhões, treliças, malhas soldadas, arames e pregos. É diferente de uma ferragem de acabamento (que vende fechaduras, dobradiças e puxadores). Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 Para uma obra em Goiânia, escolher a ferragista certa impacta diretamente o custo do material, a qualidade da estrutura e o prazo de execução.
 
@@ -5121,7 +5133,7 @@ A BR Aço fornece orçamento detalhado por bitola em até 2 horas. Entre em cont
     summary: "Entenda como funcionam as escalas em projetos de engenharia, como converter medidas no papel para a realidade e quais escalas são usadas em cada tipo de desenho técnico.",
     content: `## O que é Escala em Projetos de Engenharia?
 
-Escala é a relação entre a dimensão representada no desenho e a dimensão real do elemento construído. Uma escala 1:50 significa que 1 cm no papel equivale a 50 cm na obra — ou seja, a planta é 50 vezes menor que a realidade.
+Escala é a relação entre a dimensão representada no desenho e a dimensão real do elemento construído. Uma escala 1:50 significa que 1 cm no papel equivale a 50 cm na obra — ou seja, a planta é 50 vezes menor que a realidade. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 A escala não é um detalhe: ela define o nível de detalhe que o projeto precisa mostrar e é a base para qualquer conferência de medida em campo.
 
@@ -5180,7 +5192,7 @@ Para execução de armação em canteiro, peça detalhes na escala 1:20 ou 1:25 
     summary: "Aprenda a ler cotas em projetos estruturais, hidráulicos e elétricos — linhas de cota, cotas acumuladas, cotas de nível e tolerâncias dimensionais.",
     content: `## O que é Cotagem?
 
-Cotagem é o conjunto de linhas, símbolos e valores numéricos que informam as dimensões de um elemento no projeto. Sem cotas, a escala não é suficiente para garantir precisão na execução — e qualquer erro de impressão se transforma em erro construtivo.
+Cotagem é o conjunto de linhas, símbolos e valores numéricos que informam as dimensões de um elemento no projeto. Sem cotas, a escala não é suficiente para garantir precisão na execução — e qualquer erro de impressão se transforma em erro construtivo. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ## Elementos de uma Cota
 
@@ -5236,7 +5248,7 @@ Sempre confira o comprimento total das barras somando as cotas parciais — qual
     summary: "Guia prático para interpretar plantas baixas estruturais — como identificar pilares, vigas, lajes e convenções de representação no projeto de estrutura.",
     content: `## O que é a Planta Baixa Estrutural?
 
-A planta baixa estrutural (também chamada planta de forma ou planta de fôrma) é o desenho que mostra, visto de cima, a disposição dos elementos estruturais de um pavimento: pilares, vigas, lajes e aberturas. É o desenho mais consultado durante a execução da estrutura.
+A planta baixa estrutural (também chamada planta de forma ou planta de fôrma) é o desenho que mostra, visto de cima, a disposição dos elementos estruturais de um pavimento: pilares, vigas, lajes e aberturas. É o desenho mais consultado durante a execução da estrutura. É a partir dessa leitura que a BR Aço planeja o fornecimento de aço para construtoras de Goiânia e Goiás.
 
 ## Como Identificar os Elementos
 
@@ -5296,7 +5308,7 @@ Ambas as plantas precisam estar disponíveis na obra durante toda a execução d
     summary: "Aprenda a ler cortes e seções transversais em projetos estruturais — como interpretar vigas, pilares, lajes e fundações em vista de corte.",
     content: `## O que são Cortes e Seções em Projetos?
 
-Um corte é um plano imaginário que "fatia" a edificação, permitindo visualizar elementos que não aparecem na planta baixa. Seção é o resultado dessa fatia — a figura que aparece no desenho técnico mostrando o interior do elemento.
+Um corte é um plano imaginário que "fatia" a edificação, permitindo visualizar elementos que não aparecem na planta baixa. Seção é o resultado dessa fatia — a figura que aparece no desenho técnico mostrando o interior do elemento. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 ### Corte x Seção
 - **Corte**: vista que mostra o que há além do plano de corte (fundo visível)
@@ -5352,7 +5364,7 @@ Sempre verifique se o corte está na mesma revisão da planta de forma — incon
     summary: "Tabela completa dos símbolos usados em projetos de armação — diâmetros, dobramentos, estribos, espaçamentos e notações segundo NBR 7480 e NBR 6118.",
     content: `## Por que Dominar a Simbologia?
 
-Um projeto de armação contém dezenas de símbolos e abreviações. Interpretá-los errado gera barras com comprimento, diâmetro ou posição incorretos — e retrabalho custoso após a concretagem. Este guia reúne as notações mais usadas no Brasil.
+Um projeto de armação contém dezenas de símbolos e abreviações. Interpretá-los errado gera barras com comprimento, diâmetro ou posição incorretos — e retrabalho custoso após a concretagem. Este guia reúne as notações mais usadas no Brasil. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## Notação de Barras
 
@@ -5438,7 +5450,7 @@ Dobramentos são indicados no croqui da barra com:
     summary: "Entenda o que exige a NBR 14931 para execução de estruturas de concreto — fôrmas, armação, concretagem, cura e controle de qualidade em obras.",
     content: `## O que é a NBR 14931?
 
-A **ABNT NBR 14931:2003** — "Execução de estruturas de concreto — Procedimento" — é a norma que regulamenta como executar estruturas de concreto armado ou protendido no Brasil. Ela é complementar à NBR 6118 (projeto) e define os requisitos mínimos que o construtor deve atender.
+A **ABNT NBR 14931:2003** — "Execução de estruturas de concreto — Procedimento" — é a norma que regulamenta como executar estruturas de concreto armado ou protendido no Brasil. Ela é complementar à NBR 6118 (projeto) e define os requisitos mínimos que o construtor deve atender. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 A norma se aplica a estruturas de edifícios, pontes, obras de arte e estruturas industriais.
 
@@ -5509,7 +5521,7 @@ Todo serviço de execução de estrutura de concreto exige **ART (Anotação de 
     summary: "Conheça os tipos de fôrmas para concreto — madeira, metálica, plástica e alumínio — e as melhores práticas de montagem, desmoldante, escoramento e desforma.",
     content: `## O que é Fôrma em Construção Civil?
 
-Fôrma (ou forma) é o conjunto de painéis e suportes que moldam o concreto fresco até que ele adquira resistência suficiente para se sustentar. É um componente temporário, mas que define a geometria definitiva da estrutura.
+Fôrma (ou forma) é o conjunto de painéis e suportes que moldam o concreto fresco até que ele adquira resistência suficiente para se sustentar. É um componente temporário, mas que define a geometria definitiva da estrutura. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 Um sistema de fôrmas mal projetado pode causar acidentes graves — o colapso de fôrmas é uma das principais causas de acidentes fatais em obras.
 
@@ -5581,7 +5593,7 @@ Esses prazos assumem temperatura ambiente ≥ 20 °C. Em clima frio ou com concr
     summary: "Entenda por que a cura do concreto é decisiva para resistência e durabilidade — métodos úmido, químico e protegido, e prazos mínimos segundo NBR 14931.",
     content: `## O que é Cura do Concreto?
 
-Cura é o processo de controlar a temperatura e a umidade do concreto após o lançamento, garantindo que as reações de hidratação do cimento ocorram adequadamente. Sem cura, o concreto perde resistência, trinca e reduz drasticamente sua durabilidade.
+Cura é o processo de controlar a temperatura e a umidade do concreto após o lançamento, garantindo que as reações de hidratação do cimento ocorram adequadamente. Sem cura, o concreto perde resistência, trinca e reduz drasticamente sua durabilidade. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 A hidratação do cimento é uma reação exotérmica que consome água. Se a água evapora antes que a reação se complete, a estrutura cristalina do concreto fica incompleta — como se você cozinhasse um bolo e retirasse antes do tempo.
 
@@ -5638,7 +5650,7 @@ Pilares são os elementos mais negligenciados quanto à cura — por ficarem com
     summary: "Entenda a diferença entre juntas de concretagem, dilatação e retração — quando são necessárias e como executar corretamente segundo NBR 6118.",
     content: `## Por que Existem Juntas em Estruturas de Concreto?
 
-O concreto é susceptível a variações volumétricas por temperatura, retração e fluência. Em estruturas longas ou com mudanças de rigidez, essas variações causam fissuras indesejadas se não forem controladas. As juntas são o mecanismo que permite à estrutura "se mover" sem fissuras.
+O concreto é susceptível a variações volumétricas por temperatura, retração e fluência. Em estruturas longas ou com mudanças de rigidez, essas variações causam fissuras indesejadas se não forem controladas. As juntas são o mecanismo que permite à estrutura "se mover" sem fissuras. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Tipos de Juntas
 
@@ -5697,7 +5709,7 @@ Nunca posicione a junta de concretagem de vigas sobre o apoio (pilar) — ali o 
     summary: "O que são barras de espera, para que servem, comprimento de transpasse e como detalhar na ligação pilar-fundação e pilar-pilar.",
     content: `## O que são Barras de Espera?
 
-Barras de espera (ou "ferros de espera") são as armaduras longitudinais que saem de um elemento de concreto concretado anteriormente — como uma fundação ou um pilar inferior — para dentro do próximo elemento — pilar superior, laje ou viga. Elas garantem a continuidade estrutural e a transferência de esforços entre os elementos.
+Barras de espera (ou "ferros de espera") são as armaduras longitudinais que saem de um elemento de concreto concretado anteriormente — como uma fundação ou um pilar inferior — para dentro do próximo elemento — pilar superior, laje ou viga. Elas garantem a continuidade estrutural e a transferência de esforços entre os elementos. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 Sem barras de espera corretas, a ligação entre fundação e pilar, ou entre pavimentos de um pilar, fica comprometida mecanicamente.
 
@@ -5753,7 +5765,7 @@ Para garantir que as barras de espera fiquem na posição correta durante a conc
 Cobrimento é a distância entre a face externa do concreto e a superfície da armadura (barra). Ele protege o aço contra:
 - **Carbonatação** (neutralização do pH do concreto, que destrói a camada passivadora do aço)
 - **Cloretos** (penetração de íons de cloreto que causam corrosão ativa)
-- **Fogo** (o concreto funciona como isolamento térmico da armadura)
+- **Fogo** (o concreto funciona como isolamento térmico da armadura). É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Cobrimento insuficiente é a principal causa de patologia estrutural no Brasil.
 
@@ -5812,7 +5824,7 @@ Espaçadores devem ser de material resistente e compatível com o concreto. **S�
     summary: "Tipos de ganchos em barras de aço, comprimentos mínimos, diâmetros de dobramento e o que exige a NBR 6118 para estribos e barras longitudinais.",
     content: `## Por que Ganchos São Necessários?
 
-Ganchos são dobras nas extremidades das barras de aço que aumentam o comprimento de ancoragem dentro do concreto sem aumentar o comprimento físico da barra. Eles são necessários quando o comprimento disponível de ancoragem reta é insuficiente — situação comum em apoios extremos de vigas, extremidades de pilares e estribos.
+Ganchos são dobras nas extremidades das barras de aço que aumentam o comprimento de ancoragem dentro do concreto sem aumentar o comprimento físico da barra. Eles são necessários quando o comprimento disponível de ancoragem reta é insuficiente — situação comum em apoios extremos de vigas, extremidades de pilares e estribos. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 ## Tipos de Gancho (NBR 6118)
 
@@ -5879,7 +5891,7 @@ O CA-50 é dobrado **a frio** na obra, com dobradeira mecânica ou manual. Nunca
     summary: "Transpasse, luva mecânica e solda — comprimentos mínimos, posicionamento de emendas e o que exige a NBR 6118 para barras de aço em concreto armado.",
     content: `## Por que Precisamos de Emendas?
 
-Barras de aço são fornecidas em comprimentos padrão de 12 metros. Elementos estruturais como pilares de edifícios altos, vigas longas e muros precisam de comprimentos maiores — ou é necessário empaimar barras em locais estratégicos para viabilizar a construção (como barras de espera de pilar que se iniciam na fundação e sobem por vários pavimentos).
+Barras de aço são fornecidas em comprimentos padrão de 12 metros. Elementos estruturais como pilares de edifícios altos, vigas longas e muros precisam de comprimentos maiores — ou é necessário empaimar barras em locais estratégicos para viabilizar a construção (como barras de espera de pilar que se iniciam na fundação e sobem por vários pavimentos). A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 ## Tipo 1: Emenda por Transpasse (Sobreposição)
 
@@ -5948,7 +5960,7 @@ A solda de topo (V ou duplo V) é a mais usada. Solda tipo filete ou "ponto" no 
     summary: "Diferença entre armadura de montagem e armadura principal em vigas, pilares e lajes — função estrutural, dimensionamento mínimo e aplicação prática.",
     content: `## Armadura Principal (de Cálculo)
 
-A armadura principal é a armadura dimensionada para resistir aos esforços internos da estrutura: momento fletor, força normal e esforço cortante. Ela é calculada pelo engenheiro estrutural com base nas solicitações do modelo de cálculo.
+A armadura principal é a armadura dimensionada para resistir aos esforços internos da estrutura: momento fletor, força normal e esforço cortante. Ela é calculada pelo engenheiro estrutural com base nas solicitações do modelo de cálculo. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 Em vigas, a armadura principal de flexão fica na face tracionada (inferior no meio do vão, superior nos apoios). Em pilares, as barras longitudinais resistem à compressão e ao momento fletor.
 
@@ -6003,7 +6015,7 @@ Um erro comum é confundir as barras superiores de montagem de vigas com a armad
     summary: "Como montar ou ler uma planilha de ferro (quadro de armação) — diâmetros, quantidades, comprimentos de corte e cálculo de peso total para orçar com precisão.",
     content: `## O que é a Planilha de Ferro?
 
-A planilha de ferro (também chamada de quadro de armação ou lista de corte) é o documento que quantifica cada barra de aço da estrutura: tipo, diâmetro, comprimento de corte, quantidade e peso. É o documento que o responsável pela obra entrega ao fornecedor para cotar o corte e dobra ou comprar o vergalhão em barras.
+A planilha de ferro (também chamada de quadro de armação ou lista de corte) é o documento que quantifica cada barra de aço da estrutura: tipo, diâmetro, comprimento de corte, quantidade e peso. É o documento que o responsável pela obra entrega ao fornecedor para cotar o corte e dobra ou comprar o vergalhão em barras. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Sem planilha, você compra "a olho" — e invariavelmente sobra ou falta material.
 
@@ -6071,7 +6083,7 @@ Uma boa planilha elimina dúvidas, evita erros de corte e permite comparar orça
     summary: "Como identificar e resolver interferências entre projetos estrutural, elétrico, hidrossanitário e arquitetônico — compatibilização antes da execução.",
     content: `## O Problema das Interferências
 
-Imagine descobrir na hora de concretar que um pilar passa no meio da janela projetada pelo arquiteto — ou que a caixa de passagem elétrica conflita com uma viga. Essas são interferências: situações em que dois projetos de especialidade diferentes se sobrepõem no mesmo espaço físico.
+Imagine descobrir na hora de concretar que um pilar passa no meio da janela projetada pelo arquiteto — ou que a caixa de passagem elétrica conflita com uma viga. Essas são interferências: situações em que dois projetos de especialidade diferentes se sobrepõem no mesmo espaço físico. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 As interferências descobertas em campo são caras: exigem retrabalho, modificações de projeto de emergência, quebra de elementos já executados ou, no pior caso, comprometimento estrutural.
 
@@ -6131,7 +6143,7 @@ Estabeleça reuniões semanais de compatibilização durante a fase de projeto c
     summary: "BIM para engenheiros e construtores — o que é, níveis de maturidade, softwares, exigências do Decreto 9983/2019 e benefícios práticos no canteiro.",
     content: `## O que é BIM?
 
-BIM (Building Information Modeling — Modelagem da Informação da Construção) é uma metodologia que usa um modelo digital tridimensional e inteligente da edificação como base para todo o ciclo de vida do projeto: concepção, projeto, construção e operação.
+BIM (Building Information Modeling — Modelagem da Informação da Construção) é uma metodologia que usa um modelo digital tridimensional e inteligente da edificação como base para todo o ciclo de vida do projeto: concepção, projeto, construção e operação. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 Diferente de um desenho 3D comum, o modelo BIM contém informações vinculadas a cada elemento: dimensões, materiais, resistências, fornecedores, custo estimado, cronograma e muito mais.
 
@@ -6186,7 +6198,7 @@ Para residências unifamiliares e pequenas obras, o custo de implantação do BI
     summary: "O que é o memorial descritivo estrutural, quais informações ele deve conter e como usar como guia de execução na obra.",
     content: `## O que é o Memorial Descritivo Estrutural?
 
-O memorial descritivo estrutural é o documento escrito que acompanha as pranchas de projeto e descreve as premissas, materiais, normas e condições de execução adotadas pelo engenheiro calculista. Ele complementa os desenhos com informações que não cabem ou não são adequadas para representação gráfica.
+O memorial descritivo estrutural é o documento escrito que acompanha as pranchas de projeto e descreve as premissas, materiais, normas e condições de execução adotadas pelo engenheiro calculista. Ele complementa os desenhos com informações que não cabem ou não são adequadas para representação gráfica. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 É um documento obrigatório segundo o CREA para a aprovação do projeto e é parte integrante da ART do engenheiro.
 
@@ -6260,7 +6272,7 @@ Em caso de dúvida ou impossibilidade de seguir alguma especificação do memori
     summary: "Como planejar e executar a concretagem — lançamento, adensamento, sequência, controle de temperatura e coleta de corpos de prova para estruturas de qualidade.",
     content: `## Por que o Planejamento da Concretagem É Crítico?
 
-Uma vez que o caminhão betoneira chega ao canteiro, o processo é irreversível. O concreto tem janela de trabalhabilidade (usualmente 1,5 a 2 horas após a mistura) — se houver atraso, fila de caminhões, equipamento com defeito ou falta de equipe, o concreto endurece prematuramente e o elemento precisa ser demolido.
+Uma vez que o caminhão betoneira chega ao canteiro, o processo é irreversível. O concreto tem janela de trabalhabilidade (usualmente 1,5 a 2 horas após a mistura) — se houver atraso, fila de caminhões, equipamento com defeito ou falta de equipe, o concreto endurece prematuramente e o elemento precisa ser demolido. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Planejar é proteger a estrutura.
 
@@ -6321,7 +6333,7 @@ O resultado do ensaio (NBR 5739) confirma se o fck especificado foi atingido. Se
     summary: "O que é o slump test, o que ele mede, como realizar corretamente conforme NBR NM 67 e o que fazer quando o concreto está fora do especificado.",
     content: `## O que é o Slump Test?
 
-O slump test (ensaio de abatimento do tronco de cone) é o método mais simples e rápido para avaliar a consistência (trabalhabilidade) do concreto fresco. Ele indica a fluidez do concreto — ou seja, quão fácil é de lançar, adulterar e vibrar.
+O slump test (ensaio de abatimento do tronco de cone) é o método mais simples e rápido para avaliar a consistência (trabalhabilidade) do concreto fresco. Ele indica a fluidez do concreto — ou seja, quão fácil é de lançar, adulterar e vibrar. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 O ensaio é regulamentado pela **NBR NM 67:1998** (método de ensaio) e pela **ASTM C143** (norma americana equivalente).
 
@@ -6384,7 +6396,7 @@ Maior slump ≠ menor resistência, necessariamente — desde que a fluidez seja
     summary: "Guia completo dos tipos de fundação — sapata, bloco, radier, estacas e tubulão — como escolher conforme solo, carga e custo.",
     content: `## Por que a Escolha da Fundação É Decisiva?
 
-A fundação transfere as cargas da estrutura para o solo. Se a fundação for subdimensionada ou inadequada para o solo, ocorre recalque (afundamento) — diferencial ou uniforme — que causa fissuras, inclinações e, nos casos graves, colapso estrutural.
+A fundação transfere as cargas da estrutura para o solo. Se a fundação for subdimensionada ou inadequada para o solo, ocorre recalque (afundamento) — diferencial ou uniforme — que causa fissuras, inclinações e, nos casos graves, colapso estrutural. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 Trocar o tipo de fundação após a obra iniciada é extremamente caro. A escolha deve ser feita com base no **laudo de sondagem SPT** antes do início do projeto.
 
@@ -6447,7 +6459,7 @@ Escavado manualmente ou mecanicamente, com alargamento da base. Capacidade de ca
     summary: "O que é a sondagem SPT, como é realizada, o que significa o NSPT e como interpretar o laudo para projetar fundações.",
     content: `## O que é a Sondagem SPT?
 
-SPT (Standard Penetration Test — Ensaio de Penetração Padrão) é o ensaio geotécnico mais utilizado no Brasil para investigar o subsolo. Ele determina a resistência do solo em diferentes profundidades e permite classificar o tipo de solo encontrado.
+SPT (Standard Penetration Test — Ensaio de Penetração Padrão) é o ensaio geotécnico mais utilizado no Brasil para investigar o subsolo. Ele determina a resistência do solo em diferentes profundidades e permite classificar o tipo de solo encontrado. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 A sondagem SPT é regulamentada pela **NBR 6484:2001** e deve ser realizada por empresa especializada antes de qualquer projeto de fundação.
 
@@ -6522,7 +6534,7 @@ Em terrenos com histórico de aterro, antigas pedreiras ou próximos a corpos d'
     summary: "Diferenças entre sapata isolada, corrida e associada — quando usar cada tipo e como dimensionar a área de base da fundação.",
     content: `## O que é uma Sapata?
 
-Sapata é um elemento de fundação rasa que amplia a área de contato da estrutura com o solo, reduzindo a pressão transmitida ao terreno a um valor que o solo suporta sem recalque excessivo.
+Sapata é um elemento de fundação rasa que amplia a área de contato da estrutura com o solo, reduzindo a pressão transmitida ao terreno a um valor que o solo suporta sem recalque excessivo. Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 É feita em concreto armado e trabalha predominantemente à flexão — ao contrário do bloco de fundação, que trabalha à compressão.
 
@@ -6595,7 +6607,7 @@ Em Goiás, a camada de solo vegetal (latossolo vermelho) costuma ter 0,5 a 1,2 m
     summary: "Comparativo dos tipos de estacas — hélice contínua, Franki, raiz, pré-moldada e metálica — critérios de escolha e faixa de custo.",
     content: `## Quando Usar Fundação Profunda?
 
-Fundação profunda (estacas ou tubulões) é necessária quando o solo resistente está abaixo de 3 m de profundidade ou quando as cargas são grandes demais para fundações rasas. A principal referência é o laudo de sondagem SPT.
+Fundação profunda (estacas ou tubulões) é necessária quando o solo resistente está abaixo de 3 m de profundidade ou quando as cargas são grandes demais para fundações rasas. A principal referência é o laudo de sondagem SPT. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## Tipos de Estaca
 
@@ -6661,7 +6673,7 @@ No projeto de fundações, o engenheiro especifica:
     summary: "Tipos de pilares de concreto armado, dimensionamento básico por taxa de armação e detalhamento de barras e estribos conforme NBR 6118.",
     content: `## O que é um Pilar em Concreto Armado?
 
-Pilar é um elemento estrutural predominantemente comprimido, com comprimento muito maior que as dimensões da seção transversal. Ele recebe as cargas das vigas e lajes e as transmite para as fundações.
+Pilar é um elemento estrutural predominantemente comprimido, com comprimento muito maior que as dimensões da seção transversal. Ele recebe as cargas das vigas e lajes e as transmite para as fundações. É esse tipo de detalhamento que a BR Aço executa em todo fornecimento de armadura para pilares em Goiânia e no restante de Goiás.
 
 Em concreto armado, o pilar é formado por:
 - **Concreto** (resistência à compressão)
@@ -6735,7 +6747,7 @@ Quando b/h ≤ 1/4, o elemento é chamado pilar-parede e requer:
     summary: "Função dos estribos, tipos simples/duplo/múltiplo, cálculo de espaçamento e detalhamento conforme NBR 6118 para vigas e pilares.",
     content: `## O que São Estribos?
 
-Estribos são barras de aço dobradas em forma de laço (retangular, circular ou poligonal) que envolvem as barras longitudinais dos elementos estruturais. Eles são a armadura transversal dos pilares e vigas.
+Estribos são barras de aço dobradas em forma de laço (retangular, circular ou poligonal) que envolvem as barras longitudinais dos elementos estruturais. Eles são a armadura transversal dos pilares e vigas. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Funções dos Estribos
 
@@ -6801,7 +6813,7 @@ Os ganchos dos estribos consecutivos devem ser alternados em lados opostos do el
     summary: "Como montar a gaiola de armação de pilares — sequência de montagem, fixação de estribos, espaçadores e instalação na fôrma.",
     content: `## O que é uma Gaiola de Pilar?
 
-A gaiola é a armação completa de um pilar: as barras longitudinais posicionadas e os estribos espaçados e fixados ao redor delas, formando um "esqueleto" de aço que será colocado dentro da fôrma antes da concretagem.
+A gaiola é a armação completa de um pilar: as barras longitudinais posicionadas e os estribos espaçados e fixados ao redor delas, formando um "esqueleto" de aço que será colocado dentro da fôrma antes da concretagem. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 A qualidade da gaiola — dimensões corretas, estribos bem espaçados, espaçadores fixados — determina diretamente a qualidade do pilar executado.
 
@@ -6865,7 +6877,7 @@ Um erro muito frequente em canteiros é deixar os estribos "abertos" (os ganchos
     summary: "O que é viga baldrame, para que serve, quando é necessária, como é armada e diferença para viga de fundação.",
     content: `## O que é Viga Baldrame?
 
-Viga baldrame (ou viga de equilíbrio, em alguns contextos) é a viga de concreto armado que liga as fundações entre si ao nível do solo, formando um grelha de amarração. Ela não transmite carga para o solo diretamente — sua função é estrutural e de ligação.
+Viga baldrame (ou viga de equilíbrio, em alguns contextos) é a viga de concreto armado que liga as fundações entre si ao nível do solo, formando um grelha de amarração. Ela não transmite carga para o solo diretamente — sua função é estrutural e de ligação. A BR Aço fabrica esse tipo de armação sob medida para construtoras de Goiânia e Goiás.
 
 O nome "baldrame" vem do latim *baldramum*, designando o elemento de base de uma estrutura.
 
@@ -6929,7 +6941,7 @@ Em algumas obras os dois termos são usados de forma intercambiável — o que i
     summary: "O que é radier, quando é indicado como solução de fundação, como calcular a espessura mínima e como armar corretamente.",
     content: `## O que é Radier?
 
-Radier (do francês *radier*) é uma laje de fundação que cobre toda a área da edificação. Ele distribui as cargas de todos os pilares e paredes para o solo uniformemente, funcionando como uma "plataforma flutuante" sobre o terreno.
+Radier (do francês *radier*) é uma laje de fundação que cobre toda a área da edificação. Ele distribui as cargas de todos os pilares e paredes para o solo uniformemente, funcionando como uma "plataforma flutuante" sobre o terreno. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 Ao contrário das sapatas isoladas que pontualmente distribuem a carga, o radier transforma toda a edificação numa única fundação contínua.
 
@@ -6990,7 +7002,7 @@ Antes de concretar o radier:
     summary: "O que é o bloco de coroamento, como distribui a carga do pilar para as estacas e como dimensionar o número de estacas e a geometria do bloco.",
     content: `## O que é Bloco de Coroamento?
 
-Bloco de coroamento (ou simplesmente "bloco") é o elemento de fundação que reúne um grupo de estacas e transmite a carga do pilar para elas. É um elemento de concreto, geralmente de grandes dimensões, que fica entre o pilar e as estacas.
+Bloco de coroamento (ou simplesmente "bloco") é o elemento de fundação que reúne um grupo de estacas e transmite a carga do pilar para elas. É um elemento de concreto, geralmente de grandes dimensões, que fica entre o pilar e as estacas. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 Ao contrário da sapata (que distribui a carga diretamente ao solo), o bloco não apoia no solo — ele se sustenta pelas estacas.
 
@@ -7057,7 +7069,7 @@ Após embutimento, as armaduras das estacas (ou as barras inseridas nas estacas 
     summary: "O que é recalque diferencial, por que ocorre, como identificar fissuras e desníveis e como prevenir com projeto e execução adequados.",
     content: `## O que é Recalque?
 
-Recalque é o afundamento (assentamento vertical) de uma fundação quando o solo se deforma sob a carga aplicada. Até certo ponto, o recalque é normal e previsto no projeto — o problema ocorre quando diferentes fundações da mesma edificação recalcam de forma desigual.
+Recalque é o afundamento (assentamento vertical) de uma fundação quando o solo se deforma sob a carga aplicada. Até certo ponto, o recalque é normal e previsto no projeto — o problema ocorre quando diferentes fundações da mesma edificação recalcam de forma desigual. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 **Recalque uniforme:** todas as fundações afundam igualmente → a estrutura desce, mas não fissura (raridade na prática).
 
@@ -7116,7 +7128,7 @@ A NBR 6118 limita a distorção angular (Δ/L) em função do tipo de estrutura 
     summary: "Comportamento do nó viga-pilar, tipos de nó externo/interno/de topo, esforços envolvidos e detalhes de armação conforme NBR 6118.",
     content: `## O que é o Nó Viga-Pilar?
 
-O nó viga-pilar (ou ligação viga-pilar, ou região nodal) é a zona do pilar onde uma ou mais vigas se conectam. É uma região de alta concentração de esforços, com tensões de compressão, tração e cisalhamento atuando simultaneamente.
+O nó viga-pilar (ou ligação viga-pilar, ou região nodal) é a zona do pilar onde uma ou mais vigas se conectam. É uma região de alta concentração de esforços, com tensões de compressão, tração e cisalhamento atuando simultaneamente. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 Uma detalhamento inadequado do nó pode levar à falha prematura da estrutura — mesmo que as vigas e pilares individualmente estejam bem dimensionados.
 
@@ -7174,7 +7186,7 @@ Sempre confira no projeto se o comprimento de ancoragem das barras de viga dentr
     summary: "Diferenças entre CP I, CP II, CP III, CP IV e CP V-ARI — composição, resistência e quando usar cada tipo de cimento Portland.",
     content: `## O que é Cimento Portland?
 
-Cimento Portland é um aglomerante hidráulico produzido pela calcinação de calcário e argila a ~1450 °C (clinquer), seguida de moagem com adições reguladoras. O nome "Portland" vem de uma rocha da ilha de Portland (Inglaterra) que o produto original lembrava em cor e resistência.
+Cimento Portland é um aglomerante hidráulico produzido pela calcinação de calcário e argila a ~1450 °C (clinquer), seguida de moagem com adições reguladoras. O nome "Portland" vem de uma rocha da ilha de Portland (Inglaterra) que o produto original lembrava em cor e resistência. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 No Brasil, todos os tipos de cimento Portland são regulamentados pela **ABNT NBR 16697:2018**.
 
@@ -7237,7 +7249,7 @@ Em 1919, Duff Abrams estabeleceu empiricamente que **a resistência do concreto 
 
 > fck ∝ 1 / (a/c)
 
-Quanto mais água em relação ao cimento, mais poroso e fraco o concreto. Esta é a lei mais importante da tecnologia do concreto e é válida para qualquer concreto convencional (sem aditivos especiais).
+Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF. Quanto mais água em relação ao cimento, mais poroso e fraco o concreto. Esta é a lei mais importante da tecnologia do concreto e é válida para qualquer concreto convencional (sem aditivos especiais).
 
 ## O que é a Relação a/c?
 
@@ -7297,7 +7309,7 @@ Em obras com fck ≥ 30 MPa ou com bombeamento de concreto, o uso de superplasti
     summary: "Diferença entre fck e fcj do concreto, como são calculados, para que servem e o que são os concretos C20, C25, C30 e C40.",
     content: `## O que é fck?
 
-O **fck** (f = force, c = compression, k = characteristic) é a **resistência característica à compressão** do concreto, em MPa (ou kN/cm²). É o valor abaixo do qual somente 5% dos resultados dos ensaios devem cair — ou seja, é o valor que o concreto atinge em 95% dos casos.
+O **fck** (f = force, c = compression, k = characteristic) é a **resistência característica à compressão** do concreto, em MPa (ou kN/cm²). É o valor abaixo do qual somente 5% dos resultados dos ensaios devem cair — ou seja, é o valor que o concreto atinge em 95% dos casos. Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 A **NBR 6118:2014** usa o fck como parâmetro de resistência em todas as fórmulas de dimensionamento estrutural.
 
@@ -7361,7 +7373,7 @@ Se os resultados ficarem abaixo do mínimo, o engenheiro avalia por extração d
     summary: "Como areia e brita afetam resistência e trabalhabilidade do concreto — granulometria, dimensão máxima do agregado, módulo de finura e qualidade.",
     content: `## Por que os Agregados São Importantes?
 
-Os agregados (areia e brita) constituem 70 a 80% do volume do concreto. Sua qualidade afeta diretamente a trabalhabilidade, a resistência, a durabilidade e o consumo de cimento.
+Os agregados (areia e brita) constituem 70 a 80% do volume do concreto. Sua qualidade afeta diretamente a trabalhabilidade, a resistência, a durabilidade e o consumo de cimento. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 Ao contrário do que muitos imaginam, **comprar cimento caro e usar areia ruim** compromete o resultado. Areia com excesso de finos, areia orgânica ou brita com muitas faces lisas podem reduzir a resistência do concreto em 20 a 40%.
 
@@ -7420,7 +7432,7 @@ Peça ao fornecedor o laudo de ensaios conforme NBR 7211, especialmente:
     summary: "Controle tecnológico do concreto — coleta e moldagem de corpos de prova, cura, ensaio de compressão e critérios de aceitação conforme NBR 12655 e NBR 5738.",
     content: `## Por que Controlar o Concreto?
 
-O controle tecnológico do concreto é a única forma de confirmar que o fck especificado no projeto foi efetivamente entregue pela concreteira e materializado na estrutura. Sem esse controle, você está aceitando uma estrutura sem saber se ela atende ao projeto.
+O controle tecnológico do concreto é a única forma de confirmar que o fck especificado no projeto foi efetivamente entregue pela concreteira e materializado na estrutura. Sem esse controle, você está aceitando uma estrutura sem saber se ela atende ao projeto. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 Além disso, a **NBR 12655** (preparo e controle) e a **NBR 14931** (execução) tornam o controle obrigatório para estruturas em classes de agressividade II ou superior.
 
@@ -7488,7 +7500,7 @@ O controle tecnológico pode ser executado pelo próprio responsável técnico d
     summary: "Principais patologias do concreto — fissuras por retração e sobrecarga, carbonatação, corrosão de armaduras, ninhos — causas, diagnóstico e tratamento.",
     content: `## O que é Patologia em Estruturas?
 
-Patologia estrutural é o estudo das origens, mecanismos de desenvolvimento, manifestações e consequências das anomalias em estruturas de concreto. O termo "patologia" é emprestado da medicina — assim como doenças no corpo humano, as patologias do concreto têm causas, sintomas e tratamentos.
+Patologia estrutural é o estudo das origens, mecanismos de desenvolvimento, manifestações e consequências das anomalias em estruturas de concreto. O termo "patologia" é emprestado da medicina — assim como doenças no corpo humano, as patologias do concreto têm causas, sintomas e tratamentos. A equipe da BR Aço reforça esse ponto em cada orçamento fechado em Goiânia e em Goiás.
 
 ## 1. Fissuração
 
@@ -7550,7 +7562,7 @@ Depósitos esbranquiçados de carbonato de cálcio na superfície, causados por 
     summary: "Diferenças técnicas entre CA-50 e CA-60 — resistência, diâmetros, soldabilidade, dobramento e quando usar cada classe de aço.",
     content: `## O que Define a Classe do Aço?
 
-A classe do aço para concreto armado é definida pela sua **resistência de escoamento característica (fyk)**:
+A classe do aço para concreto armado é definida pela sua **resistência de escoamento característica (fyk)** — critério que a BR Aço segue à risca em todo vergalhão fornecido em Goiânia e no interior de Goiás:
 
 - **CA-50:** fyk = 500 MPa
 - **CA-60:** fyk = 600 MPa
@@ -7621,7 +7633,7 @@ O CA-60 costuma ser ligeiramente mais barato por kg do que o CA-50, por ser prod
     summary: "Malha soldada versus armação convencional em lajes — custo, produtividade, aplicações e limitações de cada sistema.",
     content: `## O que é Malha Soldada?
 
-Malha soldada (ou tela soldada eletrosoldada) é a armação composta por fios de aço CA-60 dispostos em grelha ortogonal e soldados nos cruzamentos em fábrica. As malhas vêm em rolos ou chapas padronizadas.
+Malha soldada (ou tela soldada eletrosoldada) é a armação composta por fios de aço CA-60 dispostos em grelha ortogonal e soldados nos cruzamentos em fábrica. As malhas vêm em rolos ou chapas padronizadas. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Principais especificações comerciais no Brasil:
 
@@ -7684,7 +7696,7 @@ A decisão final deve sempre ser do engenheiro calculista, que conhece as solici
     summary: "Guia técnico completo sobre laje nervurada: tipos (unidirecional e bidirecional), vigotas, nervos, armação, cobrimento e comparativo com outros sistemas.",
     content: `## O que é Laje Nervurada?
 
-Laje nervurada é o sistema estrutural composto por nervuras (nervos) espaçadas regularmente, preenchidas com elementos de enchimento — blocos cerâmicos, EPS ou lajotas de concreto — que não contribuem estruturalmente. A zona de compressão é garantida pela mesa (capa) de concreto sobre os enchimentos.
+Laje nervurada é o sistema estrutural composto por nervuras (nervos) espaçadas regularmente, preenchidas com elementos de enchimento — blocos cerâmicos, EPS ou lajotas de concreto — que não contribuem estruturalmente. A zona de compressão é garantida pela mesa (capa) de concreto sobre os enchimentos. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 A NBR 6118:2014, item 13.2.4, define laje nervurada como aquela com espaçamento entre eixos de nervuras não superior a 65 cm e altura total inferior a 30 cm.
 
@@ -7773,7 +7785,7 @@ A escolha entre sistemas deve ser definida pelo engenheiro calculista após aná
     summary: "Guia técnico para armação de vigas: armadura positiva, negativa, estribos, ancoragem e comprimentos de transpasse conforme NBR 6118.",
     content: `## Comportamento Estrutural da Viga
 
-Uma viga em concreto armado trabalha à flexão. Na região de vão, a fibra inferior fica em tração e a superior em compressão. Nos apoios, o diagrama de momentos se inverte: a face superior fica em tração.
+Uma viga em concreto armado trabalha à flexão. Na região de vão, a fibra inferior fica em tração e a superior em compressão. Nos apoios, o diagrama de momentos se inverte: a face superior fica em tração. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 **Regra fundamental:** o aço resiste à tração; o concreto resiste à compressão. A armadura vai sempre onde a tração ocorre.
 
@@ -7881,7 +7893,7 @@ A BR Aço fornece todas as bitolas CA-50 para vigas, com corte e dobra conforme 
     content: `## Tipos Estruturais de Escadas
 
 ### 1. Escada em Lance Simples (Laje Inclinada)
-Lance como laje inclinada apoiada nos dois extremos — na viga do piso inferior e na viga do patamar ou piso superior. Tipo mais comum em edifícios residenciais.
+Lance como laje inclinada apoiada nos dois extremos — na viga do piso inferior e na viga do patamar ou piso superior. Tipo mais comum em edifícios residenciais. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 **Comportamento:** laje inclinada como laje simplesmente apoiada ou com continuidade. Tração principal na face inferior.
 
@@ -7972,7 +7984,7 @@ A ligação entre a laje inclinada e a laje horizontal cria canto reentrante. É
     summary: "Laje plana vs laje cogumelo: definições, comportamento, verificação de punção, armação por faixas e indicações de uso.",
     content: `## O que é Laje Plana?
 
-Laje plana é o sistema em que a laje é apoiada diretamente nos pilares, sem vigas. A transferência de carga da laje para os pilares ocorre por cisalhamento — fenômeno chamado de **punção**.
+Laje plana é o sistema em que a laje é apoiada diretamente nos pilares, sem vigas. A transferência de carga da laje para os pilares ocorre por cisalhamento — fenômeno chamado de **punção**. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 A NBR 6118:2014 trata da laje plana no item 14.7 e exige verificação rigorosa da punção.
 
@@ -8058,7 +8070,7 @@ Se τ > τRd1, é obrigatório adicionar **armadura de punção** (studs ou estr
     summary: "Tipos de muros de arrimo, cálculo da pressão ativa do solo, armação do fuste e base, drenagem e verificações de estabilidade.",
     content: `## O que é um Muro de Arrimo?
 
-Muro de arrimo (ou muro de contenção) é a estrutura que retém um maciço de terra, impedindo seu deslizamento. A função é resistir à **pressão lateral do solo** — chamada de pressão ativa — que age horizontalmente contra a face interna.
+Muro de arrimo (ou muro de contenção) é a estrutura que retém um maciço de terra, impedindo seu deslizamento. A função é resistir à **pressão lateral do solo** — chamada de pressão ativa — que age horizontalmente contra a face interna. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## Tipos de Muro de Arrimo
 
@@ -8156,7 +8168,7 @@ Todo muro de arrimo **deve ter sistema de drenagem** por trás do fuste: dreno f
     summary: "Concreto protendido: conceito, tipos (pré e pós-tensão), vantagens, quando especificar e comparativo com concreto armado convencional.",
     content: `## O que é Concreto Protendido?
 
-Concreto protendido é o concreto armado no qual as armaduras ativas (cabos de aço de alta resistência) são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento estrutural. Essa compressão prévia compensa (parcial ou totalmente) as trações causadas pelas cargas de serviço.
+Concreto protendido é o concreto armado no qual as armaduras ativas (cabos de aço de alta resistência) são tensionadas antes ou após a concretagem, introduzindo compressão prévia no elemento estrutural. Essa compressão prévia compensa (parcial ou totalmente) as trações causadas pelas cargas de serviço. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 **Princípio:** o concreto é um material que resiste bem à compressão mas mal à tração. Ao pré-comprimir o elemento, compensa-se a tração que as cargas irão gerar, permitindo vãos maiores e seções menores.
 
@@ -8249,7 +8261,7 @@ Os cabos são colocados em bainhas (conduítes) dentro das fôrmas e tensionados
     summary: "Laje alveolar pré-moldada: princípio estrutural, dimensões, capacidade de carga, vantagens e quando usar.",
     content: `## O que é Laje Alveolar?
 
-Laje alveolar (também chamada painel alveolar ou hollow-core slab) é um elemento pré-moldado de concreto protendido com seção transversal perfurada por alvéolos (furos longitudinais). Os alvéolos reduzem o peso próprio sem comprometer significativamente a resistência à flexão.
+Laje alveolar (também chamada painel alveolar ou hollow-core slab) é um elemento pré-moldado de concreto protendido com seção transversal perfurada por alvéolos (furos longitudinais). Os alvéolos reduzem o peso próprio sem comprometer significativamente a resistência à flexão. A BR Aço trata esse tema com atenção redobrada em cada obra atendida em Goiânia e em Goiás.
 
 É produzida em fábrica por extrusão ou pré-tensão em pistas longas (30 a 150 m), depois cortada nos comprimentos de projeto.
 
@@ -8333,7 +8345,7 @@ Com a capa, o conjunto forma uma seção mista com maior rigidez.
     summary: "Consolos e lajes em balanço: comportamento estrutural, armação principal, armadura de suspensão, cisalhamento e ancoragem.",
     content: `## O que é um Consolo?
 
-Consolo (ou console) é um elemento em balanço engastado em um pilar ou parede, com comprimento pequeno em relação à altura. Recebe cargas verticais (geralmente de vigas pré-moldadas, guarda-corpos ou coberturas metálicas).
+Consolo (ou console) é um elemento em balanço engastado em um pilar ou parede, com comprimento pequeno em relação à altura. Recebe cargas verticais (geralmente de vigas pré-moldadas, guarda-corpos ou coberturas metálicas). Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 **Classificação pela relação a/d:**
 - **Consolo curto:** a/d ≤ 1,0 (comportamento de treliça — biela-tirante)
@@ -8423,7 +8435,7 @@ A flecha em balanços é amplificada em relação a lajes apoiadas. Verificar es
     summary: "60 termos técnicos definidos com precisão: concreto armado, estruturas, armação, normas NBR, fundações e patologias.",
     content: `## Por que um Glossário Técnico?
 
-A terminologia técnica precisa é fundamental para evitar erros em projeto e obra. Termos usados de forma incorreta causam desde retrabalho até falhas estruturais. Este glossário reúne os 60 termos mais importantes do domínio de estruturas de concreto armado, com definições baseadas na NBR 6118:2014 e na prática de projeto.
+A terminologia técnica precisa é fundamental para evitar erros em projeto e obra. Termos usados de forma incorreta causam desde retrabalho até falhas estruturais. Este glossário reúne os 60 termos mais importantes do domínio de estruturas de concreto armado, com definições baseadas na NBR 6118:2014 e na prática de projeto. É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal.
 
 ## A
 
@@ -8578,7 +8590,7 @@ A terminologia técnica precisa é fundamental para evitar erros em projeto e ob
     summary: "Referência rápida da NBR 6118:2014: cobrimento nominal, ancoragem, transpasse e ganchos — todos os valores em uma única página.",
     content: `## Cobrimento Nominal por Classe de Agressividade (NBR 6118, Tabela 7.2)
 
-O cobrimento nominal (c_nom) é a distância entre a face da armadura mais externa (estribo) e a superfície do concreto.
+O cobrimento nominal (c_nom) é a distância entre a face da armadura mais externa (estribo) e a superfície do concreto. Esse é o parâmetro que a BR Aço segue rigorosamente em todo fornecimento de armadura em Goiânia e no restante de Goiás.
 
 **c_nom = c_min + Δc** (onde Δc = 10 mm — tolerância de execução para estruturas convencionais)
 
@@ -8714,7 +8726,7 @@ lt = α1 × lb,ef (mínimo: 0,3 × lb, nunca inferior a 15 × φ ou 20 cm)
     summary: "Critérios para escolha do sistema estrutural: pórticos, paredes, laje plana e sistemas mistos — vantagens, limitações e quando usar cada um.",
     content: `## O que Determina a Escolha do Sistema Estrutural?
 
-O sistema estrutural define como as cargas são transferidas da laje até as fundações. A escolha influencia o custo, o prazo de execução, a flexibilidade de uso e a durabilidade da edificação.
+O sistema estrutural define como as cargas são transferidas da laje até as fundações. A escolha influencia o custo, o prazo de execução, a flexibilidade de uso e a durabilidade da edificação. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 Os principais fatores a considerar são:
 - Altura e número de pavimentos
@@ -8826,7 +8838,7 @@ A decisão final é sempre do engenheiro calculista, que analisa a estrutura com
     summary: "Cargas em estruturas: permanentes (peso próprio, revestimento), variáveis (uso), acidentais (vento) — valores da NBR 6120 e combinações de projeto.",
     content: `## Por que Calcular Cargas Corretamente?
 
-O cálculo de cargas é a entrada de todo projeto estrutural. Subestimar cargas leva a estruturas inseguras; superestimar aumenta custo desnecessariamente. As cargas são classificadas conforme a ABNT NBR 6118:2014 e quantificadas pela NBR 6120:2019.
+O cálculo de cargas é a entrada de todo projeto estrutural. Subestimar cargas leva a estruturas inseguras; superestimar aumenta custo desnecessariamente. As cargas são classificadas conforme a ABNT NBR 6118:2014 e quantificadas pela NBR 6120:2019. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ## Classificação das Cargas
 
@@ -8959,6 +8971,8 @@ Os diagramas de momento fletor (DMF) e esforço cortante (DEF) são a linguagem 
 - Definir os pontos de corte das barras
 - Dimensionar os estribos ao longo da viga
 
+É com base nesses diagramas que a BR Aço orienta o corte e dobra de armaduras para construtoras de Goiânia e Goiás.
+
 ## O que é Momento Fletor?
 
 Momento fletor (M) é o esforço interno que tende a curvar o elemento estrutural. É causado por cargas transversais e desbalanceadas.
@@ -9054,7 +9068,7 @@ A planilha de ferro (mapa de armação) é a tradução dos diagramas de esforç
     summary: "Sistemas de impermeabilização para estruturas de concreto: mantas, argamassas, cristalização e pinturas — aplicação, vantagens e limitações.",
     content: `## Por que Impermeabilizar Estruturas de Concreto?
 
-O concreto é poroso e permeável a líquidos e gases. A penetração de água e cloretos é a principal causa de corrosão das armaduras — o processo que mais deteriora estruturas de concreto no Brasil.
+O concreto é poroso e permeável a líquidos e gases. A penetração de água e cloretos é a principal causa de corrosão das armaduras — o processo que mais deteriora estruturas de concreto no Brasil. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 A impermeabilização protege a estrutura em duas frentes:
 1. **Evita a penetração de água** que causa corrosão das armaduras, eflorescência e infiltrações
@@ -9157,7 +9171,7 @@ Membrana líquida que cura formando filme elástico contínuo.
     content: `## Sobre Normas e Fundamentos
 
 **1. Qual a diferença entre fck e fcj?**
-fck é a resistência característica à compressão do concreto determinada a 28 dias de cura. fcj é a resistência na idade j dias — pode ser qualquer idade. Para liberação de fôrma ou aplicação de protensão, usa-se fcj.
+fck é a resistência característica à compressão do concreto determinada a 28 dias de cura. fcj é a resistência na idade j dias — pode ser qualquer idade. Para liberação de fôrma ou aplicação de protensão, usa-se fcj. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 **2. O que é classe de agressividade ambiental (CAA)?**
 Classificação da NBR 6118 (tabela 6.1) que define o nível de agressividade do ambiente onde a estrutura está inserida: Classe I (fraca), II (moderada), III (forte), IV (muito forte). Determina o cobrimento mínimo e o fck mínimo.
@@ -9291,7 +9305,7 @@ Sinais: manchas de ferrugem no concreto, fissuras longitudinais paralelas à arm
     summary: "O que o engenheiro precisa especificar para contratar corte e dobra: planilha de ferro, memorial descritivo, tolerâncias e dados para orçamento.",
     content: `## Por que a Especificação Correta de Corte e Dobra Importa?
 
-A qualidade do serviço de corte e dobra depende diretamente das informações fornecidas pelo engenheiro calculista ou pelo responsável pela obra. Uma planilha de ferro incompleta resulta em peças erradas, retrabalho, atraso na entrega e custo adicional.
+A qualidade do serviço de corte e dobra depende diretamente das informações fornecidas pelo engenheiro calculista ou pelo responsável pela obra. Uma planilha de ferro incompleta resulta em peças erradas, retrabalho, atraso na entrega e custo adicional. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 Este guia é direcionado a engenheiros calculistas, arquitetos com projeto estrutural e gestores de obra que querem garantir que a indústria de corte e dobra produza exatamente o que o projeto especifica.
 
@@ -9402,7 +9416,7 @@ A BR Aço aceita projetos estruturais em PDF e planilhas de ferro em Excel ou Au
     summary: "Comparativo técnico e econômico entre estrutura metálica (NBR 8800) e concreto armado (NBR 6118): peso, prazo, custo, durabilidade e manutenção.",
     content: `## Dois Sistemas Estruturais, Um Objetivo
 
-Estrutura metálica e concreto armado são os dois grandes sistemas de construção civil para edificações. Cada um tem vantagens em situações específicas. A escolha correta afeta custo, prazo, durabilidade e flexibilidade da obra.
+Estrutura metálica e concreto armado são os dois grandes sistemas de construção civil para edificações. Cada um tem vantagens em situações específicas. A escolha correta afeta custo, prazo, durabilidade e flexibilidade da obra. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Estrutura Metálica — NBR 8800
 
@@ -9488,7 +9502,7 @@ A BR Aço fornece vergalhões CA-50 e CA-60 para concreto armado, com serviço d
     summary: "Detalhamento da armação de lajes maciças: positiva, negativa, distribuição, bordas livres, ancoragem e tabelas de comprimentos mínimos.",
     content: `## Tipos de Armadura em Lajes Maciças
 
-Uma laje maciça pode ter até 5 tipos de armadura, cada uma com função específica:
+Uma laje maciça pode ter até 5 tipos de armadura, cada uma com função específica — a BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás:
 
 ### 1. Armadura Positiva (principal de flexão)
 Posicionada na face inferior da laje, na direção do menor vão (Lx). Resiste ao momento fletor positivo (tração na parte inferior, típico do vão central).
@@ -9602,7 +9616,7 @@ Aberturas (para escadas, dutos, poços de elevador) interrompem as armaduras. Ao
     summary: "Quando usar cada classe de concreto: fck mínimo por classe de agressividade, propriedades e aplicações do C20 ao C50.",
     content: `## O que Significa a Classe do Concreto?
 
-A classe do concreto é definida pelo seu fck (resistência característica à compressão simples) determinado a 28 dias de cura. A designação "C25" significa fck = 25 MPa — abaixo desse valor, pode-se encontrar no máximo 5% dos resultados de compressão.
+A classe do concreto é definida pelo seu fck (resistência característica à compressão simples) determinado a 28 dias de cura. A designação "C25" significa fck = 25 MPa — abaixo desse valor, pode-se encontrar no máximo 5% dos resultados de compressão. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 A NBR 6118:2014 define os requisitos mínimos por classe de agressividade ambiental, mas o engenheiro pode especificar uma classe superior quando as solicitações estruturais assim exigem.
 
@@ -9732,7 +9746,7 @@ Para projetos onde o custo do aço é preponderante, aumentar a classe do concre
     summary: "Viga T: colaboração da laje como mesa de compressão, largura efetiva pela NBR 6118 e implicações para dimensionamento da armação.",
     content: `## O que é uma Viga T?
 
-Em edifícios de concreto armado, as vigas raramente funcionam isoladas. Quando a laje é concretada solidariamente com a viga, parte da laje passa a colaborar com a resistência à compressão da viga. O conjunto viga + aba de laje forma uma **seção T** (ou seção em forma de T).
+Em edifícios de concreto armado, as vigas raramente funcionam isoladas. Quando a laje é concretada solidariamente com a viga, parte da laje passa a colaborar com a resistência à compressão da viga. O conjunto viga + aba de laje forma uma **seção T** (ou seção em forma de T). Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
 
 A colaboração da mesa de laje é vantajosa: aumenta a área de compressão e reduz a quantidade de aço necessária na viga.
 
@@ -9835,7 +9849,7 @@ A largura efetiva da mesa nesse caso é definida pelo espaçamento entre vigotas
     summary: "Tabela de referência com o peso do ferro pronto (vergalhão CA-25, CA-50 e CA-60) por metro e por barra de 12m, para todos os diâmetros disponíveis no mercado. Referência indispensável para orçamento e compra de aço.",
     content: `## Tabela de Peso do Ferro Pronto por Diâmetro
 
-O "ferro pronto" é o nome popular do vergalhão de aço cortado e dobrado (ou em barra) usado na construção civil. O peso varia conforme o diâmetro e o grau (CA-25, CA-50 ou CA-60). Use as tabelas abaixo como referência rápida para orçamentos e quantitativos.
+O "ferro pronto" é o nome popular do vergalhão de aço cortado e dobrado (ou em barra) usado na construção civil. O peso varia conforme o diâmetro e o grau (CA-25, CA-50 ou CA-60). Use as tabelas abaixo como referência rápida para orçamentos e quantitativos. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 A fórmula para calcular o peso linear é: **peso (kg/m) = 0,00617 × diâmetro² (mm²)**
 
@@ -9975,7 +9989,7 @@ O CA-50 tem limite de escoamento de 500 MPa e é usado em barras de obra (pilare
     summary: "A escassez de armadores qualificados é um dos maiores gargalos da construção civil em 2026. O corte e dobra industrial é a saída prática: o aço chega cortado, dobrado e identificado, pronto para montar — sem precisar de especialista no canteiro.",
     content: `## A Crise de Mão de Obra que Ninguém Fala
 
-A construção civil brasileira enfrenta um paradoxo: obra tem, verba tem, material tem — mas falta quem execute. Segundo a CBIC (Câmara Brasileira da Indústria da Construção), o setor acumula um déficit de mais de 1,5 milhão de trabalhadores especializados. Entre os mais escassos: **o armador de obras**.
+A construção civil brasileira enfrenta um paradoxo — e em Goiânia e no DF ele aparece todo mês nos canteiros: obra tem, verba tem, material tem — mas falta quem execute. Segundo a CBIC (Câmara Brasileira da Indústria da Construção), o setor acumula um déficit de mais de 1,5 milhão de trabalhadores especializados. Entre os mais escassos: **o armador de obras**.
 
 O armador é o profissional que corta, dobra e monta a armação de aço das estruturas. Não é qualquer peão que faz isso — exige leitura de projeto, domínio de tabelas, precisão milimétrica e anos de prática. Em Goiás e no Distrito Federal, encontrar um armador disponível e acessível está cada vez mais difícil.
 
@@ -10036,7 +10050,7 @@ A BR Aço entrega em toda a Grande Goiânia, Anápolis, Brasília e região em a
     summary: "Armador de obras custa entre R$700 e R$1.400 por semana em Goiás, sem contar encargos, ferramentas, desperdício de material e risco de erro. Compare com o custo real do corte e dobra industrial e veja qual sai mais barato por tonelada de aço armado.",
     content: `## Quanto Custa um Armador de Obras em 2026?
 
-Antes de comparar, é preciso saber o custo real de ter um armador no canteiro. Muito construtor oleia só o diário (diária ou semanal) — mas o custo total é muito maior.
+Antes de comparar, é preciso saber o custo real de ter um armador no canteiro, seja em Goiânia ou no interior de Goiás. Muito construtor oleia só o diário (diária ou semanal) — mas o custo total é muito maior.
 
 ### Custo direto do armador
 
@@ -10106,7 +10120,7 @@ O armador de obras não é barato quando o custo total é calculado corretamente
     summary: "Obra parada esperando armador é um dos maiores vilões do cronograma na construção civil. Veja como usar o corte e dobra industrial para desbloquear a obra em 48 horas, sem depender de encontrar profissional disponível.",
     content: `## Obra Parada por Falta de Armador: Uma Situação Mais Comum do Que Parece
 
-Se você está lendo este artigo, provavelmente está vivendo isso agora: concreto liberado, forma pronta, material no canteiro — e sem armador disponível para fazer a armação. O cronograma começa a desmoronar.
+Se você está lendo este artigo, provavelmente está vivendo isso agora: concreto liberado, forma pronta, material no canteiro — e sem armador disponível para fazer a armação. O cronograma começa a desmoronar. Do ponto de vista prático, é assim que a BR Aço orienta obras em Goiânia e no entorno do DF.
 
 Isso acontece porque o mercado de armadores especializados em Goiás, Brasília e região está extremamente aquecido. Os bons profissionais têm agenda lotada semanas à frente. Os que estão disponíveis às vezes cobram o dobro por urgência — ou aparecem no canteiro sem a qualificação necessária.
 
@@ -10177,7 +10191,7 @@ Nossa equipe retorna em até 2 horas com orçamento e prazo confirmado.`
     summary: "Terceirizar a armação de ferro para uma empresa de corte e dobra é mais simples do que parece — e não significa perder o controle. Veja o que enviar, o que conferir na entrega e como garantir que tudo está conforme o projeto.",
     content: `## Terceirizar a Armação de Ferro: Medo ou Oportunidade?
 
-Muitos engenheiros e mestres de obra resistem à ideia de terceirizar a armação de ferro. O medo é sempre o mesmo: "vou perder o controle, vai chegar diferente do projeto". É um medo compreensível — mas baseado em experiências com fornecedores sem processo.
+Muitos engenheiros e mestres de obra resistem à ideia de terceirizar a armação de ferro. O medo é sempre o mesmo: "vou perder o controle, vai chegar diferente do projeto". É um medo compreensível — mas baseado em experiências com fornecedores sem processo. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 Com o corte e dobra industrial feito corretamente, acontece o oposto: **você ganha mais controle**, porque tudo fica documentado antes de sair da fábrica.
 
@@ -10250,7 +10264,7 @@ Sim. Para obras em andamento, é comum receber a armadura etapa por etapa confor
     summary: "A escassez de armadores está obrigando o setor a se reinventar. Conheça 5 alternativas práticas para construir sem depender de armador especializado em 2026 — da mais simples à mais tecnológica.",
     content: `## Por Que Construir Sem Armador Virou Pauta em 2026
 
-A construção civil brasileira perdeu centenas de milhares de trabalhadores especializados na última década — entre aposentadorias, migração para outros setores e baixa renovação da mão de obra jovem. O armador, profissional essencial para qualquer estrutura de concreto armado, está entre os mais escassos.
+A construção civil brasileira perdeu centenas de milhares de trabalhadores especializados na última década — entre aposentadorias, migração para outros setores e baixa renovação da mão de obra jovem. O armador, profissional essencial para qualquer estrutura de concreto armado, está entre os mais escassos. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Resultado: **obra tem, engenheiro tem, material tem — mas a armação não avança**.
 
@@ -10327,7 +10341,7 @@ A BR Aço está nessa transição: produção 100% automatizada, entrega identif
     summary: "Comprar vergalhão em barra reta parece a opção mais barata — até você calcular o custo real. Desperdício, mão de obra de corte, ferramentas, retrabalho e atraso formam uma conta que quase sempre supera o custo do corte e dobra industrial.",
     content: `## A Ilusão do Preço por Quilo da Barra Reta
 
-Quando um construtor compara o custo do vergalhão em barra reta com o custo do corte e dobra industrial, a primeira impressão é sempre a mesma: a barra reta parece mais barata. E o vergalhão em barra reta, de fato, custa menos por quilo do que o aço cortado e dobrado.
+Quando um construtor compara o custo do vergalhão em barra reta com o custo do corte e dobra industrial, a primeira impressão é sempre a mesma: a barra reta parece mais barata. E o vergalhão em barra reta, de fato, custa menos por quilo do que o aço cortado e dobrado. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 O problema é que o **preço por quilo não é o custo total da obra**.
 
@@ -10408,7 +10422,7 @@ Mas na maioria dos projetos residenciais e comerciais, com vigas, pilares, estri
     summary: "A perda de aço no corte manual do canteiro é um custo invisível que a maioria dos construtores não contabiliza. Em uma obra com 5 toneladas de vergalhão, o desperdício pode chegar a R$2.000 ou mais. Veja como calcular e como eliminar esse custo.",
     content: `## O Custo Invisível do Corte Manual
 
-No canteiro de obras, o desperdício de aço é normalizado. Todo mundo sabe que sobra pontinha de vergalhão depois do corte — e que essas pontas vão para o ferro-velho. É encarado como custo natural da construção.
+No canteiro de obras, o desperdício de aço é normalizado. Todo mundo sabe que sobra pontinha de vergalhão depois do corte — e que essas pontas vão para o ferro-velho. É encarado como custo natural da construção. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 Só que não é. É um custo **evitável**, que para grandes obras representa milhares de reais jogados fora.
 
@@ -10481,7 +10495,7 @@ Envie sua planilha de ferro e compare os valores. A diferença vai aparecer na p
     summary: "Corte manual ou corte e dobra industrial? Este comparativo usa dados reais de obras em Goiás para mostrar a diferença em custo total por m², tempo de execução, desperdício e qualidade final.",
     content: `## A Comparação que Todo Construtor Deveria Fazer Antes de Comprar Vergalhão
 
-A escolha entre cortar o aço no canteiro ou usar o serviço de corte e dobra industrial é feita, na maioria das obras, sem uma análise objetiva de custo. O construtor compra barra reta por hábito, ou contrata o corte e dobra sem entender exatamente quanto está pagando a mais ou a menos.
+A escolha entre cortar o aço no canteiro ou usar o serviço de corte e dobra industrial é feita, na maioria das obras, sem uma análise objetiva de custo. O construtor compra barra reta por hábito, ou contrata o corte e dobra sem entender exatamente quanto está pagando a mais ou a menos. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Este comparativo usa dados reais de obras residenciais e comerciais em Goiás para tornar essa decisão objetiva.
 
@@ -10568,7 +10582,7 @@ No canteiro de obras, um erro de medida de 1cm no corte do vergalhão parece ins
 - Comprometer a conformidade com o projeto estrutural
 - Em casos extremos, criar um ponto de fraqueza que a inspeção técnica vai reprovar
 
-Isso não é exagero — é física estrutural e norma técnica.
+É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal. Isso não é exagero — é física estrutural e norma técnica.
 
 ## Por Que a Medida Importa Tanto
 
@@ -10645,7 +10659,7 @@ Mais uma conta que aparece no resultado final da obra — e que o orçamento ini
     summary: "A barra reta de vergalhão de 12 metros é o padrão do mercado — mas cria 5 problemas práticos no canteiro. Conheça cada um e veja como o serviço de corte e dobra industrial resolve de forma definitiva.",
     content: `## A Barra de 12m: Padrão do Mercado, Problema no Canteiro
 
-A barra reta de 12 metros é o formato padrão de comercialização do vergalhão no Brasil. É o que a siderúrgica fabrica, o que a distribuidora estoca e o que o caminhão entrega. Mas no canteiro de obras, ela cria uma série de problemas práticos que encarecem e atrasam a obra.
+A barra reta de 12 metros é o formato padrão de comercialização do vergalhão no Brasil. É o que a siderúrgica fabrica, o que a distribuidora estoca e o que o caminhão entrega. Mas no canteiro de obras, ela cria uma série de problemas práticos que encarecem e atrasam a obra. Esse é um dos critérios que a BR Aço reforça com engenheiros e mestres de obra em Goiânia e no DF.
 
 ## Problema 1 — Logística de Descarga e Armazenamento
 
@@ -10895,7 +10909,7 @@ No DF, onde muitas obras passam por financiamento bancário e fiscalização té
 - Retrabalho por aço fora de especificação
 - Problemas legais com o responsável técnico da obra
 
-A escolha do fornecedor de aço para estrutura não deveria ser feita só pelo menor preço. Existem critérios que importam mais.
+É assim que a BR Aço orienta seus clientes, de Goiânia até o Distrito Federal. A escolha do fornecedor de aço para estrutura não deveria ser feita só pelo menor preço. Existem critérios que importam mais.
 
 ## Critério 1 — Certificação e Rastreabilidade
 
@@ -11069,7 +11083,7 @@ Para obras em andamento no DF com necessidade regular de aço, temos condições
     summary: "Comparativo de fornecimento de aço estrutural entre Brasília/DF e Goiânia/GO: diferenças de preço, prazo, disponibilidade de diâmetros e como um fornecedor de Goiás pode atender as duas regiões com qualidade.",
     content: `## Dois Mercados, Uma Cadeia de Suprimentos
 
-Brasília e Goiânia são as maiores economias do Centro-Oeste e ambas têm construção civil ativa. Embora geograficamente próximas (200 km), os mercados de aço estrutural nas duas cidades têm características distintas que afetam o custo e o prazo de fornecimento.
+Brasília e Goiânia são as maiores economias do Centro-Oeste e ambas têm construção civil ativa. Embora geograficamente próximas (200 km), os mercados de aço estrutural nas duas cidades têm características distintas que afetam o custo e o prazo de fornecimento. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Goiânia: Polo Industrial de Aço do Centro-Oeste
 
@@ -11144,7 +11158,7 @@ O processo é o mesmo para os dois mercados: planilha de ferro → orçamento em
     summary: "Guia técnico sobre taxas mínimas e máximas de armadura conforme NBR 6118, com tabelas, fórmulas e exemplos práticos para vigas, pilares e lajes.",
     content: `## O Que São Taxas de Armadura e Por Que a NBR 6118 as Limita
 
-A taxa de armadura (ρ) é a relação entre a área de aço (As) e a área da seção transversal de concreto (Ac). Ela responde a uma pergunta crítica de projeto: quanto aço é necessário — e quanto é demais?
+A taxa de armadura (ρ) é a relação entre a área de aço (As) e a área da seção transversal de concreto (Ac). Ela responde a uma pergunta crítica de projeto: quanto aço é necessário — e quanto é demais? É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 A NBR 6118:2023 estabelece limites inferior e superior para essa taxa. Não por burocracia, mas por comportamento estrutural comprovado:
 
@@ -11210,7 +11224,7 @@ Ao especificar corte e dobra industrial, o engenheiro garante que o projeto sai 
     summary: "Tabela de raios mínimos de dobra para CA-50 e CA-60, comprimento de desenvolvimento e ancoragem conforme NBR 6118, com impacto prático na qualidade das armaduras.",
     content: `## Dobrar Vergalhão Não é Só Dobrar: A NBR 6118 Regula Cada Detalhe
 
-A dobra de vergalhões é uma das operações mais executadas em obra e, ao mesmo tempo, uma das mais sujeitas a erros que comprometem o comportamento estrutural. A NBR 6118:2023 dedica a seção 9.4 ao tema, estabelecendo raios mínimos de dobramento que garantem a integridade do aço e a eficiência da ancoragem.
+A dobra de vergalhões é uma das operações mais executadas em obra e, ao mesmo tempo, uma das mais sujeitas a erros que comprometem o comportamento estrutural. A NBR 6118:2023 dedica a seção 9.4 ao tema, estabelecendo raios mínimos de dobramento que garantem a integridade do aço e a eficiência da ancoragem. É esse padrão normativo que a BR Aço segue em toda dobra industrializada entregue a construtoras de Goiânia e Goiás.
 
 ## Por Que o Raio de Dobra Importa
 
@@ -11277,7 +11291,7 @@ O corte e dobra industrial garante, por definição, que cada barra entregue em 
     summary: "Guia completo sobre forma incorporada para laje: funcionamento técnico, vantagens sobre fôrma de madeira, normas aplicáveis e disponibilidade exclusiva no Centro-Oeste pela BR Aço.",
     content: `## O Problema da Fôrma de Madeira que Todo Engenheiro Conhece
 
-Todo profissional de construção civil já vivenciou o ciclo frustrante da fôrma de madeira para laje: montagem, concretagem, descimbramento, desmontagem, transporte, reaproveitamento e descarte final. A carpintaria responde por 15% a 25% do prazo de execução de estruturas convencionais e exige mão de obra especializada cada vez mais escassa.
+Todo profissional de construção civil já vivenciou o ciclo frustrante da fôrma de madeira para laje: montagem, concretagem, descimbramento, desmontagem, transporte, reaproveitamento e descarte final. A carpintaria responde por 15% a 25% do prazo de execução de estruturas convencionais e exige mão de obra especializada cada vez mais escassa. A BR Aço aplica esse padrão em Goiânia e em obras no DF, sempre acompanhando o projeto estrutural.
 
 A forma incorporada surgiu como resposta industrial a esse problema — e, no Centro-Oeste, a BR Aço é a única empresa que a fornece.
 
@@ -11343,7 +11357,7 @@ Para especificar forma incorporada em seu próximo projeto, entre em contato com
     summary: "Tudo sobre laje nervurada: classificação, requisitos da NBR 6118, cálculo de armadura para nervuras e mesa, e boas práticas de execução com corte e dobra industrial.",
     content: `## Por Que a Laje Nervurada Domina a Construção Brasileira
 
-A laje nervurada responde por mais de 60% das lajes executadas no Brasil em edificações residenciais acima de 4 pavimentos. Menor peso próprio, maior vão livre e possibilidade de integrar instalações hidráulicas e elétricas nas cavidades entre nervuras.
+A laje nervurada responde por mais de 60% das lajes executadas no Brasil em edificações residenciais acima de 4 pavimentos. Menor peso próprio, maior vão livre e possibilidade de integrar instalações hidráulicas e elétricas nas cavidades entre nervuras. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## Requisitos Geométricos (NBR 6118 — item 13.2.4)
 
@@ -11398,7 +11412,7 @@ A BR Aço fornece forma incorporada para esse tipo de aplicação em Goiânia e 
     summary: "Guia completo sobre controle de qualidade do aço para concreto armado: ensaios normativos, interpretação de laudos, rastreabilidade por corrida e responsabilidade técnica.",
     content: `## O Engenheiro é Responsável pelo Aço Que Entra na Obra
 
-A NBR 6118:2023 é clara no item 11.2: o responsável técnico deve garantir que os materiais utilizados atendam às especificações de projeto e às normas técnicas aplicáveis. Na prática, a maioria das obras aceita o aço verificando apenas se "parece certo" — diâmetro estimado a olho, ausência de ferrugem grosseira, rótulo no fardo. Isso não constitui controle tecnológico.
+A NBR 6118:2023 é clara no item 11.2: o responsável técnico deve garantir que os materiais utilizados atendam às especificações de projeto e às normas técnicas aplicáveis. Na prática, a maioria das obras aceita o aço verificando apenas se "parece certo" — diâmetro estimado a olho, ausência de ferrugem grosseira, rótulo no fardo. Isso não constitui controle tecnológico. Fornecido pela BR Aço em Goiânia, esse processo segue a mesma lógica em qualquer obra do estado de Goiás.
 
 ## O Que a NBR 7480 Exige do Fabricante
 
@@ -11450,7 +11464,7 @@ No serviço de corte e dobra da BR Aço, operamos exclusivamente com aço de usi
     summary: "Guia prático para engenheiros e mestres de obra sobre como ler a planilha de ferro, verificar os campos obrigatórios e preparar a lista de corte para o serviço de corte e dobra.",
     content: `## A Planilha de Ferro é o "DNA" do Projeto Estrutural
 
-A planilha de ferro é o documento que traduz o projeto estrutural em quantidades e dimensões de barras. É o documento que você envia para o serviço de corte e dobra — e a qualidade desse documento determina diretamente a qualidade do que vai chegar na obra.
+A planilha de ferro é o documento que traduz o projeto estrutural em quantidades e dimensões de barras. É o documento que você envia para o serviço de corte e dobra — e a qualidade desse documento determina diretamente a qualidade do que vai chegar na obra. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Estrutura da Planilha de Ferro — Campos Obrigatórios
 
@@ -11511,7 +11525,7 @@ Nossa equipe analisa planilhas em qualquer formato. Em casos de planilha incompl
     summary: "Guia técnico completo sobre emenda de vergalhões por traspasse: cálculo do comprimento mínimo, fatores da NBR 6118, distribuição de emendas na seção e erros comuns em canteiro.",
     content: `## Por Que a Emenda de Vergalhão é um Ponto Crítico Estrutural
 
-A região de emenda é, por definição, um ponto de menor resistência — duas barras que se sobrepõem transferem força por aderência com o concreto, não por solda ou conector mecânico. Comprimento insuficiente de emenda é causa documentada de colapso estrutural e está entre as falhas mais encontradas em perícias técnicas de edificações.
+A região de emenda é, por definição, um ponto de menor resistência — duas barras que se sobrepõem transferem força por aderência com o concreto, não por solda ou conector mecânico. Comprimento insuficiente de emenda é causa documentada de colapso estrutural e está entre as falhas mais encontradas em perícias técnicas de edificações. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 ## Cálculo do Comprimento de Traspasse (l0)
 
@@ -11576,7 +11590,7 @@ Para projetos com diâmetros grandes (ø20 mm a ø40 mm), onde os comprimentos d
     summary: "Comparativo técnico e financeiro completo entre forma incorporada e fôrma de madeira para lajes: custo de material, mão de obra, prazo e ponto de break-even por m² de laje.",
     content: `## A Decisão que Poucos Fazem com Dados
 
-A maioria dos construtores escolhe entre forma incorporada e fôrma de madeira com base em hábito, não em análise. "Sempre usei madeira" ou "nunca trabalhei com metálica" são os critérios mais comuns. Este artigo muda isso — com números.
+A maioria dos construtores escolhe entre forma incorporada e fôrma de madeira com base em hábito, não em análise. "Sempre usei madeira" ou "nunca trabalhei com metálica" são os critérios mais comuns. Este artigo muda isso — com números. Aqui na BR Aço, esse é um dos pontos que mais pesam na hora de orientar clientes de Goiânia e do DF.
 
 ## Custo de Mão de Obra (100 m² de laje)
 
@@ -11649,6 +11663,8 @@ O cobrimento nominal de concreto é a camada entre a face externa da estrutura e
 
 2. **Transmissão de esforços (aderência)**: menor cobrimento significa menos confinamento, menor aderência efetiva e comprimentos de ancoragem necessários maiores.
 
+Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
+
 ## Tabela de Cobrimento Mínimo — NBR 6118 Tabela 7.2
 
 ### Classes de Agressividade Ambiental
@@ -11717,7 +11733,7 @@ A geometria precisa das barras do CDA impacta diretamente o cobrimento:
     summary: "Guia prático completo de sequenciamento de armação de laje: etapas da preparação ao fechamento da armadura, verificações normativas em cada fase e vantagens do aço pré-cortado.",
     content: `## A Armação de Laje em 7 Etapas — e Onde Cada uma Pode Falhar
 
-A armação de laje é frequentemente vista como uma tarefa simples. Na prática, é uma operação com 7 etapas distintas, cada uma com pontos de falha que podem comprometer a integridade estrutural ou criar retrabalho caro.
+A armação de laje é frequentemente vista como uma tarefa simples. Na prática, é uma operação com 7 etapas distintas, cada uma com pontos de falha que podem comprometer a integridade estrutural ou criar retrabalho caro. É um cuidado que a BR Aço mantém em toda entrega, de Goiânia até o Distrito Federal.
 
 ## Etapa 1: Preparação da Área e Verificação do Projeto
 
@@ -11789,7 +11805,7 @@ Para obras em Goiânia e Brasília com prazo crítico, a BR Aço entrega o aço 
     keyword: "arame recozido x galvanizado",
     date: "30 Jul 2026",
     summary: "Comparativo direto entre arame recozido e arame galvanizado: processo de fabricação, resistência à corrosão, aplicações típicas na construção civil e como escolher o certo para cada uso.",
-    content: `**Em resumo:** Arame recozido é fio de aço de baixo carbono que passou por recozimento (aquecimento controlado) para ficar maleável — usado para amarrar ferragem e travamentos temporários, sem revestimento e sem resistência à corrosão. Arame galvanizado é o mesmo tipo de fio revestido com uma camada de zinco (imersão a quente, conforme ABNT NBR 6323), o que lhe dá resistência à oxidação e o torna indicado para uso externo, cercas, telas e amarrações permanentes expostas ao tempo.
+    content: `**Em resumo:** Arame recozido é fio de aço de baixo carbono que passou por recozimento (aquecimento controlado) para ficar maleável — usado para amarrar ferragem e travamentos temporários, sem revestimento e sem resistência à corrosão. Arame galvanizado é o mesmo tipo de fio revestido com uma camada de zinco (imersão a quente, conforme ABNT NBR 6323), o que lhe dá resistência à oxidação e o torna indicado para uso externo, cercas, telas e amarrações permanentes expostas ao tempo. Esse padrão técnico é seguido pela BR Aço em fornecimentos por toda a Grande Goiânia e o DF.
 
 ---
 
@@ -12377,7 +12393,7 @@ Quem constrói, amplia ou reforma em Samambaia pode solicitar vergalhão CA-50 e
     keyword: "o que é coluna pronta",
     date: "31 Jul 2026",
     summary: "Coluna pronta é a armadura de pilar pré-montada industrialmente — estribos, ganchos e espaçadores já fixados na posição do projeto. Entenda a definição, como é fabricada e quando substitui a armação manual no canteiro.",
-    content: `**Em resumo:** Coluna pronta é a armadura de pilar montada em fábrica — barras longitudinais CA-50 e estribos já dobrados a 135° e posicionados no espaçamento exato do projeto estrutural — entregue pronta para receber a fôrma e o concreto na obra. Substitui a montagem manual do ferro no canteiro, elimina erro de posicionamento de estribo e reduz em até 70% o tempo de armação por pilar.
+    content: `**Em resumo:** Coluna pronta é a armadura de pilar montada em fábrica — barras longitudinais CA-50 e estribos já dobrados a 135° e posicionados no espaçamento exato do projeto estrutural — entregue pronta para receber a fôrma e o concreto na obra. Substitui a montagem manual do ferro no canteiro, elimina erro de posicionamento de estribo e reduz em até 70% o tempo de armação por pilar, o que a BR Aço já entrega para obras em Goiânia e região.
 
 ---
 
@@ -12696,7 +12712,7 @@ Quer saber o prazo exato para sua obra? Envie a cidade, o produto e a quantidade
     keyword: "corte e dobra compensa",
     date: "02 Ago 2026",
     summary: "Comparativo direto: quando o corte e dobra industrial compensa em relação a comprar vergalhão reto e dobrar manualmente na obra, e quando a conta pode não fechar.",
-    content: `**Em resumo:** Corte e dobra industrial compensa na maioria das obras de médio e grande porte porque elimina o custo do armador especializado, reduz o desperdício de material (de 3% a 8% para praticamente zero) e acelera o cronograma. A conta pode não fechar em obras muito pequenas ou pontuais, onde o volume de aço não justifica o mínimo de produção — nesse caso, vergalhão avulso segue sendo a opção mais simples.
+    content: `**Em resumo:** Corte e dobra industrial compensa na maioria das obras de médio e grande porte porque elimina o custo do armador especializado, reduz o desperdício de material (de 3% a 8% para praticamente zero) e acelera o cronograma — a experiência da BR Aço em obras de Goiânia e do DF confirma esse padrão. A conta pode não fechar em obras muito pequenas ou pontuais, onde o volume de aço não justifica o mínimo de produção — nesse caso, vergalhão avulso segue sendo a opção mais simples.
 
 ---
 
@@ -12744,7 +12760,7 @@ Envie sua planta ou lista de materiais pelo WhatsApp e receba uma comparação d
     keyword: "quanto custa coluna pronta",
     date: "02 Ago 2026",
     summary: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
-    content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação, não buscar um "preço por unidade" genérico.
+    content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação na BR Aço, em Goiânia, não buscar um "preço por unidade" genérico.
 
 ---
 

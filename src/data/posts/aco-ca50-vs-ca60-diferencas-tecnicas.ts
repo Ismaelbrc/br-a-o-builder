@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Diferenças técnicas entre CA-50 e CA-60 — resistência, diâmetros, soldabilidade, dobramento e quando usar cada classe de aço.",
   content: `## O que Define a Classe do Aço?
 
-A classe do aço para concreto armado é definida pela sua **resistência de escoamento característica (fyk)**:
+A classe do aço para concreto armado é definida pela sua **resistência de escoamento característica (fyk)** — critério que a BR Aço segue à risca em todo vergalhão fornecido em Goiânia e no interior de Goiás:
 
 - **CA-50:** fyk = 500 MPa
 - **CA-60:** fyk = 600 MPa

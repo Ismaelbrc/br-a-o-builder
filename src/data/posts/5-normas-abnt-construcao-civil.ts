@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Conhecer as principais normas ABNT de construção civil evita reprova em vistoria, garante a segurança estrutural e protege o responsável técnico. Veja as 5 normas essenciais para obras de concreto.",
   content: `## Por Que Conhecer as Normas ABNT?
 
-Normas ABNT não são "sugestões" — são documentos técnicos de observância obrigatória para obras com ART (Anotação de Responsabilidade Técnica) assinada. O engenheiro que projeta e o construtor que executa são solidariamente responsáveis pela conformidade.
+Normas ABNT não são "sugestões" — são documentos técnicos de observância obrigatória para obras com ART (Anotação de Responsabilidade Técnica) assinada. O engenheiro que projeta e o construtor que executa são solidariamente responsáveis pela conformidade. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## 1. NBR 6118 — Projeto de Estruturas de Concreto
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Corte e dobra industrial não é só para grandes construtoras. Para casas a partir de 80 m² com projeto estrutural, o serviço reduz desperdício e acelera a obra. Veja como funciona.",
   content: `## Corte e Dobra Serve para Obras Pequenas?
 
-Sim — e com vantagens claras. O mito de que corte e dobra industrial é "só para grandes obras" não se sustenta. Uma casa de **80 m² a 300 m²** com projeto estrutural pode se beneficiar muito do serviço.
+Sim — e com vantagens claras. O mito de que corte e dobra industrial é "só para grandes obras" não se sustenta. Uma casa de **80 m² a 300 m²** com projeto estrutural pode se beneficiar muito do serviço. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## A Lógica Econômica para Residências
 

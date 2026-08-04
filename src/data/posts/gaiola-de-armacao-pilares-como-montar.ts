@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Como montar a gaiola de armação de pilares — sequência de montagem, fixação de estribos, espaçadores e instalação na fôrma.",
   content: `## O que é uma Gaiola de Pilar?
 
-A gaiola é a armação completa de um pilar: as barras longitudinais posicionadas e os estribos espaçados e fixados ao redor delas, formando um "esqueleto" de aço que será colocado dentro da fôrma antes da concretagem.
+A gaiola é a armação completa de um pilar: as barras longitudinais posicionadas e os estribos espaçados e fixados ao redor delas, formando um "esqueleto" de aço que será colocado dentro da fôrma antes da concretagem. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 A qualidade da gaiola — dimensões corretas, estribos bem espaçados, espaçadores fixados — determina diretamente a qualidade do pilar executado.
 

@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é o memorial descritivo estrutural, quais informações ele deve conter e como usar como guia de execução na obra.",
   content: `## O que é o Memorial Descritivo Estrutural?
 
-O memorial descritivo estrutural é o documento escrito que acompanha as pranchas de projeto e descreve as premissas, materiais, normas e condições de execução adotadas pelo engenheiro calculista. Ele complementa os desenhos com informações que não cabem ou não são adequadas para representação gráfica.
+O memorial descritivo estrutural é o documento escrito que acompanha as pranchas de projeto e descreve as premissas, materiais, normas e condições de execução adotadas pelo engenheiro calculista. Ele complementa os desenhos com informações que não cabem ou não são adequadas para representação gráfica. Esse padrão de qualidade acompanha todo material que sai da BR Aço para obras em Goiás e no Distrito Federal.
 
 É um documento obrigatório segundo o CREA para a aprovação do projeto e é parte integrante da ART do engenheiro.
 

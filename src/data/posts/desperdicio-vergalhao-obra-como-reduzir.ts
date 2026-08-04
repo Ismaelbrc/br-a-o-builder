@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Obras sem planejamento de armação perdem até 15% do aço comprado. Veja as principais causas de desperdício e como eliminá-las com projeto detalhado e corte e dobra industrial.",
   content: `## Quanto Aço é Desperdiçado nas Obras Brasileiras?
 
-Estudos de controle tecnológico indicam que obras residenciais sem gestão de armação desperdiçam entre **8% e 15%** do vergalhão comprado. Em uma casa de 150 m², isso pode representar **500 kg a 900 kg de aço** — valor considerável no orçamento.
+Estudos de controle tecnológico indicam que obras residenciais sem gestão de armação desperdiçam entre **8% e 15%** do vergalhão comprado. Em uma casa de 150 m², isso pode representar **500 kg a 900 kg de aço** — valor considerável no orçamento. Esse é o cuidado que diferencia o fornecimento da BR Aço em Goiânia e em todo o estado de Goiás.
 
 ## Principais Causas de Desperdício
 

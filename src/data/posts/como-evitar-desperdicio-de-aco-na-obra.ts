@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Cinco estratégias práticas e comprovadas para reduzir o desperdício de vergalhão e aço na construção civil, com impacto direto na margem e no prazo da obra.",
   content: `## O Tamanho do Problema
 
-Dados levantados por pesquisadores da construção civil brasileira mostram que o desperdício de aço em obras que utilizam armação manual no canteiro varia entre 5% e 15% do total comprado. Em um projeto com 50 toneladas de aço, isso representa de 2,5 a 7,5 toneladas de material perdido — o equivalente a dezenas de milhares de reais literalmente jogados fora.
+Dados levantados por pesquisadores da construção civil brasileira mostram que o desperdício de aço em obras que utilizam armação manual no canteiro varia entre 5% e 15% do total comprado. Em um projeto com 50 toneladas de aço, isso representa de 2,5 a 7,5 toneladas de material perdido — o equivalente a dezenas de milhares de reais literalmente jogados fora. Na prática, a BR Aço aplica esse critério em obras de Goiânia, Aparecida de Goiânia e do DF.
 
 Essas perdas ocorrem por diferentes causas: pontas de corte, erros de medida, dobras incorretas, danos por armazenamento inadequado e até furtos. A boa notícia é que cada uma dessas causas tem solução.
 

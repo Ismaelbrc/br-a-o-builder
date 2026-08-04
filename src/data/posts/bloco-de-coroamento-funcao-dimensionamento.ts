@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "O que é o bloco de coroamento, como distribui a carga do pilar para as estacas e como dimensionar o número de estacas e a geometria do bloco.",
   content: `## O que é Bloco de Coroamento?
 
-Bloco de coroamento (ou simplesmente "bloco") é o elemento de fundação que reúne um grupo de estacas e transmite a carga do pilar para elas. É um elemento de concreto, geralmente de grandes dimensões, que fica entre o pilar e as estacas.
+Bloco de coroamento (ou simplesmente "bloco") é o elemento de fundação que reúne um grupo de estacas e transmite a carga do pilar para elas. É um elemento de concreto, geralmente de grandes dimensões, que fica entre o pilar e as estacas. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 Ao contrário da sapata (que distribui a carga diretamente ao solo), o bloco não apoia no solo — ele se sustenta pelas estacas.
 

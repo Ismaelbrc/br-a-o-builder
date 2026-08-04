@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "malha de aço construção",
   date: "26 Jan 2026",
   summary: "Conheça os tipos de malha de aço para construção civil, suas aplicações em pisos, lajes e por que elas aumentam a produtividade.",
-  content: `**Em resumo:** Malha de aço para construção civil — também chamada tela soldada ou malha pop — é uma armadura pré-fabricada de barras CA-60 soldadas em ângulo reto em todos os cruzamentos. É usada em pisos industriais, lajes planas, paredes de concreto armado e pré-moldados, substituindo a armação manual com até 40% de economia em mão de obra. No Brasil, as telas soldadas seguem a ABNT NBR 7481 e são identificadas pelo espaçamento e bitola (ex.: Q-92, Q-138, Q-188).
+  content: `**Em resumo:** Malha de aço para construção civil — também chamada tela soldada ou malha pop — é uma armadura pré-fabricada de barras CA-60 soldadas em ângulo reto em todos os cruzamentos. É usada em pisos industriais, lajes planas, paredes de concreto armado e pré-moldados, substituindo a armação manual com até 40% de economia em mão de obra. No Brasil, as telas soldadas seguem a ABNT NBR 7481 e são identificadas pelo espaçamento e bitola (ex.: Q-92, Q-138, Q-188); a BR Aço fornece as principais bitolas com entrega em Goiânia e Goiás.
 
 ---
 

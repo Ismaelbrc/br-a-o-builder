@@ -26,6 +26,8 @@ const post: BlogPost = {
 
 > Dados conforme ABNT NBR 7480. Peso calculado com densidade do aço = 7.850 kg/m³.
 
+Vale lembrar que esse critério vale tanto para obras em Goiânia quanto para obras no Distrito Federal, onde a BR Aço também atende.
+
 ## Bitolas de Vergalhão CA-25 (Estribos)
 
 | Diâmetro (mm) | Peso (kg/m) | Uso Típico |

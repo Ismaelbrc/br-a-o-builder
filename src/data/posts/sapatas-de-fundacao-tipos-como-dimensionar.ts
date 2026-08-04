@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Saiba o que são sapatas de fundação, quais os tipos (isolada, corrida, associada) e quando usar cada uma na sua obra.",
   content: `## O que São Sapatas?
 
-Sapatas são elementos de fundação superficial (ou rasa) que transferem as cargas da estrutura para o solo. Elas são posicionadas na base de pilares ou paredes e funcionam como uma "base alargada" que distribui o peso em uma área maior do terreno.
+Sapatas são elementos de fundação superficial (ou rasa) que transferem as cargas da estrutura para o solo. Elas são posicionadas na base de pilares ou paredes e funcionam como uma "base alargada" que distribui o peso em uma área maior do terreno. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 As sapatas são feitas de concreto armado e representam um dos tipos de fundação mais utilizados na construção civil brasileira.
 

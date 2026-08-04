@@ -18,6 +18,8 @@ Os diagramas de momento fletor (DMF) e esforço cortante (DEF) são a linguagem 
 - Definir os pontos de corte das barras
 - Dimensionar os estribos ao longo da viga
 
+É com base nesses diagramas que a BR Aço orienta o corte e dobra de armaduras para construtoras de Goiânia e Goiás.
+
 ## O que é Momento Fletor?
 
 Momento fletor (M) é o esforço interno que tende a curvar o elemento estrutural. É causado por cargas transversais e desbalanceadas.

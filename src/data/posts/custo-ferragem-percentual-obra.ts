@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "A ferragem responde por 5% a 15% do custo total da construção, dependendo do sistema estrutural. Entenda como otimizar esse custo sem comprometer a segurança estrutural.",
   content: `## O Peso do Aço no Orçamento da Construção
 
-O custo da ferragem (vergalhão, telas, treliças) varia conforme o tipo de estrutura, mas geralmente representa uma fatia relevante do orçamento total. Entender essa proporção ajuda no planejamento financeiro da obra.
+O custo da ferragem (vergalhão, telas, treliças) varia conforme o tipo de estrutura, mas geralmente representa uma fatia relevante do orçamento total. Entender essa proporção ajuda no planejamento financeiro da obra. Na BR Aço, esse processo é aplicado no dia a dia do fornecimento a obras de Goiânia e do DF.
 
 ## Participação da Ferragem por Tipo de Obra
 

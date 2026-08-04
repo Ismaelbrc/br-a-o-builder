@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "corte e dobra vs corte manual",
   date: "05 Fev 2026",
   summary: "Compare os custos reais entre corte e dobra industrial e o corte manual no canteiro. Descubra qual método gera mais economia e produtividade.",
-  content: `**Em resumo:** O corte e dobra industrial elimina entre 3% e 8% de desperdício gerado pelo corte manual no canteiro e reduz em até 50% o custo de mão de obra de armação. No método manual, armadores utilizam policorte e chave de dobra — processo lento e impreciso; no industrial, máquinas CNC produzem peças com tolerância de ±2mm conforme o projeto, já identificadas e organizadas por etapa da obra para montagem direta.
+  content: `**Em resumo:** O corte e dobra industrial elimina entre 3% e 8% de desperdício gerado pelo corte manual no canteiro e reduz em até 50% o custo de mão de obra de armação. No método manual, armadores utilizam policorte e chave de dobra — processo lento e impreciso; no industrial, máquinas CNC produzem peças com tolerância de ±2mm conforme o projeto, já identificadas e organizadas por etapa da obra para montagem direta. É assim que a BR Aço trabalha esse item em obras de Goiânia, Aparecida de Goiânia e região.
 
 ---
 

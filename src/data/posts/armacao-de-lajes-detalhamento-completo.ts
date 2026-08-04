@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Detalhamento da armação de lajes maciças: positiva, negativa, distribuição, bordas livres, ancoragem e tabelas de comprimentos mínimos.",
   content: `## Tipos de Armadura em Lajes Maciças
 
-Uma laje maciça pode ter até 5 tipos de armadura, cada uma com função específica:
+Uma laje maciça pode ter até 5 tipos de armadura, cada uma com função específica — a BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás:
 
 ### 1. Armadura Positiva (principal de flexão)
 Posicionada na face inferior da laje, na direção do menor vão (Lx). Resiste ao momento fletor positivo (tração na parte inferior, típico do vão central).

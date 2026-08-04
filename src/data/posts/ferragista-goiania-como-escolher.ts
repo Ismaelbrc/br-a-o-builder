@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Com várias opções de ferragistas em Goiânia e região, escolher o fornecedor errado pode custar caro na obra. Veja os critérios essenciais para avaliar antes de comprar o aço.",
   content: `## O Que é Uma Ferragista de Construção?
 
-No contexto da construção civil, "ferragista" é o fornecedor especializado nos aços estruturais da obra: vergalhões, treliças, malhas soldadas, arames e pregos. É diferente de uma ferragem de acabamento (que vende fechaduras, dobradiças e puxadores).
+No contexto da construção civil, "ferragista" é o fornecedor especializado nos aços estruturais da obra: vergalhões, treliças, malhas soldadas, arames e pregos. É diferente de uma ferragem de acabamento (que vende fechaduras, dobradiças e puxadores). Esse cuidado técnico faz parte do padrão de atendimento da BR Aço em Goiânia e no Distrito Federal.
 
 Para uma obra em Goiânia, escolher a ferragista certa impacta diretamente o custo do material, a qualidade da estrutura e o prazo de execução.
 

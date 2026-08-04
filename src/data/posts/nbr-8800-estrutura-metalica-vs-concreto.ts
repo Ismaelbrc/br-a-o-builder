@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Comparativo técnico e econômico entre estrutura metálica (NBR 8800) e concreto armado (NBR 6118): peso, prazo, custo, durabilidade e manutenção.",
   content: `## Dois Sistemas Estruturais, Um Objetivo
 
-Estrutura metálica e concreto armado são os dois grandes sistemas de construção civil para edificações. Cada um tem vantagens em situações específicas. A escolha correta afeta custo, prazo, durabilidade e flexibilidade da obra.
+Estrutura metálica e concreto armado são os dois grandes sistemas de construção civil para edificações. Cada um tem vantagens em situações específicas. A escolha correta afeta custo, prazo, durabilidade e flexibilidade da obra. Esse é o entendimento que orienta o trabalho da BR Aço em obras de Goiânia e do DF.
 
 ## Estrutura Metálica — NBR 8800
 

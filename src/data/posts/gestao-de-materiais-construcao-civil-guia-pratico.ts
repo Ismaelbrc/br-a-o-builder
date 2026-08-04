@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia prático de gestão de materiais na construção civil: processos de compra, recebimento, armazenamento, controle de estoque e estratégias para reduzir perdas e custos.",
   content: `## Por Que a Gestão de Materiais É Crítica?
 
-Em obras de construção civil, materiais representam entre **55% e 65% do custo total** do projeto. A mão de obra, embora visível e fácil de medir, ocupa um percentual menor. Isso significa que ganhos em eficiência na gestão de materiais têm impacto financeiro muito maior do que a maioria dos construtores imagina.
+Em obras de construção civil, materiais representam entre **55% e 65% do custo total** do projeto. A mão de obra, embora visível e fácil de medir, ocupa um percentual menor. Isso significa que ganhos em eficiência na gestão de materiais têm impacto financeiro muito maior do que a maioria dos construtores imagina. A BR Aço reforça esse ponto com clientes de Goiânia e do DF antes de fechar qualquer pedido.
 
 Estudos do IPT (Instituto de Pesquisas Tecnológicas) e da Escola Politécnica da USP estimam que as perdas de materiais na construção civil brasileira variam entre **10% e 30%** do total consumido, dependendo do tipo de material e da maturidade do canteiro.
 

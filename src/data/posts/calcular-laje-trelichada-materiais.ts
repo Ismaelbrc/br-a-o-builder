@@ -21,6 +21,8 @@ Uma laje treliçada com lajotas cerâmicas ou EPS é composta por:
 4. **Concreto de capeamento** — camada superior (5 a 7 cm)
 5. **Escoramento** — apoio temporário durante a cura
 
+A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
+
 ## Passo 1: Escolha o Tipo de Treliça
 
 A escolha depende do vão e da carga. Tabela simplificada:

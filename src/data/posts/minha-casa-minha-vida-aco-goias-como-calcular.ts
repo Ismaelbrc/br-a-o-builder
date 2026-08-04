@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Saiba como calcular o aço para obras do MCMV em Goiás, os tipos de vergalhão recomendados, consumo médio por m² e como o corte e dobra reduz custo em até 30%.",
   content: `## Resposta Rápida
 
-Para uma casa do Minha Casa Minha Vida (MCMV) de **60 m² em Goiás**, o consumo típico de aço é de **40 a 60 kg por m² de área construída**, totalizando entre **2.400 e 3.600 kg** de vergalhão. O vergalhão mais usado é o **CA-50 (10 mm e 12,5 mm)** para vigas e pilares, e o **CA-60 (6,3 mm e 8 mm)** para lajes treliçadas e telas soldadas.
+Para uma casa do Minha Casa Minha Vida (MCMV) de **60 m² em Goiás**, o consumo típico de aço é de **40 a 60 kg por m² de área construída**, totalizando entre **2.400 e 3.600 kg** de vergalhão. O vergalhão mais usado é o **CA-50 (10 mm e 12,5 mm)** para vigas e pilares, e o **CA-60 (6,3 mm e 8 mm)** para lajes treliçadas e telas soldadas. Em Goiânia e no Distrito Federal, é esse o critério técnico que a BR Aço segue no fornecimento.
 
 ## O que é o MCMV e por que o Aço Importa Tanto
 

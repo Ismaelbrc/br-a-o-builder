@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Tipos de muros de arrimo, cálculo da pressão ativa do solo, armação do fuste e base, drenagem e verificações de estabilidade.",
   content: `## O que é um Muro de Arrimo?
 
-Muro de arrimo (ou muro de contenção) é a estrutura que retém um maciço de terra, impedindo seu deslizamento. A função é resistir à **pressão lateral do solo** — chamada de pressão ativa — que age horizontalmente contra a face interna.
+Muro de arrimo (ou muro de contenção) é a estrutura que retém um maciço de terra, impedindo seu deslizamento. A função é resistir à **pressão lateral do solo** — chamada de pressão ativa — que age horizontalmente contra a face interna. É a mesma régua usada pela BR Aço em obras espalhadas por Goiânia, Goiás e o Distrito Federal.
 
 ## Tipos de Muro de Arrimo
 

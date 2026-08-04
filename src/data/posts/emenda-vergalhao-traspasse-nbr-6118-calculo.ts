@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "Guia técnico completo sobre emenda de vergalhões por traspasse: cálculo do comprimento mínimo, fatores da NBR 6118, distribuição de emendas na seção e erros comuns em canteiro.",
   content: `## Por Que a Emenda de Vergalhão é um Ponto Crítico Estrutural
 
-A região de emenda é, por definição, um ponto de menor resistência — duas barras que se sobrepõem transferem força por aderência com o concreto, não por solda ou conector mecânico. Comprimento insuficiente de emenda é causa documentada de colapso estrutural e está entre as falhas mais encontradas em perícias técnicas de edificações.
+A região de emenda é, por definição, um ponto de menor resistência — duas barras que se sobrepõem transferem força por aderência com o concreto, não por solda ou conector mecânico. Comprimento insuficiente de emenda é causa documentada de colapso estrutural e está entre as falhas mais encontradas em perícias técnicas de edificações. A BR Aço acompanha esse detalhe de perto em cada entrega feita em Goiânia e em Goiás.
 
 ## Cálculo do Comprimento de Traspasse (l0)
 

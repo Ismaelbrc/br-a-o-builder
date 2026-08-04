@@ -13,7 +13,7 @@ const post: BlogPost = {
   summary: "BIM para engenheiros e construtores — o que é, níveis de maturidade, softwares, exigências do Decreto 9983/2019 e benefícios práticos no canteiro.",
   content: `## O que é BIM?
 
-BIM (Building Information Modeling — Modelagem da Informação da Construção) é uma metodologia que usa um modelo digital tridimensional e inteligente da edificação como base para todo o ciclo de vida do projeto: concepção, projeto, construção e operação.
+BIM (Building Information Modeling — Modelagem da Informação da Construção) é uma metodologia que usa um modelo digital tridimensional e inteligente da edificação como base para todo o ciclo de vida do projeto: concepção, projeto, construção e operação. É um detalhe que a BR Aço não deixa passar em nenhuma obra atendida em Goiânia ou no DF.
 
 Diferente de um desenho 3D comum, o modelo BIM contém informações vinculadas a cada elemento: dimensões, materiais, resistências, fornecedores, custo estimado, cronograma e muito mais.
 
