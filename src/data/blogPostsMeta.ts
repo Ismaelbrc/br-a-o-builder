@@ -2060,6 +2060,28 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Um checklist prático de 7 pontos para conferir o vergalhão no momento da entrega na obra, cobrindo certificado, marcação, bitola, quantidade e conformidade com a NBR 7480 e a NBR 6118.",
     readingTime: 3,
   },
+  {
+    id: 188,
+    slug: "vergalhao-corte-dobra-sao-sebastiao-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em São Sebastião (DF): Expansão do Parque dos Ipês",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para São Sebastião (DF), entregues via BR-060 e DF-001. Veja bitolas, prazo de entrega e o perfil de obra da região.",
+    keyword: "vergalhão corte e dobra São Sebastião DF",
+    date: "08 Ago 2026",
+    summary: "São Sebastião segue ganhando bairro novo — o Parque dos Ipês (Bairro Crixá) é o mais recente — enquanto o GDF investe em infraestrutura por toda a região. Veja como isso muda a demanda por vergalhão e corte e dobra na RA.",
+    readingTime: 3,
+  },
+  {
+    id: 189,
+    slug: "vergalhao-corte-dobra-sol-nascente-por-do-sol-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em Sol Nascente/Pôr do Sol (DF): Trechos 1, 2 e 3",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para Sol Nascente/Pôr do Sol (DF), entregues via BR-070 e DF-180. Veja bitolas, prazo de entrega e perfil de obra.",
+    keyword: "vergalhão corte e dobra Sol Nascente Pôr do Sol DF",
+    date: "08 Ago 2026",
+    summary: "Sol Nascente/Pôr do Sol é a RA mais nova do DF e recebeu R$ 215 milhões em obras de infraestrutura recentes. Veja como o perfil de autoconstrução da região muda a demanda por vergalhão e corte e dobra.",
+    readingTime: 3,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];

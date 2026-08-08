@@ -12942,6 +12942,80 @@ Não assine o canhoto de entrega sem registrar a divergência. Fotografe a marca
 ## Fale com a BR Aço
 
 A BR Aço entrega vergalhão certificado conforme a NBR 7480, com laudo por lote e marcação de identificação em todas as barras. Envie sua lista de materiais pelo WhatsApp e receba o orçamento com a documentação incluída.`
+  },
+  {
+    id: 188,
+    slug: "vergalhao-corte-dobra-sao-sebastiao-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em São Sebastião (DF): Expansão do Parque dos Ipês",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para São Sebastião (DF), entregues via BR-060 e DF-001. Veja bitolas, prazo de entrega e o perfil de obra da região.",
+    keyword: "vergalhão corte e dobra São Sebastião DF",
+    date: "08 Ago 2026",
+    summary: "São Sebastião segue ganhando bairro novo — o Parque dos Ipês (Bairro Crixá) é o mais recente — enquanto o GDF investe em infraestrutura por toda a região. Veja como isso muda a demanda por vergalhão e corte e dobra na RA.",
+    content: `**Em resumo:** São Sebastião é uma Região Administrativa do DF em expansão constante, com o bairro mais recente — Parque dos Ipês (Bairro Crixá) — surgindo na saída pela DF-473, e obra pública recorrente acompanhando o crescimento residencial. A BR Aço entrega vergalhão CA-50 e corte e dobra na região a partir da fábrica em Aparecida de Goiânia. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem, que varia conforme o bairro de destino.
+
+---
+
+## Uma RA que Ainda Está Ganhando Bairro Novo
+
+Diferente de RAs mais consolidadas do DF, São Sebastião segue expandindo sua malha urbana: o bairro mais recente da região, o **Parque dos Ipês** (também chamado de Bairro Crixá), fica na saída da cidade pela DF-473 e é fruto direto desse crescimento. Além dele, a região soma mais de 20 bairros, entre eles o Setor Tradicional, Centro, São Bartolomeu e Vila do Boa — cada um em estágio diferente de consolidação.
+
+## Obra Pública Puxando Obra Privada
+
+O Governo do Distrito Federal mantém investimento recorrente em infraestrutura na região — reforma de calçadas no Morro da Cruz, pavimentação com bloquetes em Vila do Boa, e obras no núcleo rural do Recanto da Conquista. Esse tipo de obra pública costuma anteceder o crescimento privado ao redor: quando a infraestrutura chega, o loteamento vizinho valoriza e atrai construção — um padrão parecido com o que já vimos em Planaltina e Santa Maria.
+
+## Vergalhão Avulso ou Corte e Dobra em São Sebastião?
+
+| Perfil de obra | Situação | Recomendação |
+|---|---|---|
+| Residência unifamiliar | Bairros consolidados (Setor Tradicional, Centro) | Vergalhão avulso, conforme porte |
+| Loteamento novo | Parque dos Ipês e expansões recentes | Corte e dobra — padroniza lotes em série |
+| Autoconstrução | Toda a região | Vergalhão avulso com corte sob medida |
+
+## Rota e Prazo de Entrega
+
+São Sebastião fica a cerca de 225 km da fábrica da BR Aço em Aparecida de Goiânia, com acesso via BR-060 e DF-001 (EPCT), tempo médio de viagem de 2h55min — dentro da faixa de entrega de até 48h da BR Aço.
+
+## Fale com a BR Aço
+
+Residência no Setor Tradicional, loteamento novo no Parque dos Ipês ou obra em qualquer bairro de São Sebastião: a BR Aço fornece vergalhão CA-50 certificado conforme a NBR 7480 e corte e dobra sob medida. Envie o projeto pelo WhatsApp e receba orçamento.`
+  },
+  {
+    id: 189,
+    slug: "vergalhao-corte-dobra-sol-nascente-por-do-sol-df",
+    category: "Cidades",
+    title: "Vergalhão e Corte e Dobra em Sol Nascente/Pôr do Sol (DF): Trechos 1, 2 e 3",
+    metaDescription: "Vergalhão CA-50 e corte e dobra para Sol Nascente/Pôr do Sol (DF), entregues via BR-070 e DF-180. Veja bitolas, prazo de entrega e perfil de obra.",
+    keyword: "vergalhão corte e dobra Sol Nascente Pôr do Sol DF",
+    date: "08 Ago 2026",
+    summary: "Sol Nascente/Pôr do Sol é a RA mais nova do DF e recebeu R$ 215 milhões em obras de infraestrutura recentes. Veja como o perfil de autoconstrução da região muda a demanda por vergalhão e corte e dobra.",
+    content: `**Em resumo:** Sol Nascente/Pôr do Sol é uma das RAs mais novas do Distrito Federal — oficializada em 2019, desmembrada de Ceilândia — e segue em fase intensa de consolidação urbana, com R$ 215 milhões investidos recentemente em infraestrutura nos Trechos 1, 2 e 3. A BR Aço entrega vergalhão CA-50 e corte e dobra na região a partir da fábrica em Aparecida de Goiânia. ⚠️ Dado a confirmar com o cliente: tempo exato de viagem, que varia conforme o trecho de destino.
+
+---
+
+## A RA Mais Nova do DF Ainda em Formação
+
+Sol Nascente/Pôr do Sol virou Região Administrativa independente só em 2019, desmembrada de Ceilândia — e por isso ainda está em ritmo acelerado de consolidação. A região é dividida oficialmente em **Trecho 1**, **Trecho 2** e **Trecho 3**, cada um recebendo obras de infraestrutura em etapas diferentes: rede de drenagem, pavimentação asfáltica, blocos intertravados e calçadas somaram R$ 215 milhões em investimento recente do GDF, incluindo a conclusão dos Trechos 1 e 3.
+
+## Autoconstrução no Centro do Perfil de Obra
+
+Diferente de RAs com forte presença de incorporadoras, o perfil de construção em Sol Nascente/Pôr do Sol é dominado pela autoconstrução residencial — moradores erguendo ou ampliando a própria casa junto com pequenas construtoras locais. Isso significa demanda constante por vergalhão em quantidades menores e mais recorrentes, com corte sob medida entrando principalmente em lajes e ampliações.
+
+## Vergalhão Avulso ou Corte e Dobra em Sol Nascente/Pôr do Sol?
+
+| Perfil de obra | Trecho | Recomendação |
+|---|---|---|
+| Autoconstrução residencial | Trechos 1, 2 e 3 | Vergalhão avulso com corte sob medida |
+| Ampliação/puxadinho | Toda a região | Vergalhão avulso, bitolas menores |
+| Obra de infraestrutura pública | Trechos em obra | Corte e dobra — padroniza peças em volume |
+
+## Rota e Prazo de Entrega
+
+Sol Nascente/Pôr do Sol fica a cerca de 195 km da fábrica da BR Aço em Aparecida de Goiânia, pela mesma rota que já atende Ceilândia — via BR-070 e DF-180, tempo médio de viagem de 2h20min — dentro da faixa de entrega de até 48h da BR Aço.
+
+## Fale com a BR Aço
+
+Autoconstrução, ampliação ou obra de infraestrutura em qualquer Trecho de Sol Nascente/Pôr do Sol: a BR Aço fornece vergalhão CA-50 certificado conforme a NBR 7480 e corte e dobra sob medida. Envie o projeto pelo WhatsApp e receba orçamento.`
   }
 ];
 

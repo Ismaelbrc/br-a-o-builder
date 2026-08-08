@@ -206,7 +206,16 @@ const locations: LandingLocation[] = [
       population: 117_000,
     },
   },
-  region('sao-sebastiao',     'São Sebastião',       225),
+  {
+    ...region('sao-sebastiao', 'São Sebastião', 225),
+    uniqueContent: {
+      marketContext: 'São Sebastião é uma RA em expansão constante, com o bairro mais recente — Parque dos Ipês (Bairro Crixá) — surgindo na saída pela DF-473. A região recebe investimento público recorrente em infraestrutura (reforma de calçadas no Morro da Cruz, pavimentação em Vila do Boa e no núcleo rural Recanto da Conquista) que acompanha o crescimento residencial, num perfil parecido com o de Planaltina e Santa Maria: loteamento novo misturado com autoconstrução. A BR Aço entrega vergalhão CA-50 e corte e dobra a partir da fábrica em Aparecida de Goiânia.',
+      neighborhoods: ['Setor Tradicional', 'Centro', 'São Bartolomeu', 'Vila do Boa', 'Residencial Oeste', 'Parque dos Ipês (Bairro Crixá)'],
+      route: 'via BR-060 e DF-001 (EPCT), tempo médio de 2h55min',
+      buildingTypes: 'loteamentos residenciais novos, autoconstrução e pequenas construtoras locais',
+      population: 99_000,
+    },
+  },
   {
     ...region('recanto-das-emas', 'Recanto das Emas', 195),
     uniqueContent: {
@@ -232,7 +241,16 @@ const locations: LandingLocation[] = [
   region('sia',               'SIA',                 200),
   region('vicente-pires',     'Vicente Pires',       200),
   region('fercal',            'Fercal',              225),
-  region('sol-nascente',      'Sol Nascente',        195),
+  {
+    ...region('sol-nascente', 'Sol Nascente', 195),
+    uniqueContent: {
+      marketContext: 'Sol Nascente/Pôr do Sol é uma das RAs mais novas do DF (oficializada em 2019, desmembrada de Ceilândia) e segue em fase intensa de consolidação urbana — o GDF investiu R$ 215 milhões recentes em drenagem, pavimentação e calçadas nos Trechos 1, 2 e 3. Esse ritmo de obra pública anda em paralelo com a autoconstrução residencial, que domina o perfil da região. A BR Aço atende Sol Nascente/Pôr do Sol a partir da fábrica em Aparecida de Goiânia, pela mesma rota logística que já serve Ceilândia.',
+      neighborhoods: ['Trecho 1', 'Trecho 2', 'Trecho 3', 'Sol Nascente', 'Pôr do Sol'],
+      route: 'via BR-070 e DF-180 (mesma rota de Ceilândia), tempo médio de 2h20min',
+      buildingTypes: 'autoconstrução residencial, obras de infraestrutura pública e pequenas ampliações',
+      population: 102_000,
+    },
+  },
   region('arniqueira',        'Arniqueira',          200),
   {
     ...region('aguas-claras', 'Águas Claras', 200),
