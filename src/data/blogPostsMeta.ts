@@ -133,7 +133,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "calcular quantidade de vergalhão para laje",
     date: "10 Jan 2026",
     summary: "Guia prático com passo a passo, fórmulas e taxas de consumo para calcular corretamente a quantidade de vergalhão necessária para executar lajes de qualquer tipo.",
-    readingTime: 4,
+    readingTime: 5,
   },
   {
     id: 13,
