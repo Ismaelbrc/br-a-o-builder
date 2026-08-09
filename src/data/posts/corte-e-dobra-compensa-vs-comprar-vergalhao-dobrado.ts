@@ -46,6 +46,20 @@ const post: BlogPost = {
 
 Na maioria dos casos de obra com volume relevante, a soma da economia de mão de obra com a redução de desperdício supera o custo do serviço.
 
+## Quanto Custa Corte e Dobra na Prática (Preço Real, Não Estimativa)
+
+A dúvida "compensa?" só fecha com número de verdade, não só argumento. O preço médio ponderado de vergalhão CA-50 cortado sob medida na BR Aço, com base em vendas reais dos últimos ~4 meses, varia por bitola:
+
+| Bitola | Corte e dobra (R$/kg) |
+|:---:|:---:|
+| 6,3 mm | 6,49 |
+| 10 mm | 5,84 |
+| 12,5 mm | 5,65 |
+| 16 mm | 5,57 |
+| 20 mm | 5,67 |
+
+Exemplo prático: numa obra que consome **1.000 kg de vergalhão CA-50 10mm**, o corte e dobra sai por volta de **R$ 5.840** (1.000 × R$ 5,84), já com peça cortada na medida exata — sem desperdício de sobra e sem diária de armador. Se o método manual gera 3% a 8% de perda sobre esse mesmo volume, são de 30 a 80 kg de aço jogados fora só de sobra, fora o custo da mão de obra de corte e dobra manual no canteiro. Tabela completa por bitola, incluindo comparativo com CDA (peça já armada/soldada): [preço médio do vergalhão por kg em Goiás](/blog/preco-medio-vergalhao-ca-50-ca-60-por-kg-goias).
+
 ## Fale com a BR Aço
 
 Envie sua planta ou lista de materiais pelo WhatsApp e receba uma comparação de custo personalizada entre corte e dobra e vergalhão avulso para o seu projeto.`,

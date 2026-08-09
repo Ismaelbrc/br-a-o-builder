@@ -2014,7 +2014,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     keyword: "corte e dobra compensa",
     date: "02 Ago 2026",
     summary: "Comparativo direto: quando o corte e dobra industrial compensa em relação a comprar vergalhão reto e dobrar manualmente na obra, e quando a conta pode não fechar.",
-    readingTime: 3,
+    readingTime: 4,
   },
   {
     id: 184,
