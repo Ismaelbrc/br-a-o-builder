@@ -221,7 +221,7 @@ function parseDateISO(dateStr: string): string {
 function BlogPostContent({ post }: { post: BlogPostType }) {
   const whatsappUrl = "https://wa.me/556299032023?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
   const publishedTime = parseDateISO(post.date);
-  const canonicalUrl = `https://grupobraco.com.br/blog/${post.slug}`;
+  const canonicalUrl = `https://grupobraco.com.br/blog/${post.slug}/`;
   const categoryImage = getCategoryImage(post.category);
 
   useSEO({

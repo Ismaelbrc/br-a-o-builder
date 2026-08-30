@@ -108,7 +108,7 @@ const Galeria = () => {
   useSEO({
     title: 'Galeria | BR Aço – Fotos e Vídeos da Fábrica',
     description: 'Veja fotos e vídeos da fábrica da BR Aço: máquinas de corte e dobra, estoque de vergalhão, treliças e toda nossa estrutura industrial em Aparecida de Goiânia.',
-    canonical: 'https://grupobraco.com.br/galeria',
+    canonical: 'https://grupobraco.com.br/galeria/',
   });
 
   return (

@@ -100,7 +100,7 @@ export default function Contato() {
   useSEO({
     title: 'Contato | Solicite Orçamento de Aço em Goiânia | BR Aço',
     description: 'Entre em contato com a BR Aço. Solicite orçamento de vergalhões, corte e dobra, treliças e mais. Atendimento rápido via WhatsApp ou formulário. Goiânia e todo o Goiás.',
-    canonical: 'https://grupobraco.com.br/contato',
+    canonical: 'https://grupobraco.com.br/contato/',
     keywords: 'contato br aço, orçamento vergalhão goiânia, solicitar orçamento aço',
   });
 

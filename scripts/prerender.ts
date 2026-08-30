@@ -183,7 +183,11 @@ async function main() {
         let html = '<!DOCTYPE html>\n' + raw.replace(/^<!DOCTYPE[^>]*>/i, '').trimStart();
 
         // Garante canonical correto independente do timing do useSEO.
-        const correctCanonical = `https://grupobraco.com.br${route.path === '/' ? '/' : route.path}`;
+        // Barra final obrigatória (exceto home): GitHub Pages serve /path/ a partir de
+        // /path/index.html e 301-redireciona /path (sem barra) -> /path/ — um canonical
+        // sem barra aponta pra uma URL que redireciona embora, dividindo o sinal de
+        // indexação entre as duas variantes (achado real via GSC em 30/08/2026).
+        const correctCanonical = `https://grupobraco.com.br${route.path === '/' ? '/' : route.path + '/'}`;
         html = html.replace(
           /<link rel="canonical"[^>]*>/,
           `<link rel="canonical" href="${correctCanonical}" />`,

@@ -161,7 +161,7 @@ export default function Faq() {
   useSEO({
     title: 'FAQ | Perguntas Frequentes sobre Aço para Construção | BR Aço',
     description: 'Tire todas as dúvidas sobre vergalhões, corte e dobra, treliças, normas ABNT, armazenamento e logística de aço para construção civil em Goiânia e Goiás.',
-    canonical: 'https://grupobraco.com.br/faq',
+    canonical: 'https://grupobraco.com.br/faq/',
     keywords: 'dúvidas vergalhão, faq corte e dobra, perguntas aço construção, abnt vergalhão',
   });
 

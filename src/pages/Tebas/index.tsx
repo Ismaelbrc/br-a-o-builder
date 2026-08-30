@@ -99,7 +99,7 @@ export default function TebasLanding() {
     title: 'Tebas — Pré-dimensionamento Estrutural Online Grátis | BR Aço',
     description:
       'Calcule laje, viga, pilar e sapata grátis conforme NBR 6118:2023. Pré-dimensionamento estrutural para casas e sobrados até 3 pavimentos. Resultado em segundos, sem cadastro. BR Aço Goiânia.',
-    canonical: 'https://grupobraco.com.br/tebas',
+    canonical: 'https://grupobraco.com.br/tebas/',
     keywords:
       'pré-dimensionamento estrutural, calculadora estrutural, dimensionamento laje viga pilar sapata, NBR 6118, estrutura concreto armado, anteprojeto estrutural, calcular laje, calcular pilar, calcular sapata, BR Aço Goiânia',
   });

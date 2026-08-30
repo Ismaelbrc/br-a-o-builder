@@ -90,7 +90,7 @@ export default function Sobre() {
   useSEO({
     title: 'Sobre a BR Aço | Maior Indústria de Aço de Goiás',
     description: 'Conheça a BR Aço, fundada na pandemia e consolidada como a maior indústria de corte e dobra de vergalhão de Goiás. Mais de 10 mil casas construídas com nosso aço.',
-    canonical: 'https://grupobraco.com.br/sobre',
+    canonical: 'https://grupobraco.com.br/sobre/',
     keywords: 'br aço goiânia, grupo braco, indústria de aço goiás, sobre br aço',
   });
 

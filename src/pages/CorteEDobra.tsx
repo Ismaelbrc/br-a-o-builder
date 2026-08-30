@@ -20,7 +20,7 @@ import { useSEO } from '@/hooks/useSEO';
 import { ID, ref, patch, webPageNode, breadcrumbNode, faqPageNode } from '@/lib/schema';
 import { blogPostsMeta } from '@/data/blogPostsMeta';
 
-const CDA_CANONICAL = 'https://grupobraco.com.br/corte-e-dobra';
+const CDA_CANONICAL = 'https://grupobraco.com.br/corte-e-dobra/';
 
 // ═══ HERO SECTION ═══
 const HeroSection = () => {

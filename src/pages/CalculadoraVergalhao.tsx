@@ -83,7 +83,7 @@ export default function CalculadoraVergalhao() {
   useSEO({
     title: 'Tabela de Peso do Vergalhão CA-50/CA-60 + Calculadora Grátis | BR Aço',
     description: 'Tabela completa de peso do vergalhão CA-50 e CA-60 por bitola (ABNT NBR 7480) + calculadora grátis de peso, quantidade de barras e tela soldada. Goiânia e Goiás.',
-    canonical: 'https://grupobraco.com.br/calculadora-vergalhao',
+    canonical: 'https://grupobraco.com.br/calculadora-vergalhao/',
     keywords: 'tabela de peso do vergalhão, calculadora vergalhão, peso vergalhão CA-50, calcular vergalhão laje, vergalhão kg por metro, ABNT NBR 7480',
   });
 

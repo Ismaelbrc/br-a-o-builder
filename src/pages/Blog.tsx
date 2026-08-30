@@ -65,7 +65,7 @@ export default function Blog() {
   useSEO({
     title: 'Blog BR Aço | Conteúdo Técnico sobre Aço e Construção Civil',
     description: 'Artigos técnicos sobre corte e dobra de vergalhão, normas ABNT, cálculo de aço, gestão de obra e dicas para construtores e engenheiros em Goiás.',
-    canonical: 'https://grupobraco.com.br/blog',
+    canonical: 'https://grupobraco.com.br/blog/',
   });
 
   const isSearching = searchQuery.trim().length > 0;

@@ -52,7 +52,7 @@ export default function LandingPage() {
   useSEO({
     title:       isValid ? product!.pageTitle(displayCity)               : 'BR Aço',
     description: isValid ? product!.metaDesc(displayCity, stateLabel)   : '',
-    canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : undefined,
+    canonical:   isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}/` : undefined,
     keywords:    isValid ? `${product!.name} ${cityName}, ${product!.nameFull} ${cityName}, aço construção ${cityName}` : undefined,
     noindex:     !(location?.uniqueContent && CORE_PRODUCTS.includes(productSlug)), // indexa só produto core em cidade com conteúdo único
   });
@@ -62,7 +62,7 @@ export default function LandingPage() {
   // #localbusiness a este local via areaServed — sem criar um novo LocalBusiness
   // por LP (era a causa da inconsistência de NAP em 193 URLs — ver CLAUDE.md
   // deste repo / plano de grafo de entidades).
-  const canonicalUrl = isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}` : '';
+  const canonicalUrl = isValid ? `https://grupobraco.com.br/${productSlug}/${locationSlug}/` : '';
   const productNodeId = isValid
     ? (product!.schemaKind === 'Service' ? ID.service(productSlug) : ID.product(productSlug))
     : '';
