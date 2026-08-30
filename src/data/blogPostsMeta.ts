@@ -2082,6 +2082,17 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Sol Nascente/Pôr do Sol é a RA mais nova do DF e recebeu R$ 215 milhões em obras de infraestrutura recentes. Veja como o perfil de autoconstrução da região muda a demanda por vergalhão e corte e dobra.",
     readingTime: 3,
   },
+  {
+    id: 190,
+    slug: "conversao-bitola-vergalhao-polegada-mm-tabela",
+    category: "Vergalhões",
+    title: "Bitola de Vergalhão: Tabela de Conversão Polegada ↔ mm (CA-50)",
+    metaDescription: "Tabela de conversão de bitola de vergalhão CA-50 entre polegada e milímetro (1/4\\",
+    keyword: "conversão bitola vergalhão polegada mm",
+    date: "30 Ago 2026",
+    summary: "Tabela de conversão entre polegada e milímetro para as bitolas de vergalhão CA-50 mais usadas na construção civil — a referência rápida para quem recebe orçamento em polegada e precisa conferir contra o projeto em mm, ou vice-versa.",
+    readingTime: 3,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];
