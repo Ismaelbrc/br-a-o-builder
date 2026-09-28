@@ -193,6 +193,16 @@ async function main() {
           `<link rel="canonical" href="${correctCanonical}" />`,
         );
 
+        // Links internos <a href="/rota"> -> "/rota/" no HTML estático: crawlers sem JS
+        // (inclusive de IA) seguem direto pra URL canônica em vez de passar por 301.
+        html = html.replace(/<a\s[^>]*>/g, (tag) =>
+          tag.replace(/(\shref=")(\/[^"#?]*)([#?][^"]*)?"/, (m, pre, path, rest = '') => {
+            if (path.endsWith('/') || path.startsWith('//')) return m;
+            if ((path.split('/').pop() ?? '').includes('.')) return m;
+            return `${pre}${path}/${rest}"`;
+          }),
+        );
+
         // Restaura media="print" da fonte (não-bloqueante no HTML servido;
         // o onload refaz a troca print→all no cliente).
         html = html.replace(

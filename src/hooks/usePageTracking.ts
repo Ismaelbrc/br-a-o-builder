@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { analytics } from '@/lib/analytics';
+import { withTrailingSlash } from '@/lib/trailingSlash';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // usePageTracking
@@ -81,11 +82,12 @@ export function usePageTracking() {
   const location = useLocation();
 
   useEffect(() => {
-    // Trailing slash normalizado: /corte-e-dobra/ e /corte-e-dobra são a MESMA
-    // página no GA4/Clarity (main.tsx já corrige a URL no load inicial; aqui
-    // cobrimos navegações SPA vindas de links com barra final).
-    const cleanPathname =
-      location.pathname.length > 1 ? location.pathname.replace(/\/+$/, '') : '/';
+    // Forma canônica COM barra final (igual ao canonical/sitemap). Cobre navegações
+    // SPA vindas de links sem barra; main.tsx já corrige a URL no load inicial.
+    const cleanPathname = withTrailingSlash(location.pathname);
+    if (cleanPathname !== location.pathname) {
+      window.history.replaceState(window.history.state, '', cleanPathname + location.search + location.hash);
+    }
     const path = cleanPathname + location.search;
 
     // ── 1. GA4 + Meta Pixel page view ──────────────────────────────────────
