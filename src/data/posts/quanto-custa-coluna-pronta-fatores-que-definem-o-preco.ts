@@ -6,14 +6,27 @@ const post: BlogPost = {
   id: 184,
   slug: "quanto-custa-coluna-pronta-fatores-que-definem-o-preco",
   category: "Coluna Pronta",
-  title: "Quanto Custa uma Coluna Pronta de Aço? Os Fatores que Definem o Preço",
-  metaDescription: "Entenda os fatores que definem o preço de uma coluna pronta de aço: seção, altura, taxa de armadura e amarração. Guia para orçar antes de pedir cotação.",
-  keyword: "quanto custa coluna pronta",
+  title: "Coluna Pronta em Goiânia: Preço a Partir de R$ 49,90 e o que Muda o Valor",
+  metaDescription: "Coluna pronta de aço em Goiânia a partir de R$ 49,90. Veja o que faz o preço variar (seção, altura, taxa de armadura, amarração) e como pedir orçamento.",
+  keyword: "coluna pronta preço Goiânia",
   date: "02 Ago 2026",
-  summary: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
-  content: `**Em resumo:** O preço de uma coluna pronta de aço não é um valor fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação na BR Aço, em Goiânia, não buscar um "preço por unidade" genérico.
+  summary: "Coluna pronta em Goiânia a partir de R$ 49,90. O valor final varia com seção, altura, taxa de armadura e tipo de amarração. Veja os fatores que realmente definem o orçamento antes de pedir uma cotação.",
+  content: `**Em resumo:** A coluna pronta de aço da BR Aço, em Goiânia, parte de **R$ 49,90**. O valor final não é fixo por peça — varia principalmente com a seção transversal (bitola e quantidade de vergalhões), a altura do pilar, a taxa de armadura definida em projeto e o tipo de amarração (manual ou soldada). Duas colunas de mesma altura podem ter custos bem diferentes dependendo desses fatores. Por isso, a forma correta de orçar é enviar o projeto estrutural para cotação na BR Aço, em Goiânia, não buscar um "preço por unidade" genérico.
 
 ---
+
+## Preço de Referência: Coluna Pronta a Partir de R$ 49,90
+
+A coluna pronta na BR Aço, em Goiânia, começa em **R$ 49,90**. Esse é o ponto de partida para as colunas mais simples: quanto maior a seção do pilar, a altura e a taxa de armadura do projeto, maior o valor. O preço final depende de cada projeto e é confirmado no orçamento, sem compromisso.
+
+| O que aumenta o valor | Por quê |
+|---|---|
+| Seção maior do pilar | Mais barras longitudinais e estribos maiores |
+| Altura maior | Mais comprimento de aço por coluna |
+| Taxa de armadura alta | Mais kg de aço por m³ de concreto |
+| Amarração soldada | Exige mais etapas de fabricação |
+
+Para receber o valor exato, envie o projeto estrutural pelo WhatsApp e o orçamento volta em até 24 horas.
 
 ## Por Que Não Existe um "Preço Fixo" de Coluna Pronta
 

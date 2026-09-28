@@ -745,9 +745,9 @@ export const blogPostsGeo: Record<string, GeoPost> = {
   },
 
   "quanto-custa-coluna-pronta-fatores-que-definem-o-preco": {
-    answerCapsule: "Coluna pronta não tem preço fixo por unidade — o custo varia com seção transversal, altura do pilar, taxa de armadura do projeto e tipo de amarração. A forma correta de orçar é enviar o projeto estrutural, não buscar um preço médio genérico.",
+    answerCapsule: "A coluna pronta de aço em Goiânia parte de R$ 49,90 na BR Aço. O valor final varia com seção transversal, altura do pilar, taxa de armadura do projeto e tipo de amarração. A forma correta de orçar é enviar o projeto estrutural, não buscar um preço médio genérico.",
     faqItems: [
-      { q: "Quanto custa uma coluna pronta de aço?", a: "Não existe um preço fixo por unidade — o custo depende da seção transversal do pilar, da bitola das barras, da altura, da taxa de armadura definida em projeto e do tipo de amarração. É preciso enviar o projeto estrutural para cotação real." },
+      { q: "Quanto custa uma coluna pronta de aço?", a: "Em Goiânia, a coluna pronta da BR Aço parte de R$ 49,90. O valor final depende da seção transversal do pilar, da bitola das barras, da altura, da taxa de armadura definida em projeto e do tipo de amarração. É preciso enviar o projeto estrutural para cotação real." },
       { q: "Por que colunas de mesma altura têm preços diferentes?", a: "Porque o peso de aço não depende só da altura — a seção transversal do pilar e a taxa de armadura definida pelo engenheiro (kg de aço por m³ de concreto) variam conforme a exigência estrutural de cada projeto." },
       { q: "Como estimar o custo antes de pedir orçamento?", a: "Levante a seção e a altura de cada tipo de pilar, confira a taxa de armadura do projeto estrutural e multiplique para chegar a uma estimativa de peso de aço — depois envie o projeto completo para a cotação real." },
       { q: "Qual a diferença entre coluna com corte e dobra simples e CDA?", a: "No corte e dobra simples, as peças chegam cortadas e dobradas e a amarração final é feita pela equipe da obra. No CDA (Corte, Dobra e Armação), a coluna chega pronta para concretar, já amarrada ou soldada na fábrica." },
