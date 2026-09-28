@@ -15,48 +15,82 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     slug: "o-que-e-corte-e-dobra-de-aco",
     category: "Corte e Dobra",
-    title: "Corte e Dobra de Aço para Construção Civil: Guia Completo",
-    metaDescription: "Descubra como o corte e dobra de aço funciona, quanto custa e por que reduz em até 50% o custo de mão de obra. Com exemplos reais.",
-    keyword: "corte e dobra de aço",
+    title: "O que é Corte e Dobra de Aço? Definição, Como Funciona e Norma (NBR 6118)",
+    metaDescription: "Corte e dobra de aço é o serviço que entrega vergalhão cortado e dobrado na medida do projeto. Veja como funciona, a tabela de pinos de dobra da NBR 6118 e quando compensa.",
+    keyword: "o que é corte e dobra de aço",
     date: "07 Fev 2026",
-    summary: "Entenda o que é o serviço de corte e dobra de aço, como funciona, quais as vantagens e como ele pode reduzir em até 50% o custo de mão de obra na sua construção.",
-    content: `**Em resumo:** Corte e dobra de aço é o serviço industrial que processa vergalhões conforme o projeto estrutural, entregando peças cortadas e dobradas na medida exata, prontas para armar no canteiro. Em Goiânia e Goiás, a BR Aço executa esse serviço com máquinas CNC automatizadas, reduzindo em até 50% o custo de mão de obra e eliminando o desperdício de material.
+    summary: "Definição direta de corte e dobra de aço, o passo a passo do serviço, a tabela de diâmetro de pino de dobra da NBR 6118 por bitola e as perguntas mais comuns antes de pedir orçamento.",
+    content: `**Em resumo:** Corte e dobra de aço é o serviço industrial que recebe a lista de ferros do projeto estrutural e devolve os vergalhões já cortados e dobrados na medida exata, identificados por peça e prontos para armar no canteiro. Em Goiânia e Goiás, a BR Aço executa esse serviço com máquinas CNC, com tolerância de ±2 mm, o que reduz em até 50% o custo de mão de obra de armação e praticamente elimina o desperdício de material.
 
 ---
 
 ## O que é Corte e Dobra de Aço?
 
-O corte e dobra de aço é um serviço industrial que consiste em receber o projeto estrutural de uma obra e, a partir dele, cortar e dobrar vergalhões de aço nas medidas exatas especificadas pelo engenheiro calculista. O resultado são peças prontas para armar, identificadas por tipo e etapa da obra, entregues diretamente no canteiro.
+Corte e dobra de aço é o processamento industrial do vergalhão de construção (CA-50 e CA-60, conforme a NBR 7480) para que cada barra saia da fábrica com o comprimento e as dobras que o engenheiro calculista especificou. Em vez de comprar barras retas de 12 metros e cortar e dobrar à mão no canteiro, a obra recebe as peças prontas: estribos, ganchos, barras em "L" e em "U", cada uma etiquetada por posição e etapa.
 
-Diferente do método tradicional — onde armadores cortam e dobram manualmente no canteiro — o corte e dobra industrial utiliza máquinas automatizadas de alta precisão, eliminando desperdício e reduzindo drasticamente o tempo de execução.
+O serviço nasce de um documento: a **lista de ferros** (também chamada de planilha de ferro ou romaneio), que faz parte do projeto estrutural e traz, para cada posição, a bitola, o comprimento, o formato da dobra e a quantidade.
 
-## Como Funciona o Processo?
+## Como Funciona, Passo a Passo
 
-O processo de corte e dobra é simples e pode ser dividido em três etapas fundamentais:
+1. **Envio do projeto.** O cliente manda a planta estrutural ou a lista de ferros, por WhatsApp, e-mail ou presencialmente.
+2. **Quantitativo e orçamento.** A equipe técnica confere as posições, quantifica o aço por bitola e devolve o orçamento. É nessa etapa que aparecem otimizações de corte que reduzem o consumo.
+3. **Corte e dobra em máquina CNC.** As barras são cortadas e dobradas com comando numérico. O diâmetro do pino de dobra da máquina é ajustado para cada bitola antes de iniciar o lote.
+4. **Etiquetagem e entrega.** As peças saem identificadas por posição, agrupadas por etapa da obra, e são entregues no canteiro.
 
-### Etapa 1 — Envio do projeto
-O cliente envia a planta estrutural ou a lista de materiais (planilha de ferro) para a equipe técnica da indústria. Isso pode ser feito por WhatsApp, e-mail ou presencialmente.
+## Dobra de Vergalhão: o que a NBR 6118 Exige
 
-### Etapa 2 — Análise e orçamento
-Engenheiros analisam o projeto, quantificam os materiais necessários e elaboram um orçamento detalhado. Nessa etapa, é possível identificar otimizações que reduzem ainda mais o consumo de aço.
+A dobra não pode ser feita em qualquer curvatura. Uma barra dobrada em pino pequeno demais pode fissurar o aço no ponto de dobra e comprometer a ancoragem. Por isso a NBR 6118 (Tabela 9.1) define o **diâmetro mínimo do pino de dobramento** como múltiplo do diâmetro da barra (φ):
 
-### Etapa 3 — Produção e entrega
-Após aprovação, o aço é cortado e dobrado em máquinas CNC (Comando Numérico Computadorizado) com precisão milimétrica. As peças são identificadas com etiquetas, organizadas por etapa da obra e entregues no canteiro.
+| Bitola da barra | CA-25 | CA-50 | CA-60 |
+|---|---|---|---|
+| φ < 20 mm | 4 φ | 5 φ | 6 φ |
+| φ ≥ 20 mm | 5 φ | 8 φ | — |
 
-## Vantagens do Corte e Dobra
+Na prática, para as bitolas mais usadas em CA-50, o pino mínimo é:
 
-A adoção do corte e dobra de aço traz benefícios mensuráveis para qualquer obra:
+| Bitola CA-50 | Diâmetro mínimo do pino |
+|---|---|
+| 6,3 mm | 31,5 mm |
+| 8,0 mm | 40 mm |
+| 10,0 mm | 50 mm |
+| 12,5 mm | 62,5 mm |
+| 16,0 mm | 80 mm |
+| 20,0 mm | 160 mm |
+| 25,0 mm | 200 mm |
 
-- **Economia em mão de obra** pode chegar a 50%, já que não é necessário manter equipes de armadores realizando cortes manuais no canteiro
-- **Desperdício de material praticamente eliminado**, já que cada peça é cortada na medida exata do projeto, sem sobras e sem pontas
-- **Produtividade aumenta significativamente**, pois o aço chega pronto para ser montado, acelerando o cronograma
-- **Canteiro de obras mais organizado e seguro**, sem bancadas de corte, sem entulho de aço e sem riscos de acidentes com equipamentos cortantes
+Na máquina CNC esse valor é ajustado por bitola. Na dobra manual com chave de canteiro, ele depende do armador e costuma ser menor do que o exigido, principalmente em barras de 16 mm ou mais. Esse é um dos motivos técnicos para preferir a dobra industrial.
 
-## Quando Vale a Pena Contratar Corte e Dobra?
+## Vantagens do Corte e Dobra Industrial
 
-O serviço é vantajoso para praticamente qualquer tipo de obra que utilize armaduras de aço, desde uma casa residencial até grandes empreendimentos. Obras com grande volume de aço têm economia de escala ainda maior. Porém, mesmo em obras menores, a redução de desperdício e mão de obra já justifica o investimento.
+- **Menos mão de obra de armação.** A economia pode chegar a 50%, já que não é preciso manter equipe cortando e dobrando no canteiro.
+- **Menos desperdício.** O corte é feito na medida do projeto. O corte manual costuma gerar de 3% a 8% de perda em pontas e sobras.
+- **Mais rapidez.** O aço chega pronto para montar, o que encurta o cronograma da estrutura.
+- **Obra mais limpa e segura.** Sem bancada de corte, sem entulho de aço e sem policorte no canteiro.
+- **Conformidade com a norma.** O pino de dobra e o comprimento das peças seguem o projeto, com etiqueta de rastreio por posição.
 
-A BR Aço realiza o serviço de corte e dobra com tecnologia 100% automatizada, entrega em até 7 dias úteis e parcelamento em até 10x no cartão. Solicite seu orçamento e descubra quanto você pode economizar.`
+## Corte e Dobra, Coluna Pronta e CDA: Qual a Diferença?
+
+- **Corte e dobra:** entrega as barras cortadas e dobradas, e a obra monta a armadura.
+- **Coluna pronta:** a armadura do pilar já vem montada, com barras longitudinais e estribos posicionados. Veja [o que é coluna pronta](/blog/o-que-e-coluna-pronta-armadura-pilar).
+- **CDA (corte, dobra e armação):** o serviço completo, com a armadura montada para vários elementos.
+
+## Quando Vale a Pena Contratar?
+
+Vale para praticamente qualquer obra com projeto estrutural, de casa a empreendimento. Em obras muito pequenas ou com pouco aço, a conta pode não fechar. Veja o comparativo em [corte e dobra compensa?](/blog/corte-e-dobra-compensa-vs-comprar-vergalhao-dobrado) e a faixa de preço em [custo de corte e dobra em Goiânia](/blog/custo-corte-e-dobra-goiania-preco-2026).
+
+## Perguntas Frequentes
+
+**O que é lista de ferros e por que o corte e dobra depende dela?**
+É a tabela do projeto estrutural com bitola, comprimento, formato e quantidade de cada barra. A fábrica produz exatamente o que está nela, por isso quanto mais completa a lista, mais rápido sai o orçamento.
+
+**Corte e dobra serve só para obra grande?**
+Não. Obras grandes têm mais economia de escala, mas a redução de desperdício e de mão de obra já compensa em muitas obras residenciais.
+
+**Preciso ter o projeto pronto para pedir orçamento?**
+Sim, o ideal é enviar o projeto estrutural ou a lista de ferros. Sem ele, só é possível uma estimativa por consumo médio de aço.
+
+**Como pedir orçamento na BR Aço?**
+Envie a planta ou a lista de ferros pelo WhatsApp e a equipe devolve o orçamento em até 24 horas, com atendimento em Goiânia, Aparecida de Goiânia e região.`
   },
   {
     id: 2,
@@ -11236,23 +11270,24 @@ Quando um vergalhão é dobrado com raio insuficiente, três problemas surgem:
 2. **Esmagamento do concreto no interior da curva**: a força que o aço transfere para o concreto no ponto de curvatura é inversamente proporcional ao raio
 3. **Ancoragem ineficiente**: a norma assume que o gancho padrão garante comprimento de ancoragem equivalente — se o raio for menor, essa equivalência não vale
 
-## Tabela de Raio Mínimo de Dobra (NBR 6118 — Tabela 9.1)
+## Tabela de Diâmetro Mínimo do Pino de Dobra (NBR 6118 — Tabela 9.1)
 
-| Diâmetro da barra (φ) | Raio mínimo CA-50 | Raio mínimo CA-60 |
-|-----------------------|-------------------|-------------------|
-| φ ≤ 20 mm | 3,5 φ | 5,0 φ |
-| φ > 20 mm | 5,0 φ | 7,0 φ |
-| CA-25 (qualquer) | 2,5 φ | — |
+A norma define o diâmetro do pino de dobramento como múltiplo do diâmetro da barra (φ). O raio interno da curva é metade desse valor.
 
-**Exemplos práticos:**
+| Bitola da barra | CA-25 | CA-50 | CA-60 |
+|-----------------|-------|-------|-------|
+| φ < 20 mm | 4 φ | 5 φ | 6 φ |
+| φ ≥ 20 mm | 5 φ | 8 φ | — |
 
-| Barra | Grau | Raio mínimo | Mandril mínimo |
-|-------|------|-------------|----------------|
-| ø8,0 mm | CA-50 | 28 mm | 56 mm |
-| ø12,5 mm | CA-50 | 43,75 mm | 87,5 mm |
-| ø16,0 mm | CA-50 | 56 mm | 112 mm |
-| ø20,0 mm | CA-50 | 70 mm | 140 mm |
-| ø25,0 mm | CA-50 | 125 mm | 250 mm |
+**Exemplos práticos (CA-50):**
+
+| Barra | Diâmetro mínimo do pino | Raio interno mínimo |
+|-------|-------------------------|---------------------|
+| ø8,0 mm | 40 mm | 20 mm |
+| ø12,5 mm | 62,5 mm | 31,25 mm |
+| ø16,0 mm | 80 mm | 40 mm |
+| ø20,0 mm | 160 mm | 80 mm |
+| ø25,0 mm | 200 mm | 100 mm |
 
 ## Comprimento de Desenvolvimento — Tabela CA-50/C30
 
@@ -11267,7 +11302,7 @@ Quando um vergalhão é dobrado com raio insuficiente, três problemas surgem:
 
 ## O Erro Mais Comum nos Canteiros
 
-O erro mais frequente é a dobra com mandril de diâmetro insuficiente. Para um vergalhão ø16 mm CA-50, o mandril mínimo é de 112 mm (11 cm). Uma chave de dobra caseira tipicamente usa mandris de 30–40 mm — menos de 40% do mínimo normativo.
+O erro mais frequente é a dobra com mandril de diâmetro insuficiente. Para um vergalhão ø16 mm CA-50, o pino mínimo é de 80 mm (8 cm). Uma chave de dobra caseira tipicamente usa pinos de 30–40 mm — menos da metade do mínimo normativo.
 
 Mesmo que a barra chegue ao projeto em dimensão correta, a ancoragem pode ser ineficiente. O gancho não equivale ao comprimento necessário, e o elemento pode perder resistência de até 25%.
 

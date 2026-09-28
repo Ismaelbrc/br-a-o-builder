@@ -23,23 +23,24 @@ Quando um vergalhão é dobrado com raio insuficiente, três problemas surgem:
 2. **Esmagamento do concreto no interior da curva**: a força que o aço transfere para o concreto no ponto de curvatura é inversamente proporcional ao raio
 3. **Ancoragem ineficiente**: a norma assume que o gancho padrão garante comprimento de ancoragem equivalente — se o raio for menor, essa equivalência não vale
 
-## Tabela de Raio Mínimo de Dobra (NBR 6118 — Tabela 9.1)
+## Tabela de Diâmetro Mínimo do Pino de Dobra (NBR 6118 — Tabela 9.1)
 
-| Diâmetro da barra (φ) | Raio mínimo CA-50 | Raio mínimo CA-60 |
-|-----------------------|-------------------|-------------------|
-| φ ≤ 20 mm | 3,5 φ | 5,0 φ |
-| φ > 20 mm | 5,0 φ | 7,0 φ |
-| CA-25 (qualquer) | 2,5 φ | — |
+A norma define o diâmetro do pino de dobramento como múltiplo do diâmetro da barra (φ). O raio interno da curva é metade desse valor.
 
-**Exemplos práticos:**
+| Bitola da barra | CA-25 | CA-50 | CA-60 |
+|-----------------|-------|-------|-------|
+| φ < 20 mm | 4 φ | 5 φ | 6 φ |
+| φ ≥ 20 mm | 5 φ | 8 φ | — |
 
-| Barra | Grau | Raio mínimo | Mandril mínimo |
-|-------|------|-------------|----------------|
-| ø8,0 mm | CA-50 | 28 mm | 56 mm |
-| ø12,5 mm | CA-50 | 43,75 mm | 87,5 mm |
-| ø16,0 mm | CA-50 | 56 mm | 112 mm |
-| ø20,0 mm | CA-50 | 70 mm | 140 mm |
-| ø25,0 mm | CA-50 | 125 mm | 250 mm |
+**Exemplos práticos (CA-50):**
+
+| Barra | Diâmetro mínimo do pino | Raio interno mínimo |
+|-------|-------------------------|---------------------|
+| ø8,0 mm | 40 mm | 20 mm |
+| ø12,5 mm | 62,5 mm | 31,25 mm |
+| ø16,0 mm | 80 mm | 40 mm |
+| ø20,0 mm | 160 mm | 80 mm |
+| ø25,0 mm | 200 mm | 100 mm |
 
 ## Comprimento de Desenvolvimento — Tabela CA-50/C30
 
@@ -54,7 +55,7 @@ Quando um vergalhão é dobrado com raio insuficiente, três problemas surgem:
 
 ## O Erro Mais Comum nos Canteiros
 
-O erro mais frequente é a dobra com mandril de diâmetro insuficiente. Para um vergalhão ø16 mm CA-50, o mandril mínimo é de 112 mm (11 cm). Uma chave de dobra caseira tipicamente usa mandris de 30–40 mm — menos de 40% do mínimo normativo.
+O erro mais frequente é a dobra com mandril de diâmetro insuficiente. Para um vergalhão ø16 mm CA-50, o pino mínimo é de 80 mm (8 cm). Uma chave de dobra caseira tipicamente usa pinos de 30–40 mm — menos da metade do mínimo normativo.
 
 Mesmo que a barra chegue ao projeto em dimensão correta, a ancoragem pode ser ineficiente. O gancho não equivale ao comprimento necessário, e o elemento pode perder resistência de até 25%.
 
