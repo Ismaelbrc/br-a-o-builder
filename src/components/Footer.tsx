@@ -131,7 +131,16 @@ export default function Footer() {
                   onClick={() => setTimeout(() => analytics.whatsappClick('footer'), 0)}
                 >
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>WhatsApp: (62) 9903-2023</span>
+                  <span>WhatsApp: <span className="whitespace-nowrap">(62) 9903-2023</span></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+5562999247285"
+                  className="flex items-start gap-3 text-muted-foreground text-sm hover:text-foreground transition-colors"
+                >
+                  <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>Comercial: <span className="whitespace-nowrap">(62) 99924-7285</span></span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
