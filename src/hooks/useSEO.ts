@@ -23,7 +23,7 @@ export function useSEO({
   description,
   canonical,
   ogType = 'website',
-  ogImage = 'https://grupobraco.com.br/og-social.jpg',
+  ogImage = 'https://grupobraco.com.br/brand/og-share.jpg',
   publishedTime,
   modifiedTime,
   author = 'BR Aço',

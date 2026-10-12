@@ -80,7 +80,7 @@ function organizationNode() {
     description:
       'Indústria goiana especializada em corte e dobra de vergalhão, vergalhões CA-25/CA-50/CA-60, treliças, telas soldadas e malhas para construção civil. Atende GO e DF com entrega em obra.',
     url: SITE,
-    logo: { '@type': 'ImageObject', url: `${SITE}/logo-braco.png`, width: 1920, height: 440 },
+    logo: { '@type': 'ImageObject', url: `${SITE}/brand/logo-emblema-512.png`, width: 512, height: 512 },
     foundingLocation: { '@type': 'Place', name: 'Goiânia, Goiás, Brasil' },
     areaServed: ['Goiás', 'Distrito Federal'],
     sameAs: [

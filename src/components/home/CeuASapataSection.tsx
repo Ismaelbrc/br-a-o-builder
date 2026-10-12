@@ -187,7 +187,7 @@ const CeuASapataSection = () => {
         />
 
         <span className="absolute z-[2] top-[116px] lg:top-[150px] left-5 lg:left-[max(40px,calc((100vw-80rem)/2+24px))] text-white text-xs font-semibold tracking-wide rounded-full border border-white/20 bg-[#00142D]/50 backdrop-blur px-3 py-1.5">
-          Obra do Hotel Nacional · Brasília · jul/2026
+          Obra do Hotel Nacional · Brasília
         </span>
 
         <h2 id="ceu-a-sapata-titulo" className="sr-only">

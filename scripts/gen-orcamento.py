@@ -206,7 +206,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta property="og:title" content="Orçamento Nº @@ID@@ — BR Aço">
 <meta property="og:description" content="Sua proposta comercial BR Aço está pronta. Toque para visualizar.">
 <meta property="og:url" content="https://grupobraco.com.br/orcamentos/@@ID@@/">
-<meta property="og:image" content="https://grupobraco.com.br/og-social.jpg">
+<meta property="og:image" content="https://grupobraco.com.br/brand/og-share.jpg">
 <link rel="icon" href="https://grupobraco.com.br/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
