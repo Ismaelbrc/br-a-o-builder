@@ -10,7 +10,7 @@ import { getCategoryImage } from '@/lib/categoryImages';
 const latestPosts = [...blogPostsMeta].sort((a, b) => b.id - a.id).slice(0, 3);
 
 const CATEGORY_ACCENT: Record<string, string> = {
-  'Corte e Dobra':   '#F97316',
+  'Corte e Dobra':   '#006B3C',
   'Vergalhões':      '#2563EB',
   'Dicas Técnicas':  '#16A34A',
   'Normas ABNT':     '#9333EA',
@@ -26,7 +26,7 @@ const CATEGORY_ACCENT: Record<string, string> = {
 };
 
 function accent(category: string): string {
-  return CATEGORY_ACCENT[category] ?? '#F97316';
+  return CATEGORY_ACCENT[category] ?? '#006B3C';
 }
 
 const BlogPreviewSection = () => {

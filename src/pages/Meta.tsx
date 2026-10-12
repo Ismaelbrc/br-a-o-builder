@@ -50,7 +50,7 @@ export default function Meta() {
       fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
     }}>
       <div style={{ padding: '2rem', maxWidth: 360 }}>
-        <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#F97316', letterSpacing: 1, marginBottom: '2rem' }}>
+        <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#006B3C', letterSpacing: 1, marginBottom: '2rem' }}>
           BR AÇO
         </div>
 

@@ -1,7 +1,8 @@
 ﻿import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, User, ChevronDown, Star, Calculator } from 'lucide-react';
-import logoImage from '@/assets/logo-braco.png';
+// Logo oficial (marca 2026, mesma da LP /instagram): verde, ouro e azul com as 3 listras
+const logoImage = '/brand/logo-br-aco.svg';
 import { analytics } from '@/lib/analytics';
 
 const productLinks = [
@@ -79,10 +80,10 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÇO - Seus projetos na velocidade máxima"
-                className="h-16 w-auto"
-                width="1920"
-                height="440"
+                alt="BR Aço"
+                className="h-11 w-auto"
+                width="1480"
+                height="290"
                 {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
               />
             </Link>
@@ -206,10 +207,10 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img
                 src={logoImage}
-                alt="BR.AÇO - Seus projetos na velocidade máxima"
-                className="h-10 w-auto"
-                width="1920"
-                height="440"
+                alt="BR Aço"
+                className="h-8 w-auto"
+                width="1480"
+                height="290"
                 {...({ fetchpriority: 'high' } as React.ImgHTMLAttributes<HTMLImageElement>)}
               />
             </Link>

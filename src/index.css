@@ -6,15 +6,17 @@
 
 @layer base {
   :root {
-    /* ── BR Aço — Engineering Precision palette ──────────────────────────── */
-    /* Laranja da marca (mantido) + ember para hover/detalhe de precisão */
-    --brand-orange: 24 90% 54%;
-    --brand-orange-hover: 24 79% 47%;
-    --brand-ember: 18 78% 42%;
+    /* ── BR Aço — marca 2026 (Manual Resumido; mesma da LP /instagram) ───── */
+    /* Os nomes "brand-orange"/"brand-navy" foram mantidos para não tocar em
+       ~400 classes; os valores agora são Amarelo Ouro e Azul Profundo. */
+    --brand-orange: 45 96% 48%;        /* Amarelo Ouro #F2B705 (preenchimentos) */
+    --brand-orange-hover: 45 96% 42%;
+    --brand-ember: 42 90% 36%;
+    --brand-verde: 154 100% 21%;       /* Verde Casa #006B3C (destaque sobre fundo claro) */
+    --brand-ink: 225 14% 10%;          /* tinta #14161C (texto sobre o ouro) */
 
-    /* Aço profundo — tinta e navy mais ricos e ligeiramente quentes */
-    --brand-navy: 218 42% 17%;
-    --brand-navy-dark: 220 44% 11%;
+    --brand-navy: 212 100% 18%;        /* Azul Profundo #002B5C */
+    --brand-navy-dark: 213 100% 13%;
 
     /* Neutros de concreto quentes (migrados do azul frio p/ hue ~30) */
     --brand-gray-dark: 30 8% 18%;
@@ -35,16 +37,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 24% 12%;
 
-    --primary: 24 90% 54%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 96% 48%;
+    --primary-foreground: 225 14% 10%;
 
     --secondary: 36 24% 96%;
-    --secondary-foreground: 218 42% 17%;
+    --secondary-foreground: 212 100% 18%;
 
     --muted: 36 20% 95%;
     --muted-foreground: 30 6% 42%;
 
-    --accent: 218 42% 17%;
+    --accent: 212 100% 18%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -54,7 +56,7 @@
     --hairline: 30 12% 86%;
     --border: 30 14% 89%;
     --input: 30 14% 89%;
-    --ring: 24 90% 54%;
+    --ring: 45 96% 48%;
 
     --radius: 0.5rem;
 
@@ -78,10 +80,10 @@
     --popover: 218 42% 17%;
     --popover-foreground: 38 33% 98%;
 
-    --primary: 24 90% 54%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 96% 48%;
+    --primary-foreground: 225 14% 10%;
 
-    --secondary: 218 30% 20%;
+    --secondary: 212 60% 20%;
     --secondary-foreground: 38 33% 98%;
 
     --muted: 218 30% 20%;
@@ -96,7 +98,7 @@
     --hairline: 218 24% 26%;
     --border: 218 24% 24%;
     --input: 218 24% 24%;
-    --ring: 24 90% 54%;
+    --ring: 45 96% 48%;
   }
 }
 
@@ -193,11 +195,11 @@
   .bg-metal {
     background-image:
       linear-gradient(135deg,
-        hsl(220 44% 13%) 0%,
-        hsl(218 42% 17%) 38%,
-        hsl(218 38% 22%) 50%,
-        hsl(218 42% 17%) 62%,
-        hsl(220 44% 13%) 100%);
+        hsl(213 100% 11%) 0%,
+        hsl(212 100% 18%) 38%,
+        hsl(212 70% 24%) 50%,
+        hsl(212 100% 18%) 62%,
+        hsl(213 100% 11%) 100%);
   }
 }
 
@@ -281,3 +283,24 @@
     transform: none !important;
   }
 }
+
+/* ── Marca 2026: legibilidade do Amarelo Ouro ─────────────────────────────
+   Mesma regra da LP /instagram: ouro é preenchimento (com texto escuro) e
+   destaque sobre fundo escuro; sobre fundo claro o destaque é o Verde Casa.
+   Fica fora de @layer para vencer os utilitários do Tailwind. */
+.bg-brand-orange.text-white,
+.bg-primary.text-white,
+.bg-brand-orange .text-white:not(.text-keep-white),
+[class~="hover:bg-brand-orange"][class~="hover:text-white"]:hover,
+[class~="hover:bg-primary"][class~="hover:text-white"]:hover,
+[class~="group-hover:bg-brand-orange"] { color: hsl(var(--brand-ink)); }
+
+.text-brand-orange,
+.text-primary,
+.hover\:text-brand-orange:hover,
+.hover\:text-primary:hover,
+.group:hover .group-hover\:text-brand-orange { color: hsl(var(--brand-verde)); }
+
+:is(.bg-brand-navy, .bg-brand-navy-dark, .bg-metal, .bg-accent, .bg-black, .bg-foreground, .dark, [data-tone="dark"])
+  :is(.text-brand-orange, .text-primary, .hover\:text-brand-orange:hover, .hover\:text-primary:hover),
+:is(.bg-brand-navy, .bg-brand-navy-dark, .bg-metal, .bg-accent, .bg-black).text-brand-orange { color: hsl(var(--brand-orange)); }

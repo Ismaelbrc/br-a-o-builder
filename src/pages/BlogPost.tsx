@@ -139,7 +139,7 @@ function renderContent(content: string) {
         );
       case 'blockquote':
         return (
-          <blockquote key={idx} className="border-l-4 border-brand-orange bg-orange-50 px-5 py-3 my-5 rounded-r-lg text-brand-gray-medium italic"
+          <blockquote key={idx} className="border-l-4 border-brand-orange bg-amber-50 px-5 py-3 my-5 rounded-r-lg text-brand-gray-medium italic"
             dangerouslySetInnerHTML={{ __html: block.html }} />
         );
       case 'ul':

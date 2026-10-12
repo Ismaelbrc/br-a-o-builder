@@ -2,7 +2,7 @@
 // Único, marcante e leve (SVG vetorial, zero peso de imagem).
 // Preenche o container pai (que deve ser position:relative + aspect + overflow-hidden).
 
-const ORANGE = '#F2740F';
+const ORANGE = '#F2B705'; // Amarelo Ouro (marca 2026)
 const MONO = 'ui-monospace, SFMono-Regular, Menlo, monospace';
 
 const dimText = (x: number, y: number, t: string, anchor: 'start' | 'middle' | 'end' = 'middle') => (

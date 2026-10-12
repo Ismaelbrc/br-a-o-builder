@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Instagram, Linkedin, Youtube } from 'lucide-react';
-import logoImage from '@/assets/logo-footer.png';
+const logoImage = '/brand/logo-br-aco.svg';
 import { analytics } from '@/lib/analytics';
 
 const navigationLinks = [
@@ -41,10 +41,10 @@ export default function Footer() {
             <Link to="/" className="inline-block">
               <img
                 src={logoImage}
-                alt="BR.AÇO - Seus projetos na velocidade máxima"
-                className="h-16 w-auto"
-                width="1920"
-                height="440"
+                alt="BR Aço"
+                className="h-10 w-auto"
+                width="1480"
+                height="290"
                 loading="lazy"
               />
             </Link>

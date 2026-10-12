@@ -15,7 +15,7 @@ export function PageLoader() {
       <div className="flex-1 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <div
-            className="w-8 h-8 border-2 border-[#e85d04] border-t-transparent rounded-full animate-spin"
+            className="w-8 h-8 border-2 border-[#F2B705] border-t-transparent rounded-full animate-spin"
             aria-label="Carregando…"
           />
           <span className="text-sm text-gray-500">Carregando…</span>

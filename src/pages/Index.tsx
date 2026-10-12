@@ -16,6 +16,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CtaBannerSection from '@/components/home/CtaBannerSection';
 import BlogPreviewSection from '@/components/home/BlogPreviewSection';
 import PartnersSection from '@/components/home/PartnersSection';
+import CeuASapataSection from '@/components/home/CeuASapataSection';
 
 
 const handleWhatsApp = (source: string) => {
@@ -169,6 +170,9 @@ const Index = () => {
         </div>
 
       </section>
+
+      {/* Do céu à sapata — obra do Hotel Nacional, controlada pela rolagem */}
+      <CeuASapataSection />
 
       {/* Diferenciais Section */}
       <DifferentialsSection />

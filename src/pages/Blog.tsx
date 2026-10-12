@@ -10,7 +10,7 @@ import { getCategoryImage } from '@/lib/categoryImages';
 const POSTS_PER_PAGE = 12;
 
 const CATEGORY_ACCENT: Record<string, string> = {
-  'Corte e Dobra':   '#F97316',
+  'Corte e Dobra':   '#006B3C',
   'Vergalhões':      '#2563EB',
   'Dicas Técnicas':  '#16A34A',
   'Normas ABNT':     '#9333EA',
@@ -26,7 +26,7 @@ const CATEGORY_ACCENT: Record<string, string> = {
 };
 
 function accent(category: string): string {
-  return CATEGORY_ACCENT[category] ?? '#F97316';
+  return CATEGORY_ACCENT[category] ?? '#006B3C';
 }
 
 function normalize(str: string): string {
@@ -314,7 +314,7 @@ export default function Blog() {
 
 // ── Shared post card component ────────────────────────────────────────────────
 function PostCard({ post }: { post: typeof blogPostsMeta[0] }) {
-  const col = CATEGORY_ACCENT[post.category] ?? '#F97316';
+  const col = CATEGORY_ACCENT[post.category] ?? '#006B3C';
   return (
     <Link
       to={`/blog/${post.slug}`}
