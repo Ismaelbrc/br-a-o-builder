@@ -56,6 +56,7 @@ const Contato             = lazyWithRetry(() => import('./pages/Contato'));
 const Cliente             = lazyWithRetry(() => import('./pages/Cliente'));
 const Galeria             = lazyWithRetry(() => import('./pages/Galeria'));
 const Faq                 = lazyWithRetry(() => import('./pages/Faq'));
+const Catalogo            = lazyWithRetry(() => import('./pages/Catalogo'));
 const CalculadoraVergalhao = lazyWithRetry(() => import('./pages/CalculadoraVergalhao'));
 const LandingPage         = lazyWithRetry(() => import('./pages/LandingPage'));
 const Meta                = lazyWithRetry(() => import('./pages/Meta'));
@@ -129,6 +130,7 @@ function AppRoutes() {
           <Route path="/proposta-rede-construcao" element={<PropostaRedeConstrucao />} />
           <Route path="/visao-computacional-fabrica" element={<VisaoComputacionalFabrica />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/calculadora-vergalhao" element={<CalculadoraVergalhao />} />
           {/* Tracking / redirect pages */}
           <Route path="/meta" element={<Meta />} />

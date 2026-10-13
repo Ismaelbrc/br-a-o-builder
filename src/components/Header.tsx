@@ -23,7 +23,7 @@ const navLinks = [
   { name: 'Cases', href: '/cases' },
   { name: 'Blog', href: '/blog' },
   { name: 'Calculadora', href: '/calculadora-vergalhao', isCalculator: true },
-  { name: 'Catálogo', href: '/catalogo-braco.pdf', isExternal: true },
+  { name: 'Catálogo', href: '/catalogo' },
 ];
 
 export default function Header() {
