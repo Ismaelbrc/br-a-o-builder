@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight, ArrowDown, Download, X, Truck, ShieldCheck, Ruler, Recycle, Wrench, Tag, Users, Clock,
-  CircleDollarSign, CalendarCheck, Award, Trash2, HardHat, MapPin, Check,
+  CircleDollarSign, CalendarCheck, Award, Trash2, HardHat, MapPin, Check, Calculator, Info,
 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import Reveal from '@/components/Reveal';
@@ -207,6 +207,11 @@ function FichaProduto({ p }: { p: Produto }) {
           </ul>
         )}
         {p.nota && <p className="mt-3 text-sm font-semibold text-[#006B3C]">{p.nota}</p>}
+        {p.uso !== 'fixacao' && (
+          <Link to="/calculadora-vergalhao" className="mt-4 inline-flex items-center gap-2 self-start text-sm font-semibold text-[#002B5C] underline decoration-[#F2B705] decoration-2 underline-offset-4 hover:text-[#006B3C]">
+            <Calculator className="w-4 h-4" /> Estimar o quantitativo na calculadora
+          </Link>
+        )}
         <button
           type="button"
           onClick={() => orcar(`catalogo-${p.id}`, p.nome.toLowerCase())}
@@ -432,6 +437,34 @@ const Catalogo = () => {
               </span>
             ))}
           </p>
+        </div>
+      </section>
+
+      {/* ── Calculadora (apoio ao quantitativo) ─────────────────── */}
+      <section className="py-12 md:py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6">
+            <div className="relative overflow-hidden rounded-3xl bg-[#002B5C] text-white p-6 sm:p-10 grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-center">
+              <div className="absolute inset-0 bg-blueprint opacity-[0.07] pointer-events-none" aria-hidden="true" />
+              <span className="relative grid place-items-center w-16 h-16 rounded-2xl bg-[#F2B705] text-[#002B5C] shadow-lg">
+                <Calculator className="w-8 h-8" />
+              </span>
+              <div className="relative">
+                <p className="text-[#F2B705] font-extrabold text-xs tracking-[.16em] uppercase">Ferramenta grátis</p>
+                <h2 className="font-display font-bold text-[clamp(24px,3.4vw,36px)] leading-[1.05] mt-1.5">Calculadora de vergalhão</h2>
+                <p className="text-white/80 mt-2 max-w-2xl">
+                  Ajuda a estimar o quantitativo de aço da sua obra: peso por bitola, quantidade de barras e tela soldada para laje, pilar ou viga, em CA-50 e CA-60.
+                </p>
+                <p className="mt-4 flex items-start gap-2 rounded-xl bg-white/[.08] border border-white/15 px-4 py-3 text-sm text-white/85 max-w-2xl">
+                  <Info className="w-4 h-4 mt-0.5 shrink-0 text-[#F2B705]" />
+                  <span>
+                    <strong className="text-white">É uma estimativa para planejamento.</strong> O quantitativo definitivo é responsabilidade do engenheiro responsável pelo projeto estrutural. Com o projeto em mãos, a BR Aço faz o levantamento completo gratuitamente.
+                  </span>
+                </p>
+              </div>
+              <Link to="/calculadora-vergalhao" className="relative inline-flex items-center justify-center gap-2 rounded-xl bg-[#F2B705] hover:brightness-105 text-[#14161C] font-bold px-6 py-4 transition whitespace-nowrap">
+                Abrir calculadora <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
         </div>
       </section>
 
