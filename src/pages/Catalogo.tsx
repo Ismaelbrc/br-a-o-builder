@@ -255,12 +255,14 @@ const Catalogo = () => {
         @keyframes cat-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
         @keyframes cat-sweep { from { transform: scaleX(0); } to { transform: scaleX(1); } }
         .cat-float { animation: cat-float 6s ease-in-out infinite; }
+        @keyframes cat-float-sm { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+        .cat-float-sm { animation: cat-float-sm 5s ease-in-out infinite; }
         .cat-marquee { animation: cat-marquee 38s linear infinite; }
         .cat-marquee:hover { animation-play-state: paused; }
         .cat-sweep i { transform-origin: left; animation: cat-sweep .9s cubic-bezier(.22,1,.36,1) both; }
         .cat-sweep i:nth-child(2) { animation-delay: .12s; } .cat-sweep i:nth-child(3) { animation-delay: .24s; }
         .cat-card:hover .cat-img { transform: scale(1.06) rotate(-1deg); }
-        @media (prefers-reduced-motion: reduce) { .cat-float, .cat-marquee, .cat-sweep i { animation: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .cat-float, .cat-float-sm, .cat-marquee, .cat-sweep i { animation: none !important; } }
       `}</style>
 
       {/* ── Abertura ─────────────────────────────────────────────── */}
@@ -292,17 +294,37 @@ const Catalogo = () => {
             </div>
           </div>
 
-          {/* produtos flutuando */}
-          <div className="relative h-[320px] sm:h-[420px] lg:h-[520px]" aria-hidden="true">
+          {/* celular e tablet: grade 2x2 organizada (a colagem solta se sobrepunha em telas estreitas) */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full max-w-md mx-auto lg:hidden" aria-hidden="true">
             {[
-              { id: 'colunas', c: 'left-[4%] top-[6%] w-[46%]', r: '-4deg', d: '0s' },
-              { id: 'vergalhoes', c: 'right-[2%] top-[0%] w-[42%]', r: '5deg', d: '-2s' },
-              { id: 'estacas', c: 'left-[18%] bottom-[2%] w-[48%]', r: '3deg', d: '-4s' },
-              { id: 'trelicas', c: 'right-[0%] bottom-[10%] w-[36%]', r: '-6deg', d: '-1s' },
+              { id: 'colunas', nome: 'Colunas' },
+              { id: 'vergalhoes', nome: 'Vergalhões' },
+              { id: 'estacas', nome: 'Estacas' },
+              { id: 'trelicas', nome: 'Treliças' },
+            ].map((f, i) => (
+              <div key={f.id} className="cat-float-sm" style={{ animationDelay: `${-i * 1.3}s` }}>
+                <div className="rounded-2xl bg-white p-2 shadow-[0_20px_40px_-18px_rgba(0,0,0,.6)] ring-1 ring-white/20">
+                  <img src={`${IMG}/${f.id}.webp`} alt="" width={720} height={720} className="w-full aspect-square object-contain rounded-xl" />
+                  <p className="text-center text-[13px] font-bold text-[#002B5C] pt-1.5 pb-0.5">{f.nome}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* desktop: grade 2x2 inclinada, sem sobreposição */}
+          <div className="hidden lg:grid grid-cols-2 gap-6 xl:gap-8 max-w-[520px] ml-auto" aria-hidden="true">
+            {[
+              { id: 'colunas', nome: 'Colunas', r: '-3deg', d: '0s', y: '0px' },
+              { id: 'vergalhoes', nome: 'Vergalhões', r: '3deg', d: '-2s', y: '48px' },
+              { id: 'estacas', nome: 'Estacas', r: '2deg', d: '-4s', y: '0px' },
+              { id: 'trelicas', nome: 'Treliças', r: '-3deg', d: '-1s', y: '48px' },
             ].map((f) => (
-              <div key={f.id} className={`absolute ${f.c} cat-float`} style={{ ['--r' as string]: f.r, animationDelay: f.d }}>
-                <div className="rounded-2xl bg-white p-2 shadow-[0_30px_60px_-20px_rgba(0,0,0,.55)] ring-1 ring-white/20">
-                  <img src={`${IMG}/${f.id}.webp`} alt="" width={720} height={720} className="w-full h-auto rounded-xl" />
+              <div key={f.id} style={{ marginTop: f.y }}>
+                <div className="cat-float" style={{ ['--r' as string]: f.r, animationDelay: f.d }}>
+                  <div className="rounded-2xl bg-white p-2.5 shadow-[0_30px_60px_-22px_rgba(0,0,0,.6)] ring-1 ring-white/20">
+                    <img src={`${IMG}/${f.id}.webp`} alt="" width={720} height={720} className="w-full aspect-square object-contain rounded-xl" />
+                    <p className="text-center text-sm font-bold text-[#002B5C] pt-2 pb-1">{f.nome}</p>
+                  </div>
                 </div>
               </div>
             ))}
