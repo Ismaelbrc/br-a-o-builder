@@ -11,7 +11,7 @@ const post: BlogPost = {
   keyword: "custo corte e dobra goiânia",
   date: "15 Mai 2026",
   summary: "Descubra os preços do corte e dobra de aço em Goiânia em 2026, os fatores que influenciam o custo e como calcular o valor total para sua obra.",
-  content: `**Em resumo:** O custo do serviço de corte e dobra em Goiânia em 2026 varia conforme o volume, o diâmetro e a complexidade das peças: para obras residenciais típicas, o valor de processamento fica entre R$ 0,40 e R$ 0,80 por kg de aço beneficiado, além do custo do material. A BR Aço — maior indústria de corte e dobra de Goiás — oferece orçamento gratuito para qualquer volume, com entrega em até 7 dias úteis em Goiânia, interior de GO e Brasília/DF.
+  content: `**Em resumo:** Em Goiânia, a faixa de referência do serviço de corte e dobra em 2026 é de **R$ 0,80 a R$ 1,50 por kg de aço processado**. Essa faixa cobre o processamento. Material, frete e montagem devem ser conferidos separadamente na proposta. O valor final varia conforme volume, complexidade das peças e prazo.
 
 ---
 
@@ -80,7 +80,7 @@ Para uma obra residencial de 150 m² com 3 toneladas de aço, a economia em mão
 3. Você recebe o orçamento detalhado com peso por diâmetro e valor total
 4. Após aprovação, prazo de **5 a 7 dias úteis** para entrega em Goiânia e região
 
-Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região metropolitana.`,
+Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região metropolitana. Veja [como comparar orçamentos de corte e dobra](/blog/como-comparar-orcamentos-corte-e-dobra-vergalhao/).`,
 };
 
 export default post;

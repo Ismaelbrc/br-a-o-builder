@@ -57,7 +57,9 @@ Diferente de um vergalhão avulso, vendido por peça ou por kg numa bitola padr�
 
 ## Fale com a BR Aço
 
-Envie o projeto estrutural das colunas pelo WhatsApp e receba o orçamento com o peso real de aço calculado — sem estimativa genérica.`,
+Envie o projeto estrutural das colunas pelo WhatsApp e receba o orçamento com o peso real de aço calculado — sem estimativa genérica.
+
+Antes de solicitar a cotação, confira [o que enviar para orçar coluna pronta sob medida](/blog/dados-para-orcamento-coluna-pronta-sob-medida/).`,
 };
 
 export default post;

@@ -2093,6 +2093,28 @@ export const blogPostsMeta: BlogPostMeta[] = [
     summary: "Tabela de conversão entre polegada e milímetro para as bitolas de vergalhão CA-50 mais usadas na construção civil — a referência rápida para quem recebe orçamento em polegada e precisa conferir contra o projeto em mm, ou vice-versa.",
     readingTime: 3,
   },
+  {
+    id: 191,
+    slug: "como-comparar-orcamentos-corte-e-dobra-vergalhao",
+    category: "Corte e Dobra",
+    title: "Como Comparar Orçamentos de Corte e Dobra de Vergalhão",
+    metaDescription: "Compare propostas de corte e dobra com o mesmo peso, escopo e frete. Veja uma tabela de conferência e um exemplo de cálculo por kg.",
+    keyword: "como comparar orçamentos de corte e dobra",
+    date: "10 Nov 2026",
+    summary: "Uma tabela para comparar o que cada fornecedor entrega, com um exemplo de custo posto na obra.",
+    readingTime: 2,
+  },
+  {
+    id: 192,
+    slug: "dados-para-orcamento-coluna-pronta-sob-medida",
+    category: "Coluna Pronta",
+    title: "O Que Enviar Para Orçar Coluna Pronta Sob Medida",
+    metaDescription: "Veja quais dados enviar para cotar coluna pronta: projeto, posições, quantidades, tipo de montagem e endereço da obra.",
+    keyword: "o que enviar para orçamento de coluna pronta",
+    date: "10 Nov 2026",
+    summary: "Checklist para pedir uma cotação de armadura de pilar sob medida e conferir o escopo antes de aprovar.",
+    readingTime: 2,
+  },
 ];
 
 export const categories = ['Todos', 'Corte e Dobra', 'Vergalhões', 'Normas ABNT', 'Gestão de Obra', 'Produtos', 'Dicas Técnicas', 'Normas Técnicas', 'Treliças', 'Malhas', 'Fundação', 'BR Aço', 'Concreto', 'Projeto Estrutural', 'Cidades', 'Coluna Pronta'];

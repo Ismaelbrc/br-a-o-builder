@@ -1474,7 +1474,7 @@ O serviço de corte e dobra elimina o desperdício de pontas e reduz em até 50%
     keyword: "custo corte e dobra goiânia",
     date: "15 Mai 2026",
     summary: "Descubra os preços do corte e dobra de aço em Goiânia em 2026, os fatores que influenciam o custo e como calcular o valor total para sua obra.",
-    content: `**Em resumo:** O custo do serviço de corte e dobra em Goiânia em 2026 varia conforme o volume, o diâmetro e a complexidade das peças: para obras residenciais típicas, o valor de processamento fica entre R$ 0,40 e R$ 0,80 por kg de aço beneficiado, além do custo do material. A BR Aço — maior indústria de corte e dobra de Goiás — oferece orçamento gratuito para qualquer volume, com entrega em até 7 dias úteis em Goiânia, interior de GO e Brasília/DF.
+    content: `**Em resumo:** Em Goiânia, a faixa de referência do serviço de corte e dobra em 2026 é de **R$ 0,80 a R$ 1,50 por kg de aço processado**. Essa faixa cobre o processamento. Material, frete e montagem devem ser conferidos separadamente na proposta. O valor final varia conforme volume, complexidade das peças e prazo.
 
 ---
 
@@ -1543,7 +1543,7 @@ Para uma obra residencial de 150 m² com 3 toneladas de aço, a economia em mão
 3. Você recebe o orçamento detalhado com peso por diâmetro e valor total
 4. Após aprovação, prazo de **5 a 7 dias úteis** para entrega em Goiânia e região
 
-Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região metropolitana.`
+Atendemos Goiânia, Aparecida de Goiânia, Anápolis, Senador Canedo, Trindade e toda a região metropolitana. Veja [como comparar orçamentos de corte e dobra](/blog/como-comparar-orcamentos-corte-e-dobra-vergalhao/).`
   },
   {
     id: 23,
@@ -12857,7 +12857,9 @@ Diferente de um vergalhão avulso, vendido por peça ou por kg numa bitola padr�
 
 ## Fale com a BR Aço
 
-Envie o projeto estrutural das colunas pelo WhatsApp e receba o orçamento com o peso real de aço calculado — sem estimativa genérica.`
+Envie o projeto estrutural das colunas pelo WhatsApp e receba o orçamento com o peso real de aço calculado — sem estimativa genérica.
+
+Antes de solicitar a cotação, confira [o que enviar para orçar coluna pronta sob medida](/blog/dados-para-orcamento-coluna-pronta-sob-medida/).`
   },
   {
     id: 185,
@@ -13127,6 +13129,75 @@ O CA-60 (bitolas finas, usado em treliças, telas soldadas e estribos) não segu
 ## Fale com a BR Aço
 
 Recebeu orçamento em polegada e precisa conferir contra o projeto em milímetro? A BR Aço, em Goiânia, faz a conferência de bitola e entrega vergalhão CA-50 e CA-60 certificado conforme a NBR 7480, cortado e dobrado sob medida. Envie sua lista de materiais pelo WhatsApp.`
+  },
+  {
+    id: 191,
+    slug: "como-comparar-orcamentos-corte-e-dobra-vergalhao",
+    category: "Corte e Dobra",
+    title: "Como Comparar Orçamentos de Corte e Dobra de Vergalhão",
+    metaDescription: "Compare propostas de corte e dobra com o mesmo peso, escopo e frete. Veja uma tabela de conferência e um exemplo de cálculo por kg.",
+    keyword: "como comparar orçamentos de corte e dobra",
+    date: "10 Nov 2026",
+    summary: "Uma tabela para comparar o que cada fornecedor entrega, com um exemplo de custo posto na obra.",
+    content: `**Em resumo:** para comparar orçamentos de corte e dobra, envie a mesma revisão do projeto a todos os fornecedores. Confira o peso cotado e separe aço, processamento, montagem e frete. Só então compare o total entregue na obra e o prazo para cada etapa.
+
+## Coloque as propostas na mesma base
+
+| Campo | O que pedir no orçamento |
+|---|---|
+| Projeto e peso | Revisão da prancha, posições incluídas e peso por bitola |
+| Material | Classe do aço, preço e confirmação de que o material está incluído |
+| Processamento | Corte e dobra por kg, com identificação das posições |
+| Montagem | Indicação de quais peças chegam montadas e quais chegam soltas |
+| Entrega | Valor do frete, número de viagens, descarga e prazo por etapa |
+
+Se dois fornecedores cotarem pesos diferentes, peça a lista de posições antes de decidir. Uma proposta pode ter ficado sem uma etapa ou usado outra revisão do projeto.
+
+## Exemplo com 1.000 kg
+
+A [faixa de referência para corte e dobra em Goiânia](/blog/custo-corte-e-dobra-goiania-preco-2026/) é de **R$ 0,80 a R$ 1,50 por kg de aço processado**. Para 1.000 kg, isso equivale a **R$ 800 a R$ 1.500 pelo serviço**. O exemplo é ilustrativo e deixa aço, frete e montagem fora do cálculo.
+
+| Proposta hipotética | Processamento | Frete | Subtotal de serviço e frete |
+|---|---:|---:|---:|
+| A | R$ 900 | R$ 300 | R$ 1.200 |
+| B | R$ 1.100 | R$ 50 | R$ 1.150 |
+
+Neste exemplo, a proposta B tem o menor subtotal, apesar do preço por kg maior. Para comparar o custo completo, some o material e os demais itens do mesmo escopo.
+
+## O que mandar para receber propostas comparáveis
+
+Envie a planilha de ferro ou as pranchas estruturais, a revisão vigente, a cidade da obra e a etapa que precisa ser entregue primeiro. Peça para o fornecedor discriminar montagem e entrega. Em Goiânia, você pode [solicitar orçamento à BR Aço](/corte-e-dobra/goiania/) com esses dados.`
+  },
+  {
+    id: 192,
+    slug: "dados-para-orcamento-coluna-pronta-sob-medida",
+    category: "Coluna Pronta",
+    title: "O Que Enviar Para Orçar Coluna Pronta Sob Medida",
+    metaDescription: "Veja quais dados enviar para cotar coluna pronta: projeto, posições, quantidades, tipo de montagem e endereço da obra.",
+    keyword: "o que enviar para orçamento de coluna pronta",
+    date: "10 Nov 2026",
+    summary: "Checklist para pedir uma cotação de armadura de pilar sob medida e conferir o escopo antes de aprovar.",
+    content: `**Em resumo:** para cotar coluna pronta sob medida, envie a revisão do projeto estrutural, a quantidade por posição de pilar e a cidade da entrega. Peça a discriminação das peças montadas, do frete e do prazo. A cotação precisa refletir o detalhamento de cada posição.
+
+## Checklist para enviar à fábrica
+
+| Informação | Onde encontrar ou como registrar |
+|---|---|
+| Posições dos pilares | Identificação nas pranchas, como P1, P2 e P3 |
+| Quantidade por posição | Quadro de pilares ou relação de peças da etapa |
+| Comprimento e seção | Detalhamento estrutural de cada posição |
+| Barras e estribos | Bitolas, quantidades e espaçamentos do projeto |
+| Entrega | Cidade, etapa, data desejada e condições de acesso ao canteiro |
+
+Se o pedido cobre só a primeira etapa, sinalize quais posições entram nessa entrega. Se houve revisão do projeto, confirme que o orçamento usa a versão mais recente.
+
+## Como ler a proposta antes de aprovar
+
+Confira se a quantidade por posição bate com o pedido e se as peças chegam montadas ou apenas cortadas e dobradas. Peça que frete e descarga apareçam explicitamente. Se duas posições tiverem a mesma seção, mantenha a identificação de cada uma até a conferência com o detalhamento. Altura, bitola e espaçamento podem ser diferentes.
+
+## O que fazer se faltar o detalhamento do pilar?
+
+Peça a informação ao responsável pelo projeto. As medidas externas do pilar não determinam, por si só, a armadura a fabricar. Use o [guia de preço de coluna pronta](/blog/quanto-custa-coluna-pronta-fatores-que-definem-o-preco/) para entender o que muda o valor e a [página de coluna pronta em Goiânia](/coluna/goiania/) para enviar o projeto e pedir cotação.`
   }
 ];
 
